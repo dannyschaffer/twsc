@@ -4,13 +4,8 @@
    ================================= */
 
 /* Glassmorphism Effects */
-.nav-bar {
-    background: rgba(26, 42, 58, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
+/* Glassmorphism Effects */
+/* .nav-bar removed to allow styles.css to control the teal background */
 
 /* Enhanced Hero with Institution Gradient (Light Mode) */
 .hero-headline {
