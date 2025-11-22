@@ -12,9 +12,9 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Enhanced Hero with Institution Gradient */
+/* Enhanced Hero with Institution Gradient (Light Mode) */
 .hero-headline {
-    background: linear-gradient(135deg, #FFFFFF 0%, #94A3B8 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -48,22 +48,21 @@
     font-family: var(--font-mono);
     font-size: 0.9rem;
     border: 1px solid var(--gold);
-    background: rgba(212, 175, 55, 0.1);
-    color: var(--gold);
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.1);
+    background: var(--gold);
+    color: var(--navy);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
     border-radius: 2px;
 }
 
 .btn-cta:hover {
-    background: var(--gold);
+    background: #C39E28;
     color: var(--navy);
     box-shadow:
-        0 0 20px rgba(212, 175, 55, 0.3),
-        0 0 40px rgba(212, 175, 55, 0.1);
+        0 8px 25px rgba(212, 175, 55, 0.4);
     transform: translateY(-2px);
 }
 
-/* Hero Stats - Terminal Style */
+/* Hero Stats - Light Mode Style */
 .hero-stats {
     display: flex;
     flex-wrap: wrap;
@@ -77,10 +76,12 @@
     min-width: 180px;
     padding: 1.5rem;
     border-radius: 2px;
-    background: rgba(30, 41, 59, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.9);
+    /* Light background */
+    border: 1px solid rgba(0, 0, 0, 0.05);
     text-align: center;
     position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .hero-stat::before {
@@ -109,14 +110,15 @@
     font-family: var(--font-mono);
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--white);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    color: var(--navy);
+    /* Dark text */
+    text-shadow: none;
     line-height: 1.1;
 }
 
 .hero-stat .stat-label {
     margin-top: 0.5rem;
-    color: var(--gold);
+    color: var(--text-secondary);
     font-family: var(--font-mono);
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -147,16 +149,17 @@
 .stat-item {
     text-align: center;
     padding: 2rem 1rem;
-    background: rgba(233, 179, 76, 0.05);
+    background: var(--white);
     border-radius: 12px;
-    border: 1px solid rgba(233, 179, 76, 0.2);
+    border: 1px solid var(--light-gray);
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .stat-item:hover {
-    background: rgba(233, 179, 76, 0.1);
+    background: var(--off-white);
     transform: translateY(-5px);
-    border-color: var(--teal);
+    border-color: var(--gold);
 }
 
 .stat-number {
@@ -216,8 +219,8 @@
 .subscribe-btn {
     position: relative;
     overflow: hidden;
-    background: rgba(233, 179, 76, 0.1);
-    border: 2px solid rgba(233, 179, 76, 0.3);
+    background: var(--white);
+    border: 2px solid var(--light-gray);
     transition: all 0.3s ease;
 }
 
@@ -229,7 +232,7 @@
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(233, 179, 76, 0.2);
+    background: rgba(212, 175, 55, 0.1);
     transform: translate(-50%, -50%);
     transition: width 0.5s, height 0.5s;
 }
@@ -240,10 +243,10 @@
 }
 
 .subscribe-btn:hover {
-    background: rgba(233, 179, 76, 0.2);
-    border-color: var(--teal);
+    background: var(--off-white);
+    border-color: var(--gold);
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(233, 179, 76, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .subscribe-btn span {
@@ -253,17 +256,18 @@
 
 /* Contact Info Box */
 .contact-info-box {
-    background: linear-gradient(145deg, rgba(233, 179, 76, 0.05) 0%, rgba(233, 179, 76, 0.02) 100%);
+    background: linear-gradient(145deg, #FFFFFF 0%, #F8FAFC 100%);
     padding: 3rem;
     border-radius: 16px;
-    border: 2px solid rgba(233, 179, 76, 0.2);
+    border: 1px solid var(--light-gray);
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info-box h2 {
-    color: var(--teal);
+    color: var(--navy);
     margin-bottom: 1rem;
 }
 
@@ -277,20 +281,20 @@
 }
 
 .contact-details a {
-    color: var(--white);
+    color: var(--gold);
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .contact-details a:hover {
-    color: var(--teal);
+    color: var(--navy);
     text-decoration: underline;
 }
 
 .join-live-sessions {
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(233, 179, 76, 0.2);
+    border-top: 1px solid var(--light-gray);
     color: var(--text-secondary);
     font-style: italic;
 }
@@ -303,7 +307,7 @@
 }
 
 .resource-link-text a {
-    color: var(--teal);
+    color: var(--gold);
     font-weight: 600;
 }
 
@@ -330,8 +334,8 @@
 .form-group input,
 .form-group select,
 .form-group textarea {
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(233, 179, 76, 0.2);
+    background: var(--white);
+    border: 2px solid var(--light-gray);
     transition: all 0.3s ease;
 }
 
@@ -340,11 +344,11 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--teal);
+    background: var(--white);
+    border-color: var(--gold);
     box-shadow:
-        0 0 0 3px rgba(233, 179, 76, 0.1),
-        0 5px 15px rgba(233, 179, 76, 0.2);
+        0 0 0 3px rgba(212, 175, 55, 0.1),
+        0 5px 15px rgba(212, 175, 55, 0.1);
     transform: translateY(-2px);
 }
 
@@ -414,7 +418,7 @@
 /* Animated Gradient Borders - Institution Style */
 .pricing-card-featured {
     position: relative;
-    background: rgba(15, 23, 42, 0.95);
+    background: var(--white);
     border: 1px solid transparent;
 }
 
@@ -446,8 +450,8 @@
 .testimonial-card {
     position: relative;
     padding: 2.5rem;
-    background: rgba(30, 41, 59, 0.6);
-    border: 1px solid rgba(212, 175, 55, 0.1);
+    background: var(--white);
+    border: 1px solid var(--light-gray);
     border-left: 2px solid var(--gold);
 }
 
