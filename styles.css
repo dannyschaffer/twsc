@@ -143,8 +143,8 @@ ol {
    ================================= */
 
 .nav-bar {
-    background-color: rgba(15, 118, 110, 0.95);
-    /* Teal background (matches --teal with opacity) */
+    background-color: rgba(14, 78, 90, 0.95);
+    /* Darker Teal #0e4e5a */
     backdrop-filter: blur(16px);
     padding: 1.5rem 0;
     position: sticky;
