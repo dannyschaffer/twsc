@@ -14,15 +14,15 @@
     --gold: #D4AF37;
     /* Metallic Gold - Accents */
     --teal: #0F766E;
-    /* Dark Teal - Primary Buttons/Links (Readable on Light) */
-    --white: #FFFFFF;
-    /* Pure White - Background */
-    --off-white: #F8FAFC;
-    /* Slate 50 - Section Backgrounds */
+    /* Dark Teal - Primary Buttons/Links */
+    --white: #F9F9F7;
+    /* Warm Off-White (Matches Topo Image) */
+    --off-white: #F1F1EF;
+    /* Slightly Darker Off-White for Sections */
     --light-gray: #E2E8F0;
     /* Slate 200 - Borders */
-    --medium-gray: #94A3B8;
-    /* Slate 400 - Secondary Text */
+    --medium-gray: #64748B;
+    /* Slate 500 - Secondary Text */
     --dark-gray: #334155;
     /* Slate 700 */
     --text-primary: #0F172A;
@@ -128,15 +128,15 @@ ol {
    ================================= */
 
 .nav-bar {
-    background-color: rgba(255, 255, 255, 0.9);
-    /* Light Glass */
+    background-color: rgba(249, 249, 247, 0.9);
+    /* Matches Off-White */
     backdrop-filter: blur(16px);
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
 }
 
 .nav-container {
@@ -291,7 +291,7 @@ ol {
 }
 
 /* =================================
-   HERO SECTION (PARALLAX)
+   HERO SECTION (PARALLAX TOPO)
    ================================= */
 
 .hero {
@@ -300,9 +300,9 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('TWSCsite/Images/background-parallax.png');
+    background-image: url('TWSCsite/Images/background-light-topo.png');
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -316,8 +316,8 @@ ol {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(15, 23, 42, 0.6);
-    /* Dark overlay for text readability */
+    background: linear-gradient(to bottom, rgba(249, 249, 247, 0.3), var(--white));
+    /* Fade into body color */
     pointer-events: none;
 }
 
@@ -346,19 +346,19 @@ ol {
     font-weight: 800;
     font-size: 4.5rem;
     margin-bottom: 1.5rem;
-    color: var(--white);
-    /* Keep white on dark hero */
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    color: var(--navy);
+    /* Dark text on light background */
     letter-spacing: -0.03em;
     line-height: 1.1;
 }
 
 .hero-subheadline {
     font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.9);
-    /* Light text on hero */
+    color: var(--text-secondary);
+    /* Darker text for readability */
     margin-bottom: 2.5rem;
     line-height: 1.7;
+    font-weight: 500;
 }
 
 .hero-image {
