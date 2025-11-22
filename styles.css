@@ -38,15 +38,13 @@ body {
     line-height: 1.7;
     color: var(--text-primary);
     background-color: var(--white);
-    /* Fix Seam: Use gradient overlay + cover size to eliminate tiling edges */
+    /* Fix Seam: Fade pattern to solid white at the bottom to hide edges */
     background-image:
-        linear-gradient(to bottom, rgba(249, 249, 247, 0.4), rgba(249, 249, 247, 0.8)),
+        linear-gradient(to bottom, rgba(249, 249, 247, 0.2) 0%, rgba(249, 249, 247, 1) 100%),
         url('TWSCsite/Images/background-light-topo.png');
     background-repeat: no-repeat;
     background-size: cover;
-    /* Stretches image to fill screen, removing seams */
     background-attachment: fixed;
-    /* Keeps pattern static */
     background-position: center top;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
