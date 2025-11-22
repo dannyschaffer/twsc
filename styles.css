@@ -38,12 +38,16 @@ body {
     line-height: 1.7;
     color: var(--text-primary);
     background-color: var(--white);
-    background-image: url('TWSCsite/Images/background-light-topo.png');
-    background-repeat: repeat;
-    background-size: 1000px auto;
-    /* Adjust size for pattern repetition */
+    /* Fix Seam: Use gradient overlay + cover size to eliminate tiling edges */
+    background-image:
+        linear-gradient(to bottom, rgba(249, 249, 247, 0.4), rgba(249, 249, 247, 0.8)),
+        url('TWSCsite/Images/background-light-topo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Stretches image to fill screen, removing seams */
     background-attachment: fixed;
-    /* Keep pattern fixed while scrolling */
+    /* Keeps pattern static */
+    background-position: center top;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
