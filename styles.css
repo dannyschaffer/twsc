@@ -143,15 +143,15 @@ ol {
    ================================= */
 
 .nav-bar {
-    background-color: rgba(249, 249, 247, 0.9);
-    /* Matches Off-White */
+    background-color: rgba(15, 118, 110, 0.95);
+    /* Teal background (matches --teal with opacity) */
     backdrop-filter: blur(16px);
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -172,8 +172,8 @@ ol {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--navy);
-    /* Dark logo text */
+    color: var(--white);
+    /* White logo text */
     display: inline-flex;
     align-items: center;
     padding-right: 12px;
@@ -183,8 +183,8 @@ ol {
     height: 32px;
     width: auto;
     display: block;
-    filter: none;
-    /* Original logo colors */
+    filter: brightness(0) invert(1);
+    /* Force white logo if image isn't already */
 }
 
 .nav-links {
@@ -195,7 +195,8 @@ ol {
 }
 
 .nav-link {
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.85);
+    /* White text for teal bg */
     font-weight: 500;
     transition: color 0.3s ease;
     font-size: 0.95rem;
@@ -206,7 +207,8 @@ ol {
 }
 
 .nav-link-featured {
-    color: var(--gold);
+    color: var(--gold) !important;
+    /* Force Gold for active state */
     font-weight: 700;
 }
 
