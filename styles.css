@@ -347,12 +347,10 @@ ol {
 }
 
 .hero-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 4rem;
-    margin-top: 5rem;
-    /* Separate from text above */
-    flex-wrap: wrap;
+    align-items: start;
 }
 
 .hero-headline {
