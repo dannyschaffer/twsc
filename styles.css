@@ -143,8 +143,8 @@ ol {
    ================================= */
 
 .nav-bar {
-    background-color: rgba(14, 78, 90, 0.95);
-    /* Darker Teal #0e4e5a */
+    background-color: rgba(8, 51, 58, 0.95);
+    /* Deep Teal #08333A */
     backdrop-filter: blur(16px);
     padding: 1.5rem 0;
     position: sticky;
@@ -347,12 +347,12 @@ ol {
 }
 
 .hero-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 4rem;
-    /* Increased gap */
-    align-items: start;
-    /* Align image to top to fix "too low" issue */
+    margin-top: 5rem;
+    /* Separate from text above */
+    flex-wrap: wrap;
 }
 
 .hero-headline {
@@ -393,13 +393,17 @@ ol {
 .hero-logos {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem 1.5rem;
+    gap: 2rem 3rem;
+    /* Increased gap */
     align-items: center;
-    margin-top: 2rem;
+    justify-content: center;
+    /* Center logos */
+    margin-top: 3rem;
 }
 
 .hero-logos img {
-    height: 34px;
+    height: 50px;
+    /* Increased from 34px */
     width: auto;
     filter: grayscale(100%);
     opacity: 0.75;
