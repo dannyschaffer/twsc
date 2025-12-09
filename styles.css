@@ -584,6 +584,35 @@ ol {
 }
 
 /* =================================
+   COMPARISON GRID
+   ================================= */
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.comparison-column {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-column.highlight {
+    border-color: var(--gold);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.comparison-column h3 {
+    color: var(--navy);
+    margin-bottom: 1rem;
+}
+
+/* =================================
    PAIN POINTS LIST
    ================================= */
 
