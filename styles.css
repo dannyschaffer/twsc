@@ -400,8 +400,8 @@ ol {
 }
 
 .hero-logos img {
-    height: 50px;
-    /* Increased from 34px */
+    height: 65px;
+    /* Increased for better visibility */
     width: auto;
     filter: grayscale(100%);
     opacity: 0.75;
