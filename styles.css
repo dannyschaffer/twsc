@@ -380,10 +380,8 @@ ol {
 
 .hero-image {
     position: relative;
-    max-width: 420px;
-    /* Reduced from 520px */
+    max-width: 500px;
     margin: 0 auto;
-    /* Removed negative margin */
 }
 
 .hero-image img {
@@ -407,8 +405,7 @@ ol {
 }
 
 .hero-logos img {
-    height: 55px;
-    /* Slightly reduced from 65px */
+    height: 70px;
     /* Increased for better visibility */
     width: auto;
     filter: grayscale(100%);
