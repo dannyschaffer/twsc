@@ -32,12 +32,14 @@
         }
 
         .hero-left {
-            background: linear-gradient(135deg, rgba(8, 51, 58, 0.95), rgba(8, 51, 58, 0.8));
-            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            background: #F9F9F7;
+            /* Off-White for Individuals */
+            border-right: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .hero-right {
-            background: linear-gradient(135deg, rgba(11, 15, 25, 0.95), rgba(11, 15, 25, 0.8));
+            background: #EFEFE9;
+            /* Light Beige for Institutions */
         }
 
         .split-hero::before {
@@ -48,13 +50,17 @@
             width: 100%;
             height: 100%;
             background-image: url('TWSCsite/Images/Topo-Pattern-White.png');
-            opacity: 0.05;
+            opacity: 0.4;
+            /* Increased opacity for light background */
             background-size: cover;
             pointer-events: none;
             z-index: 1;
+            mix-blend-mode: multiply;
+            /* Blend with light background */
         }
 
         .segment-label {
+            font-family: 'Space Mono', monospace;
             font-family: 'Space Mono', monospace;
             color: var(--gold);
             text-transform: uppercase;
@@ -62,24 +68,26 @@
             font-size: 0.9rem;
             margin-bottom: 1.5rem;
             display: inline-block;
-            border: 1px solid rgba(233, 179, 76, 0.3);
+            border: 1px solid var(--gold);
             padding: 0.5rem 1rem;
             border-radius: 4px;
+            font-weight: 700;
         }
 
         .profile-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.05);
             padding: 2.5rem;
             border-radius: 12px;
             margin-top: 2rem;
             transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
         .profile-card:hover {
             transform: translateY(-5px);
             border-color: var(--gold);
-            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
         }
 
         .tech-spec-grid {
@@ -181,14 +189,14 @@
         <!-- Left: For Traders -->
         <div class="hero-left">
             <span class="segment-label">For Individuals</span>
-            <h1 style="color: #fff; font-size: 3rem; margin-bottom: 1.5rem;">The Optimized Trader Protocol</h1>
-            <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 2rem; max-width: 500px;">
+            <h1 style="color: var(--navy); font-size: 3rem; margin-bottom: 1.5rem;">The Optimized Trader Protocol</h1>
+            <p style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 2rem; max-width: 500px;">
                 You don't need another strategy. You need a new nervous system. We combine <strong>neuroscience,
                     biohacking, and elite performance psychology</strong> to break your biological glass ceiling.
             </p>
             <div class="profile-card">
                 <h4 style="color: var(--gold); margin-bottom: 1rem;">Ideal For:</h4>
-                <ul class="check-list-light">
+                <ul class="check-list"> <!-- Changed to check-list (dark text) -->
                     <li>Independent Pro Retail Traders</li>
                     <li>Prop Firm Traders hitting a plateau</li>
                     <li>High-Performing Executives turning to markets</li>
@@ -201,19 +209,20 @@
         <!-- Right: For Institutions -->
         <div class="hero-right">
             <span class="segment-label">For Institutions</span>
-            <h1 style="color: #fff; font-size: 3rem; margin-bottom: 1.5rem;">Corporate & Fund Consulting</h1>
-            <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 2rem; max-width: 500px;">
+            <h1 style="color: var(--navy); font-size: 3rem; margin-bottom: 1.5rem;">Corporate & Fund Consulting</h1>
+            <p style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 2rem; max-width: 500px;">
                 Culture is the ultimate alpha. We help Hedge Funds and Asset Managers build <strong>Anti-Fragile
                     teams</strong> that execute flawlessly under pressure.
             </p>
             <div class="profile-card">
                 <h4 style="color: var(--gold); margin-bottom: 1rem;">Ideal For:</h4>
-                <ul class="check-list-light">
+                <ul class="check-list"> <!-- Changed to check-list (dark text) -->
                     <li>Hedge Fund Founders & PMs</li>
                     <li>Trading Desk Heads</li>
                     <li>C-Suite Financial Leaders</li>
                 </ul>
-                <a href="#corporate" class="btn-secondary" style="margin-top: 1.5rem; display: inline-block;">Explore
+                <a href="#corporate" class="btn-secondary"
+                    style="margin-top: 1.5rem; display: inline-block; border-color: var(--navy); color: var(--navy);">Explore
                     Consulting</a>
             </div>
         </div>
@@ -223,9 +232,10 @@
     <div class="client-logos-strip">
         <div class="container" style="text-align: center;">
             <p
-                style="color: rgba(255,255,255,0.5); font-family: 'Space Mono', monospace; font-size: 0.8rem; margin-bottom: 1.5rem; text-transform: uppercase;">
+                style="color: var(--navy); opacity: 0.6; font-family: 'Space Mono', monospace; font-size: 0.8rem; margin-bottom: 1.5rem; text-transform: uppercase;">
                 Trusted By Professionals At</p>
-            <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; opacity: 0.7;">
+            <div
+                style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; opacity: 1; filter: grayscale(100%);">
                 <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-BlackstoneBW@2x.png"
                     alt="Blackstone" style="height: 25px;">
                 <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-BankofAmericaBW@2x.png"
