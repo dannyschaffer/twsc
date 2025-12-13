@@ -10,10 +10,150 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <style>
+        /* Page-Specific Styles */
+        .split-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 80vh;
+            background: var(--navy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-left,
+        .hero-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-left {
+            background: linear-gradient(135deg, rgba(8, 51, 58, 0.95), rgba(8, 51, 58, 0.8));
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hero-right {
+            background: linear-gradient(135deg, rgba(11, 15, 25, 0.95), rgba(11, 15, 25, 0.8));
+        }
+
+        .split-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('TWSCsite/Images/Topo-Pattern-White.png');
+            opacity: 0.05;
+            background-size: cover;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .segment-label {
+            font-family: 'Space Mono', monospace;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            border: 1px solid rgba(233, 179, 76, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .tech-spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .spec-item {
+            border-left: 3px solid var(--gold);
+            padding-left: 1.5rem;
+        }
+
+        .spec-item h4 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .spec-item p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .client-logos-strip {
+            padding: 2rem 0;
+            background: rgba(255, 255, 255, 0.02);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .methodology-section {
+            padding: 6rem 0;
+            background: #fff;
+            color: var(--navy);
+        }
+
+        .method-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 4rem;
+            align-items: flex-start;
+        }
+
+        .method-number {
+            font-size: 4rem;
+            font-family: 'Playfair Display', serif;
+            color: rgba(8, 51, 58, 0.1);
+            font-weight: 700;
+            line-height: 0.8;
+            flex-shrink: 0;
+        }
+
+        .method-content h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 900px) {
+            .split-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-left,
+            .hero-right {
+                padding: 3rem 1.5rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="scroll-progress" id="scrollProgress"></div>
     <!-- Global Navigation -->
     <nav class="nav-bar" id="mainNav">
         <div class="nav-container">
@@ -36,189 +176,216 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-headline">You Don't Need More Strategy. You Need a New Nervous System.</h1>
-                <p class="hero-subheadline">Bespoke performance architecture for traders managing significant risk.</p>
+    <!-- Split Hero Section -->
+    <section class="split-hero">
+        <!-- Left: For Traders -->
+        <div class="hero-left">
+            <span class="segment-label">For Individuals</span>
+            <h1 style="color: #fff; font-size: 3rem; margin-bottom: 1.5rem;">The Optimized Trader Protocol</h1>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 2rem; max-width: 500px;">
+                You don't need another strategy. You need a new nervous system. We combine <strong>neuroscience,
+                    biohacking, and elite performance psychology</strong> to break your biological glass ceiling.
+            </p>
+            <div class="profile-card">
+                <h4 style="color: var(--gold); margin-bottom: 1rem;">Ideal For:</h4>
+                <ul class="check-list-light">
+                    <li>Independent Pro Retail Traders</li>
+                    <li>Prop Firm Traders hitting a plateau</li>
+                    <li>High-Performing Executives turning to markets</li>
+                </ul>
+                <a href="#individual" class="btn-primary" style="margin-top: 1.5rem; display: inline-block;">Explore The
+                    Protocol</a>
+            </div>
+        </div>
+
+        <!-- Right: For Institutions -->
+        <div class="hero-right">
+            <span class="segment-label">For Institutions</span>
+            <h1 style="color: #fff; font-size: 3rem; margin-bottom: 1.5rem;">Corporate & Fund Consulting</h1>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: 2rem; max-width: 500px;">
+                Culture is the ultimate alpha. We help Hedge Funds and Asset Managers build <strong>Anti-Fragile
+                    teams</strong> that execute flawlessly under pressure.
+            </p>
+            <div class="profile-card">
+                <h4 style="color: var(--gold); margin-bottom: 1rem;">Ideal For:</h4>
+                <ul class="check-list-light">
+                    <li>Hedge Fund Founders & PMs</li>
+                    <li>Trading Desk Heads</li>
+                    <li>C-Suite Financial Leaders</li>
+                </ul>
+                <a href="#corporate" class="btn-secondary" style="margin-top: 1.5rem; display: inline-block;">Explore
+                    Consulting</a>
             </div>
         </div>
     </section>
 
-    <!-- Optimized Trader Bundle -->
-    <section class="section">
-        <div class="container">
-            <h2>The "Optimized Trader" Protocol</h2>
-            <p class="section-intro">This isn't "life coaching." It's a systematic overhaul of your decision-making
-                hardware.</p>
+    <!-- Social Proof Banner -->
+    <div class="client-logos-strip">
+        <div class="container" style="text-align: center;">
+            <p
+                style="color: rgba(255,255,255,0.5); font-family: 'Space Mono', monospace; font-size: 0.8rem; margin-bottom: 1.5rem; text-transform: uppercase;">
+                Trusted By Professionals At</p>
+            <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; opacity: 0.7;">
+                <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-BlackstoneBW@2x.png"
+                    alt="Blackstone" style="height: 25px;">
+                <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-BankofAmericaBW@2x.png"
+                    alt="Bank of America" style="height: 25px;">
+                <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-MorganStanleyBW@2x.png"
+                    alt="Morgan Stanley" style="height: 25px;">
+                <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-NBCBW@2x.png" alt="NBC"
+                    style="height: 25px;">
+            </div>
+        </div>
+    </div>
 
-            <div class="coaching-features">
-                <div class="coaching-feature">
-                    <h3>Biological Audit</h3>
-                    <p class="feature-description"><strong>The Problem:</strong> Brain fog, hesitation, and fatigue are
-                        often biological, not psychological.</p>
-                    <p class="benefit-description"><strong>The Fix:</strong> We run an 84-point diagnostic panel to
-                        optimize your hormones and neurotransmitters. You can't trade like a predator with the biology
-                        of prey.</p>
-                    <div class="result-highlight">
-                        <p><em>"I thought I was burnt out. Turns out my cortisol was through the roof. We fixed it, and
-                                my P&L doubled."</em></p>
+    <!-- INDIVIDUAL TRACK -->
+    <section id="individual" class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto 4rem auto; text-align: center;">
+                <span class="segment-label" style="color: var(--navy); border-color: var(--navy);">01. The Individual
+                    Track</span>
+                <h2 style="color: var(--navy); font-size: 2.5rem;">Stop Fighting Your Biology</h2>
+                <p class="section-intro">Most traders try to fix "mindset" problems with more discipline. But if your
+                    cortisol is spiked and your neurotransmitters are depleted, discipline is chemically impossible.</p>
+            </div>
+
+            <div class="method-step">
+                <div class="method-number">01</div>
+                <div class="method-content">
+                    <h3>The Biological Audit</h3>
+                    <p>We start where others stop: your body. Using an 84-point lab panel, we analyze your hormonal
+                        baseline. Are you trading with the testosterone of a predator or the cortisol of prey? We
+                        optimize your sleep, recovery, and neurochemistry first.</p>
+                </div>
+            </div>
+
+            <div class="method-step">
+                <div class="method-number">02</div>
+                <div class="method-content">
+                    <h3>The TPI "Blue Diamond" Analysis</h3>
+                    <p>We use the Trader Positioning Index to map your judgment. This isn't a personality test; it's a
+                        risk-management diagnostic. We identify exactly where you are leaking alpha—whether it's
+                        hesitation (Self-Regard) or impulsivity (Process Adherence).</p>
+                </div>
+            </div>
+
+            <div class="method-step">
+                <div class="method-number">03</div>
+                <div class="method-content">
+                    <h3>Neural Reprogramming</h3>
+                    <p>Once the hardware (body) is optimized, we upgrade the software (mind). Weekly 1:1 strategy
+                        sessions focused on "Live Fire" scenarios. We rewrite the subconscious scripts that cause
+                        self-sabotage, installing a new operating system for risk.</p>
+                </div>
+            </div>
+
+            <div class="tech-specs-container"
+                style="background: var(--navy); color: white; padding: 3rem; border-radius: 12px; margin-top: 4rem;">
+                <h3
+                    style="color: #fff; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;">
+                    Protocol Specifications</h3>
+                <div class="tech-spec-grid">
+                    <div class="spec-item">
+                        <h4>Duration</h4>
+                        <p>12 Weeks (Intensive)</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Access</h4>
+                        <p>Weekly 60-min Zoom Strategy Sessions + Direct Text/Voice Access</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Diagnostics</h4>
+                        <p>Full TPI Profile + Biological Lab Panel Analysis</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Outcome</h4>
+                        <p>A bespoke "Performance Architecture" document you keep for life.</p>
                     </div>
                 </div>
-
-                <div class="coaching-feature">
-                    <h3>Live Fire Shadowing</h3>
-                    <p class="feature-description"><strong>The Problem:</strong> You know what to do, but you don't do
-                        it when the heat is on.</p>
-                    <p class="benefit-description"><strong>The Fix:</strong> I watch you trade live. I see the
-                        micro-expressions and hesitation ticks you miss. We interrupt the pattern in real-time.</p>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#contact" class="btn-primary" style="background: var(--gold); color: var(--navy);">Apply
+                        for The Protocol</a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">Currently Waitlisted. Applications
+                        reviewed weekly.</p>
                 </div>
-
-                <div class="coaching-feature">
-                    <h3>Neural Reprogramming</h3>
-                    <p class="feature-description"><strong>The Problem:</strong> Deep-seated beliefs about money and
-                        worthiness sabotage your winners.</p>
-                    <p class="benefit-description"><strong>The Fix:</strong> We use advanced cognitive reframing to
-                        delete the "poverty programs" running in your subconscious.</p>
-                </div>
-            </div>
-
-            <div class="cta-section">
-                <a href="#contact" class="btn-cta">Apply for the Protocol</a>
-            </div>
-
-            <!-- Protocol Specifications (Tech Specs) -->
-            <div class="tech-specs-container">
-                <h3>Protocol Specifications</h3>
-                <p class="specs-intro">For the analytical mind: Here is exactly what is included.</p>
-                <ul class="tech-specs-list">
-                    <li><strong>Duration:</strong> 12 Weeks (3 Months)</li>
-                    <li><strong>Sessions:</strong> 12 x 60-Minute Video Calls (Zoom)</li>
-                    <li><strong>Diagnostics:</strong> 1 x TPI Assessment + 1 x 84-Point Lab Panel</li>
-                    <li><strong>Access:</strong> Direct Email Access to Kim (24hr Response Time)</li>
-                    <li><strong>Deliverables:</strong> Weekly Call Recordings + Custom Action Plan PDF</li>
-                    <li><strong>Bonus:</strong> "Emergency Protocol" for high-volatility days</li>
-                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Corporate Consulting -->
-    <section class="section section-dark">
+    <!-- CORPORATE TRACK -->
+    <section id="corporate" class="section section-dark">
         <div class="container">
-            <h2>For Funds & Institutions</h2>
-            <p class="section-intro">Culture eats strategy for breakfast. If your desk is toxic, your alpha is leaking.
-            </p>
+            <div style="max-width: 800px; margin: 0 auto 4rem auto; text-align: center;">
+                <span class="segment-label">02. The Institutional Track</span>
+                <h2>For Funds That Want to Last</h2>
+                <p class="section-intro">Your team's P&L is capped by their psychological capacity. We raise that
+                    ceiling.</p>
+            </div>
 
             <div class="corporate-grid">
                 <div class="corporate-card">
                     <h3>The "Anti-Fragile" Desk</h3>
-                    <p>Build a team that gets stronger under volatility. Eliminate the "cowboy culture" that leads to
-                        blowups.</p>
+                    <p>Most teams crumble under volatility. We build teams that get stronger from it. By aligning the
+                        "Collective Judgment" of your desk, we eliminate toxic competition and foster high-performance
+                        collaboration.</p>
                 </div>
                 <div class="corporate-card">
-                    <h3>Founder/PM Alignment</h3>
-                    <p>When leadership is out of sync, the fund bleeds. We align vision, values, and execution at the
-                        top.</p>
+                    <h3>Founder & PM Alignment</h3>
+                    <p>When leadership is out of sync, the fund bleeds. We facilitate high-stakes alignment sessions for
+                        Partners and PMs to ensure vision, values, and execution are lock-step.</p>
                 </div>
                 <div class="corporate-card">
-                    <h3>Legacy Architecture</h3>
-                    <p>Move from "making money" to "building an empire." Create a firm that outlasts its founders.</p>
+                    <h3>Talent Retention & Sourcing</h3>
+                    <p>Use the TPI to screen potential hires before they touch your capital. Identify "hidden gem"
+                        analysts who have the psychological makeup of top risk-takers.</p>
                 </div>
             </div>
 
-            <div class="differentiation-box">
-                <h3>The Truth About Alpha</h3>
-                <p>Sustainable alpha isn't found in a new algo. It's found in a team that can execute flawlessly while
-                    the rest of the street is panicking.</p>
-            </div>
-
-            <div class="cta-section">
-                <a href="#contact" class="btn-secondary">Discuss Corporate Retainers</a>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#contact" class="btn-secondary">Request a Corporate Capability Deck</a>
             </div>
         </div>
     </section>
 
-    <!-- Investment -->
-    <section class="section">
+    <!-- Contact Section -->
+    <section id="contact" class="section">
         <div class="container">
-            <h2>The Investment</h2>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <h2 style="text-align: center; color: var(--navy);">Start the Conversation</h2>
+                <p class="section-intro">Whether you are an individual reaching for new highs or a fund manager building
+                    a legacy, it starts here.</p>
 
-            <div class="investment-cards">
-                <div class="investment-card">
-                    <h3>The Protocol</h3>
-                    <div class="investment-details">
-                        <p><strong>Commitment:</strong> 3 Months</p>
-                        <p><strong>Investment:</strong> $15,000</p>
-                        <p><strong>The ROI:</strong></p>
-                        <ul>
-                            <li>What is the cost of <em>one</em> emotional blowup?</li>
-                            <li>What is the value of adding 10% to your win rate?</li>
-                            <li>This isn't an expense. It's a hedge against your own psychology.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="investment-card">
-                    <h3>Corporate Advisory</h3>
-                    <div class="investment-details">
-                        <p><strong>Structure:</strong> Monthly Retainer</p>
-                        <p><strong>Investment:</strong> From $25k/mo</p>
-                        <p><strong>The ROI:</strong></p>
-                        <ul>
-                            <li>Retention of top talent.</li>
-                            <li>Prevention of catastrophic risk events.</li>
-                            <li>A culture that attracts the next generation of wizards.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="section section-dark" id="contact">
-        <div class="container">
-            <h2>Ready to Optimize Your Performance?</h2>
-            <p class="section-intro">Schedule a confidential consultation to discuss your specific needs.</p>
-
-            <form class="contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+                <form class="contact-form"
+                    style="background: #f8f9fa; padding: 2rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" style="color: var(--navy);">Name</label>
+                            <input type="text" id="name" name="name" required
+                                style="background: #fff; border: 1px solid #ddd; color: var(--navy);">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="color: var(--navy);">Email</label>
+                            <input type="email" id="email" name="email" required
+                                style="background: #fff; border: 1px solid #ddd; color: var(--navy);">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="service">I'm Interested In</label>
-                        <select id="service" name="service" required>
-                            <option value="">Select...</option>
-                            <option value="optimized-trader">Optimized Trader Program</option>
-                            <option value="corporate">Corporate Consulting</option>
-                            <option value="other">Other / Not Sure</option>
+                        <label for="interest" style="color: var(--navy);">I am interested in...</label>
+                        <select id="interest" name="interest"
+                            style="background: #fff; border: 1px solid #ddd; color: var(--navy);">
+                            <option value="individual">Individual "Optimized Trader" Protocol</option>
+                            <option value="corporate">Corporate / Fund Consulting</option>
+                            <option value="speaking">Keynote Speaking</option>
                         </select>
                     </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Tell Us About Your Goals</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="btn-cta">Request Consultation</button>
-            </form>
+                    <div class="form-group">
+                        <label for="message" style="color: var(--navy);">Briefly describe your current challenge</label>
+                        <textarea id="message" name="message" rows="4"
+                            style="background: #fff; border: 1px solid #ddd; color: var(--navy);"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Submit Inquiry</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -247,8 +414,6 @@
             </div>
         </div>
     </footer>
-
-    <a class="floating-action-btn" href="tpi.html" aria-label="Get your TPI score">⚡</a>
 
     <script src="script.js"></script>
 </body>
