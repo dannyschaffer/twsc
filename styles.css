@@ -1447,8 +1447,8 @@ ol {
 
 .faq-item {
     padding: 2rem 0;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    /* Increased from 1px and made lighter/more visible */
+    border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+    /* Dark border for visibility */
 }
 
 .faq-item:last-child {
