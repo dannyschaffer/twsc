@@ -661,6 +661,16 @@ ol {
     backdrop-filter: blur(4px);
 }
 
+.myth-item.light-theme {
+    background: var(--white);
+    color: var(--navy);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ff6b6b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
 .myth-icon {
     color: #ff6b6b;
     font-weight: 800;
