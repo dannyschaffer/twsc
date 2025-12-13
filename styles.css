@@ -618,6 +618,116 @@ ol {
 }
 
 /* =================================
+   AGITATION SECTION
+   ================================= */
+
+.agitation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.agitation-content .section-intro {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.myths-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.myth-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    border-left: 4px solid #ff6b6b;
+    /* Red for "wrong" */
+}
+
+.myth-icon {
+    color: #ff6b6b;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.myth-item p {
+    margin-bottom: 0;
+}
+
+.reality-card {
+    background: var(--navy);
+    color: var(--white);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.reality-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--gold);
+}
+
+.reality-card h3 {
+    color: var(--gold);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.reality-card p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.reality-punchline {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.reality-punchline strong {
+    color: var(--gold);
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+}
+
+/* Response for smaller screens */
+@media (max-width: 900px) {
+    .agitation-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .reality-card {
+        padding: 2rem;
+    }
+}
+
+/* =================================
    PAIN POINTS LIST
    ================================= */
 
