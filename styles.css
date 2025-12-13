@@ -647,13 +647,18 @@ ol {
     align-items: center;
     gap: 1rem;
     font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--navy);
+    font-weight: 500;
+    color: var(--white);
+    /* White text for dark BG */
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    /* Subtle border */
     border-radius: 8px;
     border-left: 4px solid #ff6b6b;
-    /* Red for "wrong" */
+    /* Red accent remains */
+    backdrop-filter: blur(4px);
 }
 
 .myth-icon {
