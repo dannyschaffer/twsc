@@ -667,7 +667,8 @@ ol {
 }
 
 .reality-card {
-    background: var(--navy);
+    background: #08333A;
+    /* Dark Green/Teal */
     color: var(--white);
     padding: 3rem;
     border-radius: 16px;
