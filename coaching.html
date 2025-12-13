@@ -92,7 +92,7 @@
 
         .tech-spec-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -115,10 +115,11 @@
         }
 
         .client-logos-strip {
-            padding: 2rem 0;
+            padding: 6rem 0;
+            /* Increased balanced padding */
             background: rgba(255, 255, 255, 0.02);
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .methodology-section {
@@ -156,6 +157,10 @@
             .hero-left,
             .hero-right {
                 padding: 3rem 1.5rem;
+            }
+
+            .tech-spec-grid {
+                grid-template-columns: 1fr !important;
             }
         }
     </style>
@@ -235,19 +240,19 @@
                 style="color: var(--navy); opacity: 0.6; font-family: 'Space Mono', monospace; font-size: 0.8rem; margin-bottom: 1.5rem; text-transform: uppercase;">
                 Trusted By Professionals At</p>
             <div
-                style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; opacity: 1; filter: grayscale(100%);">
+                style="display: flex; justify-content: center; gap: 5rem; flex-wrap: wrap; opacity: 1; filter: grayscale(100%); align-items: center;">
                 <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-BlackstoneBW@2x.png"
-                    alt="Blackstone" style="height: 45px;">
+                    alt="Blackstone" style="height: 60px; width: auto;">
                 <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-BankofAmericaBW@2x.png"
-                    alt="Bank of America" style="height: 45px;">
+                    alt="Bank of America" style="height: 60px; width: auto;">
                 <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-CreditSuisseBW@2x.png"
-                    alt="Credit Suisse" style="height: 45px;">
+                    alt="Credit Suisse" style="height: 60px; width: auto;">
                 <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-MorganStanleyBW@2x.png"
-                    alt="Morgan Stanley" style="height: 45px;">
+                    alt="Morgan Stanley" style="height: 60px; width: auto;">
                 <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-NBCBW@2x.png" alt="NBC"
-                    style="height: 45px;">
+                    style="height: 60px; width: auto;">
                 <img src="https://thewallstreetcoach.com/wp-content/uploads/elementor/thumbs/Logo-KingStreetBW@2x-q633tlt35bwrqzwhqh154psthbgtq0inbrwfpz6u0e.png"
-                    alt="King Street" style="height: 45px;">
+                    alt="King Street" style="height: 60px; width: auto;">
             </div>
         </div>
     </div>
