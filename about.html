@@ -10,10 +10,101 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <style>
+        .hero-about {
+            background: linear-gradient(rgba(11, 15, 25, 0.8), rgba(11, 15, 25, 0.9)), url('TWSCsite/Images/Kim-Ann-Curtin-Hero-Crop.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 4rem 0;
+        }
+
+        .bio-image img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 20px 20px 0 var(--gold);
+        }
+
+        .bio-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--navy);
+        }
+
+        .bio-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        .philosophy-banner {
+            background: var(--navy);
+            color: #fff;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .philosophy-quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-style: italic;
+            color: var(--gold);
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            line-height: 1.3;
+        }
+
+        .philosophy-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .credentials-clean {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .cred-item-clean {
+            border-top: 1px solid var(--gold);
+            padding-top: 1.5rem;
+        }
+
+        .cred-item-clean h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--navy);
+        }
+
+        .cred-item-clean p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bio-image {
+                order: -1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="scroll-progress" id="scrollProgress"></div>
     <!-- Global Navigation -->
     <nav class="nav-bar" id="mainNav">
         <div class="nav-container">
@@ -38,166 +129,97 @@
 
     <!-- Hero Section -->
     <section class="hero hero-about">
-        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-headline">I Watched Brilliance Burn Out. I Decided to Fix It.</h1>
+            <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <h1 class="hero-headline">I Watched Brilliance Burn Out.<br>I Decided to Fix It.</h1>
                 <p class="hero-subheadline">My journey from the trading floor to the intersection of neuroscience and
-                    performance.</p>
+                    elite performance.</p>
             </div>
         </div>
     </section>
 
-    <!-- The Story -->
+    <!-- The Story: Masters of the Universe -->
     <section class="section">
         <div class="container">
-            <div class="story-layout">
-                <div class="story-image">
-                    <picture>
-                        <source srcset="https://thewallstreetcoach.com/wp-content/uploads/2024/12/NY-Kim_Statue.jpg"
-                            type="image/jpeg">
-                        <img src="https://thewallstreetcoach.com/wp-content/uploads/2024/12/NY-Kim_Statue.jpg"
-                            alt="Kim Ann Curtin at NYSE" loading="lazy">
-                    </picture>
-                </div>
-                <div class="story-content">
+            <div class="bio-grid">
+                <div class="bio-content">
                     <h2>The "Master of the Universe" is a Myth.</h2>
                     <p>I spent over a decade in the trenches of finance. I saw the smartest men and women in the
                         room—people with Ivy League degrees and billion-dollar P&Ls—crumble under the weight of their
                         own psychology.</p>
-
                     <p>They were financially rich, but internally bankrupt. They were winning the trade, but losing the
                         war.</p>
-
                     <p><strong>In 2008, the facade cracked.</strong> The financial crisis didn't just break banks; it
                         broke people. I realized that the industry didn't need better algorithms. It needed a new
                         operating system for the human mind.</p>
-
                     <p>I left the floor to study the science of sustainable peak performance. I dove into neuroscience,
                         behavioral finance, and emotional intelligence. I didn't want to just "coach" traders; I wanted
-                        to bulletproof them.</p>
+                        to <em>bulletproof</em> them.</p>
+                </div>
+                <div class="bio-image">
+                    <img src="https://thewallstreetcoach.com/wp-content/uploads/2024/12/NY-Kim_Statue.jpg"
+                        alt="Kim Ann Curtin at NYSE">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The Book & Methodology -->
-    <section class="section section-dark">
+    <!-- Philosophy Section -->
+    <section class="philosophy-banner">
         <div class="container">
-            <div class="book-section">
-                <div class="book-mockup">
-                    <picture>
-                        <source srcset="https://twsc.wpengine.com/wp-content/uploads/2023/02/Group-43167@2x.png"
-                            type="image/png">
-                        <img src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Group-43167@2x.png"
-                            alt="Transforming Wall Street book cover" loading="lazy">
-                    </picture>
-                </div>
-                <div class="book-content">
-                    <h2>I Asked 50 Legends: "How Do You Survive?"</h2>
-                    <p>I didn't guess what works. I went to the source. I interviewed 50 of the world's most successful
-                        investors—including Bill Ackman and Jim Rogers—to decode their DNA.</p>
-
-                    <p>The result is <em>Transforming Wall Street</em>. It's not a memoir. It's a manual for survival
-                        and dominance.</p>
-
-                    <div class="five-practices">
-                        <h3>The 5 Pillars of the Elite:</h3>
-                        <ol>
-                            <li><strong>Self-Responsibility:</strong> You own every P&L swing. No excuses.</li>
-                            <li><strong>Emotional Agility:</strong> Feel the fear, place the trade anyway.</li>
-                            <li><strong>Strategic Patience:</strong> The sniper waits. The amateur sprays bullets.</li>
-                            <li><strong>Biological Optimization:</strong> Your body is your trading hardware. Upgrade
-                                it.</li>
-                            <li><strong>Conscious Purpose:</strong> Money without meaning is just a number.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
+            <span
+                style="font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 2px; opacity: 0.7; margin-bottom: 2rem; display: block;">The
+                Philosophy</span>
+            <blockquote class="philosophy-quote">
+                "The market is a mirror. If you don't like what you see in your P&L, look in the mirror."
+            </blockquote>
+            <p class="philosophy-text">
+                I don't teach technical analysis. You already know how to read a chart. I teach you how to read
+                yourself.<br><br>
+                My work is for the trader who is tired of self-sabotage. It's for the executive who wants to build a
+                legacy, not just a bank account. It's for the few who are ready to do the hard, internal work required
+                to become legendary.
+            </p>
         </div>
     </section>
 
-    <!-- Credentials -->
+    <!-- Authority / Credentials (No Emojis) -->
     <section class="section">
         <div class="container">
-            <h2>Authority Built on Results.</h2>
-
-            <div class="credentials-grid">
-                <div class="credential-card">
-                    <div class="credential-icon">📚</div>
+            <h2 style="text-align: center; margin-bottom: 2rem;">Authority Built on Results</h2>
+            <div class="credentials-clean">
+                <div class="cred-item-clean">
                     <h3>The Blueprint</h3>
-                    <p>Author of the industry-standard text on conscious trading performance.</p>
+                    <p>Author of <em>Transforming Wall Street</em>, the industry-standard text on conscious trading
+                        performance and sustainable success.</p>
                 </div>
-                <div class="credential-card">
-                    <div class="credential-icon">🏆</div>
+                <div class="cred-item-clean">
                     <h3>The Wall Street 50</h3>
-                    <p>Voted one of the top 50 change-makers transforming the financial industry.</p>
+                    <p>Voted one of the top 50 change-makers transforming the financial industry, alongside industry
+                        titans.</p>
                 </div>
-                <div class="credential-card">
-                    <div class="credential-icon">💼</div>
+                <div class="cred-item-clean">
                     <h3>Battle Tested</h3>
-                    <p>18+ years coaching inside the world's top hedge funds and banks.</p>
+                    <p>18+ years coaching inside the world's top hedge funds and banks. This isn't theory; it's field
+                        experience.</p>
                 </div>
-                <div class="credential-card">
-                    <div class="credential-icon">🎙️</div>
+                <div class="cred-item-clean">
                     <h3>The Network</h3>
-                    <p>Host of <em>The Wall Street Coach Podcast</em>, featuring the world's top traders.</p>
+                    <p>Host of <em>The Wall Street Coach Podcast</em>, featuring in-depth deconstructions of the world's
+                        top traders.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured In -->
-    <section class="section section-dark">
-        <div class="container">
-            <h2>Trusted By The Establishment</h2>
-            <div class="featured-logos">
-                <img class="client-logo"
-                    src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-BlackstoneBW@2x.png"
-                    alt="Blackstone">
-                <img class="client-logo"
-                    src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-BankofAmericaBW@2x.png"
-                    alt="Bank of America">
-                <img class="client-logo"
-                    src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-CreditSuisseBW@2x.png"
-                    alt="Credit Suisse">
-                <img class="client-logo"
-                    src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-MorganStanleyBW@2x.png"
-                    alt="Morgan Stanley">
-                <img class="client-logo" src="https://twsc.wpengine.com/wp-content/uploads/2023/02/Logo-NBCBW@2x.png"
-                    alt="NBC">
-            </div>
-        </div>
-    </section>
-
-    <!-- Philosophy -->
-    <section class="section">
-        <div class="container">
-            <h2>The Philosophy</h2>
-            <div class="philosophy-content">
-                <blockquote class="philosophy-quote">
-                    "The market is a mirror. If you don't like what you see in your P&L, look in the mirror."
-                </blockquote>
-
-                <p>I don't teach technical analysis. You already know how to read a chart. I teach you how to read
-                    yourself.</p>
-
-                <p>My work is for the trader who is tired of self-sabotage. It's for the executive who wants to build a
-                    legacy, not just a bank account. It's for the few who are ready to do the hard, internal work
-                    required to become legendary.</p>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="section section-dark">
-        <div class="container cta-center">
-            <h2>Ready to Work Together?</h2>
-            <p class="section-intro">Discover how we can optimize your performance and build sustainable success.</p>
-            <div class="cta-buttons">
-                <a href="tpi.html" class="btn-cta">Take the TPI Assessment</a>
-                <a href="coaching.html" class="btn-secondary">Explore Coaching Options</a>
-                <a href="podcast.html" class="btn-secondary">Listen to My Story</a>
+    <section class="section" style="background: #f8f9fa; text-align: center;">
+        <div class="container" style="max-width: 800px;">
+            <h2>Ready to Optimize Your Performance?</h2>
+            <p class="section-intro">Your strategy is fine. Your psychology is the bottleneck. Let's fix it.</p>
+            <div style="margin-top: 2rem;">
+                <a href="tpi.html" class="btn-primary" style="margin: 0 1rem;">Take the TPI Assessment</a>
+                <a href="coaching.html" class="btn-secondary" style="margin: 0 1rem;">Work With Kim</a>
             </div>
         </div>
     </section>
@@ -227,8 +249,6 @@
             </div>
         </div>
     </footer>
-
-    <a class="floating-action-btn" href="tpi.html" aria-label="Get your TPI score">⚡</a>
 
     <script src="script.js"></script>
 </body>
