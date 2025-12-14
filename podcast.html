@@ -319,46 +319,99 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Categories & Searchable Grid -->
+    <!-- Categories & Searchable Grid (Light Background) -->
+    <section class="section">
+        <div class="container">
             <h3
-                style="color: var(--gold); margin-bottom: 2rem; text-align: center; font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 1rem; letter-spacing: 2px;">
+                style="color: var(--navy); margin-bottom: 2rem; text-align: center; font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 1rem; letter-spacing: 2px;">
                 Browse Topics</h3>
 
             <div class="category-tabs">
-                <button class="category-tab active" onclick="filterEpisodes('all')">All Episodes</button>
-                <button class="category-tab" onclick="filterEpisodes('wizards')">Market Wizards</button>
-                <button class="category-tab" onclick="filterEpisodes('neuro')">Neuroscience</button>
-                <button class="category-tab" onclick="filterEpisodes('mindset')">Mindset & Psychology</button>
+                <button class="category-tab active" onclick="filterEpisodes('all')"
+                    style="color: var(--navy); border-color: rgba(0,0,0,0.2);">All Episodes</button>
+                <button class="category-tab" onclick="filterEpisodes('wizards')"
+                    style="color: var(--navy); border-color: rgba(0,0,0,0.2);">Market Wizards</button>
+                <button class="category-tab" onclick="filterEpisodes('neuro')"
+                    style="color: var(--navy); border-color: rgba(0,0,0,0.2);">Neuroscience</button>
+                <button class="category-tab" onclick="filterEpisodes('mindset')"
+                    style="color: var(--navy); border-color: rgba(0,0,0,0.2);">Mindset & Psychology</button>
             </div>
+
+            <style>
+                .category-tab.active,
+                .category-tab:hover {
+                    background: var(--navy) !important;
+                    color: white !important;
+                    border-color: var(--navy) !important;
+                }
+
+                .episode-card-compact {
+                    background: #fff;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                }
+
+                .episode-card-compact:hover {
+                    background: #fff;
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                }
+
+                .episode-thumb-small {
+                    height: 160px;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 6px;
+                    margin-bottom: 1rem;
+                }
+            </style>
 
             <div class="episodes-grid-compact" style="text-align: left;">
                 <!-- Filterable Items -->
                 <div class="episode-card-compact category-item" data-category="wizards">
-                    <span style="color: var(--gold); font-size: 0.8rem;">Market Wizards</span>
-                    <h4 style="color: #fff; margin: 0.5rem 0;">Market Wizards Secrets with George Coyle</h4>
-                    <a href="#" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Listen Episode →</a>
+                    <div class="episode-thumb-small"
+                        style="background-image: url('https://thewallstreetcoach.com/wp-content/uploads/2024/02/wall-street-coach-podcast.jpg');">
+                    </div>
+                    <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700;">Market Wizards</span>
+                    <h4 style="color: var(--navy); margin: 0.5rem 0;">Market Wizards Secrets with George Coyle</h4>
+                    <a href="https://podcasts.apple.com/us/podcast/market-wizards-secrets-revealed-with-george-coyle/id1480748536?i=1000677495000"
+                        target="_blank" style="color: var(--text-secondary); font-size: 0.9rem;">Listen Episode →</a>
                 </div>
                 <div class="episode-card-compact category-item" data-category="mindset">
-                    <span style="color: var(--gold); font-size: 0.8rem;">Psychology</span>
-                    <h4 style="color: #fff; margin: 0.5rem 0;">Why 99% of Traders Journal (Edgewonk)</h4>
-                    <a href="#" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Listen Episode →</a>
+                    <div class="episode-thumb-small"
+                        style="background-image: url('https://thewallstreetcoach.com/wp-content/uploads/2024/02/wall-street-coach-podcast.jpg');">
+                    </div>
+                    <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700;">Psychology</span>
+                    <h4 style="color: var(--navy); margin: 0.5rem 0;">Why 99% of Traders Journal (Edgewonk)</h4>
+                    <a href="https://podcasts.apple.com/us/podcast/why-99-of-profitable-traders-use-a-journal-with-edgewonk/id1480748536?i=1000673400000"
+                        target="_blank" style="color: var(--text-secondary); font-size: 0.9rem;">Listen Episode →</a>
                 </div>
                 <div class="episode-card-compact category-item" data-category="mindset">
-                    <span style="color: var(--gold); font-size: 0.8rem;">Mindset</span>
-                    <h4 style="color: #fff; margin: 0.5rem 0;">Mastering Risk with Gregg Sciabica</h4>
-                    <a href="#" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Listen Episode →</a>
+                    <div class="episode-thumb-small"
+                        style="background-image: url('https://thewallstreetcoach.com/wp-content/uploads/2024/02/wall-street-coach-podcast.jpg');">
+                    </div>
+                    <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700;">Mindset</span>
+                    <h4 style="color: var(--navy); margin: 0.5rem 0;">Mastering Risk with Gregg Sciabica</h4>
+                    <a href="https://podcasts.apple.com/us/podcast/mastering-risk-and-self-awareness-with-gregg-sciabica/id1480748536?i=1000660000000"
+                        target="_blank" style="color: var(--text-secondary); font-size: 0.9rem;">Listen Episode →</a>
                 </div>
                 <div class="episode-card-compact category-item" data-category="neuro">
-                    <span style="color: var(--gold); font-size: 0.8rem;">Neuroscience</span>
-                    <h4 style="color: #fff; margin: 0.5rem 0;">The Leader's Brain w/ Dr. Michael Platt</h4>
-                    <a href="#" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Listen Episode →</a>
+                    <div class="episode-thumb-small"
+                        style="background-image: url('https://thewallstreetcoach.com/wp-content/uploads/2024/02/wall-street-coach-podcast.jpg');">
+                    </div>
+                    <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700;">Neuroscience</span>
+                    <h4 style="color: var(--navy); margin: 0.5rem 0;">The Leader's Brain w/ Dr. Michael Platt</h4>
+                    <a href="https://podcasts.apple.com/us/podcast/mastering-risk-with-neuroscience-with-dr-michael-platt/id1480748536"
+                        target="_blank" style="color: var(--text-secondary); font-size: 0.9rem;">Listen Episode →</a>
                 </div>
             </div>
 
-            <div style="margin-top: 3rem;">
+            <div style="margin-top: 3rem; text-align: center;">
                 <a href="https://thewallstreetcoach.com/twsc-podcast/" class="btn-secondary"
-                    style="border-color: #fff; color: #fff;">View Full Archive</a>
+                    style="border-color: var(--navy); color: var(--navy);">View Full Archive</a>
             </div>
         </div>
     </section>
