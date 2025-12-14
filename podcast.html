@@ -60,11 +60,68 @@
         }
 
         .podcast-strip {
-            background: #000;
+            background-color: #08333A;
             color: #fff;
-            padding: 4rem 0;
+            padding: 6rem 0;
             text-align: center;
             margin-top: 4rem;
+        }
+
+        .featured-legends-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .legend-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .legend-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .legend-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .legend-content {
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .category-tab {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .category-tab.active,
+        .category-tab:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--navy);
+            font-weight: 600;
         }
 
         .episodes-grid-compact {
@@ -196,38 +253,103 @@
     <!-- Podcast Section (SEO Value) -->
     <section class="podcast-strip">
         <div class="container">
-            <h2 style="color: #fff; margin-bottom: 1rem;">The Wall Street Coach Podcast</h2>
+            <h2 style="color: #fff; margin-bottom: 0.5rem;">The Wall Street Coach Podcast</h2>
             <p style="color: rgba(255,255,255,0.7); max-width: 700px; margin: 0 auto 3rem auto;">Deconstructing the
-                psychology of market wizards. Yes, keeping recent episodes here adds significant SEO value by providing
-                fresh, keyword-rich content relevant to your niche.</p>
+                psychology of market wizards.</p>
 
-            <div class="subscribe-buttons" style="justify-content: center; margin-bottom: 3rem;">
+            <div class="subscribe-buttons" style="justify-content: center; margin-bottom: 4rem;">
                 <a href="https://podcasts.apple.com/us/podcast/the-wall-street-coach-with-kim-ann-curtin/id1480748536"
-                    target="_blank" class="subscribe-btn apple">Apple Podcasts</a>
+                    target="_blank" class="subscribe-btn apple">
+                    <span style="margin-right:0.5rem"></span>Apple Podcasts
+                </a>
                 <a href="https://open.spotify.com/show/14yIEC46UAHIoO7wsJUAN1" target="_blank"
-                    class="subscribe-btn spotify">Spotify</a>
-                <a href="https://www.youtube.com/@thewallstreetcoach" target="_blank"
-                    class="subscribe-btn youtube">YouTube</a>
+                    class="subscribe-btn spotify">
+                    <span style="margin-right:0.5rem">🟢</span>Spotify
+                </a>
+                <a href="https://www.youtube.com/@thewallstreetcoach" target="_blank" class="subscribe-btn youtube">
+                    <span style="margin-right:0.5rem">▶</span>YouTube
+                </a>
             </div>
 
-            <!-- Compact Latest Episodes -->
+            <!-- Featured Legends -->
+            <h3
+                style="color: var(--gold); margin-bottom: 2rem; text-align: center; font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 1rem; letter-spacing: 2px;">
+                Featured Legends</h3>
+            <div class="featured-legends-grid">
+                <!-- Matthew McConaughey -->
+                <div class="legend-card">
+                    <div class="legend-image"
+                        style="background-image: url('https://thewallstreetcoach.com/wp-content/uploads/2020/10/Matthew-McConaughey-Podcast-Thumbnail-1024x576.jpg');">
+                    </div>
+                    <div class="legend-content">
+                        <h4 style="color:white; margin-bottom: 0.5rem;">Matthew McConaughey</h4>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">Greenlights, Resilience, and
+                            "Relative Truth"</p>
+                        <a href="https://thewallstreetcoach.com/ep-60-matthew-mcconaughey/" target="_blank"
+                            style="display:inline-block; margin-top:1rem; color: var(--gold); font-size: 0.9rem;">Listen
+                            Episode →</a>
+                    </div>
+                </div>
+                <!-- Mike Bellafiore -->
+                <div class="legend-card">
+                    <div class="legend-image"
+                        style="background-image: url('https://thewallstreetcoach.com/wp-content/uploads/2021/04/Mike-Bellafiore-SMB-Capital-The-Wall-Street-Coach-Podcast-Kim-Ann-Curtin.jpg');">
+                    </div>
+                    <div class="legend-content">
+                        <h4 style="color:white; margin-bottom: 0.5rem;">Mike Bellafiore</h4>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">Co-Founder of SMB Capital on "One
+                            Good Trade"</p>
+                        <a href="https://thewallstreetcoach.com/ep-81-mike-bellafiore/" target="_blank"
+                            style="display:inline-block; margin-top:1rem; color: var(--gold); font-size: 0.9rem;">Listen
+                            Episode →</a>
+                    </div>
+                </div>
+                <!-- Jason Shapiro -->
+                <div class="legend-card">
+                    <div class="legend-image"
+                        style="background-image: url('https://thewallstreetcoach.com/wp-content/uploads/2021/11/Jason-Shapiro-The-Wall-Street-Coach-Podcast.jpg');">
+                    </div>
+                    <div class="legend-content">
+                        <h4 style="color:white; margin-bottom: 0.5rem;">Jason Shapiro</h4>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">Market Wizard on Contrarian Trading
+                        </p>
+                        <a href="https://thewallstreetcoach.com/ep-95-jason-shapiro/" target="_blank"
+                            style="display:inline-block; margin-top:1rem; color: var(--gold); font-size: 0.9rem;">Listen
+                            Episode →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories & Searchable Grid -->
+            <h3
+                style="color: var(--gold); margin-bottom: 2rem; text-align: center; font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 1rem; letter-spacing: 2px;">
+                Browse Topics</h3>
+
+            <div class="category-tabs">
+                <button class="category-tab active" onclick="filterEpisodes('all')">All Episodes</button>
+                <button class="category-tab" onclick="filterEpisodes('wizards')">Market Wizards</button>
+                <button class="category-tab" onclick="filterEpisodes('neuro')">Neuroscience</button>
+                <button class="category-tab" onclick="filterEpisodes('mindset')">Mindset & Psychology</button>
+            </div>
+
             <div class="episodes-grid-compact" style="text-align: left;">
-                <div class="episode-card-compact">
-                    <span style="color: var(--gold); font-size: 0.8rem;">New Episode</span>
+                <!-- Filterable Items -->
+                <div class="episode-card-compact category-item" data-category="wizards">
+                    <span style="color: var(--gold); font-size: 0.8rem;">Market Wizards</span>
                     <h4 style="color: #fff; margin: 0.5rem 0;">Market Wizards Secrets with George Coyle</h4>
                     <a href="#" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Listen Episode →</a>
                 </div>
-                <div class="episode-card-compact">
+                <div class="episode-card-compact category-item" data-category="mindset">
                     <span style="color: var(--gold); font-size: 0.8rem;">Psychology</span>
                     <h4 style="color: #fff; margin: 0.5rem 0;">Why 99% of Traders Journal (Edgewonk)</h4>
                     <a href="#" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Listen Episode →</a>
                 </div>
-                <div class="episode-card-compact">
+                <div class="episode-card-compact category-item" data-category="mindset">
                     <span style="color: var(--gold); font-size: 0.8rem;">Mindset</span>
                     <h4 style="color: #fff; margin: 0.5rem 0;">Mastering Risk with Gregg Sciabica</h4>
                     <a href="#" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Listen Episode →</a>
                 </div>
-                <div class="episode-card-compact">
+                <div class="episode-card-compact category-item" data-category="neuro">
                     <span style="color: var(--gold); font-size: 0.8rem;">Neuroscience</span>
                     <h4 style="color: #fff; margin: 0.5rem 0;">The Leader's Brain w/ Dr. Michael Platt</h4>
                     <a href="#" style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Listen Episode →</a>
@@ -240,6 +362,30 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function filterEpisodes(category) {
+            // Update active tab
+            document.querySelectorAll('.category-tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.textContent.toLowerCase().includes(category === 'all' ? 'all' : category) ||
+                    (category === 'wizards' && tab.textContent.includes('Wizards')) ||
+                    (category === 'neuro' && tab.textContent.includes('Neuroscience')) ||
+                    (category === 'mindset' && tab.textContent.includes('Mindset'))) {
+                    tab.classList.add('active');
+                }
+            });
+
+            // Filter items
+            document.querySelectorAll('.category-item').forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
 
     <!-- Footer -->
     <footer class="footer">
