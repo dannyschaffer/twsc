@@ -419,7 +419,7 @@ const createEbookPopup = () => {
                         </svg>
                     </a>
                     <button class="ebook-popup-close" aria-label="Close popup">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
                         </svg>
@@ -463,11 +463,12 @@ const createEbookPopup = () => {
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                gap: 2rem;
+                justify-content: center;
+                gap: 3rem;
             }
             .ebook-popup-left {
-                flex: 1;
+                flex: 0 1 auto;
+                text-align: center;
             }
             .ebook-popup-badge {
                 display: inline-block;
@@ -497,7 +498,7 @@ const createEbookPopup = () => {
             .ebook-popup-actions {
                 display: flex;
                 align-items: center;
-                gap: 1rem;
+                gap: 1.5rem;
                 flex-shrink: 0;
             }
             .ebook-popup-btn {
@@ -526,16 +527,18 @@ const createEbookPopup = () => {
                 transform: translateX(3px);
             }
             .ebook-popup-close {
-                background: rgba(255,255,255,0.05);
-                border: 1px solid rgba(255,255,255,0.1);
-                border-radius: 6px;
-                color: rgba(255,255,255,0.5);
+                background: rgba(255,255,255,0.08);
+                border: 1px solid rgba(255,255,255,0.15);
+                border-radius: 8px;
+                color: rgba(255,255,255,0.6);
                 cursor: pointer;
-                padding: 0.5rem;
+                padding: 0.65rem;
                 transition: all 0.3s;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                width: 42px;
+                height: 42px;
             }
             .ebook-popup-close:hover {
                 background: rgba(255,255,255,0.1);
