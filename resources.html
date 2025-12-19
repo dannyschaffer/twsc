@@ -38,6 +38,7 @@
             box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
             transform: rotate(-3deg);
             transition: transform 0.3s ease;
+            border-radius: 8px;
         }
 
         .book-image img:hover {
@@ -47,7 +48,7 @@
         .free-tool-card {
             background: #F9F9F7;
             border: 1px solid rgba(0, 0, 0, 0.05);
-            padding: 2.5rem;
+            padding: 1.5rem;
             border-radius: 12px;
             transition: transform 0.3s ease, border-color 0.3s ease;
             text-align: left;
@@ -56,6 +57,48 @@
         .free-tool-card:hover {
             transform: translateY(-5px);
             border-color: var(--gold);
+        }
+
+        .free-tool-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .ebook-card {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .ebook-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .ebook-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .ebooks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
         }
 
         @media (max-width: 768px) {
@@ -136,29 +179,120 @@
                 <div class="resources-grid">
                     <!-- Quiz -->
                     <div class="free-tool-card">
+                        <img src="TWSCsite/Images/cover-quiz.png" alt="Attached to the Trade Quiz">
                         <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Attached to the Trade Quiz</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: var(--text-secondary);">Discover your
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">Discover your
                             specific "Trader Archetype" and your top psychological blind spot in 60 seconds.</p>
                         <a href="https://attachedtothetrade.com/" target="_blank"
                             style="color: var(--gold); font-weight: 700; text-decoration: none;">Take Quiz →</a>
                     </div>
 
-                    <!-- PDF 1 -->
+                    <!-- Universal Needs Matrix -->
                     <div class="free-tool-card">
+                        <img src="TWSCsite/Images/cover-universal-needs.png" alt="Universal Needs Matrix">
                         <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Universal Needs Matrix</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: var(--text-secondary);">Align your
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">Align your
                             trading goals with your deeper psychological needs to prevent self-sabotage.</p>
                         <a href="TWSCsite/Resources/Universal-Needs-Matrix.pdf" target="_blank"
                             style="color: var(--gold); font-weight: 700; text-decoration: none;">Download PDF →</a>
                     </div>
 
-                    <!-- PDF 2 -->
+                    <!-- Trader Hero's Journey -->
                     <div class="free-tool-card">
+                        <img src="TWSCsite/Images/cover-hero-journey.png" alt="Trader Hero's Journey">
                         <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Trader Hero's Journey</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: var(--text-secondary);">Map exactly
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">Map exactly
                             where you are in your career lifecycle and what challenges lie ahead.</p>
                         <a href="TWSCsite/Resources/Trader-Heros-Journey.pdf" target="_blank"
                             style="color: var(--gold); font-weight: 700; text-decoration: none;">Download PDF →</a>
+                    </div>
+
+                    <!-- Trader Check-In -->
+                    <div class="free-tool-card">
+                        <img src="TWSCsite/Images/cover-trader-checkin.png" alt="Trader Check-In">
+                        <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Trader Check-In</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">A daily
+                            psychology worksheet to track your mental state and trading performance.</p>
+                        <a href="https://coachingproducts.s3.us-east-2.amazonaws.com/TWSC+Trader+Check-In.pdf"
+                            target="_blank"
+                            style="color: var(--gold); font-weight: 700; text-decoration: none;">Download PDF →</a>
+                    </div>
+
+                    <!-- Pre-Market Checklist -->
+                    <div class="free-tool-card">
+                        <img src="TWSCsite/Images/cover-premarket-checklist.png" alt="Pre-Market Checklist">
+                        <h3 style="color: var(--navy); margin-bottom: 0.5rem;">Pre-Market Checklist</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">Prepare your
+                            mind before the market opens with this comprehensive morning routine guide.</p>
+                        <a href="https://coachingproducts.s3.us-east-2.amazonaws.com/Pre-Market+Checklist+(1).pdf"
+                            target="_blank"
+                            style="color: var(--gold); font-weight: 700; text-decoration: none;">Download PDF →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Books Series -->
+            <div style="margin-top: 5rem;">
+                <h2 style="text-align: center; margin-bottom: 1rem; color: var(--navy);">Trading Psychology E-Book
+                    Series</h2>
+                <p
+                    style="text-align: center; margin-bottom: 3rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Deep dives into the psychological patterns that make or break traders.</p>
+                <div class="ebooks-grid">
+                    <!-- Book 1: EGO and Inner Gremlins -->
+                    <div class="ebook-card">
+                        <img src="TWSCsite/Images/cover-ego-gremlins.png" alt="EGO and Inner Gremlins">
+                        <span
+                            style="color: var(--gold); font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px;">Book
+                            1</span>
+                        <h3 style="color: var(--navy); margin: 0.5rem 0;">EGO and Inner Gremlins</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">Understand and
+                            overcome the ego-driven patterns that sabotage your trading decisions.</p>
+                        <a href="https://e-bookstwsc.s3.us-east-2.amazonaws.com/Book+1_EGO+and+Inner+Gremlins.pdf"
+                            target="_blank"
+                            style="color: var(--gold); font-weight: 700; text-decoration: none;">Download E-Book →</a>
+                    </div>
+
+                    <!-- Book 2: Deconstructing Greed and Fear -->
+                    <div class="ebook-card">
+                        <img src="TWSCsite/Images/cover-greed-fear.png" alt="Deconstructing Greed and Fear of Failure">
+                        <span
+                            style="color: var(--gold); font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px;">Book
+                            2</span>
+                        <h3 style="color: var(--navy); margin: 0.5rem 0;">Deconstructing Greed & Fear</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">Learn to
+                            recognize and manage the two most powerful emotions in trading.</p>
+                        <a href="https://e-bookstwsc.s3.us-east-2.amazonaws.com/Book+2_+Deconstructing+Greed+and+Fear+of+Failure.pdf"
+                            target="_blank"
+                            style="color: var(--gold); font-weight: 700; text-decoration: none;">Download E-Book →</a>
+                    </div>
+
+                    <!-- Book 3: Navigating FOMO -->
+                    <div class="ebook-card">
+                        <img src="TWSCsite/Images/cover-fomo-loss.png" alt="Navigating FOMO and Comfort With Loss">
+                        <span
+                            style="color: var(--gold); font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px;">Book
+                            3</span>
+                        <h3 style="color: var(--navy); margin: 0.5rem 0;">Navigating FOMO & Loss</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">Master the art
+                            of patience and develop a healthy relationship with inevitable losses.</p>
+                        <a href="https://e-bookstwsc.s3.us-east-2.amazonaws.com/Book+3_+Navigating+FOMO+and+Comfort+With+Loss.pdf"
+                            target="_blank"
+                            style="color: var(--gold); font-weight: 700; text-decoration: none;">Download E-Book →</a>
+                    </div>
+
+                    <!-- Book 4: Discipline and Finding Your Edge -->
+                    <div class="ebook-card">
+                        <img src="TWSCsite/Images/cover-discipline-edge.png" alt="Discipline and Finding Your Edge">
+                        <span
+                            style="color: var(--gold); font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px;">Book
+                            4</span>
+                        <h3 style="color: var(--navy); margin: 0.5rem 0;">Discipline & Finding Your Edge</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">Build
+                            unshakeable discipline and discover your unique competitive advantage.</p>
+                        <a href="https://e-bookstwsc.s3.us-east-2.amazonaws.com/Book+4_+Discipline+and+Finding+Your+Edge.pdf"
+                            target="_blank"
+                            style="color: var(--gold); font-weight: 700; text-decoration: none;">Download E-Book →</a>
                     </div>
                 </div>
             </div>
