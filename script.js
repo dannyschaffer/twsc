@@ -414,19 +414,14 @@ const createEbookPopup = () => {
                     <p class="ebook-popup-subtitle">4 essential guides to master discipline, overcome fear & find your edge.</p>
                 </div>
                 <div class="ebook-popup-col ebook-popup-col-right">
-                    <a href="resources.html" class="ebook-popup-btn">
-                        <span>Claim Free Bundle</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <button class="ebook-popup-close" aria-label="Close popup">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
+                    <a href="resources.html" class="ebook-popup-btn">Claim Free Bundle</a>
                 </div>
+                <button class="ebook-popup-close" aria-label="Close popup">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </div>
     `;
@@ -534,12 +529,6 @@ const createEbookPopup = () => {
                 transform: translateY(-2px);
                 box-shadow: 0 6px 20px rgba(201, 162, 39, 0.4);
             }
-            .ebook-popup-btn svg {
-                transition: transform 0.3s;
-            }
-            .ebook-popup-btn:hover svg {
-                transform: translateX(3px);
-            }
             .ebook-popup-close {
                 background: rgba(255,255,255,0.08);
                 border: 1px solid rgba(255,255,255,0.15);
@@ -553,6 +542,8 @@ const createEbookPopup = () => {
                 justify-content: center;
                 width: 42px;
                 height: 42px;
+                margin-left: 1.5rem;
+                flex-shrink: 0;
             }
             .ebook-popup-close:hover {
                 background: rgba(255,255,255,0.1);
