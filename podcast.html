@@ -52,46 +52,97 @@
         .category-tabs {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 0.75rem;
             margin-bottom: 2rem;
             flex-wrap: wrap;
         }
 
         .category-tab {
             background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #fff;
-            padding: 0.5rem 1.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            color: var(--navy);
+            padding: 0.5rem 1.25rem;
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s;
+            font-size: 0.9rem;
         }
 
         .category-tab.active,
         .category-tab:hover {
-            background: var(--gold);
-            border-color: var(--gold);
-            color: var(--navy);
+            background: var(--navy) !important;
+            border-color: var(--navy) !important;
+            color: white !important;
             font-weight: 600;
         }
 
-        .episodes-grid-compact {
+        .episodes-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
-        .episode-card-compact {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-            transition: background 0.3s;
+        .episode-card {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .episode-card-compact:hover {
-            background: rgba(255, 255, 255, 0.1);
+        .episode-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .episode-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .episode-card-content {
+            padding: 1.5rem;
+        }
+
+        .episode-number {
+            color: var(--gold);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .episode-title {
+            color: var(--navy);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .episode-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .episode-link {
+            color: var(--gold);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .episode-link:hover {
+            text-decoration: underline;
         }
 
         .subscribe-icon {
@@ -105,38 +156,33 @@
 
         .browse-section {
             background-color: #F9F9F7;
+            padding: 5rem 0;
         }
 
-        .browse-section .category-tab {
+        .load-more-btn {
+            display: block;
+            margin: 3rem auto 0;
+            padding: 1rem 2.5rem;
+            background: var(--navy);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .load-more-btn:hover {
+            background: var(--gold);
             color: var(--navy);
-            border-color: rgba(0, 0, 0, 0.2);
         }
 
-        .browse-section .category-tab.active,
-        .browse-section .category-tab:hover {
-            background: var(--navy) !important;
-            color: white !important;
-            border-color: var(--navy) !important;
-        }
-
-        .browse-section .episode-card-compact {
-            background: #fff;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .browse-section .episode-card-compact:hover {
-            background: #fff;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-        }
-
-        .episode-thumb-small {
-            height: 160px;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            border-radius: 6px;
-            margin-bottom: 1rem;
+        .episode-count {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-top: 1rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -169,7 +215,7 @@
         <div class="container">
             <h1 style="color: #fff; margin-bottom: 0.5rem;">The Wall Street Coach Podcast</h1>
             <p style="color: rgba(255,255,255,0.7); max-width: 700px; margin: 0 auto 3rem auto;">Deconstructing the
-                psychology of market wizards.</p>
+                psychology of market wizards. 110+ episodes of insights from legendary traders.</p>
 
             <div class="subscribe-buttons"
                 style="justify-content: center; margin-bottom: 4rem; gap: 1rem; display: flex; flex-wrap: wrap;">
@@ -269,85 +315,94 @@
         </div>
     </section>
 
-    <!-- Categories & Searchable Grid (Light Background) -->
-    <section class="section browse-section">
+    <!-- All Episodes Section -->
+    <section class="browse-section">
         <div class="container">
-            <h3
-                style="color: var(--navy); margin-bottom: 2rem; text-align: center; font-family: 'Space Mono', monospace; text-transform: uppercase; font-size: 1rem; letter-spacing: 2px;">
-                Browse Topics</h3>
+            <h2 style="color: var(--navy); margin-bottom: 1rem; text-align: center;">All Episodes</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">Browse our complete
+                library of 110+ episodes</p>
 
             <div class="category-tabs">
                 <button class="category-tab active" onclick="filterEpisodes('all')">All Episodes</button>
                 <button class="category-tab" onclick="filterEpisodes('wizards')">Market Wizards</button>
-                <button class="category-tab" onclick="filterEpisodes('neuro')">Neuroscience</button>
                 <button class="category-tab" onclick="filterEpisodes('mindset')">Mindset & Psychology</button>
+                <button class="category-tab" onclick="filterEpisodes('neuro')">Neuroscience</button>
+                <button class="category-tab" onclick="filterEpisodes('success')">Success Stories</button>
+                <button class="category-tab" onclick="filterEpisodes('strategy')">Strategy & Tools</button>
             </div>
 
-            <div class="episodes-grid-compact" style="text-align: left;">
-                <!-- Filterable Items -->
-                <div class="episode-card-compact category-item" data-category="wizards">
-                    <img src="TWSCsite/Images/Podcast-Lives.jpeg" class="episode-thumb-small" alt="Episode Thumbnail"
-                        style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem;">
-                    <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700;">Market Wizards</span>
-                    <h4 style="color: var(--navy); margin: 0.5rem 0;">Market Wizards Secrets with George Coyle</h4>
-                    <a href="https://podcasts.apple.com/us/podcast/market-wizards-secrets-revealed-with-george-coyle/id1480748536?i=1000677495000"
-                        target="_blank" style="color: var(--text-secondary); font-size: 0.9rem;">Listen Episode →</a>
-                </div>
-                <div class="episode-card-compact category-item" data-category="mindset">
-                    <img src="TWSCsite/Images/Podcast-Lives.jpeg" class="episode-thumb-small" alt="Episode Thumbnail"
-                        style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem;">
-                    <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700;">Psychology</span>
-                    <h4 style="color: var(--navy); margin: 0.5rem 0;">Why 99% of Traders Journal (Edgewonk)</h4>
-                    <a href="https://podcasts.apple.com/us/podcast/why-99-of-profitable-traders-use-a-journal-with-edgewonk/id1480748536?i=1000673400000"
-                        target="_blank" style="color: var(--text-secondary); font-size: 0.9rem;">Listen Episode →</a>
-                </div>
-                <div class="episode-card-compact category-item" data-category="mindset">
-                    <img src="TWSCsite/Images/Podcast-Lives.jpeg" class="episode-thumb-small" alt="Episode Thumbnail"
-                        style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem;">
-                    <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700;">Mindset</span>
-                    <h4 style="color: var(--navy); margin: 0.5rem 0;">Mastering Risk with Gregg Sciabica</h4>
-                    <a href="https://podcasts.apple.com/us/podcast/mastering-risk-and-self-awareness-with-gregg-sciabica/id1480748536?i=1000660000000"
-                        target="_blank" style="color: var(--text-secondary); font-size: 0.9rem;">Listen Episode →</a>
-                </div>
-                <div class="episode-card-compact category-item" data-category="neuro">
-                    <img src="TWSCsite/Images/Podcast-Lives.jpeg" class="episode-thumb-small" alt="Episode Thumbnail"
-                        style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px; margin-bottom: 1rem;">
-                    <span style="color: var(--gold); font-size: 0.8rem; font-weight: 700;">Neuroscience</span>
-                    <h4 style="color: var(--navy); margin: 0.5rem 0;">The Leader's Brain w/ Dr. Michael Platt</h4>
-                    <a href="https://podcasts.apple.com/us/podcast/mastering-risk-with-neuroscience-with-dr-michael-platt/id1480748536"
-                        target="_blank" style="color: var(--text-secondary); font-size: 0.9rem;">Listen Episode →</a>
-                </div>
+            <div class="episodes-grid" id="episodesGrid">
+                <!-- Episodes will be loaded dynamically -->
             </div>
+
+            <p class="episode-count" id="episodeCount"></p>
+
+            <button class="load-more-btn" id="loadMoreBtn" onclick="loadMoreEpisodes()">Load More Episodes</button>
 
             <div style="margin-top: 3rem; text-align: center;">
                 <a href="https://thewallstreetcoach.com/twsc-podcast/" class="btn-secondary"
-                    style="border-color: var(--navy); color: var(--navy);">View Full Archive</a>
+                    style="border-color: var(--navy); color: var(--navy);">View Full Archive on Website</a>
             </div>
         </div>
     </section>
 
+    <!-- Podcast Data -->
+    <script src="podcast-data.js"></script>
+
     <script>
+        let currentFilter = 'all';
+        let displayedCount = 12;
+        const INCREMENT = 12;
+
+        function renderEpisodes() {
+            const grid = document.getElementById('episodesGrid');
+            const filtered = currentFilter === 'all'
+                ? podcastEpisodes
+                : podcastEpisodes.filter(ep => ep.category === currentFilter);
+
+            const toShow = filtered.slice(0, displayedCount);
+
+            grid.innerHTML = toShow.map(ep => `
+                <div class="episode-card" data-category="${ep.category}">
+                    <img src="${ep.image}" alt="${ep.title}" onerror="this.src='TWSCsite/Images/Podcast-Lives.jpeg'">
+                    <div class="episode-card-content">
+                        <div class="episode-number">Episode ${ep.ep}</div>
+                        <h3 class="episode-title">${ep.title}</h3>
+                        <p class="episode-description">${ep.description}</p>
+                        <a href="${ep.link}" target="_blank" class="episode-link">Listen Episode →</a>
+                    </div>
+                </div>
+            `).join('');
+
+            // Update count
+            document.getElementById('episodeCount').textContent =
+                `Showing ${toShow.length} of ${filtered.length} episodes`;
+
+            // Show/hide load more button
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            loadMoreBtn.style.display = displayedCount >= filtered.length ? 'none' : 'block';
+        }
+
         function filterEpisodes(category) {
+            currentFilter = category;
+            displayedCount = 12;
+
             // Update active tab
             document.querySelectorAll('.category-tab').forEach(tab => {
                 tab.classList.remove('active');
-                if (tab.textContent.toLowerCase().includes(category === 'all' ? 'all' : category) ||
-                    (category === 'wizards' && tab.textContent.includes('Wizards')) ||
-                    (category === 'neuro' && tab.textContent.includes('Neuroscience')) ||
-                    (category === 'mindset' && tab.textContent.includes('Mindset'))) {
-                    tab.classList.add('active');
-                }
             });
+            event.target.classList.add('active');
 
-            // Filter items
-            document.querySelectorAll('.category-item').forEach(item => {
-                if (category === 'all' || item.getAttribute('data-category') === category) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+            renderEpisodes();
         }
+
+        function loadMoreEpisodes() {
+            displayedCount += INCREMENT;
+            renderEpisodes();
+        }
+
+        // Initial render
+        renderEpisodes();
     </script>
 
     <!-- Footer -->
