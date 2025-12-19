@@ -391,4 +391,172 @@ ctaButtons.forEach(button => {
     });
 });
 
+// ================================================
+// Free Ebook Bundle Bottom Bar Popup
+// ================================================
+
+const createEbookPopup = () => {
+    // Check if user already dismissed
+    if (localStorage.getItem('ebookPopupDismissed')) {
+        return;
+    }
+
+    // Create the popup HTML
+    const popupHTML = `
+        <div id="ebookPopup" class="ebook-popup">
+            <div class="ebook-popup-content">
+                <div class="ebook-popup-text">
+                    <span class="ebook-popup-icon">📚</span>
+                    <div>
+                        <strong>Free Trading Psychology E-Book Bundle</strong>
+                        <span class="ebook-popup-subtitle">4 books on mastering your mindset — yours free</span>
+                    </div>
+                </div>
+                <div class="ebook-popup-actions">
+                    <a href="resources.html" class="ebook-popup-btn">Get Free Bundle</a>
+                    <button class="ebook-popup-close" aria-label="Close popup">✕</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Add CSS styles
+    const popupStyles = `
+        <style>
+            .ebook-popup {
+                position: fixed;
+                bottom: -100px;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #08333A 0%, #0c464f 100%);
+                color: #fff;
+                z-index: 9999;
+                box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+                transition: bottom 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                padding: 0.75rem 1rem;
+            }
+            .ebook-popup.show {
+                bottom: 0;
+            }
+            .ebook-popup-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            .ebook-popup-text {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+            }
+            .ebook-popup-icon {
+                font-size: 1.5rem;
+            }
+            .ebook-popup-text strong {
+                display: block;
+                font-size: 1rem;
+                color: #C9A227;
+            }
+            .ebook-popup-subtitle {
+                font-size: 0.85rem;
+                color: rgba(255,255,255,0.7);
+            }
+            .ebook-popup-actions {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            .ebook-popup-btn {
+                background: #C9A227;
+                color: #08333A;
+                padding: 0.6rem 1.5rem;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 0.9rem;
+                transition: all 0.3s;
+                white-space: nowrap;
+            }
+            .ebook-popup-btn:hover {
+                background: #fff;
+                transform: scale(1.05);
+            }
+            .ebook-popup-close {
+                background: transparent;
+                border: none;
+                color: rgba(255,255,255,0.6);
+                font-size: 1.25rem;
+                cursor: pointer;
+                padding: 0.25rem;
+                transition: color 0.3s;
+            }
+            .ebook-popup-close:hover {
+                color: #fff;
+            }
+            @media (max-width: 600px) {
+                .ebook-popup-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .ebook-popup-text {
+                    flex-direction: column;
+                    gap: 0.5rem;
+                }
+                .ebook-popup-actions {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        </style>
+    `;
+
+    // Insert styles and popup
+    document.head.insertAdjacentHTML('beforeend', popupStyles);
+    document.body.insertAdjacentHTML('beforeend', popupHTML);
+
+    const popup = document.getElementById('ebookPopup');
+    const closeBtn = popup.querySelector('.ebook-popup-close');
+
+    // Show popup after 5 seconds or 30% scroll
+    let popupShown = false;
+
+    const showPopup = () => {
+        if (!popupShown) {
+            popup.classList.add('show');
+            popupShown = true;
+        }
+    };
+
+    // Timer trigger
+    setTimeout(showPopup, 5000);
+
+    // Scroll trigger
+    window.addEventListener('scroll', () => {
+        const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        if (scrollPercent > 30) {
+            showPopup();
+        }
+    });
+
+    // Close button
+    closeBtn.addEventListener('click', () => {
+        popup.classList.remove('show');
+        localStorage.setItem('ebookPopupDismissed', 'true');
+    });
+
+    // Also close when clicking the CTA (they're going to resources)
+    const ctaBtn = popup.querySelector('.ebook-popup-btn');
+    ctaBtn.addEventListener('click', () => {
+        localStorage.setItem('ebookPopupDismissed', 'true');
+    });
+};
+
+// Initialize popup after page loads
+window.addEventListener('load', () => {
+    setTimeout(createEbookPopup, 1000);
+});
+
 console.log('The Wall Street Coach - Website Ready');
