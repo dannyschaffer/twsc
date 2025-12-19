@@ -401,17 +401,19 @@ const createEbookPopup = () => {
         return;
     }
 
-    // Create the popup HTML with SVG icon
+    // Create the popup HTML with 3-column layout
     const popupHTML = `
         <div id="ebookPopup" class="ebook-popup">
             <div class="ebook-popup-glow"></div>
             <div class="ebook-popup-content">
-                <div class="ebook-popup-left">
+                <div class="ebook-popup-col ebook-popup-col-left">
                     <div class="ebook-popup-badge">FREE RESOURCES</div>
+                </div>
+                <div class="ebook-popup-col ebook-popup-col-center">
                     <h4 class="ebook-popup-title">Unlock Your Trading Psychology E-Book Bundle</h4>
                     <p class="ebook-popup-subtitle">4 essential guides to master discipline, overcome fear & find your edge.</p>
                 </div>
-                <div class="ebook-popup-actions">
+                <div class="ebook-popup-col ebook-popup-col-right">
                     <a href="resources.html" class="ebook-popup-btn">
                         <span>Claim Free Bundle</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -419,7 +421,7 @@ const createEbookPopup = () => {
                         </svg>
                     </a>
                     <button class="ebook-popup-close" aria-label="Close popup">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
                         </svg>
@@ -429,7 +431,7 @@ const createEbookPopup = () => {
         </div>
     `;
 
-    // Add CSS styles - premium design
+    // Add CSS styles - 3 column balanced layout
     const popupStyles = `
         <style>
             .ebook-popup {
@@ -442,7 +444,7 @@ const createEbookPopup = () => {
                 z-index: 9999;
                 box-shadow: 0 -8px 32px rgba(0,0,0,0.25);
                 transition: bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-                padding: 1.25rem 1.5rem;
+                padding: 1rem 2rem;
                 border-top: 1px solid rgba(201, 162, 39, 0.3);
                 overflow: hidden;
             }
@@ -463,24 +465,36 @@ const createEbookPopup = () => {
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                gap: 3rem;
+                justify-content: space-between;
+                gap: 2rem;
             }
-            .ebook-popup-left {
-                flex: 0 1 auto;
+            .ebook-popup-col {
+                display: flex;
+                align-items: center;
+            }
+            .ebook-popup-col-left {
+                flex: 0 0 auto;
+            }
+            .ebook-popup-col-center {
+                flex: 1;
                 text-align: center;
+                flex-direction: column;
+            }
+            .ebook-popup-col-right {
+                flex: 0 0 auto;
+                gap: 1rem;
             }
             .ebook-popup-badge {
                 display: inline-block;
                 background: rgba(201, 162, 39, 0.15);
                 color: #C9A227;
-                font-size: 0.65rem;
+                font-size: 0.7rem;
                 font-weight: 700;
                 letter-spacing: 1.5px;
-                padding: 0.35rem 0.75rem;
+                padding: 0.5rem 1rem;
                 border-radius: 4px;
-                margin-bottom: 0.5rem;
                 border: 1px solid rgba(201, 162, 39, 0.3);
+                white-space: nowrap;
             }
             .ebook-popup-title {
                 font-size: 1.1rem;
