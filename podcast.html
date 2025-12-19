@@ -324,11 +324,11 @@
 
             <div class="category-tabs">
                 <button class="category-tab active" onclick="filterEpisodes('all')">All Episodes</button>
-                <button class="category-tab" onclick="filterEpisodes('wizards')">Market Wizards</button>
-                <button class="category-tab" onclick="filterEpisodes('mindset')">Mindset & Psychology</button>
-                <button class="category-tab" onclick="filterEpisodes('neuro')">Neuroscience</button>
-                <button class="category-tab" onclick="filterEpisodes('success')">Success Stories</button>
-                <button class="category-tab" onclick="filterEpisodes('strategy')">Strategy & Tools</button>
+                <button class="category-tab" onclick="filterEpisodes('mindset-psychology')">Mindset &
+                    Psychology</button>
+                <button class="category-tab" onclick="filterEpisodes('success-stories')">Success Stories</button>
+                <button class="category-tab" onclick="filterEpisodes('strategy-tools')">Strategy & Tools</button>
+                <button class="category-tab" onclick="filterEpisodes('neuroscience')">Neuroscience</button>
             </div>
 
             <div class="episodes-grid" id="episodesGrid">
@@ -340,8 +340,8 @@
             <button class="load-more-btn" id="loadMoreBtn" onclick="loadMoreEpisodes()">Load More Episodes</button>
 
             <div style="margin-top: 3rem; text-align: center;">
-                <a href="https://thewallstreetcoach.com/twsc-podcast/" class="btn-secondary"
-                    style="border-color: var(--navy); color: var(--navy);">View Full Archive on Website</a>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">All episodes available right here on the new
+                    site!</p>
             </div>
         </div>
     </section>
@@ -369,7 +369,7 @@
                         <div class="episode-number">Episode ${ep.ep}</div>
                         <h3 class="episode-title">${ep.title}</h3>
                         <p class="episode-description">${ep.description}</p>
-                        <a href="${ep.link}" target="_blank" class="episode-link">Listen Episode →</a>
+                        <a href="${ep.link}" class="episode-link">Listen Episode →</a>
                     </div>
                 </div>
             `).join('');
