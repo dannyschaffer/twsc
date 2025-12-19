@@ -401,39 +401,59 @@ const createEbookPopup = () => {
         return;
     }
 
-    // Create the popup HTML
+    // Create the popup HTML with SVG icon
     const popupHTML = `
         <div id="ebookPopup" class="ebook-popup">
+            <div class="ebook-popup-glow"></div>
             <div class="ebook-popup-content">
-                <div class="ebook-popup-text">
-                    <span class="ebook-popup-icon">📚</span>
-                    <div>
-                        <strong>Free Trading Psychology E-Book Bundle</strong>
-                        <span class="ebook-popup-subtitle">4 books on mastering your mindset — yours free</span>
-                    </div>
+                <div class="ebook-popup-left">
+                    <div class="ebook-popup-badge">FREE RESOURCES</div>
+                    <h4 class="ebook-popup-title">Unlock Your Trading Psychology E-Book Bundle</h4>
+                    <p class="ebook-popup-subtitle">4 essential guides to master discipline, overcome fear & find your edge.</p>
                 </div>
                 <div class="ebook-popup-actions">
-                    <a href="resources.html" class="ebook-popup-btn">Get Free Bundle</a>
-                    <button class="ebook-popup-close" aria-label="Close popup">✕</button>
+                    <a href="resources.html" class="ebook-popup-btn">
+                        <span>Claim Free Bundle</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <button class="ebook-popup-close" aria-label="Close popup">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
     `;
 
-    // Add CSS styles
+    // Add CSS styles - premium design
     const popupStyles = `
         <style>
             .ebook-popup {
                 position: fixed;
-                bottom: -100px;
+                bottom: -150px;
                 left: 0;
                 right: 0;
-                background: linear-gradient(135deg, #08333A 0%, #0c464f 100%);
+                background: #08333A;
                 color: #fff;
                 z-index: 9999;
-                box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
-                transition: bottom 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                padding: 0.75rem 1rem;
+                box-shadow: 0 -8px 32px rgba(0,0,0,0.25);
+                transition: bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                padding: 1.25rem 1.5rem;
+                border-top: 1px solid rgba(201, 162, 39, 0.3);
+                overflow: hidden;
+            }
+            .ebook-popup-glow {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 400px;
+                height: 2px;
+                background: linear-gradient(90deg, transparent, #C9A227, transparent);
             }
             .ebook-popup.show {
                 bottom: 0;
@@ -444,69 +464,105 @@ const createEbookPopup = () => {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: 1rem;
-                flex-wrap: wrap;
+                gap: 2rem;
             }
-            .ebook-popup-text {
-                display: flex;
-                align-items: center;
-                gap: 0.75rem;
+            .ebook-popup-left {
+                flex: 1;
             }
-            .ebook-popup-icon {
-                font-size: 1.5rem;
-            }
-            .ebook-popup-text strong {
-                display: block;
-                font-size: 1rem;
+            .ebook-popup-badge {
+                display: inline-block;
+                background: rgba(201, 162, 39, 0.15);
                 color: #C9A227;
+                font-size: 0.65rem;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                padding: 0.35rem 0.75rem;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+                border: 1px solid rgba(201, 162, 39, 0.3);
+            }
+            .ebook-popup-title {
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin: 0 0 0.25rem 0;
+                color: #fff;
+                font-family: 'Playfair Display', serif;
             }
             .ebook-popup-subtitle {
                 font-size: 0.85rem;
-                color: rgba(255,255,255,0.7);
+                color: rgba(255,255,255,0.6);
+                margin: 0;
+                font-weight: 400;
             }
             .ebook-popup-actions {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+                flex-shrink: 0;
             }
             .ebook-popup-btn {
-                background: #C9A227;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: linear-gradient(135deg, #C9A227 0%, #d4af37 100%);
                 color: #08333A;
-                padding: 0.6rem 1.5rem;
-                border-radius: 50px;
+                padding: 0.75rem 1.75rem;
+                border-radius: 6px;
                 text-decoration: none;
                 font-weight: 700;
                 font-size: 0.9rem;
                 transition: all 0.3s;
                 white-space: nowrap;
+                box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
             }
             .ebook-popup-btn:hover {
-                background: #fff;
-                transform: scale(1.05);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(201, 162, 39, 0.4);
+            }
+            .ebook-popup-btn svg {
+                transition: transform 0.3s;
+            }
+            .ebook-popup-btn:hover svg {
+                transform: translateX(3px);
             }
             .ebook-popup-close {
-                background: transparent;
-                border: none;
-                color: rgba(255,255,255,0.6);
-                font-size: 1.25rem;
+                background: rgba(255,255,255,0.05);
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 6px;
+                color: rgba(255,255,255,0.5);
                 cursor: pointer;
-                padding: 0.25rem;
-                transition: color 0.3s;
+                padding: 0.5rem;
+                transition: all 0.3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             .ebook-popup-close:hover {
+                background: rgba(255,255,255,0.1);
                 color: #fff;
+                border-color: rgba(255,255,255,0.2);
             }
-            @media (max-width: 600px) {
+            @media (max-width: 768px) {
+                .ebook-popup {
+                    padding: 1rem;
+                }
                 .ebook-popup-content {
                     flex-direction: column;
                     text-align: center;
+                    gap: 1rem;
                 }
-                .ebook-popup-text {
-                    flex-direction: column;
-                    gap: 0.5rem;
+                .ebook-popup-left {
+                    width: 100%;
+                }
+                .ebook-popup-title {
+                    font-size: 1rem;
                 }
                 .ebook-popup-actions {
                     width: 100%;
+                    justify-content: center;
+                }
+                .ebook-popup-btn {
+                    flex: 1;
                     justify-content: center;
                 }
             }
