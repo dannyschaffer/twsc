@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hormone Trap: How Your Testosterone is Secretly Dictating Your Trades</p>
-<p>You may think trading is purely a game of mental discipline, but your biology—specifically your hormones—is silently influencing every decision. John Coates’ seminal work on neuroscience and finance confirms that risk-taking transforms the body, creating a physiological feedback loop that directly impacts male traders' risk appetite and profitability. Ignoring this physical reality is a major psychological blind spot.  * Key Insights  - The direct link between hormones and market behavior has been shown in studies able to predict profitability based on <strong>Morning Testosterone Levels</strong>.</p>
+                <h3>The Hormone Trap: How Your Testosterone is Secretly Dictating Your Trades</h3>
+<p>You may think trading is purely a game of mental discipline, but your biology—specifically your hormones—is silently influencing every decision. John Coates’ seminal work on neuroscience and finance confirms that risk-taking transforms the body, creating a physiological feedback loop that directly impacts male traders' risk appetite and profitability. Ignoring this physical reality is a major psychological blind spot.</p>
 <ul>
+<li>Key Insights  - The direct link between hormones and market behavior has been shown in studies able to predict profitability based on <strong>Morning Testosterone Levels</strong>.</li>
 <li>Research reveals that <strong>risk is a physiological experience</strong>, meaning it transforms your body chemistry in real-time, moving beyond simple emotional or psychological reactions.</li>
-<li>High-stakes environments create a feedback loop where success can drive hormone levels higher, potentially leading to <strong>overconfidence and excessive risk-taking</strong>.  * Actionable Takeaway</li>
+<li>High-stakes environments create a feedback loop where success can drive hormone levels higher, potentially leading to <strong>overconfidence and excessive risk-taking</strong>.</li>
+<li>Actionable Takeaway</li>
 </ul>
 <p>Have a robust blood work panel done to monitor your hormone levels, especially testosterone, to gain awareness of your physiological baseline.risk is having a physiological effect on every Traer who is experiencing it</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>risk-taking transforms us body and mind in fact have you ever read that study that was done that was able to predict a traitor&#x27;s profitability based on His Mornings testosterone levels it was done by John coats and in his book The Hour between dog and wolf he talks at length about the importance of realizing that risk is having a physiological effect on every Traer who is experiencing it this is a message to all of the Traders but especially the male traders to have a robust blood work panel done you want to know what these levels are because they are impacting your Trading</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

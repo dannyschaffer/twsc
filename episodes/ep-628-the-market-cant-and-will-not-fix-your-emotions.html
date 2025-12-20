@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Market is Not Your Therapist: Trading to Fill Emotional Voids</p>
+                <h3>The Market is Not Your Therapist: Trading to Fill Emotional Voids</h3>
 <p>Many traders unconsciously seek to satisfy deep personal needs—like respect or security—through their P&L. When you bring unmet emotional needs into the market, trading stops being a tactical discipline and becomes an expensive, futile attempt at self-validation. The market is incapable of meeting these fundamental human needs, making these trades inherently costly.</p>
-<p>Key Insights:  * <strong>Unmet Needs Drive Risk</strong>: Personal deficits such as lack of respect or security often drive unconscious trading behavior, pushing you toward impulsive decisions.</p>
+<p>Key Insights:</p>
 <ul>
+<li><strong>Unmet Needs Drive Risk</strong>: Personal deficits such as lack of respect or security often drive unconscious trading behavior, pushing you toward impulsive decisions.</li>
 <li>The <strong>Market Is Amoral</strong>: The market does not care about your emotional state or your need for validation; trading based on these desires guarantees psychological and financial damage.</li>
 <li><strong>Identify Core Needs</strong>: Needs like respect, connection, community, and security are essential but must be addressed outside of the trading environment.Actionable Takeaway:</li>
 </ul>
 <p>Acknowledge your emotional "needs list" each morning to ensure that current life frustrations or emotional gaps do not unconsciously influence or drive your trading strategy.The market is not there to meet their needs.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Damn it, nobody respects me. Need is different than a want, right? Respect is a need. Connection is a need. Community is a need. Security is a need. What I see often happen for traders is that they will come into the market with unmet needs and attempt to get those needs met in their trading. And it&#x27;s when it gets costly because the market is not there to meet their needs. And so what I will say to traders is be with your needs list in the morning. If you had a fight with your wife, if you had a kid who&#x27;s 13 talking lip to you, giving you hard time, you might be like just really needing respect that day and you&#x27;re just like make this trade work cuz damn it, nobody respects me. Now, nobody&#x27;s consciously thinking that, but it is driving their bus, so to speak, in the midst of the</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

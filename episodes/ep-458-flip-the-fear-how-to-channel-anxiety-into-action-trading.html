@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Letting Fear Sabotage Your Execution: The Power of Risk Management</p>
-<p>If the fear of losing money controls your trading, you are already operating from a losing position. This natural brain function, meant to protect you, only sabotages your execution, leading to hesitation and premature exits even when your setup is correct.  - <strong>Risk management</strong> is the direct solution to fear; correctly sizing your trades means you always know the worst-case scenario.</p>
+                <h3>Stop Letting Fear Sabotage Your Execution: The Power of Risk Management</h3>
+<p>If the fear of losing money controls your trading, you are already operating from a losing position. This natural brain function, meant to protect you, only sabotages your execution, leading to hesitation and premature exits even when your setup is correct.  - **Risk management*</p>
 <ul>
-<li>Fear is not the enemy; a <strong>lack of preparation</strong> is the true sabotaging force.</li>
-<li>Great traders focus on <strong>playing the long game</strong> by accepting and limiting losses, rather than striving for unattainable perfection.Review your risk sizing protocol immediately to ensure that every trade entry is based on a pre-defined, acceptable loss limit, shifting your focus from worrying to executing."Fear isn't the enemy; a lack of preparation is."</li>
+<li>is the direct solution to fear; correctly sizing your trades means you always know the worst-case scenario.</li>
+<li>Fear is not the enemy; a **lack of preparation*</li>
+<li>is the true sabotaging force.</li>
+<li>Great traders focus on **playing the long game*</li>
+<li>by accepting and limiting losses, rather than striving for unattainable perfection.Review your risk sizing protocol immediately to ensure that every trade entry is based on a pre-defined, acceptable loss limit, shifting your focus from worrying to executing."Fear isn't the enemy; a lack of preparation is."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if fear of losing money controls your trading you&#x27;re already losing here&#x27;s how to take your power back fear is natural it&#x27;s your brain&#x27;s way of protecting you but in trading fear doesn&#x27;t save you it sabotages you stops you from taking calculated risks makes you hesitate forces you to exit too early even when the trade is on track the solution two words risk management when you size your trats correctly you already know the worst case scenario so instead of worrying you can focus on executing your plan because here&#x27;s the truth fear isn&#x27;t the enemy a lack of preparation is to overcome the fear of losing remember this losses are part of the game accept them limit them and then move on every great trator knows it&#x27;s about playing the long game not chasing Perfection what&#x27;s the one tradeit that fear caused you drop a comment below and let&#x27;s talk about turning fear into Focus</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

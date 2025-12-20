@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Cost of Denial: Why Trading Burnout Destroys Your P&L and Confidence</p>
+                <h3>The High Cost of Denial: Why Trading Burnout Destroys Your P&L and Confidence</h3>
 <p>The emotional cost of trading burnout often manifests as denial, leading to costly mistakes in the market. When you aren't trading at your best, ignoring that fatigue directly costs you capital and erodes your confidence for future sessions. Recognizing burnout is a necessary step to protect your performance.  - Denial of fatigue is a confidence and P\&L killer.</p>
 <ul>
 <li>The market environment necessitates scheduling mini breathers throughout your week.</li>
 <li>True recovery comes from disconnection and nature, not just stepping away from your desk.Find a way, especially on the weekends, to get yourself off electronic devices and walk through nature to feel recharged.</li>
 </ul>
 <p>"To deny it is going to cost you not just in your p&l but in your confidence going forward."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>it&#x27;s been a wild interesting end to 2024 and as 2025 ramps up which sounds like it&#x27;s going to be a wild ride too I want you to really be honest with yourself are you feeling burnt out do you feel like you are not trading at your best that is okay but to deny it is going to cost you not just in your p&amp;l but in your confidence going forward so be sure to set up for yourself manyi breathers even if it feels like okay I have to trade Kim that&#x27;s fine but I want you to find a way at least on the weekends to take some RNR and get yourself off electronic devices maybe walk through nature this is going to refresh you in ways that you would be surprised at sometimes you just need 24 or uh you know 36 hours offline to even feel recharged give it a shot</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

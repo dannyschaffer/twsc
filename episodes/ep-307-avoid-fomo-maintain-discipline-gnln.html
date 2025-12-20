@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of FOMO: Why Discomfort Sabotages Your Trading Plan</p>
+                <h3>The Cost of FOMO: Why Discomfort Sabotages Your Trading Plan</h3>
 <p>When major market moves occur, the impulse to chase can derail your carefully constructed trading plan. This reaction, driven by the fear of missing out (FOMO), is an emotional trap that prioritizes the comfort of participation over the consistency of execution. To stick to your discipline, you must learn to manage the underlying discomfort that FOMO generates.  - FOMO is rooted in the <strong>discomfort of missing out</strong>, not a logical analysis of the trade or strategy.</p>
 <ul>
 <li>Maintaining discipline requires separating yourself from the noise and understanding that the "everybody is winning" story is often <strong>incomplete or untrue</strong>.</li>
-<li>Trading consistency relies on your capacity to <strong>tolerate the feeling of exclusion</strong> without compromising your predetermined system.Actionable Takeaway: When you feel FOMO, focus on the psychological reality that your discipline is being tested by discomfort, not by a genuine trading signal."you're going to have to learn how to be with the discomfort of missing out"</li>
+<li>Trading consistency relies on your capacity to **tolerate the feeling of exclusion*</li>
+<li>without compromising your predetermined system.Actionable Takeaway: When you feel FOMO, focus on the psychological reality that your discipline is being tested by discomfort, not by a genuine trading signal."you're going to have to learn how to be with the discomfort of missing out"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so everybody wants to know especially because of what everybody went through this week with G and Ln how do I stay disciplined Kim how do I stick to my trading plan well you&#x27;re going to have to learn how to be with the discomfort of missing out right fomo comes from the discomfort of what seems to be you missing out on what everybody else is doing well at I want you to see first that that&#x27;s a story that isn&#x27;t necessarily the truth there may be plenty who were able to benefit off that trade but that doesn&#x27;t mean everybody did so I want you to first of all remember that the story that you&#x27;re the only one who&#x27;s missing out is not the truth</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

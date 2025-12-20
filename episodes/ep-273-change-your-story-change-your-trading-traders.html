@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>\#\#\# Your Self-Talk Is Your Trading Strategy (And How to Rewrite It)</p>
-<p>Many traders focus intensely on external market forces, ignoring the powerful internal narrative that controls their decisions. The stories you repeatedly tell yourself about your performance, your identity, and the market are not just words—they are blueprints for your P\&L. If you find yourself consistently stuck in the same emotional loops, it is time to examine the story you are living.  * <strong>Identify Your Catchphrases:</strong> Pay close attention to the repetitive statements you make on social media or in chat rooms, as these phrases reflect your core self-concept as a trader.</p>
+                <h3>\#\#\# Your Self-Talk Is Your Trading Strategy (And How to Rewrite It)</h3>
+<p>Many traders focus intensely on external market forces, ignoring the powerful internal narrative that controls their decisions. The stories you repeatedly tell yourself about your performance, your identity, and the market are not just words—they are blueprints for your P\&L. If you find yourself consistently stuck in the same emotional loops, it is time to examine the story you are living.</p>
 <ul>
-<li><strong>Your Story Becomes Your Reality:</strong> The constant narrative you maintain about yourself, the market, or other traders dictates the emotional state and behavior that leads to your results.</li>
-<li><strong>The Blueprints of Behavior:</strong> A negative or limiting self-story leads to self-sabotage, while a deliberate, empowering story creates a foundation for discipline and consistency.Conduct an investigation over the next 30 days: review your posts on X/Twitter and Discord to identify the dominant, repeatable "story" you are currently broadcasting about your trading.all our life is is a story We Tell ourselves about it</li>
+<li>**Identify Your Catchphrases:*</li>
+<li>Pay close attention to the repetitive statements you make on social media or in chat rooms, as these phrases reflect your core self-concept as a trader.</li>
+<li>**Your Story Becomes Your Reality:*</li>
+<li>The constant narrative you maintain about yourself, the market, or other traders dictates the emotional state and behavior that leads to your results.</li>
+<li>**The Blueprints of Behavior:*</li>
+<li>A negative or limiting self-story leads to self-sabotage, while a deliberate, empowering story creates a foundation for discipline and consistency.Conduct an investigation over the next 30 days: review your posts on X/Twitter and Discord to identify the dominant, repeatable "story" you are currently broadcasting about your trading.all our life is is a story We Tell ourselves about it</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I&#x27;m going to give you a homework assignment I want you to take a hard look at all of the statements you&#x27;ve made for the past month on your X account in your Discord room in a chat I want you to see what are the catch phrases you have a tendency to say over and over again why because the stories we repeat about ourselves about the market about other traitors becomes the story we live I put this quote up the other day all our life is is a story We Tell ourselves about it so I want you to do a little investigation what is the story right now that you keep telling yourself and second is it the one you want</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

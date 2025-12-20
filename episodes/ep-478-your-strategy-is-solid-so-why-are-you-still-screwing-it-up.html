@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Sabotaging Your Edge: Why Your Mind Is Costing You Trades</p>
-<p>You have a robust, backtested strategy, yet you still find yourself hesitating, overtrading, or cutting winners prematurely. This isn't a flaw in your edge; it's a conflict between your logic and your emotions. The real cost of this mental friction is consistent profit and self-trust.  * <strong>Trust the Process</strong>: If your strategy is strong and backtested, you must eliminate second-guessing and follow the plan rigorously.</p>
+                <h3>Stop Sabotaging Your Edge: Why Your Mind Is Costing You Trades</h3>
+<p>You have a robust, backtested strategy, yet you still find yourself hesitating, overtrading, or cutting winners prematurely. This isn't a flaw in your edge; it's a conflict between your logic and your emotions. The real cost of this mental friction is consistent profit and self-trust.</p>
 <ul>
+<li><strong>Trust the Process</strong>: If your strategy is strong and backtested, you must eliminate second-guessing and follow the plan rigorously.</li>
 <li><strong>Detach from Dollar Amounts</strong>: Profitable traders think in percentages, not dollar amounts, which significantly removes emotional weight from the decision-making process.</li>
 <li><strong>Rewire Your Loss Reaction</strong>: A "good trade" is defined by adherence to rules, not the outcome; this shift helps you detach success from frustration.Before every entry, actively silence the fear loop by asking yourself: Am I trading my strategy or my emotions?Your biggest enemy in trading is not the market—it’s your mindset.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>your strategy is strong so why are you still hesitating or overtrading or cutting winners too soon it&#x27;s your mind that&#x27;s the problem not your Edge trust the process if you&#x27;ve back tested it and it works stop second cing follow the plan silence the fear Loop before every trade ask yourself am I trading my strategy or my emotions detach money from the trade profitable Traders think percentages not dollar amounts this removes the weight number four rewire your reaction to losses instead of frustration say did I follow my rules yes then it was a good trade your biggest enem in trading is in the market it&#x27;s your mindset drop mindset in the comments and I&#x27;ll send you my top trading psychology hacks</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

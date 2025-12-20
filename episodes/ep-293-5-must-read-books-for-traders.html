@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Reading Trading Books: The 5 Psychological Edges You Never Knew You Needed</p>
+                <h3>Stop Reading Trading Books: The 5 Psychological Edges You Never Knew You Needed</h3>
 <p>Many traders rely solely on technical manuals, yet they struggle with the psychological and emotional demands of the market. True long-term success often lies not in mastering the charts, but in understanding deeper concepts of <strong>behavior, focus, and indirect goal achievement</strong>. This list of non-traditional reads provides the intellectual foundation to solve your most persistent trading problems.  - Trading success is often achieved <strong>obliquely</strong>, meaning direct fixation on P\&L can be counterproductive to long-term goals.</p>
 <ul>
-<li>Mastering the <strong>emotional complexity</strong> of the market (the bittersweet nature of risk and reward) and inherent uncertainty are prerequisites for consistency.</li>
-<li>Sustainable performance requires <strong>slow productivity</strong> and deliberate focus, preventing burnout and the temptation of quick, unsustainable gains.<strong>Actionable Takeaway:</strong> Begin applying the principle of obliquity by reframing your daily goal from "make money" to "execute my rules perfectly."if you read these five books I think you will be shocked at how pertinent they are to your success as a Trader</li>
+<li>Mastering the **emotional complexity*</li>
+<li>of the market (the bittersweet nature of risk and reward) and inherent uncertainty are prerequisites for consistency.</li>
+<li>Sustainable performance requires **slow productivity*</li>
+<li>and deliberate focus, preventing burnout and the temptation of quick, unsustainable gains.**Actionable Takeaway:*</li>
+<li>Begin applying the principle of obliquity by reframing your daily goal from "make money" to "execute my rules perfectly."if you read these five books I think you will be shocked at how pertinent they are to your success as a Trader</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>here are five books that I think every traditor should read that you&#x27;ve probably never even heard about one of them is called obliquity and that is why our goals are best achieved indirectly by John K uncertain by Magie Johnson slow productivity by Cal Newport Bittersweet by Susan Kane and The Confidence map by Peter Atwater if you read these five books I think you will be shocked at how pertinent they are to your success as a Trader</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Adopt Self-Responsibility to Transform Your Trading</p>
+                <h3>Adopt Self-Responsibility to Transform Your Trading</h3>
 <p>When trades go against you, it is easy to fall into the emotional trap of feeling like a victim of the market. This mindset prevents you from engaging constructively with losses and obscures the critical practices needed for growth. Learning to embrace self-responsibility is the first step toward reclaiming power over your trading destiny.  - <strong>100% Ownership of Response</strong>: True self-responsibility means taking complete control over how you react to market events, regardless of the financial outcome.</p>
 <ul>
 <li><strong>The Victim Mindset</strong>: Feeling like a victim of circumstance or market situations is a psychological barrier that prevents objective analysis and consistent improvement.</li>
 <li><strong>Mind Shift, Not Blame</strong>: This practice requires a genuine shift in perspective away from assigning blame or chasing external reward, focusing instead on internal agency.For your next trade review, consciously separate the trade outcome from your psychological response, and focus only on owning your interaction with the situation.It is truly a mind shift out of feeling like a victim of circumstance or situations and taking ownership for how you will interact with whatever has already happened to you.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this week I&#x27;m going to share with you my five practices for you to become a better trater these are talked about in my book transforming Wall Street and it&#x27;s the ninth anniversary of my book as of the 15th of March I wanted to share practice one today which is about self-responsibility that is about taking 100% responsibility for how you respond to what you have gone through it is not the same as blame and it is not the same as a reward it is truly a mind shift out of feeling like a victim of circumstance or situations and taking ownership for how you will interact with whatever has already happened to you that is practice one</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

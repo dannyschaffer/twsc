@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How the Belief 'I Am Not Enough' Sabotages Your Trading Results</p>
-<p>High achievers often carry an unconscious belief of inadequacy, driving them to relentless intensity and preventing necessary rest. This emotional deficit causes traders to chase "enoughness" through their P&L, leading to burnout and flawed decisions fueled by striving rather than strategy.  - The unconscious belief that <strong>I am not enough</strong> is a common psychological barrier for high-achieving traders.</p>
+                <h3>How the Belief 'I Am Not Enough' Sabotages Your Trading Results</h3>
+<p>High achievers often carry an unconscious belief of inadequacy, driving them to relentless intensity and preventing necessary rest. This emotional deficit causes traders to chase "enoughness" through their P&L, leading to burnout and flawed decisions fueled by striving rather than strategy.  - The unconscious belief that **I am not enough*</p>
 <ul>
+<li>is a common psychological barrier for high-achieving traders.</li>
 <li>Striving for validation through your P\&L leads to <strong>intensity and burnout</strong>, not sustainable success.</li>
 <li>Practicing small, daily expressions of self-love can fundamentally shift your core confidence at the desk.Actionable Takeaway: Initiate a daily self-affirmation practice to rewire your nervous system toward a sense of inherent self-worth.what would your trading look like if every day you sat at your desk you came from a place of feeling you were enough</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is command Curtin with the walls of tree coach and this is my February 5th Trader EQ check-in this week we are as of today eight days away from Valentine&#x27;s Day so I have a proposal for you I would like to invite you for the next eight days to treat yourself as you would treat a lover I want you to begin to do even the small tiny little expressions of love and appreciation to yourself one of the things that I see often especially with anybody who is a high achiever is this unconscious belief that they are not enough and one of the most beautiful quotes I learned from Marissa Pierre many years ago is a simple self-affirmation where you put your hand on your chest and you say I am enough I have always been enough I will always be enough it seems so simplistic and yet so many of us didn&#x27;t actually ever get that in our childhood and so we still are striving for that enoughness in the work that we do in the effort that we give in the intensity in the inability to rest when our body asks for</p>
-<p>it so I ask you in these eight days as you prepare to get to that day which is all about love what would it look like what would your trading look like if every day you sat at your desk you came from a place of feeling you were enough</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

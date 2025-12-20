@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Gap Between Your Potential and Your P&L</p>
-<p>Are you tired of knowing your potential only to watch it constantly slip away? That recurring gap between what you know you should be capable of and your actual results is an emotional burden. This video addresses the inertia of being stuck and outlines the intensive commitment required to finally break through.  * Breaking the cycle requires an <strong>intensive, structured intervention</strong>, not just surface-level fixes.</p>
+                <h3>The Gap Between Your Potential and Your P&L</h3>
+<p>Are you tired of knowing your potential only to watch it constantly slip away? That recurring gap between what you know you should be capable of and your actual results is an emotional burden. This video addresses the inertia of being stuck and outlines the intensive commitment required to finally break through.</p>
 <ul>
-<li>Success is not about capability; it's about <strong>eliminating the psychological blocks</strong> that keep "eluding" you.</li>
-<li>The path to realizing your full potential demands being <strong>one hundred percent committed</strong> to the process.Actionable Takeaway: Honestly assess whether your current level of effort matches the '100% in' commitment required to achieve your ultimate trading goals."If you feel like you're ready and you're damn well tired of being stuck and not reaching that full potential that you know you're ready for."</li>
+<li>Breaking the cycle requires an <strong>intensive, structured intervention</strong>, not just surface-level fixes.</li>
+<li>Success is not about capability; it's about **eliminating the psychological blocks*</li>
+<li>that keep "eluding" you.</li>
+<li>The path to realizing your full potential demands being **one hundred percent committed*</li>
+<li>to the process.Actionable Takeaway: Honestly assess whether your current level of effort matches the '100% in' commitment required to achieve your ultimate trading goals."If you feel like you're ready and you're damn well tired of being stuck and not reaching that full potential that you know you're ready for."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you&#x27;re sick of not reaching your full potential as a traitor you&#x27;ve got to do something about it for the first time in 17 years I&#x27;m going to be offering small group coaching for Traders I&#x27;m gonna offer one for novices one for those who are sophisticated if you feel like you&#x27;re ready and you&#x27;re damn well tired of being stuck and not reaching that full potential that you know you&#x27;re ready for and these small groups are for you it&#x27;s going to be a six-week intensive you&#x27;ve got to be a hundred percent in but if you are and you are ready to reach that full potential that you know you should be capable of and yet something keeps eluding you then I hope you will check them out and come and join me</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

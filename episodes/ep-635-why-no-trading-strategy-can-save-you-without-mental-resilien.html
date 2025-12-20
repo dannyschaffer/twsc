@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Mental Resilience, Not Strategy, is Your Only Defense in a Market Crash</p>
-<p>When the market wipes out billions, standard strategies crumble. This video reveals how linking your self-worth to your trades turns market volatility into an emotional, existential crisis. Without mental resilience, you are exposed, regardless of how smart your setup is.  * <strong>Existential Volatility</strong>: When personal identity is tied to wins and losses, market crashes become deeply psychological events that lead to breaking points.</p>
+                <h3>Why Mental Resilience, Not Strategy, is Your Only Defense in a Market Crash</h3>
+<p>When the market wipes out billions, standard strategies crumble. This video reveals how linking your self-worth to your trades turns market volatility into an emotional, existential crisis. Without mental resilience, you are exposed, regardless of how smart your setup is.</p>
 <ul>
+<li><strong>Existential Volatility</strong>: When personal identity is tied to wins and losses, market crashes become deeply psychological events that lead to breaking points.</li>
 <li><strong>The Conscious Edge</strong>: Missing setups often results not from market error, but from a lack of conscious presence and awareness in the moment.</li>
 <li><strong>The True Protection</strong>: No technical strategy can offer protection if the underlying mental framework is fragile.<strong>Actionable Takeaway</strong>: Start building mental resilience today by consciously separating your self-worth from your P\&L statement.The real edge is mental resilience. And if you don't build that first, no strategy will protect.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>No strategy will protect you. Friday the 10th of October, the crypto market experienced its own Black Friday. In a matter of hours, over $19 billion was wiped from existence. Ukrainian crypto entrepreneur was found dead under mysterious circumstances just after a $30 million cryptocurrency market crash. You hear the headlines about how the crypto crash blew up many traders and it&#x27;s tragic. How does this happen? It&#x27;s when identity is baked into wins and losses, volatility becomes existential. You missed this setup not because the market was wrong, but because you weren&#x27;t conscious. The real edge is mental resilience. And if you don&#x27;t build that first, no strategy will protect</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

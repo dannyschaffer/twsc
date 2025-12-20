@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Unexpected Edge: Why Fiction is Essential for Trader EQ</p>
-<p>High-achieving traders often focus solely on non-fiction books for self-improvement, neglecting deeper psychological wisdom. Fiction, however, provides a profound way to address the universal emotional battles—like self-judgment, temptation, and fear—that directly impact your performance and P&L. By stepping into the shoes of complex characters, you can gain clarity on the internal conflicts that are costing you money.  - The struggle to maintain <strong>personal integrity</strong> and be a man or woman of your word is the exact same discipline required to follow your trading plan.</p>
+                <h3>The Unexpected Edge: Why Fiction is Essential for Trader EQ</h3>
+<p>High-achieving traders often focus solely on non-fiction books for self-improvement, neglecting deeper psychological wisdom. Fiction, however, provides a profound way to address the universal emotional battles—like self-judgment, temptation, and fear—that directly impact your performance and P&L. By stepping into the shoes of complex characters, you can gain clarity on the internal conflicts that are costing you money.  - The struggle to maintain **personal integrity*</p>
 <ul>
-<li>Core emotional challenges such as <strong>fear, temptation, and chasing</strong> can be safely examined through complex fictional narratives to build empathy for your own internal struggles.</li>
-<li>Cultivating <strong>gratitude</strong> and overcoming self-judgment are psychological requirements for sustained growth that are often addressed more effectively through character development than textbook analysis.If you are struggling to let go of past trading losses or regrets, read *The Midnight Library* to shift your perspective on mistakes and self-forgiveness.Fiction can sometimes teach you deeper and in a more profound way than even non-fiction.</li>
+<li>and be a man or woman of your word is the exact same discipline required to follow your trading plan.</li>
+<li>Core emotional challenges such as **fear, temptation, and chasing*</li>
+<li>can be safely examined through complex fictional narratives to build empathy for your own internal struggles.</li>
+<li>Cultivating **gratitude*</li>
+<li>and overcoming self-judgment are psychological requirements for sustained growth that are often addressed more effectively through character development than textbook analysis.If you are struggling to let go of past trading losses or regrets, read *The Midnight Library</li>
+<li>to shift your perspective on mistakes and self-forgiveness.Fiction can sometimes teach you deeper and in a more profound way than even non-fiction.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is my Trader EQ prep for the week of July 23rd Michael mirafor on Twitter posted about how so many people who are high Achievers that are trying to improve themselves speak all the time about the non-fiction books they&#x27;ve read believe me I love nonfiction I read it all the time but the things that he spoke to that I want to come on here and completely uh say a hundred percent I agree with is that fiction can sometimes teach you deeper and in a more profound way than even non-fiction and because I am such a love of fiction I am going to speak to some issues the Traders face that are addressed without speaking of trading but it&#x27;s the same battle so if you&#x27;re struggling with how to be a man or woman of your word and your character read Atlas Shrugged by Ein Rand if you&#x27;re having a difficult time with temptation and constantly breaking your word to yourself read The Last Temptation Of Christ and see what real Temptation and how you would stand it can be done if you&#x27;re struggling with having faith in yourself or faith for the journey</p>
-<p>read a prayer for oh and meaning if you&#x27;re struggling with listening to yourself and getting bogged down perhaps by other Traders when you really need to now start listening to yourself then read The Little Prince if you&#x27;re struggling with not having enough gratitude for yourself then I want you to read in dubious battle by John Steinbeck if you&#x27;re struggling with judgment self-judgment or Judgment of other people read To Kill a Mockingbird if you&#x27;re looking about the cautions of chasing and how you know you chase sometimes when you shouldn&#x27;t and read the challenge of chasing as known through weathering Heights an incredible book if you&#x27;re not able to let go of past mistakes that you&#x27;ve made it your trading desk or big losses that you&#x27;ve faced I want you to read the book called The Midnight Library which takes on a whole other position around what we think our regrets and it just takes it and twists it upside down if you&#x27;re struggling with fear and maybe even Terror then read a book called The Great alone which will show you how a very young character struggles with her own fear and her own Terrors if</p>
-<p>you&#x27;re struggling with being class have empty and negative all the time read the cost to that in a novel called a man called oath and if you want to make sure that you&#x27;re able to listen to your own inner voice instead of the crowd then listen to the great mystery novel called maidens I hope that this awakens you to how powerful fiction can be it&#x27;s also a lot more fun and it can also just feel like it&#x27;s not so much a homework assignment it will become just a way of life when you step into the shoes of the characters you meet so I hope you find one in here that works for you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

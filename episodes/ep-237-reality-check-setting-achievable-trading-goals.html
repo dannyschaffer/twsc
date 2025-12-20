@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of Unrealistic Goals: Why Confidence Can Become Self-Criticism</p>
-<p>Overestimating your capabilities is a natural part of the human condition, often mistaken for healthy confidence. However, this tendency sets you up for unreasonably high expectations. When you inevitably fail to meet these impossible targets, the result is intense self-criticism and emotional drain, making consistency difficult.  * The human tendency to overestimate abilities often leads to <strong>unreasonably high expectations</strong>.</p>
+                <h3>The Cost of Unrealistic Goals: Why Confidence Can Become Self-Criticism</h3>
+<p>Overestimating your capabilities is a natural part of the human condition, often mistaken for healthy confidence. However, this tendency sets you up for unreasonably high expectations. When you inevitably fail to meet these impossible targets, the result is intense self-criticism and emotional drain, making consistency difficult.</p>
 <ul>
+<li>The human tendency to overestimate abilities often leads to <strong>unreasonably high expectations</strong>.</li>
 <li>Failing to meet these goals results in a tendency to <strong>come down really hard on ourselves</strong>.</li>
-<li>The core issue is often the goal itself, which was <strong>probably an unrealistic goal</strong> from the start, not a fundamental flaw in your trading.Seek out trustworthy colleagues or experienced traders to rigorously vet your current trading goals for feasibility and reasonableness.come down really hard on ourselves for not achieving what in the first place was probably an unrealistic goal.</li>
+<li>The core issue is often the goal itself, which was **probably an unrealistic goal*</li>
+<li>from the start, not a fundamental flaw in your trading.Seek out trustworthy colleagues or experienced traders to rigorously vet your current trading goals for feasibility and reasonableness.come down really hard on ourselves for not achieving what in the first place was probably an unrealistic goal.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>one of the things that&#x27;s very easy to fall into is overestimating our abilities it&#x27;s just part of the human condition and on one hand I think it&#x27;s you fantastic that people have confidence in themselves but part of what that sets us up for is unreasonably high expectations and also a tendency to then come down really hard on ourselves for not achieving what in the first place was probably an unrealistic goal so this is when you want to really lean in on uh trustworthy colleagues trustworthy uh you know traders who have been at it for a long time that your goals for yourself are they within reason</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

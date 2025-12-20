@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Invisible Enemy: How to Master Your Emotional State Before Trading</p>
-<p>Every trading session begins long before you look at a chart. You bring every unchecked emotion—whether it's desperation, loneliness, or impatience—directly to your decisions. Ignoring this internal "baggage" is the hidden reason strategies fail and profitability stalls.  * <strong>Self-Awareness is Pre-Trade Due Diligence:</strong> True awareness means consciously connecting to your state of being, including your mind and emotions, before approaching the market.</p>
+                <h3>The Invisible Enemy: How to Master Your Emotional State Before Trading</h3>
+<p>Every trading session begins long before you look at a chart. You bring every unchecked emotion—whether it's desperation, loneliness, or impatience—directly to your decisions. Ignoring this internal "baggage" is the hidden reason strategies fail and profitability stalls.</p>
 <ul>
-<li><strong>Identify, Don't Judge:</strong> The goal is not to eliminate negative feelings but simply to notice if you are approaching the task from a place of neediness or desperation.</li>
-<li><strong>Your Internal State is Your Biggest Variable:</strong> The quality of your consciousness determines the clarity of your decisions, making it a critical factor in P\&L consistency.Actionable Takeaway: Before you execute your first trade, pause and ask yourself directly: Am I feeling desperate, needy, lonely, frustrated, or impatient right now?I don't want you to make these things wrong but I want you to notice them</li>
+<li>**Self-Awareness is Pre-Trade Due Diligence:*</li>
+<li>True awareness means consciously connecting to your state of being, including your mind and emotions, before approaching the market.</li>
+<li>**Identify, Don't Judge:*</li>
+<li>The goal is not to eliminate negative feelings but simply to notice if you are approaching the task from a place of neediness or desperation.</li>
+<li>**Your Internal State is Your Biggest Variable:*</li>
+<li>The quality of your consciousness determines the clarity of your decisions, making it a critical factor in P\&L consistency.Actionable Takeaway: Before you execute your first trade, pause and ask yourself directly: Am I feeling desperate, needy, lonely, frustrated, or impatient right now?I don't want you to make these things wrong but I want you to notice them</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>be aware what does be aware mean what it basically means is that you are conscious and connected to your state of being your state of mind your state of emotions when you come to your trading task whatever time of day it is for you you are coming with all the things that the day thus far is Weighing on you about so you just want to ask yourself when you sit down uh am I coming here today desperate am I coming here today needy am I coming here today uh feeling lonely am I feeling perhaps you know frustrated or impatient I don&#x27;t want you to make these things wrong but I want you to notice them</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

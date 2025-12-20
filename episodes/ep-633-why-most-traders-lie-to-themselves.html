@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Cost of Self-Deception: Why Traders Lie to Themselves</p>
-<p>Traders often focus only on their wins on social media, creating a false narrative of success. This self-deception prevents accountability, hiding the very mistakes necessary for growth. If you are struggling to make progress, this video explains how dishonesty with yourself is the greatest barrier to consistent profit.  - <strong>The Denial Loop:</strong> Failing to admit mistakes prevents you from clearly identifying and mitigating them in the future.</p>
+                <h3>The High Cost of Self-Deception: Why Traders Lie to Themselves</h3>
+<p>Traders often focus only on their wins on social media, creating a false narrative of success. This self-deception prevents accountability, hiding the very mistakes necessary for growth. If you are struggling to make progress, this video explains how dishonesty with yourself is the greatest barrier to consistent profit.  - **The Denial Loop:*</p>
 <ul>
-<li><strong>The Social Media Mirage:</strong> Focusing exclusively on winning trades creates external pressure to maintain a flawless identity, distracting from real P\&L and psychological improvement.</li>
-<li><strong>Choose Doubt Over Praise:</strong> Genuine progress often requires the vulnerability of acknowledging failure rather than the temporary comfort of false praise.<strong>Actionable Takeaway</strong></li>
+<li>Failing to admit mistakes prevents you from clearly identifying and mitigating them in the future.</li>
+<li>**The Social Media Mirage:*</li>
+<li>Focusing exclusively on winning trades creates external pressure to maintain a flawless identity, distracting from real P\&L and psychological improvement.</li>
+<li>**Choose Doubt Over Praise:*</li>
+<li>Genuine progress often requires the vulnerability of acknowledging failure rather than the temporary comfort of false praise.**Actionable Takeaway*</li>
+<li>Commit to reviewing and logging your losing trades as intensely as your winning ones; mitigation is only possible once the mistake is admitted.Most traders don't lose because they're making too many mistakes. They just they lie to themselves about the mistakes that they're making.</li>
 </ul>
-<p>Commit to reviewing and logging your losing trades as intensely as your winning ones; mitigation is only possible once the mistake is admitted.Most traders don't lose because they're making too many mistakes. They just they lie to themselves about the mistakes that they're making.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>that traders don&#x27;t express themselves honestly. But I think sometimes the traders out there on X have a tendency to just focus on the days that everything is good. Most traders don&#x27;t lose because they&#x27;re I don&#x27;t want to say they&#x27;re making too many mistakes. They just they lie to themselves about the mistakes that they&#x27;re making. A lot of times they don&#x27;t want to admit it. Admit it. We all do it. And then it&#x27;s a lot easier to mitigate them if I&#x27;m probably a little selfish here. But like I&#x27;d rather show my mistakes cuz then I know more people are doubting me a little bit, you know? I&#x27;m not I&#x27;m not being praised for I would rather be doubted in good than praised in bad. You know what I mean? It&#x27;s like and there&#x27;s a balance of course, but yeah. I mean it and there are a lot of new traders that are going to make the same exact mistakes that everybody that everyone makes no matter how well you&#x27;re doing, you know, and it&#x27;s part of the</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

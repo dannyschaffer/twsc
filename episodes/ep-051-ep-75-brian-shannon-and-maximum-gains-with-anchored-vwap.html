@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How Anchored VWAP Reveals the True Market Psychology After Earnings Gaps</p>
+                <h3>How Anchored VWAP Reveals the True Market Psychology After Earnings Gaps</h3>
 <p>When a stock gaps dramatically on earnings, the sudden shift in price often induces chaos and emotional reactions. Understanding how institutions are positioning themselves immediately following this event is crucial for overcoming the psychological noise and identifying the market's true commitment.  - <strong>Anchor to the Shift in Sentiment</strong>: The moment a major event like an earnings gap occurs, it represents a fundamental change in market psychology; this is the optimal point to anchor your VWAP.</p>
 <ul>
 <li><strong>Identify Institutional Defense</strong>: Observing whether buyers or sellers are defending the Anchored VWAP line reveals who has control of the new price range.</li>
 <li><strong>Accuracy vs. Convergence</strong>: While post-market data exists, anchoring to the beginning of the trading session after a gap is generally sufficient, as minor variations converge over time.Actionable Takeaway: Anchor your Volume-Weighted Average Price (VWAP) directly at the opening of any significant earnings gap to establish the new psychological baseline for that stock.As soon as I see something that changes the sentiment, the big shift in the psychology of the market, I want to Anchor from there.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I would like to see how you use like the view app and anchor view app in relation to earnings gaps I guess yeah so DT is a good example dynatrace these guys reported earnings over here and that was that Gap so as soon as I see something that changes the sentiment the big shift in the psychology of the market I want to Anchor from there so you can see what happened is first of all it got above this paint this purple line and you might be looking at going well what is that well that&#x27;s the anchored volume weighted average price for the all-time high so it rallied up through that and now it&#x27;s kind of just you know ping-ponging back and forth this blue line is the anchored view app from that event so when I look at it on a 15 minute time frame here&#x27;s the way I see it is we initially got that Gap it got above the volume weighted average price from that Gap and then the sellers took control the sellers took control here here they defended it and they&#x27;re still it&#x27;s still below that did you anchor that from</p>
-<p>the close of the day or from where it gapped up that morning from that morning from from the very beginning of trading now if you wanted to be super accurate you would go back and look at the post-market data as well you know software you know because it does as we know it doesn&#x27;t just Gap there right trades there in the after hours but by this point that after hours volume was most likely very insignificant that it&#x27;s going to be in generally the same area so even if we anchor one to the close of that day uh the prior day you can see they converge together as you get more data they converge together</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

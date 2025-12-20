@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Antidote to Trader Shame: Why Vulnerability is Your Strongest Edge</p>
-<p>When trading losses lead to isolation and self-blame, the cycle of self-sabotage accelerates, often driving traders into a dark place. This shame prevents necessary psychological healing and adjustment, keeping you locked in destructive patterns. This discussion reveals how breaking the silence can fundamentally improve your trading and mental health.  * <strong>Shame Creates Isolation</strong>: Shame keeps traders from sharing their honest journey, leading them to feel uniquely isolated when painful moments are actually part of the universal human condition.</p>
+                <h3>The Antidote to Trader Shame: Why Vulnerability is Your Strongest Edge</h3>
+<p>When trading losses lead to isolation and self-blame, the cycle of self-sabotage accelerates, often driving traders into a dark place. This shame prevents necessary psychological healing and adjustment, keeping you locked in destructive patterns. This discussion reveals how breaking the silence can fundamentally improve your trading and mental health.</p>
 <ul>
+<li><strong>Shame Creates Isolation</strong>: Shame keeps traders from sharing their honest journey, leading them to feel uniquely isolated when painful moments are actually part of the universal human condition.</li>
 <li><strong>The Healing Power of Shared Experience</strong>: Sharing vulnerability heals by showing others, "I'm not the only one," which buoys people up and encourages healthy adjustments.</li>
 <li><strong>Psychology Drives Performance</strong>: Getting to a healthy place in your mind is essential for making effective adjustments in your trading style, leading to consistent profitability.Identify a trusted community or mentor where you can honestly log and discuss the emotional reality of your trades, turning hidden shame into shared strength.I hate that word shame because I do feel so many times shame is what keeps us from sharing the honesty of what our journey has been.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>The Wall Street Coach podcast. I hate that word, shamed. When you do that over and over, you blow yourself up, blow your account up over and over. It can lead to like a dark place mentally. It really can. I&#x27;m sure you&#x27;ve dealt with that a lot as a coach. We all have our moments of things we&#x27;re, you know, ashamed of or disappointed that we did or frustrated with ourselves. But that is the human condition. I hate that word shame because I do feel so many times shame is what keeps us from sharing the honesty of what our journey has been. But it&#x27;s the sharing of that vulnerability that allows other people to be like, &amp;quot;Oh I&#x27;m not the only one.&amp;quot; because all of us have these moments and yet nobody or rarely at least in this industry talks about those moments. So it&#x27;s not because that&#x27;s the place that anybody ever stays. I believe will just heal a lot of traders who have faced such painful moments themselves to not maybe feel as isolated as or as if they&#x27;re the only ones. You want to like buoy those people up and encourage them to make</p>
-<p>some adjustments in their trading styles and in their investment styles and kind of like get to a healthy place in their mind to where they can become a better trader but also like have a a much better psychology.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

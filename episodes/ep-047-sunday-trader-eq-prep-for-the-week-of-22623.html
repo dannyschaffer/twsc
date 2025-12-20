@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Saboteur: How Your Inner Critic Keeps You Stuck In Trading Loops</p>
+                <h3>The Hidden Saboteur: How Your Inner Critic Keeps You Stuck In Trading Loops</h3>
 <p>Many traders operate as a prisoner of their own minds, unknowingly letting an inner Saboteur or Gremlin drive their decisions and their trades. This constant internal critique often keeps you stuck in destructive, repeated cycles of errors and challenges. Learn to differentiate your true voice from the toxic self-talk that is sabotaging your P&L.  - The clearest sign you are listening to your inner critic is if the advice makes you <strong>feel like garbage</strong>. Your true self-talk is constructive, not shaming.</p>
 <ul>
 <li>The inner critic drives your decisions and relationships without your conscious awareness, preventing you from achieving <strong>high performance</strong>.</li>
-<li>Listen for the Red Flag phrases—"You <strong>should have</strong> done this," "You <strong>could have</strong> done that," or "If only"—as these are the specific indicators that your inner Saboteur is steering your trajectory.Actionable Takeaway: When you hear self-criticism that makes you feel bad, identify that voice immediately as the Saboteur (or "Gremlin") and consciously reject its authority over your next trading decision.If it makes you feel like garbage then that is not your own voice speaking to you, it is an inner Gremlin or inner Saboteur.</li>
+<li>Listen for the Red Flag phrases—"You **should have*</li>
+<li>done this," "You **could have*</li>
+<li>done that," or "If only"—as these are the specific indicators that your inner Saboteur is steering your trajectory.Actionable Takeaway: When you hear self-criticism that makes you feel bad, identify that voice immediately as the Saboteur (or "Gremlin") and consciously reject its authority over your next trading decision.If it makes you feel like garbage then that is not your own voice speaking to you, it is an inner Gremlin or inner Saboteur.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is Kim and Curtin of the Wall Street coach where we help Traders if we design their relationship to high performance today is my February 26th EQ trading prep for the week I want to talk to you about whether or not you&#x27;re a prisoner of your own mind what that means is that it&#x27;s possible you have an inner Saboteur or an inner Gremlin that you are listening to obeying more times than you are listening to your own higher self your own inner voice how do you know whether you&#x27;re listening to that inner Saboteur or not well one of the first indicators is that it makes you feel like garbage I&#x27;m not saying it isn&#x27;t hard truth but if it makes you feel like garbage then that is not your own voice speaking to you it is an inner Kremlin or inner Saboteur the guest I have on my upcoming podcast this week is Rick Carson he&#x27;s the author of book called taming your Gremlin I really want you to watch that episode you&#x27;ll see just how subtle that inner critic can become and drive your school bus without you even knowing drive your</p>
-<p>trades drive your decisions Drive the relationships and how you interpret them and any kind of errors or challenges that you maybe are coming up and out of it will not help you transcend them it will keep you stuck in a repeated cycle of them so please check it out wood sure could those are the three flags that you have an inner Gremlin or Interceptor talking to you if you hear those words you should have done this you could have done that if only you uh would would have done it differently so to speak those are the indicators that Red Flag Warning on your dashboard that you are listening to your inner Saboteur and if you want to learn how to get yourself entangled from that please watch The Wall Street coach podcast this week with Rick Carson is my guest all right I hope you have a safe and profitable week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

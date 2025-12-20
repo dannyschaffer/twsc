@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Five Non-Negotiable Practices of Market Wizards</p>
+                <h3>The Five Non-Negotiable Practices of Market Wizards</h3>
 <p>Many aspiring traders believe that success requires an entirely unique strategy, leading to endless searching and self-doubt. The real emotional cost of this search is the time and energy spent reinventing the wheel instead of mastering foundational skills. Highly successful traders, however, share a common behavioral blueprint—a set of five core practices that guarantee long-term edge.  - <strong>Timeless Principles</strong>: These five practices were first discovered 15 years ago through interviews with Wall Street "Masters of the Universe" and remain applicable today.</p>
 <ul>
 <li><strong>Blueprint for Success</strong>: The practices summarize the core habits shared by consistently profitable traders, including Jack Kellock, Brian Lee, and Jason Shapiro.</li>
 <li><strong>Behavioral Foundation</strong>: The secret to longevity is not technical analysis but adherence to specific, proven psychological and behavioral disciplines.Stop searching for an external edge and focus on implementing these five internal practices into your daily process immediately.The five practices I discovered over 15 years ago when I interviewed some Masters of the Universe on Wall Street.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this Jack kellock Brian Lee and unknown Market wizard Jason Shapiro and many other very successful Traders all have in common they have in common what I&#x27;ve identified as the five practices these are five practices I discovered over 15 years ago when I interviewed some Masters of the Universe on Wall Street and I&#x27;ve Revisited this conversation specifically with successful day traders to put this collection together I&#x27;m very excited to share it with you it&#x27;s complimentary when you sign up for my Weekly Newsletter Curtain Call I look forward to seeing you on the inside</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

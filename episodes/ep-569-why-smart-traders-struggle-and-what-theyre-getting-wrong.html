@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High-IQ Trap: Why Intelligence Makes Smart Traders Early (and Poor)</p>
+                <h3>The High-IQ Trap: Why Intelligence Makes Smart Traders Early (and Poor)</h3>
 <p>Highly educated professionals from Wall Street and academia often face unexpected hurdles when transitioning to independent trading. Their high intellect can become a psychological liability, leading them to believe they consistently see market moves before everyone else. This ego-driven impatience results in being perpetually early, costing them consistent profits.  - <strong>The Predictor's Paradox</strong>: Academic success rewards being "right," but trading success demands timing. Believing you are smarter than the collective market means you often act too soon.</p>
 <ul>
 <li><strong>Ego as Friction</strong>: Overconfidence derived from education or corporate success interferes with the patience required to let price action validate your setup.</li>
 <li><strong>The Cost of Being Early</strong>: Being technically "right" about the direction but entering prematurely results in losses, proving that market timing beats raw intellectual foresight.Actionable Takeaway: Strictly adhere to your entry criteria, treating conviction as a warning signal rather than a strategy.I think the problem is we are so much smarter than everybody else that we see things way before they do. So, we're early on a lot of trades.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Wall Street people coming into trading, they&#x27;ve come from academia. I see the people that are the most educated, the ones who are potentially coming from the corporate world who try to make the transition, it&#x27;s hard for them. There&#x27;s a famous story that somebody told on our Discord a while ago about he is a broker and he deals with some hedge fund clients and he had this these two younger portfolio managers in their 20s that had gone to Ivy League colleges and obviously were very smart guys and and went to Ivy League NBA schools and came out and were having some trouble trading and he was talking to the guy and he said, you know, what do you think the problem is? I think the problem is we are so much smarter than everybody else that we see things way before they do. So, we&#x27;re early on a lot of trades. Holy crap. An island ain&#x27;t just a river in Egypt. So, I mean, that&#x27;s right to your point, right?</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

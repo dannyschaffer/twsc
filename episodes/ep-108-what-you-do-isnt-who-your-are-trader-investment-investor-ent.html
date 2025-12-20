@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Your Trading Results Are Not Your Identity</p>
+                <h3>Your Trading Results Are Not Your Identity</h3>
 <p>Many traders mistakenly equate their success or failure in the markets with their personal self-worth. This "Trader Identity Trap" creates immense emotional pressure, making every loss feel like a devastating personal failure rather than a manageable business event. It is crucial to understand that your profession is only a part of who you are, not your entire identity.  - <strong>De-link Self-Worth from P\&L</strong>: You must separate your intrinsic value as a person (daughter, friend) from your performance as a trader.</p>
 <ul>
 <li>Your material success (<strong>Your bank account or the car you drive</strong>) is merely an expression of your efforts, not the source of your core identity.</li>
-<li>Recognizing this separation is key to <strong>reducing emotional pressure</strong> and making objective trading decisions.Actionable Takeaway: Consciously list three non-trading roles or relationships that define you (e.g., 'a supportive sibling,' 'a good friend') and affirm them daily before opening your trading desk.You are so much more than all of those things; it is part of the expression of you but it is not your entire identity.</li>
+<li>Recognizing this separation is key to **reducing emotional pressure*</li>
+<li>and making objective trading decisions.Actionable Takeaway: Consciously list three non-trading roles or relationships that define you (e.g., 'a supportive sibling,' 'a good friend') and affirm them daily before opening your trading desk.You are so much more than all of those things; it is part of the expression of you but it is not your entire identity.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>has a great interview with Coco and she talks about how her parents always made sure she knew that she was more than just a tennis player that she was a daughter that she was a friend she talks about the importance of not having this pressure on herself just being a tennis player and I want to invite you to do the same I understand that trading is such a big part of a Trader&#x27;s identity but it is not who you are and I think it&#x27;s really important for that concept to truly land you&#x27;re not the car you drive you&#x27;re not your bank account you&#x27;re not what you do even as a Trader you are so much more than all of those things it is part of the expression of you but it is not your entire identity and the reason this is important</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

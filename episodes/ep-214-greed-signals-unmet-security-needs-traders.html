@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Greed Is Not a Flaw—It's a Signal of Unmet Security Needs</p>
-<p>Many traders harshly judge themselves for "being greedy" when they overtrade or chase profits. However, this emotion is rarely the root cause; it is often a cover for a deeper, unconscious need. When you are frequently tripped up by greed, it signals that your need for emotional and psychological security is not being met.  * <strong>Greed is a Symptom, Not a Cause</strong>: Stop labeling yourself as greedy and start investigating the underlying emotional void driving the behavior.</p>
+                <h3>Greed Is Not a Flaw—It's a Signal of Unmet Security Needs</h3>
+<p>Many traders harshly judge themselves for "being greedy" when they overtrade or chase profits. However, this emotion is rarely the root cause; it is often a cover for a deeper, unconscious need. When you are frequently tripped up by greed, it signals that your need for emotional and psychological security is not being met.</p>
 <ul>
+<li><strong>Greed is a Symptom, Not a Cause</strong>: Stop labeling yourself as greedy and start investigating the underlying emotional void driving the behavior.</li>
 <li><strong>Security is Multidimensional</strong>: While monetary factors play a role, true security can also be met through psychological means, such as consistent process adherence or a strong support system.</li>
 <li><strong>Identify the Unmet Need</strong>: Chronic greed confirms that a core personal need, usually for security, is chronically being ignored.Instead of focusing on suppressing greedy impulses, redirect your energy to identifying and addressing the specific areas in your life where you feel insecure.I can promise you there is a need that is not being met if you find yourself tripped up in greed over and over again.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>has anybody ever called too greedy have you ever self-identified and said I must be too greedy what I want you to realize is that greed often is what comes up if we don&#x27;t have our need for security met so I want you to really consider where is it that you are not feeling secure and start to take a look at how you could meet your need for security there&#x27;s a lot of ways our need for security can be met some of it of course is monetary but there are other ways we can start to feel secure so take a look underneath this label this judgment of greed and look for what might be actually informing it because I can promise you there is a need that is not being met if you find yourself tripped up in greed over and over again</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

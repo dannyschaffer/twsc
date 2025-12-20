@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Counterintuitive Strategy That Stops Emotional Loops</p>
-<p>When facing difficult feelings like failure, the natural instinct is to push them away. However, resisting these negative emotions prevents true processing, causing them to persist and loop in your trading psychology, ultimately draining your performance. This segment reveals why the secret to emotional control lies in leaning directly into the discomfort.  * <strong>Resistance Fuels Repetition</strong>: The fundamental principle is that "what we resist persists." Trying to suppress or ignore emotional discomfort ensures it returns.</p>
+                <h3>The Counterintuitive Strategy That Stops Emotional Loops</h3>
+<p>When facing difficult feelings like failure, the natural instinct is to push them away. However, resisting these negative emotions prevents true processing, causing them to persist and loop in your trading psychology, ultimately draining your performance. This segment reveals why the secret to emotional control lies in leaning directly into the discomfort.</p>
 <ul>
+<li><strong>Resistance Fuels Repetition</strong>: The fundamental principle is that "what we resist persists." Trying to suppress or ignore emotional discomfort ensures it returns.</li>
 <li><strong>The Depth of Discomfort</strong>: Most traders only feel emotions on a superficial surface level, meaning the deep, necessary processing required for resolution is never achieved.</li>
 <li><strong>The Superficial Trap</strong>: Emotions repeat themselves because we fail to fully experience them and integrate the underlying lesson.When experiencing failure or professional negativity, consciously allow yourself to fully feel the discomfort rather than immediately distracting yourself or trying to "fix" the outcome.what resist persists</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>happy weekend everybody I know that this might sound counterintuitive but when you&#x27;re in the middle of hard to be with a feeling let&#x27;s say it&#x27;s failure let&#x27;s say it&#x27;s something that&#x27;s happening personally or professionally that&#x27;s really negative what I want to suggest is that you lean into it what do I mean by that one of the things that I learned early on my own journey is that what resist persists and often what we are experiencing is actually sort of a superficial version of that discomfort and part of why a lot of times feelings uh and emotions repeat themselves is because we have yet to fully feel them we sort of feel them on a superficial surface level but not down Into the Depths this was something I learned</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

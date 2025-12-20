@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Blind: How Your Agenda Blinds You to Market Reality</p>
-<p>Many traders start the day with clear goals, but these positive intentions often morph into a dangerous personal agenda—an inflexible attachment to a specific outcome. This agenda defeats your vision, blinding you to the essential reality of what the market is actually doing right now, leading inevitably to costly emotional trading.  * <strong>Goals vs. Agenda</strong>: The line between having a market goal and possessing a rigid agenda is where psychological failure begins.</p>
+                <h3>Stop Trading Blind: How Your Agenda Blinds You to Market Reality</h3>
+<p>Many traders start the day with clear goals, but these positive intentions often morph into a dangerous personal agenda—an inflexible attachment to a specific outcome. This agenda defeats your vision, blinding you to the essential reality of what the market is actually doing right now, leading inevitably to costly emotional trading.</p>
 <ul>
+<li><strong>Goals vs. Agenda</strong>: The line between having a market goal and possessing a rigid agenda is where psychological failure begins.</li>
 <li><strong>The Cost of Attachment</strong>: Being attached to a predetermined profit or direction guarantees you will be blinded to contradictory price action and miss the trades that are actually present.</li>
-<li><strong>Trading with What Is</strong>: True clarity comes from accepting the present market reality, however disappointing it may be to your personal plan.<strong>Actionable Takeaway:</strong></li>
+<li><strong>Trading with What Is</strong>: True clarity comes from accepting the present market reality, however disappointing it may be to your personal plan.**Actionable Takeaway:*</li>
+<li>If you find yourself caught up in attachment or frustration, immediately recognize the agenda and **press pause*</li>
+<li>on your trading until you can see the market without bias.Reality always wins, but when we have attachment to an outcome that can become something that completely ruins our vision of what is happening now.</li>
 </ul>
-<p>If you find yourself caught up in attachment or frustration, immediately recognize the agenda and <strong>press pause</strong> on your trading until you can see the market without bias.Reality always wins, but when we have attachment to an outcome that can become something that completely ruins our vision of what is happening now.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha Traders yesterday I had the great pleasure to visit the investors underground room with uh the one and only Sam also known on Twitter as trades turbo do follow him and it&#x27;s his room on Wednesdays the last Wednesday of the month that I&#x27;m gonna be coming in for the next couple of months so I&#x27;m excited about that yes attorney&#x27;s conversation that really is one of the conversations I had yesterday I did some speed coaching was around the concept of walking into your trading day with an agenda now of course nobody says that about themselves but often that&#x27;s what Traders do there are goals you have for yourself however part of what can happen is that those goals can morph into an agenda and when you go into the market and to your trading you know strategy you are going to potentially be blinded by this agenda because you&#x27;re attached to it and what happens that defeats your ability to see what is what is so one of the books I reference is a spiritual teacher who&#x27;s had a huge impact on me and my journey Byron Katie and she has a profound book called loving</p>
-<p>what is and what she taught me and what I hope I&#x27;m teaching you in this conversation now is that reality always wins but when we have attachment to an outcome that can become something that completely ruins our vision of what is happening now so I ask you to consider that for yourself are you able to stay outside of this agenda and if you find yourself caught up in your agenda it&#x27;s okay but recognize it and press pause okay I hope this helps your Trading</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Suppressing Your Trading Emotions: The Power of Non-Resistance</p>
+                <h3>Stop Suppressing Your Trading Emotions: The Power of Non-Resistance</h3>
 <p>Traders often mistake emotional suppression for control, attempting to ignore or push down difficult feelings like fear or frustration. This resistance traps the emotion inside, leading to internal volatility and poor decision-making when the market moves against you. Learning Emotional Non-Resistance is the critical shift that frees your mind.  - Emotional Non-Resistance is the <strong>willingness to be with hard feelings</strong>, rather than trying to leapfrog over them.</p>
 <ul>
 <li>This technique facilitates the <strong>discharge of strong emotions</strong>, similar to a steam vent releasing pressure.</li>
-<li>Mastering this practice is key to unlocking <strong>incredible empowerment</strong> in your trading capacity.Actionable Takeaway: Start viewing difficult emotions not as obstacles to be removed, but as waves that you are learning to surf.emotional nonresistance is a willingness to Surf hard to be with feelings instead of trying to Leap Frog over them or ignore them or push them down</li>
+<li>Mastering this practice is key to unlocking **incredible empowerment*</li>
+<li>in your trading capacity.Actionable Takeaway: Start viewing difficult emotions not as obstacles to be removed, but as waves that you are learning to surf.emotional nonresistance is a willingness to Surf hard to be with feelings instead of trying to Leap Frog over them or ignore them or push them down</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what is emotional non-resistance well I talk about it at length in my new ebook the five practices to become a better traiter emotional nonresistance is a willingness to Surf hard to be with feelings instead of trying to Leap Frog over them or ignore them or push them down this technique actually facilitates you being able to discharge them just like a steam vent on a Boiling Pot of water this takes some practice but once you learn how to surf the harder to be with emotions you will be incredibly empowered in ways you can&#x27;t imagine</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Danger of Mimicking Pro Traders</p>
-<p>Trying to perfectly copy a guru's trading process is a fundamental error that leads to inconsistent results and deep dependency. When you rely solely on someone else's system, you lack the psychological foundation needed to maintain conviction when their methods inevitably fail or they step away.  * <strong>External Reliance is Fragile</strong>: A strategy tied to a specific person is fragile because that individual’s performance or presence may change, leaving you without a sustainable plan.</p>
+                <h3>The Hidden Danger of Mimicking Pro Traders</h3>
+<p>Trying to perfectly copy a guru's trading process is a fundamental error that leads to inconsistent results and deep dependency. When you rely solely on someone else's system, you lack the psychological foundation needed to maintain conviction when their methods inevitably fail or they step away.</p>
 <ul>
+<li><strong>External Reliance is Fragile</strong>: A strategy tied to a specific person is fragile because that individual’s performance or presence may change, leaving you without a sustainable plan.</li>
 <li><strong>Customize, Not Copy</strong>: The goal of reviewing external data is to find concepts and information that enhance your own unique process, not to create a carbon copy of someone else's trades.</li>
-<li><strong>The Risks of Dependency</strong>: Mimicking creates vulnerability; if the person you follow stops sharing their process or experiences a drawdown, your entire system collapses.<strong>Actionable Takeaway</strong></li>
+<li><strong>The Risks of Dependency</strong>: Mimicking creates vulnerability; if the person you follow stops sharing their process or experiences a drawdown, your entire system collapses.**Actionable Takeaway*</li>
+<li>Actively test and integrate external information, ensuring that every tool or data point genuinely helps you better execute **your*</li>
+<li>current trading strategy.You have to trade you but you can use this information to help you better trade you.</li>
 </ul>
-<p>Actively test and integrate external information, ensuring that every tool or data point genuinely helps you better execute <strong>your</strong> current trading strategy.You have to trade you but you can use this information to help you better trade you.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I tell people you know I have this crowded market report where people come on and I show them kind of how I do stuff and I show them the data and we talk about this but I&#x27;m like listen don&#x27;t try to trade like I do right because it&#x27;s not going to work right just like if I try to trade like you do it wouldn&#x27;t work I try to try to take these things that I look at or that I think are important and use them within your process don&#x27;t try to mimic me there&#x27;s so many wrong things about trying to mimic me first of all what happens when I&#x27;m not here right then what are you going to do right second of all my trading can go bad at any time I don&#x27;t know you know what I mean but the important thing is yes you have to trade you but you can use this information to help you better trade you I think that&#x27;s a very important thing</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

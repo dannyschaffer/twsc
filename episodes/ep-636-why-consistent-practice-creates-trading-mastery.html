@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Practice Makes Perfect: Building Trading Mastery Off-Chart</p>
-<p>If you're stuck believing that spending more time on live charts is the only way to improve, you are likely burning out without gaining consistency. True trading mastery isn't found in perpetual hustle; it is built through the deliberate, focused practice that rewires your brain for discipline. This is how you close the gap between knowing what to do and actually doing it.  * <strong>Mindset Training:</strong> The mind can be trained, just like a muscle, allowing you to override default impulses and develop profitable habits.</p>
+                <h3>Practice Makes Perfect: Building Trading Mastery Off-Chart</h3>
+<p>If you're stuck believing that spending more time on live charts is the only way to improve, you are likely burning out without gaining consistency. True trading mastery isn't found in perpetual hustle; it is built through the deliberate, focused practice that rewires your brain for discipline. This is how you close the gap between knowing what to do and actually doing it.</p>
 <ul>
-<li><strong>Outside Work Is Essential:</strong> Just like top athletes and competitive gamers study techniques off the field, traders must allocate time for off-chart review and strategic analysis.</li>
-<li><strong>Targeted Focus:</strong> Don't waste energy studying every market theory; prioritize deep analysis of the data proving what works uniquely for your chosen strategy.Dedicate a minimum of 30 minutes daily to analyzing and studying only the trades that adhere to your current, successful strategy.I don't care what game it is... you practice.</li>
+<li>**Mindset Training:*</li>
+<li>The mind can be trained, just like a muscle, allowing you to override default impulses and develop profitable habits.</li>
+<li>**Outside Work Is Essential:*</li>
+<li>Just like top athletes and competitive gamers study techniques off the field, traders must allocate time for off-chart review and strategic analysis.</li>
+<li>**Targeted Focus:*</li>
+<li>Don't waste energy studying every market theory; prioritize deep analysis of the data proving what works uniquely for your chosen strategy.Dedicate a minimum of 30 minutes daily to analyzing and studying only the trades that adhere to your current, successful strategy.I don't care what game it is... you practice.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I mean, you could train yourself to want anything. Practice makes perfect. Practice, practice, practice, practice, practice. Practice makes perfect. I don&#x27;t care what game it is. If it&#x27;s basketball or Fortnite or you practice, and I can mean obviously practicing live, you know, maybe live in the market, but there&#x27;s also a lot of work you can do outside of it. You know, some of the best like video game players, they&#x27;ll go and study other people&#x27;s techniques, their strategies. For me, I just want to study what&#x27;s working for my strategy.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

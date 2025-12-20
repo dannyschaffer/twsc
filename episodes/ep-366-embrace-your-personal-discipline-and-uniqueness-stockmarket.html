@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Style: Why Non-Negotiable Discipline Must Come First</p>
-<p>Many traders attempt to skip the foundational steps of discipline, believing immediate uniqueness is their path to success. This premature focus on temperament leads to inconsistency and costly losses because the core structures needed to support their style are missing. You must secure your non-negotiable rules first.  * <strong>Foundational Rules are Non-Negotiable</strong>: Success is predicated on securing essential principles like <strong>managing your risk</strong> and <strong>pattern recognition</strong>.</p>
+                <h3>Stop Chasing Style: Why Non-Negotiable Discipline Must Come First</h3>
+<p>Many traders attempt to skip the foundational steps of discipline, believing immediate uniqueness is their path to success. This premature focus on temperament leads to inconsistency and costly losses because the core structures needed to support their style are missing. You must secure your non-negotiable rules first.</p>
 <ul>
-<li><strong>Consistency Requires Verification</strong>: You must be able to <strong>check those boxes</strong> and prove you are true to your core rules before exploring individuality.</li>
+<li><strong>Foundational Rules are Non-Negotiable</strong>: Success is predicated on securing essential principles like **managing your risk*</li>
+<li>and <strong>pattern recognition</strong>.</li>
+<li><strong>Consistency Requires Verification</strong>: You must be able to **check those boxes*</li>
+<li>and prove you are true to your core rules before exploring individuality.</li>
 <li><strong>Uniqueness is Secondary</strong>: Only once non-negotiable discipline is set can you safely lean into your <strong>particular temperament and style</strong>.Define your discipline set of non-negotiable rules right now and ensure absolute adherence to them."get that discipline set of non-negotiables uh right out of the gate"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>after those rules are followed like managing your risk like having your pattern recognition like being able to work really hard and you know look at those screens all day long there and there&#x27;s much more he has a list of seven or eight items that I&#x27;ll speak to tomorrow in the xpace but once those are secured once you have that those rulers and you can check those boxes that you are St true to them that is when then you absolutely need to lean into your particular temperament and style but get that discipline set of non-negotiables uh right out of the gate</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

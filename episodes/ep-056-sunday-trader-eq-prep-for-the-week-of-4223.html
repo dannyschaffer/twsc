@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of Busyness: Why Stillness Is Your Ultimate Trading Edge</p>
-<p>The cultural pressure to constantly "grind" forces many traders into unnecessary activity, confusing busyness with productivity. This compulsive need to take action leads to shame or guilt when idle, ultimately sabotaging profitable decision-making.  * <strong>Challenge the Default Setting:</strong> For traders, the urge to be active is often a default psychological setting, not a strategic necessity.</p>
+                <h3>The Cost of Busyness: Why Stillness Is Your Ultimate Trading Edge</h3>
+<p>The cultural pressure to constantly "grind" forces many traders into unnecessary activity, confusing busyness with productivity. This compulsive need to take action leads to shame or guilt when idle, ultimately sabotaging profitable decision-making.</p>
 <ul>
-<li><strong>Inactivity is a Strategy:</strong> Recognize that periods of idleness and stillness can be more appropriate and profitable than forced action.</li>
-<li><strong>The Cost of Compulsive Action:</strong> Being busy merely for the sake of being busy inevitably leads to costly mistakes in the market.<strong>Actionable Takeaway:</strong> Practice intentional stillness this week to differentiate between necessary action and compulsive busyness.he thought inactivity as important as activity perhaps more important</li>
+<li>**Challenge the Default Setting:*</li>
+<li>For traders, the urge to be active is often a default psychological setting, not a strategic necessity.</li>
+<li>**Inactivity is a Strategy:*</li>
+<li>Recognize that periods of idleness and stillness can be more appropriate and profitable than forced action.</li>
+<li>**The Cost of Compulsive Action:*</li>
+<li>Being busy merely for the sake of being busy inevitably leads to costly mistakes in the market.**Actionable Takeaway:*</li>
+<li>Practice intentional stillness this week to differentiate between necessary action and compulsive busyness.he thought inactivity as important as activity perhaps more important</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha I want to read a quote from a novel that really inspired me this weekend he did what needed to be done when it needed to be done when and where possible and if there were nothing that needed to be done then he would do nothing for he thought inactivity as important as activity perhaps more important think about how often what and how you operate through the week is perhaps just busyness I want you to disassemble this concept of being busy there are going to be times where idleness where being still we&#x27;re actually pausing and sitting in inactivity will be more appropriate than just taking action our culture has a tendency to make us feel uh ashamed or guilty or as if something&#x27;s wrong with us if we aren&#x27;t grinding if we aren&#x27;t active and I think especially for Traders that becomes a default setting so notice this week if you&#x27;re able to disassemble this concept of busyness because if you&#x27;re being busy just for the sake of being busy it&#x27;s going to cost you so that is my thought for this week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

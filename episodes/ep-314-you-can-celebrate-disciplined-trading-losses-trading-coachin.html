@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Crucial Skill: How to Celebrate Disciplined Losses</p>
+                <h3>The Crucial Skill: How to Celebrate Disciplined Losses</h3>
 <p>Taking a planned loss is one of the hardest psychological hurdles in trading, often triggering feelings of failure and regret. This internal resistance prevents you from reinforcing good behavior, leading to hesitation and poor risk management in the future. To build the consistent process necessary for long-term profitability, you must learn to redefine what constitutes a "win."  - <strong>Process Over Outcome</strong>: You must detach your self-worth and behavioral reinforcement from the monetary result. Discipline should be celebrated regardless of the P\&L.</p>
 <ul>
 <li><strong>Rewiring Your Brain</strong>: Actively reinforcing the decision ("it was the right thing to do") solidifies crucial risk management habits and separates the painful outcome from the correct process.</li>
 <li><strong>The True Measure of Success</strong>: A disciplined loss is a successful execution of your strategy’s most important component: risk control.Actionable Takeaway: For every planned loss you take this week, immediately log it in your journal not as a negative result, but as a <strong>'Successful Execution of Risk Management'</strong>.You’re not celebrating the outcome, you’re celebrating the process... I know it hurt but it was the right thing to do.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>one of the things I always tell people to do is to learn how to celebrate losses if they were disciplined right and it&#x27;s again it&#x27;s the it it&#x27;s the exact same thing you&#x27;re not celebrating the outcome you&#x27;re celebrating the process that you&#x27;re celebrating the fact that you know you might not have wanted to take the loss but you did and you knew it was right and so you&#x27;re you&#x27;re you&#x27;re reinforcing it in your head that hey I know it hurt but it was the right thing to do and that&#x27;s what you you have to like solidify in the head</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

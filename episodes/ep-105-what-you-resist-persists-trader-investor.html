@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Invisible Cost of Fighting Your Trading Reality</p>
-<p>We often assume resistance is a battle against the market, but the true internal conflict is our resistance to reality itself. Whether it’s an unaccepted loss from last year or frustration with your slow progress, this refusal to acknowledge what is happening keeps you emotionally trapped. Until you fully accept your current circumstances—good or bad—you cannot move forward to disciplined profitability.  * <strong>Unprocessed Losses</strong>: A trade loss, whether recent or months old, remains an active emotional barrier if you have not fully accepted, grieved, and processed the outcome.</p>
+                <h3>The Invisible Cost of Fighting Your Trading Reality</h3>
+<p>We often assume resistance is a battle against the market, but the true internal conflict is our resistance to reality itself. Whether it’s an unaccepted loss from last year or frustration with your slow progress, this refusal to acknowledge what is happening keeps you emotionally trapped. Until you fully accept your current circumstances—good or bad—you cannot move forward to disciplined profitability.</p>
 <ul>
+<li><strong>Unprocessed Losses</strong>: A trade loss, whether recent or months old, remains an active emotional barrier if you have not fully accepted, grieved, and processed the outcome.</li>
 <li><strong>The Time Trap</strong>: Resistance to the actual timeline of your trading evolution sabotages present-day discipline by fueling self-judgment and destructive impatience.</li>
 <li><strong>External Reality Check</strong>: Your refusal to accept your current financial capacity or your need for a day job creates significant internal friction that drains your focus from the charts.Actionable Takeaway: Identify one element of your trading life (a major loss, your current P&L, or your progression speed) that you are actively resisting, and write down three non-judgmental facts about it."The resistance I'm asking you to take a look at is resistance you have to reality."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>resistance nope not that kind of resistance the resistance I&#x27;m asking you to take a look at is resistance you have to reality what could that reality be it could be as simple as a loss that you took yesterday it could be the big laws that you took in the last few months or year that you still have yet to fully accept grieve and process is it resistance to how long it&#x27;s taking you to become the kind of Trader you thought you would be by now perhaps it&#x27;s resistance to your bank account what you&#x27;re able to afford to put into your trading perhaps it&#x27;s resistance to the date job you still have to work because you haven&#x27;t succeeded at the level you wanted to by now wherever you have resistance you have</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

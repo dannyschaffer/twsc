@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Reset Your Trading Mindset: The Power of a Dopamine Detox</p>
-<p>Trading burnout is often tied to an overstimulated nervous system constantly chasing the next hit of excitement or profit. If you find your focus shattered and your decision-making impulsive, your system may need a reset. A deliberate pause from high-stimulus inputs can recalibrate your brain's reward center, leading to clearer judgment when you return.  * <strong>Purposeful Pause</strong>: A dopamine detox requires pausing high-stimulus activities, including trading and constant online engagement, to reduce reliance on quick emotional hits.</p>
+                <h3>Reset Your Trading Mindset: The Power of a Dopamine Detox</h3>
+<p>Trading burnout is often tied to an overstimulated nervous system constantly chasing the next hit of excitement or profit. If you find your focus shattered and your decision-making impulsive, your system may need a reset. A deliberate pause from high-stimulus inputs can recalibrate your brain's reward center, leading to clearer judgment when you return.</p>
 <ul>
+<li><strong>Purposeful Pause</strong>: A dopamine detox requires pausing high-stimulus activities, including trading and constant online engagement, to reduce reliance on quick emotional hits.</li>
 <li><strong>Recalibration Goal</strong>: The objective is to allow your entire system to return to a natural emotional and mental <strong>Center</strong>.</li>
 <li><strong>Effective Duration</strong>: While short breaks (72 hours) can show initial differences, planning for at least a week is recommended for significant, lasting recalibration.Actionable Takeaway: Initiate a minimum 72-hour period where you completely pause trading and other major dopamine triggers to assess your baseline mental clarity.your whole system can kind of come back to Center</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>dopamine detox it would mean to pause trading for a particular period of time pause being online it would kind of pause sex pause being triggered by dopamine so that your whole system can kind of come back to Center there&#x27;s different thoughts about how long that dopamine detox has to last but there are people who even do 72 hours and see a difference I would say on an average probably you&#x27;re going to look at a week at a minimum</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

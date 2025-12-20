@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Discharge Trading Anger with Physical Exertion</p>
+                <h3>How to Discharge Trading Anger with Physical Exertion</h3>
 <p>When trades go sideways, the resulting anger can lead to self-sabotage and costly mistakes. Many traders mistakenly believe this emotion signifies a personal flaw, but anger is a natural human response when expectations or needs are unmet. Learning to navigate and process this intense feeling is crucial for maintaining discipline.  - <strong>Anger is Information</strong>: It signals unmet needs and should not be suppressed or viewed as a personal failure.</p>
 <ul>
 <li><strong>Emotional Navigation</strong>: Mastery is not about eliminating anger, but learning how to effectively handle and "be with" the feeling when it arises.</li>
 <li><strong>Physical Discharge</strong>: Anger is a high-energy emotion that requires physical movement to be successfully metabolized and removed from the nervous system.</li>
 </ul>
 <p>When you feel the intense spike of anger after a trade, immediately interrupt the trading process and engage in intense physical activity like a set of push-ups or running stairs until the physical charge dissipates.The thing about anger is it's just an emotion, it's just a feeling, and some people actually feel sometimes like there's something wrong with them if they have it, but it's just a human emotion.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so I want to know what you do when you get angry how do you handle it do you scream do you rage do you break your keyboard what is your go-to Technique the thing about anger is it&#x27;s just an emotion it&#x27;s just a feeling and some people actually feel sometimes like there&#x27;s something wrong with them if they have it but it&#x27;s just a human emotion whenever we don&#x27;t get our needs met we&#x27;re going to have feelings of anger the key is learning how to navigate them learning how to be with them one of the techniques that works remarkably well is to actually have physical exertion in the throat of it take that anchor and pour it into a set of push-ups pour it into running up and down a flight of stairs over and over again you will find that your physical movement will help you discharge that feeling and that is part of what anger is it&#x27;s just something</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

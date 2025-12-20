@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Trader's Hero's Journey: Why Your Losses Are Necessary for Growth</p>
-<p>Every trader experiences painful episodes and losses that feel like a personal failure. This mindset mistake prevents the essential psychological growth required for long-term mastery. This video reveals how to apply the principles of Joseph Campbell's Hero's Journey to trading, turning your greatest setbacks into your greatest strategic advantage.  - The Heroic Reframe: All losses, personal or financial, exist to <strong>uplevel you</strong> and force necessary growth.</p>
+                <h3>The Trader's Hero's Journey: Why Your Losses Are Necessary for Growth</h3>
+<p>Every trader experiences painful episodes and losses that feel like a personal failure. This mindset mistake prevents the essential psychological growth required for long-term mastery. This video reveals how to apply the principles of Joseph Campbell's Hero's Journey to trading, turning your greatest setbacks into your greatest strategic advantage.  - The Heroic Reframe: All losses, personal or financial, exist to **uplevel you*</p>
 <ul>
+<li>and force necessary growth.</li>
 <li>Ego Dissolution: True transformation in trading requires going into the darkness to <strong>dissolve your lower-case ego</strong>.</li>
-<li>The Ladder of Lessons: When you adopt a heroic perspective, setbacks immediately become <strong>ladders for self-improvement</strong> rather than sources of intimidation.Actionable Takeaway: Reframe your most recent loss as an essential lesson that forced you to recognize a new psychological limit that you must now surpass.for a caterpillar to become a butterfly it has to go into the darkness and it has to dissolve</li>
+<li>The Ladder of Lessons: When you adopt a heroic perspective, setbacks immediately become **ladders for self-improvement*</li>
+<li>rather than sources of intimidation.Actionable Takeaway: Reframe your most recent loss as an essential lesson that forced you to recognize a new psychological limit that you must now surpass.for a caterpillar to become a butterfly it has to go into the darkness and it has to dissolve</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>practice for is embracing your inner hero that&#x27;s right traitors you are the hero of your own story this is learnings of one of the most impactful teachers I&#x27;ve had Joseph Campbell who was a mythologist he speaks at length about how each of us are on our own heroic journey and what I want you as a traitor to start to see is that all the painful episodes you&#x27;ve gone through all the losses you gone through personally and in your trading account are all there to uplevel you to help you grow to help you stretch for a caterpillar to become a butterfly it has to go into the darkness and it has to dissolve in many ways your journey as a Traer is dissolving that lowercase ego if you start to see yourself as a hero those lessons become places and ladders to uplevel yourself not to be intimidated by</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Repeating Costly Trading Mistakes: Find the Hidden Payoff</p>
+                <h3>Stop Repeating Costly Trading Mistakes: Find the Hidden Payoff</h3>
 <p>Are you frustrated by constantly repeating the same costly mistakes in your trading, feeling unable to break the cycle? This repetitive, self-sabotaging behavior is often not a failure of discipline but a mechanism maintained by a hidden, unconscious reward. By uncovering the benefit your system is receiving from the mistake, you gain the key to true behavioral change.  - The constant repetition of a mistake is driven by a <strong>hidden payoff</strong>—a perceived psychological benefit that outweighs the financial cost.</p>
 <ul>
-<li>Identifying this payoff is a necessary, <strong>paradigm-shifting</strong> step that moves beyond self-blame and toward insight.</li>
-<li>Understanding this loop is what allows you to be <strong>set free</strong> from the pattern of failure.Actionable Takeaway:</li>
+<li>Identifying this payoff is a necessary, **paradigm-shifting*</li>
+<li>step that moves beyond self-blame and toward insight.</li>
+<li>Understanding this loop is what allows you to be **set free*</li>
+<li>from the pattern of failure.Actionable Takeaway:</li>
 </ul>
 <p>Identify your biggest, most frustrating trading challenge and journal on this question: How is this behavior currently benefiting me?What keeps that going usually is a hidden payoff.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this question will probably piss you off before it sets you free whatever is your current challenge whatever you keep repeating that you&#x27;re just like why do I keep doing that I&#x27;m going to ask you to look for the payoff what keeps that going usually is a hidden payoff so I want you to take what whatever the pick challenges you&#x27;re dealing with right now and you&#x27;re trading and I want you to ask yourself how is that benefiting you it&#x27;s a weird question it&#x27;s totally Paradigm shifting I know it pissed me off when I first heard it but once you start to dig and find the payoffs that actually are in the costly Behavior you will be amazed and hopefully set free</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

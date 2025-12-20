@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Letting Stress Hormones Sabotage Your Trading Decisions</p>
+                <h3>Stop Letting Stress Hormones Sabotage Your Trading Decisions</h3>
 <p>Trading performance is often seen as a function of strategy, but deep biological stress—particularly hormonal imbalance—can quietly sabotage your decisions. Dr. John Gray, author of *Men Are From Mars, Women Are From Venus*, reveals how cortisol, adrenaline, and testosterone levels fundamentally impact mental clarity, impulse control, and longevity in the market. Ignoring your body's chemistry means battling your trades with a mind predisposed to emotional reactions and burnout.</p>
 <p>Key Insights:  - <strong>The Stress-Hormone Link</strong>: Chronic market stress dramatically decreases testosterone and increases estrogen, triggering negative emotional states like anger, despair, and fight-or-flight reactions.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Behavioral Change is Paramount</strong>: Sustained hormonal balance and trading success depend on consistent, health-oriented behaviors, not just external supplements.Actionable Takeaway:</li>
 </ul>
 <p>To counteract stress hormone build-up, prioritize a non-negotiable routine for 'burning off adrenaline,' such as a 20-30 minute physical exercise session daily."It's not about taking testosterone it's taking action that gives you a feeling that I'm making a positive difference and will increase testosterone."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Transcript not available.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

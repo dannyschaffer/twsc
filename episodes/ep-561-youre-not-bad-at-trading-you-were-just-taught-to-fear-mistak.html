@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Your Greatest Trading Mistake Isn't a Loss—It's Your Fear of Being Wrong</p>
-<p>Many traders punish themselves severely after a loss, equating a red P&L with personal incompetence. This intense emotional reaction isn't a flaw in your strategy; it's a deep-seated fear of error programmed by old environments that only rewarded certainty. Realizing that the market is a game of probabilities is the critical step toward building genuine consistency.  * <strong>Trading is a 50/50 Game:</strong> Stop viewing a losing outcome as a moral failing. Much like a coin flip, sometimes your probability-based entry will result in the undesirable 50 percent, but this outcome does not invalidate your process.</p>
+                <h3>Your Greatest Trading Mistake Isn't a Loss—It's Your Fear of Being Wrong</h3>
+<p>Many traders punish themselves severely after a loss, equating a red P&L with personal incompetence. This intense emotional reaction isn't a flaw in your strategy; it's a deep-seated fear of error programmed by old environments that only rewarded certainty. Realizing that the market is a game of probabilities is the critical step toward building genuine consistency.</p>
 <ul>
-<li><strong>The Education Barrier:</strong> Your discomfort with losses often stems from an environment (like traditional schooling) where you were only rewarded for being right, creating a deeply ingrained aversion to error.</li>
-<li><strong>Embrace Being Human:</strong> The most resilient traders are simply those who are comfortable with the inevitable mistakes and uncertainties that come with trading for a living.<strong>Actionable Takeaway</strong></li>
+<li>**Trading is a 50/50 Game:*</li>
+<li>Stop viewing a losing outcome as a moral failing. Much like a coin flip, sometimes your probability-based entry will result in the undesirable 50 percent, but this outcome does not invalidate your process.</li>
+<li>**The Education Barrier:*</li>
+<li>Your discomfort with losses often stems from an environment (like traditional schooling) where you were only rewarded for being right, creating a deeply ingrained aversion to error.</li>
+<li>**Embrace Being Human:*</li>
+<li>The most resilient traders are simply those who are comfortable with the inevitable mistakes and uncertainties that come with trading for a living.**Actionable Takeaway*</li>
+<li>When reviewing your journal, stop labeling non-successful trades as "wrong" and focus purely on whether you executed your predefined plan objectively.The kids that can make mistakes without a hiccup, are the ones who probably grow up into adults who can be more comfortable with being human.</li>
 </ul>
-<p>When reviewing your journal, stop labeling non-successful trades as "wrong" and focus purely on whether you executed your predefined plan objectively.The kids that can make mistakes without a hiccup, are the ones who probably grow up into adults who can be more comfortable with being human.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the kids that can make mistakes without a hiccup. When you say heads, it doesn&#x27;t mean you were wrong. That&#x27;s 50/50 chance, right? And and I think that&#x27;s what I tell people do all the time. Think about it in those terms. You know, are you going to beat your head? You call heads on a coin flip and it comes out tails. Are you going to say, &amp;quot;Oh my god, I&#x27;m horrible. I&#x27;m so stupid. I&#x27;m this and that.&amp;quot; No. It&#x27;s very easy to understand. Yeah. The 50-50 chance to begin with. Yeah. But you but most people aren&#x27;t coming from probability careers. Most people are coming from you know I think of the kids that have an education through let&#x27;s say the Montasauri schools versus our current you know curriculum are standard public schools were created to create factory workers who didn&#x27;t think for themselves. So you were only rewarded when you were right and not rewarded for, you know, anything else. The kids that can make mistakes without a hiccup, uh, are the ones who probably grow up into adults who can be more comfortable with being human.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

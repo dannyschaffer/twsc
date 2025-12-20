@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Blind: How Emotional Journaling Unlocks Your Real Edge</p>
+                <h3>Stop Trading Blind: How Emotional Journaling Unlocks Your Real Edge</h3>
 <p>Many traders meticulously analyze charts, yet they continue to repeat costly mistakes. This disconnect occurs because you are reviewing the market, not yourself. True clarity and consistent performance require understanding the emotional patterns that consistently drive your behavioral flaws.  - <strong>Charting is incomplete data</strong>. Most traders skip reviewing the most crucial variable: their internal emotional state and feelings during market action.</p>
 <ul>
 <li><strong>Identify repeating patterns</strong>. Journaling your emotions provides the clarity needed to identify and break the behavioral loops that undermine profitable trading.</li>
 <li><strong>Self-awareness refines strategy</strong>. Tracking feelings alongside trades allows you to turn up the volume on self-awareness, which directly impacts your long-term strategy and execution.Actionable Takeaway: Start diligently tracking your specific emotions and feelings—not just market metrics—immediately after every trading interaction."Most traders review charts, but very few review themselves."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You want better trades, you&#x27;ve got a star track with your emotions and feelings. Most traders review charts, but very few review themselves. Journaling gives you the clarity on patterns you keep repeating. You want better trades you&#x27;ve got to start tracking what your emotions and feelings were during the day, not just the market. Send me a DM that says track. If you&#x27;re ready to turn up the volume on your self-awareness and have impact your strategy,</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

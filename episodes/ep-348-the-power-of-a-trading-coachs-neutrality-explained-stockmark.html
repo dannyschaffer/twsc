@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Neutrality is the Most Profitable Trait in a Trading Coach</p>
+                <h3>Why Neutrality is the Most Profitable Trait in a Trading Coach</h3>
 <p>When self-doubt or emotional patterns repeatedly sabotage your trading, it can feel impossible to gain an objective perspective. You are too close to your own struggles to see the loop, leading to frustration and continued losses. Discover how a coach's objective stance can finally unlock the self-awareness needed for a genuine breakthrough.  - <strong>Neutrality is Not Passive</strong>: A truly effective coach actively holds your trading agenda without injecting their own biases or P\&L goals.</p>
 <ul>
 <li><strong>The Ego is Removed</strong>: Because a good coach operates without a personal "agenda," the space created allows you to bypass your ego and hear uncomfortable truths.</li>
 <li><strong>Clarity Through Reflection</strong>: The primary function of coaching is to serve as a mirror, reflecting your internal processes so you can diagnose behavioral mistakes that indicators cannot catch.When seeking mentorship, prioritize a coach's ability to remain neutral and facilitate self-discovery over their technical trading success.the coach is coming from a place of neutrality and it's because of that neutrality that a client is able to hear themselves for the first time</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the coach holds your agenda the coach themselves if they&#x27;re decent does not have an agenda the coach is coming from a place of neutrality and it&#x27;s because of that neutrality that a client is able to hear themselves for the first time</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

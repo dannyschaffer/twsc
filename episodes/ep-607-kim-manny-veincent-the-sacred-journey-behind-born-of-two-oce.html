@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Just Reading Charts: The Sacred Journey to Trading Mastery</p>
-<p>Many traders seek quick technical fixes, overlooking the need for deep, honored commitment to their process. When you approach trading purely transactionally, you miss the profound psychological foundation required for true mastery. Discover how viewing your trading journey as a "sacred history" can unlock your capacity for consistent profitability.  * <strong>The Power of Witnessing:</strong> True change comes from witnessing your entire history—not just P\&L—but the emotional and behavioral history that defines your capacity.</p>
+                <h3>Stop Just Reading Charts: The Sacred Journey to Trading Mastery</h3>
+<p>Many traders seek quick technical fixes, overlooking the need for deep, honored commitment to their process. When you approach trading purely transactionally, you miss the profound psychological foundation required for true mastery. Discover how viewing your trading journey as a "sacred history" can unlock your capacity for consistent profitability.</p>
 <ul>
-<li><strong>Embrace Cultural Depth:</strong> Mastery demands integrating the "culture" of profitable trading—discipline, self-awareness, and emotional honesty—into your identity.</li>
-<li><strong>Honor the Process:</strong> Consistent profitability is earned through deep commitment to learning and respecting the inherent complexity of self-mastery over time.Start documenting the emotional history surrounding your biggest trade decisions (both wins and losses) to actively witness your personal psychological patterns.It felt like I was being given a sacred journey to learn and be witness to history.</li>
+<li>**The Power of Witnessing:*</li>
+<li>True change comes from witnessing your entire history—not just P\&L—but the emotional and behavioral history that defines your capacity.</li>
+<li>**Embrace Cultural Depth:*</li>
+<li>Mastery demands integrating the "culture" of profitable trading—discipline, self-awareness, and emotional honesty—into your identity.</li>
+<li>**Honor the Process:*</li>
+<li>Consistent profitability is earned through deep commitment to learning and respecting the inherent complexity of self-mastery over time.Start documenting the emotional history surrounding your biggest trade decisions (both wins and losses) to actively witness your personal psychological patterns.It felt like I was being given a sacred journey to learn and be witness to history.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>makes me emotional now just thinking about it. You&#x27;ve written other books. I have. How has this process been different from your other books that you&#x27;ve written and what do you like about it? What I like about it is that it&#x27;s a culture that I now love and have loved for the past 12 years. and to get to better understand pigeon and Hawaiian and history of the island that now I&#x27;ve called home for 10 years. Uh it felt like I was being given a sacred journey to learn and be witness to history, Uncle Manny&#x27;s entire life history and his family&#x27;s history. So, it felt like this tremendous honor that I was incredibly fortunate to get to do. You know, it makes me emotional now just thinking about</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

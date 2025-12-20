@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The 93-Year-Old Secret to Sustained Mental Edge</p>
-<p>Trading success is a marathon, not a sprint, demanding the mental endurance to thrive over decades. Ninety-three-year-old Phyllis Fox shares her powerful philosophy on sustained health and joy by focusing on the present and refusing to adopt self-limiting beliefs. Her approach offers a critical lesson in maintaining the emotional capacity required to navigate long-term market volatility.  * <strong>Reject Self-Limiting Identity:</strong> Phyllis actively refused to be defined by her age, a powerful parallel to rejecting the "losing trader" or "unlucky" labels after setbacks. Your mental state should be governed by your <strong>happiness and activity</strong>, not external numbers.</p>
+                <h3>The 93-Year-Old Secret to Sustained Mental Edge</h3>
+<p>Trading success is a marathon, not a sprint, demanding the mental endurance to thrive over decades. Ninety-three-year-old Phyllis Fox shares her powerful philosophy on sustained health and joy by focusing on the present and refusing to adopt self-limiting beliefs. Her approach offers a critical lesson in maintaining the emotional capacity required to navigate long-term market volatility.</p>
 <ul>
-<li><strong>The Process of Perpetual Action:</strong> Her secret lies in <strong>keeping busy, enjoying where you are</strong>, and having plenty to do. For a trader, this translates to mastering the process of execution and avoiding stagnation, ensuring continuous growth.</li>
-<li><strong>Fill Your Life with Aloha:</strong> By actively pursuing positive relationships and <strong>helping others</strong>, she ensures her perspective remains expansive, preventing the isolation and self-obsession that often leads to burnout in the trading world.Actionable Takeaway: Start your day by defining your current value not by yesterday's P&L, but by your commitment to positive, process-driven actions."I didn't want to think of myself as old and I didn't want to think of myself as 93. And you just keep going and enjoying where you are."</li>
+<li>**Reject Self-Limiting Identity:*</li>
+<li>Phyllis actively refused to be defined by her age, a powerful parallel to rejecting the "losing trader" or "unlucky" labels after setbacks. Your mental state should be governed by your <strong>happiness and activity</strong>, not external numbers.</li>
+<li>**The Process of Perpetual Action:*</li>
+<li>Her secret lies in <strong>keeping busy, enjoying where you are</strong>, and having plenty to do. For a trader, this translates to mastering the process of execution and avoiding stagnation, ensuring continuous growth.</li>
+<li>**Fill Your Life with Aloha:*</li>
+<li>By actively pursuing positive relationships and <strong>helping others</strong>, she ensures her perspective remains expansive, preventing the isolation and self-obsession that often leads to burnout in the trading world.Actionable Takeaway: Start your day by defining your current value not by yesterday's P&L, but by your commitment to positive, process-driven actions."I didn't want to think of myself as old and I didn't want to think of myself as 93. And you just keep going and enjoying where you are."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I didn&#x27;t want to think of myself as old. I have a dear friend with me here today, the one and only Phyllis Fox. Say hi, Phyllis. Greetings. Aloha. Phyllis is how old? I am 93 years old. Oh, Phyllis, what do you think has had you be able to live 93 years and still be as healthy as you are? You know, that&#x27;s something I really don&#x27;t understand myself. But a couple of months ago, I had a an awakening. For some reason, I never thought much about my age. I didn&#x27;t realize that it was growing in numbers. It didn&#x27;t affect me because as long as I felt happy, healthy, plenty to do, lots of friends, lots of things to do, I didn&#x27;t want to uh think of myself as old and I didn&#x27;t want to think of myself as 93. And you just keep going and enjoying where you are. um keeping busy, helping others, just filling your life with love and aloha because we lived here for so</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

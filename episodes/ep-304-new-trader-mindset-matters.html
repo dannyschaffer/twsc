@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Most Critical Non-Technical Skill New Traders Must Master</p>
+                <h3>The Most Critical Non-Technical Skill New Traders Must Master</h3>
 <p>As a new trader, it is easy to become obsessed with finding technical tips and tricks, overlooking the single most crucial factor for long-term survival. Ignoring your emotions is not control; it only guarantees they will eventually hijack your decision-making, leading to inconsistent performance and frustration. The real challenge is learning how to successfully "surf" these powerful feelings.  - The <strong>non-technical side of trading</strong>—your emotional intelligence—is more critical than any strategy or indicator.</p>
 <ul>
-<li>Emotional control is not suppression; it means <strong>being present with strong feelings</strong> (fear, greed) until their intensity shifts.</li>
-<li>Consistency is achieved through <strong>deliberate practice</strong> of emotional regulation techniques, even if they feel hard during the trading day.</li>
+<li>Emotional control is not suppression; it means **being present with strong feelings*</li>
+<li>(fear, greed) until their intensity shifts.</li>
+<li>Consistency is achieved through **deliberate practice*</li>
+<li>of emotional regulation techniques, even if they feel hard during the trading day.</li>
 </ul>
 <p>Develop a defined process (physical, logical, or emotional) to intentionally sit with difficult feelings during the trading day, allowing the intensity to shift naturally instead of reacting to it."You cannot ignore your emotions, but if you don't want them to hijack you, you need to start to learn how to surf them."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>are you a new Trader are you looking for some tips and tricks about what to do as a newbie here is the most important piece of the non-technical side you will ever need to learn and that is you cannot ignore your emotions but if you don&#x27;t want them to hijack you you need to start to learn how to surf them what does that look like it looks like being able to find way physically logically emotionally to be with a very heart to be with feeling until it shifts I understand it&#x27;s hard to do in the middle of a trading day but you will get this if you practice it and I promise it will change everything</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

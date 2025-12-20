@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,18 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Reactivity, Not Volatility, Is What Is Costing You Money</p>
+                <h3>Reactivity, Not Volatility, Is What Is Costing You Money</h3>
 <p>Volatility is a constant in the markets and in life, but your reaction to it determines your outcome. When every spike, dip, or curveball throws you into a panic, you are no longer trading—you are merely surviving. The true danger isn't market chaos, but your unregulated, costly response.</p>
-<p>Key Insights:  * <strong>Reactivity is the actual problem.</strong> The market swings are normal; the panic and forced actions that follow are what wreck your account.</p>
+<p>Key Insights:</p>
 <ul>
-<li><strong>Nervous System Calm is a Strategy.</strong> Staying regulated during the storm is your real competitive edge.</li>
-<li><strong>Stillness equals clarity.</strong> Clarity leads directly to better, more powerful decisions in trading and in life.Actionable Takeaway:</li>
+<li>**Reactivity is the actual problem.*</li>
+<li>The market swings are normal; the panic and forced actions that follow are what wreck your account.</li>
+<li>**Nervous System Calm is a Strategy.*</li>
+<li>Staying regulated during the storm is your real competitive edge.</li>
+<li>**Stillness equals clarity.*</li>
+<li>Clarity leads directly to better, more powerful decisions in trading and in life.Actionable Takeaway:</li>
 </ul>
 <p>Treat nervous system regulation not as a soft skill, but as a critical, fundamental trading strategy.Nervous system calm isn't some soft skill. It's a strategy.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Volatility isn&#x27;t a problem. Reactivity is. Market swings normal. Life swings also normal. It&#x27;s not the chaos that wrecks you. It&#x27;s your response to it. If every spike, dip, or curveball throws you into a panic. You&#x27;re not trading, you&#x27;re surviving. The real edge staying regulated when the storm hits. Nervous system calm isn&#x27;t some soft skill. It&#x27;s a strategy. Stillness equals clarity. Clarity equals better decisions in trading and in life. The less reactive you are, the more powerful you become. Drop a reactive in the comments and I&#x27;ll send you my free ebook, The Five Practices to Become a Better Trader.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +257,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Unwritten Contract: How to End Emotional Conflict with the Market</p>
-<p>Trading success hinges not just on strategy, but on preemptive psychological preparation. Without a formal agreement with yourself about what success and failure look like, you expose yourself to burnout and emotional trading. Learn how creating a psychological contract professionalizes your approach and transforms your relationship with risk.  * <strong>Define Your Bargain</strong>: Clearly state the bargain you are making with the market, accepting the non-negotiable reality of your chosen strategy—be it frequent wins with occasional large hits, or high-risk hunting for massive returns (e.g., 20:1 payoff).</p>
+                <h3>The Unwritten Contract: How to End Emotional Conflict with the Market</h3>
+<p>Trading success hinges not just on strategy, but on preemptive psychological preparation. Without a formal agreement with yourself about what success and failure look like, you expose yourself to burnout and emotional trading. Learn how creating a psychological contract professionalizes your approach and transforms your relationship with risk.</p>
 <ul>
+<li><strong>Define Your Bargain</strong>: Clearly state the bargain you are making with the market, accepting the non-negotiable reality of your chosen strategy—be it frequent wins with occasional large hits, or high-risk hunting for massive returns (e.g., 20:1 payoff).</li>
 <li><strong>Love Your Losses</strong>: The contract requires accepting losses as a fundamental and necessary component of the long-term journey towards success, removing the psychological damage of unexpected drawdowns.</li>
 <li><strong>Commit to Long-Term Acceptance</strong>: You must make a deep, conscious bargain with yourself to live with the negative outcomes inherent to your strategy, reinforcing discipline when faced with volatility.Formalize your risk tolerance and expected trade profile today, committing to these terms before your next market entry to prevent emotional decision-making."Part of mine was learning to love my losses. That was really important."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>But every now and then you&#x27;re going to suffer a a big hit. The Wall Street Coach podcast. All right, let&#x27;s talk about the importance of a traitor making a psychological contract with themselves. It&#x27;s that bit where saying to yourself in a way that this is not always going to go the way you want, but how do you how do you want to do it? I kind of formed a psychological contract. Part of mine was learning to love my losses. That was really important. You know, you have to agree what is the bargain you&#x27;re going to go through. You know, is it going to be a bargain, for example, where you&#x27;re going to trade regularly, nearly every day, and you&#x27;re going to win a lot, but every now and then you&#x27;re going to suffer a big hit. Mhm. You&#x27;ve got to accept that. You got to make that bargain with yourself that that is part of the long-term journey towards success. And you got to be able to live with that. So, you have to accept that. Or it could be that bargain where you say, &amp;quot;Okay, I&#x27;m going to lose most of the time. I&#x27;m</p>
-<p>only going to be right 10% of the time, but when I&#x27;m right, I&#x27;ve got to trade it in this way and optimize the return and try and get a much bigger return. So, it&#x27;s like a 20 to1 return.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Expecting Change While Repeating the Same Mistakes</p>
-<p>You know exactly what mistakes are costing you money, yet you find yourself repeating the same cycle every week. Stagnation is not due to a lack of knowledge, but a failure to translate that self-awareness into tangible behavior change. You cannot expect your trading results to improve if your actions remain consistent.  * <strong>Repetitive Behavior, Repetitive Loss</strong> To stop an emotional or strategic loop, you must first recognize that repeating the same actions guarantees the same negative outcomes.</p>
+                <h3>Stop Expecting Change While Repeating the Same Mistakes</h3>
+<p>You know exactly what mistakes are costing you money, yet you find yourself repeating the same cycle every week. Stagnation is not due to a lack of knowledge, but a failure to translate that self-awareness into tangible behavior change. You cannot expect your trading results to improve if your actions remain consistent.</p>
 <ul>
-<li><strong>Drawing the Line</strong> True professional change requires putting a line in the sand and establishing a firm boundary between old habits and new, profitable standards.</li>
-<li><strong>Ready to Level Up</strong> Being in the conversation about trading psychology is a good first step, but real evolution demands you translate that understanding into *literal* action.After identifying a pattern of mistakes, commit to a single, concrete, literal action this week (e.g., closing the platform after one loss) to ensure a break in the cycle.You cannot expect change to happen guys if you keep repeating the same behavior right you have to make put at some point A Line in the Sand and then do something about it.</li>
+<li>**Repetitive Behavior, Repetitive Loss*</li>
+<li>To stop an emotional or strategic loop, you must first recognize that repeating the same actions guarantees the same negative outcomes.</li>
+<li>**Drawing the Line*</li>
+<li>True professional change requires putting a line in the sand and establishing a firm boundary between old habits and new, profitable standards.</li>
+<li>**Ready to Level Up*</li>
+<li>Being in the conversation about trading psychology is a good first step, but real evolution demands you translate that understanding into *literal</li>
+<li>action.After identifying a pattern of mistakes, commit to a single, concrete, literal action this week (e.g., closing the platform after one loss) to ensure a break in the cycle.You cannot expect change to happen guys if you keep repeating the same behavior right you have to make put at some point A Line in the Sand and then do something about it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the same mistakes I think you&#x27;re talking about are ones you talked about with me before here so if you actually want that to change and this goes for everybody here you cannot expect change to happen guys if you keep repeating the same behavior right you have to make put at some point A Line in the Sand and then do something about it and that is part of the game look anybody coming into these conversations you are doing something about it but it could be now you&#x27;re ready to level up it could be now you&#x27;re ready to actually take literal action</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Power of Creating the Map That Doesn't Exist</p>
-<p>When seeking success in trading, we often look externally for the perfect system or guru, leaving a crucial void in our internal world. True, lasting change doesn't come from consuming information fueled by fear, but from cultivating a personal vision driven by <strong>love</strong> and <strong>intention</strong>.  * <strong>External Search vs. Internal Creation</strong>: World-changing endeavors, including mastering trading psychology, stem from acknowledging what you genuinely desire and actively building it.</p>
+                <h3>The Power of Creating the Map That Doesn't Exist</h3>
+<p>When seeking success in trading, we often look externally for the perfect system or guru, leaving a crucial void in our internal world. True, lasting change doesn't come from consuming information fueled by fear, but from cultivating a personal vision driven by **love*</p>
 <ul>
+<li>and <strong>intention</strong>.</li>
+<li><strong>External Search vs. Internal Creation</strong>: World-changing endeavors, including mastering trading psychology, stem from acknowledging what you genuinely desire and actively building it.</li>
 <li><strong>The Foundation of Motivation</strong>: Ensure your trading framework is built on positive motivation (love/purpose) rather than being constantly influenced by negative emotions (fear/hatred).Actionable Takeaway: Identify one specific gap in your current trading mindset or process and commit to creating the solution you wish already existed.If there's a book that you want to read and it hasn't been written yet, then you must write</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Anybody that I know who&#x27;s involved ever in changing the world comes from a place of what we want. Comes from love, not fear and hatred. If there&#x27;s a book that you want to read and it hasn&#x27;t been written yet, then you must write</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

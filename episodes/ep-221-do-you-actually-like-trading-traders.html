@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The One Question That Determines Your Trading Longevity</p>
+                <h3>The One Question That Determines Your Trading Longevity</h3>
 <p>Trading is often described as a marathon, not a sprint, but many professionals start this journey without truly enjoying the work. If your gut response to the question "Do you like trading?" is anything less than a resounding yes, you may be unknowingly setting yourself up for burnout and failure. Sustained success requires a love for the process that transcends short-term profits.  - <strong>Trading is a Marathon, Not a Sprint</strong>: Your commitment must be built on genuine enjoyment, as dedication based solely on financial goals will eventually fail over the long distance.</p>
 <ul>
 <li><strong>The Competitive Edge</strong>: You are competing against the most competitive and brilliant people in the world; maintaining the necessary discipline and focus is impossible if you do not love the work.</li>
 <li><strong>The Necessity of Honest Self-Inquiry</strong>: A non-resounding "yes" to enjoying trading is a critical warning sign that requires immediate and honest self-evaluation regarding your long-term path.Actionable Takeaway: Take an honest inventory of your daily emotional state around trading; if dread or indifference outweighs enjoyment, seriously consider if this career is meant for you."If you don't love it, if you don't find yourself turned on by it, you really want to be with the answer the question: will you be able to sustain the distance that you will have to go?"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this might be an unusual question for some of you but do you like trading do you enjoy it is it something you can&#x27;t wait to do every day or every time you&#x27;re able to trade if the answer is anything but a resounding yes I want you to take a very honest look at that response because if you don&#x27;t love it if you don&#x27;t find yourself turned on by it you really want to be with the answer the question will you be able to sustain the distance that you will have to go remember this is a marathon not a Sprint and if you are entering the longest marathon with the most competitive brilliant people in the world you want to like what you do and if you don&#x27;t like it then I would really ask you to seriously consider if this is meant for you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why External Doubt Is Your Biggest Trading Barrier</p>
+                <h3>Why External Doubt Is Your Biggest Trading Barrier</h3>
 <p>When you pursue high-level goals like professional trading, you inevitably face resistance from people who tell you it is impossible or that you should "play it safe." This external doubt creates a self-fulfilling prophecy of failure, forcing you to question your potential and retreat from the necessary hard work. True growth begins when you stop allowing others' limitations to define your ambition.  - <strong>The Personal Turning Point</strong>: Use external skepticism, like having a project canceled or goals dismissed, as motivation rather than a reason for self-doubt.</p>
 <ul>
 <li><strong>Trust in the Process</strong>: Reject the narrative that the market is "impossible" and focus your energy on the difficult, disciplined work required to improve yourself.</li>
 <li><strong>Listen to Yourself, Not Them</strong>: Professional growth demands <strong>self-fidelity</strong>, meaning you must commit to being true to your own conviction even when everyone else advises caution.Actionable Takeaway: Dedicate all your effort toward self-improvement and trust your internal vision for success, ignoring advice to settle for less.If there's a book you want to read and it hasn't been written yet, then you must write it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>have you ever had people tell you that your goals were impossible maybe nobody understood them or or some people told you that you weren&#x27;t even capable that was me when I decided to self-publish my book transforming Wall Street 10 years ago people told me it wouldn&#x27;t work a tedex organizer even cancelled my talk because he didn&#x27;t like the idea of it I had every reason to doubt myself but then I saw this quote if there&#x27;s a book you want to read and it hasn&#x27;t been written yet then you must write it and that was my Turning Point Traders you know this feeling you know how people tell you that they trading is too hard and that the market is impossible and that you should play it safe but if you know you&#x27;re willing to put in the hard work and I want you to trust yourself be willing to take all of your effort in the direction of improving yourself but you must listen and be true to yourself</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

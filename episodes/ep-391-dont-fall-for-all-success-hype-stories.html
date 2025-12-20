@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Comparing Your P&L to Social Media Hype</p>
-<p>It is easy to spiral into self-doubt when scrolling through social media, seeing other traders boast about easy, massive wins. This constant comparison leads to the destructive question: "What the hell's wrong with me?" You start chasing trades and violating your plan, believing you've missed a fundamental secret.  * <strong>Selective Storytelling:</strong> Online "success" often presents a false narrative, showing only the reward while concealing the hours of stress, effort, and personal sacrifice required.</p>
+                <h3>The Hidden Cost of Comparing Your P&L to Social Media Hype</h3>
+<p>It is easy to spiral into self-doubt when scrolling through social media, seeing other traders boast about easy, massive wins. This constant comparison leads to the destructive question: "What the hell's wrong with me?" You start chasing trades and violating your plan, believing you've missed a fundamental secret.</p>
 <ul>
-<li><strong>The Comparison Trap:</strong> Measuring your progress against incomplete or inflated narratives leads to anxiety and self-criticism, undermining your belief in your own disciplined process.Stop monitoring social media trading chatter, and instead, focus solely on auditing your own trade journal for adherence to your strategy."You don’t know the full picture, guys. You don’t know if that guy or gal has been sitting there for 18 hours."</li>
+<li>**Selective Storytelling:*</li>
+<li>Online "success" often presents a false narrative, showing only the reward while concealing the hours of stress, effort, and personal sacrifice required.</li>
+<li>**The Comparison Trap:*</li>
+<li>Measuring your progress against incomplete or inflated narratives leads to anxiety and self-criticism, undermining your belief in your own disciplined process.Stop monitoring social media trading chatter, and instead, focus solely on auditing your own trade journal for adherence to your strategy."You don’t know the full picture, guys. You don’t know if that guy or gal has been sitting there for 18 hours."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this happens all the time with Traders say to me oh Kim at a Discord room or on X or stock twits or wherever you are like oh and people tell me oh they made all this money and they did this and it was so easy what the hell&#x27;s wrong with me why didn&#x27;t I catch that why didn&#x27;t I stay in there why didn&#x27;t I Vis this but you don&#x27;t know the full picture guys you don&#x27;t know the story you don&#x27;t know if that guy or gal has been sitting there for 18 hours and I hadn&#x27;t even got to the bathroom</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

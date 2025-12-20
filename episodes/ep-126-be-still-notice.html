@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Simple Act That Stops Emotional Trading Traps</p>
-<p>When high-stakes trading triggers strong emotional or physical responses, the natural instinct is often to suppress or ignore them. This resistance, however, leaves you vulnerable to being completely triggered and pulled away from your strategic plan. The key to maintaining consistency isn't fighting these feelings, but merely acknowledging them.  * <strong>Emotional Resistance is the Trap</strong>: Many traders attempt to shut off or resist uncomfortable feelings—whether physical sensations or strong emotions—which ironically increases the likelihood of a disruptive, triggered reaction.</p>
+                <h3>The Simple Act That Stops Emotional Trading Traps</h3>
+<p>When high-stakes trading triggers strong emotional or physical responses, the natural instinct is often to suppress or ignore them. This resistance, however, leaves you vulnerable to being completely triggered and pulled away from your strategic plan. The key to maintaining consistency isn't fighting these feelings, but merely acknowledging them.</p>
 <ul>
+<li><strong>Emotional Resistance is the Trap</strong>: Many traders attempt to shut off or resist uncomfortable feelings—whether physical sensations or strong emotions—which ironically increases the likelihood of a disruptive, triggered reaction.</li>
 <li><strong>Noticing Creates Space</strong>: The deliberate, simple act of noticing what is happening internally provides a critical, fractional space between the stimulus (market action) and your impulsive response.</li>
 <li><strong>Regain Your Center</strong>: This awareness allows you to stop being pulled by unconscious patterns, enabling you to return to a place of Stillness and deliberate, rational decision-making.<strong>Actionable Takeaway</strong>: When you feel the urge to resist a feeling (e.g., anxiety, physical tension), simply acknowledge it with the internal phrase: "I notice this."noticing what is happening for you in the moment gives you just a little bit of space of being completely triggered by it</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so that simply notice is a powerful catchphrase all of us in our traing in our lives from the physicality of our body the feelings we have the emotions we have a tendency to resist them we have a tendency to shut ourselves off from them and even though I didn&#x27;t use that catchphrase I could have because noticing what is happening for you in the moment gives you just a little bit of space of being completely triggered by it bra and that is ultimately where you come back into your Center where you come back to this moment and you able to be in a place of Stillness as opposed to being yanked around by a leash right that&#x27;s when it gets dangerous</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

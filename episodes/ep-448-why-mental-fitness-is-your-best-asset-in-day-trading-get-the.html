@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Invisible Drain: Stop Your Inner Critic From Leaking Trading Profits</p>
+                <h3>The Invisible Drain: Stop Your Inner Critic From Leaking Trading Profits</h3>
 <p>Mental fitness is the absolute foundation for sustained success, yet many traders operate with constant internal noise and mental clutter. This internal dialogue acts like multiple holes in your gas tank, leaking valuable energy and preventing you from accessing your full trading potential throughout the day.  - <strong>Mental Fitness Is the Primary Asset</strong>: Trading success is not about technical skill alone; it requires a strong psychological foundation to ensure you are operating at peak capacity.</p>
 <ul>
 <li><strong>Recognize the Saboteur's Language</strong>: The inner "Gremlin" constantly uses guilt and regret-based phrases like "you should have," "you could have," and "you must" to erode your confidence.</li>
 <li><strong>Mental Clutter is an Energy Drain</strong>: When you are constantly battling internal criticism, you are wasting energy that should be dedicated to sharp decision-making and recovery.The first tactical step to regaining control is simply noticing the language of that inner voice."The first step being able to lower the volume of those voices is noticing them"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>it&#x27;s mental Fitness the most important foundation to trading success because if you have mental clutter if you have an inner sabur or inner Gremlin constantly beding you then you are not operating at your full potential it means you have a gas tank with multiple holes in it leaking out your energy through the day so ask yourself are you listening to an inner voice that&#x27;s constantly using words like you should have you could have you must you you have to all of these are the favorite words of an internal Gremlin and the first step being able to lower the volume of those voices is noticing them</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

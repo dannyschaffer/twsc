@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,11 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Lead Your Trades When Fear Takes Over</p>
+                <h3>How to Lead Your Trades When Fear Takes Over</h3>
 <p>When market volatility strikes, it's easy to lose vision and panic. True leadership in trading isn't proven when the waters are calm; it's revealed when fear spikes and you are forced to navigate the inevitable storms.  - <strong>Storms Reveal, They Don't Build</strong>: Market volatility doesn't create new strengths; it shows you precisely where your psychological foundation currently stands.</p>
 <ul>
 <li><strong>Leading Requires Steering</strong>: When vision fades, your job is to commit to action and maintain clarity, proving who you already are under pressure.Commit to "steer anyway"—follow your process with grit and clarity, even if your vision feels faded by fear."Be a canoe steersman for a stormy day."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>But when fear spikes and vision fades, my paddling coach Manny used to say, &amp;quot;Be a canoe steersman for a stormy day.&amp;quot; Anyone can lead when the water is glass. But when fear spikes and vision fades and those inevitable storms come in, that is when your real self is going to show up. Listen up, traders. It doesn&#x27;t matter what storm comes, but you&#x27;ve got to remember that storms don&#x27;t build you necessarily. They reveal who you already are. And I want you to steer anyway. If you&#x27;re ready to lead with more grit and more clarity, then I hope you&#x27;ll set up a call with me to consider what my tools are and if they can help</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +250,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

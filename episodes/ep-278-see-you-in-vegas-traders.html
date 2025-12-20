@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Escape the Isolation Trap: Your Trading Community is Your Edge</p>
-<p>Trading is often a lonely and isolating pursuit, which can erode your emotional capital and focus. Attending the right industry event is not just a networking opportunity—it is a critical investment in the non-competitive support system that fuels long-term consistency.  * The atmosphere of these events provides an <strong>unparalleled energy of support</strong> and encouragement.</p>
+                <h3>Escape the Isolation Trap: Your Trading Community is Your Edge</h3>
+<p>Trading is often a lonely and isolating pursuit, which can erode your emotional capital and focus. Attending the right industry event is not just a networking opportunity—it is a critical investment in the non-competitive support system that fuels long-term consistency.</p>
 <ul>
-<li>You gain access to <strong>collective wisdom</strong> from highly competitive traders who choose to contribute to one another's success.</li>
+<li>The atmosphere of these events provides an **unparalleled energy of support*</li>
+<li>and encouragement.</li>
+<li>You gain access to **collective wisdom*</li>
+<li>from highly competitive traders who choose to contribute to one another's success.</li>
 <li>The investment offers a significant <strong>return on psychological capital</strong>, far exceeding simple financial networking.Actively seek out supportive, in-person communities to break the isolation loop and gain psychological resilience.The level of support and encouragement and I'm going to say it love that shows up there for Traders for other Traders</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>will you be attending the Traders for cause Conference in October I sure hope you&#x27;re going it is one of the most inspiring events or conferences I&#x27;ve ever attended there is so much good energy that comes with every Trader there the level of support and encouragement and I&#x27;m going to say it love that shows up there for Traders for other Traders you would never know that uh these guys are as competitive as they are because when they&#x27;re all together they just want to be a contribution to one another so do yourself a favor invest first of all in an excellent cause but you will reap the benefits never mind the wisdom that you will take away that return on investment is going to be worth it all</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Trader's Real Edge: How Inner Stability Turns Chaos into Opportunity</p>
-<p>When market volatility hits, the immediate reaction for most traders is to freeze or panic, leading to costly mistakes. This video reframes volatility not as a threat, but as <strong>opportunity</strong>—if you are psychologically prepared. Your ability to remain calm is the only competitive advantage you truly control.  - Volatility is not a threat, but a <strong>prepared opportunity</strong> that rewards those who maintain composure.</p>
+                <h3>The Trader's Real Edge: How Inner Stability Turns Chaos into Opportunity</h3>
+<p>When market volatility hits, the immediate reaction for most traders is to freeze or panic, leading to costly mistakes. This video reframes volatility not as a threat, but as <strong>opportunity</strong>—if you are psychologically prepared. Your ability to remain calm is the only competitive advantage you truly control.  - Volatility is not a threat, but a **prepared opportunity*</p>
 <ul>
-<li>The key to navigating market chaos is <strong>adhering relentlessly to your predefined trading plan</strong> when others abandon theirs.</li>
-<li>Emotional stability during market swings stems directly from knowing <strong>who you are as a trader</strong> and trusting your process.Actionable Takeaway: Before your next trade, clarify your trading identity and the non-negotiable rules of your plan to anchor yourself against inevitable market swings.chaos is only dangerous if you don't know who you are as a trader.</li>
+<li>that rewards those who maintain composure.</li>
+<li>The key to navigating market chaos is **adhering relentlessly to your predefined trading plan*</li>
+<li>when others abandon theirs.</li>
+<li>Emotional stability during market swings stems directly from knowing **who you are as a trader*</li>
+<li>and trusting your process.Actionable Takeaway: Before your next trade, clarify your trading identity and the non-negotiable rules of your plan to anchor yourself against inevitable market swings.chaos is only dangerous if you don't know who you are as a trader.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Often traders feel that chaos makes them freeze or panic. But I want you to step into this truth. Volatility is opportunity if you&#x27;re prepared. The key is sticking to your plan when everyone else is losing theirs. Remember, chaos is only dangerous if you don&#x27;t know who you are as a traitor.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

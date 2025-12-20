@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Cost of Rushing: Why Instant Riches Ruin Young Traders</p>
-<p>The need for immediate success often leads traders to take excessive risks, resulting in catastrophic account blow-ups and severe emotional stress. This impatience, driven by a desire to get rich quickly, blinds them to the power of consistent, long-term growth. Learn why slowing down is the fastest way to lasting wealth.  - <strong>Time is your most powerful ally</strong> in compounding and growth, especially for younger traders.</p>
+                <h3>The High Cost of Rushing: Why Instant Riches Ruin Young Traders</h3>
+<p>The need for immediate success often leads traders to take excessive risks, resulting in catastrophic account blow-ups and severe emotional stress. This impatience, driven by a desire to get rich quickly, blinds them to the power of consistent, long-term growth. Learn why slowing down is the fastest way to lasting wealth.  - **Time is your most powerful ally*</p>
 <ul>
+<li>in compounding and growth, especially for younger traders.</li>
 <li><strong>Impatience leads to over-risking</strong>, which turns trading into gambling, often culminating in account failure.</li>
 <li><strong>Long-term perspective is the real edge</strong>: Real wealth is built through steady accumulation over years, as demonstrated by massive, multi-year winners.Review your trading plan to ensure your risk management reflects a 5-10 year growth horizon, deliberately resisting the urge for overnight success."Dude, time is your friend. Like, you do not have to get rich tomorrow."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I go, &amp;quot;Dude, time is your friend. Like, you do not have to get rich tomorrow.&amp;quot; The Wall Street Coach podcast. We had a guy that kind of blew up his account at the end of the year last year, and he was super bummed. I just laid out some crazy specific answers, like stats. I went and pulled all of my um tax slots from all my biggest winners that I still have now. Wow. And I go, &amp;quot;Hey, listen. You&#x27;re 28 or 26. I bought this at 26, this at 28, this at 32, this at 38. And like they&#x27;ve all gone 10x, 100x. I go, &amp;quot;Dude, time is your friend. Like, you do not have to get rich tomorrow. You&#x27;re so young. You have this crazy runway.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Impermanence Trap: Why You Need Presence, Not Prediction</p>
-<p>Trading often traps you in worrying about future gains or lamenting past losses, blinding you to the current opportunity. This emotional fixation is rooted in the false belief that market conditions or personal success are permanent. Understanding the ephemeral nature of all things—both challenges and wins—is essential for stabilizing your Emotional Quotient (EQ).  * <strong>Market Impermanence:</strong> Both favorable and challenging market conditions are temporary, requiring traders to remain adaptable rather than becoming rigid.</p>
+                <h3>The Impermanence Trap: Why You Need Presence, Not Prediction</h3>
+<p>Trading often traps you in worrying about future gains or lamenting past losses, blinding you to the current opportunity. This emotional fixation is rooted in the false belief that market conditions or personal success are permanent. Understanding the ephemeral nature of all things—both challenges and wins—is essential for stabilizing your Emotional Quotient (EQ).</p>
 <ul>
-<li><strong>The Cost of Attachment:</strong> Becoming attached to current success or paralyzed by current difficulties prevents objective decision-making in the moment.</li>
-<li><strong>The Focus of EQ:</strong> The highest form of discipline is recognizing the fleeting nature of your P\&L and choosing to be <strong>present</strong> with the trade immediately in front of you.Cultivate a moment of presence before every trading session by focusing on something beautiful or grateful outside of the charts.Whether you're having great stuff happen for you or challenges happen for you, it's all impermanence and always really it happens this moment.</li>
+<li>**Market Impermanence:*</li>
+<li>Both favorable and challenging market conditions are temporary, requiring traders to remain adaptable rather than becoming rigid.</li>
+<li>**The Cost of Attachment:*</li>
+<li>Becoming attached to current success or paralyzed by current difficulties prevents objective decision-making in the moment.</li>
+<li>**The Focus of EQ:*</li>
+<li>The highest form of discipline is recognizing the fleeting nature of your P\&L and choosing to be **present*</li>
+<li>with the trade immediately in front of you.Cultivate a moment of presence before every trading session by focusing on something beautiful or grateful outside of the charts.Whether you're having great stuff happen for you or challenges happen for you, it's all impermanence and always really it happens this moment.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>uh Aloha from Central Park in the Big Apple this is my Trader EQ prep for the week of August 6th I am having a great time in New York City it&#x27;s quite a change from Hawaii as all of you can imagine and one of the things that I&#x27;ve really been present to on this trip sadly is just how different the city is since the pandemic the pandemic really decimated so many stores stores that were institutions stores that were here when I was a little girl which was quite a while ago and those were stories that I thought would be here forever and it&#x27;s just a reminder of how impermanent everything is all things are really dependent on other things and I say this to you to myself this week for us to just remember no matter how much challenge we have or wonderfulness we have all things are fleeting all things won&#x27;t last forever and so what is that besides you know perhaps make us a little depressed mean it means we really want to be present to what we do have to just enjoy these moments that each of us are so fortunate enough</p>
-<p>to have even his trip here to New York I&#x27;m just trying to be present to just being in the city as a tourist even I&#x27;m just gonna give everybody a little bit of a view the view that I have right now how beautiful and how I just was starving for nature and Central Park is an easy place to come to when you need some nature in the big city so that is my thought for the week for the EQ of the week is to just be present to this moment now because whether you&#x27;re having great stuff happen for you or challenges happen for you it&#x27;s all impermanence and always really it happens this moment and I hope you&#x27;re present to it and I really hope you&#x27;re able to just find the beauty and that which you&#x27;re grateful for in one of these moments that you have right now Aloha for now from Central Park and I hope you guys have a great trading week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

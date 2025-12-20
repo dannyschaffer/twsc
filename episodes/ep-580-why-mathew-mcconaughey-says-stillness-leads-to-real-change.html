@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>The Uncomfortable Truth: Why Stillness Leads to Real Trading Change</h3>
-<p>Traders often seek external entertainment or distraction to avoid self-reflection, especially when facing setbacks. This avoidance prevents you from confronting the inner turmoil—shame, guilt, or negative patterns—that undermines long-term consistency. True psychological change begins when you stop looking outward and finally sit with yourself.  * <strong>Embrace Boredom as a Catalyst</strong>: The initial feeling of boredom is actually a positive sign that you are successfully disconnecting from external noise and starting to access deeper self-awareness.</p>
+                <h3>The Uncomfortable Truth: Why Stillness Leads to Real Trading Change</h3>
+<p>Traders often seek external entertainment or distraction to avoid self-reflection, especially when facing setbacks. This avoidance prevents you from confronting the inner turmoil—shame, guilt, or negative patterns—that undermines long-term consistency. True psychological change begins when you stop looking outward and finally sit with yourself.</p>
 <ul>
+<li><strong>Embrace Boredom as a Catalyst</strong>: The initial feeling of boredom is actually a positive sign that you are successfully disconnecting from external noise and starting to access deeper self-awareness.</li>
 <li><strong>Confront Emotional Resistance</strong>: The greatest challenge is pushing past boredom into the discomfort of confronting difficult emotions like shame and guilt, which reveal the deepest self-sabotage loops.</li>
 <li><strong>Clarify Repeat Offenses</strong>: Use periods of quiet reflection to clearly identify the destructive habits or ways of thinking that never bring you joy or profitability, making them visible for change.Commit to intentional periods of undistracted silence each day, refusing to pick up the phone or seek external stimulus, to allow your most difficult thoughts and feelings to surface."Don't look for that outside frequency to entertain you. Stick with it."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Go be bored with yourself. Younger men who watch our podcast, what would you say to them? I bore myself. Go be bored with yourself. That&#x27;s part of it. Go get stuck with yourself where you&#x27;re like, I&#x27;m bored. I want to write something down. I don&#x27;t want to think about who I am. That&#x27;s a good reason. That&#x27;s usually a good tell. Exactly. You&#x27;re right in the right place. Don&#x27;t pick up the phone. Don&#x27;t write somebody. Don&#x27;t look for that outside frequency to entertain you. Stick with it. And guess what? First thing going to be go from bored to probably like, well, I&#x27;m more than bored now. Now I don&#x27;t even like hanging with myself. Good. Now you&#x27;re really getting there. I do not like my company. There we go. Hang in there. And you&#x27;ll go through maybe shame, guilt, embarrassment of who you are in your own private mind. Sit in there for a minute. Take time to figure out, all right, I&#x27;m changing this cuz I&#x27;m a repeat offender of this act in my life or this way of thinking that never brings me any joy. Wait.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

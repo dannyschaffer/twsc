@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop the "What If" Trading Anxiety: Shift to an Empowered "Even If" Mindset</p>
+                <h3>Stop the "What If" Trading Anxiety: Shift to an Empowered "Even If" Mindset</h3>
 <p>The perpetual cycle of asking "What if this happens?" or "What if that happens?" keeps traders in a state of anticipatory fear, often paralyzing decision-making. This constant attempt to be multiple steps ahead drains mental energy without providing real security. Learning to reframe this destructive internal monologue is essential for consistent trading.  - <strong>The What-If Trap</strong>: Hyper-focusing on potential negative outcomes generates anxiety and leads to hesitation in executing high-probability trades.</p>
 <ul>
 <li><strong>The Power of Even-If</strong>: Shifting to "Even if" is an empowering psychological turnaround that builds resilience by acknowledging possible setbacks while reinforcing your ability to handle them.</li>
 <li><strong>Conditional Confidence</strong>: Recognizing that you will have the necessary resources and capacity when a negative event occurs reduces future-based stress and maintains presence.Spend the next week consciously replacing every "What if" thought with an "Even if" statement during your trade preparation and execution.even if XYZ happens you will handle it you will have what you need when it shows up</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>are you a Whata if kind of person I know I am I say often what if this happens what if that happens I&#x27;m always trying to be multiple steps ahead of things but I want to just introduce to you this fabulous kind of turnaround if you&#x27;re a what ifer I want you to shift it to even if why because even if is empowering even if XYZ happens you will handle it you will have what you need when it shows up so see what happens this week Traders if you shift yourself from what if to even if</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

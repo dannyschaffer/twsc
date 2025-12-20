@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Treating Panic: Your Anxiety Is Just Trapped Survival Energy</p>
-<p>That constant edginess, tight chest, or jittery feeling at the screen isn't merely anxiety—it's unprocessed survival energy. Peter Levine's work shows that when your nervous system initiates a fight or flight response but cannot complete it, that energy gets frozen in the body, leaving you permanently stuck in a reactive loop. You can break free from trading from panic by understanding the biological source of your distress.  - <strong>Anxiety is Misclassified</strong>: The tight chest and jittery feeling often associated with anxiety are actually signals of <strong>trapped survival energy</strong> awaiting resolution.</p>
+                <h3>Stop Treating Panic: Your Anxiety Is Just Trapped Survival Energy</h3>
+<p>That constant edginess, tight chest, or jittery feeling at the screen isn't merely anxiety—it's unprocessed survival energy. Peter Levine's work shows that when your nervous system initiates a fight or flight response but cannot complete it, that energy gets frozen in the body, leaving you permanently stuck in a reactive loop. You can break free from trading from panic by understanding the biological source of your distress.  - <strong>Anxiety is Misclassified</strong>: The tight chest and jittery feeling often associated with anxiety are actually signals of **trapped survival energy*</p>
 <ul>
-<li>The <strong>incomplete fight or flight response</strong> becomes frozen in the body, resulting in the edginess you feel as an unprocessed threat.</li>
-<li>Genuine peace requires allowing the nervous system to complete the cycle and <strong>discharge the frozen energy</strong> (through movement, trembling, or release).Actionable Takeaway: Recognize that the jittery feeling is an unprocessed threat and consciously create space for that energy to move or release, rather than suppressing it.It's not anxiety. It's actually trapped survival energy.</li>
+<li>awaiting resolution.</li>
+<li>The **incomplete fight or flight response*</li>
+<li>becomes frozen in the body, resulting in the edginess you feel as an unprocessed threat.</li>
+<li>Genuine peace requires allowing the nervous system to complete the cycle and **discharge the frozen energy*</li>
+<li>(through movement, trembling, or release).Actionable Takeaway: Recognize that the jittery feeling is an unprocessed threat and consciously create space for that energy to move or release, rather than suppressing it.It's not anxiety. It's actually trapped survival energy.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>It&#x27;s not anxiety. It&#x27;s actually trapped survival energy. That tight chest, that shallow breath, that jittery feeling, it&#x27;s not anxiety. It&#x27;s actually trapped survival energy. Lavine&#x27;s work shows that when fight or flight isn&#x27;t completed, it gets frozen in the body. That edgginess you feel, it&#x27;s an unprocessed threat. And until you let that energy move, tremble, discharge, release, you&#x27;re going to stay stuck in survival mode. Send me a DM that says unfreeze if you&#x27;re sick of treating from panic and you want to start treating from true</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

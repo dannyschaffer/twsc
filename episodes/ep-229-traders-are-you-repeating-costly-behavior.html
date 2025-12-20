@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>The Real Reason Your Costly Trading Mistakes Keep Repeating</h3>
+                <h3>The Real Reason Your Costly Trading Mistakes Keep Repeating</h3>
 <p>Are you stuck in a loop where market behavior constantly triggers your worst decisions? This repetition of costly behavior in your trading life is often rooted in an unhealed psychological "wound." Until the underlying emotional cause is addressed, you will inevitably find yourself returning to the same limiting patterns.  - <strong>Repetition is a Signal</strong>: Repeated destructive trading behavior, regardless of market conditions, points to an unaddressed internal wound.</p>
 <ul>
 <li><strong>The Core Pattern</strong>: Traders unconsciously seek out situations in the market that match their psychological wounds, ensuring they relive costly lessons.</li>
 <li><strong>Self-Work is the Catalyst</strong>: Strategies and technical analysis cannot solve these loops; sustained success requires deep, personal self-reflection to address the root cause.Actionable Takeaway: Trace your most recent costly trade back past the chart to the internal trigger (the fear, impulse, or belief) that drove the decision.We seek the teeth that match our wound.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>whenever there&#x27;s a repetition of costly Behavior be it in your trading be it in your life there&#x27;s a wound that hasn&#x27;t been healed there&#x27;s a wound that hasn&#x27;t been addressed yet you&#x27;re going to have to get to the bottom of that wound so you don&#x27;t keep seeking the same teeth that match that wound that&#x27;s a beautiful quote that I first read in Peter lavine&#x27;s book weit King the tiger we seek the teeth that match our wound so if you don&#x27;t want to keep having the same teeth bite you again and again you&#x27;re going to have to make sure that the wound itself has been addressed and this is why it&#x27;s so important for Traders to do the work on themselves because you will inevitably find yourself surprised to be back in certain limiting or costly Behavior if you don&#x27;t address what causes it in the first place</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

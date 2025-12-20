@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Inner Critic: Why Abusive Self-Talk is Shrinking Your P&L</p>
-<p>Many high-performing traders mistakenly believe harsh self-talk builds discipline, but this abusive internal dialogue triggers shame and psychological contraction. This prevents the calm, expanded mindset necessary for finding a flow state in the market.  * <strong>Destructive Self-Talk Prevents Flow</strong>: Negative internal dialogue causes emotional contraction, inhibiting the relaxed, focused state needed for optimal trading.</p>
+                <h3>The Inner Critic: Why Abusive Self-Talk is Shrinking Your P&L</h3>
+<p>Many high-performing traders mistakenly believe harsh self-talk builds discipline, but this abusive internal dialogue triggers shame and psychological contraction. This prevents the calm, expanded mindset necessary for finding a flow state in the market.</p>
 <ul>
+<li><strong>Destructive Self-Talk Prevents Flow</strong>: Negative internal dialogue causes emotional contraction, inhibiting the relaxed, focused state needed for optimal trading.</li>
 <li><strong>Honesty Without Cruelty</strong>: True self-awareness requires confronting hard truths, but you must avoid shaming yourself or making yourself feel like garbage.</li>
-<li><strong>Recognize the Contraction Response</strong>: Abusive self-talk, whether internal or external, forces you to shrink and shortens your breath, which actively holds back performance.<strong>Actionable Takeaway:</strong> Identify the self-talk that makes you feel genuinely bad, and consciously replace those derogatory phrases with compassionate, constructive language.We don't have to be cruel. We don't have to shame ourselves. We don't have to make ourselves feel like garbage.</li>
+<li><strong>Recognize the Contraction Response</strong>: Abusive self-talk, whether internal or external, forces you to shrink and shortens your breath, which actively holds back performance.**Actionable Takeaway:*</li>
+<li>Identify the self-talk that makes you feel genuinely bad, and consciously replace those derogatory phrases with compassionate, constructive language.We don't have to be cruel. We don't have to shame ourselves. We don't have to make ourselves feel like garbage.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>For the most part, all of us have to be careful with self-t talk. the wall street coach with edgew because in my own personal journey of development I had self-t talk when I first you know experienced my own coaching that was an inner critic that was selft talk that was destructive that was limiting that kept me on a tight leash and so I think the key is first identify if the self-t talk that you are you know potentially going to listen to makes you feel bad about yourself. I&#x27;m not talking about hard truths. Yes, we&#x27;re going to as we develop and become more self-aware, yes, we&#x27;re going to have to be honest with ourselves, but we don&#x27;t have to be cruel. We don&#x27;t have to shame ourselves. We don&#x27;t have to make ourselves feel like garbage. And yet, I experience in the traders that I&#x27;ve worked with over the years, many of them have this really abusive selft talk. And it holds them back. Because whenever any of us are being spoken to in a derogatory manner, externally or internally, that is going to put us into a contraction. It&#x27;s going to have us shrink.</p>
-<p>It&#x27;s going to have us get our breath is going to get shorter. We&#x27;re going to feel shame. We&#x27;re going to start to shrink. That does not facilitate a flow state. Watch the full episode on YouTube. I the Wall Street coach.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

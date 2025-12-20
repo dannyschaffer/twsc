@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Feeling Like a Victim: The Only Place You Have Power in Trading</p>
-<p>Trading inevitably brings difficult times where emotions can hijack your perspective, leading you to feel like a victim—of the market, circumstance, or other traders' perceived success. This external focus costs you control by directing your energy away from what you can manage.  * Emotional hijacking often leads to blaming <strong>external circumstances</strong> or other traders who appear to have an easy time.</p>
+                <h3>Stop Feeling Like a Victim: The Only Place You Have Power in Trading</h3>
+<p>Trading inevitably brings difficult times where emotions can hijack your perspective, leading you to feel like a victim—of the market, circumstance, or other traders' perceived success. This external focus costs you control by directing your energy away from what you can manage.</p>
 <ul>
+<li>Emotional hijacking often leads to blaming **external circumstances*</li>
+<li>or other traders who appear to have an easy time.</li>
 <li>Focusing on external factors shifts your energy away from <strong>the only place you have power</strong>: internal self-management.</li>
 <li>Victimhood prevents objective analysis and self-correction, trapping you in a cycle of <strong>disempowerment</strong>.The moment you catch yourself blaming an external entity (the market, another trader), immediately stop and redirect your focus inward to identify your own emotional state and next responsible action."The only place you have in power is inside of yourself."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>there are often very difficult times in a traitor&#x27;s journey where things are very difficult where emotions can absolutely hijack you into feeling like a victim a victim of circumstance a victim of the markets a victim of other traitors who you perceive as bragging and not sharing any of the hardships as if they are having perfectly fine time but all of this puts your focus outside of yourself and the only place you have in power is inside of yourself so if you see yourself getting caught up in the Trap of this person and that thing and over there realize oop I&#x27;ve come out of the one place I have my power which is internal</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Non-Negotiable Break: Why Nature is Your Best Trading Strategy</p>
+                <h3>The Non-Negotiable Break: Why Nature is Your Best Trading Strategy</h3>
 <p>Many traders believe that constant screen time is the key to edge, leading to burnout and decreased performance. However, true mastery requires deliberate detachment to regulate your nervous system and gain crucial perspective.  - <strong>The Clarity of Space</strong>: Physical distance from the charts creates mental space, allowing you to see patterns you missed while immersed in the volatility.</p>
 <ul>
 <li><strong>Nervous System Reset</strong>: Intentional time in nature acts as a powerful regulator, shifting your system from high alert (fight/flight) back to a state of calm and focus.</li>
 <li><strong>Sustainable Edge</strong>: Prioritizing breaks ensures longevity and consistency, preventing the psychological fatigue that leads to costly emotional errors.Commit to a minimum 30-minute period outside, screen-free, at least three times this week to observe your mental state upon returning to the charts.The greatest market moves are often seen not on the screen, but after you've stepped away from it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>ヘ</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

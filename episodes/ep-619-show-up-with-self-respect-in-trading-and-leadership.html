@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Trader's Professionalism Gap: How Self-Respect Drives Profits</p>
-<p>Too many traders approach the market as a casual hobby rather than a high-stakes business. This lack of self-respect often translates directly into sloppy execution, inconsistent preparation, and ultimately, preventable losses. It is time to eliminate the hidden psychological costs of treating your trading lightly.  * <strong>Professional Identity</strong>: Treat your trading desk and routine with the same gravity and accountability as you would a corporate career or public-facing role.</p>
+                <h3>The Trader's Professionalism Gap: How Self-Respect Drives Profits</h3>
+<p>Too many traders approach the market as a casual hobby rather than a high-stakes business. This lack of self-respect often translates directly into sloppy execution, inconsistent preparation, and ultimately, preventable losses. It is time to eliminate the hidden psychological costs of treating your trading lightly.</p>
 <ul>
+<li><strong>Professional Identity</strong>: Treat your trading desk and routine with the same gravity and accountability as you would a corporate career or public-facing role.</li>
 <li><strong>Consistent Due Diligence</strong>: Your preparation should reflect the professionalism you would exhibit if you were performing in front of a room full of stakeholders every day.</li>
 <li><strong>Internal Accountability</strong>: The most powerful form of structure comes from respecting your own standards, even when no one is watching.Adopt a morning routine that enforces physical and mental readiness, ensuring you show up to your desk prepared for peak performance."It's just seeing yourself as a professional."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Would you be coming in hung over? It&#x27;s just seeing yourself as a professional. If you&#x27;re a retail trader, how would you come into your desk each day if people were seeing you? You know, would you be coming in hung over? Would you be, you know, asking silly questions? You would be doing due diligence and have that sense of self-respect if you were in front of a room of people every day. So operate as</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

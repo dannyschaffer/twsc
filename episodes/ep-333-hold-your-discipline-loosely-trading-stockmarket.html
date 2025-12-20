@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading With a "Must" and "Should" Mindset</p>
-<p>Overly strict discipline often leads to emotional burnout and loss of control. When you treat your trading plan as a set of inflexible rules that you feel you "must" or "should" follow perfectly, you introduce unnecessary pressure. This tight, rigid grip prevents the psychological flexibility needed to execute sharply.  * <strong>Rigid Discipline Is a Control Trap</strong>: When you adhere too tightly to rules, you lose the mental agility required to adapt, leading to the opposite of what you seek—loss of control.</p>
+                <h3>Stop Trading With a "Must" and "Should" Mindset</h3>
+<p>Overly strict discipline often leads to emotional burnout and loss of control. When you treat your trading plan as a set of inflexible rules that you feel you "must" or "should" follow perfectly, you introduce unnecessary pressure. This tight, rigid grip prevents the psychological flexibility needed to execute sharply.</p>
 <ul>
-<li><strong>The "Must/Should" Energy</strong> is a psychological burden that translates directly into poor market behavior, turning your trading into an obligation rather than a strategic process.</li>
+<li><strong>Rigid Discipline Is a Control Trap</strong>: When you adhere too tightly to rules, you lose the mental agility required to adapt, leading to the opposite of what you seek—loss of control.</li>
+<li>**The "Must/Should" Energy*</li>
+<li>is a psychological burden that translates directly into poor market behavior, turning your trading into an obligation rather than a strategic process.</li>
 <li><strong>Non-Trading Rigidity Mirrors P\&L</strong>: Behavioral patterns of needing absolute control in other areas of your life will inevitably manifest as destructive inflexibility in your trading decisions.Actionable Takeaway: Audit your daily routines to spot any areas where you enforce "have to" or "must" language, then consciously try replacing that rigidity with a more flexible option.yes you have to be disciplined but you have to hold it Loosely because when you hold it way too tight just like 38 Special says you can lose control</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>yes you have to be disciplined but you have to hold it Loosely because when you hold it way too tight just like 38 Special says you can lose control and I don&#x27;t want you to lose control so you want to realize okay there&#x27;s some things here am I holding too tight am I coming from this have to must should energy with any area of my life and sometimes Traders it&#x27;s better and easier for you to find the half to muchh should outside of your trading because if you&#x27;re doing it outside of your trading I can promise you you&#x27;re doing it in your trading too</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Trader's Edge: How to Transform Trading Stress into Clarity</p>
-<p>Constant stress in trading often comes from obsessing over immediate outcomes rather than focusing on executing your established process. This emotional attachment to winning every single trade creates debilitating uncertainty and ultimately hurts your results. Learn how to reframe this stress as a powerful signal for necessary adjustment.  * <strong>Shift Your Focus to Process</strong>: Stop obsessing over the P\&L of every trade and concentrate purely on executing your established strategy.</p>
+                <h3>The Trader's Edge: How to Transform Trading Stress into Clarity</h3>
+<p>Constant stress in trading often comes from obsessing over immediate outcomes rather than focusing on executing your established process. This emotional attachment to winning every single trade creates debilitating uncertainty and ultimately hurts your results. Learn how to reframe this stress as a powerful signal for necessary adjustment.</p>
 <ul>
+<li><strong>Shift Your Focus to Process</strong>: Stop obsessing over the P\&L of every trade and concentrate purely on executing your established strategy.</li>
 <li><strong>Lower Your Risk, Raise Your Confidence</strong>: If a trade feels stressful, reduce your size until you can execute it without hesitation, ensuring confidence is built through controlled action.</li>
-<li><strong>Detachment is the Long Game</strong>: Understand that trading success is defined by <strong>discipline</strong> and long-term processes, not by the result of any single position.Actionable Takeaway: Before entering or managing a position, take one simple deep breath and a full exhale to slow your mind and promote immediate clarity.Stress is a sign of uncertainty. Confidence is built through processes.</li>
+<li><strong>Detachment is the Long Game</strong>: Understand that trading success is defined by **discipline*</li>
+<li>and long-term processes, not by the result of any single position.Actionable Takeaway: Before entering or managing a position, take one simple deep breath and a full exhale to slow your mind and promote immediate clarity.Stress is a sign of uncertainty. Confidence is built through processes.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>feeling stressed every time you trade that stress is hurting your results but here&#x27;s how to turn it into success shift your focus stress comes from obsessing over results flip it focus on executing your strategy not winning every trait two breathe before you trade a simple deep breath and exhale slows down your mind helping you trade with Clarity three lower your risk raise your confidence if a trade feels stressful reduce your size until you can execute it without hesitation four detach from the outcome trading is a long game one trade doesn&#x27;t Define you discipline will stress is a sign of uncertainty confidence is built through processes send success in the comments and I&#x27;ll send you some of my favorite trading tips</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

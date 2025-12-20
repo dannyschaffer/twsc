@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Real Reason You Lack Trading Discipline</p>
-<p>When consistent discipline feels impossible, the problem is often deeper than a flawed strategy. Many traders find it hard to stick to their rules because their foundational needs are unmet, which drains the internal resources necessary for clear decision-making. This lack of "oxygen in the tank" makes true discipline unsustainable.  * <strong>Discipline is a Capacity Issue, Not a Moral One</strong>: Failing to execute is often a symptom of underlying fatigue or unmet needs, not a lack of commitment.</p>
+                <h3>The Real Reason You Lack Trading Discipline</h3>
+<p>When consistent discipline feels impossible, the problem is often deeper than a flawed strategy. Many traders find it hard to stick to their rules because their foundational needs are unmet, which drains the internal resources necessary for clear decision-making. This lack of "oxygen in the tank" makes true discipline unsustainable.</p>
 <ul>
-<li><strong>The Foundational Oxygen Tank</strong>: When psychological or physiological <strong>basic needs</strong> are neglected, your mental energy reserve is depleted, making emotional control extremely difficult.</li>
+<li><strong>Discipline is a Capacity Issue, Not a Moral One</strong>: Failing to execute is often a symptom of underlying fatigue or unmet needs, not a lack of commitment.</li>
+<li><strong>The Foundational Oxygen Tank</strong>: When psychological or physiological **basic needs*</li>
+<li>are neglected, your mental energy reserve is depleted, making emotional control extremely difficult.</li>
 </ul>
 <p>Before attempting to fix a disciplinary mistake on the chart, pause and examine which of your core physical or emotional needs are currently not being met.you are going to have a really hard time being true to your discipline why because you have very little oxygen in your tank</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you know I think a lot of Traders don&#x27;t have discipline it&#x27;s because a lot of Traders don&#x27;t have their basic needs met if you don&#x27;t have some of your basic needs met which I talk about often in the YouTube lives that I do twice a week and the xas I do every Friday you are going to have a really hard time being true to your discipline why because you have very little oxygen in your tank so next time you&#x27;re not being disciplined take to look what needs are you not getting met</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

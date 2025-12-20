@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Your 'What If': How to Embrace the Joy of Missing Out (JOMO)</p>
-<p>The Fear of Missing Out (FOMO) creates a constant psychological cloud for traders, forcing attention onto lost opportunities rather than current strategy. This emotional fixation leads to rash decisions and performance anxiety. We explore the powerful alternative: embracing the Joy of Missing Out (JOMO).  * <strong>FOMO is a Dual Reality Trap</strong>: Constantly focusing on what you missed prevents you from fully engaging with the successful path you are currently on.</p>
+                <h3>Stop Trading Your 'What If': How to Embrace the Joy of Missing Out (JOMO)</h3>
+<p>The Fear of Missing Out (FOMO) creates a constant psychological cloud for traders, forcing attention onto lost opportunities rather than current strategy. This emotional fixation leads to rash decisions and performance anxiety. We explore the powerful alternative: embracing the Joy of Missing Out (JOMO).</p>
 <ul>
+<li><strong>FOMO is a Dual Reality Trap</strong>: Constantly focusing on what you missed prevents you from fully engaging with the successful path you are currently on.</li>
 <li><strong>Missing an Entry is Not a Failure</strong>: True strategic success comes from honoring your process, not constantly trying to execute trades based on hypotheticals.</li>
 <li><strong>The Emotional Cost of Rumination</strong>: Traders often diminish their success by ruminating on opportunities that passed them by.</li>
 </ul>
 <p>Shift your focus from analyzing the profit you missed to reviewing the strict adherence to your entry and exit criteria on the trade you did or did not take.That fear of missing out is a constant cloud over them</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>spoiler alert if you haven&#x27;t seen the movie sliding doors then don&#x27;t watch this video sliding doors is one of my favorite movies because it allows us to actually see two separate things the fear of missing out fomo and Joo the joy of missing out that message is just sung home with that incredible film in that film we meet the character who catches the Subway by the skin of her teeth and misses the subway and what we see is two separate movies begin to get unfolded before us what happens to her because she caught that Subway and what happens to her because she didn&#x27;t and this is what I want to suggest for yourself I see a lot of Traders and people and entrepreneurs and Executives always focusing on what they&#x27;re missing out on that fear of missing out is a constant Cloud over them</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

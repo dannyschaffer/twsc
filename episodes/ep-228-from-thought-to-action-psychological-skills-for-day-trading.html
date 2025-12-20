@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Default Setting: How Unconscious Language Sabotages Your Trading</p>
+                <h3>The Default Setting: How Unconscious Language Sabotages Your Trading</h3>
 <p>Are you constantly battling the same trading mistakes? Until you become conscious of the repeated narratives and <strong>adjectives you use as a default setting</strong>, real change remains elusive. These unconscious stories about yourself and the market are dictating your decisions and limiting your profitability.  - <strong>Unconscious Control</strong>: If you do not notice your thoughts, they will think you, setting default reactions that are hard to overcome.</p>
 <ul>
 <li><strong>Identify Repeated Stories</strong>: True psychological breakthroughs require identifying the repeated adjectives and meanings you assign to the market and your own trading performance.</li>
 <li><strong>Clarity Precedes Change</strong>: It is impossible to make lasting positive changes until you clarify the specific language patterns governing your behavior.For one week, meticulously keep track of all the words and adjectives you use to describe the market conditions, the act of trading, and your own trading performance.until you notice your thoughts they can think you</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>until you notice your thoughts they can think you until you&#x27;re conscious of what the repeated stories are or meanings or adjectives you repeatedly have as a default setting it is going to be hard for you to make change so I want you for one week to really keep track of all of the words used to describe the market or the market conditions all the words you use to describe treating itself and then especially all the words and adjectives you use to describe your own treating write them down keep track and let&#x27;s see what they all are repeatedly saying</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

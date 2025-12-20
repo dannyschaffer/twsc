@@ -123,36 +123,6 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
             border-radius: 8px;
             margin-top: 2rem;
         }}
-        .transcript-toggle {{
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }}
-        .transcript-toggle:hover {{
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }}
-        .transcript {{
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }}
-        .transcript.show {{
-            display: block;
-        }}
         .back-link {{
             display: inline-flex;
             align-items: center;
@@ -243,14 +213,6 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
         <div class="episode-container">
             <div class="episode-body">
                 {takeaways_section}
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    {transcript}
-                </div>
             </div>
 
             <!-- CTA -->
@@ -303,14 +265,6 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {{
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }}
-    </script>
 </body>
 </html>
 '''
@@ -330,15 +284,20 @@ def format_takeaways(takeaways_text):
     # Clean up the text
     text = takeaways_text.strip()
     
+    # Fix stray asterisks that appear inline (not as bullet points)
+    # Replace " * " with " • " to handle inline bullets, then we'll process them
+    text = re.sub(r'(?<!\n)\s*\*\s+', '\n• ', text)
+    
     # Convert markdown-style formatting to HTML
     # Bold: **text** or __text__
     text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
     text = re.sub(r'__(.+?)__', r'<strong>\1</strong>', text)
     
-    # Handle bullet points - convert * or - at start of line to <li>
+    # Handle bullet points - convert * or - or • at start of line to <li>
     lines = text.split('\n')
     html_lines = []
     in_list = False
+    first_line = True
     
     for line in lines:
         line = line.strip()
@@ -348,13 +307,21 @@ def format_takeaways(takeaways_text):
                 in_list = False
             continue
         
+        # First non-empty line becomes the header (bold h3)
+        if first_line:
+            # Remove any # prefix if present
+            heading = re.sub(r'^#+\s*', '', line)
+            html_lines.append(f'<h3>{heading}</h3>')
+            first_line = False
+            continue
+        
         # Check if it's a bullet point
         if line.startswith('* ') or line.startswith('- ') or line.startswith('• '):
             if not in_list:
                 html_lines.append('<ul>')
                 in_list = True
             # Remove the bullet marker
-            content = line[2:].strip()
+            content = re.sub(r'^[*\-•]\s+', '', line)
             html_lines.append(f'<li>{content}</li>')
         # Check if it's a heading (starts with #)
         elif line.startswith('### '):
@@ -368,14 +335,17 @@ def format_takeaways(takeaways_text):
                 html_lines.append('</ul>')
                 in_list = False
             heading = line[3:].strip()
-            html_lines.append(f'<h2>{heading}</h2>')
-        # Check for Actionable Takeaway
-        elif line.lower().startswith('actionable takeaway:'):
+            html_lines.append(f'<h3>{heading}</h3>')
+        # Check for Actionable Takeaway (multiple formats)
+        elif 'actionable takeaway:' in line.lower():
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
-            content = line[len('actionable takeaway:'):].strip()
-            html_lines.append(f'<div class="actionable-takeaway"><strong>Actionable Takeaway:</strong> {content}</div>')
+            # Extract just the content after "Actionable Takeaway:"
+            match = re.search(r'actionable takeaway:\s*(.*)', line, re.IGNORECASE)
+            if match:
+                content = match.group(1).strip()
+                html_lines.append(f'<div class="actionable-takeaway"><strong>Takeaway:</strong><br>{content}</div>')
         else:
             if in_list:
                 html_lines.append('</ul>')
@@ -490,31 +460,29 @@ def main():
         filename = f"ep-{episode_num:03d}-{clean_title(title)}.html"
         filepath = os.path.join(OUTPUT_DIR, filename)
         
-        # Format takeaways or leave empty
+        # Format takeaways (first line becomes header automatically)
         if takeaways and takeaways.strip():
-            takeaways_html = f'<h2>Key Takeaways</h2>\n{format_takeaways(takeaways)}'
+            takeaways_html = format_takeaways(takeaways)
             with_takeaways += 1
         else:
             takeaways_html = ''
             without_takeaways += 1
         
-        # Format transcript
-        transcript = format_transcript(captions)
+        # Category for filtering
         category = categorize_episode(title, captions)
         
-        # Meta description from takeaways or captions
+        # Meta description from takeaways
         if takeaways:
             meta_desc = takeaways[:155].replace('"', "'").replace('\n', ' ')
         else:
             meta_desc = "Watch this episode of The Wall Street Coach Podcast with Kim Ann Curtin."
         
-        # Generate HTML
+        # Generate HTML (no transcript parameter needed)
         html = EPISODE_TEMPLATE.format(
             title=escape(title),
             meta_description=escape(meta_desc),
             video_id=video_id,
-            takeaways_section=takeaways_html,
-            transcript=transcript
+            takeaways_section=takeaways_html
         )
         
         # Write file

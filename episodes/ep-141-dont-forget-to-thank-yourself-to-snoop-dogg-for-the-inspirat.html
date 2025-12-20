@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Snoop Dogg Strategy: Why Self-Gratitude is Critical to Trader Longevity</p>
+                <h3>The Snoop Dogg Strategy: Why Self-Gratitude is Critical to Trader Longevity</h3>
 <p>As traders, we are often quick to credit mentors, resources, or external factors, but we frequently neglect one crucial element: acknowledging our own courage and hard work. Failing to appreciate the immense mental effort required to navigate the markets creates an unsustainable deficit in our emotional ledger, leading to eventual burnout.  - <strong>The Courage of Commitment</strong>: Being a professional trader requires daily courage and a deep belief in yourself to persevere through difficult market conditions.</p>
 <ul>
 <li><strong>Emotional Sustainability</strong>: Sustained gratitude for your own discipline and effort is a crucial component that fuels long-term consistency and protects against self-sabotage.</li>
 <li><strong>Internal Resilience</strong>: True trading resilience must be anchored in internal self-worth, not just P\&L or external praise.<strong>Actionable Takeaway</strong>: Take 30 seconds today to deliberately thank yourself for the hard work and courage you display in your trading journey."I want you to thank yourself for all the hard work for believing in yourself for being so courageous in the first place to be a trader."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Happy Thanksgiving everybody after you thank all the people that have helped you this year in your heart today and perhaps uh the Divine Source God whatever you call him or her I want you to do what Snoop Doggy does and that is thank yourself there&#x27;s a great talk which I&#x27;ll link in this video of Snoop dog he goes on for four minutes thanking his wife his parents so many of the rappers Quincy Jones that got him to where he is but then at the end for the last 30 seconds he thanks himself and that&#x27;s what I want you guys to do today I want you to thank yourself for all the hard work for believing in yourself for being so courageous in the first place to be a traitor I want you to think of all the things that</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

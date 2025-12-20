@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Is Your Need for Security Sabotaging Your Trading Success?</p>
-<p>If security is your non-negotiable personal need, trading may feel like a constant psychological battle. Ignoring this core conflict prevents self-compassion and forces you into strategies that are fundamentally misaligned with who you are. Success starts with reconciling your trading style with your deepest psychological makeup.  * Recognize that if <strong>security is your non-negotiable need</strong>, traditional high-risk trading may be detrimental.</p>
+                <h3>Is Your Need for Security Sabotaging Your Trading Success?</h3>
+<p>If security is your non-negotiable personal need, trading may feel like a constant psychological battle. Ignoring this core conflict prevents self-compassion and forces you into strategies that are fundamentally misaligned with who you are. Success starts with reconciling your trading style with your deepest psychological makeup.</p>
 <ul>
-<li>True self-compassion in trading starts with understanding your <strong>deepest psychological needs</strong> and being empathetic toward them.</li>
+<li>Recognize that if <strong>security is your non-negotiable need</strong>, traditional high-risk trading may be detrimental.</li>
+<li>True self-compassion in trading starts with understanding your **deepest psychological needs*</li>
+<li>and being empathetic toward them.</li>
 <li>If your need for security is strong, your success depends on choosing a <strong>specific, needs-aligned trading style</strong>.Identify your top two non-negotiable emotional needs and evaluate how your current trading routine directly addresses or conflicts with them."if there's anybody in this room whose non-negotiable need is security trading may not be cut out for you"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if there&#x27;s anybody in this room whose non-negotiable need is security trading may not be cut out for you like these are the things we have to look at and understand about ourselves that is self-compassion that is a sense of having empathy for ourselves and if you do have a need for security perhaps it&#x27;s very strong then it could be the style of trading you step into has to be a specific kind that meets these needs that you have that Who You Are</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

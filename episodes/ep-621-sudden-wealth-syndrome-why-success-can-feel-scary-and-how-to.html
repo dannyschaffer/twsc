@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Success Makes You Feel Isolated: Navigating Sudden Wealth Syndrome</p>
-<p>You finally achieved significant profits, perhaps making more in a week than previous years. Yet, instead of satisfaction, you feel disconnected, isolated, and even paranoid. This is Sudden Wealth Syndrome, and it is a common psychological hurdle that can undermine your success.  * <strong>The Identity Shift</strong>: Recognize the disconnect that occurs when your new success conflicts with your old self-image or family's financial context.</p>
+                <h3>Why Success Makes You Feel Isolated: Navigating Sudden Wealth Syndrome</h3>
+<p>You finally achieved significant profits, perhaps making more in a week than previous years. Yet, instead of satisfaction, you feel disconnected, isolated, and even paranoid. This is Sudden Wealth Syndrome, and it is a common psychological hurdle that can undermine your success.</p>
 <ul>
+<li><strong>The Identity Shift</strong>: Recognize the disconnect that occurs when your new success conflicts with your old self-image or family's financial context.</li>
 <li><strong>The Clarity Framework</strong>: Navigate this new emotional landscape using emotional clarity and grounded core values.</li>
 <li><strong>Long-Term Vision</strong>: Counter short-term fear and paranoia by establishing a durable, long-term vision for your wealth management and life.Actionable Takeaway: To neutralize the fear of success, actively work on defining grounded values that guide your decisions outside of the market.Because success should not scare you.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>But now you feel disconnected. You made more in a week than your parents did in a year and maybe even longer. But now you feel disconnected, possibly isolated, maybe even a little paranoid. That&#x27;s sudden wealth syndrome. And I have helped a lot of clients navigate that space with emotional clarity, grounded values, and a long-term vision. Because success should not scare you.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

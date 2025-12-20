@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Real Reason You Keep Sabotaging Your Trading Success</p>
+                <h3>The Real Reason You Keep Sabotaging Your Trading Success</h3>
 <p>It is frustrating when discipline fails, but the problem often lies deeper than willpower. If your nervous system does not register success as safe, your body will instinctively pull you back toward chaos, resulting in burnout and loss. Discover why focusing on "capacity" is the key to holding onto your wins.  - You cannot <strong>out-discipline biology</strong>; nervous system regulation is necessary for sustained success.</p>
 <ul>
 <li>Self-sabotage after a win streak is a sign of <strong>maxed-out capacity</strong>, not a flaw in your character or lack of motivation.</li>
 <li>The goal is to make <strong>success feel safe enough to stay</strong>, thereby stabilizing your performance.Stop forcing discipline and start investing time in regulating your nervous system so success feels safe and sustainable.What you need isn't more grind. It's capacity. the kind that make success feel safe enough to stay.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You can&#x27;t hustle your way into nervous system regulation. You can&#x27;t outdisipline biology. If your body doesn&#x27;t feel safe with success, it&#x27;ll pull you back into sabotage, burnout, emotional chaos. Not because you&#x27;re lazy, but because you are maxed out. What you need isn&#x27;t more grind. It&#x27;s capacity. the kind that make success feel safe enough to stay. That&#x27;s how you stop white knuckling your wins. Drop I&#x27;m ready in the comments and I&#x27;ll send you the link to book a call with me and see if I can help</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

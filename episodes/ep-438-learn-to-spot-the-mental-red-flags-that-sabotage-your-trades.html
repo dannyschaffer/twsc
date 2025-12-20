@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Three Mental Red Flags That Immediately Crash Your P&L</p>
+                <h3>The Three Mental Red Flags That Immediately Crash Your P&L</h3>
 <p>Unseen emotional patterns are silently bleeding your trading account dry. When you confuse external market conditions with internal psychological triggers, you expose yourself to costly, discipline-breaking mistakes. Identifying these mental "red flags" is the essential first step to protecting your capital and building long-term consistency.  - <strong>Fear of Missing Out (FOMO)</strong>: The urge to join trades simply because "everyone in the Discord room" seems to be doing something.</p>
 <ul>
 <li><strong>Revenge Trading</strong>: Reacting with anger when the market moves against you, leading to emotional, undisciplined entries.</li>
 <li><strong>Scarcity Mindset</strong>: Holding onto losing trades past your stop loss because you feel a desperate need to make money that day.Actionable Takeaway: Write the core psychological red flags (FOMO, Revenge, Scarcity) on a Post-It note and display it directly on your trading monitor for immediate pre-trade self-checks.If you catch those red flags early you can prevent your P&L from decreasing</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I want you to learn to spot the mental red flags that sabotage your trading and it&#x27;s not that hard I want you to write this list on a Post-It and stick it on your trading monitor I want you to look out for the energy of fomo when you find yourself feeling like everybody in the Discord room is doing something and you are not sure what that is fomo can take hold if you find yourself angry and feeling like the market did something to you then you&#x27;re coming from the energy of Revenge trading are you coming from scarcity are you holding on to a trade even though part of you knows you should get out because you feel like you have to make money that day these are just a handful of things that you can keep an eye out for because if you catch those red flags early you can prevent your p&amp;l from decreasing</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

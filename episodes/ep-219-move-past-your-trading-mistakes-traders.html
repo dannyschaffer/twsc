@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>Stop Sabotaging Your Learning: Why Self-Blame Guarantees Repeat Mistakes</h3>
+                <h3>Stop Sabotaging Your Learning: Why Self-Blame Guarantees Repeat Mistakes</h3>
 <p>The immediate instinct after a trading mistake is often self-criticism or anger, but this negative emotional loop is actively detrimental. Beating yourself up does not breed discipline; it prevents you from objectively analyzing the mistake, virtually guaranteeing you will repeat the error.</p>
 <p>Key Insights:  - <strong>Self-Blame Blocks Learning</strong>: Slipping into anger or self-criticism takes you closer to repeating the mistake because you inhibit your capacity to learn from it.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Be a Detective</strong>: From a place of neutrality, you can take a scientific look at your mistake to find the architecture and wisdom underneath.Actionable Takeaway:</li>
 </ul>
 <p>When a trading error occurs, set a strict time limit (e.g., 60 seconds) to feel the frustration, then actively deploy a technique to move yourself to emotional neutrality before reviewing the trade data.if you are caught up in the self- blame you're actually robbing yourself from the wisdom you could be gaining</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>anytime you make a mistake and you slip right into beating yourself up or getting mad at yourself that is actually taking you much closer to repeating the mistake again because you won&#x27;t be able to learn from it this is why it&#x27;s so important to not spend too much time giving yourself such a hard time you&#x27;re going to feel frustration you&#x27;re going to be angry with yourself all of those are understandable and normal but I want you to move through those as quick as possible to get yourself back to neutral if you get yourself back to neutral then you are in a much better position to take a look at your mistake from a scientific or like a detective and find out the architecture underneath that mistake but if you are caught up in the self- blame you&#x27;re actually robbing yourself from the wisdom you could be gaining</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

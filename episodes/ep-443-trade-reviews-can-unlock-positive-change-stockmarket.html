@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Scouring Your Journal for Mistakes (Do This Instead)</p>
-<p>Most traders use their journal as a painful record of failure and missed opportunities. However, constantly focusing on your mistakes reinforces negative emotional loops, preventing you from consistently implementing your successful strategies. You need to shift your focus to the behaviors that are already working.  * You must deliberately search for instances where you were <strong>disciplined</strong> and resisted emotional impulses like FOMO.</p>
+                <h3>Stop Scouring Your Journal for Mistakes (Do This Instead)</h3>
+<p>Most traders use their journal as a painful record of failure and missed opportunities. However, constantly focusing on your mistakes reinforces negative emotional loops, preventing you from consistently implementing your successful strategies. You need to shift your focus to the behaviors that are already working.</p>
 <ul>
+<li>You must deliberately search for instances where you were **disciplined*</li>
+<li>and resisted emotional impulses like FOMO.</li>
 <li>Highlighting these successful actions provides an immediate, actionable blueprint for <strong>frequent, repeatable success</strong>.</li>
 <li>Focusing on positive habits is the most effective way to organically <strong>crowd out negative, costly behaviors</strong>.</li>
 </ul>
-<div class="actionable-takeaway"><strong>Actionable Takeaway:</strong> For the next month, dedicate your trade review time to analyzing the moments you were "incredibly well behaved" and strategizing how to apply those exact conditions and mindsets to your next session.it just crowds out the negative costly behaviors organically</div>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you look at your trading journals for the last month or two I can promise you you&#x27;re going to be able to spot the places where you were disciplined the places where you didn&#x27;t get tempted by fomo the places where you were actually incredibly well behaved those are the things that I want you to scour all of your journals for and then I want you to come back to the next time you trade and I want you to really consider huh how do I do this more frequently how do I do this more often and I promise you it just crowds out the negative costly behaviors organically</p>
-                </div>
+<div class="actionable-takeaway"><strong>Takeaway:</strong><br>For the next month, dedicate your trade review time to analyzing the moments you were "incredibly well behaved" and strategizing how to apply those exact conditions and mindsets to your next session.it just crowds out the negative costly behaviors organically</div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Two Faces of Financial Obsession: Are You a Cheapskate or a High Roller?</p>
-<p>You may classify your relationship with money as either extreme frugality or aggressive indulgence, but in the context of trading psychology, both are symptoms of the same core problem. Being either a "CF" (cheapskate) or a "High Roller" means your decisions are driven by a deep-seated obsession that generates constant financial stress. This obsession rules your focus and prevents you from approaching the market objectively.  - <strong>The Dual Trap:</strong> Traders on both extremes—the haggler obsessed with discounts and the spender obsessed with image—are equally distracted because their actions are dictated by fear or ego, not strategy.</p>
+                <h3>The Two Faces of Financial Obsession: Are You a Cheapskate or a High Roller?</h3>
+<p>You may classify your relationship with money as either extreme frugality or aggressive indulgence, but in the context of trading psychology, both are symptoms of the same core problem. Being either a "CF" (cheapskate) or a "High Roller" means your decisions are driven by a deep-seated obsession that generates constant financial stress. This obsession rules your focus and prevents you from approaching the market objectively.  - **The Dual Trap:*</p>
 <ul>
-<li><strong>The True Cost of Control:</strong> The CF operates from a scarcity mindset, while the High Roller operates with reckless abandon; however, both lack <strong>financial self-mastery</strong> and a secure margin of safety.</li>
-<li><strong>Root Cause of Stress:</strong> You are ruled by money if you embody either extreme, which guarantees you will be constantly focused and stressed, compromising the clarity needed for profitable trading.Identify which financial profile you align with so you can begin the necessary psychological work to become the ruler of your money, not the ruled."Whether you're a CF or a high roller, guess what? You're obsessed with money, you are ruled by money, so it is actually two sides of the same coin."</li>
+<li>Traders on both extremes—the haggler obsessed with discounts and the spender obsessed with image—are equally distracted because their actions are dictated by fear or ego, not strategy.</li>
+<li>**The True Cost of Control:*</li>
+<li>The CF operates from a scarcity mindset, while the High Roller operates with reckless abandon; however, both lack **financial self-mastery*</li>
+<li>and a secure margin of safety.</li>
+<li>**Root Cause of Stress:*</li>
+<li>You are ruled by money if you embody either extreme, which guarantees you will be constantly focused and stressed, compromising the clarity needed for profitable trading.Identify which financial profile you align with so you can begin the necessary psychological work to become the ruler of your money, not the ruled."Whether you're a CF or a high roller, guess what? You're obsessed with money, you are ruled by money, so it is actually two sides of the same coin."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I have a hard question for you I want to know if you are a CF cheap or a high roller I&#x27;m reading Jared Dean&#x27;s book I had him on an xace yesterday who Traders you better put your seat belt on because you want to know which one of these two you are I&#x27;ll give you some descriptors you are a CF if you haggle over price on every single item you buy if you get the cheapest on the menu wherever you go if you harass contractors and vendors for discounts and free stuff if you have alligator arms never pick up the bill if you eat 69 cents of pork and beans for lunch if you have never bought a new car what is a high roller these are the traits six different gym memberships dozens of subscriptions goes to a restaurant and orders three times as much food as any anyone needs uh obsessed with image must have the best car the best clothes the best house everything has to be the best no margin of safety cash doesn&#x27;t stay in that bank account long why is this important because whether you&#x27;re a CF or a</p>
-<p>high roller guess what you&#x27;re obsessed with money you are ruled by money so it is actually two sides of the same coin you are going to be constantly focused and stressed either way and who wants to be ruled by money you want to be the ruler you want nothing to rule you so if you identify with any of these then I recommend you pick up this book really quickly and you get to identify it so you can start to heal because if you are CF for a high alert likely your parent was the opposite yep</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

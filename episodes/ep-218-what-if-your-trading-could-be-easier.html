@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Counterintuitive Question That Can Simplify Your Trading</p>
+                <h3>The Counterintuitive Question That Can Simplify Your Trading</h3>
 <p>We often confuse effort with effectiveness, making our trading processes far more difficult than they need to be. If you find yourself consistently working hard but not smart, you may be unnecessarily complicating your path to profitability. This video explores the counterintuitive idea of simplifying your approach.  - You may be making your trading environment way more difficult than it needs to be.</p>
 <ul>
 <li>Many traders get in their own way by working hard instead of working smart.</li>
 <li>Simplification is often the necessary shift for clarity and better results.Contemplate where you are currently overcomplicating a trade or routine, and commit to finding the simplest, smartest path forward.</li>
 </ul>
 <p>"there are times where all of us get in our own way and we work hard but we don't necessarily work smart"</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what if your treating could be easier now hear me out I&#x27;m not saying that treating is easy I&#x27;m asking you to contemplate how your treating might be able to be easier there are times where all of us get in our own way and we work hard but we don&#x27;t necessarily work smart so I want you to said even in this very counterintuitive question what if you are are and in your own trading making it way more difficult than it needs to be if that&#x27;s the case what happens if you shift that if you change that I&#x27;m curious to learn what happens if you do</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

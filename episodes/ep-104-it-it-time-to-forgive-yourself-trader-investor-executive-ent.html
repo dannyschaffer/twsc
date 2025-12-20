@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Ultimate Trade Review: Why Self-Forgiveness Is Essential for Every Trader</p>
+                <h3>The Ultimate Trade Review: Why Self-Forgiveness Is Essential for Every Trader</h3>
 <p>Every trader carries the weight of past losses and poor decisions, letting regrets about trades and personal choices weigh heavily on their success. This deep, internal disappointment acts as a constant drag on performance, creating unnecessary psychological burden.  - The practice of seeking forgiveness, whether from a higher power or the universe, applies directly to your trading career.</p>
 <ul>
 <li>Unprocessed regrets about past trades and personal choices prevent clarity and forward momentum.</li>
 <li>True psychological mastery requires finding a way to release this burden and formally grant yourself the grace to move past mistakes.Actionable Takeaway: Dedicate time to consciously review one past trade regret, acknowledge the mistake without judgment, and formally grant yourself forgiveness to neutralize its emotional power.I want to Advocate that you on this beautiful sacred holiday find a way to forgive yourself</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>everybody this is command curtain and this is my Trader prop for September 25th uh September 25th of course is the day of atonement in the Jewish tradition Yom Kippur and that is just such a beautiful sacred uh practice to really acknowledge how each of us need to ask for forgiveness some people will ask God for forgiveness uh some people will as the universe for forgiveness I want to Advocate that you on this beautiful uh sacred holiday find a way to forgive yourself uh there are a lot of regrets the Traders have about how they have navigated uh perhaps some trades over their career and even perhaps some choices that they have made for themselves personally</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

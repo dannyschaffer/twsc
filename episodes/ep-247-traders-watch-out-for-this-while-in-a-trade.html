@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,11 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trying to Force the Trade: The Real Meaning of "Don't Push the River"</p>
+                <h3>Stop Trying to Force the Trade: The Real Meaning of "Don't Push the River"</h3>
 <p>The concept of "pushing the river" perfectly describes the frustration of trying to force a trade when the market is not cooperating. This behavior, driven by impatience or ego, is mentally draining and leads directly to unnecessary losses. True trading proficiency requires recognizing when you are actively trying to manipulate an outcome you cannot control.  - <strong>The Illusion of Control</strong>: Forcing a trade is a signal that you are acting out of impatience or denial, believing your will can override market conditions.</p>
 <ul>
 <li><strong>The Importance of Acceptance</strong>: Mastery involves accepting that market flow is an external force that cannot be rushed or dictated by personal desire.Actionable Takeaway: In your next trade review, identify any moment you felt the urge to "push the river" and note the immediate physical or emotional sensation that accompanied it.Traders you guys know when you're trying to push the river in a trade... and if you are knock it off</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>have you ever heard of 10% happier it&#x27;s a book and a meditation at by Dan Harris an incredible book that can really get almost anybody on board with the power of meditation he just did a video short the other week and he talked about a great statement he learned from one of his meditation teachers and it was to not push the river and I&#x27;m going to steal it right from you Dan and tell you Traders you guys know when you&#x27;re trying to push the river in a trade and I&#x27;m going to ask you to look out for that because we all know there is no pushing any kind of river or any kind of ocean for that matter so ask yourself guys when you&#x27;re in a trade you know you should let go of are you pushing the river and if you are knock it off</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +250,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

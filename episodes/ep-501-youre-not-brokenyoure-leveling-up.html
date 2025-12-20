@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Leveling Up Feels Like Being Broken (And How to Finish Strong)</p>
+                <h3>Why Leveling Up Feels Like Being Broken (And How to Finish Strong)</h3>
 <p>You have put in the psychological work, seen the change, and are now trading at a higher level. Yet, the emotional effort to maintain this new level—often referred to as "Act Three, the Return"—can feel overwhelming, making you question if you are truly growing or just stuck. This transitional period is where true trading heroes are forged.  - \*\*Embrace the "Act Three" Transition\*\*: Recognize that sustaining change is the ultimate test of your growth, separate from the initial effort required to achieve it.</p>
 <ul>
 <li>\*\*Redefine Confidence\*\*: True mastery requires sustaining confidence without allowing it to bleed into overconfidence or ego.</li>
 <li>\*\*Anchor Success\*\*: The final hurdle is learning how to exist comfortably with success and power without unconsciously triggering the nervous system patterns of self-sabotage.Actionable Takeaway: Focus your journaling on monitoring the tension between your success and your emotional capacity, specifically tracking instances where ego challenged your disciplined approach."Can you live this way? Confidence without overconfidence, success without self-sabotage, power without ego."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You&#x27;ve changed. So why does it still feel hard? Because you&#x27;re in act three, the return. You&#x27;ve grown. You&#x27;re seeing the market and yourself differently. But now comes the next test. Can you live this way? Confidence without overconfidence, success without self-sabotage, power without ego. That&#x27;s what makes you a true trading hero. Drop hero in the comments and I&#x27;ll send you the map to help you walk this new chapter with clarity and power.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

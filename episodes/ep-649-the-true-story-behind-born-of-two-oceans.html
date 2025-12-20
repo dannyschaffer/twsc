@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Foundation of Resilience: Unpacking the Meaning of "Born of Two Oceans"</p>
-<p>Understanding the roots of who you are can be as critical to success as your trading strategy. This story behind the title "Born of Two Oceans" reveals a powerful narrative about identity, legacy, and the surprising, often challenging paths that create a strong personal foundation. We explore how deep ancestry informs the mental strength required to navigate market volatility.  * <strong>Foundational Identity</strong>: Your personal history, even generations deep, dictates the emotional resilience you bring to the markets every day.</p>
+                <h3>The Foundation of Resilience: Unpacking the Meaning of "Born of Two Oceans"</h3>
+<p>Understanding the roots of who you are can be as critical to success as your trading strategy. This story behind the title "Born of Two Oceans" reveals a powerful narrative about identity, legacy, and the surprising, often challenging paths that create a strong personal foundation. We explore how deep ancestry informs the mental strength required to navigate market volatility.</p>
 <ul>
+<li><strong>Foundational Identity</strong>: Your personal history, even generations deep, dictates the emotional resilience you bring to the markets every day.</li>
 <li><strong>The Power of Convergence</strong>: True psychological strength is often found at the convergence of diverse, powerful influences and experiences.</li>
 <li><strong>Leaps of Faith</strong>: The path to mastery requires moments of profound and immediate commitment—like jumping overboard—to find a new, authentic direction.Actionable Takeaway: Reflect on the non-market influences (family, culture, personal history) that inform your current behavior under pressure in trading.Because I got one great grandfather that came from the Atlantic and the rest came from the Pacific.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>My greatgrandfather was a whaler out of the Madera Islands. The book is called Born of Two Oceans. I would love you all to read it. Tell people why is this book called Born of Two Oceans? Because I got one great grandfather that came from the Atlantic and the rest came from the Pacific. How did he come from the Atlantic? How did your greatgrandfather come to find himself in Hawaii? My greatgrandfather was a whaler out of the Madera Islands. Sailed around to the Pacific. Got to Hawaii. The whailing ship was off the coast of Kalapana and he decided to get off. He jumped out, jumped overboard, swam to Kalapana. Bo kept going. He lived with the Hawaiian people in Kalapana for years and made his way to Hilo. And that&#x27;s how we started. He had long red hair and long red beard like some kind of pirate or something carried off of my grandfather and to my dad. That was handed on what he looked like. Wow. He&#x27;s very imposing. Wow. Just like Leo migrated to the south New Zealand Maras eventually away a few hundred years ago, thousand years ago. Two oceans, Atlantic and the</p>
-<p>Pacific. That was on my mind for a long time. If ever a book would be published would have that</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Using the Market to Numb: Addressing the Root of Trading Addiction</p>
-<p>You may rationalize your constant engagement with the market, but excessive trading is often a form of emotional numbing. When you are continuously exposed to difficult feelings, the market provides a tempting, costly distraction. Recognizing this pattern is the first step toward breaking the cycle of self-sabotage.  - Trading can become an <strong>avoidance mechanism</strong> used to numb the difficult emotions you face day-to-day, despite rationalizing it as commitment or strategy.</p>
+                <h3>Stop Using the Market to Numb: Addressing the Root of Trading Addiction</h3>
+<p>You may rationalize your constant engagement with the market, but excessive trading is often a form of emotional numbing. When you are continuously exposed to difficult feelings, the market provides a tempting, costly distraction. Recognizing this pattern is the first step toward breaking the cycle of self-sabotage.  - Trading can become an **avoidance mechanism*</p>
 <ul>
+<li>used to numb the difficult emotions you face day-to-day, despite rationalizing it as commitment or strategy.</li>
 <li>Costly, repeated negative trading behavior is often a symptom, not the cause; the <strong>root problem is the underlying urge to numb</strong>.</li>
-<li>You will face repeated temptation until you are willing to <strong>stop running from uncomfortable feelings</strong> and address them directly.Start identifying the non-market feelings—such as stress, boredom, or insecurity—that precede your compulsive or irrational trades."What I really like for people to do in the midst of facing any kind of repeated behavior that's costly is to start to look at what is the root of the reason for numbing in the first place."</li>
+<li>You will face repeated temptation until you are willing to **stop running from uncomfortable feelings*</li>
+<li>and address them directly.Start identifying the non-market feelings—such as stress, boredom, or insecurity—that precede your compulsive or irrational trades."What I really like for people to do in the midst of facing any kind of repeated behavior that's costly is to start to look at what is the root of the reason for numbing in the first place."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>there&#x27;s a lot more Traders going to Gamblers Anonymous meetings and what I want to say about addiction in general but yes especially for Traders is that when you continue to have hard to be with feelings day in and day out it is going to be very tempting to numb and often Traders will use trading to numb even though they will rationalize the reasons why they&#x27;re treating and what I want to suggest is that until you&#x27;re willing to stop numbing and be with those hard to be with feelings you will be tempted repeatedly but what I really like for people to do in the midst of any facing any kind of repeated Behavior that&#x27;s costly is to start to look at what is the root of the reason for numbing in the first place</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

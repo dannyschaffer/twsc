@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,24 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Structure Trap: When Logic Sabotages Your Biggest Wins</p>
+                <h3>The Structure Trap: When Logic Sabotages Your Biggest Wins</h3>
 <p>Many traders find themselves trapped by rigid plans and perceived constraints, believing that structure alone guarantees success. This adherence to what "should" be done can blind you to unforeseen opportunities and limit the potential for massive growth. True advancement often requires the psychological courage to break free from your own self-imposed structure.  - <strong>Challenging Assumptions</strong>: Questioning rigid beliefs, such as the necessity of a specific trading plan or exit strategy, can reveal opportunities previously masked by dogma.</p>
 <ul>
-<li><strong>The Power of Spontaneity</strong>: The most rewarding outcomes often emerge from decisions made in the "spur of the moment," requiring flexibility and <strong>presence of mind</strong> rather than perfect preparation.</li>
+<li><strong>The Power of Spontaneity</strong>: The most rewarding outcomes often emerge from decisions made in the "spur of the moment," requiring flexibility and **presence of mind*</li>
+<li>rather than perfect preparation.</li>
 <li><strong>Intellect vs. Intuition</strong>: Overreliance on intellectual analysis can suppress the essential guidance of your intuition, which is crucial for recognizing non-obvious entry or exit points.Actionable Takeaway:</li>
 </ul>
 <p>When facing a high-stakes decision, pause and ask yourself, "What unexamined constraint am I accepting as fact right now?"I am somebody who's often in my head and I like to think things through but on occasion we have to let our heart lead us.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody I hope you&#x27;re all having a great Memorial Day weekend I just got you know that when you&#x27;re photographs you get the reminder of how many years ago this picture was taken and I just uh had some pictures of a trip I took almost 17 years ago that was such an adventurous unexpected trip that I took and I just want to share it with you in the hope that it inspires you to sometimes live on the edge but I was uh I&#x27;d been laid off from a position and I was in Israel on a tour and the day before I was supposed to leave I was actually snorkeling in the Red Sea with uh Edo my tour guide and I was telling him how you know I had gotten this beautiful severance package and you know that I was gonna go back the next day to New York and start looking for position and thank God he asked me such a great question he said why are you going back then and I said what do you mean I have a return ticket and he said yeah but you don&#x27;t have to use it</p>
-<p>and I was like you don&#x27;t I was so caught up in the structure that I didn&#x27;t even realize I didn&#x27;t have to leave and in the end uh he and his family put me up for me to come up with a grand unexpected plan and I traveled for the next six weeks and this was years before we had iPhones and I would go into a hotel&#x27;s Lobby use their computer and book the next night wherever I was gonna stay whenever I left and I went up first stopping at London shout out to Jill my good friend who put me up for a couple of weeks then I went to Ireland and did an amazing road trip across my homeland my country of origin my ancestors are from then I flew to the south of France then I took a train to Paris then I met Jill and my friend Christine in Amsterdam and then visited my friends who lived in Frankfurt Germany uh I had one of the best Adventures that I have ever had to this day and it was all spontaneous and all spur of the moment and because I was traveling on</p>
-<p>my own the other magical quality is I almost never bought myself dinner because wherever I was no matter what country people would see me invite me to join their party and I just always had company for dinner and I also never paid for the check because everybody was so generous so I just tell this little story to inspire you to sometimes live on an adventurous streak there are moments in our life where our choice can set a course for something we never could have seen coming I am somebody who&#x27;s often in my head and I like to think things through but on occasion we have to let our heart lead us and I am so grateful to Edo for his speaking pet suggestion forth but I&#x27;m really grateful to my heart that I listen to it over the intellect and I hope this encourages you to listen to your heart too</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

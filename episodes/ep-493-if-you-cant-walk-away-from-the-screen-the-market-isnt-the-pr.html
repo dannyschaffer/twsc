@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Market Isn’t the Problem: Why You Can’t Walk Away from the Screen</p>
-<p>If you feel compelled to monitor charts 24/7, the issue is not your strategy, but a deeper emotional dependency. This constant screen-time is a symptom of unmet personal needs being unconsciously fulfilled by trading, whether that's purpose, excitement, or an escape. Until you address these underlying voids, you will never achieve real trading freedom.  * <strong>The 24/7 Compulsion</strong>: The belief that constant market surveillance equals success is a psychological trap, not a strategic necessity.</p>
+                <h3>The Market Isn’t the Problem: Why You Can’t Walk Away from the Screen</h3>
+<p>If you feel compelled to monitor charts 24/7, the issue is not your strategy, but a deeper emotional dependency. This constant screen-time is a symptom of unmet personal needs being unconsciously fulfilled by trading, whether that's purpose, excitement, or an escape. Until you address these underlying voids, you will never achieve real trading freedom.</p>
 <ul>
-<li><strong>Trading as Fulfillment</strong>: The market may be satisfying deeper needs such as <strong>purpose</strong> or <strong>excitement</strong>, distracting you from necessary life changes.</li>
-<li><strong>The Illusion of Control</strong>: Over-monitoring is often a desperate attempt to gain control, but it ultimately prevents genuine <strong>freedom</strong> and consistent profitability.Identify the core non-financial need that your intense trading focus is currently satisfying, and consciously seek to fulfill it elsewhere.If you can't walk away from the screen, the problem isn't the market, it's you.</li>
+<li><strong>The 24/7 Compulsion</strong>: The belief that constant market surveillance equals success is a psychological trap, not a strategic necessity.</li>
+<li><strong>Trading as Fulfillment</strong>: The market may be satisfying deeper needs such as **purpose*</li>
+<li>or <strong>excitement</strong>, distracting you from necessary life changes.</li>
+<li><strong>The Illusion of Control</strong>: Over-monitoring is often a desperate attempt to gain control, but it ultimately prevents genuine **freedom*</li>
+<li>and consistent profitability.Identify the core non-financial need that your intense trading focus is currently satisfying, and consciously seek to fulfill it elsewhere.If you can't walk away from the screen, the problem isn't the market, it's you.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>If you can&#x27;t walk away from the screen, the problem isn&#x27;t the market, it&#x27;s you. Most traders think they need to watch the market 24/7 to succeed. But if you can&#x27;t step away, it&#x27;s not about the charts. It&#x27;s about unmet needs. The trading is fulfilling for you. Maybe it&#x27;s purpose. Maybe it&#x27;s excitement. Maybe it&#x27;s even an escape from the rest of your life. Either way, until you address it, you&#x27;ll never have real freedom. I&#x27;ve created a traitor&#x27;s needs list to help you uncover the real reason you can&#x27;t walk away and what to do about it. Drop the word freedom in the comments and I&#x27;ll send it on</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

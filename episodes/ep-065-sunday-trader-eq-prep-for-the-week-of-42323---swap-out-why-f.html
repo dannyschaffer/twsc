@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Question That Is Sabotaging Your Trading Review</p>
+                <h3>The Question That Is Sabotaging Your Trading Review</h3>
 <p>When reviewing trade errors or personal reactions, asking "Why did I do that?" instantly triggers defensiveness and justification. This instinctive self-protection causes you to contract emotionally, preventing the curiosity and neutrality necessary for true psychological transformation and improved consistency.  - The word 'Why' creates a defensive posture, which is often visible in your body's physical reaction.</p>
 <ul>
 <li>Transformation in trading requires <strong>neutrality and curiosity</strong>, states that are incompatible with the self-protective nature of 'Why.'</li>
 <li>Changing your language from 'Why' to 'What' shifts the focus from blame to <strong>objective observation and understanding</strong>.For the upcoming week, replace "Why did I do that?" with "I wonder what's going on for me" or "I wonder what's happening."When we ask the question why... it illicits justifying and defending and sort of the experience of crossing your arms across your chest.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is my weekly prep for Sunday April 23rd I wanted to just speak to one simple term that amazingly when you change it changes a lot of things and that is taking the word why and turning into what so one of the things that I&#x27;ve noticed uh as a coach for 17 years now is that when we ask the question why why did I do that why did I react that one way why is that happening with that person what happens with the word why is it illicits justifying and defending and sort of the experience of crossing your arms across your chest it you suddenly go into a contraction and I would say just listen to the way your body reacts when it is asked why why did you do that we have a tendency to get very protective of ourselves and if you guys have heard anything that I&#x27;ve said about what you need to have transformation you need to actually be in a place of curiosity and a place of neutrality and what happens is when we ask ourselves why or even another person why you will find most people start</p>
-<p>to get defensive so I invite you for this week see if you can&#x27;t replace the word for yourself at a minimum to what I wonder what&#x27;s going on for me I wonder what&#x27;s happening if that&#x27;s how I&#x27;ve responded even when talking to the people see if you can find a way to craft the question with the word what instead of the word why I hope this works for you let me know how it goes</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

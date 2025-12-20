@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Burying Your Losses: The Uncomfortable Secret to Trading Longevity</p>
-<p>Every trader knows that losses are inevitable, but true mastery depends on how you process them. Most traders fall into the trap of forgetting their losses and only clinging to their wins, which is the fastest way to sabotage long-term mental resilience. This denial prevents you from developing the necessary "outlier qualities" required to sustain success.  * <strong>Longevity Requires Confrontation:</strong> True trading resilience is built by confronting the painful, embarrassing data points you instinctively want to bury.</p>
+                <h3>Stop Burying Your Losses: The Uncomfortable Secret to Trading Longevity</h3>
+<p>Every trader knows that losses are inevitable, but true mastery depends on how you process them. Most traders fall into the trap of forgetting their losses and only clinging to their wins, which is the fastest way to sabotage long-term mental resilience. This denial prevents you from developing the necessary "outlier qualities" required to sustain success.</p>
 <ul>
-<li><strong>The Psychological Cost:</strong> Ignoring a significant loss is like burying a traumatic memory; it doesn't disappear, it only compromises your emotional capacity for future trades.</li>
-<li><strong>Outlier Quality:</strong> The ability to "go the distance" requires normalizing the uncomfortable act of reviewing your losses daily, reducing their emotional sting over time.Actionable Takeaway: Make your losses as physically visible as your wins in your trading journal so you stop treating them as traumatic memories.When they're out in front of you every day it's so much easier. It's like when you think about that one traumatic or embarrassing memory that you bury deep in you and you're like you can feel it in your heart.</li>
+<li>**Longevity Requires Confrontation:*</li>
+<li>True trading resilience is built by confronting the painful, embarrassing data points you instinctively want to bury.</li>
+<li>**The Psychological Cost:*</li>
+<li>Ignoring a significant loss is like burying a traumatic memory; it doesn't disappear, it only compromises your emotional capacity for future trades.</li>
+<li>**Outlier Quality:*</li>
+<li>The ability to "go the distance" requires normalizing the uncomfortable act of reviewing your losses daily, reducing their emotional sting over time.Actionable Takeaway: Make your losses as physically visible as your wins in your trading journal so you stop treating them as traumatic memories.When they're out in front of you every day it's so much easier. It's like when you think about that one traumatic or embarrassing memory that you bury deep in you and you're like you can feel it in your heart.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the heart of the matter is just what does it take on the mental game side for a Trader to be able to handle the losses handle the challenges that are inevitably going to come what do you feel are the outlier qualities they need to develop to have what it takes to go the distance you it&#x27;s so easy to forget about your losses um and really cling on to your winds I think and it&#x27;s I don&#x27;t know if it&#x27;s like a natural thing in the brain but like when they&#x27;re out in front of you every day it&#x27;s it&#x27;s so much easier it&#x27;s like when you think about that one that one uh like tra traumatic or embarrassing memory that you bury deep in you and you&#x27;re like you can feel it in your heart when you do that every day it&#x27;s like I don&#x27;t want to do that anymore</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

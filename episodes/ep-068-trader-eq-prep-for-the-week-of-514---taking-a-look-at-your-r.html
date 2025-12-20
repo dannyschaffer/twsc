@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>How the Shame of Loss Destroys Your Trading Confidence</h3>
-<p>For many traders, loss triggers not just a financial hit but a deep sense of personal shame, often stemming from early life experiences of being criticized for mistakes. This link between market loss and self-worth is incredibly damaging, consistently draining your emotional capital. You must separate the inevitable reality of loss from the feeling of being fundamentally flawed.  * <strong>Inherent Risk</strong>: Trading success requires an absolute comfort with loss, as it occurs constantly throughout your career.</p>
+                <h3>How the Shame of Loss Destroys Your Trading Confidence</h3>
+<p>For many traders, loss triggers not just a financial hit but a deep sense of personal shame, often stemming from early life experiences of being criticized for mistakes. This link between market loss and self-worth is incredibly damaging, consistently draining your emotional capital. You must separate the inevitable reality of loss from the feeling of being fundamentally flawed.</p>
 <ul>
+<li><strong>Inherent Risk</strong>: Trading success requires an absolute comfort with loss, as it occurs constantly throughout your career.</li>
 <li><strong>Childhood Wiring</strong>: Past experiences of being ridiculed for errors can create a powerful emotional loop, causing every market mistake to trigger intense feelings of shame.</li>
 <li><strong>The Emotional Cost</strong>: Allowing loss to trigger shame places an unsustainable "price paid on the emotional capital side" that sabotages long-term performance.<strong>Actionable Takeaway</strong>: Reflect on your relationship with loss even outside of trading; if you find yourself severely triggered by small failures, it signals the need for healing related to your self-worth.Your comfort with loss is required for you to not constantly have a price paid on the emotional Capital side for yourself.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is my May 15th trailer EQ prep for the week I wanted to just talk a little bit about laws and how often loss can trigger shame this came up in a couple of conversations this week including on Twitter often if we experienced in our childhood a great deal of being made fun of or being bullied or made to feel in some way less than if we made a mistake then it&#x27;s going to kick up for us shame every time we make a mistake and one of the things that&#x27;s really hard for Traders to wrap their arms around is the fact that treating is going to require of you comfort with loss because loss is going to happen countless times a day sometimes never mind in a career as a Trader so what I want to invite you to consider is do you have laws somehow wrapped up in a story of you feeling ashamed and if you do you are going to need to separate these and pull these apart as soon as possible because York comfort with loss is required for you to not constantly have a price paid on the</p>
-<p>emotional Capital side for yourself so I want you to just think about your relationship to laws even outside of trading if you find you get really triggered by it that&#x27;s a red flag that there might be some healing you need to do about your self-worth because look you&#x27;re a human being being you&#x27;re always going to be fallible and as a Trader that is right in front of you every day so I hope this helps and if you want more go to traderherojourney.com</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

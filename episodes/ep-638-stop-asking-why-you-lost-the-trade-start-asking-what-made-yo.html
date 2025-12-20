@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop the Spiral: Why 'What' Is More Powerful Than 'Why' in Trade Review</p>
+                <h3>Stop the Spiral: Why 'What' Is More Powerful Than 'Why' in Trade Review</h3>
 <p>When a trade goes wrong, the immediate instinct is to ask, "Why did I do that?" This natural question often traps traders in a cycle of self-criticism and emotional spiraling as they attempt to justify or defend their actions. Shift your self-talk from emotional justification to objective analysis to accelerate your learning and recovery.</p>
-<p>Key Insights:  * <strong>The 'Why' Contraction</strong>: Asking "why" often leads to justifying and defending your actions, immediately putting you in a state of emotional contraction rather than open curiosity.</p>
+<p>Key Insights:</p>
 <ul>
-<li><strong>The Power of Neutrality</strong>: Using the word <strong>"what"</strong> encourages a curious and neutral mindset, allowing you to objectively observe events rather than becoming caught up in subjective perspective.</li>
+<li><strong>The 'Why' Contraction</strong>: Asking "why" often leads to justifying and defending your actions, immediately putting you in a state of emotional contraction rather than open curiosity.</li>
+<li><strong>The Power of Neutrality</strong>: Using the word **"what"*</li>
+<li>encourages a curious and neutral mindset, allowing you to objectively observe events rather than becoming caught up in subjective perspective.</li>
 <li><strong>Focus on the Objective</strong>: Objective facts ("What happened?") are the same for every trader, providing clear and consistent data for review, unlike subjective justifications for "why" a loss occurred.Actionable Takeaway: Immediately replace any internal or journalized "Why did I take that trade?" with "What was going on, both internally and externally, when I took that trade?""Why lends itself to us feeling like we have to justify and defend ourselves. So if we say why did I do that? It's going to put us into a contraction."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Tell me why. Ain&#x27;t nothing but a heartache. Tell me why. When you start getting caught up in the why, it&#x27;s just a game of perspective. You know, I haven&#x27;t quite figured out why yet. I focus a lot on like the what can I do and how can I do it. And I I&#x27;ve tried to focus on the why before. And every time I get caught up in the why too much, I feel like I start I start spiraling a little bit because I don&#x27;t know if I&#x27;m being too presumptuous or like assuming too much. 100%. It&#x27;s funny that I asked that question with the why because I&#x27;m actually a huge advocate that we eradicate why from our self-t talk and use the word what instead. Me I think about this all the time, Kim. Me too. Why lends itself to us feeling like we have to justify and defend ourselves. So if we say why did I do that? It&#x27;s going to put us into a contraction. But if we say, &amp;quot;I wonder what&#x27;s going on,&amp;quot; it lends to being more curious and neutral. Well, and I think a lot of times too when you</p>
-<p>start getting caught up in the why, it&#x27;s just a game of perspective. You know what I mean? Like versus what is super objective. What happened? This happened. Now you can be the judge if you want to think. When you get caught up in that, your perspective for your why, whatever that means to you, is going to be different than the next person, the next person, the next person&#x27;s. But all of those whats will be the same.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Driver of Every Trade: What Needs Are You Trying to Meet?</p>
+                <h3>The Hidden Driver of Every Trade: What Needs Are You Trying to Meet?</h3>
 <p>Many traders focus solely on what they want to achieve in the market—a win, a profit target. However, this focus ignores the underlying psychological NEEDS that are truly driving execution. If you are unclear about your own needs, or those of the counterparty, your technical analysis can be fatally undermined by incorrect presumptions and emotional blindness.  - Your trading activity is always driven by UNDERLYING PSYCHOLOGICAL NEEDS, not surface-level wants.</p>
 <ul>
 <li>Failing to identify the NEEDS OF THE OPPOSING TRADER makes your analysis of market movement potentially incorrect.</li>
 <li>Clarity on what you need versus what you want is essential for SELF-MASTERY and consistent execution.Actionable Takeaway: Before entering a trade, mentally put yourself in the position of the trader on the other side and identify what core needs they are attempting to secure.Most people are clear on what they want but not clear on what they need and yet it's the needs that are always driving us</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is command curtain with Wall Street coach and I first want to recommend you sign up for my newsletter Curtain Call that&#x27;s a play on my last name spelled c-u-r-t-i-n I want to speak today for your emotional intelligence for the week of July 9th about a paradoxical approach to how you treat one of the things that I am a huge proponent of is that each of us is driven by our needs we have a tendency to talk about what we want but underneath that want our needs that are driving us that means that the person on the other side of your trade and we can even say if you imagine a negotiation the person on the other side of a negotiation they have needs driving them so I&#x27;d like you to take this in with all the other tools that you have regarding technical analysis and all the due diligence and all the screen time you&#x27;ve got under your belt this is just something in addition I&#x27;d like you to bring with you I want you to when you have the time to imagine the trader or traders that are on the other</p>
-<p>side of your trade and I want you to take a look at my Universal needs so let&#x27;s make sure to give you a link to that free pdf that I offer and I want you to see if you can identify what needs the people on the other side of your trade are trying to secure because if you can&#x27;t identify those needs then it possible you are incorrect about your presumptions and or what you believe is going to happen what I&#x27;ve seen is that most people are clear on what they want but not clear on what they need and yet it&#x27;s the needs that are always driving us maybe you just start with yourself what needs do you have driving you in that moment with a trade you&#x27;re about to take and then I want you to extend yourself and put yourself in the shoes of the trader on the other side of your trade what needs are they possibly trying to get met with what they&#x27;re about to do understanding this is a little bit of nuance but I really feel it changes her perspective to step into a new way of looking at those</p>
-<p>who are on the other side of your trades all right let me know how it goes and I hope you stay safe and are profitable let me know</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

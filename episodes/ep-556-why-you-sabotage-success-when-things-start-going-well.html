@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Reason You Sabotage Your Winning Streaks</p>
-<p>Many traders claim they want peace and profitability, but consistently destroy their success when it arrives. This isn't a strategy failure; it's a deep-seated psychological pattern where the familiar stress of chaos feels safer than the uncertainty of stillness. Until you address this emotional wiring, you will keep resetting your equity curve by blowing up profitable runs.  * <strong>The Stillness Threat:</strong> When things finally go well, your nervous system interprets the lack of chaos as a psychological threat, prompting a subconscious desire to return to a state of familiar volatility.</p>
+                <h3>The Hidden Reason You Sabotage Your Winning Streaks</h3>
+<p>Many traders claim they want peace and profitability, but consistently destroy their success when it arrives. This isn't a strategy failure; it's a deep-seated psychological pattern where the familiar stress of chaos feels safer than the uncertainty of stillness. Until you address this emotional wiring, you will keep resetting your equity curve by blowing up profitable runs.</p>
 <ul>
-<li><strong>The Resetting Storm:</strong> Sabotage acts as a self-regulating mechanism, ensuring you stay within your comfort zone, even if that comfort zone is painful and costly.</li>
-<li><strong>Beyond Discipline:</strong> This issue cannot be fixed by willpower alone; it requires recognizing and regulating the pattern of emotional addiction to the market's spike and thrill.<strong>Actionable Takeaway:</strong> When you experience a successful week, instead of increasing your risk, dedicate time to breathwork and grounding exercises to train your body that peace is safe."Because stillness doesn't feel safe. Chaos does."</li>
+<li>**The Stillness Threat:*</li>
+<li>When things finally go well, your nervous system interprets the lack of chaos as a psychological threat, prompting a subconscious desire to return to a state of familiar volatility.</li>
+<li>**The Resetting Storm:*</li>
+<li>Sabotage acts as a self-regulating mechanism, ensuring you stay within your comfort zone, even if that comfort zone is painful and costly.</li>
+<li>**Beyond Discipline:*</li>
+<li>This issue cannot be fixed by willpower alone; it requires recognizing and regulating the pattern of emotional addiction to the market's spike and thrill.**Actionable Takeaway:*</li>
+<li>When you experience a successful week, instead of increasing your risk, dedicate time to breathwork and grounding exercises to train your body that peace is safe."Because stillness doesn't feel safe. Chaos does."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>But when things finally go well, they sabotage. Most traders say they want peace and profitability, but when things finally go well, they sabotage. Why? Because stillness doesn&#x27;t feel safe. Chaos does. And until you fix that, you&#x27;ll keep resetting the same storm. Send me a DM that says, &amp;quot;Flow.&amp;quot; If success you suspect makes you uncomfortable and you&#x27;re done blowing up,</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

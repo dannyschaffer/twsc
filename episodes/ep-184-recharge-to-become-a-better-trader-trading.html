@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Your Trading “Gas Tank” Runs Empty (And How to Refill It)</p>
+                <h3>Why Your Trading “Gas Tank” Runs Empty (And How to Refill It)</h3>
 <p>Trying to tackle the emotional stress of trading without a reliable outlet leads to burnout and inconsistency. You cannot operate in the market's psychological "labyrinth" effectively if your internal energy reserves are constantly depleted. This video discusses the essential need for daily, non-market activities to maintain peak psychological resilience.  - <strong>External Recharge is Essential</strong>: Treating activities outside of trading as mandatory self-care ensures you return to your desk mentally robust.</p>
 <ul>
 <li><strong>Molecular Shift</strong>: Engaging in deeply enjoyable, "molecule-shifting" hobbies actively clears the residual stress and emotional clutter accumulated during trading hours.</li>
 <li><strong>Handling the Labyrinth</strong>: Filling your emotional "gas tank" facilitates higher-level performance, allowing you to navigate the complexities of your trading day with clarity and strength.Actionable Takeaway: Schedule a daily non-trading activity you genuinely love, treating it as seriously as you treat market research or trade execution.This is a quick reminder to be sure you do something that makes you happy every day outside of your trading because it will facilitate your ability to have your gas tank filled.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you do something you love every day and maybe that&#x27;s trading but I want to know what do you do outside of your trading that you love I happen to love to paddle in a six-man Outrigger Canoe that shifts my molecules around and it allows me to step and handle anything that comes my way that day in a whole another level because I get my gas tank filled so this is a quick reminder to be sure you do something that makes you happy every day outside of your trading because it will facilitate your ability to have your gas tank filled as you navigate and go through the Labyrinth of your treating day</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

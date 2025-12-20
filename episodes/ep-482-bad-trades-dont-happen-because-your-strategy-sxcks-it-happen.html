@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>Stop Blaming Your Strategy: How Unmet Needs Fuel Your Worst Trades</h3>
+                <h3>Stop Blaming Your Strategy: How Unmet Needs Fuel Your Worst Trades</h3>
 <p>You believe your strategy is failing, but the real issue is often internal. Your losses are typically driven by unmet emotional needs—like boredom, anxiety, or a need for respect—that manifest as costly trading impulses. Until you address these underlying psychological factors, your emotions will continue to run your trades, regardless of how good your technical plan is.</p>
 <p>Key Insights:  - <strong>Unmet Needs Drive Non-Compliance</strong>: Boredom leads to forced trades, anxiety leads to holding too long, and chasing self-respect leads to oversized positions.</p>
 <ul>
 <li><strong>Clarity Over Impulse</strong>: The real goal is to shift from trading driven by emotional impulse to trading driven by strategic <strong>clarity</strong>.Actionable Takeaway:</li>
 </ul>
 <p>Identify the emotional state (e.g., boredom, anxiety, or need for respect) that preceded your last three non-compliant trades.Your emotions run your trades because your needs aren't met elsewhere.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>most Traders think trades happen because of bad strategy but in reality they start with unmet needs you&#x27;re bored so you force a trade you&#x27;re anxious so you hold too long you&#x27;re chasing respect or self-respect so you size up when you shouldn&#x27;t your emotions run your trades because your needs aren&#x27;t met elsewhere so I&#x27;ve created a Traders list so you can spot these patterns before they destroy your account get it now and start trading from a place of clarity not impulse drop the word Clarity in the comments and I&#x27;ll get it over to you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

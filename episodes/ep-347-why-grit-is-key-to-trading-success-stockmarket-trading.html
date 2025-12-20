@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Uncomfortable Truth About Trading Grit</p>
-<p>Many traders define success by an ever-increasing P&L, constantly pressuring themselves to 3x their last win. This focus on the outcome—rather than the process—creates an intense, unsustainable cycle driven by emotion, not strategy. True success requires a psychological commitment to relentless accountability.  * <strong>Relentless Accountability</strong>: Grit is demonstrated by the absolute commitment to not moving forward until every mistake is analyzed, understood, and a clear solution is defined.</p>
+                <h3>The Uncomfortable Truth About Trading Grit</h3>
+<p>Many traders define success by an ever-increasing P&L, constantly pressuring themselves to 3x their last win. This focus on the outcome—rather than the process—creates an intense, unsustainable cycle driven by emotion, not strategy. True success requires a psychological commitment to relentless accountability.</p>
 <ul>
+<li><strong>Relentless Accountability</strong>: Grit is demonstrated by the absolute commitment to not moving forward until every mistake is analyzed, understood, and a clear solution is defined.</li>
 <li><strong>Avoid Exponential Pressure</strong>: Measuring success by demanding increasingly larger wins is a psychological trap that prioritizes unsustainable outcomes over consistent, repeatable execution.</li>
 <li><strong>Harnessing Productive Intensity</strong>: Elite traders direct their intense energy toward solving errors and refining their trading framework, rather than chasing the adrenaline of the next big score.After your next losing trade, document the exact error and define a clear, repeatable solution before allowing yourself to place another trade.if I make a mistake I'm not leaving the desk until I figure out a solution so I never do that again</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>it&#x27;s about I made $5,000 in a trade the next time I&#x27;ve got to make 15,000 and it&#x27;s not good enough if I don&#x27;t yeah and it&#x27;s about if I make a mistake I&#x27;m not leaving the desk until I figure out a solution so I never do that again yeah and for those guys it was and you can see it yeah when they&#x27;re talking you can you can feel the intensity and the energy uh just just being at the table with them the these guys are getting after it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

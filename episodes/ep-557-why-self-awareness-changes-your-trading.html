@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Thinking the Market is the Only Moving Variable</p>
+                <h3>Stop Thinking the Market is the Only Moving Variable</h3>
 <p>Many traders fall into the trap of viewing the market as the sole moving variable impacting their P&L. This hyper-focus ignores the most important factor: your internal state. Your success depends just as much on your thought process and emotional capacity as it does on your strategy or risk parameters.</p>
 <p>Key Insights:  - <strong>Your Internal State is a Strategic Asset</strong>: Your thought process and mental state are just as crucial to trading success as your technical strategy and risk management.</p>
 <ul>
@@ -232,15 +201,6 @@
 <li><strong>Build Emotional Clarity</strong>: Understanding and acknowledging your strong emotional responses is the foundation for effective decision-making.Actionable Takeaway:</li>
 </ul>
 <p>When you have a rough day or feel upset, jot down the emotion immediately—"I'm upset because this trade went bad"—then take a walk and come back later to untangle the underlying cause.You are you your state, your thought process is just as important to the success of your trading as the strategy that you're using.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>The Wall Street Coach podcast. Let&#x27;s say, you know, I&#x27;m just really upset. When traders are so focused on the markets, you almost can fall into this trap of thinking that the market is the only thing, the only moving variable in it. It&#x27;s really not. It&#x27;s, you know, you are you your state, your thought process is just as important to the success of your trading as the strategy that you&#x27;re using, as you know, your risk level, as things like that. So really just understanding that everything is connected. You are connected to the market, you know, with the way that you live your life, like it&#x27;s all, you know, touching one another in some way. And so I I think a good way to like build that self-awareness is when you&#x27;re having strong emotions, just jot it down on a piece of paper, come back to it later on. But let&#x27;s say I had like a rough day in the market. Let&#x27;s say, you know, I&#x27;m just really upset. just like jot down that, you know, I&#x27;m upset, you know, because this trade went bad or whatever. And then, you know, take a walk or come back</p>
-<p>to the idea and try to untangle it.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

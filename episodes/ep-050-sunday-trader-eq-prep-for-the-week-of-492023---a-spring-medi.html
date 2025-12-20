@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Ouroborus Principle: How to Reset Your Trading Mindset After Loss</p>
+                <h3>The Ouroborus Principle: How to Reset Your Trading Mindset After Loss</h3>
 <p>During drawdowns and periods of emotional pain, it is easy to feel permanently stuck or cursed by negative patterns. This sense of darkness is often the most significant psychological barrier to moving forward in your trading career. By embracing the ancient symbol of the Ouroborus—the cycle of death and rebirth—you can find the mental fortitude to transform setbacks into necessary springboards for renewal.  - <strong>Loss is Not Permanent</strong>: Recognize that emotional pain and periods of being "stuck" are temporary phases in an ongoing cycle, not permanent states.</p>
 <ul>
 <li><strong>The Power of Shedding</strong>: Mastery requires identifying and consciously letting go of old, limiting beliefs, concepts, or relationships that no longer serve your profitable identity.</li>
 <li><strong>Conscious Rebirth</strong>: Define the new concept of self, strategy, or approach you will actively "birth" into existence to replace what you have shed.Meditate on the current limitations in your trading life and actively decide what limiting belief or old habit needs to 'die' this week to make way for a new approach.Part of what all of these spiritual Traditions teach us is that death and darkness does not have the final say.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody I hope you&#x27;re getting to enjoy uh this day with your family uh or loved ones uh we&#x27;ve just had Passover today&#x27;s Easter uh we also have this turning up the wheel for ostara which is all about uh the beginning of Spring uh if you guys have taken notice I have the oroborus uh as a symbol for something I&#x27;m launching this week and the auroborus is about the continuation of the cycle that it&#x27;s death and then life it&#x27;s death and then it&#x27;s rebirth and I really hope that you guys will just meditate on what that means for you uh even in the midst of death even in the midst of loss even in the midst of heartbreak even in the midst of learning curves and up leveling our consciousness we may feel at times that it&#x27;s never gonna shift as if we&#x27;re going to be stuck there forever and part of what all of these spiritual Traditions teach us is that death and darkness does not have the final say so I hope for yourself wherever you&#x27;re struggling right now or ever this pain wherever there&#x27;s Darkness wherever you&#x27;re feeling stuck just know that</p>
-<p>that doesn&#x27;t last forever the oraboor symbolizes the constant shedding of the old and the birthing of the new ask yourself this is heason what is it that you need to shed what is it that you need to die either in relationship to either to a belief in either to a concept of how you see yourself and what is it you&#x27;re gonna birth what is going to be the springtime for you your journey your life your work your treating</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

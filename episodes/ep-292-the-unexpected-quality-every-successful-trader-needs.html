@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Unexpected Trading Quality That Saves Your Capital</p>
-<p>Many traders focus intensely on complex strategies, believing technical mastery is the ultimate edge. However, the true barrier to long-term profitability is often not a flaw in your system, but a profound emotional hesitation to admit you were wrong. This internal resistance leads to holding incorrect positions far too long, costing both capital and confidence.  - The true definition of trading bravery is not taking aggressive risk, but the <strong>willingness to face your incorrect assumptions</strong> in real-time.</p>
+                <h3>The Unexpected Trading Quality That Saves Your Capital</h3>
+<p>Many traders focus intensely on complex strategies, believing technical mastery is the ultimate edge. However, the true barrier to long-term profitability is often not a flaw in your system, but a profound emotional hesitation to admit you were wrong. This internal resistance leads to holding incorrect positions far too long, costing both capital and confidence.  - The true definition of trading bravery is not taking aggressive risk, but the **willingness to face your incorrect assumptions*</p>
 <ul>
-<li>Ego demands you stay in a losing position to "be right," while <strong>bravery demands an immediate, disciplined exit</strong> when the setup fails.</li>
+<li>in real-time.</li>
+<li>Ego demands you stay in a losing position to "be right," while **bravery demands an immediate, disciplined exit*</li>
+<li>when the setup fails.</li>
 <li>The evidence of a successful trading psychology is found by reviewing your journal to see if your actions reflect a <strong>brave person or a fearful one</strong>.In your next trade review session, specifically audit your losing trades by asking: "Was this exit an act of bravery or denial?""Are the trades you’re taking, when you look through your journal, the evidence of a brave trader or something else?"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what&#x27;s the most important quality to develop as a traiter I&#x27;m going to say something unconventional and suggest it&#x27;s bravery what does bravery look like in real time it looks like a traiter who&#x27;s willing to be with his incorrect assumptions his willingness to realize something he thought was going to go a certain way didn&#x27;t and getting out right away I want you to start to ask yourself are the trads you&#x27;re taking when you look through your journal the evidence of a brave traitor a breef person or something else</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

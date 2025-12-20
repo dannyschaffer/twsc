@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How Radical Responsibility Stops the Trading Blame Cycle</p>
-<p>When trades go wrong, it is easy to look outward and blame the market or external factors. This pattern of externalization keeps you stuck in a reactive state, draining your psychological energy and preventing true growth. This video introduces a radical shift: owning your trading reality as if you created it, turning blame into empowerment.  * <strong>The Empowerment of Ownership:</strong> Taking responsibility for everything you observe is not about self-blame, but about reclaiming your power to change your response.</p>
+                <h3>How Radical Responsibility Stops the Trading Blame Cycle</h3>
+<p>When trades go wrong, it is easy to look outward and blame the market or external factors. This pattern of externalization keeps you stuck in a reactive state, draining your psychological energy and preventing true growth. This video introduces a radical shift: owning your trading reality as if you created it, turning blame into empowerment.</p>
 <ul>
-<li><strong>The Ho'oponopono Principle:</strong> This Hawaiian tradition encourages taking full ownership for whatever is in front of you, which allows for deeper clarity and non-emotional action.</li>
-<li><strong>Shifting Perspective:</strong> The psychological power comes from seeing yourself as the creator of your surrounding reality, which instantly shifts you from victimhood to agency.For the next week, consciously practice taking full ownership of every market result you experience, reframing "Why did this happen to me?" to "What did I create?"You will be shocked if you take responsibility, not blame but responsibility, for whatever shows up.</li>
+<li>**The Empowerment of Ownership:*</li>
+<li>Taking responsibility for everything you observe is not about self-blame, but about reclaiming your power to change your response.</li>
+<li>**The Ho'oponopono Principle:*</li>
+<li>This Hawaiian tradition encourages taking full ownership for whatever is in front of you, which allows for deeper clarity and non-emotional action.</li>
+<li>**Shifting Perspective:*</li>
+<li>The psychological power comes from seeing yourself as the creator of your surrounding reality, which instantly shifts you from victimhood to agency.For the next week, consciously practice taking full ownership of every market result you experience, reframing "Why did this happen to me?" to "What did I create?"You will be shocked if you take responsibility, not blame but responsibility, for whatever shows up.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what if this week you own the outside as you what does that mean it means to just imagine that everything you are looking at is showing up because you are the creator of what you see around you I know that sounds radical but I can tell you you will be shocked if you take responsibility not blame but responsibility for whatever shows up in Ho ponop Pono which is a Hawaiian sacred tradition one will take ownership for whatever is in front of them as if they themselves created it this is not about victim blaming this is about empowering you give it a shot and see what changes</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

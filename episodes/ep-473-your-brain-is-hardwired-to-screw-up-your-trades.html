@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Against Yourself: Reprogramming Your Mind for Profit</p>
+                <h3>Stop Trading Against Yourself: Reprogramming Your Mind for Profit</h3>
 <p>Your brain is fundamentally wired to trigger survival instincts that sabotage your trading success. These deep-seated psychological patterns lead to hesitation, fear, and an intense focus on short-term outcomes rather than consistent execution. If you feel like you are constantly fighting your own mind, it is time to deliberately reprogram your internal operating system.  - <strong>Prioritize Execution Over Outcomes</strong>: Stop chasing money or focusing on the P\&L; great traders prioritize following their plan flawlessly.</p>
 <ul>
 <li><strong>Rewire Fear into Logic</strong>: When hesitation strikes, immediately pivot from emotional questions to objective analysis.</li>
 <li><strong>Adopt a Disciplined Identity</strong>: Your self-image is the driver of your actions. Consistently affirming "I am a disciplined trader" will align your behavior with success.Use mental rehearsal to visualize yourself taking trades confidently and following your plan perfectly before the market even opens.When you feel hesitation ask what does my strategy say not what if I lose</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>your brain is wired to sabotage your trades but you can reprogram it here&#x27;s how to train your mind to like a top Trader one toach for money stop focusing on being out great Traders focus on execution not outcomes two rewire fear into logic when you feel hesitation ask what does my strategy say not what if I lose three use Mental rehearsal visualize yourself taking trades confidently and following your plan before the market open op for adopt and identity say I am a discipline traitor your self-image drives your actions trading success starts in your mind drop mind set in the comments and I&#x27;ll send you my top Trader psychology hacks</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

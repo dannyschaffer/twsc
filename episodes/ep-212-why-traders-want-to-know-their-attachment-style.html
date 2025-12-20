@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Relationship: How Your Attachment Style Dictates Trading Decisions</p>
+                <h3>The Hidden Relationship: How Your Attachment Style Dictates Trading Decisions</h3>
 <p>Every emotional reaction you have in the market is rooted in your fundamental relationship patterns. Your early-life attachment style--developed during infancy--is unconsciously influencing how you handle risk, losses, and consistency today. Until you identify this core behavioral blueprint, you will remain controlled by these hidden forces.  - Trading consistency is undermined by unconscious relational patterns formed in childhood.</p>
 <ul>
 <li>Your attachment style informs your behavior in every relationship, including your relationship to the market.</li>
 <li>Awareness of this style is the key to moving from being controlled by emotions to observing them.</li>
 </ul>
-<div class="actionable-takeaway"><strong>Actionable Takeaway:</strong> Seek out a reliable assessment to identify your specific attachment style and begin the work of self-observation immediately.</div>
+<div class="actionable-takeaway"><strong>Takeaway:</strong><br>Seek out a reliable assessment to identify your specific attachment style and begin the work of self-observation immediately.</div>
 <p>The key here is awareness once you understand what your style is then you're going to be in a much better position to observe it and not be controlled by it</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you know what your attachment style is traitors if not that I&#x27;m going to strongly recommend you do find out part of how we interact with any relationship in our life is informed by the attachment style we developed when we were infants and even though that may sound like a stretch to you I can promise you this is absolutely showing up in every traitor Rel relationship to the market the key here is awareness once you understand what your style is then you&#x27;re going to be in a much better position to observe it and not be controlled by it if you&#x27;ll join me this Thursday at 4 pm Eastern on my YouTube channel I&#x27;ll dive into more and also point you in the direction of where you can take a terrific assessment so that you can identify your own</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

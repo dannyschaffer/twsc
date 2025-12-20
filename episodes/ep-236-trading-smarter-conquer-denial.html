@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,16 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Self-Shame Loop: How Denial Is Killing Your Trading Profits\n\nThe denial that blocks true self-assessment often stems from a fear of looking at your own "shadow side" and feeling shame. This unconscious mechanism prevents traders from fixing core behavioral errors, making sustained growth impossible. Understanding this link is the first step to liberation.\n\n* <strong>Denial is Rooted in Shame</strong>: We live in denial not because we are ignorant, but because we fear the self-shame that comes from acknowledging our mistakes.\n* <strong>Embrace the Shadow Self</strong>: True trading mastery requires the courage to look honestly at the parts of your psychology that cause repeated losses.\n* <strong>Honesty Precedes Clarity</strong>: Measuring your honesty (on a 1-to-10 scale) reveals your distance from the hard truths required for smarter trading.\n\nActionable Takeaway: Identify one consistent trading error caused by your behavior and commit to observing it objectively, ensuring you do not punish or shame yourself in the process.\n\n> The key is how do you begin to take a look at some of the hard truths about yourself without stepping into shaming yourself that is the first step</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>how honest with yourself are you on a scale of 1 to 10 what I&#x27;ve noticed is that when we have a tendency to live in denial which ain&#x27;t just a river in Egypt it usually is because we have a tendency to look at the uh Shadow side of ourselves and make ourselves wrong and shame ourselves that is part of why we have a tendency to stay in denial about the parts of ourselves that perhaps caused us so the key is how do you begin to take a look at some of the hard truths about yourself without stepping into shaming yourself that is the first step</p>
-                </div>
+                <h3>The Self-Shame Loop: How Denial Is Killing Your Trading Profits\n\nThe denial that blocks true self-assessment often stems from a fear of looking at your own "shadow side" and feeling shame. This unconscious mechanism prevents traders from fixing core behavioral errors, making sustained growth impossible. Understanding this link is the first step to liberation.\n\n</h3>
+<ul>
+<li><strong>Denial is Rooted in Shame</strong>: We live in denial not because we are ignorant, but because we fear the self-shame that comes from acknowledging our mistakes.\n</li>
+<li><strong>Embrace the Shadow Self</strong>: True trading mastery requires the courage to look honestly at the parts of your psychology that cause repeated losses.\n</li>
+<li><strong>Honesty Precedes Clarity</strong>: Measuring your honesty (on a 1-to-10 scale) reveals your distance from the hard truths required for smarter trading.\n\nActionable Takeaway: Identify one consistent trading error caused by your behavior and commit to observing it objectively, ensuring you do not punish or shame yourself in the process.\n\n> The key is how do you begin to take a look at some of the hard truths about yourself without stepping into shaming yourself that is the first step</li>
+</ul>
             </div>
 
             <!-- CTA -->
@@ -285,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

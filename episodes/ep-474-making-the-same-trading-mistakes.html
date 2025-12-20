@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Mindset Loop: How to Stop Repeating the Same Trading Mistakes</p>
-<p>If you find yourself repeatedly executing the same losing behaviors, the flaw is not in your technical strategy—it's in your mindset. This cycle of self-sabotage is fueled by emotional reaction, not market logic, keeping you stuck and draining your confidence. Breaking free requires self-awareness and a systematic approach to your internal world.  * <strong>Journaling for Forced Awareness</strong>: Mistakes must be written down in a journal to force self-awareness, which is the necessary step before you can stop repeating them.</p>
+                <h3>The Mindset Loop: How to Stop Repeating the Same Trading Mistakes</h3>
+<p>If you find yourself repeatedly executing the same losing behaviors, the flaw is not in your technical strategy—it's in your mindset. This cycle of self-sabotage is fueled by emotional reaction, not market logic, keeping you stuck and draining your confidence. Breaking free requires self-awareness and a systematic approach to your internal world.</p>
 <ul>
+<li><strong>Journaling for Forced Awareness</strong>: Mistakes must be written down in a journal to force self-awareness, which is the necessary step before you can stop repeating them.</li>
 <li><strong>Quality Over Quantity</strong>: If you are overtrading, slow down and commit to taking only one quality setup per day, reviewing it fully before proceeding.</li>
-<li><strong>Pre-Trade Reprogramming</strong>: Use affirmations before execution to reinforce discipline and adherence to your established edge, such as saying, "I execute with discipline; I stick to my edge."<strong>Actionable Takeaway</strong></li>
+<li><strong>Pre-Trade Reprogramming</strong>: Use affirmations before execution to reinforce discipline and adherence to your established edge, such as saying, "I execute with discipline; I stick to my edge."**Actionable Takeaway*</li>
+<li>Before you place any new trade, pause and ask yourself if you are following your predetermined plan or if you are reacting impulsively to an emotion."Trading mistakes aren't the problem, repeating them is."</li>
 </ul>
-<p>Before you place any new trade, pause and ask yourself if you are following your predetermined plan or if you are reacting impulsively to an emotion."Trading mistakes aren't the problem, repeating them is."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>making the same trading mistakes over and over it&#x27;s not your strategy it&#x27;s your mindset here&#x27;s how to break the cycle pause before you place a trade ask yourself am I following my plan or am I reacting to emotions use a trading journal writing down mistakes Force to self-awareness so you can stop repeating them slow it down if you&#x27;re overtrading take one quality setup per day review it before moving on reprogram your mind before you enter trade say I execute with discipline I stick to my Edge trading mistakes aren&#x27;t the problem repeating them it is drop the word focused in the comments and I&#x27;ll send my best mindset reset exercises to you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

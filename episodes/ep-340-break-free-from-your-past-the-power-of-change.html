@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Repeating History: The High Cost of Doing the Same Old Same Old</p>
+                <h3>Stop Repeating History: The High Cost of Doing the Same Old Same Old</h3>
 <p>Many traders find themselves stuck in frustrating emotional loops, executing the same flawed behaviors and expecting different results. If your current approach isn't leading to freedom, peace, or consistent profits, clinging to old habits is the source of your ongoing struggle.</p>
 <p>Key Insights:  - <strong>The Definition of the Loop</strong>: Repeating the same actions in your trading process will inevitably lead to repeating the same financial and psychological mistakes.</p>
 <ul>
 <li><strong>The Illusion of Effort</strong>: If your current set of behaviors was the key to success, you would already be achieving your desired outcomes of peace and financial freedom.</li>
 <li><strong>Forcing a Break</strong>: Achieving a breakthrough requires mixing up your established patterns and daring to execute a radically different psychological approach.Actionable Takeaway: Identify one habitual action you repeat after a setback (e.g., revenge trading, over-sizing) and commit to substituting it with a regulated pause for the next week.if you don't want to keep living the same old same old you got to mix it up and the way you mix it up is to stop doing what you've always done</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you don&#x27;t want to keep living the same old same old you got to mix it up and the way you mix it up is to stop doing what you&#x27;ve always done because if that was the solution guys you would be at the solution you would have freedom you would feel more peace you would not keep making the same mistakes over and over and oh forget</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Coaching vs. Therapy: Finding the Right Structure for Trading Success</p>
-<p>Traders frequently hit psychological roadblocks, often mistaking a need for structured solutions with the desire for emotional processing. If you feel stuck, understanding the distinct benefits of both professional guidance types is critical to breaking old patterns and achieving consistency.  * Therapy focuses on processing emotions and thoughts to guide you toward potential actions. Coaching, conversely, provides a <strong>structured approach of what to do</strong> in moments of struggle.</p>
+                <h3>Coaching vs. Therapy: Finding the Right Structure for Trading Success</h3>
+<p>Traders frequently hit psychological roadblocks, often mistaking a need for structured solutions with the desire for emotional processing. If you feel stuck, understanding the distinct benefits of both professional guidance types is critical to breaking old patterns and achieving consistency.</p>
 <ul>
-<li>Your mindset in trading requires active reframing, as the tools you built in <strong>past professional careers</strong> (doctor, lawyer, etc.) may not translate to market demands.</li>
-<li>Effective coaching requires deep reflection on <strong>who you are and what you are struggling with</strong> to implement lasting behavioral change.Actionable Takeaway: To avoid bringing non-market professional habits into your trading, clearly delineate and define the specific emotional and tactical frameworks you will use when sitting down at your desk."With coaching, you're reflecting on who you are and what you're struggling with. But there's also like a structured approach of what to do."</li>
+<li>Therapy focuses on processing emotions and thoughts to guide you toward potential actions. Coaching, conversely, provides a **structured approach of what to do*</li>
+<li>in moments of struggle.</li>
+<li>Your mindset in trading requires active reframing, as the tools you built in **past professional careers*</li>
+<li>(doctor, lawyer, etc.) may not translate to market demands.</li>
+<li>Effective coaching requires deep reflection on **who you are and what you are struggling with*</li>
+<li>to implement lasting behavioral change.Actionable Takeaway: To avoid bringing non-market professional habits into your trading, clearly delineate and define the specific emotional and tactical frameworks you will use when sitting down at your desk."With coaching, you're reflecting on who you are and what you're struggling with. But there's also like a structured approach of what to do."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast. What&#x27;s interesting about coaching versus like therapy, because I&#x27;ve done years of therapy, I think that with therapy, you really like kind of let out your thoughts and then they kind of guide you into like maybe some actions you could take. But with coaching, you&#x27;re reflecting on who you are and what you&#x27;re struggling with. But there&#x27;s also like a structured approach of what to do. Like when you get yourself into these moments, it&#x27;s almost like reframing yourself a little bit. When you especially in trading, when you come from like a past career, any career, uh you have these tools that you&#x27;ve built over these um years that you&#x27;ve spent in something, whether you&#x27;re a doctor or a lawyer or, you know, anything.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

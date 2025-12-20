@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading to Be Right: The Harsh Reality of Market Feedback</p>
+                <h3>Stop Trading to Be Right: The Harsh Reality of Market Feedback</h3>
 <p>The emotional attachment to being "right" is one of the most destructive forces in trading. When you confuse market correctness with personal validation, every losing trade feels like a personal failure, compelling you to hold onto positions long after the market has proven you wrong. Trading success demands emotional detachment from prediction and an absolute acceptance of price action.  - <strong>The Market is an Absolute Judge</strong>: Unlike areas like politics or personal debate, the market offers undeniable and instant feedback on your position; your P\&L is the only truth.</p>
 <ul>
 <li><strong>Minimize Ego Exposure</strong>: Seeking confirmation bias to justify a losing trade will only prolong the damage. The desire to be proven right leads directly to holding and hoping.</li>
-<li><strong>Profitability Over Prediction</strong>: Successful traders prioritize capital preservation and exiting bad trades quickly over the need to maintain an inaccurate thesis.<strong>Actionable Takeaway:</strong> When a trade moves definitively against your entry criteria, immediately execute your pre-defined exit plan. Do not allow emotional narratives to override the mechanical rule that limits your loss.Well, you're not right because the thing just have, you are wrong. And what you should have done is cut it at 9:00 most likely.</li>
+<li><strong>Profitability Over Prediction</strong>: Successful traders prioritize capital preservation and exiting bad trades quickly over the need to maintain an inaccurate thesis.**Actionable Takeaway:*</li>
+<li>When a trade moves definitively against your entry criteria, immediately execute your pre-defined exit plan. Do not allow emotional narratives to override the mechanical rule that limits your loss.Well, you're not right because the thing just have, you are wrong. And what you should have done is cut it at 9:00 most likely.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>But I know I&#x27;m right. Well, you&#x27;re not right. I think about this all the time cuz most people are not traitors. Um, and I deal with people in life and I watch and I observe them and you know things like politics for example, which is a very emotional subject for people, you know, they will they take a stand. Mhm. And then every piece of evidence that they see proves that they are right. Whereas someone on the other side of the political spectrum takes the opposite stand and every piece of evidence they see proves that they are right. And there&#x27;s no way to prove this. So if you want to convince yourself that you were right, then you can do that all day long. Totally. But in the market, it can work. Nope. You know what I mean? The markets aren&#x27;t going to be like that. They&#x27;re, you know, hey, I bought this thing at 10:00 and now it&#x27;s at 5, but I know I&#x27;m right. Well, you&#x27;re not right because the thing just have, you are wrong. And what you should have done is cut it at 9:00 most likely, right?</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

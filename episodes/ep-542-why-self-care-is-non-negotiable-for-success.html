@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Trader's Ultimate Edge: Why Self-Care is Your Only Guarantee</p>
+                <h3>The Trader's Ultimate Edge: Why Self-Care is Your Only Guarantee</h3>
 <p>Most traders enter the market focused on charts and strategy, failing to realize they are performing at the level of an Olympian in the most competitive game on Earth. When you compare your resources to the "Godzilla and King Kong" of hedge funds, relying solely on technical analysis is a path to burnout. Your internal state, not your external indicators, is the only factor you can truly control for consistent success.</p>
 <p>Key Insights:  - <strong>Trading is the ultimate competitive arena</strong>: Acknowledge that the market is a sport amplified, requiring the mental and physical conditioning of an elite athlete.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Prioritizing self-care is a profit strategy</strong>: The ability to manage your physical and mental health is the direct path to staying present and executing your plan reliably.Actionable Takeaway:</li>
 </ul>
 <p>Treat your pre-market routine with the seriousness of an Olympian warming up; if you wouldn't come into a championship hungover, don't approach your trading desk unprepared.The one thing that you have control over is how you take care of yourself.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast because I feel a lot of traders don&#x27;t really see themselves as the Olympians they are. Yes. In the most competitive game in the world and it&#x27;s almost like they&#x27;re not really conscious to that which is kind of startling in today&#x27;s day and age where we&#x27;re tracking even our steps. Yeah. Yeah. Absolutely. I mean and you know you mentioned you&#x27;re in the most competitive place, right? It&#x27;s I mean it&#x27;s like sports amplified and you&#x27;re not just in competition with people that like only trade the best as you. You&#x27;re also like in competition with Godzilla and King Kong. Like all these hedge funds that have way more money than you probably do. I mean not probably, they do. They do. Exactly. And and so I mean the deck is stacked so high against you that the best thing you can do and the one thing that you have control over is how you take care of yourself. And I will preach that to the choir until I die. Like take care of yourself because that is how you become a consistently profitable trader.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

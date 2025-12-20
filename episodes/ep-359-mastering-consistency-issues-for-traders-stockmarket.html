@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Psychological Barrier Stopping Your Trading Consistency</p>
+                <h3>The Hidden Psychological Barrier Stopping Your Trading Consistency</h3>
 <p>Consistency is the single biggest hurdle facing traders, and the root cause often lies far deeper than your charts. When you struggle to consistently cut losses, you are not just losing money—you are reinforcing a negative psychological pattern that sabotages your long-term success.  - The \#1 consistency failure is <strong>failing to cut losses quickly enough</strong>.</p>
 <ul>
 <li>You must acknowledge the P\&L impact of poor execution to initiate <strong>serious behavioral change</strong>.</li>
 <li>True consistency requires you to <strong>redesign your relationship to mistakes</strong>, addressing the deeper fear of being wrong.Look beneath your inability to accept a loss and identify the underlying emotional driver that makes you feel you "can't be wrong."you have to redesign your relationship to mistakes your relationship to loss</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>let&#x27;s talk about the number one issue that Traders have and that is being able to be consistent if you are struggling with consistency here&#x27;s what I want you to do first first I want you to identify what the challenges most likely it&#x27;s that you&#x27;re not cutting your losses quick and soon enough second I want you to really take an look at what the impact of that is obviously it r your p&amp;l but you have to look at it for you to actually believe that and be serious then about taking action to change it also I want you to think about what would be the solution to that well the first solution I can tell you is that you have to redesign your relationship to mistakes your relationship to loss something else is a foot underneath why you can&#x27;t be wrong take a look there</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

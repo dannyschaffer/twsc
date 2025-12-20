@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Sabotaging Your Edge with Unrealistic Expectations</p>
-<p>Many traders mistakenly equate ambitious goals with effective planning, setting expectations so high they are in "another galaxy." This creates an immediate environment for failure, leading to profound disappointment. When your goals are unattainable, your inner critic takes over, actively sabotaging your disciplined efforts.  * <strong>The Inner Critic Hijack:</strong> Setting plans that are too far out of reach hands the microphone to your inner critic, which breeds shame and self-doubt.</p>
+                <h3>Stop Sabotaging Your Edge with Unrealistic Expectations</h3>
+<p>Many traders mistakenly equate ambitious goals with effective planning, setting expectations so high they are in "another galaxy." This creates an immediate environment for failure, leading to profound disappointment. When your goals are unattainable, your inner critic takes over, actively sabotaging your disciplined efforts.</p>
 <ul>
-<li><strong>Grounding Expectations:</strong> True commitment requires putting 'Boda plans' in place that are challenging yet realistic for your current capacity.Actionable Takeaway: Audit your current trading plan and replace any objective that feels "in another galaxy" with a specific, measurable goal you can achieve this week."How is that going to help you if anything is going to set you up to have your inner critic doing all the talking in your head hijacking the microphone that's in your head"</li>
+<li>**The Inner Critic Hijack:*</li>
+<li>Setting plans that are too far out of reach hands the microphone to your inner critic, which breeds shame and self-doubt.</li>
+<li>**Grounding Expectations:*</li>
+<li>True commitment requires putting 'Boda plans' in place that are challenging yet realistic for your current capacity.Actionable Takeaway: Audit your current trading plan and replace any objective that feels "in another galaxy" with a specific, measurable goal you can achieve this week."How is that going to help you if anything is going to set you up to have your inner critic doing all the talking in your head hijacking the microphone that's in your head"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>more times than not guys what I see in my coaching is that Traders have unrealistic expectations on themselves I&#x27;m not talking about putting Bodacious challenges on yourself I&#x27;m not talking about pushing yourself or not pushing yourself I&#x27;m not talking about you like letting yourself get soft and kick your feet up on the couch no I&#x27;m talking about putting Boda plans in place but not things are in another galaxy how is that going to help you if anything is going to set you up to have your inner critic doing all the talking in your head hijacking the microphone that&#x27;s in your head</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

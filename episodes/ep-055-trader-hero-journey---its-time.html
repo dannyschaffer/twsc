@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Breaking the Invisible Ceiling on Your Trading Success</p>
-<p>The ultimate challenge in trading isn't finding the perfect strategy; it's overcoming the deep-rooted emotional loops that cap your success. Many traders struggle daily with fear of missing out, greed, and confidence issues, creating an <strong>invisible ceiling</strong> on their P\&L. It is critical to stop fighting the market and start winning the internal battle against your inner Saboteur.  * The <strong>ultimate battle</strong> in trading is fought between you versus you.</p>
+                <h3>Breaking the Invisible Ceiling on Your Trading Success</h3>
+<p>The ultimate challenge in trading isn't finding the perfect strategy; it's overcoming the deep-rooted emotional loops that cap your success. Many traders struggle daily with fear of missing out, greed, and confidence issues, creating an **invisible ceiling*</p>
 <ul>
+<li>on their P\&L. It is critical to stop fighting the market and start winning the internal battle against your inner Saboteur.</li>
+<li>The **ultimate battle*</li>
+<li>in trading is fought between you versus you.</li>
 <li>Your strategy is developed, but success is limited by addressing the underlying <strong>internal difficulty and inner Saboteur</strong>.</li>
-<li>Long-term consistency requires cultivating <strong>emotional and psychological grit</strong> to navigate high-pressure feelings like FOMO and greed.Engage with a high-support, like-minded community where you can receive focused coaching and tools to process successes and grieve losses without judgment.The ultimate battle as a trader is the fight that you had between you versus you</li>
+<li>Long-term consistency requires cultivating **emotional and psychological grit*</li>
+<li>to navigate high-pressure feelings like FOMO and greed.Engage with a high-support, like-minded community where you can receive focused coaching and tools to process successes and grieve losses without judgment.The ultimate battle as a trader is the fight that you had between you versus you</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Trader herojourney.com that is the link to my new Discord room specifically for Traders who are interested in developing their emotional and psychological grit I am so excited to tell you about this I&#x27;ve been working on it with my team for months there is no Discord room like this out there Traders this is very different this is a room specifically to address your fear of missing out your greed your struggles with time management your struggles with confidence your struggles with greed all of the challenges that you face as a Trader every day I invite you to come into this room to be with other like-minded traders who know that the ultimate battle as a traitor is the fight that you had between you versus you this is a place where you&#x27;re going to receive coaching from me and you&#x27;re going to have office hours where I am able to support you and encourage you and give you tools to navigate all of the hard to be with feelings this room is going to be filled with like-minded traders who know that ultimately once you get your developed strategy you are ultimately always going to be up</p>
-<p>against that internal difficulty and inner Gremlin and or inner Saboteur that has an invisible ceiling upon her success this is the place where you&#x27;re going to finally be able to brag and have people support your incredible successes and a place where you can reach and grieve the losses that you have without judgment please come and join us</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Controversial Truth: Your Emotions Aren't the Enemy of Profit</p>
-<p>Many traders spend vital mental energy trying to suppress or eliminate their feelings, viewing emotions as the greatest enemy of profit. This view is flawed because you can never truly stop yourself from having emotions. The psychological cost of fighting an inevitable feeling often leads to a deeper internal struggle that sabotages performance.  - <strong>Emotions are inevitable, not optional.</strong> The goal is not emotional suppression, which is impossible, but emotional mastery.</p>
+                <h3>The Controversial Truth: Your Emotions Aren't the Enemy of Profit</h3>
+<p>Many traders spend vital mental energy trying to suppress or eliminate their feelings, viewing emotions as the greatest enemy of profit. This view is flawed because you can never truly stop yourself from having emotions. The psychological cost of fighting an inevitable feeling often leads to a deeper internal struggle that sabotages performance.  - **Emotions are inevitable, not optional.*</p>
 <ul>
+<li>The goal is not emotional suppression, which is impossible, but emotional mastery.</li>
 <li>The true key to consistency is the <strong>separation of feeling from action</strong>. You can experience anxiety or frustration without executing a revenge trade.</li>
 <li>By allowing emotions to move through you, you create the necessary space to ascend to the next level: <strong>conscious choice</strong>.Actionable Takeaway: This week, consciously practice accepting any strong emotion that arises during a trade, letting it move through you before deciding on the next step."The key is with practice and with effort you don't have to take action because you have emotions"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I want to talk a little bit about something that is a little controversial one of the things I often see on acts in different Discord rooms is how often traitors demonize emotions let me finish here hear me out I really want you guys to know that having emotions is not the issue and PS you can never stop yourself from having emotions but the key key is with practice and with effort you don&#x27;t have to take action because you have emotions but in my experience when you have them and you let them move through you you actually then are able to shift up and out of them so try that this week accept them let them move through you and then step into the next level which is choice</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

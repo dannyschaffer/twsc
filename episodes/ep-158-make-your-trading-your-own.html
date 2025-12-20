@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Copying: Why You Must Design Your Own Trading Style</p>
-<p>Trying to replicate a guru's perfect system often leads to frustration and failure because you are attempting to fit into a strategy that fundamentally isn't congruent with who you are. Just as every great artist puts a unique stamp on a song, profitable trading demands that you customize the process to fit your own risk tolerance and emotional DNA. Ignoring this principle guarantees that you will struggle with execution and consistency.  * The key to long-term profitability is <strong>authenticity</strong> in execution, not complexity in the strategy itself.</p>
+                <h3>The Hidden Cost of Copying: Why You Must Design Your Own Trading Style</h3>
+<p>Trying to replicate a guru's perfect system often leads to frustration and failure because you are attempting to fit into a strategy that fundamentally isn't congruent with who you are. Just as every great artist puts a unique stamp on a song, profitable trading demands that you customize the process to fit your own risk tolerance and emotional DNA. Ignoring this principle guarantees that you will struggle with execution and consistency.</p>
 <ul>
-<li>A system only generates an edge when it is deeply aligned with your <strong>personality and specific capacity</strong> for risk.</li>
-<li>Trying to trade someone else's plan leads to inevitable failure because you lack the <strong>internal ownership and conviction</strong> required to navigate drawdowns.Review your current trading rules and identify two core components that must be adjusted to align with your personal energy levels and decision-making style."Each of you have the opportunity to put your own specific stamp of your style upon it."</li>
+<li>The key to long-term profitability is **authenticity*</li>
+<li>in execution, not complexity in the strategy itself.</li>
+<li>A system only generates an edge when it is deeply aligned with your **personality and specific capacity*</li>
+<li>for risk.</li>
+<li>Trying to trade someone else's plan leads to inevitable failure because you lack the **internal ownership and conviction*</li>
+<li>required to navigate drawdowns.Review your current trading rules and identify two core components that must be adjusted to align with your personal energy levels and decision-making style."Each of you have the opportunity to put your own specific stamp of your style upon it."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so I&#x27;ve just been exposed to the band disturbs version of The Sound of Silence it&#x27;s uh done by this band I&#x27;ve never heard of and it&#x27;s spectacular and what uh happened shortly after it&#x27;s my good friend Anthony Neo sent me another version of The Sound of Silence by a death metal band called Evermore and I started to think about how Paul Simon the you know of Simon and Garfunkle how many versions there must be of the sound of silence and how every artist puts their own stamp of their style upon it and it made me think of traitors and how each of you have the opportunity to put your own specific</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

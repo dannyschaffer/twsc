@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Harsh Reality of Trading Success: Ditching the Lamborghini Fantasy</p>
-<p>Many aspiring traders enter the market believing that instant wealth and excessive glamour are the norm, fueled by highly misleading social media imagery. This focus on immediate gratification creates a profound emotional misalignment, ensuring failure when faced with the difficult, long-term effort required for sustainable success.  - <strong>Ditch the Fantasy:</strong> True trading success is a marathon built on diligent, methodical effort, not a lottery ticket promising immediate luxury cars and lifestyle.</p>
+                <h3>The Harsh Reality of Trading Success: Ditching the Lamborghini Fantasy</h3>
+<p>Many aspiring traders enter the market believing that instant wealth and excessive glamour are the norm, fueled by highly misleading social media imagery. This focus on immediate gratification creates a profound emotional misalignment, ensuring failure when faced with the difficult, long-term effort required for sustainable success.  - **Ditch the Fantasy:*</p>
 <ul>
-<li><strong>Master the Business:</strong> Longevity in trading requires deep commitment to understanding the nuances of your markets and treating it as a complex business, not a casual hobby.</li>
-<li><strong>Wealth is Cumulative:</strong> The ostentatious rewards often advertised are the result of successful careers spanning <strong>25 to 30 years</strong>, achieved by consistent professionals.Realign your expectations immediately by committing to a multi-decade plan of consistent effort and deep learning rather than seeking instant gratification."The reality is you have to really understand... whatever you’re going to trade, put in a lot of effort and make it work and that is the story of every successful Trader I talk to."</li>
+<li>True trading success is a marathon built on diligent, methodical effort, not a lottery ticket promising immediate luxury cars and lifestyle.</li>
+<li>**Master the Business:*</li>
+<li>Longevity in trading requires deep commitment to understanding the nuances of your markets and treating it as a complex business, not a casual hobby.</li>
+<li>**Wealth is Cumulative:*</li>
+<li>The ostentatious rewards often advertised are the result of successful careers spanning <strong>25 to 30 years</strong>, achieved by consistent professionals.Realign your expectations immediately by committing to a multi-decade plan of consistent effort and deep learning rather than seeking instant gratification."The reality is you have to really understand... whatever you’re going to trade, put in a lot of effort and make it work and that is the story of every successful Trader I talk to."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>everybody comes into this field with the expectation Lamborghini I will have two blonds on my one arm like and I will have like all these bikini clad woman chasing me but that&#x27;s uh not the reality right the reality is you have to really understand the bu uh whatever you&#x27;re going to trade put in a lot of effort and make it work and that is the story of every successful Trader I talk to wow right while the imagery which people sell in this business is all like fancy cars and uh things like that yeah mean that is something which happens if you are lucky and you&#x27;re successful and it happens after 25 30 years by the time you&#x27;re 50 60 year old then you get all those blonds</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

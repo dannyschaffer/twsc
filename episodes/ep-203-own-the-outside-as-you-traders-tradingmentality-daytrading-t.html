@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Anti-Victim Mentality: How to Take 100% Responsibility for Your Trading</p>
-<p>Are you caught in the psychological trap of blaming market circumstance for your P\&L? Viewing yourself as a victim of external forces leads to chronic frustration and prevents growth. This radical shift in perspective is the critical, game-changing move that puts you back in the *driver's seat*.  - <strong>Ownership is Freedom</strong>: Taking *100% responsibility* for whatever is showing up in your life—even uncontrollable events—immediately shifts your power dynamic away from victimhood.</p>
+                <h3>The Anti-Victim Mentality: How to Take 100% Responsibility for Your Trading</h3>
+<p>Are you caught in the psychological trap of blaming market circumstance for your P\&L? Viewing yourself as a victim of external forces leads to chronic frustration and prevents growth. This radical shift in perspective is the critical, game-changing move that puts you back in the *driver's seat*.  - <strong>Ownership is Freedom</strong>: Taking *100% responsibility</p>
 <ul>
-<li><strong>Response is Your Only Variable</strong>: While external market forces are beyond your control, your only true leverage lies in *how you choose to respond* to those forces.</li>
+<li>for whatever is showing up in your life—even uncontrollable events—immediately shifts your power dynamic away from victimhood.</li>
+<li><strong>Response is Your Only Variable</strong>: While external market forces are beyond your control, your only true leverage lies in *how you choose to respond</li>
+<li>to those forces.</li>
 <li><strong>Transcend the Trigger</strong>: The key to navigating volatility is not emotional suppression, but recognizing when you are triggered and learning to "surf" the emotional experience to the other side.Actionable Takeaway: Practice noticing when you feel like a victim of the market and reframe the situation by asking: "What am I responsible for in this exact moment?""what you are in charge of is how you choose to respond even if you're triggered you can notice it and then start to Surf it to the other side"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>own the outside as you what does this mean this means that you are going to begin to take 100% responsibility for whatever is showing up in your life I know this sounds radical but it can absolutely be gamechanging what it does is it puts you in the driver&#x27;s seat what it does it takes you out of feeling like a victim of the markets of you circumstance if you begin to own the outside is you you realize that you have a responsibility to how you respond there are going to be forces that are beyond your control but what you are in charge of is how you choose to respond even if you&#x27;re triggered you can notice it and then start to Surf it to the other side try this and let me know how it goes</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

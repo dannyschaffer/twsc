@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of No Safety Net: Why Trading Requires a Backup Plan</p>
+                <h3>The Cost of No Safety Net: Why Trading Requires a Backup Plan</h3>
 <p>Entering the markets without a financial safety net instantly transforms trading from a strategic challenge into a desperate gamble. When your entire livelihood depends on daily outcomes, the psychological pressure intensiveness inevitably leads to costly, fear-driven errors. This video explores why a backup plan is the ultimate psychological risk management tool.</p>
 <p>Key Insights:  - <strong>Eliminate the "Trade or Nothing" Mindset</strong>: When the stakes are too high, the pressure corrupts decision-making and leads to impulsive behavior.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Psychological Capital</strong>: A backup plan acts as a buffer against fear and desperation, allowing you to maintain discipline during drawdowns.Actionable Takeaway:</li>
 </ul>
 <p>Review your external resources—whether it's savings or marketable skills—and solidify a Plan B before increasing your commitment to trading."Don't get yourself in the situation where I was where it was I really didn't have any other option. It was like trade or or nothing."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>The Wall Street Coach podcast. Before anyone gets into trading, make sure and I suggest, you know, I I plead with before any trader gets into business. Yes. Make sure you have a backup plan. It could be, you know, a lot of savings. It could be skills. It could be, you know, some job on the back burner, but don&#x27;t get yourself in the situation where I was where it was I really didn&#x27;t have any other option. It was like trade or or nothing. And that was a huge huge mistake. So that&#x27;s that&#x27;s something I want to, you know, but before anyone gets into trading, make sure you have a backup plan.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

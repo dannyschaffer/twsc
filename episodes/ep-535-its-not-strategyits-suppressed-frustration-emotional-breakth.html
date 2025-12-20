@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Breakthrough You Need Is Hiding In Your Frustration</p>
-<p>You are not struggling because of a flawed strategy or lack of discipline. The real obstacle to consistent profitability is the emotional deadlock caused by <strong>avoiding profound feelings</strong> like hopelessness and frustration. The turning point isn't another indicator—it's finally allowing yourself to feel the emotional weight that has kept you trapped.  * The key to freedom is often found in the <strong>emotional breakdown</strong> you have been desperately trying to prevent.</p>
+                <h3>The Breakthrough You Need Is Hiding In Your Frustration</h3>
+<p>You are not struggling because of a flawed strategy or lack of discipline. The real obstacle to consistent profitability is the emotional deadlock caused by **avoiding profound feelings*</p>
 <ul>
+<li>like hopelessness and frustration. The turning point isn't another indicator—it's finally allowing yourself to feel the emotional weight that has kept you trapped.</li>
+<li>The key to freedom is often found in the **emotional breakdown*</li>
+<li>you have been desperately trying to prevent.</li>
 <li>Your system is not inherently flawed; you are stuck because of an <strong>emotion you refuse to feel</strong>.</li>
 <li>A true turning point in trading comes when you stop seeking external strategy and face your internal reality.Actionable Takeaway: Stop trying to push through your resistance; instead, deliberately allow yourself to feel the frustration that is currently present.You're not stuck cuz your system, you're stuck because of an emotion you refuse to feel.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>What if your breakdown is the start of a breakthrough? A turning point for some people isn&#x27;t a strategy or mindset. It&#x27;s a moment when you finally let yourself feel the hopelessness and frustration. When we avoid it for years, that sometimes is the very place we need to go to be set free. You&#x27;re not stuck cuz your system, you&#x27;re stuck because of an emotion you refuse to feel. If you&#x27;re on the edge and you&#x27;re tired pushing through, type breakthrough and I&#x27;ll send you a link for us to come together and get to the root of That&#x27;s</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

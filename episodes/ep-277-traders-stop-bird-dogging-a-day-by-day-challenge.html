@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop "Bird-Dogging": The Mental Trap of Rejecting Market Reality</p>
-<p>Frustration kills more trading accounts than bad entries. When the market fails to conform to your expectations, you engage in "bird-dogging"—mentally fighting the reality of price action. This psychological rejection creates immense emotional cost and guarantees poor decision-making.  * <strong>The Cost of Cognitive Dissonance</strong>: Bird-dogging occurs when you are frustrated that what *is* happening in the market differs drastically from what *should* be happening according to your expectations.</p>
+                <h3>Stop "Bird-Dogging": The Mental Trap of Rejecting Market Reality</h3>
+<p>Frustration kills more trading accounts than bad entries. When the market fails to conform to your expectations, you engage in "bird-dogging"—mentally fighting the reality of price action. This psychological rejection creates immense emotional cost and guarantees poor decision-making.</p>
 <ul>
+<li><strong>The Cost of Cognitive Dissonance</strong>: Bird-dogging occurs when you are frustrated that what *is</li>
+<li>happening in the market differs drastically from what *should</li>
+<li>be happening according to your expectations.</li>
 <li><strong>Reality is the Edge</strong>: True objectivity requires you to stop imposing your will on the charts and accept the current price action unconditionally.</li>
 <li><strong>Frustration is a Choice</strong>: The emotional turmoil you feel comes from wishing the market were different, not from the trade itself.Challenge yourself to observe every trade for an entire day without attaching a mental commentary about whether it "should" be going your way."What it basically means is that we're frustrated and we look at what ever is in front of us and say that shouldn't be happening this should be happening"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>have you ever looked at a bird flying in the sky and said that bird should be a dog I would bet you haven&#x27;t but think about how many times a day we do that it&#x27;s called bird talking and it&#x27;s rfil Kushner one of my amazing teachers who taught me that phrase what it basically means is that we&#x27;re frustrated and we look at what ever is in front of us and say that shouldn&#x27;t be happening this should be happening so Trader is going to ask you today see if you can go for an entire day or week without bird dogging the trads that you&#x27;re looking at</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

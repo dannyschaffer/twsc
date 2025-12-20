@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Even Smart Traders Ignore the Risk Formula</p>
+                <h3>Why Even Smart Traders Ignore the Risk Formula</h3>
 <p>You may be a sophisticated trader with an advanced strategy, yet you could be unknowingly undermining your entire account. The surprising reality is that even experienced market participants frequently neglect the basic principles of risk management, leading to unnecessary financial exposure and psychological strain.  - Risk management is often treated as secondary to strategy, a mistake that plagues even <strong>experienced traders</strong>.</p>
 <ul>
 <li>Many sophisticated traders confuse complexity with security, leading them to bypass <strong>fundamental protective measures</strong>.</li>
-<li>True trading longevity depends on integrating a <strong>disciplined risk formula</strong> suggested by experts like Brian Lee.Immediately review your current maximum exposure and compare it against the structured risk formula advocated by top industry experts.I am continuously surprised at how many sophisticated Traders actually don't take risk as seriously as they should</li>
+<li>True trading longevity depends on integrating a **disciplined risk formula*</li>
+<li>suggested by experts like Brian Lee.Immediately review your current maximum exposure and compare it against the structured risk formula advocated by top industry experts.I am continuously surprised at how many sophisticated Traders actually don't take risk as seriously as they should</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you really manage your risk I ask this question because I am continuously surprised at how many sophisticated Traders actually don&#x27;t take risk as seriously as they should one of the conversations that I recently had was with Brian Lee who is the biggest advocate of risk management out there in the trading world I want you to take a listen to his xace with me it dropped on Monday the 16th of June I want you guys to listen to his directions and then tell me that you have taken the formula He suggests to heart to your own trading account</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

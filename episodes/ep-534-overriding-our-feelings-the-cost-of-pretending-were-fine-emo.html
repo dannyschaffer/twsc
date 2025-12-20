@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Suppressing Stress: How to Complete Your Emotional Cycle</p>
-<p>When stress hits, our natural instinct is to suppress the body's response, forcing ourselves to "be fine." This suppression prevents the nervous system from completing the stress cycle, leaving you stuck in a loop of emotional fatigue and inconsistent performance. Learn how following your body's innate wisdom can unlock genuine healing.  * The <strong>natural stress cycle</strong> is completed through physical release, such as shaking, trembling, and movement, which prevents trauma from getting stuck.</p>
+                <h3>Stop Suppressing Stress: How to Complete Your Emotional Cycle</h3>
+<p>When stress hits, our natural instinct is to suppress the body's response, forcing ourselves to "be fine." This suppression prevents the nervous system from completing the stress cycle, leaving you stuck in a loop of emotional fatigue and inconsistent performance. Learn how following your body's innate wisdom can unlock genuine healing.</p>
 <ul>
+<li>The **natural stress cycle*</li>
+<li>is completed through physical release, such as shaking, trembling, and movement, which prevents trauma from getting stuck.</li>
 <li>Humans override this crucial instinct, leading to long-term <strong>nervous system dysregulation</strong>.</li>
-<li>Your physical discomfort (twitches, restless movements) is actually <strong>wisdom</strong> trying to complete the stress release cycle.Actionable Takeaway: Instead of overriding physical discomfort like a leg shake or twitch during high-stress moments, consciously allow the movement to happen to facilitate stress cycle completion."But humans, we override that instinct. We suppress. We pretend we're fine."</li>
+<li>Your physical discomfort (twitches, restless movements) is actually **wisdom*</li>
+<li>trying to complete the stress release cycle.Actionable Takeaway: Instead of overriding physical discomfort like a leg shake or twitch during high-stress moments, consciously allow the movement to happen to facilitate stress cycle completion."But humans, we override that instinct. We suppress. We pretend we're fine."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>That isn&#x27;t random. It&#x27;s wisdom. You know how animals shake after danger? That isn&#x27;t random. It&#x27;s wisdom. In waking tiger, pier observe that wild animals don&#x27;t get PTSD because they complete the stress cycle. They shake, tremble, move. But humans, we override that instinct. We suppress. We pretend we&#x27;re fine. That twitch, that leg shake, that urge to move, it&#x27;s your body trying to heal. Let it. Don&#x27;t stop it. Manage it. Trust it. If you&#x27;re stuck in the loop, DM me the word stuck and we can set up a conversation where I can show you how to let that healing begin to happen naturally.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Work is the Win: How to Succeed by Detaching from Results</p>
+                <h3>The Work is the Win: How to Succeed by Detaching from Results</h3>
 <p>The primary psychological trap for traders is tying happiness and self-worth solely to the outcome of a trade. Since you cannot control the market's results, this mindset sets you up for emotional burnout and guarantees you will never be satisfied, even after achieving your financial goals.  - <strong>The Work is the Win</strong>: True contentment in trading is achieved when you find joy in the effort and the process, not the uncontrollable result.</p>
 <ul>
-<li><strong>Shift Your Mindset</strong>: Treat trading not as a demanding chore but as a <strong>luxury</strong> and privilege you get to participate in.</li>
+<li><strong>Shift Your Mindset</strong>: Treat trading not as a demanding chore but as a **luxury*</li>
+<li>and privilege you get to participate in.</li>
 <li><strong>The Endless Next Level</strong>: Even when you surpass every expectation, success will always lead to a new level of challenge, demanding you love the work rather than chasing an endpoint.Ask yourself daily, "Do I love trading?" If the answer is yes, you have already achieved a foundational form of success."The work is the win."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is Kim and Kurt and the Wall Street coach I read such a powerful tweet this week from Billy Oppenheimer uh he quotes uh Ryan holiday in such a powerful reminder that I wanted to share with you it really impacted me but I know uh for you Traders out there it will I hope really impact you there&#x27;s a quote Ryan has that&#x27;s called that it is the work is the win and conversation is about how none of us can control the results we can only control the effort and there&#x27;s a couple of stories that are in the tweet that speak about people who are realizing that it takes so much time and energy and effort to have those kind of sweet uh results but that those results are really something that takes so many hours of our effort in the first place that if we are in it whether it&#x27;s trading or for me entrepreneurship just for the result we are not going to be happy campers so the key here is ask yourself are you loving trading do you love what you do because if this is true then you have to</p>
-<p>consider how much time you becoming the kind of Trader you want to be is going to take and here&#x27;s the rub even when you surpass all your expectations there will be another level for you to go so I want you to really think about this mindset shift that you get to trade today you don&#x27;t have to trade today you get to trade today if you have electricity if you have a laptop never mind a desk filled with multiple screens if you are in a position financially to even be able to afford to trade never mind if you&#x27;re a Trader who&#x27;s above the PDT Hebrew you get to trade it&#x27;s a luxury to be a Trader and for all the traders who are sophisticated listening to this I want you to think back about how in the beginning you used to wish and could just taste on the tip of your tongue what it&#x27;d be like for you to be a full-time Trader and now that is you so it is a luxury and that is the mindset shift I hope you&#x27;ll take into this week my hope is that you start to see that this</p>
-<p>is about your effort you can control that end result ever but if you are doing work that you love then you have already succeeded that is what I hope you&#x27;ll really take to heart see you next week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

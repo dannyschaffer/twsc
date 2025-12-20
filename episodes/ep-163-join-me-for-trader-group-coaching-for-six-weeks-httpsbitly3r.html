@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Transform Your Trading: The 6-Week Intensive to Master Ego and Greed</p>
-<p>Are your trading results continuously undermined by internal psychological traps? Many traders struggle not with strategy, but with <strong>fear of failure</strong>, <strong>greed</strong>, and an unchecked <strong>ego</strong>. This intensive process is designed for committed traders ready for a deep transformation in their mindset and relationship to the market.  * <strong>Overhaul your relationship with money</strong> to eliminate unconscious self-sabotage and fear.</p>
+                <h3>Transform Your Trading: The 6-Week Intensive to Master Ego and Greed</h3>
+<p>Are your trading results continuously undermined by internal psychological traps? Many traders struggle not with strategy, but with <strong>fear of failure</strong>, <strong>greed</strong>, and an unchecked <strong>ego</strong>. This intensive process is designed for committed traders ready for a deep transformation in their mindset and relationship to the market.</p>
 <ul>
+<li>**Overhaul your relationship with money*</li>
+<li>to eliminate unconscious self-sabotage and fear.</li>
 <li>Implement psychological strategies to effectively <strong>manage FOMO, greed, and the fear of failure</strong>.</li>
-<li>Develop profound <strong>discipline</strong> and emotional competence that moves beyond ego-driven decisions.Commit now to an intensive process that moves beyond superficial fixes to achieve a sustainable breakthrough in your trading life."I really would love to see you there if you are absolutely committed and ready to transform your relationship to money your fear of missing out your fear of failure..."</li>
+<li>Develop profound **discipline*</li>
+<li>and emotional competence that moves beyond ego-driven decisions.Commit now to an intensive process that moves beyond superficial fixes to achieve a sustainable breakthrough in your trading life."I really would love to see you there if you are absolutely committed and ready to transform your relationship to money your fear of missing out your fear of failure..."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>on January 11th my second small group coaching for Traders begins and I really would love to see you there if you are absolutely committed and ready to transform your relationship to money your fear of missing out your fear of failure if you&#x27;re ready to manage your greed and do a much better job with your discipline never mind your ego then you want to be part of this six week intensive the last cohort was phenomenal and they had breakthroughs left and right I want you to join me on January 11th and for the six weeks following for transformation in your trading and in your life I really hope you&#x27;ll join me</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

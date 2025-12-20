@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Your Money Relationship is a Garden: How to Maintain Profitability</p>
+                <h3>Your Money Relationship is a Garden: How to Maintain Profitability</h3>
 <p>Many traders focus on technicals while unconsciously holding onto a complex or damaged relationship with money itself. This strained dynamic can lead to self-sabotage and inconsistency, which costs you profits and peace of mind.  - <strong>Money is a Dynamic Relationship</strong>: Even a "healthy" relationship with money requires constant, deliberate maintenance, just like a garden or a marriage.</p>
 <ul>
 <li>Success is built on <strong>Non-Negotiable Boundaries</strong>: Harmony in your financial dynamic requires clear, unchanging rules to regulate your interactions with money and risk.</li>
 <li><strong>Maintenance is the Real Strategy</strong>: Your focus must shift from simply acquiring money to consistently maintaining the health of the relationship.Identify and list the two most critical "non-negotiable" trading rules you must adhere to this week to maintain the health of your equity curve.[E]ven if you have the most healed healthy relationship to money you are still going to have to maintain the dynamic between you and it just like you would a garden or relationship.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the same is true for treading even if you have the most healed healthy relationship to money you are still going to have to maintain the dynamic between you and it just like you would a garden or relationship so money and redesigning your relationship to money is fantastic and there are some non-negotiables that any relationship is going to need for it to be able to be in harmony with the dance you&#x27;re dancing with it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

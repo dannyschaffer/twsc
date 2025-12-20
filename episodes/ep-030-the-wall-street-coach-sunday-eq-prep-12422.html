@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop the Hustle: Why Winter Stillness is Your Secret Trading Advantage</p>
-<p>The current culture demands constant hustle and bustle, making it counter-intuitive to embrace slowing down, especially during intense trading periods. However, ignoring the natural need for stillness and conservation leads to burnout and a disconnect from the inner voice that guides effective decision-making.  - <strong>Embrace the Season:</strong> Honor the tradition of the winter solstice as a time for darkness and going within, counteracting cultural pressures for constant action.</p>
+                <h3>Stop the Hustle: Why Winter Stillness is Your Secret Trading Advantage</h3>
+<p>The current culture demands constant hustle and bustle, making it counter-intuitive to embrace slowing down, especially during intense trading periods. However, ignoring the natural need for stillness and conservation leads to burnout and a disconnect from the inner voice that guides effective decision-making.  - **Embrace the Season:*</p>
 <ul>
-<li><strong>Internal Guidance:</strong> Prioritize listening to your <strong>inner voice</strong> and inner knowing over external market noise.</li>
-<li><strong>Conserve Capacity:</strong> Recognize that your body is hardwired to conserve energy as the days shorten, and allow yourself to <strong>fill up energetically</strong>.Actionable Takeaway: Practice becoming present to the stillness always within you, starting simply by lighting a candle before your trading session begins."What would it be like for you to perhaps pay closer attention to your dreams to pay closer attention to what your body's needs are at this time of year"</li>
+<li>Honor the tradition of the winter solstice as a time for darkness and going within, counteracting cultural pressures for constant action.</li>
+<li>**Internal Guidance:*</li>
+<li>Prioritize listening to your **inner voice*</li>
+<li>and inner knowing over external market noise.</li>
+<li>**Conserve Capacity:*</li>
+<li>Recognize that your body is hardwired to conserve energy as the days shorten, and allow yourself to <strong>fill up energetically</strong>.Actionable Takeaway: Practice becoming present to the stillness always within you, starting simply by lighting a candle before your trading session begins."What would it be like for you to perhaps pay closer attention to your dreams to pay closer attention to what your body's needs are at this time of year"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everyone this is Kim and Curtin with the Wall Street coach and this is my Sunday prep for December 4th one of the things that I really love to do for my own journey is to really pay attention to the season that I&#x27;m in and this of course is the season we&#x27;re approaching of winter solstice winter solstice happens on December 21st this year and one of the things that traditions for thousands of years have honored about winter solstice is that it&#x27;s actually a time of year for Stillness it&#x27;s actually a time of year of Darkness going within and it seems kind of counter intuitive in the culture we currently live in where there&#x27;s so much hustle and bustle at this time of year but in spite of that I really try to practice Stillness and I try to practice a slowing down even in small pockets of my life and of my work so I going to invite you Traders what would it be like from now until winter solstice to find a way to practice more Stillness to find a way to practice going within and listening to your inner voice to your inner</p>
-<p>knowing what would be like for you to perhaps pay closer attention to your dreams to pay closer attention to what your body&#x27;s needs are at this time of year our bodies are hardwired as the days are shorter to conserve energy so what happens if you allow yourself to fill up energetically a little bit more at this time of year maybe it&#x27;s as simple as lighting a candle before your trading tape Begins for you to just become present to that Stillness that&#x27;s always within you I hope that this helps and I&#x27;d be curious to hear how it goes and if you want more information like this please visit tradercheckin.com and that&#x27;ll give you a checklist for you to practice every day</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Setting Yourself Up for Criticism: The Cost of Oversharing Trading Details</p>
+                <h3>Stop Setting Yourself Up for Criticism: The Cost of Oversharing Trading Details</h3>
 <p>It is natural to seek support for your trading journey, but sharing granular details with those who don't understand the market can lead to frustrating, unsupportive conversations. When you expose your professional process to those outside the trading world, you risk having your value—your "pearl"—misinterpreted or undervalued. This psychological misalignment can quickly drain your motivation.  - <strong>Misplaced Expectations</strong>: You cannot expect non-traders to appreciate the nuanced difficulty or value of your work, which sets you up for unwarranted criticism.</p>
 <ul>
 <li><strong>The Granularity Trap</strong>: Detailed discussions about setups, losses, or profits with outsiders often result in unhelpful advice or dismissal, as they do not "speak the language."</li>
 <li><strong>Protect Your Focus</strong>: By limiting the technical detail you share, you shield your psychological state from external doubt and maintain focus on your internal process.Refrain from discussing the nitty-gritty technical details of your trades; instead, reframe conversations to seek general encouragement and support."Don't throw those Pearls Before the swine, ultimately you're going to have to learn how to speak in a less granular way."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>don&#x27;t throw Pearl before the swine do you know what that catchphrase means it means to not take a beautiful Mikimoto Pearl and put it in front of little piglet because that little piglet is not gonna appreciate the beauty or the value of that rare beautiful pearl and that is what you want to think about when it comes to your trading and talking to perhaps loved ones or friends who don&#x27;t fully understand what you do you set yourself up for conversations that may not be that supportive if you go into too much granular detail so don&#x27;t throw those Pearls Before the swine ultimately you&#x27;re going to have to learn how to speak in a less granular way you can look for support you can look for encouragement but to get into the nitty-gritty with people who don&#x27;t speak the language potentially sets</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

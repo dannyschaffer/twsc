@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Reason You Sabotage Your Winning Streaks</p>
-<p>Have you ever followed a successful streak with immediate losses? This self-sabotage is often mistakenly attributed to hubris, but the root cause is frequently a deep discomfort with success itself. True receiving requires vulnerability, which many traders lack if they struggle with self-esteem.  - Sabotaging success is often caused by an <strong>internal discomfort with receiving</strong> good results, not a technical flaw.</p>
+                <h3>The Hidden Reason You Sabotage Your Winning Streaks</h3>
+<p>Have you ever followed a successful streak with immediate losses? This self-sabotage is often mistakenly attributed to hubris, but the root cause is frequently a deep discomfort with success itself. True receiving requires vulnerability, which many traders lack if they struggle with self-esteem.  - Sabotaging success is often caused by an **internal discomfort with receiving*</p>
 <ul>
+<li>good results, not a technical flaw.</li>
 <li>This pattern is tied to underlying <strong>self-esteem issues</strong>, where one is more comfortable in struggle than in consistent profit.</li>
-<li>When hard work pays off, it can trigger <strong>discomfort</strong> because the new reality conflicts with a deeply established self-identity of struggle.Actionable Takeaway: When you achieve a new high in your equity curve, pause to recognize and accept the feeling of discomfort instead of immediately acting on it."I think more often than not there are a lot of traders who don't have a sense of real self-esteem, and so when the good starts to happen... it can trigger a sense of discomfort."</li>
+<li>When hard work pays off, it can trigger **discomfort*</li>
+<li>because the new reality conflicts with a deeply established self-identity of struggle.Actionable Takeaway: When you achieve a new high in your equity curve, pause to recognize and accept the feeling of discomfort instead of immediately acting on it."I think more often than not there are a lot of traders who don't have a sense of real self-esteem, and so when the good starts to happen... it can trigger a sense of discomfort."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>have you ever had a winning streak and on the heels of that you start to lose I want you to contemplate that it might not be hubris that&#x27;s at fault but actually you sabotaging yourself because you&#x27;re uncomfortable with success you&#x27;re uncomfortable with receiving remember to receive one has to be vulnerable and I think more often than not there are a lot of traders who don&#x27;t have a sense of real self-esteem and so when the good starts to happen when your hard work starts to pay off it can trigger a sense of discomfort because if you&#x27;re used to everything not going well for you and then it starts to go well that can make you very uncomfortable so be with this question and see if it applies to you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

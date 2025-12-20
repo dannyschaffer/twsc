@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Comfort of Failure: Why You're Afraid of Confidence</p>
-<p>Many traders struggle not because they lack skill, but because they are unconsciously repelled by consistent success. True confidence can feel scary and uncomfortable, leading to invisible psychological behaviors that sabotage your equity curve. If profitability constantly eludes you, your current operations may be serving an outdated version of yourself.  * <strong>The Psychological Repulsion</strong>: For some, having confidence is deeply uncomfortable, often due to a subconscious desire to remain in the familiar—even if the familiar is failure.</p>
+                <h3>The Hidden Comfort of Failure: Why You're Afraid of Confidence</h3>
+<p>Many traders struggle not because they lack skill, but because they are unconsciously repelled by consistent success. True confidence can feel scary and uncomfortable, leading to invisible psychological behaviors that sabotage your equity curve. If profitability constantly eludes you, your current operations may be serving an outdated version of yourself.</p>
 <ul>
+<li><strong>The Psychological Repulsion</strong>: For some, having confidence is deeply uncomfortable, often due to a subconscious desire to remain in the familiar—even if the familiar is failure.</li>
 <li><strong>The Invisible Saboteur</strong>: When success arrives, your old wiring can trigger patterns that quietly and invisibly serve the "old version" of you, preventing you from integrating the results of the successful, new you.Conduct a critical audit of your behavior immediately following a profitable period to identify any self-sabotaging actions that are protecting your comfort zone."You have to take a hard look if the way you're operating is actually very quietly or invisibly serving the old version of you and not the new version you want to be now"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>having confidence is sometimes for some people scary it&#x27;s uncomfortable if you find success eludes you if you&#x27;re finding your life not looking like the way you want it to look then you have to take a hard look if the way you&#x27;re operating is actually very quietly or invisibly serving the old version of you and not the new version you want to be now</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

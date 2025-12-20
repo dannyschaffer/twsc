@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Dual Ego: How to Use Confidence Without Succumbing to Hubris</p>
-<p>Many traders struggle with the conflicting forces of ego: either an inflated sense of self-importance after wins or a lack of courage to move past limiting beliefs. Allowing your ego to operate unchecked, whether through <strong>hubris</strong> or <strong>fear</strong>, guarantees inconsistent performance. The critical step is recognizing that your ego is not a singular force.  - Understand the <strong>Duality of Ego</strong>: The concept separates the destructive, lower-case 'e' ego (hubris, fear) from the <strong>Capital E Ego</strong>, which represents your higher, conscious, and professional self.</p>
+                <h3>The Dual Ego: How to Use Confidence Without Succumbing to Hubris</h3>
+<p>Many traders struggle with the conflicting forces of ego: either an inflated sense of self-importance after wins or a lack of courage to move past limiting beliefs. Allowing your ego to operate unchecked, whether through **hubris*</p>
 <ul>
-<li>Many traders fail not from excessive hubris, but from lacking the necessary <strong>courage and confidence</strong> to execute their strategy or scale their success due to deep-seated limiting beliefs.</li>
-<li>The path to mastery is identifying which <strong>inner voice</strong> is truly driving your trading decisions.Start tracking your internal dialogue during trading to determine if your lower ego (fear or greed) or your Capital E Ego (disciplined, professional self) is driving your immediate actions.There is a capital E eego which I like to see as our higher self that conscious part of ourselves and a lower e ego</li>
+<li>or <strong>fear</strong>, guarantees inconsistent performance. The critical step is recognizing that your ego is not a singular force.  - Understand the <strong>Duality of Ego</strong>: The concept separates the destructive, lower-case 'e' ego (hubris, fear) from the <strong>Capital E Ego</strong>, which represents your higher, conscious, and professional self.</li>
+<li>Many traders fail not from excessive hubris, but from lacking the necessary **courage and confidence*</li>
+<li>to execute their strategy or scale their success due to deep-seated limiting beliefs.</li>
+<li>The path to mastery is identifying which **inner voice*</li>
+<li>is truly driving your trading decisions.Start tracking your internal dialogue during trading to determine if your lower ego (fear or greed) or your Capital E Ego (disciplined, professional self) is driving your immediate actions.There is a capital E eego which I like to see as our higher self that conscious part of ourselves and a lower e ego</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Traders how do you deal with your ego some Traders really struggle with hubris uh keeping it in check making sure that when they have success they don&#x27;t get too big for their britches but I often see more Traders actually struggle with having enough confidence having enough courage to up their game and to actually move past some of their limiting beliefs the key is to understand that everybody&#x27;s Eco is going to operate potentially different there is a capital E eego which I like to see as our higher self that conscious part of ourselves and a lower e ego if you&#x27;re not sure which one is driving your bus then come to my YouTube channel next Thursday at 8m Eastern and bring up the conversation</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

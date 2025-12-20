@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Unshakable Faith Required to Become a Market Wizard</p>
-<p>Legendary traders possess a trait far more valuable than any system: an unshakable faith in their ability to perform, no matter the market conditions. When you lack this core conviction, every inevitable loss feels like a personal failure instead of a procedural outcome. This faith is the psychological edge that allows them to recover and persist.  * <strong>Core Conviction:</strong> This deep self-assurance acts as a psychological anchor when volatility or losses threaten to derail your discipline.</p>
+                <h3>The Unshakable Faith Required to Become a Market Wizard</h3>
+<p>Legendary traders possess a trait far more valuable than any system: an unshakable faith in their ability to perform, no matter the market conditions. When you lack this core conviction, every inevitable loss feels like a personal failure instead of a procedural outcome. This faith is the psychological edge that allows them to recover and persist.</p>
 <ul>
-<li><strong>Beyond Strategy:</strong> True mastery may depend on an inherent (or deeply cultivated) belief system that transcends technical knowledge.Start observing where your deep personal belief system intersects with your trading decisions, noting moments of certainty versus doubt in your journal.he had this unshakable faith in himself that he could do it no matter what.</li>
+<li>**Core Conviction:*</li>
+<li>This deep self-assurance acts as a psychological anchor when volatility or losses threaten to derail your discipline.</li>
+<li>**Beyond Strategy:*</li>
+<li>True mastery may depend on an inherent (or deeply cultivated) belief system that transcends technical knowledge.Start observing where your deep personal belief system intersects with your trading decisions, noting moments of certainty versus doubt in your journal.he had this unshakable faith in himself that he could do it no matter what.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you know, the Marcus paper that I wrote that really led to to this um I titled it unshakable faith because he had this unshakable faith in himself that he could do it no matter what. And is that a byproduct of just who he was? Is it nature or nurture? I I don&#x27;t know. You know, I think those are things that would probably be better futter for a trained psychologist, but it&#x27;s there. I It&#x27;s definitely there.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

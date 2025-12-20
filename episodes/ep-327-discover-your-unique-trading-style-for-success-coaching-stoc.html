@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Confidence Trap: Why Copying Other Traders Will Destroy Your Edge</p>
+                <h3>The Confidence Trap: Why Copying Other Traders Will Destroy Your Edge</h3>
 <p>Chasing every market opportunity or trying to emulate a guru's style leads to profound confusion and inconsistency. When your trading method clashes with your innate comfort zone, it creates internal conflict that sabotages your self-trust and long-term profitability. The key to consistency is finding a system that is authentically yours.</p>
 <p>Key Insights:  - <strong>The Impossibility of Pleasing All</strong>: You cannot engage in every trade or please every external expectation, and trying to do so fractures your focus and leads to burnout.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Solitude Drives Confidence</strong>: Finding your unique, comfortable style requires stepping away from external noise, allowing your confidence to grow in a bit more solitude.Actionable Takeaway:</li>
 </ul>
 <p>Focus your journal reviews this week on identifying the trades and setups where you felt the least internal resistance, regardless of their immediate profitability.What makes you feel you have found your authentic style and once you find that your confidence being in a bit more Solitude will grow</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you can please everyone all of the time and you also can&#x27;t trade every kind of opportunity to trade out there all of the time you have to find your trading style and that might be very different from the people you have learned from and further it could be very different from what all of your friends and or trading buddies feel comfortable with the key is What makes you feel you have found your authentic style and once you find that your confidence being in a bit more Solitude will grow</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

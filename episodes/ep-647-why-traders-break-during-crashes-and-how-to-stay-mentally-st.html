@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Psychological Damage of a Market Crash</p>
-<p>Market crashes are not solely financial events; they inflict deep psychological damage. Many traders break during these periods because they cling to faulty strategies while completely abandoning their <strong>self-awareness</strong>. If your mental state isn't aligned, no strategy will protect you from the storm.  * <strong>Emotional Cost</strong>: The damage of a crash is profoundly psychological, draining confidence and mental resilience.</p>
+                <h3>The Psychological Damage of a Market Crash</h3>
+<p>Market crashes are not solely financial events; they inflict deep psychological damage. Many traders break during these periods because they cling to faulty strategies while completely abandoning their <strong>self-awareness</strong>. If your mental state isn't aligned, no strategy will protect you from the storm.</p>
 <ul>
+<li><strong>Emotional Cost</strong>: The damage of a crash is profoundly psychological, draining confidence and mental resilience.</li>
 <li><strong>The Danger of Denial</strong>: Traders who fail often rationalize their losses by thinking, "This time it'll be different."</li>
 <li><strong>Self-Mastery is Survival</strong>: True longevity in the market comes from prioritizing internal alignment over technical strategy during periods of chaos.<strong>Actionable Takeaway</strong>: When volatility hits, pause and assess your internal state immediately, prioritizing mental resilience over immediate trade execution.Every market fails the trader whose head isn't aligned.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Remember, when any kind of crash happens, the damage is also psychological. I&#x27;ve seen traders break because they thought, &amp;quot;This time it&#x27;ll be different.&amp;quot; They cling to strategies, but they abandon their self-awareness. Every market fails the trader whose head isn&#x27;t aligned. If you want to weather the storms, start with mastering your</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

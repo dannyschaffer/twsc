@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Your Nervous System Forces You to Crash After a Breakthrough</p>
-<p>Ever find yourself blowing up a winning streak for no clear reason? This pattern of self-sabotage isn't a failure of discipline; it's your body's conditioned response pulling you back to the familiar discomfort of stress and scarcity. When sustained ease feels unsafe, your nervous system perceives success as a threat, costing you profits right at the edge of a breakthrough.  * Winning Streaks are often ended by the <strong>Nervous System</strong> reacting to unfamiliar ease, not by poor strategy.</p>
+                <h3>Why Your Nervous System Forces You to Crash After a Breakthrough</h3>
+<p>Ever find yourself blowing up a winning streak for no clear reason? This pattern of self-sabotage isn't a failure of discipline; it's your body's conditioned response pulling you back to the familiar discomfort of stress and scarcity. When sustained ease feels unsafe, your nervous system perceives success as a threat, costing you profits right at the edge of a breakthrough.</p>
 <ul>
-<li>If <strong>Ease Wasn't Safe</strong> in your past, your body will revert to patterns of stress, scarcity, or pressure.</li>
-<li>The essential work is to <strong>Train Your Body to Hold</strong> the state of success and comfort, expanding your capacity for wealth.Actionable Takeaway: Identify the physical sensations you feel (tension, anxiety, lightness) when you are winning, and practice grounding techniques to signal safety to your nervous system.Success isn’t just something you get. It’s something you receive.</li>
+<li>Winning Streaks are often ended by the **Nervous System*</li>
+<li>reacting to unfamiliar ease, not by poor strategy.</li>
+<li>If **Ease Wasn't Safe*</li>
+<li>in your past, your body will revert to patterns of stress, scarcity, or pressure.</li>
+<li>The essential work is to **Train Your Body to Hold*</li>
+<li>the state of success and comfort, expanding your capacity for wealth.Actionable Takeaway: Identify the physical sensations you feel (tension, anxiety, lightness) when you are winning, and practice grounding techniques to signal safety to your nervous system.Success isn’t just something you get. It’s something you receive.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You ever hit a winning streak and then blow it up for no reason? That&#x27;s not mindset and it&#x27;s not discipline. It&#x27;s your nervous system yanking you back to what feels familiar. Stress, scarcity, pressure. If ease wasn&#x27;t safe growing up, then success feels like a threat. So your body resisted not because you&#x27;re broken, because you&#x27;re conditioned. The work isn&#x27;t just about chasing goals. It&#x27;s about training your body to hold them. Success isn&#x27;t just something you get. It&#x27;s something you receive. Drop hold success in the comments and I&#x27;ll send you a link to connect so you can stop crashing at the edge of a breakthrough.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

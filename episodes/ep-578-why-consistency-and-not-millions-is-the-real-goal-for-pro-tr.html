@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Losses: Why Consistency is the Only Goal That Matters</p>
-<p>Focusing on recovering a massive loss or chasing arbitrary 'millionaire' targets turns trading into an emotional, high-stress pursuit. This mentality forces you into aggressive, inconsistent behavior that ultimately makes it impossible to build a stable professional career. The real benchmark of a professional trader is reliable profitability, not headline-making gains.  * <strong>Detaching from Recovery:</strong> Past losses, whether $250,000 or $2 million, are sunk costs. Your path forward must be defined by a new, consistent profit target, entirely separate from the emotional need to 'make it back.'</p>
+                <h3>Stop Chasing Losses: Why Consistency is the Only Goal That Matters</h3>
+<p>Focusing on recovering a massive loss or chasing arbitrary 'millionaire' targets turns trading into an emotional, high-stress pursuit. This mentality forces you into aggressive, inconsistent behavior that ultimately makes it impossible to build a stable professional career. The real benchmark of a professional trader is reliable profitability, not headline-making gains.</p>
 <ul>
-<li><strong>Stability Over Size:</strong> A professional trader's true objective is generating a reliable and consistent income stream that supports their life. Extreme profit volatility, even if profitable overall, makes long-term management unsustainable.</li>
-<li><strong>Professional Identity is Reliability:</strong> Consistency demonstrates mastery and control over yourself and your strategy, which is the foundation of long-term success.<strong>Actionable Takeaway</strong></li>
+<li>**Detaching from Recovery:*</li>
+<li>Past losses, whether $250,000 or $2 million, are sunk costs. Your path forward must be defined by a new, consistent profit target, entirely separate from the emotional need to 'make it back.'</li>
+<li>**Stability Over Size:*</li>
+<li>A professional trader's true objective is generating a reliable and consistent income stream that supports their life. Extreme profit volatility, even if profitable overall, makes long-term management unsustainable.</li>
+<li>**Professional Identity is Reliability:*</li>
+<li>Consistency demonstrates mastery and control over yourself and your strategy, which is the foundation of long-term success.**Actionable Takeaway*</li>
+<li>Define your annual income goal based on your living needs, not market potential, and strictly adhere to the plan necessary to achieve that consistent, reliable return.Your goal does not need to be to make millions and it does not need to be to make back some terrible loss that you took. It needs to be to make enough money to make a living and to do it consistently and reliably enough so you can pay your bills.</li>
 </ul>
-<p>Define your annual income goal based on your living needs, not market potential, and strictly adhere to the plan necessary to achieve that consistent, reliable return.Your goal does not need to be to make millions and it does not need to be to make back some terrible loss that you took. It needs to be to make enough money to make a living and to do it consistently and reliably enough so you can pay your bills.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast. $100,000 a year profit. Yeah. So, you just lost $250,000, but yet your goal should not be to make $250,000 back. Your goal should be, you know, averaged out over the next 12 months to make $100,000. And it&#x27;s like, but I just lost $250. Irrelevant. Irrelevant. If you can make $100,000 from despite what happened yesterday, from today until the one year anniversary of today, your goal is to make $100,000. I mean, adjust according to who you are in your living and whether or not you lost 2 million. Your goal going forward, if you want to be a professional trader, is not to make 2 million. And it doesn&#x27;t matter if you made a million last year. your goal going forward. Now granted, you know, we always have to adjust according to all kinds of different things, but the point is is like you just in most basic simple level you want to be a professional trader. Your goal does not need to be to make millions and it does not need to be to make back some terrible loss that you took. It needs to be to make enough money to</p>
-<p>make a living and to do it consistently and reliably enough so you can pay your bills. Doesn&#x27;t help if one month you&#x27;re down 50,000 and the next month you&#x27;re up 60. You know, you&#x27;re making a profit, but kind of hard to pay the bills. That kind of for sure. So powerful, Greg. That&#x27;s such a key point.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

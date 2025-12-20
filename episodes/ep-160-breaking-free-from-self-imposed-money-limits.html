@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Inner Barrier: Why Your Mindset Imposes a Cap on Your Profits</p>
-<p>Do you feel your trading success has an invisible ceiling? It's often not the market holding you back, but deep-seated, self-imposed money limits. These unconscious beliefs manifest as self-sabotage, preventing you from achieving the bigger profits you desire.  * <strong>Self-Imposed Limits</strong> are the primary barrier, standing between you and consistent bigger profits.</p>
+                <h3>The Inner Barrier: Why Your Mindset Imposes a Cap on Your Profits</h3>
+<p>Do you feel your trading success has an invisible ceiling? It's often not the market holding you back, but deep-seated, self-imposed money limits. These unconscious beliefs manifest as self-sabotage, preventing you from achieving the bigger profits you desire.</p>
 <ul>
-<li>True freedom begins with paying attention to your <strong>internal self-talk</strong> and ingrained trading beliefs.</li>
-<li>Tracking emotions on both green days and red days reveals critical information about your <strong>mindset's impact</strong> on performance.Begin consistently journaling your specific thoughts and corresponding emotions immediately after both winning and losing trades."Breaking Free from self-imposed money limits really starts in the mind"</li>
+<li>**Self-Imposed Limits*</li>
+<li>are the primary barrier, standing between you and consistent bigger profits.</li>
+<li>True freedom begins with paying attention to your **internal self-talk*</li>
+<li>and ingrained trading beliefs.</li>
+<li>Tracking emotions on both green days and red days reveals critical information about your **mindset's impact*</li>
+<li>on performance.Begin consistently journaling your specific thoughts and corresponding emotions immediately after both winning and losing trades."Breaking Free from self-imposed money limits really starts in the mind"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Traders do you feel sometimes that your success is capped it&#x27;s not the market it&#x27;s you I hate to break it to you Breaking Free from self-imposed money limits really starts in the mind it starts at paying attention to the way you talk to yourself what if these trading beliefs that you have are the only thing that are standing between you and bigger profits if that resonates with you then I want you to start to journal what the thoughts are that you have in the middle of specific instances so if you&#x27;re finding yourself having a red day I want you to write down all the thoughts you have and if you&#x27;re having a Green Day write down all the thoughts you have also what&#x27;s happening for you emotionally because that can tell us a lot about what mindset impacts you and what one doesn&#x27;t</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

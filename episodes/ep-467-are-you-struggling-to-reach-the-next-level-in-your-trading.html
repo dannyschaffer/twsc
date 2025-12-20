@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The 4 Mental Blocks Keeping You From Elite Trading Performance</p>
-<p>If you are struggling to reach consistent profitability, the flaw is often psychological, not technical. Many traders hit a ceiling because they allow deep-seated emotional blocks—such as fear, overconfidence, and hesitation—to dictate their entries and exits. Identifying and mastering these mental barriers is the only way to unlock the next level of trading success.  * <strong>Detachment from Outcome</strong>: View losses as a necessary part of the game, shifting your focus from P\&L results to flawless execution.</p>
+                <h3>The 4 Mental Blocks Keeping You From Elite Trading Performance</h3>
+<p>If you are struggling to reach consistent profitability, the flaw is often psychological, not technical. Many traders hit a ceiling because they allow deep-seated emotional blocks—such as fear, overconfidence, and hesitation—to dictate their entries and exits. Identifying and mastering these mental barriers is the only way to unlock the next level of trading success.</p>
 <ul>
-<li><strong>Stick to Your System</strong>: Resist the emotional urge of <strong>overconfidence</strong> after a winning streak, which often leads to reckless, system-breaking behavior.</li>
-<li><strong>Execution Beats Analysis</strong>: Address <strong>paralysis by analysis</strong> by committing to your plan and executing it, recognizing that hesitation costs money.Actionable Takeaway: If you feel the urge to chase a trade (FOMO), remind yourself that the market will always give you another opportunity.master your mind master your traits</li>
+<li><strong>Detachment from Outcome</strong>: View losses as a necessary part of the game, shifting your focus from P\&L results to flawless execution.</li>
+<li><strong>Stick to Your System</strong>: Resist the emotional urge of **overconfidence*</li>
+<li>after a winning streak, which often leads to reckless, system-breaking behavior.</li>
+<li><strong>Execution Beats Analysis</strong>: Address **paralysis by analysis*</li>
+<li>by committing to your plan and executing it, recognizing that hesitation costs money.Actionable Takeaway: If you feel the urge to chase a trade (FOMO), remind yourself that the market will always give you another opportunity.master your mind master your traits</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>struggling to reach the next level in your trading it&#x27;s not your strategy it&#x27;s these mental blocks holding you back block number one fear of losing losses a part of the game detach from the outcome focus on execution block number two overconfidence after wins a hot streak can lead to Reckless trading stick to your system not your emotions block three chasing tra if you feel fomo remind yourself the market will always always give me another opportunity blog four paralysis by analysis too much thinking leads to hesitation have a plan trust it execute master your mind master your traits drop unlock in the comments and I&#x27;ll send you my best strategies for breaking through mental barriers</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

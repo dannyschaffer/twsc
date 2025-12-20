@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The ER Doctor Mindset: Stop Viewing Panic as Failure</p>
+                <h3>The ER Doctor Mindset: Stop Viewing Panic as Failure</h3>
 <p>When facing a drawdown or panicked market moment, the instinct is to fill the experience with self-blame and shame. This focus on "how you got here" rather than "how to get out" transforms a setback into a crushing psychological defeat. Learn to manage these critical moments by fundamentally shifting your perspective.  - Trading panic is often viewed as <strong>personal failure</strong>, triggering a destructive cycle of self-criticism and denial.</p>
 <ul>
-<li>The psychological trap is obsessing over <strong>"would have, could have, should have,"</strong> which paralyzes you from taking immediate, clear-headed action.</li>
+<li>The psychological trap is obsessing over **"would have, could have, should have,"*</li>
+<li>which paralyzes you from taking immediate, clear-headed action.</li>
 <li>Adopt the <strong>Emergency Room Doctor mindset</strong>: stop caring about how the problem started and focus exclusively on the present reality and the strategic steps required for stabilization and recovery.Actionable Takeaway:</li>
 </ul>
-<p>When you feel panic setting in, immediately pivot your internal dialogue from blame (Why did I do that?) to <strong>present-tense problem-solving</strong> (What is the most immediate step to manage this risk?).We would do ourselves a lot of service to stop obsessing about the past and the future and act like er Docs and just be in the present</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>we view Panic as failure and we need to plan for that and not see it as an admission of defeat so we associate a lot of our migration into the lower left-hand Corner those panicked moments and we fill them with blame and shame as to how we got there you know if I&#x27;ve been mugged I shouldn&#x27;t have been out that night I should have been across the street I should you know we we fill it with all these would have could have shoulders instead of saying you know what I&#x27;m here and I don&#x27;t care how I got here I need to be preparing for ways to get out and this was one of the the insights that I got from emergency room doctors they really don&#x27;t care how you arrived in the emergency room they care about the fact that you&#x27;re there and their job now is to get you out of there and I think we would do ourselves a lot of service to stop obsessing about the past and the future and act like er Docs and just be in the present</p>
-                </div>
+<p>When you feel panic setting in, immediately pivot your internal dialogue from blame (Why did I do that?) to **present-tense problem-solving*</p>
+<ul>
+<li>(What is the most immediate step to manage this risk?).We would do ourselves a lot of service to stop obsessing about the past and the future and act like er Docs and just be in the present</li>
+</ul>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

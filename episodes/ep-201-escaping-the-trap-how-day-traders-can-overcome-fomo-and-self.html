@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Self-Comparison Trap: How to Break Free from FOMO</p>
+                <h3>The Self-Comparison Trap: How to Break Free from FOMO</h3>
 <p>Fear of Missing Out (FOMO) is a persistent killer of trading careers, but it is rarely about the market itself. This trap is triggered by a destructive mindset of comparison—judging your current results against others' or against an unrealistic ideal of where you "should" be. This focus removes you from the reality of the present market moment, leading to costly mistakes.  - FOMO is directly linked to <strong>self-comparison</strong>—measuring your equity curve against what others post or where you believe you should be.</p>
 <ul>
 <li>Being caught in the comparison cycle immediately takes you <strong>out of the present market moment</strong>.</li>
 <li>The path to overcoming FOMO is deeply rooted in your <strong>relationship with yourself</strong>.Actionable Takeaway: Consciously stop monitoring the perceived success of other traders and focus only on your internal metrics and the adherence to your personal trading plan."Whenever you are caught in that cycle, it also takes you out of what the market is able to do in that moment."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>fomo oh it&#x27;s a killer every time for traitor so what do you do about fomo well part of it is the mindset that gets you there in the first place it often if you&#x27;re caught in the Trap of fomo it often means you have started to compare yourself compare yourself to others compare yourself to where you should be versus where you are whenever you are caught in that cycle it also takes you out of what the market is able to do in that moment this is a very tricky one but it has a lot to do with the relationship you have with yourself so if you want help on that and the other topics I&#x27;m talking about in these shorts this week then please join me on my YouTube channel the Wall Street coach next Thursday the 14th 8:00 pm Eastern</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

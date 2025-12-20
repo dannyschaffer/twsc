@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Feeling Cursed: How to Break the Emotional Trading Loop</p>
-<p>When you feel like the market is deliberately punishing your entries, you are likely trapped in an emotional loop, not a curse. This repeating cycle drains your capital and sabotages your success by convincing you that failure is inevitable.  * You are not failing due to bad luck; you are reacting to an underlying <strong>emotional pattern</strong>.</p>
+                <h3>Stop Feeling Cursed: How to Break the Emotional Trading Loop</h3>
+<p>When you feel like the market is deliberately punishing your entries, you are likely trapped in an emotional loop, not a curse. This repeating cycle drains your capital and sabotages your success by convincing you that failure is inevitable.</p>
 <ul>
+<li>You are not failing due to bad luck; you are reacting to an underlying <strong>emotional pattern</strong>.</li>
 <li>Transformation in trading begins when you shift your focus from <strong>self-judgment to curiosity</strong>.</li>
 <li>Reflective practices are the tools that allow you to identify the loop and create a new, profitable response.Start implementing reflective practices today that help you analyze the underlying feeling of the trade, not just the technical outcome.When you trade with curiosity and not self-judgment, that's when you can grow and transform.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You&#x27;re not cursed, you&#x27;re in an emotional loop. It&#x27;s like the market is just waiting for your entry and then it goes the other way. You&#x27;re not cursed, you&#x27;re in an emotional loop. I help traders create reflective practices that turn why is this happening to me into what can I learn from this? When you trade with curiosity and not self- judgment, that&#x27;s when you can grow. And it&#x27;s also how you transform.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

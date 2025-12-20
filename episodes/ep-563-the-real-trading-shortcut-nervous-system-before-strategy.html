@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Indicators The Real Shortcut is Nervous System Regulation</p>
+                <h3>Stop Chasing Indicators The Real Shortcut is Nervous System Regulation</h3>
 <p>Many traders seek external shortcuts, strategies, or indicators to fix their performance, but this quest often leads to endless, frustrating cycles. True performance anxiety and poor decision-making stem not from a lack of information, but from a dysregulated internal state.  - CALMNESS PRECEDES CLARITY: A regulated system leads to clearer decisions and sharper trades.</p>
 <ul>
 <li>ACCELERATED RECOVERY: Psychological recovery from losses is dramatically quicker when your system is not overloaded.</li>
@@ -233,14 +202,6 @@
 <p>Prioritize nervous system regulation techniques—such as breathwork or intentional breaks—before analyzing charts or executing trades.</p>
 <p>Quote:</p>
 <p>"When your system is calm, decisions are more clear, trades are sharper, recovery is quicker."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Everyone wants the shortcut. Here&#x27;s the real one. Regulate your nervous system. That&#x27;s it. When your system is calm, decisions are more clear, trades are sharper, recovery is quicker. Skip that and you&#x27;ll keep looping forever. Put the word work if you&#x27;re ready to stop cycling and start compounding.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

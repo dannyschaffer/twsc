@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading at a Level Above Your Actual Expertise</p>
-<p>The most common barrier to consistent profit isn't a bad market; it's a fundamental mismatch between a trader's goals and their actual level of expertise. Setting expectations that are incongruent with your current skill set creates unnecessary pressure and leads to costly errors.  - The <strong>Expectation Gap</strong> causes stress when the expected returns are not congruent with the technical mastery or mental fortitude a trader possesses.</p>
+                <h3>Stop Trading at a Level Above Your Actual Expertise</h3>
+<p>The most common barrier to consistent profit isn't a bad market; it's a fundamental mismatch between a trader's goals and their actual level of expertise. Setting expectations that are incongruent with your current skill set creates unnecessary pressure and leads to costly errors.  - The **Expectation Gap*</p>
 <ul>
+<li>causes stress when the expected returns are not congruent with the technical mastery or mental fortitude a trader possesses.</li>
 <li>True growth often requires a <strong>return to beginner status</strong>, consciously simplifying your strategy to ensure fundamentals are rock solid before scaling complexity.</li>
-<li>Successful trading demands a brutally honest assessment of your skills, differentiating between what you *want* to secure from the market and what your <strong>current process can reliably deliver</strong>.To reset expectations, review your last 20 trades and determine if your strategy execution reflects the behavior of a novice, intermediate, or advanced trader, regardless of your P&L size."Are you actually at the level to expect a certain response from your capital or are you still in the process of mastering that?"</li>
+<li>Successful trading demands a brutally honest assessment of your skills, differentiating between what you *want</li>
+<li>to secure from the market and what your <strong>current process can reliably deliver</strong>.To reset expectations, review your last 20 trades and determine if your strategy execution reflects the behavior of a novice, intermediate, or advanced trader, regardless of your P&L size."Are you actually at the level to expect a certain response from your capital or are you still in the process of mastering that?"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Traders come into their trading with a specific list of what they want to secure from the market but that isn&#x27;t always congruent with the level of expertise they have I just did a great podcast with Bryce Tu who talked about him changing his strategy and how he had to go back to square one in how he traded and act as though he were a beginner even though he clearly is not if you want to see more check out that conversation with Bryce it&#x27;s amazing but keep that in mind for yourself are you actually at the level to expect a certain response from your capital or are you still in the process of mastering that is an important question to manage expectations with</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

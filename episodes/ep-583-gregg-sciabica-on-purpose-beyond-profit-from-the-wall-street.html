@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>When Profit Alone Isn't Enough: Finding Your Purpose Beyond Trading</p>
-<p>The journey to becoming a professional trader often begins with the singular goal of financial freedom, but focusing solely on "how much can I make" creates a motivational ceiling. When the drive shifts from mere accumulation to a broader purpose, like helping others, a new level of consistency and satisfaction becomes available.  - <strong>Redefining Drive:</strong> Long-term motivation is found when the focus shifts from pure personal accumulation to a broader 'why.'</p>
+                <h3>When Profit Alone Isn't Enough: Finding Your Purpose Beyond Trading</h3>
+<p>The journey to becoming a professional trader often begins with the singular goal of financial freedom, but focusing solely on "how much can I make" creates a motivational ceiling. When the drive shifts from mere accumulation to a broader purpose, like helping others, a new level of consistency and satisfaction becomes available.  - **Redefining Drive:*</p>
 <ul>
-<li><strong>The Power of Mentorship:</strong> Finding motivation through <strong>mentorship, collaboration, and helping others</strong> provides professional enjoyment that transcends individual trading results.Identify one way this week you can collaborate or mentor another trader to shift your focus from personal gain to mutual success."It's no longer just, you know, me investing. It's shifted more towards like mentorship, collaboration."</li>
+<li>Long-term motivation is found when the focus shifts from pure personal accumulation to a broader 'why.'</li>
+<li>**The Power of Mentorship:*</li>
+<li>Finding motivation through **mentorship, collaboration, and helping others*</li>
+<li>provides professional enjoyment that transcends individual trading results.Identify one way this week you can collaborate or mentor another trader to shift your focus from personal gain to mutual success."It's no longer just, you know, me investing. It's shifted more towards like mentorship, collaboration."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>The Wall Street Coach podcast. What drives you to keep showing up every day? Now, is it the challenge, the freedom, or something else? It&#x27;s no longer just, you know, me investing. It&#x27;s shifted uh more towards like mentorship, collaboration. I&#x27;m no longer driven as much by, you know, me, you know, how much can I make? Um, you know, just trade, trade, trade. I find some of the motivation to be simply involved, you know, in whether it&#x27;s helping them or just enjoying having some collaboration.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Your Needs: Why Your Emotional Craving Turns You Into the Market’s Favorite ATM</p>
+                <h3>Stop Trading Your Needs: Why Your Emotional Craving Turns You Into the Market’s Favorite ATM</h3>
 <p>Do you constantly break your own rules, even when you have a flawless trading plan? The issue is that you aren’t trading solely for profit; you are trading to satisfy deep-seated emotional needs like excitement or freedom. Until you identify these underlying drivers, you will remain trapped in a destructive cycle of self-sabotage.</p>
 <p>Key Insights:  - <strong>Rule Breaking is a Symptom</strong>: Violating your trading strategy is often a response to underlying emotional cravings, not a flaw in your technical analysis.</p>
 <ul>
 <li>The need for adventure or excitement frequently results in <strong>overtrading</strong>, while the need for freedom can lead you to fight the market by refusing to walk away from a bad position.</li>
-<li>Emotional needs are <strong>highly expensive</strong> when fulfilled through the market, costing you control and capital instead of delivering genuine satisfaction.Actionable Takeaway:</li>
+<li>Emotional needs are **highly expensive*</li>
+<li>when fulfilled through the market, costing you control and capital instead of delivering genuine satisfaction.Actionable Takeaway:</li>
 </ul>
 <p>Identify the core emotional need you are trying to satisfy when you deviate from your trading plan to regain true control over your decisions."If you don't understand your needs, you'll keep sabotaging your own success."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Ever wonder why you can have the perfect trading plan and still break your own rules? It&#x27;s because you&#x27;re not just trading for profits. You&#x27;re trading to meet emotional needs. Maybe you crave adventure or excitement, so you overtrade. Maybe you have the need for freedom, so you fight the market instead of walking away. If you don&#x27;t understand your needs, you&#x27;ll keep sabotaging your own success. That&#x27;s why I put together the trader needs list so you can finally see what&#x27;s driving your trading decisions. Get it now and take back control. Drop the word control in the comments.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

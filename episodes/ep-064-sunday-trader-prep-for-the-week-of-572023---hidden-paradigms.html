@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,19 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of the Paradigms You Inhabit</p>
-<p>Many traders struggle not because of flawed strategy, but because of deeply embedded, invisible assumptions. These hidden paradigms—ingrained beliefs about how the market and life work—keep you frozen, preventing you from seeing critical changes and necessary opportunities right in front of you.  * <strong>Invisible Walls:</strong> Your strongest beliefs are often not recognized as assumptions; they are so embedded that you <strong>simply inhabit them</strong>.</p>
+                <h3>The Hidden Cost of the Paradigms You Inhabit</h3>
+<p>Many traders struggle not because of flawed strategy, but because of deeply embedded, invisible assumptions. These hidden paradigms—ingrained beliefs about how the market and life work—keep you frozen, preventing you from seeing critical changes and necessary opportunities right in front of you.</p>
 <ul>
-<li><strong>Adapt or Fail:</strong> The advice from Steven Heisman (the man who bet against the 2008 housing market) cautions that failure occurs when you insist on viewing the changing market through an <strong>"old Paradigm."</strong></li>
-<li><strong>Beyond the P\&L:</strong> These mental limitations affect not just your trading process, but also your broader outlook on life and how you show up professionally.Spend time reflecting on your thought patterns and asking what underlying, unconscious assumption is driving your key decisions this week.Paradigm Stephen says are so deeply embedded in your head that you don't even know they are there you don't believe in her Paradigm you inhabit it.</li>
+<li>**Invisible Walls:*</li>
+<li>Your strongest beliefs are often not recognized as assumptions; they are so embedded that you <strong>simply inhabit them</strong>.</li>
+<li>**Adapt or Fail:*</li>
+<li>The advice from Steven Heisman (the man who bet against the 2008 housing market) cautions that failure occurs when you insist on viewing the changing market through an **"old Paradigm."*</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is command Curtin with the Wall Street coach I had the great opportunity to interview on my Twitter space last Wednesday Steven Heisman he is the gentleman who bet against U.S uh housing market back in 2008 he was one of a very few who saw that crisis unfolding I had the Good Fortune to have Grant Williams a colleague of mine join me it was such an incredibly eye-opening Twitter space it&#x27;ll be a podcast in two weeks that you want to look for but Steven said this quote in another interview that he gave that I really want you to ruminate upon for yourself not just for your trading not just for how you interact with the markets but about how you live your life Paradigm Stephen says are so deeply embedded in your head that you don&#x27;t even know they are there you don&#x27;t believe in her Paradigm you inhabit it that is a powerful statement what that ultimately comes down to is to freeze we can&#x27;t see the forest for the trees so I want you to think as you go into this week I want you to think about what are the</p>
-<p>invisible paradigms you are stuck in and you don&#x27;t even know his advising to Traders and investors is to make sure you&#x27;re not looking through that old Paradigm because it&#x27;s all changing the market has changed and that&#x27;s what his caution is so think about how you can apply that incredibly deep quote to how not only you interact with the market but how you interact with the people in your life never mind the Outlook you have on life I hope you&#x27;ll let me know how that goes I&#x27;m excited to hear what you think of that quote it&#x27;s one of the most powerful quotes I&#x27;ve heard in a long time and I hope you think about it</p>
-                </div>
+<p>•</p>
+<ul>
+<li>**Beyond the P\&L:*</li>
+<li>These mental limitations affect not just your trading process, but also your broader outlook on life and how you show up professionally.Spend time reflecting on your thought patterns and asking what underlying, unconscious assumption is driving your key decisions this week.Paradigm Stephen says are so deeply embedded in your head that you don't even know they are there you don't believe in her Paradigm you inhabit it.</li>
+</ul>
             </div>
 
             <!-- CTA -->
@@ -291,13 +258,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Reignite Your Trading Edge by Re-Framing Risk as a Game</p>
+                <h3>How to Reignite Your Trading Edge by Re-Framing Risk as a Game</h3>
 <p>When market conditions shift, the strategies that once brought success can start to feel stale and unrewarding. This psychological disconnect can manifest as boredom or lack of motivation, making trading feel more like a chore than a pursuit of mastery. To break this cycle, sometimes the best solution is to actively seek a new strategic approach that restores the intrinsic motivation necessary for peak performance.</p>
-<p>Key Insights:  * <strong>The Power of the Short Side Edge</strong>: Even when the market isn't at peak volatility, specific market heats may present a significant edge on the short side, which can revitalize a stagnant trading plan.</p>
+<p>Key Insights:</p>
 <ul>
+<li><strong>The Power of the Short Side Edge</strong>: Even when the market isn't at peak volatility, specific market heats may present a significant edge on the short side, which can revitalize a stagnant trading plan.</li>
 <li><strong>Re-Engagement Over Routine</strong>: Sustained commitment to trading is not about strict adherence to a dull routine, but about finding ways to keep the challenge and intellectual engagement high.</li>
 <li><strong>Trading as a Psychological Game</strong>: Viewing trading as a "game" allows you to approach risk with curiosity and detachment, reducing the emotional pressure tied to the P\&L.Actionable Takeaway:</li>
 </ul>
 <p>Actively identify a sector or direction (long/short) you have been neglecting and dedicate a specific trial period to it with the explicit goal of re-engaging your mental focus.The main reason I wanted to do that was so that I could try to treat trading like a game again</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so now what I wanted to do is say Okay Market is heating up right now not covid level hot per se and but it&#x27;s heating up and um I think I can have a lot more of an edge on the short side you know I&#x27;ve been still of course being in tune with the market over the past few years I&#x27;ve seen a lot of Edge on the short side and I figured I GNA give this a try and the main reason I wanted to do that was so that I could try to treat trading like a game again</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

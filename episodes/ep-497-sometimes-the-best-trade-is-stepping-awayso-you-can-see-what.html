@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Focus Trap: Why Staring at Your Screen Limits Your Edge</p>
-<p>You believe that maximum focus is the key to catching every opportunity, but intense screen time can actually narrow your perspective. This state of hyper-concentration actively shuts down the neural networks responsible for creativity and seeing alternatives. If you only see what the "herd" sees, you eliminate your competitive edge.  * <strong>Hyper-Focus Limits Possibility</strong>. When you are extremely focused or "dialed in" on your charts, your brain's networks for innovation and exploration are suppressed.</p>
+                <h3>The Focus Trap: Why Staring at Your Screen Limits Your Edge</h3>
+<p>You believe that maximum focus is the key to catching every opportunity, but intense screen time can actually narrow your perspective. This state of hyper-concentration actively shuts down the neural networks responsible for creativity and seeing alternatives. If you only see what the "herd" sees, you eliminate your competitive edge.</p>
 <ul>
+<li><strong>Hyper-Focus Limits Possibility</strong>. When you are extremely focused or "dialed in" on your charts, your brain's networks for innovation and exploration are suppressed.</li>
 <li><strong>The Herd Mentality Barrier</strong>. True profitability often comes from seeing opportunities others miss, which requires the ability to think "outside the box."</li>
 <li><strong>Cognitive Filtering</strong>. Staring continuously at the screen tightens your cognitive filter, preventing you from recognizing a broader range of viable trade alternatives.Schedule intentional breaks away from your desk to allow your mind’s network to open up and filter for new opportunities and fresh perspectives."When you're really focused and dialed in, especially when you're staring at a screen, then that shuts off the network in your brain that opens your mind."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast. So, one pertains to actually kind of innovation and exploration, sort of thinking outside the box, which could be important, I think, for trading if you, you know, if you want to maybe see things differently from what the herd is thinking. And what we now know is that it&#x27;s not really a left brain, right brain thing. The circuitry is a bit different, but the metaphor is fine, which is that when you&#x27;re really focused and dialed in, especially when you&#x27;re staring at a screen, then that shuts off the network in your brain that opens your mind, if you will, and opens your filter to the range, a broader range of alternatives and possibilities.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Reason Your Trading Goals Fell Apart</p>
-<p>Many traders focus on achieving external goals—often called "wants"—without addressing the foundational issues beneath them. This cycle of chasing superficial victories and failing to meet core psychological needs leads to recurring frustration and lack of sustained success. If your previous goals didn't stick, you need to investigate the deeper emotional drivers.  * <strong>The "Want" Trap:</strong> Most goals are simply desires (<strong>wants</strong>) that, even if achieved, won't bring happiness if fundamental emotional needs remain unmet.</p>
+                <h3>The Hidden Reason Your Trading Goals Fell Apart</h3>
+<p>Many traders focus on achieving external goals—often called "wants"—without addressing the foundational issues beneath them. This cycle of chasing superficial victories and failing to meet core psychological needs leads to recurring frustration and lack of sustained success. If your previous goals didn't stick, you need to investigate the deeper emotional drivers.</p>
 <ul>
-<li><strong>Investigate the Foundation:</strong> True progress requires investigating the hopes and wishes of the past year to understand the underlying psychological vacuum.</li>
-<li><strong>Needs Are Non-Negotiable:</strong> A list of goals must prioritize psychological <strong>needs</strong>, as they are radically different from mere wants.Shift your focus from tracking external P&L targets to identifying and consistently meeting your emotional needs for security, connection, or self-respect.you can get all the things you want but if you have none of your needs met you are not going to be a happy camper</li>
+<li>**The "Want" Trap:*</li>
+<li>Most goals are simply desires (<strong>wants</strong>) that, even if achieved, won't bring happiness if fundamental emotional needs remain unmet.</li>
+<li>**Investigate the Foundation:*</li>
+<li>True progress requires investigating the hopes and wishes of the past year to understand the underlying psychological vacuum.</li>
+<li>**Needs Are Non-Negotiable:*</li>
+<li>A list of goals must prioritize psychological <strong>needs</strong>, as they are radically different from mere wants.Shift your focus from tracking external P&L targets to identifying and consistently meeting your emotional needs for security, connection, or self-respect.you can get all the things you want but if you have none of your needs met you are not going to be a happy camper</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>before New Year&#x27;s Eve everybody&#x27;s talking about goals but look you already have a bunch of goals from last year I would much rather see you investigate what&#x27;s underneath all of those goals what are underneath all of these hopes and wishes that you have for yourself for this past year that didn&#x27;t go the way you thought they would let&#x27;s get to the bottom of what those are let&#x27;s get to the bottom of have you created a list filled with your wants or are they a list of your needs because we both know they are radically different things you can get all the things you want but if you have none of your needs met you are not going to be a happy camper</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

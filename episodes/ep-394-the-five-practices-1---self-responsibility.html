@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Five Practices: Why 100% Self-Responsibility is Your First Mandate</p>
-<p>When losses occur, the instinct is often to blame the market, the strategy, or external circumstances. This refusal to take ownership keeps you powerless and traps you in a cycle of frustration and stagnation. The critical first practice for true trading improvement is accepting 100% responsibility for what is currently happening in your life and in your P&L.  * The foundation of consistent improvement is <strong>self-responsibility</strong>, the first of five crucial trading practices.</p>
+                <h3>The Five Practices: Why 100% Self-Responsibility is Your First Mandate</h3>
+<p>When losses occur, the instinct is often to blame the market, the strategy, or external circumstances. This refusal to take ownership keeps you powerless and traps you in a cycle of frustration and stagnation. The critical first practice for true trading improvement is accepting 100% responsibility for what is currently happening in your life and in your P&L.</p>
 <ul>
+<li>The foundation of consistent improvement is <strong>self-responsibility</strong>, the first of five crucial trading practices.</li>
 <li>Taking 100% ownership for your results immediately shifts you from a victim mentality to an empowered decision-maker.</li>
 <li>It is vital to recognize that <strong>self-responsibility does not equate to blame</strong>; it is simply an assessment of current reality.Actionable Takeaway: For your next 10 trade reviews, actively identify every decision you made—even the emotional ones—and consciously accept 100% ownership for the outcome."self-responsibility never means blame but it leaves you in a much more powerful position"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I&#x27;m excited to release my new ebook the five practices to become a better Traer and in that book you will learn about all five of my practices what is number one it is self-responsibility that means taking 100% ownership for what is currently in your life and in your trading now remember self-responsibility never means blame but it leaves you in a much more powerful position and if you want to learn more then please sign up for my free ebook</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

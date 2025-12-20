@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Someone Else's Strategy: Aligning Your System with Your Temperament</p>
+                <h3>Stop Trading Someone Else's Strategy: Aligning Your System with Your Temperament</h3>
 <p>Following generic alerts and strategies from online communities often feels easier than doing the necessary internal work, but this approach guarantees inconsistency. When your trading system clashes with your innate temperament, you end up emotionally drained and stuck in a cycle of chasing fleeting momentum rather than building sustainable success.  - <strong>Temperament is the Foundation</strong>: Profitable strategies must be in alignment with your personal temperament; systems that work for others may actively sabotage you.</p>
 <ul>
 <li><strong>Alerts are not Strategy</strong>: Waiting for external alerts prevents you from developing the critical self-awareness needed to form a truly unique and effective strategy.</li>
 <li><strong>The Cost of Conformity</strong>: Being "swept up in the momentum of the crowd" means sacrificing self-trust and discipline for the comfort of conformity.</li>
 </ul>
 <p>Find the discipline to resist the crowd's momentum and dedicate time to evaluating if your current system is genuinely your best strategy.You're going to need to find the discipline to resist being with the crowd.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>are you trying to do everything all the traitors you follow on X or in discord&#x27;s rout room are doing don&#x27;t do that to yourself you need to realize that there are going to be strategies that are very much in alignment with your temperament and they&#x27;re going to be plenty that don&#x27;t every time you just kind of wait for an alert to hit you and inspire you you aren&#x27;t really figuring out your strategy so be very careful of this it&#x27;s easy to get swept up in the momentum of what everybody else is doing but I always want you to double check is what you are up to your best strategy and if it isn&#x27;t you&#x27;re going to need to find the discipline to resist being with the crowd</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

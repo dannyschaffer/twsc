@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Unseen Cost of Broken Promises to Yourself</p>
+                <h3>The Unseen Cost of Broken Promises to Yourself</h3>
 <p>Inconsistency in trading often stems from a deeper failure to trust your own judgment and commitments. If you struggle to adhere to your trading plan, the root cause might be a lack of personal integrity in all areas of your life, which subtly sabotages your confidence in high-pressure market situations.  - <strong>Self-Trust is Your Ultimate Trading Edge</strong>: The relationship you have with yourself—your ability to follow through on commitments—is more critical for longevity than any technical strategy.</p>
 <ul>
 <li><strong>Micro-Integrity Shapes Macro Performance</strong>: Being reliable in small, daily actions (like punctuality) fundamentally reinforces your self-trust, preparing you to execute your trading plan flawlessly when it matters most.</li>
 <li><strong>Rebuild Your Foundation</strong>: Trading mastery is impossible if you cannot rely on the person looking back at you in the mirror.Actionable Takeaway: Start by identifying one small, non-negotiable promise you will keep today, and execute it flawlessly to begin rebuilding the foundation of self-trust."It builds trust with the most important relationship you'll ever have and that is the one with yourself."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>are you a person who if they say they&#x27;re going to be there at 900 a.m. you&#x27;re there 5 minutes to 9: to make sure you&#x27;re not late this was something that I had really drilled into me about 20 years ago when I did The Landmark for they were so strict about our being very clear with what we said we were going to do and what we did do this taught me the power that comes from being a woman of my word are you a man or woman of your word is it builds trust with the most important relationship you&#x27;ll ever have and that is the one with yourself so if you don&#x27;t feel like you can really trust yourself that I want you now to become a man or woman of your word and rebuild that self trust right now</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

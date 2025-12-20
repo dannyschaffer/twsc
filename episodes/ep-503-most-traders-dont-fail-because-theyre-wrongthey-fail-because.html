@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Uncomfortable Truth: Why Refusing to Change Is Your Biggest Trading Loss</p>
-<p>Most traders fail not because their strategy is flawed, but because they refuse to confront the necessity of personal change. Resisting evolution in your trading setup, even when aware of its limitations, prevents critical growth. Embracing self-awareness and having the strength to act on it is the only way to move past self-imposed ceilings.  * The toughest challenge is achieving <strong>radical self-awareness</strong> about flaws in your personal trading setup that are no longer serving your success.</p>
+                <h3>The Uncomfortable Truth: Why Refusing to Change Is Your Biggest Trading Loss</h3>
+<p>Most traders fail not because their strategy is flawed, but because they refuse to confront the necessity of personal change. Resisting evolution in your trading setup, even when aware of its limitations, prevents critical growth. Embracing self-awareness and having the strength to act on it is the only way to move past self-imposed ceilings.</p>
 <ul>
-<li>Resistance to necessary change, even when intellectually understood, is the <strong>primary bottleneck</strong> to consistent profitability.</li>
-<li>Seeking external assistance, like coaching, offers objective insight and <strong>reinforces the strength</strong> needed to implement difficult, long-term decisions.Approach your trade review and self-assessment process with an open mind and trust in the data, giving yourself the strength to implement needed adjustments.If you truly go into any sort of coaching with an open mind and some trust in the process, you could learn a lot about yourself and your abilities.</li>
+<li>The toughest challenge is achieving **radical self-awareness*</li>
+<li>about flaws in your personal trading setup that are no longer serving your success.</li>
+<li>Resistance to necessary change, even when intellectually understood, is the **primary bottleneck*</li>
+<li>to consistent profitability.</li>
+<li>Seeking external assistance, like coaching, offers objective insight and **reinforces the strength*</li>
+<li>needed to implement difficult, long-term decisions.Approach your trade review and self-assessment process with an open mind and trust in the data, giving yourself the strength to implement needed adjustments.If you truly go into any sort of coaching with an open mind and some trust in the process, you could learn a lot about yourself and your abilities.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>The Wall Street Coach podcast. What part of the coaching process challenged you the most with the work we did? If you know it was being self-aware of some things in my personal trading setup and experience that maybe were not fitting for me too much longer and that it was, you know, a change that I had to maybe look at doing. It was a a huge positive in the fact that I had some assistance and some insight into like hey what might actually be best for me and kind of give me the strength to go and make those decisions in that manner. Those are never easy to to face or do at the moment. So for an overarching thing, it just it&#x27;s another insight. If you truly go into any sort of coaching with an open mind and and some trust in the process in it, like you could learn a lot about yourself and your abilities and what might be there for you.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

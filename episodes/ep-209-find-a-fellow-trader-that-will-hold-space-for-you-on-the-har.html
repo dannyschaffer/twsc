@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Secret to Longevity: Why Trading Support is Not Optional</p>
-<p>Trading is an isolated pursuit, and without a safe space for expression, both your failures and successes can quickly become emotional burdens. This lack of external validation and honest sharing directly impacts your mental consistency and long-term viability in the markets. Having a trusted peer is not a luxury; it is critical for survival.  * <strong>Longevity</strong> in trading is impossible without dedicated emotional support.</p>
+                <h3>The Secret to Longevity: Why Trading Support is Not Optional</h3>
+<p>Trading is an isolated pursuit, and without a safe space for expression, both your failures and successes can quickly become emotional burdens. This lack of external validation and honest sharing directly impacts your mental consistency and long-term viability in the markets. Having a trusted peer is not a luxury; it is critical for survival.</p>
 <ul>
-<li>The primary role of support is creating a venue to <strong>express yourself forthrightly</strong> about painful losses and quiet wins.</li>
-<li>Mutual accountability and celebration help you maintain encouragement and prevent the isolation that often leads to burnout.<strong>Actionable Takeaway:</strong> Find one person in your network within the next 24 hours who is willing to exchange the commitment of "holding space" for your trading journey.do you have support this is so important to your longevity</li>
+<li>**Longevity*</li>
+<li>in trading is impossible without dedicated emotional support.</li>
+<li>The primary role of support is creating a venue to **express yourself forthrightly*</li>
+<li>about painful losses and quiet wins.</li>
+<li>Mutual accountability and celebration help you maintain encouragement and prevent the isolation that often leads to burnout.**Actionable Takeaway:*</li>
+<li>Find one person in your network within the next 24 hours who is willing to exchange the commitment of "holding space" for your trading journey.do you have support this is so important to your longevity</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you have support this is so important to your longevity you have to have at least one person that you can express yourself to forthrightly you have to have one person you can uh share your successes with who are going to celebrate with you if you don&#x27;t have one person to at least do this with in exchange with them I&#x27;m going to challenge you in 24 hours for you to find somebody you can say DM on Twitter or in a Discord room or to somebody that you have been you know in a trador tribe with and ask them if they would be willing to do an exchange of holding space for you which of course in exchange you will hold space for them helping yourself with the encouragement you need and with the ability to celebrate your successes is going to make a huge difference in your life do this for you and</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

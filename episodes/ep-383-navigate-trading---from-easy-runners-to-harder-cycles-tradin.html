@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Yesterday's 500% Runners: Adapting to Harder Trading Cycles</p>
-<p>Many traders enter today's market expecting the exponential, quick gains seen in previous boom cycles (like 2017-2019). This expectation sets you up for emotional failure and frustration when you realize that current, harder cycles require a fundamentally different and disciplined approach. Success now depends on acknowledging the difficulty and cultivating the appropriate trading psychology.  * <strong>Historical Misalignment</strong>: The high accessibility and quick gains of past markets have created an <strong>unrealistic benchmark</strong> for rapid account growth today.</p>
+                <h3>Stop Chasing Yesterday's 500% Runners: Adapting to Harder Trading Cycles</h3>
+<p>Many traders enter today's market expecting the exponential, quick gains seen in previous boom cycles (like 2017-2019). This expectation sets you up for emotional failure and frustration when you realize that current, harder cycles require a fundamentally different and disciplined approach. Success now depends on acknowledging the difficulty and cultivating the appropriate trading psychology.</p>
 <ul>
-<li><strong>Skill Development vs. Money Focus</strong>: The only sustainable path is viewing trading as a <strong>skill</strong> that must be developed and refined daily, rather than focusing solely on making quick money.</li>
-<li><strong>Acknowledge the Difficulty</strong>: Recognizing that the current cycle is legitimately difficult is essential for developing the <strong>proper mindset</strong> and avoiding emotional burnout.Refuse to compare your current results to the outlier "easy money" periods of the past, and instead measure success by your adherence to a continuous daily learning process.If you have the proper mindset and the vision to become a better trader each day and learn to develop the skill as it is, it's going to be a so different journey than if you're trying to make money.</li>
+<li><strong>Historical Misalignment</strong>: The high accessibility and quick gains of past markets have created an **unrealistic benchmark*</li>
+<li>for rapid account growth today.</li>
+<li><strong>Skill Development vs. Money Focus</strong>: The only sustainable path is viewing trading as a **skill*</li>
+<li>that must be developed and refined daily, rather than focusing solely on making quick money.</li>
+<li><strong>Acknowledge the Difficulty</strong>: Recognizing that the current cycle is legitimately difficult is essential for developing the **proper mindset*</li>
+<li>and avoiding emotional burnout.Refuse to compare your current results to the outlier "easy money" periods of the past, and instead measure success by your adherence to a continuous daily learning process.If you have the proper mindset and the vision to become a better trader each day and learn to develop the skill as it is, it's going to be a so different journey than if you're trying to make money.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>like we had 500% Runners every single day and it was so yeah I&#x27;m not going to say easy because of course I had four years of experience before that yeah but it was really diff different than 2019 2018 2017 so it was really really accessible to grow the accounts like really quick so if you are going to try to do that right now know that it&#x27;s going to be really really really hard thing to do and if you think it that way and if you have the the proper mindset and if you have the the vision to you know to be become a better Trader each day and learn to develop the skill as it is it&#x27;s going to be a so different Journey than if you&#x27;re trying to make money</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

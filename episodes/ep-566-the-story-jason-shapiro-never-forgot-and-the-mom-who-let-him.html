@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Unconventional Strategy That Led to Self-Discovery: Why Letting Go Is Essential For Growth</p>
-<p>Many traders believe strict self-discipline is the only path to success, leading to crushing self-criticism every time they stumble. This story illustrates the profound power of acceptance and the emotional relief found when you step back from constant judgment and allow natural growth to occur. Learning how to fail forward can be the most profitable psychological edge you develop.  - <strong>Trusting the Evolutionary Path:</strong> Allowing mistakes and setbacks, rather than rigidly correcting them, provides the necessary emotional space for genuine self-correction and mastery.</p>
+                <h3>The Unconventional Strategy That Led to Self-Discovery: Why Letting Go Is Essential For Growth</h3>
+<p>Many traders believe strict self-discipline is the only path to success, leading to crushing self-criticism every time they stumble. This story illustrates the profound power of acceptance and the emotional relief found when you step back from constant judgment and allow natural growth to occur. Learning how to fail forward can be the most profitable psychological edge you develop.  - **Trusting the Evolutionary Path:*</p>
 <ul>
-<li><strong>The Power of Parental (or Self) Acceptance:</strong> The mother's commitment to "let him go" removed the pressure of perfection, enabling the subject to use real-world consequences as lessons instead of sources of shame.</li>
-<li><strong>Redefining Intervention:</strong> Sometimes, the most effective "intervention" is the deliberate choice to step back, recognizing that controlling every outcome often stifles the eventual discovery of one's own trading edge.<strong>Actionable Takeaway</strong></li>
+<li>Allowing mistakes and setbacks, rather than rigidly correcting them, provides the necessary emotional space for genuine self-correction and mastery.</li>
+<li>**The Power of Parental (or Self) Acceptance:*</li>
+<li>The mother's commitment to "let him go" removed the pressure of perfection, enabling the subject to use real-world consequences as lessons instead of sources of shame.</li>
+<li>**Redefining Intervention:*</li>
+<li>Sometimes, the most effective "intervention" is the deliberate choice to step back, recognizing that controlling every outcome often stifles the eventual discovery of one's own trading edge.**Actionable Takeaway*</li>
+<li>The next time you experience a trading setback, consciously choose observation over immediate, punitive intervention. Document the failure dispassionately to reinforce a sense of psychological safety and allow your system to self-correct.Dr. Dunn's entire theory was let him go. Just let him go... and eventually he will find himself.</li>
 </ul>
-<p>The next time you experience a trading setback, consciously choose observation over immediate, punitive intervention. Document the failure dispassionately to reinforce a sense of psychological safety and allow your system to self-correct.Dr. Dunn's entire theory was let him go. Just let him go... and eventually he will find himself.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>other parents looked at her like she was crazy. I can&#x27;t remember a day in high school where I even brought a book home. And it&#x27;s funny because and all I did was get in trouble and you know all that. The amazing thing through it all, I have to say, my mother was a child psychologist and took a lot of heat because she was getting called into school all the time because they were expelling me all the time. I got kicked out of three high schools and you know um and she took this approach and truthfully she went to a psychiatrist to help her with this. I still remember Dr. Dunn, who I&#x27;m sure is not alive anymore cuz he was old then. He was at Colia. And Dr. Dunn&#x27;s entire theory was let him go. Just let him go. And she let me and other parents looked at her like she was crazy. So much dread. Didn&#x27;t even want their kids to to be around me because all I ever did was get in trouble and probably rightly so. But her she took the approach of just let him go and eventually he will find</p>
-<p>himself. Totally. To this day, I I thank her.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

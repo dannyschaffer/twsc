@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Single Line Between Consistency and a Blown-Up Account</p>
-<p>Many traders seek the next big strategy, but the true foundation of success is discipline. It is the only barrier separating you from high-cost emotional errors like revenge trading and FOMO, and ultimately, a completely blown-up account.  - Discipline acts as your psychological shield against emotional errors like <strong>Revenge Trading</strong> and chasing <strong>FOMO trades</strong>.</p>
+                <h3>The Single Line Between Consistency and a Blown-Up Account</h3>
+<p>Many traders seek the next big strategy, but the true foundation of success is discipline. It is the only barrier separating you from high-cost emotional errors like revenge trading and FOMO, and ultimately, a completely blown-up account.  - Discipline acts as your psychological shield against emotional errors like **Revenge Trading*</p>
 <ul>
-<li>The foundation of discipline is established <strong>before the trade</strong> by creating a plan that explicitly defines your entry, stop loss, and profit target.</li>
-<li>The market’s job is to tempt you; the disciplined trader's job is to <strong>stay unfazed</strong> and stick to the pre-determined plan.Before you break any of your own rules, ask yourself if that single trade is worth sacrificing your long-term future."A disciplined Trader might take losses but an undisciplined Trader will lose everything."</li>
+<li>and chasing <strong>FOMO trades</strong>.</li>
+<li>The foundation of discipline is established **before the trade*</li>
+<li>by creating a plan that explicitly defines your entry, stop loss, and profit target.</li>
+<li>The market’s job is to tempt you; the disciplined trader's job is to **stay unfazed*</li>
+<li>and stick to the pre-determined plan.Before you break any of your own rules, ask yourself if that single trade is worth sacrificing your long-term future."A disciplined Trader might take losses but an undisciplined Trader will lose everything."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>discipline isn&#x27;t optional in trading it&#x27;s the only thing standing between you and a blown-up account let&#x27;s talk about how to master it discipline isn&#x27;t sexy but it&#x27;s the foundation of every successful Trader it&#x27;s what stops you from Revenge trading after a loss keeps you from chasing fomo trades and it makes you stick to your plan even when it&#x27;s hard here&#x27;s the key discipline starts way for the trade create a plan stick to it no matter what that means knowing your entry your stop loss your profit Target the Market&#x27;s job is to tempt you the discipline Trader job is to stay unfaced remember a disciplined Trader might take losses but an undisciplined Trader will lose everything so when you feel the urge to break your own rules ask yourself is this trade worth my future protect your Capital stick to the plan and let discipline pave the way to success what is the hardest rule for you to stick to drop it in the comments and let&#x27;s fix it together</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

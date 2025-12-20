@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Pushing, Start Flowing: Why Patience Is Your Real Trading Edge</p>
+                <h3>Stop Pushing, Start Flowing: Why Patience Is Your Real Trading Edge</h3>
 <p>The relentless pursuit of "hustle" is often celebrated, but in trading, forcing action and chasing the market is a fast track to emotional burnout. When you operate under a constant state of urgency and efficiency, you override the patience needed to recognize genuine opportunities. Learning to slow down is counterintuitive but essential for finding consistency and sustained success.  - The <strong>Hustle Trap</strong>: A high-speed, nonstop approach misses the essential rhythm of the market, which requires periods of patience and ease.</p>
 <ul>
 <li><strong>Flow State is Where the Magic Happens</strong>: True market efficiency comes not from constant activity but from aligning with the natural timing and flow of price action.</li>
 <li>The lesson of <strong>Patience and Ease</strong>: Sometimes slowing down is the key to moving forward in trading.Shift your focus from constant activity (hustle) to mindful observation (flow) during your next trading session to eliminate emotional, forced entries.Sometimes slowing down is the key to moving forward in trading in business and in life if you're always pushing always forcing you miss the flow and trust me the flow is where the magic happens.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I used to live in New York City fastpaced nonstop always hustle and then life threw me a total curveball and I found myself in Hawaii completely out of my element I came here to write my book 10 years ago transforming Wall Street but the culture shock Hit me hard I was used to deadlines and efficiency and moving fast but Hawaii doesn&#x27;t operate on hustle there&#x27;s Rhythm here of patience and ease it took me time but I learned something that Traders struggle with every day sometimes slowing down is the key to moving forward in trading in business and in life if you&#x27;re always pushing always forcing you miss the flow and trust me the flow is where the magic happens put a clock in the comments if you&#x27;re feeling the need to slow down</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Stop the 'Gremlin' from Sabotaging Your Full Trading Potential</p>
-<p>Every trader experiences a powerful internal conflict between their innate potential and their limiting self-talk. This inner struggle is caused by the "Gremlin"—a monster of the mind that weaponizes negative past experiences and future fears to constantly restrict your actions. Until you learn how to separate yourself from this destructive internal voice, you cannot access your full potential for consistent profitability.  * <strong>Understand the Duality</strong>: There is the "natural you," which is capable and beautiful, and the "Gremlin," which limits your capacity and sabotages your edge.</p>
+                <h3>How to Stop the 'Gremlin' from Sabotaging Your Full Trading Potential</h3>
+<p>Every trader experiences a powerful internal conflict between their innate potential and their limiting self-talk. This inner struggle is caused by the "Gremlin"—a monster of the mind that weaponizes negative past experiences and future fears to constantly restrict your actions. Until you learn how to separate yourself from this destructive internal voice, you cannot access your full potential for consistent profitability.</p>
 <ul>
+<li><strong>Understand the Duality</strong>: There is the "natural you," which is capable and beautiful, and the "Gremlin," which limits your capacity and sabotages your edge.</li>
 <li><strong>Recognize Limiting Beliefs as Opinions</strong>: Any belief you hold about yourself or how the world works is simply an opinion to which you have developed loyalty, not an unchangeable truth.</li>
 <li><strong>Full Potential Requires Separation</strong>: The Gremlin actively prevents you from utilizing your highest potential by constantly inserting doubt and fear.Actionable Takeaway: Start identifying the thoughts that restrict your actions and label them as the "Gremlin" rather than accepting them as fact.it's about getting a sliver of light between who you are on the inside that naturally you that is absolutely beautiful and all those ideas you have about who you are</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>let&#x27;s talk a little bit about what is a gremlin what is this concept even about well keep in mind when I wrote timing your Gremlin there was no Gremlin movie or anything like that you know I wanted to turn to refer to the monster of the mind I&#x27;ve been practicing psychotherapists for years you know it just occurred to me that there was an ultimate Duality within everybody I worked with that there was just something really really beautiful happening on the inside but I ended up in the first book just calling the natural you and then there was this monster of the mind that used negative past experiences fears about the future to really really limit people it basically got in their way so they couldn&#x27;t exercise their full potential and I started to write it as a book for therapist and then I thought shoot I&#x27;m just going to write it I want this material to be as accessible as it could possibly be to everybody and that Gremlin thought just kept coming up and every time I started started writing and so it&#x27;s about getting a sliver of light between who you are on</p>
-<p>the inside that naturally you that is absolutely beautiful and that sounds a little woolwish but it&#x27;s true and as people start to play with this they really start to see it so what happens is the book describes a very specific method for how to get a sliver of light between who you are and all of those ideas you have about who you are and about how the world works it doesn&#x27;t mean they&#x27;re wrong as I did but any belief that you have about yourself about anything really beliefs are just opinions that we develop loyalty to it doesn&#x27;t mean they&#x27;re mad some of them are really good however it&#x27;s important to get a sliver of light between who you really are and all those ideas you have about who you are</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

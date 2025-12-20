@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Against Yourself: Answering the Call to Clarity</p>
-<p>When you are deeply invested in the market, it is easy to mistake noise for signals, and distraction for direction. However, ignoring the quiet, persistent voice within you—the one that indicates where you truly belong—is one of the fastest ways to sabotage long-term profitability. Discover how profound emotional experiences can serve as a map toward true fulfillment and trading success.  * <strong>The Path to "Home" is Emotional</strong>: A deep, non-sad emotional response can signify profound alignment, offering clarity that technical analysis cannot provide.</p>
+                <h3>Stop Trading Against Yourself: Answering the Call to Clarity</h3>
+<p>When you are deeply invested in the market, it is easy to mistake noise for signals, and distraction for direction. However, ignoring the quiet, persistent voice within you—the one that indicates where you truly belong—is one of the fastest ways to sabotage long-term profitability. Discover how profound emotional experiences can serve as a map toward true fulfillment and trading success.</p>
 <ul>
+<li><strong>The Path to "Home" is Emotional</strong>: A deep, non-sad emotional response can signify profound alignment, offering clarity that technical analysis cannot provide.</li>
 <li><strong>Mentorship Amplifies Inner Wisdom</strong>: The guidance of powerful mentors often acts as a catalyst, allowing you to finally hear and trust your own internal truths.</li>
 <li><strong>The Journey is the Guide</strong>: Self-discovery is not merely a side quest; it is the ultimate map for professional evolution and sustained results.Actionable Takeaway: Identify one area of your trading life where you currently feel "not at home" (e.g., your strategy, environment, or routine) and take one micro-step to realign it with your true internal standard.It was knowing knowing that I was home.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>It started with this song that I didn&#x27;t know and it started to play and I started to cry and I couldn&#x27;t stop crying and it wasn&#x27;t even sadness. It was knowing knowing that I was home. Madame Pleway spoke through that moment and I only heard it because of the mana that my battling coach had carried. That was the day I said yes to Hawaii, to the unknown, and even in a way yes to writing my newest book, Born of Two Oceans. It&#x27;s not just Manny&#x27;s memoir. It&#x27;s a map for you to listen to your own call. Born of Two Oceans is the book for anyone who is listening to that quiet voice within that moves them emotionally. fully.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

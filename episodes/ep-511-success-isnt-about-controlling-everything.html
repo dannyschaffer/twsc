@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Apotheosis of Trading: How Letting Go Leads to Conscious Profits</p>
-<p>Many traders exhaust themselves trying to control every market variable, leading to frustration and forced errors. True success isn't about domination; it's about realizing that control is an illusion. Learn how to reach a stage of mastery where you receive, rather than force, your winning trades.  * <strong>Clarity Over Capital</strong>: The highest reward in the trading journey is 'apotheiois'—a state of profound clarity and sharp intuition that transcends monetary wins.</p>
+                <h3>The Apotheosis of Trading: How Letting Go Leads to Conscious Profits</h3>
+<p>Many traders exhaust themselves trying to control every market variable, leading to frustration and forced errors. True success isn't about domination; it's about realizing that control is an illusion. Learn how to reach a stage of mastery where you receive, rather than force, your winning trades.</p>
 <ul>
+<li><strong>Clarity Over Capital</strong>: The highest reward in the trading journey is 'apotheiois'—a state of profound clarity and sharp intuition that transcends monetary wins.</li>
 <li><strong>Stop Forcing Trades</strong>: You are actively hindering your results when you try to manipulate the market; real profitability begins when you stop forcing action.</li>
 <li><strong>Become a Conscious Trader</strong>: Moving from a reactive state (panic/greed) to a conscious state allows you to let the market deliver trades directly to you.Actionable Takeaway:</li>
 </ul>
 <p>Focus on cultivating internal clarity before entering the market today, rather than trying to perfect external variables.Your intuition sharpens. You stop forcing trades. You let the market come to you.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>What if success wasn&#x27;t about controlling the market but letting go? In the hero&#x27;s journey, there&#x27;s a moment of apotheiois, a fancy word for a reward that isn&#x27;t money, but clarity. Your intuition sharpens. You stop forcing trades. You let the market come to you. This is when you stop being a reactive trader and become a conscious trader. Drop hero in the comments and I&#x27;ll send you the trade to your hero&#x27;s map to show you what real mastery looks</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Ultimate Comfort: What Your Future Self Knows About Your Current Trading Stress</p>
+                <h3>The Ultimate Comfort: What Your Future Self Knows About Your Current Trading Stress</h3>
 <p>The relentless pressure of trading can make every day feel like an overwhelming struggle, causing intense stress and self-doubt. When you are deep in the grind, it is easy to forget that the hard work—the sweat and the tears—will eventually pay off, leading to clarity and success.  - The stress of the present moment often blinds you to <strong>future success</strong>.</p>
 <ul>
-<li>Realizing that the difficulties (tears, sweat, blood) are part of a <strong>necessary process</strong> makes them easier to endure.</li>
-<li>The path to profitability is built not just on strategy, but on <strong>emotional endurance</strong> and self-comfort.Actionable Takeaway: When feeling overwhelmed, actively imagine your future successful self comforting your current self with the knowledge that your struggles are temporary and meaningful.Chill out, it's gonna work out. Of course you're going to work your ass off and it's going to be really hard, but it's all going to be worth it.</li>
+<li>Realizing that the difficulties (tears, sweat, blood) are part of a **necessary process*</li>
+<li>makes them easier to endure.</li>
+<li>The path to profitability is built not just on strategy, but on **emotional endurance*</li>
+<li>and self-comfort.Actionable Takeaway: When feeling overwhelmed, actively imagine your future successful self comforting your current self with the knowledge that your struggles are temporary and meaningful.Chill out, it's gonna work out. Of course you're going to work your ass off and it's going to be really hard, but it's all going to be worth it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what what would I tell Eduardo from 2016 yeah to do like I would first the first thing that I would tell him chill out like you&#x27;re super stressed like chill out it&#x27;s gonna work out don&#x27;t worry of course you&#x27;re going to work your ass off and it&#x27;s going to be really hard it&#x27;s gonna you&#x27;re G to have some tears you&#x27;re G to have some even sweat and blood yep but it&#x27;s all going to be worth it you know and so I always try to comfort myself from from there to get the comfort from the guy from 2030</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

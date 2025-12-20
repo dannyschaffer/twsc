@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Your Fear of Failure is the Biggest Threat to Your Trading Career</p>
-<p>Many traders are crippled by their profound fear of failure, which is especially destructive in a profession where losses are inevitable. If you struggle to accept mistakes of any kind, your emotional resistance will ultimately prevent you from achieving long-term consistency.  * Trading for the long duration requires navigating <strong>inevitable failure</strong>.</p>
+                <h3>Why Your Fear of Failure is the Biggest Threat to Your Trading Career</h3>
+<p>Many traders are crippled by their profound fear of failure, which is especially destructive in a profession where losses are inevitable. If you struggle to accept mistakes of any kind, your emotional resistance will ultimately prevent you from achieving long-term consistency.</p>
 <ul>
+<li>Trading for the long duration requires navigating <strong>inevitable failure</strong>.</li>
 <li>Resistance to mistakes is a common psychological barrier that limits longevity.</li>
-<li>Success depends on cultivating <strong>emotional neutrality</strong> when facing setbacks.</li>
+<li>Success depends on cultivating **emotional neutrality*</li>
+<li>when facing setbacks.</li>
 </ul>
-<div class="actionable-takeaway"><strong>Actionable Takeaway:</strong> Begin conditioning your mind by intentionally seeking comfort with small, insignificant failures outside of your trading to practice remaining neutral.You're going to have to be able to be neutral in the face of failure for you to go to the distance.</div>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>one of the things I see a lot of Traders deal with is how afraid they are to fail now there&#x27;s a really good reason for that and if you are a person who really resists mistakes of any kind failure of any kind you have to ask yourself how are you going to navigate all the failure that is inevitable if you want to be a traitor for the duration so what I recommend is you start to get comfortable in small ways outside of your trading you&#x27;re going to have to be able to be neutral in the face of failure for you to go to the distance so if you want to learn more about how to do that then come and join me next Thursday March 14th today PM Eastern on YouTube</p>
-                </div>
+<div class="actionable-takeaway"><strong>Takeaway:</strong><br>Begin conditioning your mind by intentionally seeking comfort with small, insignificant failures outside of your trading to practice remaining neutral.You're going to have to be able to be neutral in the face of failure for you to go to the distance.</div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

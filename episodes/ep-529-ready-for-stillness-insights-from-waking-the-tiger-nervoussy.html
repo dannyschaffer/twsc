@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>When Stillness Feels Like a Threat: Why Forced Calm Backfires</p>
-<p>When you attempt to force calm—whether through deep meditation or simply trying to sit still—and are met with anxiety or resistance, you are fighting your system’s fundamental need for safety. For a nervous system that is disregulated, stillness can be perceived as a threat. Understanding this biological response is the key to achieving authentic calm and consistency in your trading.  * <strong>Stillness Is Not Always the Answer</strong>: If meditation creates anxiety, it signals that your system is not yet ready for stasis and is incorrectly labeling it as danger.</p>
+                <h3>When Stillness Feels Like a Threat: Why Forced Calm Backfires</h3>
+<p>When you attempt to force calm—whether through deep meditation or simply trying to sit still—and are met with anxiety or resistance, you are fighting your system’s fundamental need for safety. For a nervous system that is disregulated, stillness can be perceived as a threat. Understanding this biological response is the key to achieving authentic calm and consistency in your trading.</p>
 <ul>
+<li><strong>Stillness Is Not Always the Answer</strong>: If meditation creates anxiety, it signals that your system is not yet ready for stasis and is incorrectly labeling it as danger.</li>
 <li><strong>Activation, Not Failure</strong>: Your body’s resistance means you are simply <strong>activated</strong>; it does not mean you lack discipline or are permanently broken.</li>
 <li><strong>The Power of Completion</strong>: To achieve genuine calm, you must sometimes complete the body’s cycle through movement rather than suppressing the activated energy.Instead of white-knuckling your way into quiet time, focus on regulating your nervous system first by allowing subtle or mindful movement, which prepares your body for sustainable stillness."Your nervous system just isn't ready to be still yet."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Your nervous system just isn&#x27;t ready. If meditation makes you anxious, you&#x27;re doing it wrong. Your nervous system just isn&#x27;t ready to be still yet. Dr. Lavine Awakening Tiger taught me that stillness can feel threatened to a disregulated system. You&#x27;re not broken, you&#x27;re just activated. Sometimes movement is the meditation. So before you try to calm down, try to instead complete the cycle. If you&#x27;ve been forcing stillness, DM me the word move, and I&#x27;ll show you what your body actually needs first.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

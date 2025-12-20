@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Freezing: How Exposure Therapy Rewires Your Trading Fear</p>
-<p>When a trade or life challenge feels impossibly difficult, the reaction is often paralysis or avoidance. This natural instinct to recoil from risk is driven by an emotional response that actively prevents professional growth. Use the principles of exposure therapy to systematically confront the emotional hazards that keep you stuck.  * <strong>Systematic Confrontation</strong>: Your greatest fear loses its power when you commit to repeated, controlled engagement with the source of stress.</p>
+                <h3>Stop Freezing: How Exposure Therapy Rewires Your Trading Fear</h3>
+<p>When a trade or life challenge feels impossibly difficult, the reaction is often paralysis or avoidance. This natural instinct to recoil from risk is driven by an emotional response that actively prevents professional growth. Use the principles of exposure therapy to systematically confront the emotional hazards that keep you stuck.</p>
 <ul>
+<li><strong>Systematic Confrontation</strong>: Your greatest fear loses its power when you commit to repeated, controlled engagement with the source of stress.</li>
 <li><strong>Capacity Over Comfort</strong>: Trading success is not about eliminating pressure; it is about building the nervous system capacity to handle volatility until the difficult becomes routine.Actionable Takeaway: Identify the smallest manageable fear that causes hesitation in your trading and commit to engaging with that specific point repeatedly this week.I can still remember how petrified I was</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I want to talk about exposure therapy today for anybody who&#x27;s having a really hard time for anybody today who&#x27;s thinking Kim this is just so damn hard whether it&#x27;s your trading or it&#x27;s your business or it&#x27;s your life let&#x27;s talk exposure therapy I live on top of a mountain and to get to where I am it&#x27;s a treacherous narrow winding road with thousands of feet drop off with no guard rails on a lot of it this is a scary Road and I have to tell you when I first came here and drove that road for the first time my hands were literally shaking I also was in a pickup truck that was a stick shift and I hadn&#x27;t driven a stick shift in a long time but I can still remember how petrified I was and this morning I was driving down it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

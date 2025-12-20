@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading to Stay Busy: Taming the Fidgety Skeptic in Your Account</p>
-<p>The "fidgety skeptic" tendency—the urge to constantly "do" and take action—is a common and costly psychological trap in trading. This addiction to activity stems from a deep discomfort with stillness, leading to overtrading, poor execution, and unnecessary emotional cost. You must learn to manage this compulsion, as the belief that more action equals more profit will ultimately derail your long-term consistency.  * <strong>The Action Addiction:</strong> The feeling of being "comfortable in taking action and doing doing doing" is a psychological defense mechanism that actively works against strategic trading.</p>
+                <h3>Stop Trading to Stay Busy: Taming the Fidgety Skeptic in Your Account</h3>
+<p>The "fidgety skeptic" tendency—the urge to constantly "do" and take action—is a common and costly psychological trap in trading. This addiction to activity stems from a deep discomfort with stillness, leading to overtrading, poor execution, and unnecessary emotional cost. You must learn to manage this compulsion, as the belief that more action equals more profit will ultimately derail your long-term consistency.</p>
 <ul>
-<li><strong>Stillness as Strategy:</strong> An inability to practice stillness directly sabotages clear decision-making, ensuring you are trading from compulsion rather than conviction.</li>
-<li><strong>Emotional Cost:</strong> This compulsion is especially costly for traders, as activity outside of your plan is rarely profitable action.Stop mistaking busyness for productivity; true trading edge is found by creating intentional periods of <strong>regulated stillness</strong> to ensure clear, non-compulsive decision-making.it's hard for me sometimes to practice Stillness I am so much more comfortable in taking action and doing doing doing but that is costly as we all know especially For You Traders</li>
+<li>**The Action Addiction:*</li>
+<li>The feeling of being "comfortable in taking action and doing doing doing" is a psychological defense mechanism that actively works against strategic trading.</li>
+<li>**Stillness as Strategy:*</li>
+<li>An inability to practice stillness directly sabotages clear decision-making, ensuring you are trading from compulsion rather than conviction.</li>
+<li>**Emotional Cost:*</li>
+<li>This compulsion is especially costly for traders, as activity outside of your plan is rarely profitable action.Stop mistaking busyness for productivity; true trading edge is found by creating intentional periods of **regulated stillness*</li>
+<li>to ensure clear, non-compulsive decision-making.it's hard for me sometimes to practice Stillness I am so much more comfortable in taking action and doing doing doing but that is costly as we all know especially For You Traders</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha guys would you consider yourself a fidgety skeptic I know I do I consider myself definitely a fidgety skeptic it&#x27;s hard for me sometimes to practice Stillness I am so much more comfortable in taking action and doing doing doing but that is costly as we all know especially For You Traders so we&#x27;re going to take that topic on today I&#x27;m going to be doing live coaching which I do almost every Wednesday on YouTube at 5:30 Eastern today each week it changes based on my client load but today at 5:30 Eastern which is November 29th I&#x27;ll be doing some live coaching if you want to hear how I navigate and suggest all of my trading clients navigate their fidgety skeptic then come and join</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

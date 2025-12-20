@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Counterintuitive Way to Conquer Your Fear of Trading Loss</p>
+                <h3>The Counterintuitive Way to Conquer Your Fear of Trading Loss</h3>
 <p>The fear of loss is a constant companion that leads to hesitation, freezing up, and ultimately, repeating the same costly mistakes. This internal resistance keeps you paralyzed, draining your emotional capacity and preventing real progress. The key to freedom is a radical, counterintuitive willingness to confront the outcomes you dread most.  - <strong>Willingness to Face It</strong>: The only way to truly overcome deep-seated trading fear is through deliberate confrontation of the worst-case scenario, rather than avoiding the anxiety.</p>
 <ul>
-<li><strong>Emotional Non-Resistance</strong>: This practice requires moving beyond intellectual analysis, using <strong>somatic work</strong> to process the fear physically, not just intellectually.</li>
+<li><strong>Emotional Non-Resistance</strong>: This practice requires moving beyond intellectual analysis, using **somatic work*</li>
+<li>to process the fear physically, not just intellectually.</li>
 <li><strong>The Body-Mind Connection</strong>: True capacity is built when you "take the elevator down from your head into your body" to locate and integrate the emotional sensation of loss.Actionable Takeaway: Outside of your trading day, dedicate a few minutes to practice emotional non-resistance by tuning in and vividly imagining the worst-case outcome of your next trade."The way we ever get over something we are really afraid of happening is a willingness to face it, is a willingness to be with it."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the fear of loss how does one get over it and here is the most counterintuitive answer the way we ever get over something we are really afraid of happening is a willingness to face it is a willingness to be with it and this is where a sematic work comes in really powerfully this is what I call one of my practices emotional non-resistance outside of your trading day you&#x27;re going to need a few minutes for you to tune in to the worst case imagined outcome and you&#x27;re going to need to take the elevator down from your head into your body and you&#x27;re going to need to imagine what is the worst thing that could happen this is something that takes longer than I can describe fully here but if you watch one of my podcasts where I talk about emotional non-resistance you will be able to follow that step bystep guide</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

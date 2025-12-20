@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Using "I Don't": The Language That Sabotages Your Trading Growth</p>
+                <h3>Stop Using "I Don't": The Language That Sabotages Your Trading Growth</h3>
 <p>The language you use to describe your abilities often determines your potential. If you use permanent, restrictive phrases like "I don't" instead of acknowledging a temporary lack of skill like "I haven't learned," you subconsciously prevent yourself from ever seeking a solution. This self-imposed limitation creates a hard ceiling on your trading proficiency and profitability.  - <strong>"I Don't" Creates a Permanent Identity</strong>: Adopting definitive phrases closes the door to skill acquisition, turning a temporary knowledge gap into a fixed personal flaw that limits future action.</p>
 <ul>
 <li><strong>Shifting Language Maintains Possibility</strong>: By replacing restrictive statements with language focused on effort or capacity (e.g., "I haven't mastered this yet"), you preserve the mental flexibility required for professional growth.</li>
 <li><strong>Identify Your Trading Self-Sabotage</strong>: Your most damaging limiting beliefs are often hidden in the everyday language you use to justify avoiding challenging strategies or improving your discipline.For the next week, actively monitor your internal and external dialogue, replacing any instance of "I don't" related to trading with a softer, capacity-focused statement like "I need to learn how to.""I can't swim or I haven't learned how to swim is a very different sentence than I don't swim"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>can&#x27;t swim or I haven&#x27;t learned how to swim is a very different sentence than I don&#x27;t swim she could take lessons but she will probably never take lessons if she consistently tells herself I don&#x27;t swim can you see how that&#x27;s a limiting thought I can&#x27;t swim because I&#x27;ve never learned or I don&#x27;t want to swim but I don&#x27;t swim ask yourself how often are you using that kind of language when it comes to tradeing</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

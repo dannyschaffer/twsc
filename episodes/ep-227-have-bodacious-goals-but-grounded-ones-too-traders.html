@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Unrealistic Trading Goals</p>
-<p>Many traders set massive, ambitious goals but fail to ground them in reality, leading to an immediate conflict between aspiration and execution. When the inevitable struggle begins, this misalignment often triggers feelings of demoralization, making success feel unattainable. This emotional cost is what ultimately prevents traders from achieving their "bodacious" goals.  * <strong>Balance Ambition with Reality:</strong> While you should "swing for the fences," high-reaching goals must be tempered with a pragmatic assessment of all factors involved, especially time.</p>
+                <h3>The Hidden Cost of Unrealistic Trading Goals</h3>
+<p>Many traders set massive, ambitious goals but fail to ground them in reality, leading to an immediate conflict between aspiration and execution. When the inevitable struggle begins, this misalignment often triggers feelings of demoralization, making success feel unattainable. This emotional cost is what ultimately prevents traders from achieving their "bodacious" goals.</p>
 <ul>
-<li><strong>Avoid Demoralization:</strong> When you neglect the realistic path to achievement, you set yourself up to feel like your efforts are insufficient, leading to burnout and quitting.</li>
-<li><strong>Honor Both the Dream and the Process:</strong> True mastery requires honoring both the aspirational vision and the necessary, grounded steps required to move toward it.<strong>Actionable Takeaway:</strong> When setting any new trading goal, explicitly detail the anticipated timeline and the specific non-market factors (e.g., skill development, emotional capacity) required to achieve it.keep your feet on the ground while reaching for the stars</li>
+<li>**Balance Ambition with Reality:*</li>
+<li>While you should "swing for the fences," high-reaching goals must be tempered with a pragmatic assessment of all factors involved, especially time.</li>
+<li>**Avoid Demoralization:*</li>
+<li>When you neglect the realistic path to achievement, you set yourself up to feel like your efforts are insufficient, leading to burnout and quitting.</li>
+<li>**Honor Both the Dream and the Process:*</li>
+<li>True mastery requires honoring both the aspirational vision and the necessary, grounded steps required to move toward it.**Actionable Takeaway:*</li>
+<li>When setting any new trading goal, explicitly detail the anticipated timeline and the specific non-market factors (e.g., skill development, emotional capacity) required to achieve it.keep your feet on the ground while reaching for the stars</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>when I was a kid I used to listen to Casey kasm on the weekends and he had a great catchphrase he&#x27;d close his segment out with keep your feet on the ground while reaching for the stars and I want to say that one to you Traders I love when the clients I work with set bodish goals for themselves but I want you to always be sure when you&#x27;re setting a bodish goal it&#x27;s also tempered with keeping your feet on the ground I can&#x27;t tell you how many times Traders tell me what their goals are are they don&#x27;t consider in all the factors of how long those goals may take to acquire be sure that you have your feet on the ground when you coming up with goals for yourself yes swing for the fences but both have to be honored or you&#x27;ll just set yourself up for feeling like no matter what you do it isn&#x27;t enough and feeling demoralized which will keep you from actually reaching the goal in the first place</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

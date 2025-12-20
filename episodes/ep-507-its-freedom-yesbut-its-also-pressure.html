@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Emotional Burden of Unlimited Trading Freedom</p>
-<p>Trading is one of the few careers that offers unlimited potential and complete creative flexibility every single day. While this sounds like the ultimate freedom, the lack of external constraints can quickly become an overwhelming psychological pressure. This environment, where there is "no limit to how good you could do," often results in decision fatigue and self-sabotage rather than sustained peak performance.  - <strong>The Paradox of Potential</strong>: The feeling that every day *could* be your best day creates unrealistic expectations, forcing you to chase maximum results instead of focusing on consistent execution.</p>
+                <h3>The Emotional Burden of Unlimited Trading Freedom</h3>
+<p>Trading is one of the few careers that offers unlimited potential and complete creative flexibility every single day. While this sounds like the ultimate freedom, the lack of external constraints can quickly become an overwhelming psychological pressure. This environment, where there is "no limit to how good you could do," often results in decision fatigue and self-sabotage rather than sustained peak performance.  - <strong>The Paradox of Potential</strong>: The feeling that every day *could</p>
 <ul>
+<li>be your best day creates unrealistic expectations, forcing you to chase maximum results instead of focusing on consistent execution.</li>
 <li><strong>The Absence of Boundaries</strong>: Unrestricted creative flexibility eliminates the external structure that disciplined traders rely on to manage risk and maintain objectivity.</li>
 <li><strong>Internalizing Failure</strong>: Because there is "nothing stopping you," any failure is often internalized as a personal character flaw rather than a system flaw or a market event.Define and commit to a robust framework of rules and boundaries for your trading session to translate the infinite possibilities of the market into manageable, low-pressure steps.There's no limit to like how good you could do.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>The Wall Street Coach podcast. It&#x27;s kind of hard to think of a career that you walk in and like every day could be the best day you&#x27;ve ever had. There&#x27;s a 10 billion different trades you can make every single day. And like you have the creative flexibility to kind of do what you want to do inside of that. And to make the most out of what you have in front of you is pretty cool. There&#x27;s nothing stopping you. There&#x27;s no there&#x27;s no limit to like how good you could do. There&#x27;s there&#x27;s no barrier to entry on, you know, where are you going to grow to or do something, you know? It&#x27;s just a pretty cool environment for sure.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

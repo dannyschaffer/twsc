@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Unconventional Discipline: Finding Your Sacred Time Off-Screen</p>
-<p>Constant exposure to screens and market data leaves traders feeling frazzled and overwhelmed. This persistent state of mental overstimulation erodes the clarity and presence required for consistent, profitable decision-making. Finding a personalized way to truly "get centered" is a crucial, often overlooked, component of a winning strategy.  * <strong>The Necessity of Sacred Time</strong>: Spending all day on charts demands gifting yourself deliberate, non-market time to prevent emotional and mental burnout.</p>
+                <h3>The Unconventional Discipline: Finding Your Sacred Time Off-Screen</h3>
+<p>Constant exposure to screens and market data leaves traders feeling frazzled and overwhelmed. This persistent state of mental overstimulation erodes the clarity and presence required for consistent, profitable decision-making. Finding a personalized way to truly "get centered" is a crucial, often overlooked, component of a winning strategy.</p>
 <ul>
+<li><strong>The Necessity of Sacred Time</strong>: Spending all day on charts demands gifting yourself deliberate, non-market time to prevent emotional and mental burnout.</li>
 <li><strong>Nature as a Tool for Centering</strong>: For those who feel disconnected from standard forms of practice, nature offers a reliable, accessible way to ground the nervous system and regain focus.</li>
 <li><strong>The Trading Edge of Presence</strong>: Dedicating time to self-care is not a luxury; it is the fundamental way to ensure you show up to the market present and ready to execute your plan.Make it non-negotiable to step away from your workstation and spend time outdoors daily to actively downregulate your nervous system."Especially when you're on screens all day, you need to get yourself some sacred time."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>one of the ways I experience my version of church is in nature I do a lot of hiking because I live in Hawaii I&#x27;m very fortunate to have some gorgeous hikes and walks that just help me get centered when I feel frazzled and overwhelmed one of the books I want to recommend for those who feel perhaps standard versions of church or synagogue or Temple or mosque don&#x27;t match them is a beautiful book from Victoria LS who was actually on my podcast a couple years ago in a book called Church of the Wild and the subtitle is how nature invites us into the sacred here&#x27;s the thing guys especially when you&#x27;re on screens all day you need to get yourself some sacred time and that looks different for everybody but be sure you gift yourself with that sacred time</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

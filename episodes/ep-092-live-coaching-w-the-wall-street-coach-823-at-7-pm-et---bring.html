@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Your Trading Baggage Needs to be Pulled Apart Live</p>
-<p>Traders who try to solve deep emotional conflicts alone often remain stuck, leading to persistent inconsistency. This special live coaching session focuses on addressing the psychological "baggage"—past losses, shame, or fear—that sabotages your strategy. The goal is to move beyond chart analysis and directly dismantle the emotional loops holding you back.  * <strong>Premium Coaching Access</strong>: Benefit from insights and direct intervention typically reserved for clients who pay high hourly rates.</p>
+                <h3>Why Your Trading Baggage Needs to be Pulled Apart Live</h3>
+<p>Traders who try to solve deep emotional conflicts alone often remain stuck, leading to persistent inconsistency. This special live coaching session focuses on addressing the psychological "baggage"—past losses, shame, or fear—that sabotages your strategy. The goal is to move beyond chart analysis and directly dismantle the emotional loops holding you back.</p>
 <ul>
+<li><strong>Premium Coaching Access</strong>: Benefit from insights and direct intervention typically reserved for clients who pay high hourly rates.</li>
 <li><strong>Targeted Deconstruction</strong>: Learn the exact process for analyzing and breaking down the specific emotional patterns that lead to repeated, costly mistakes.Commit to showing up prepared to analyze a specific instance of self-sabotage or a recurring emotional loop.bring your baggage tomorrow and let's pull it apart</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>know I have clients that pay me 2 000 an hour and yet because I&#x27;ve loved his trading community so much I&#x27;m gonna be coaching live for free tomorrow on my YouTube channel join me on Wednesday 7 P.M Eastern on the 23rd of August for some live coaching bring your baggage tomorrow and let&#x27;s pull it apart</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

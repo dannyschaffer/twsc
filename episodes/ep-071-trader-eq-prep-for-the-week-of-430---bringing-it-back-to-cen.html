@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Sabotaging Your Focus: How to Re-Center Your Mind When Trading</p>
+                <h3>Stop Sabotaging Your Focus: How to Re-Center Your Mind When Trading</h3>
 <p>When your trading mindset starts to spiral—overly worrying or complicating things—you risk emotional burnout and costly mistakes. These "inner gremlin" thoughts can be loud, leading you to self-shame and drawing you away from your disciplined process. Success in the markets depends on your ability to redirect your mind with patience, not punishment.  - <strong>The Puppy Brain Metaphor</strong>: Your mind, much like a puppy learning to be trained, requires gentle redirection back to center, not harsh self-criticism or "drop-kicking."</p>
 <ul>
 <li><strong>Neutrality Over Shame</strong>: When worrying thoughts arise, meeting them with judgment only exacerbates the problem; true control is achieved by meeting them with <strong>as much neutrality as possible</strong>.</li>
 <li><strong>Identifying the Downward Spiral</strong>: While some thoughts offer caution, when you are in a complete downward spiral, it is impossible to hear the underlying wisdom that may be present.Actionable Takeaway:</li>
 </ul>
 <p>Practice noticing when your thoughts are spinning out of control and consciously choose to meet them with self-empathy instead of frustration.The key here is to not beat yourself up for having thoughts that are destructive to you but come from a place of more understanding and self-empathy</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is Kim and carton of Trader herojourney.com and this is my Sunday night prep for the week of May 1st I put up a quote the other day of Annie Lamont that talked about how your brain is like a puppy who&#x27;s learning how to be you know uh trained and you wouldn&#x27;t drop kick a puppy if it pedals on the floor you would gently bring it back to the paper and what I see that as is a beautiful way to think of your mind when it starts to have those inner Gremlin or inner Saboteur thoughts when it starts to overly worry and complicate things don&#x27;t get mad don&#x27;t make it wrong don&#x27;t shame your mind but just bring it back to Center to the police that you know you need to be to be in the place of making thoughts thoughts are going to constantly happen to us all day long but noticing if they&#x27;re going down a particular rapid hole is the key there are times when our thoughts are trying to caution us but if we&#x27;re in a complete kind of downward spiral it&#x27;s hard to even hear the wisdom that</p>
-<p>is trying to come forth of all those thoughts so that is my request for this week to you see if you can notice when those thoughts seem to be going out of control try to meet them with as much neutrality as possible and bring yourself back to center it doesn&#x27;t mean you&#x27;re going to always have thoughts that are pleasant but the key here is to not beat yourself up for having thoughts that are destructive to you but come from a place of more understanding and self-empathy all right let me know how it goes</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

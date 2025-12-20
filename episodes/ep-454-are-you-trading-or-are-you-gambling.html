@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,11 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Rolling the Dice: The Difference Between Trading and Gambling</p>
+                <h3>Stop Rolling the Dice: The Difference Between Trading and Gambling</h3>
 <p>If you cannot clearly articulate your trading edge, you are operating on guesswork, not strategy. This lack of certainty turns your serious pursuit into emotional gambling, making consistent profitability impossible.  - <strong>Define Your Edge</strong>: Your edge is the statistical reason you expect to win more than you lose over a significant period. It is quantifiable and objective.</p>
 <ul>
 <li><strong>Guesses Don't Pay Bills</strong>: Without a defined edge, every trade is reduced to a coin flip, which is an unsustainable model for generating wealth.Identify and document the precise conditions and probabilities that must be present before you enter your next trade."Edge isn't just a buzzword, it's the reason you win more than you lose over time."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you don&#x27;t know your Edge in trading then you aren&#x27;t trading you&#x27;re gambling here&#x27;s how to stop rolling the dice and Edge isn&#x27;t just a buzzword it&#x27;s the reason you win more than you lose over time without it every trade is a guess and guess is they don&#x27;t pay the bills</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +250,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

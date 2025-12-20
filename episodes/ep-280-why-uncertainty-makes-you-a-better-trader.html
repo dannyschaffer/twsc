@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Cost of Certainty: Why Overconfidence Blinds You to Market Variables</p>
+                <h3>The High Cost of Certainty: Why Overconfidence Blinds You to Market Variables</h3>
 <p>The biggest threat to your P&L isn't market volatility—it's the conviction that you are infallibly right. When you become too certain, your mind screens out critical warning signs and curveballs, leading to preventable mistakes. This overconfidence acts as a psychological blind spot that consistently costs you profit.</p>
 <p>Key Insights:  - <strong>Certainty is a blinding force</strong>: Anytime you become too convinced that your analysis is perfect, you are psychologically blinded to simple market factors that contradict your view.</p>
 <ul>
 <li><strong>Uncertainty drives vigilance</strong>: Just as experienced professionals must maintain a slight uncertainty to perform flawlessly, traders benefit from doubt, as it keeps them hyper-aware of <strong>all variables</strong>.</li>
 <li><strong>The Trader's Goal</strong>: Your primary objective is not to be "right," but to stay receptive and "in tune to all the variables" before execution.Actionable Takeaway: Before taking a position, write down two specific market events or pieces of data that would invalidate your current trade thesis.a little bit of uncertainty being in the space allowed them to actually be more in tune to all the variables</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>anytime you become too convinced you are right you will potentially keep yourself blinded to a curveball that might be right there for you to see surgeons often if they were very adaptt at what they did very experienced would sometimes Overlook very simple things because they were blinded by their confidence and what they realized was that a little bit of uncertainty being in the space allowed them to actually be more in tune to all the variables and I want you as a trador to be in tune to all the variables before you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

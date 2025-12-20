@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Power of Appreciative Inquiry in Trading</p>
-<p>If you are stuck obsessing over every missed entry or failed strategy, you are inadvertently programming your mind for failure. Focusing solely on your mistakes is mentally draining and obscures the profitable behaviors that are already working for you. True trading mastery requires a strategic shift in perspective, moving from problem-solving to replicating success.  - <strong>Identify High-Performance Moments:</strong> Employ the strategy of Appreciative Inquiry by actively seeking out and documenting times when you felt confident, executed flawlessly, and achieved positive results.</p>
+                <h3>The Hidden Power of Appreciative Inquiry in Trading</h3>
+<p>If you are stuck obsessing over every missed entry or failed strategy, you are inadvertently programming your mind for failure. Focusing solely on your mistakes is mentally draining and obscures the profitable behaviors that are already working for you. True trading mastery requires a strategic shift in perspective, moving from problem-solving to replicating success.  - **Identify High-Performance Moments:*</p>
 <ul>
-<li><strong>Amplify Proven Behaviors:</strong> Instead of dedicating all your energy to fixing what is "wrong," focus on understanding <strong>what works</strong> and intentionally increasing the frequency of those successful actions.</li>
-<li><strong>Consistency Follows Clarity:</strong> When you gain clarity on your strengths and best practices, your less effective habits naturally begin to fall away because your positive actions are prioritized.<strong>Actionable Takeaway:</strong> Systematically document the specific triggers, routines, and emotional states that precede your most successful trades."Turn up the volume on what you do right and all the stuff you don't do right Falls by the wayside"</li>
+<li>Employ the strategy of Appreciative Inquiry by actively seeking out and documenting times when you felt confident, executed flawlessly, and achieved positive results.</li>
+<li>**Amplify Proven Behaviors:*</li>
+<li>Instead of dedicating all your energy to fixing what is "wrong," focus on understanding **what works*</li>
+<li>and intentionally increasing the frequency of those successful actions.</li>
+<li>**Consistency Follows Clarity:*</li>
+<li>When you gain clarity on your strengths and best practices, your less effective habits naturally begin to fall away because your positive actions are prioritized.**Actionable Takeaway:*</li>
+<li>Systematically document the specific triggers, routines, and emotional states that precede your most successful trades."Turn up the volume on what you do right and all the stuff you don't do right Falls by the wayside"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I want you to find and discover like I spoke to before appreciative inquiry I want you to find and start to focus on what have you done well this year what do you do right what works what gives you some sort of like bounce in your step when you feel really proud of yourself and then do all of that more often find all the things you do well all the things you do right and take that volume dial and put it on 10 guys turn up the volume on what you do right and all the stuff you don&#x27;t do right Falls by the wayside</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

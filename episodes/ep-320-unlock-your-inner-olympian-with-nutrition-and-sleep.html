@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Performance Edge: Why You Must Treat Trading Like the Olympics</p>
-<p>Do you approach your trading day with the same preparation as a world-class athlete? Many skilled traders severely undermine their performance by neglecting basic physical needs like sleep and nutrition. Treating your body with disrespect guarantees suboptimal mental clarity and decision-making on the trading desk.  - <strong>The Olympian Mindset</strong>: Stop viewing trading as just a technical exercise; recognize that optimal performance requires the same level of <strong>physical preparation</strong> as elite athletics.</p>
+                <h3>The Hidden Performance Edge: Why You Must Treat Trading Like the Olympics</h3>
+<p>Do you approach your trading day with the same preparation as a world-class athlete? Many skilled traders severely undermine their performance by neglecting basic physical needs like sleep and nutrition. Treating your body with disrespect guarantees suboptimal mental clarity and decision-making on the trading desk.  - <strong>The Olympian Mindset</strong>: Stop viewing trading as just a technical exercise; recognize that optimal performance requires the same level of **physical preparation*</p>
 <ul>
-<li><strong>Sleep and Nutrition are KPIs</strong>: Your focus, capacity, and emotional control are directly tied to how well you <strong>prioritize rest and fuel</strong> before a high-stakes trading day.</li>
+<li>as elite athletics.</li>
+<li><strong>Sleep and Nutrition are KPIs</strong>: Your focus, capacity, and emotional control are directly tied to how well you **prioritize rest and fuel*</li>
+<li>before a high-stakes trading day.</li>
 <li><strong>Holistic Alignment</strong>: You must align your lifestyle choices with your goals, ensuring that every habit moves you toward the successful <strong>outcomes you desire</strong>.</li>
 </ul>
-<div class="actionable-takeaway"><strong>Actionable Takeaway:</strong> Establish a mandatory 30-minute period before bed to completely shut down screens and avoid caffeine, guaranteeing a foundation of restorative sleep for the next trading session."I want you to see that you have to move yourself in the direction in every way possible to have the outcomes you want from yourself"</div>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you think of yourself as an Olympian you probably would not be having McDonald&#x27;s before a massive crazy hectic uh treating Tech and yet how many treaters prioritize their nutrition how many treaters make sure they have a good night&#x27;s sleep before a very active day that doesn&#x27;t always happen and I want you to see that you have to move yourself in the direction in every way possible to have the outcomes you want from yourself</p>
-                </div>
+<div class="actionable-takeaway"><strong>Takeaway:</strong><br>Establish a mandatory 30-minute period before bed to completely shut down screens and avoid caffeine, guaranteeing a foundation of restorative sleep for the next trading session."I want you to see that you have to move yourself in the direction in every way possible to have the outcomes you want from yourself"</div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

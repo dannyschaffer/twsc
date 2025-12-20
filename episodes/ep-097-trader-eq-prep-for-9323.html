@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Staring at the Charts: Why Your Trading Needs a Break</p>
+                <h3>Stop Staring at the Charts: Why Your Trading Needs a Break</h3>
 <p>When you are deeply invested in trading, it feels like continuous effort is the only path to improvement. However, this intense focus can easily contract your mental vision, making you less effective and prone to burnout. To stay truly fresh and achieve long-term mastery, you must learn to step away and intentionally broaden your perspective.  - <strong>Vision Contraction</strong>: Constantly being in the "headspace of trading" is counterproductive and causes your perspective to narrow, preventing critical, holistic market analysis.</p>
 <ul>
 <li><strong>The Need for Freshness</strong>: To maintain peak cognitive function, you must integrate non-trading activities that allow your mind to reset, ensuring you approach the charts with clarity and objectivity.</li>
 <li><strong>Broaden Your Perspective</strong>: Mixing up your routine is necessary for acquiring the broader vision required to understand complex market dynamics, a step impossible when you are constantly immersed.Schedule a definitive period this week to completely disconnect from all trading-related news and charts.you have to mix it up to stay fresh it's very easy to start to have your vision get very contracted</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I love how everybody this is my Trader EQ prep for the week of September 3rd Labor Day of course is this Monday and here&#x27;s my suggestion mix it up when you love something as much as you love treating it can become very easy to get stuck in just the headspace of trading and what I want to recommend to you is that you have to mix it up to stay fresh it&#x27;s very easy to start to have your vision get very contracted you want to get better you have a limited amount of time to get better however part of why you have to mix it up is because you need to keep broadening the vision in which you look at the markets with and that doesn&#x27;t happen if your head is always in the markets</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

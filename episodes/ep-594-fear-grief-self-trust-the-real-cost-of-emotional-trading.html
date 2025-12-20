@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Losing Your Self-Trust: How to Break Free From Fear and Greed</p>
-<p>Exiting a trade too early out of fear or holding too long out of greed costs you more than just capital. These knee-jerk reactions erode your self-trust, which is the most expensive loss a trader can incur. The path to consistency isn't about ignoring these feelings, but developing the inner grit to remain focused under pressure.  * <strong>The Hidden Cost of Reaction</strong>: When you trade based on fear or greed, the loss of capital is secondary to the psychological damage it inflicts on your belief in your own ability.</p>
+                <h3>Stop Losing Your Self-Trust: How to Break Free From Fear and Greed</h3>
+<p>Exiting a trade too early out of fear or holding too long out of greed costs you more than just capital. These knee-jerk reactions erode your self-trust, which is the most expensive loss a trader can incur. The path to consistency isn't about ignoring these feelings, but developing the inner grit to remain focused under pressure.</p>
 <ul>
+<li><strong>The Hidden Cost of Reaction</strong>: When you trade based on fear or greed, the loss of capital is secondary to the psychological damage it inflicts on your belief in your own ability.</li>
 <li><strong>Build Emotional Fortitude</strong>: The key to sustainable success is strengthening your psychological defenses so you are no longer hijacked by momentary emotions.</li>
-<li><strong>Freedom From Knee-Jerk Reactions</strong>: True mastery means replacing impulse with intentional, disciplined action, moving past the need to be a 'trading robot.'Actionable Takeaway: Start tracking *why* you exited a trade (fear or greed) in your journal to identify the emotional patterns currently costing you self-trust.You're not going to ever be able to stop the emotion, but you don't have to be taken over by it.</li>
+<li><strong>Freedom From Knee-Jerk Reactions</strong>: True mastery means replacing impulse with intentional, disciplined action, moving past the need to be a 'trading robot.'Actionable Takeaway: Start tracking *why</li>
+<li>you exited a trade (fear or greed) in your journal to identify the emotional patterns currently costing you self-trust.You're not going to ever be able to stop the emotion, but you don't have to be taken over by it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Out of fear. Out of greed. Did you exit too early out of fear? Or did you hold on too long out of greed? Those moments are more expensive than they look because besides losing your capital, you lose your selfrust. I work with traders to build up their fortitude so that you can stop being hijacked. You&#x27;re not going to ever be able to stop the emotion, but you don&#x27;t have to be taken over by it. This isn&#x27;t about being a robot. It&#x27;s about being free from a kneejerk reaction that caused you. If you&#x27;re ready to develop that grit and fortitude, set up a call. Hey. Hey. Hey.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

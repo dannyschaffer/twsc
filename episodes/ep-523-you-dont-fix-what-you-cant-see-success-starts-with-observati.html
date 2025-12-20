@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Observation is the Real Shortcut to Trading Success</p>
-<p>The greatest barrier to consistent profitability isn't the market; it's the self-sabotaging pattern you fail to recognize within yourself. Apathy, avoidance, and the urge to quit often stem from an unobserved psychological loop. Until you truly see the problem—the root cause—you cannot generate sustainable change.  * <strong>Identify the Unseen Loop</strong>: Your most destructive trading patterns often lie in subtle emotions like apathy or the urge to "just give up." These are signals that must be <strong>noticed and tracked</strong>.</p>
+                <h3>Why Observation is the Real Shortcut to Trading Success</h3>
+<p>The greatest barrier to consistent profitability isn't the market; it's the self-sabotaging pattern you fail to recognize within yourself. Apathy, avoidance, and the urge to quit often stem from an unobserved psychological loop. Until you truly see the problem—the root cause—you cannot generate sustainable change.</p>
 <ul>
-<li><strong>The Power of Attentiveness</strong>: Like working out a muscle, psychological success is built by continuously <strong>paying attention</strong> to your internal state, not just the charts.</li>
-<li><strong>Success Starts with Seeing</strong>: Profitable breakthroughs are preceded by the discipline of self-observation, which allows you to identify emotional triggers that lead to loss.<strong>Actionable Takeaway</strong></li>
+<li><strong>Identify the Unseen Loop</strong>: Your most destructive trading patterns often lie in subtle emotions like apathy or the urge to "just give up." These are signals that must be <strong>noticed and tracked</strong>.</li>
+<li><strong>The Power of Attentiveness</strong>: Like working out a muscle, psychological success is built by continuously **paying attention*</li>
+<li>to your internal state, not just the charts.</li>
+<li><strong>Success Starts with Seeing</strong>: Profitable breakthroughs are preceded by the discipline of self-observation, which allows you to identify emotional triggers that lead to loss.**Actionable Takeaway*</li>
+<li>For the next 7 days, commit to being an active observer of yourself. Before and after every session, note down the specific emotional state you are in and whether you felt the urge to rush, freeze, or quit."Leave with the realization that you must become an observer of yourself."</li>
 </ul>
-<p>For the next 7 days, commit to being an active observer of yourself. Before and after every session, note down the specific emotional state you are in and whether you felt the urge to rush, freeze, or quit."Leave with the realization that you must become an observer of yourself."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>live coaching with the Wall Street coach. Some of what we talked about today, Liz and I were were talking about her noticing, right? Liz has been on the journey of noticing and I know that that is why she was able to notice what she noticed in these last 24 hours about her trading. that apathy, that sense of just like just giving up. It&#x27;s because she has been working at paying attention, paying attention, paying attention. And that is what if you guys leave with anything today, my hope is that you leave with that. Leave with the realization that you must become an observer of yourself, right? You must know</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

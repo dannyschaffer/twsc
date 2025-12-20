@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Isolation: Why You Need Trading Community to Survive</p>
+                <h3>The Hidden Cost of Isolation: Why You Need Trading Community to Survive</h3>
 <p>You are up against some of the smartest people in the world, and trying to navigate the complex psychological landscape of trading alone is self-sabotage. Many experienced traders unconsciously steal the vital gift of support from themselves, leaving them prone to justifying losses and emotional burnout. To thrive, you must stop operating in a vacuum.  - <strong>Avoid the Justification Trap</strong>: Seeking validation from people who do not understand trading forces you to defend your decisions rather than honestly review them, which halts progress.</p>
 <ul>
 <li><strong>Emotional Capacity is Non-Negotiable</strong>: Trading requires consistent emotional support from peers who genuinely understand the high-stakes environment.</li>
-<li><strong>Find Navigators, Not Cheerleaders</strong>: Your true community should consist of other traders who are currently navigating—or have successfully navigated—the exact psychological challenges you are facing.<strong>Actionable Takeaway</strong></li>
+<li><strong>Find Navigators, Not Cheerleaders</strong>: Your true community should consist of other traders who are currently navigating—or have successfully navigated—the exact psychological challenges you are facing.**Actionable Takeaway*</li>
+<li>Give yourself the gift of genuine emotional support by actively seeking out and engaging with a community of fellow traders before the year ends."you do need to have emotional support you do need to have a community of other traders who are navigating and have navigated the very thing you're in the middle of"</li>
 </ul>
-<p>Give yourself the gift of genuine emotional support by actively seeking out and engaging with a community of fellow traders before the year ends."you do need to have emotional support you do need to have a community of other traders who are navigating and have navigated the very thing you're in the middle of"</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you are up against the smartest people in the world and you can handle it you can navigate it but you&#x27;ve got to be able to have support and if you steal that from yourself which a lot of Traders do and I&#x27;m not talking about looking for support with people that don&#x27;t understand trading I wouldn&#x27;t advise that I don&#x27;t think that&#x27;s a smart thing to do if anything you&#x27;re going to be justifying it and defending it and you know trying to stick up for it or stick up for yourself that you don&#x27;t need more of but you do need to have emotional support you do need to have a community of other traders who are navigating and have navigated the very thing you&#x27;re in the middle of give yourself that gift and if you haven&#x27;t seriously consider changing it up as we come into 2025</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

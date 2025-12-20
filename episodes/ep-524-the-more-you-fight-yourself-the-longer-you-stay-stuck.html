@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,24 +193,19 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Fighting Yourself: The Neurobiology of Self-Sabotage</p>
+                <h3>Stop Fighting Yourself: The Neurobiology of Self-Sabotage</h3>
 <p>Many traders confuse harsh self-criticism with discipline, believing they must punish themselves to improve. However, demonizing yourself for trading mistakes forces your entire body and nervous system into a state of contraction. This fear-based contraction is precisely what blocks the relaxed flow state necessary for genuine healing and lasting psychological change.</p>
-<p>Key Insights:  * <strong>Self-Criticism = Contraction:</strong> Negative self-talk, such as yelling or cursing at yourself, shifts your system into a survival mode of tightness and fear.</p>
+<p>Key Insights:</p>
 <ul>
-<li><strong>Healing Requires Flow:</strong> Creating long-lasting change in trading psychology demands a <strong>relaxed, flow state</strong>, not one driven by internal conflict.</li>
-<li><strong>The Shrinking Effect:</strong> When you talk to yourself in a nasty way, your ability to observe and learn shrinks, mirroring the defensive reaction seen when children or animals are yelled at.Actionable Takeaway:</li>
+<li>**Self-Criticism = Contraction:*</li>
+<li>Negative self-talk, such as yelling or cursing at yourself, shifts your system into a survival mode of tightness and fear.</li>
+<li>**Healing Requires Flow:*</li>
+<li>Creating long-lasting change in trading psychology demands a <strong>relaxed, flow state</strong>, not one driven by internal conflict.</li>
+<li>**The Shrinking Effect:*</li>
+<li>When you talk to yourself in a nasty way, your ability to observe and learn shrinks, mirroring the defensive reaction seen when children or animals are yelled at.Actionable Takeaway:</li>
 </ul>
 <p>Recognize that fighting yourself keeps you stuck; focus first on self-regulation and gentle self-talk to de-contract your system before you analyze a mistake or implement a new strategy.</p>
 <p>Quote:That is not the place that you will ever be able to create longlasting change in because our bodies need to be in a relaxed flow state for us to be able to heal.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>live coaching without the Wall Street coach. And if you are coming from a place of making yourself wrong, if you&#x27;re coming from a place of, you know, demonizing yourself, making fun of yourself, criticizing yourself, yelling at yourself, cursing at yourself. You are putting your whole body, your whole system into a further place of contraction. That is not the place that you will ever be able to create longlasting change in because our bodies need to be in a relaxed flow state for us to be able to heal. But if we&#x27;re contracted and we&#x27;re tight, I mean, just think about it. When you talk to yourself really in a nasty way, everything shrinks, right? If you ever see a little doggy getting yelled at or a kid getting yelled at, what happens? They shrink.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +258,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Pain You Avoid Is the Strength You Miss</p>
+                <h3>The Pain You Avoid Is the Strength You Miss</h3>
 <p>We often seek to remove pain, friction, and struggle from our trading journey, believing an easier path leads to faster results. However, attempting to shortcut the difficult phases prevents you from developing the essential psychological capacity needed for sustained success. Avoiding necessary struggle leads to long-term fragility, not trading freedom.  - The <strong>Cocoon Effect</strong>: Just as the butterfly needs the struggle of the cocoon to develop strength, traders must endure market friction—losses, fear, and emotional pressure—to solidify their mental framework.</p>
 <ul>
 <li>The <strong>Flawed Savior</strong>: Trying to "save" yourself from every small struggle (e.g., constantly adjusting stop losses or over-managing positions) is often the very act that sabotages the long-term profitability of your system.</li>
 <li><strong>Pain as Capacity Builder</strong>: The difficult process of enduring and moving through losses is what builds the emotional capacity required to handle larger wins and subsequent drawdowns later in your career.When facing a minor setback or emotional struggle, resist the immediate urge to seek an external "easy fix"; instead, observe the feeling and understand what capacity it is forcing you to build.that painful process that butterfly has to go through squeezes all the liquid out of its wings which makes it possible for that butterfly to fly so</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the man just wanted to help the butterfly was struggling he could see that that butterfly was trying so valiantly to get through its cocoon but it wasn&#x27;t succeeding and the man thought if only I could make the hole just a little bit bigger then maybe this butterfly who was once this caterpillar will not have as much trouble getting out of the Cocoon and so he ripped just ever so slightly for this butterfly to come out quicker and the Butterfly did and the Butterfly could not fly because you see that painful process that butterfly has to go through squeezes all the liquid out of its wings which makes it possible for that butterfly to fly so</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

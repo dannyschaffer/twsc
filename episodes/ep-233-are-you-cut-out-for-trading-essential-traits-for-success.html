@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,25 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Are You Psychologically Prepared to Be an Excellent Trader?</p>
+                <h3>Are You Psychologically Prepared to Be an Excellent Trader?</h3>
 <p>Many traders focus solely on technical strategy, but true longevity hinges on personal fortitude. If you haven't assessed your core psychological makeup, you risk falling into avoidable emotional potholes that sabotage performance. Success requires mastering yourself long before you master the charts.</p>
-<p>Key Insights:  * <strong>Discomfort Is Mandatory</strong>: You must possess the psychological capacity to voluntarily sit in discomfort, as this resilience prevents panic and allows for objective execution during periods of high volatility.</p>
+<p>Key Insights:</p>
 <ul>
+<li><strong>Discomfort Is Mandatory</strong>: You must possess the psychological capacity to voluntarily sit in discomfort, as this resilience prevents panic and allows for objective execution during periods of high volatility.</li>
 <li><strong>Emotional Intelligence Is Foundational</strong>: Failure to work on your emotional intelligence guarantees finding "pothole after pothole," as it is the critical piece that governs risk assessment and trade management.</li>
 <li><strong>Losses Are Not Personal Failures</strong>: Excellent traders separate their personal identity from their P\&L, viewing losses as simply part of the mathematical equation rather than a source of deep insecurity or shame.Actionable Takeaway: Commit to taking 100% responsibility for everything that happens between you and the market, starting by acknowledging the places where you still react instead of respond.Are you able to change your mind without a funeral are you able able to always remain unattached to the outcome these are the questions I really hope you'll ask yourself</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I&#x27;ve written a list of the things that you need to have in place to be an excellent Trader you need to have competence and competency takes a longer time than most traitors realize even those who are sophisticated as they get more sophisticated they realize wow I thought I was so sophisticated but actually I was just still a beginner you also need to have a supportive Community I can&#x27;t tell you or underscore how important this is this is of critical importance because doing it alone is just not necessary today and having a supportive encouraging Community can make or break you please do yourself the service to get that right out of the gate I have one called Trader Hero Journey and I&#x27;d love you to be a part of that Discord room but go and find one no matter what emotional intelligence you absolutely have to be an incredibly emotionally intelligent person if you haven&#x27;t done any work on your emotional intelligence you&#x27;re going to be just finding pothole after pothole be sure you develop this because it is a critical foundational piece deep and wide respect and understanding for risk this too gets completely undervalued</p>
-<p>but really understanding the importance of risk the mathematical equation of the risk that you can and cannot take is of critical importance import if you want to be an excellent traitor an ability to be in discomfort if you can&#x27;t deal with it when somebody steals a parking spot in front of you how the hell are you going to deal with it when the market or somebody on the other side of your trade steal something from you being able to be with discomfort is an incredibly important foundational piece and if you don&#x27;t have that already you have to really ask yourself are you cut out to be a Trader and abil to not take loss personally there are traders who talk about how low their win rates are and that they&#x27;re fine with that because they know that loss is part of the game but if you take loss personally if you really feel insecure with it if you&#x27;re somebody who&#x27;s going to focus just on the p&amp;l and just on whether it&#x27;s a red day and not be able to sleep you have to really question am I really up for this because that is</p>
-<p>part of the journey also fortitude do you have it do you have a strong stomach do you have the concept of patience do you have the concept of time if you don&#x27;t again you have to ask yourself am I actually up for this do you have a sense of humor do you take yourself way too seriously wheo if you do that&#x27;s going to be costly can you hold it Loosely like 308 specials saying way back when I was in a high school can you hold it Loosely not too tight and not too W Wiggly you need to be able to hold on and not let go are you able to have humility are you able to have tolerance are you able to have a growth mindset do you have a Love of the Game do you have a sense of curiosity are are you always looking to understand the market better and to improve your skills are you open-minded are you awake are are you aware are you willing to see the shadow side to yourself the places where you still get triggered the places where you react instead of respond without defending them but</p>
-<p>a a willingness to say oh look at that I still have some work to do on myself are you able to take 100% responsibility for everything anything that happens with you and the market are you able to be discriminating and not just take trades willy-nilly but to actually spend the time the hours the screen time at getting your strategy honed and making sure it&#x27;s as Flawless as it possibly can be from a human being are you able to voluntarily sit in discomfort these are the questions you have to ask yourself are you comfortable not knowing are you curious are you able to be a Seeker are you able to change your mind without a funeral are you able able to always remain unattached to the outcome these are the questions I really hope you&#x27;ll ask yourself because all of these are things that can make or break a Trader at being an excellent Trader</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -294,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

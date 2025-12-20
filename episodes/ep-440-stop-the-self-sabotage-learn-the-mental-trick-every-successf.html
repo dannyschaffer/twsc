@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to End Self-Sabotage: The Mental Trick That Changes Everything</p>
-<p>Self-sabotage in trading is often rooted in a core conflict between your personal agenda and the objective reality the market is presenting. This internal friction, or "resistance," stalls your progress and causes avoidable losses. The key to breaking this pattern lies not in strategy, but in absolute, unflinching self-honesty.  * Self-sabotage is defeated by a willingness to be <strong>100% honest with yourself</strong>.</p>
+                <h3>How to End Self-Sabotage: The Mental Trick That Changes Everything</h3>
+<p>Self-sabotage in trading is often rooted in a core conflict between your personal agenda and the objective reality the market is presenting. This internal friction, or "resistance," stalls your progress and causes avoidable losses. The key to breaking this pattern lies not in strategy, but in absolute, unflinching self-honesty.</p>
 <ul>
-<li>Successful traders recognize days when they have a <strong>personal agenda</strong> and are actively resisting the market's current truth.</li>
+<li>Self-sabotage is defeated by a willingness to be <strong>100% honest with yourself</strong>.</li>
+<li>Successful traders recognize days when they have a **personal agenda*</li>
+<li>and are actively resisting the market's current truth.</li>
 <li>The psychological technique of simply noticing your internal resistance leads directly to the core principle of <strong>self-responsibility</strong>.Practice simply noticing when you are resisting what the market is giving you, without immediate judgment or attempting to force a trade.simply notice that you're in resistance to whatever the market is giving you that day that in my opinion is called self-responsibility</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I want you to stop self-sabotaging how do you do that well you have to master a trick that every successful Trader uses and that is a willingness to be 100% honest with yourself there are days when you&#x27;re going to be having an agenda there are days you&#x27;re going to resist what the market is giving you on those days you have to be willing to notice simply notice Rick Carson&#x27;s famous line simply notice that you&#x27;re in resistance to whatever the market is giving you that day that in my opinion is called self-responsibility when you do that you will watch the entire game completely transform</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

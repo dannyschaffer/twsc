@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Emotional Tracking is the Ultimate Trading Edge</p>
-<p>Many traders attempt to push down strong feelings, believing that emotional suppression equals control. However, allowing your emotions—anger, love, or hate—to influence your decisions leads to hormonal reactions and erratic trading behavior that costs you money. If you find yourself consistently losing, the true source of your struggle is likely hidden within your untracked psychological patterns.  * <strong>Emotional Patterns Hold the Gold</strong>. Your feelings before, during, and after a trade are critical data points that charts cannot provide.</p>
+                <h3>Why Emotional Tracking is the Ultimate Trading Edge</h3>
+<p>Many traders attempt to push down strong feelings, believing that emotional suppression equals control. However, allowing your emotions—anger, love, or hate—to influence your decisions leads to hormonal reactions and erratic trading behavior that costs you money. If you find yourself consistently losing, the true source of your struggle is likely hidden within your untracked psychological patterns.</p>
 <ul>
+<li><strong>Emotional Patterns Hold the Gold</strong>. Your feelings before, during, and after a trade are critical data points that charts cannot provide.</li>
 <li><strong>Suppression is Not Mastery</strong>. Trying to eliminate your emotions entirely is impossible; the key is to observe and utilize them as psychological information.</li>
 <li>The market often reflects your <strong>internal state</strong>, revealing patterns that lead to self-sabotage.Actionable Takeaway:</li>
 </ul>
 <p>Write down precisely what you felt immediately before, during, and after your next trade. This psychological data is where real mastery begins.Most traders keep journals full of entries like dates and tickers, but they often skip the most important part: emotions.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>your emotion, babe. The outpouring of all the emotions that all of us carry. You let your emotions take over your hormones kick in. You&#x27;re riding the cotton pony. You must learn not to let your emotions You got to take all your emotions, all your anger, all your love, all your hate, and push it way down here. Most traders keep journals full of entries like dates and tickers, but they often skip the most important part, emotions. Write down what you felt before, during, and after a trade. That&#x27;s where the gold is. Your emotions reveal patterns that your charts never</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

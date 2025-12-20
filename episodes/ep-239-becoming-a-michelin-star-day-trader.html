@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Michelin Star Method: Why Patience is the Only Ingredient for Trading Mastery</p>
-<p>Many traders approach the market expecting instant gratification, viewing success as a quick delivery rather than a finely crafted process. This impatience often leads to burnout and a cycle of short-term thinking, preventing the deep commitment required for sustainable profitability.  - <strong>Trading is a Craft, Not a Commodity:</strong> True excellence in trading, like a Michelin-starred meal, demands immense <strong>patience and time</strong> invested into every detail of your preparation and execution.</p>
+                <h3>The Michelin Star Method: Why Patience is the Only Ingredient for Trading Mastery</h3>
+<p>Many traders approach the market expecting instant gratification, viewing success as a quick delivery rather than a finely crafted process. This impatience often leads to burnout and a cycle of short-term thinking, preventing the deep commitment required for sustainable profitability.  - **Trading is a Craft, Not a Commodity:*</p>
 <ul>
-<li><strong>Reject the Overnight Expectation:</strong> You cannot rush mastery; the quality of your results directly correlates with the long-term, deliberate <strong>investment you make in your process</strong>.Start treating your trading plan reviews and journaling sessions with the same reverence and time commitment you would expect from a world-class chef perfecting a recipe.don't expect your trading to happen overnight look at your trading as though you were building a Michelin star Trader within yourself</li>
+<li>True excellence in trading, like a Michelin-starred meal, demands immense **patience and time*</li>
+<li>invested into every detail of your preparation and execution.</li>
+<li>**Reject the Overnight Expectation:*</li>
+<li>You cannot rush mastery; the quality of your results directly correlates with the long-term, deliberate <strong>investment you make in your process</strong>.Start treating your trading plan reviews and journaling sessions with the same reverence and time commitment you would expect from a world-class chef perfecting a recipe.don't expect your trading to happen overnight look at your trading as though you were building a Michelin star Trader within yourself</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Have You Ever Had The Good Fortune to eat at a Michelin star restaurant I have and I can tell you it is a meal you save her with every bite what I want you to realize is that part of the reason why a beautiful restaurant serves such delicious food is because of all the patience and time that&#x27;s put into every part of that meal the same is true for your Trading you would not expect a Michelin star restaurant to deliver your food in 5 minutes because you know that they&#x27;re putting so much into it and the same is true for you don&#x27;t expect your trading to happen overnight look at your trading as though you were building a Michelin star Trader within yourself</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

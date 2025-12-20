@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Beating Yourself Up: How Self-Criticism Fuels Your FOMO</p>
-<p>FOMO (Fear of Missing Out) is a universal experience in trading, but its discomfort is often intensified by an internal factor: intense self-criticism. When your inner critic is relentlessly beating you up, you become emotionally unstable, making you highly susceptible to chasing trades you shouldn't.  - FOMO is often triggered by an <strong>inner saboteur</strong> or inner critic that increases emotional distress.</p>
+                <h3>Stop Beating Yourself Up: How Self-Criticism Fuels Your FOMO</h3>
+<p>FOMO (Fear of Missing Out) is a universal experience in trading, but its discomfort is often intensified by an internal factor: intense self-criticism. When your inner critic is relentlessly beating you up, you become emotionally unstable, making you highly susceptible to chasing trades you shouldn't.  - FOMO is often triggered by an **inner saboteur*</p>
 <ul>
-<li>Overly harsh self-criticism unnecessarily <strong>winds you up</strong> and dramatically increases emotional instability.</li>
+<li>or inner critic that increases emotional distress.</li>
+<li>Overly harsh self-criticism unnecessarily **winds you up*</li>
+<li>and dramatically increases emotional instability.</li>
 <li>You can leverage criticism constructively but must avoid becoming <strong>overly self-critical</strong>.Focus on being less self-critical in your post-trade review process to immediately reduce the emotional discomfort that precedes FOMO.The reason FOMO happens is usually because there's an inner sabur or inner critic that is just beating the hell out of you.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>fomo is something every Trader faces and one of the things that you can keep in mind to try to mitigate the discomfort of fomo is to be sure that you&#x27;re looking at yourself with less self-criticism the reason fomo happens is usually because there&#x27;s an inner sabur or inner critic that is just beating the hell out of you being a little bit less self-critical you can be constructive in your criticism but once you start to get overly self-critical it&#x27;s just going to wind you up way more than you need to if you want some tools and tips on how to mitigate this please join me this Thursday on my YouTube channel at 400 p.m. Eastern where I&#x27;ll do some live coaching</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

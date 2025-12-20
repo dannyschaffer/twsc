@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The True Trading Edge: Mastering Emotional Self-Awareness</p>
-<p>If you constantly find yourself wondering why a profitable strategy suddenly failed, you are focusing on the wrong chart. The real cost of emotional trading is not just the money lost, but the repeated, unnecessary mistakes that prevent consistency. Developing deep self-awareness is the only path to identifying—and fixing—the root causes of your trading behavior.  * <strong>Emotional Pattern Recognition</strong>: By consistently tracking moments of strong emotion (both positive and negative), you create an internal database that helps you recognize behavioral triggers immediately.</p>
+                <h3>The True Trading Edge: Mastering Emotional Self-Awareness</h3>
+<p>If you constantly find yourself wondering why a profitable strategy suddenly failed, you are focusing on the wrong chart. The real cost of emotional trading is not just the money lost, but the repeated, unnecessary mistakes that prevent consistency. Developing deep self-awareness is the only path to identifying—and fixing—the root causes of your trading behavior.</p>
 <ul>
-<li><strong>Streamlined Decision Making</strong>: Over time, this self-awareness eliminates the need to analyze *why* you are upset or happy in the moment, allowing you to quickly identify the likely cause and stay disciplined.</li>
-<li><strong>Process over Outcome</strong>: Self-awareness shifts your focus from individual trade outcomes to fixing recurring emotional and mental "loops" that sabotage your overall process.<strong>Actionable Takeaway</strong></li>
+<li><strong>Emotional Pattern Recognition</strong>: By consistently tracking moments of strong emotion (both positive and negative), you create an internal database that helps you recognize behavioral triggers immediately.</li>
+<li><strong>Streamlined Decision Making</strong>: Over time, this self-awareness eliminates the need to analyze *why</li>
+<li>you are upset or happy in the moment, allowing you to quickly identify the likely cause and stay disciplined.</li>
+<li><strong>Process over Outcome</strong>: Self-awareness shifts your focus from individual trade outcomes to fixing recurring emotional and mental "loops" that sabotage your overall process.**Actionable Takeaway*</li>
+<li>After your next trade, regardless of the P\&L, immediately jot down the strongest emotion you felt and reflect briefly on what caused it."Jotting down what brought out a strong emotion and then just reflecting on that... will help you to become more self-aware."</li>
 </ul>
-<p>After your next trade, regardless of the P\&L, immediately jot down the strongest emotion you felt and reflect briefly on what caused it."Jotting down what brought out a strong emotion and then just reflecting on that... will help you to become more self-aware."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast. So, just like jotting down what brought out a strong emotion and then just reflecting on that and then just as you go throughout your trading career or, you know, anything, you&#x27;re just going to pick up these little tidbits and it&#x27;ll help you to become more self-aware. And, you know, you&#x27;ll kind of like gather those over time. And so, when something does go wrong in the future, you don&#x27;t even have to think about, you know, why you&#x27;re upset or why something went wrong or why you&#x27;re, you know, really happy. You&#x27;ll just be able to kind of know like because you&#x27;ve thought about in the past that you know it was likely something related to this. And then if you know a string of something&#x27;s going wrong or just like a series of bad events, you know, you can really pinpoint that and fix your process.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

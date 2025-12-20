@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Your Parking Spot: Why Daily Attachments Cost You Capital</p>
-<p>When significant capital is at stake, being emotionally unattached feels impossible. However, that attachment often stems from how you handle minor disappointments outside the market. Failing to address these everyday reactions directly sabotages your ability to maintain a clear, objective trading mindset.  * <strong>The External Mirror</strong>: How you react to minor setbacks in daily life—like losing a parking spot—directly mirrors your level of attachment and reactivity in a trade.</p>
+                <h3>Stop Trading Your Parking Spot: Why Daily Attachments Cost You Capital</h3>
+<p>When significant capital is at stake, being emotionally unattached feels impossible. However, that attachment often stems from how you handle minor disappointments outside the market. Failing to address these everyday reactions directly sabotages your ability to maintain a clear, objective trading mindset.</p>
 <ul>
+<li><strong>The External Mirror</strong>: How you react to minor setbacks in daily life—like losing a parking spot—directly mirrors your level of attachment and reactivity in a trade.</li>
 <li><strong>Dependency Principle</strong>: The ability to remain unattached when large capital is at stake is entirely dependent on your commitment to practicing non-attachment away from the screen.</li>
 <li><strong>React vs. Respond</strong>: Focus on monitoring your shift from automatic, high-emotion reactions to mindful, controlled responses in the face of all external events.Start using minor, non-market frustrations (like waiting in line or an external event not going as planned) as immediate psychological checkpoints to practice putting attachments down before they affect your P&L.The key to being able to be unattached in your trading is completely dependent on your ability to practice nonattachment outside of your trading.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you practice nonattachment outside of your trading if you don&#x27;t you might want to turn up the volume on that now you might say to me Kim how can I be unattached when there&#x27;s a lot of capital at stake well the key to being able to be unattached in your traing is completely dependent on your ability to practice nonattachment outside of your trading so what happens if somebody gets to that parking spot and you are actually there first how do you respond to that or do you react what happens if something external to trading doesn&#x27;t go the way you thought it would go how do you show up in the face of that these are all the places that are reminding us and reflecting back to us how attached we are the key is to find a way to put these attachments down</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Invisible Ceiling: How Knowing Too Much Limits Your Trading Potential</p>
-<p>Often, deep professional knowledge can transform into timidity, creating an "invisible ceiling" on your potential. This excessive carefulness prevents you from taking bold, high-possibility actions in the market, leading to missed opportunities and self-limitation.  * <strong>The Knowledge Paradox</strong>: When you know a profession too well, you tend to be careful and timid, focusing on what *can't* be done.</p>
+                <h3>The Invisible Ceiling: How Knowing Too Much Limits Your Trading Potential</h3>
+<p>Often, deep professional knowledge can transform into timidity, creating an "invisible ceiling" on your potential. This excessive carefulness prevents you from taking bold, high-possibility actions in the market, leading to missed opportunities and self-limitation.</p>
 <ul>
+<li><strong>The Knowledge Paradox</strong>: When you know a profession too well, you tend to be careful and timid, focusing on what *can't</li>
+<li>be done.</li>
 <li><strong>Fear of Failure</strong>: Trading limits are often psychological, stemming from a fear of failure rather than a lack of capital or skill.</li>
 <li><strong>Possibility Thinking</strong>: A degree of naiveté or fresh perspective can unlock the confidence necessary for bold, effective execution.Identify a limiting assumption in your trading process this week that is based on fear of failure, and challenge it with a calculated, safe experiment.Most cameramen will tell you what can't be done because they don't want to fail.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is my traitor EQ prep for the week of July 16th I saw an excellent old old black and white interview of Orson wells in this conversation he&#x27;s talking with the interviewer about his movie Citizen Kane and one of the questions the interviewer asks him is how did he have the confidence and his answer is ignorance sheer ignorance he speaks to how that naivete is how he was able to do what so many considered to be the best film of all time and I want you to listen to that as it applies to you and your trading and you&#x27;re investing and anything that you take on in life he talks at one point here about how he when you know something things so well about a profession you will have a tendency to be timid to be careful today&#x27;s modern equivalent of that word is precious right but when you don&#x27;t even know what you don&#x27;t know you can sometimes come from a land of possibility now not advocating you stay ignorant I&#x27;m not advocating you don&#x27;t do the homework however within all of those things that any of us do to develop</p>
-<p>ourselves it can also potentially limit us and that is what Orson wealth is talking about he even talks at one point about how most of the times those in the Hollywood industry there they come from the bottom up and he said most cameramen will tell you what can&#x27;t be done because they don&#x27;t want to fail he said fortunately for me I was with the cameraman who wasn&#x27;t afraid of failing so he was willing to take on much more Bodacious kind of you know angles than any other cameraman because he wasn&#x27;t afraid to fail so that is the question I want you to take into this week is there a place in your trading and in your investing that&#x27;s keeping you small that has an invisible ceiling upon you of course I want you to stay safe I want you to protect your Capital but I also want you to look are there places an invisible blockers that are keeping you from possibility is it failure is it you just trying to not have the discomfort of possibility that is holding you back all right that&#x27;s my suggestion for the week and if you like this</p>
-<p>and you want more of it please sign up for Curtain Call that is my Weekly Newsletter and join thousands of Traders investors and Executives and entrepreneurs who are looking to level up I hope you&#x27;ll sign up for it and I hope you have a great week please be safe and be profitable</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

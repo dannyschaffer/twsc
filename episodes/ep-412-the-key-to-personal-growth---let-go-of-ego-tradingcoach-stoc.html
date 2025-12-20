@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Painful Trap of Needing to Be Right: Why Your Ego Is Costing You Money</p>
+                <h3>The Painful Trap of Needing to Be Right: Why Your Ego Is Costing You Money</h3>
 <p>Traders suffer and struggle when they cannot detach their self-worth from their P&L. If your ego depends on always being right, every wrong trade will feel like a personal attack. This painful cycle prevents the necessary growth required to achieve long-term success.</p>
 <p>Key Insights  - <strong>Ego Dependency</strong>: Continuing to struggle is inevitable until you are comfortable with not being right and stop depending on your ego feeling good about itself.</p>
 <ul>
@@ -233,14 +202,6 @@
 </ul>
 <p>Consciously work to identify and separate your sense of self-value from the outcome of any single trade.</p>
 <p>QuoteYou've got to see that your ego is not who you are, that you are not the mistakes you make.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>until you guys can get comfortable not being right not depending on your ego uh feeling good about itself you will continue to suffer and struggle as a traitor and the quote that I put up with this is that this is required for you to up level you&#x27;ve got to see that your ego is not who you are that you are not the mistakes you make make that your sense of value you have very hooked right now to you being right and that is why being wrong is so painful</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

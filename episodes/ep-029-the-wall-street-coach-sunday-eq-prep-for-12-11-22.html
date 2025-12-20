@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Crucial Year-End Prep: Why You Must Archive Your Trading Wins</p>
+                <h3>The Crucial Year-End Prep: Why You Must Archive Your Trading Wins</h3>
 <p>When reviewing your trading year, the tendency is to fixate only on losses and mistakes. This tunnel vision sabotages your emotional intelligence (EQ) and prevents you from internalizing the genuine progress and resilience you demonstrated. This psychological preparation is an essential step for building a strong foundation for the new year.  - Emotional Intelligence (EQ) in trading requires actively acknowledging and <strong>cataloging moments of success and discipline</strong>, not just managing setbacks.</p>
 <ul>
 <li>Traders must focus on documenting <strong>learnings, education, and wins</strong>, particularly when you adhered to your strategy during high-pressure situations.</li>
 <li>Capturing your successes helps reinforce your competence and prevents the emotional burnout caused by focusing exclusively on failures.Create a separate, dedicated document (multiple pages, typed or written) exclusively detailing your past year's trading wins, educational milestones, and instances where you stayed true to your strategy when the chips were down."I want you to look through your trading journals and catch find all those wins that you had all the things that you did well."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is command curtain from the Wall Street coach this is my Sunday prep for EQ emotional intelligence for December 11 2022. this is going to be a two-part and the second part will be next Sunday as we close out 2022 the suggestion for your Trader EQ is to review these this entire past year and I want you to look through your trading journals and catch find all those wins that you had all the things that you did well I want you to capture all the success that you had and put them into a separate document maybe you&#x27;re going to type them up maybe you&#x27;re going to write them out but I&#x27;d like to see you create multiple pages of what your learnings education wins and when you stay true to to whatever your strategy was especially when the chips were down and it was really tempting to let it go that is my homework to you and you&#x27;ll understand why I&#x27;m having to do this when I come back to you next Sunday for part two if you like these short clips please go to tradercheckin.com where I have some other free items</p>
-<p>for you and I hope you guys will be profitable this week and that you&#x27;ll stay safe Aloha for now</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

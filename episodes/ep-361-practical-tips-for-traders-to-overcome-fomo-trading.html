@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading the Rip Tide: How to Deactivate the FOMO Trigger</p>
+                <h3>Stop Trading the Rip Tide: How to Deactivate the FOMO Trigger</h3>
 <p>The fear of missing out (FOMO) is a powerful emotional trigger that often leads to impulsive trading and costly mistakes. When you witness others succeeding or worry about lost potential profits, this fear can pull you into a psychological rip tide, overriding your rational process.  - <strong>FOMO is Fear-Based Impulsivity</strong>: It is fundamentally triggered by the deep fear of being left behind, not a rational assessment of opportunity.</p>
 <ul>
 <li><strong>The Success Trigger</strong>: Watching other traders succeed can derail your focus and push you into ill-advised entries.</li>
 <li><strong>Your Trading Plan is the Anchor</strong>: Your strategy acts as the necessary defense against emotional impulse, providing stability in volatile moments.When you feel the urge to chase a trade, immediately pause, take a deep breath, come back to center, and reassess the setup against your predefined trading plan."FOMO is ultimately a rip tide."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>let&#x27;s talk about fomo what is it exactly why do we feel it and how to avoid it well first of course fomo means the fear of missing out and not has a tendency to lead to impulsive tra it&#x27;s triggered by fear it&#x27;s a trigger that sets off the fear that perhaps we&#x27;re missing out on something another Trader is doing and losing potential profits Andor seeing others succeed can get in the way also the key is to Simply stick to your trading plan don&#x27;t let yourself get sucked into really what is a rip tide fomo is ultimately a rip tide I want you to pause I want you to breathe and come back to Center and reassess before you act on your emotions</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

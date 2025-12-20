@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Channels That Expose Your Hidden Trading Psychology</p>
+                <h3>The Channels That Expose Your Hidden Trading Psychology</h3>
 <p>Many traders feel isolated, attempting to manage costly psychological issues like FOMO, greed, and ego in silence. True growth requires a structured environment to address these emotional variables directly, especially when external life challenges inform market performance. This community provides a powerful framework to face every psychological obstacle head-on.  - The channels are structured to manage core emotional risks such as <strong>FOMO, greed, ego, and discipline</strong>.</p>
 <ul>
-<li>Emphasis is placed on <strong>Life Beyond Trading</strong> and the <strong>Needs Channel</strong>, recognizing that personal life struggles often drive costly market behavior.</li>
-<li>The community provides specialized support rooms, including <strong>The Swamp</strong> for dealing with difficult trading periods and a <strong>Honing Your Edge room</strong> for continuous mastery.Actionable Takeaway: Use the dedicated Needs Channel to articulate and track what personal or emotional voids you are currently trying to fill through your P&L, a common and costly situation."This community is about generosity... when you give, you get back so much more than you could ever imagine."</li>
+<li>Emphasis is placed on **Life Beyond Trading*</li>
+<li>and the <strong>Needs Channel</strong>, recognizing that personal life struggles often drive costly market behavior.</li>
+<li>The community provides specialized support rooms, including **The Swamp*</li>
+<li>for dealing with difficult trading periods and a **Honing Your Edge room*</li>
+<li>for continuous mastery.Actionable Takeaway: Use the dedicated Needs Channel to articulate and track what personal or emotional voids you are currently trying to fill through your P&L, a common and costly situation."This community is about generosity... when you give, you get back so much more than you could ever imagine."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so what are the topics and channels in this room for traderherojourney.com I&#x27;ll tell you we have a channeled for fomo for greed for ego for discipline for bragging rights we have a channel called The Swamp for when it gets difficult we have a honing your Edge room we have a smash shock Channel we have accountability partner Channel we have a Never Eat Alone Channel life beyond trading because so much of outside informs the internal experience of trading we have a personal challenges that you might be up against a channel we have a money Channel we have a needs Channel because often Traders will try to get their needs met in their trading where because they&#x27;re not getting it met outside of their trading which is a very costly situation we also have time management Channel quotes that are inspiring a bookshelf movies and of course course if you uh look for what is the word I&#x27;m looking for if you sign up for the top level membership you&#x27;ll get coaching from me personally and you&#x27;ll also get office hours that you can ask me any questions either by a direct message or by being on</p>
-<p>The Voice Channel I hope you&#x27;ll consider it I&#x27;m very excited to share this from with you I&#x27;ve been working on it with my team for months and I promise you there is no Discord room like it and we&#x27;re excited to have you be a part of this amazing Community where generosity is the heart of the matter and when you give I have to tell you you get back so much more than you could ever imagine that&#x27;s what this community is about please join us at Trader hero journey.com</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

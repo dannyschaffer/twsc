@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of "Feeling Pretty Good": Why Traders Must Test Their Baseline Health</p>
-<p>You meticulously optimize your trading system, yet you may be overlooking the most critical asset: your physical and mental health. Many traders unknowingly operate in a state of diminished capacity because they have normalized feeling "pretty good." This subtle self-deception drains your focus and consistency, costing you performance in every session.  * <strong>Establish a True Baseline</strong>: The optimal time for getting lab work done is when you are young and healthy, creating a critical reference point for what 'optimal' looks like in your blood biomarkers.</p>
+                <h3>The Hidden Cost of "Feeling Pretty Good": Why Traders Must Test Their Baseline Health</h3>
+<p>You meticulously optimize your trading system, yet you may be overlooking the most critical asset: your physical and mental health. Many traders unknowingly operate in a state of diminished capacity because they have normalized feeling "pretty good." This subtle self-deception drains your focus and consistency, costing you performance in every session.</p>
 <ul>
+<li><strong>Establish a True Baseline</strong>: The optimal time for getting lab work done is when you are young and healthy, creating a critical reference point for what 'optimal' looks like in your blood biomarkers.</li>
 <li><strong>The Normalization Trap</strong>: Traders often mistake the absence of immediate health issues for true wellness, normalizing a feeling of mediocrity that keeps them from their true potential.</li>
 <li><strong>Health is a Performance Edge</strong>: Your physical biomarkers determine your mental and emotional capacity, directly influencing how you handle pressure and volatility.Seek comprehensive biomarker testing now to establish a definitive baseline for your optimal health, giving you a standard to measure future performance against."The amount of people that I've worked with... three months later they're like I didn't realize I could feel this good"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the almost probably the best time to get your lab work done is when you are young you feel great and you&#x27;re you&#x27;re otherwise healthy and you have no issues for a number of reasons one you&#x27;re getting a snapshot at a really good time you have a great reference point to know that hey if in 10 years down the road I&#x27;m not feeling so hot you know what hot looks like in terms of your biomarkers and your blood the other reason is that I think this is getting a little bit deeper but I think a lot of people will normalize how they feel yes the amount of people that I&#x27;ve worked with or that we&#x27;ve worked with that come in and they&#x27;re like yeah I feel pretty good um maybe I could feel a little bit better but overall I feel pretty good and then we look at the biomarkers and we start you know putting together a protocol for them and then three months later they&#x27;re like I didn&#x27;t realize I could feel this good</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

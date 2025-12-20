@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Realization That Changes Everything: You Are Not Trading Alone</p>
+                <h3>The Realization That Changes Everything: You Are Not Trading Alone</h3>
 <p>The journey toward trading mastery often feels like an isolated struggle where success is achieved strictly through self-will. However, the emotional cost of feeling completely alone in this psychological battle is immense. This video explores the concept that your personal trading evolution follows a shared, universally understood path—the Hero's Journey.  - <strong>The Foundation of the Journey</strong>: The deepest struggles you face in the market are not unique, but part of a recognized human narrative that has been thoroughly explored by thinkers like Joseph Campbell.</p>
 <ul>
 <li><strong>The Call to Self-Slay</strong>: True growth is realized when you stop blaming external forces (like the market) and start the necessary internal work of confronting and "slaying" the self-destructive patterns within.</li>
 <li><strong>Connection Over Isolation</strong>: Your trading adventure does not require you to risk the journey alone, as community and the wisdom of past heroes provide the guidance needed to navigate the psychological labyrinth.Shift your internal dialogue from "I am struggling alone" to "My experience is a necessary stage on a timeless journey."we have not even to risk the adventure alone for the hero's of all time have gone before us the Labyrinth is Thoroughly known we have only to follow the threat of the hero pass and where we had thought to find an Abomination we shall find a god where we thought to slay another we shall slay ourselves where we had thought to travel outward we shall come to the center of our own existence and where we had thought to be alone we shall be with all the world</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so you&#x27;ve heard me talk now a little bit about traderherojourney.com and I want to just put a shout out to the man who sort of started this whole thing and his name is Joseph Campbell may he rest in peace Joseph Campbell and his book The Hero with a thousand faces and his interview with Bill Moyers which is called the power of myth had a huge impact on me in my early 20s and his work has informed us my book transforming Wall Street but it certainly is the foundation of which traderherojourney.com is built upon I want to read you this quote that he wrote that is so impactful and so powerful I feel for Traders as they begin to develop themselves over many years of their work and here is that quote and it informs the heart of what this Discord room is about we have not even to risk the adventure alone for the hero&#x27;s of all time have gone before us the Labyrinth is Thoroughly known we have only to follow the threat of the hero pass and where we had thought to find an Abomination we shall find a god where we thought</p>
-<p>to slay another we shall slay ourselves where we had thought to travel outward we shall come to the center of our own existence and where we had thought to be alone we shall be with all the world that quote is all that I strive and have crafted and energetically put into what this Discord room is because I truly feel that that quote and when you begin to realize that you are not on this adventure of being a traitor alone everything can shift</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

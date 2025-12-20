@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Cost of Trading in the Past or Future</p>
+                <h3>The High Cost of Trading in the Past or Future</h3>
 <p>Traders often mistakenly believe they are improving by reviewing past trades or pre-visualizing future market moves. This constant mental time travel detaches you from the current price action, leading to missed opportunities and emotional misalignment. Your focus on yesterday's losses or tomorrow's imagined wins is keeping you from maximizing the present trade.</p>
 <p>Key Insights  - <strong>Past Mistakes as a Trap</strong>: While learning from history is essential, dwelling on losses causes emotional interference and prevents you from observing the current setup objectively.</p>
 <ul>
-<li><strong>The Future Projection</strong>: Projecting desired future outcomes onto the current market prevents you from seeing what the price action is *actually* doing right now.</li>
+<li><strong>The Future Projection</strong>: Projecting desired future outcomes onto the current market prevents you from seeing what the price action is *actually</li>
+<li>doing right now.</li>
 <li><strong>Presence is Clarity</strong>: True self-awareness requires a commitment to observing the market and your own state without the psychological filter of previous outcomes or expectations.Actionable Takeaway</li>
 </ul>
 <p>When you feel yourself spiraling into regret or expectation, pause and perform a quick check: "Am I observing the market now, or am I projecting?"being present to this moment is a key practice for all of us but especially For You Trader</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>practice 5 is being able to be self-aware practice 5 is a willingness to be in this present moment and noticing how often you will be in the past or in the future as a Traer I understand you want to learn from past mistakes but you don&#x27;t want to stay there you don&#x27;t want to dwell on that and often Traders are imagining a future that is not always the best place to be part of what you need to be able to do better at is be present to what is in front of you now not project what you want the future to be on the market or the past because both of those are not necessarily what&#x27;s going to happen now so being present to this moment is a key practice for all of us but especially For You Trader</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

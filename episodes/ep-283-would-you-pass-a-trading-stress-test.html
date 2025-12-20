@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Factor Sabotaging Your Trading Stress Capacity</p>
+                <h3>The Hidden Factor Sabotaging Your Trading Stress Capacity</h3>
 <p>Trading is inevitably a stressful experience, even when you follow every rule perfectly. Many traders fail because they neglect the "perimeter"—the external personal stressors that deplete their mental capacity long before they sit down at the desk. This constant drain makes handling market volatility feel impossible.  - <strong>The Perimeter Check</strong>: Consistent profitability requires actively monitoring external stressors in your personal life, as these dramatically reduce your capacity for market pressure.</p>
 <ul>
 <li><strong>Conscious Trader's Focus</strong>: To become a conscious trader, you must look beyond the charts to identify and remove all the 'little places' where stress is being unintentionally added to your daily life.</li>
 <li><strong>Stress Mitigation is Edge</strong>: Actively reducing your baseline stress is a strategic move that provides the mental capital needed for clear decision-making when market challenges arise.<strong>Actionable Takeaway</strong>: Commit to one non-trading-related stress mitigation activity—such as cleaning your workspace or adjusting your morning routine—that you can practice daily to regain personal "wind in your sails.""Spend some time really looking at where are the places I can decrease stress for myself every day so that you have more wind in your sales when you're Trading."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>trading is inevitably going to be a stressful experience for you even if you do all the right things to mitigate that stress so you want to be always checking the perimeter what&#x27;s happening personally for you what&#x27;s happening with the different places in your personal life that cause you stress how can you mitigate those stresses if you begin to really become a conscious Traer you&#x27;re going going to ultimately want to be looking at all the little places that you might be having stress added on to you that really could be kind of cut away so spend some time really looking at where are the places I can decrease stress for myself every day so that you have more wind in your sales when you&#x27;re Trading</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

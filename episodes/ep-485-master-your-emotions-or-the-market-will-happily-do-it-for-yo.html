@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading to Fulfill Unmet Needs</p>
-<p>Many traders confuse a craving for excitement or efficacy with a commitment to their strategy, leading them to believe they are addicted to trading itself. In reality, the compulsion is driven by a deep-seated need for emotional satisfaction that the market can temporarily provide—and brutally withdraw. This psychological cycle, fueled by unmet personal needs, is the invisible root of revenge trading and account blow-ups.  * <strong>The Addiction is to Feeling, Not Trading</strong>: You are not addicted to executing trades, but to the feeling of excitement, challenge, or respect that the trade provides.</p>
+                <h3>Stop Trading to Fulfill Unmet Needs</h3>
+<p>Many traders confuse a craving for excitement or efficacy with a commitment to their strategy, leading them to believe they are addicted to trading itself. In reality, the compulsion is driven by a deep-seated need for emotional satisfaction that the market can temporarily provide—and brutally withdraw. This psychological cycle, fueled by unmet personal needs, is the invisible root of revenge trading and account blow-ups.</p>
 <ul>
+<li><strong>The Addiction is to Feeling, Not Trading</strong>: You are not addicted to executing trades, but to the feeling of excitement, challenge, or respect that the trade provides.</li>
 <li><strong>Unmet Needs Drive Sabotage</strong>: The true cost of emotional trading is the destructive behavior caused by searching for essential needs fulfillment in your P\&L.</li>
 <li><strong>Identify Your Drivers</strong>: Self-sabotage like overleveraging is a direct result of unmet needs (efficacy, security, etc.) driving your market behavior.Actionable Takeaway: Identify the core personal needs (e.g., excitement, respect, challenge) you currently seek to fulfill through your trading performance.Needs are like oxygen. And if you aren't getting your basic needs met, you're going to seek it out in your trading.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Many traders think they&#x27;re addicted to trading, but that&#x27;s not true. You&#x27;re addicted to the feelings trading gives you. Every time you take a trade, you&#x27;re seeking something. Excitement, challenge, efficacy, respect. And when the market takes it away, that&#x27;s when you start to revenge trade, overlever yourself, or blow up. It&#x27;s not about the money. It&#x27;s about the unmet needs driving your behavior. Needs are like oxygen. And if you aren&#x27;t getting your basic needs met, you&#x27;re going to seek it out in your trading. That&#x27;s why I created the trader needs list to help you see exactly what needs you&#x27;re trying to fulfill for the markets, how to meet them outside of the market so you don&#x27;t sabotage your success. Drop the phrase my needs in the comment and I&#x27;ll send that list over to you.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

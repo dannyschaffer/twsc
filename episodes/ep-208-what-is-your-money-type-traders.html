@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Losing Money Is More Painful For Amassers (And How to Heal the Loss)</p>
-<p>Not all financial loss is experienced equally. For some traders—like the <strong>Amasser</strong> or <strong>Hoarder</strong> money types—the pain of a trade going wrong is magnified, deeply impacting their emotional well-being. Understanding your personal relationship with money is essential because the market guarantees loss, but the pain doesn't have to be debilitating.  - For certain money types, such as the <strong>Amasser</strong> or <strong>Hoarder</strong>, the act of losing capital is experienced as a profound, disproportionate psychological pain.</p>
+                <h3>Why Losing Money Is More Painful For Amassers (And How to Heal the Loss)</h3>
+<p>Not all financial loss is experienced equally. For some traders—like the **Amasser*</p>
 <ul>
-<li>Every trader faces loss, but the <strong>emotional weight</strong> of that loss is determined by their deeply held money predisposition.</li>
-<li>Recognizing your unique "money type" is a form of <strong>due diligence</strong> that reduces the emotional burden of inevitable market setbacks.Do your due diligence and understand your money type, as described in Olivia Mellan's book *Money Harmony*, so that the cost of trading becomes a lot less emotionally painful."You are going to face loss but the pain of that loss is going to be different based on your money type."</li>
+<li>or **Hoarder*</li>
+<li>money types—the pain of a trade going wrong is magnified, deeply impacting their emotional well-being. Understanding your personal relationship with money is essential because the market guarantees loss, but the pain doesn't have to be debilitating.  - For certain money types, such as the **Amasser*</li>
+<li>or <strong>Hoarder</strong>, the act of losing capital is experienced as a profound, disproportionate psychological pain.</li>
+<li>Every trader faces loss, but the **emotional weight*</li>
+<li>of that loss is determined by their deeply held money predisposition.</li>
+<li>Recognizing your unique "money type" is a form of **due diligence*</li>
+<li>that reduces the emotional burden of inevitable market setbacks.Do your due diligence and understand your money type, as described in Olivia Mellan's book *Money Harmony*, so that the cost of trading becomes a lot less emotionally painful."You are going to face loss but the pain of that loss is going to be different based on your money type."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>no Traer likes to lose money but there are going to be some traders who losing money is even more painful and those are the ones who would be identified as an amasser or a person who is a hoarder how do you know what type you are well Olivia melon has described these types and other types in her fantastic book money Harmony Olivia melon is the author of that book and this is why it&#x27;s so important for Traders to understand what is their predisposition to money you are going to face loss but the pain of that loss is going to be different based on your money type so do your due diligence understand what kind of money type you have so that the cost becomes a lot less emotionally painful</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

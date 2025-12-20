@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Letting Your Ego Wreck Your Entire Trading Strategy</p>
+                <h3>Stop Letting Your Ego Wreck Your Entire Trading Strategy</h3>
 <p>Every trader has been stuck staring at a losing position, hoping it will turn around. This refusal to exit isn't about market dynamics; it's a deeply costly psychological battle. You are sacrificing capital simply to avoid the emotional hit of admitting you were wrong.</p>
 <p>Key Insights:  - The biggest threat to your strategy is <strong>ego</strong>, which compels you to hold losing trades rather than accepting a defeat.</p>
 <ul>
 <li>Trading success is measured by <strong>profitability</strong>, not by the satisfaction of being right about a market forecast.</li>
-<li><strong>Profitable traders</strong> understand that taking a small, strategic loss is essential to protecting their overall capital.Actionable Takeaway:</li>
+<li>**Profitable traders*</li>
+<li>understand that taking a small, strategic loss is essential to protecting their overall capital.Actionable Takeaway:</li>
 </ul>
 <p>Next time you hesitate to cut a loss, ask yourself if the trade is still aligned with your original entry strategy. If the answer is no, exit immediately.Your ego doesn't pay the bills; discipline pays the bills.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>your ego isn&#x27;t costing you money it&#x27;s Wrecking your entire trading strategy here&#x27;s why every Trader&#x27;s been there you&#x27;re staring at a losing position and you tell yourself it&#x27;ll turn around but let&#x27;s be real how often does it actually turn around here&#x27;s the truth it&#x27;s not the market that&#x27;s beating you it&#x27;s your ego you&#x27;re holding on to a losing trade because exiting feels like admitting you were wrong but trading isn&#x27;t about being right it&#x27;s about making money and guess what the most profitable Traders know when to take laws and move on next time you&#x27;re thread ask yourself is this trade aligned with my strategy if the answer is no it&#x27;s time to cut the laws and protect your Capital your ego doesn&#x27;t pay the bills discipline pays the bills</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

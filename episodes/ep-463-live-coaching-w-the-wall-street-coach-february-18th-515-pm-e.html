@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,24 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>Stop Doubting Your Strategy: Unlocking the Answers Within</h3>
-<p>When persistent trading issues like FOMO or fear of risk haunt your decision-making, it often stems from internal psychological blocks, not flawed charts. These emotional deterrents make you question yourself and prevent you from trading your strategy effectively.  * Coaching is about <strong>accessing your own internal wisdom</strong>, not about being "fixed" by an external expert.</p>
+                <h3>Stop Doubting Your Strategy: Unlocking the Answers Within</h3>
+<p>When persistent trading issues like FOMO or fear of risk haunt your decision-making, it often stems from internal psychological blocks, not flawed charts. These emotional deterrents make you question yourself and prevent you from trading your strategy effectively.</p>
 <ul>
-<li>Long-term losses can create <strong>limiting beliefs</strong> that make you afraid to execute even winning strategies.</li>
+<li>Coaching is about <strong>accessing your own internal wisdom</strong>, not about being "fixed" by an external expert.</li>
+<li>Long-term losses can create **limiting beliefs*</li>
+<li>that make you afraid to execute even winning strategies.</li>
 <li>The power of coaching comes from having someone <strong>truly listen</strong>, allowing you to hear and confront your self-doubt for the first time.Actionable Takeaway: Identify one specific trading issue (like FOMO or loss aversion) that is causing you to doubt your strategy and commit to listening to your own inner voice instead of your inner critic.My job as a coach is to ask questions that open you up to your own internal wisdom.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody I&#x27;m coming on here just to do a test run because we kept finding different platforms were not sinking so you don&#x27;t have the time wrong I am coming on in 45 minutes but this is me just testing the platform with uh my girl she&#x27;s just double check foring that all these platforms are actually operating so what am I going to talk about today well I have a couple of topics I always come with a couple of topics but my hope is that there will be a Trader or two who wants to come in for some speed coaching so if you have an issue in your trading that you do want to have coaching on please be my guest come in sit in the hot seat and do some live coaching with me so soon as I come back in 45 minutes I will give you guys the link this is me just doing a test run that this is working on all the platforms because we kept uh hearing from people on uh LinkedIn saying that it wasn&#x27;t airing there and I wasn&#x27;t sure too if Instagram was working so I&#x27;m not I&#x27;m</p>
-<p>thinking everybody that&#x27;s here now probably is coming in from X but just to make sure we got our ducks in a row I thought I&#x27;d hop on here and uh do a quick check so hopefully this is working on LinkedIn uh you let me know if uh you see it there and so I would invite you guys to think about for the next 45 minutes what do you want coaching on if you could walk away from a you know short 10 20 minute conversation with me what would you want to walk away with whatever it is you&#x27;re struggling maybe you&#x27;re struggling with fomo maybe you&#x27;re struggling with not cutting losses quick enough maybe you&#x27;re struggling with not taking big enough risk maybe you&#x27;re struggling with having a loss from multiple months or years ago that still haunts you that still makes you question yourself has you feeling afraid to actually trade your strategy if any of that Rings true for you then come into the coaching some of the live coaching that I&#x27;ve done here guys for different Traders some of it happens very quickly the things that show up are sometimes remarkably fast often</p>
-<p>in my experience just talking about what is going on with somebody that is truly listening has a tendency to change the whole game I remember this myself when I was working with my coach it was incredible how fast uh it was able to work because when somebody is truly listening to you you start to hear yourself sometimes for the first time and part of my coaching and the whole philosophy behind mind it is that you actually have your own answers within my job as a coach is to ask questions that open you up to your own internal wisdom that is what coaching is about coaching is not about fixing coaching is about getting rid of the limiting beliefs getting rid of the things that have you doubt yourself have you potentially have you listening to your own inner critic as opposed to your own true inner voice that is what the heart of coaching is all about and that is also part of why I experienced it so powerfully because for me what was happening was it was coming from this place of me finally not feeling like I was wrong that there was something</p>
-<p>wrong with me and that&#x27;s what I think is one of the biggest DET turns to people actually being able to transform their life it&#x27;s because they feel broken they feel like something&#x27;s wrong with them and that is just you know not the truth I guess this just all I want to say about that so we&#x27;re looking here on LinkedIn but I am not seeing it go live there so I have to go in troubleshoot it guys I&#x27;ll be back here to coach uh and to riff about different trading issues mindset performance issues that Traders face I&#x27;ll be here now in 40 minutes I&#x27;ll come back this was me trying to troubleshoot while linkton is not working but it is just not working so I have to figure that out and I&#x27;ll see everybody here in about 40 minutes okay I hope you guys will come back</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

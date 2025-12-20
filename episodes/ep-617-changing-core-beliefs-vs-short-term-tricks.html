@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Problem With Tricks: Why Surface-Level Changes Won't Fix Your Trading Psychology</p>
-<p>Trading struggles often originate from deep-rooted, decades-old beliefs—like the ethos that you must work hard to earn your salary, which translates directly into overtrading. When faced with these psychological hurdles, many traders wonder if genuine transformation is even possible, or if they are doomed to rely on short-term behavioral "tricks" to survive.  * <strong>Beliefs Dictate Behavior</strong>: Trading issues are often symptoms of fundamental, deep-rooted beliefs about money, worth, and effort.</p>
+                <h3>The Problem With Tricks: Why Surface-Level Changes Won't Fix Your Trading Psychology</h3>
+<p>Trading struggles often originate from deep-rooted, decades-old beliefs—like the ethos that you must work hard to earn your salary, which translates directly into overtrading. When faced with these psychological hurdles, many traders wonder if genuine transformation is even possible, or if they are doomed to rely on short-term behavioral "tricks" to survive.</p>
 <ul>
+<li><strong>Beliefs Dictate Behavior</strong>: Trading issues are often symptoms of fundamental, deep-rooted beliefs about money, worth, and effort.</li>
 <li><strong>The Flaw of Shortcuts</strong>: Short-term mental fixes may offer brief relief but ultimately fail because they do not address the source code of your behavior.</li>
 <li><strong>The Requirement of Deep Change</strong>: Sustainable success demands changing the core foundation of belief rather than simply masking the outward actions.The next time you struggle, ask yourself what fundamental belief is driving the behavior you want to stop.I think pricking ourselves is not the long-term solution. It might work once, twice, but it's not going to really give us the change we need.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Can we really change our foundations of belief? Is it though possible? Because I mean this is very deep roots. This is how we grew up. This is who we are. Is it possible to change it or do we build tricks around it? Again, what you said, I&#x27;m coming from a blue collar family and in order to get your salary home, you have to work hard and so I do overtrade and is it possible to get this way up? Can we really change our foundations of belief or do we have to build tricks around that to trick ourself to a normal and a more normal behavior? I think pricking ourselves is not the long-term solution. It might work once, twice, but it&#x27;s not going to really give us the change we</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

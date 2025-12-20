@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>How to Define Your Legacy: Wisdom Beyond Profit</h3>
-<p>Many traders focus solely on immediate gains, missing the greater opportunity to build lasting personal wisdom. This video explores what it means to build a true legacy, drawing lessons from a 93-year-old coach whose impact was defined by his presence and generosity. Discover how focusing on truth and showing up fully is the key to fulfillment in the markets and in life.  * Legacy is created by the impact you have, specifically by <strong>making people feel seen</strong>.</p>
+                <h3>How to Define Your Legacy: Wisdom Beyond Profit</h3>
+<p>Many traders focus solely on immediate gains, missing the greater opportunity to build lasting personal wisdom. This video explores what it means to build a true legacy, drawing lessons from a 93-year-old coach whose impact was defined by his presence and generosity. Discover how focusing on truth and showing up fully is the key to fulfillment in the markets and in life.</p>
 <ul>
+<li>Legacy is created by the impact you have, specifically by <strong>making people feel seen</strong>.</li>
 <li>True wisdom is designed to be <strong>passed on</strong>, not hoarded.</li>
-<li>Your greatest contribution is making others feel <strong>braver</strong> through your commitment to truth.Start building your personal legacy today by committing to show up fully, speaking your truth, and operating with integrity in every decision.You need to show up. You need to speak the truth. and you need to make someone else around you feel braver.</li>
+<li>Your greatest contribution is making others feel **braver*</li>
+<li>through your commitment to truth.Start building your personal legacy today by committing to show up fully, speaking your truth, and operating with integrity in every decision.You need to show up. You need to speak the truth. and you need to make someone else around you feel braver.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I just released a new book with my paddling coach who&#x27;s 93 years young, Manny Vincent. It&#x27;s called Born of Two Oceans. His legacy will be remembered around how he made people feel seen. He didn&#x27;t hoard his wisdom. He passed it on. But you don&#x27;t even need a book to build a legacy. But you do need to show up. You need to speak the truth. and you need to make someone else around you feel braver. Born two oceans is Manny&#x27;s legacy. And if you&#x27;re building your own, it might be time we talk.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

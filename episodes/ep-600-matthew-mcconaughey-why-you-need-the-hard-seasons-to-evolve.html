@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Necessary Winter: Why Hard Seasons Are Your Biggest Edge</p>
+                <h3>The Necessary Winter: Why Hard Seasons Are Your Biggest Edge</h3>
 <p>When the market turns against you, it feels like failure. But what if those difficult "winter" seasons in your trading journey aren't setbacks—they're the essential conditions for real evolution and ascension? We often look for endless green lights, but true mastery is only forged in the emotional friction of the struggle.  - <strong>Winter Forces Introspection</strong>: Just as animals hibernate, difficult periods in trading force you to go inward, becoming intensely focused on your own process and psychology, not the external market noise.</p>
 <ul>
 <li><strong>Green Lights Stagnate Growth</strong>: A continuous run of easy wins (all "summertime") provides no friction for learning, stalling your long-term ascension and strategic evolution.</li>
 <li><strong>Embrace Forced Intimacy</strong>: These hard times compel you to be "with yourself more," revealing core beliefs and emotional patterns that are impossible to spot during periods of effortless profit.Instead of resisting the struggle, treat your current "winter" as a mandatory period of <strong>intimacy and clarity</strong>—use this time to deeply analyze your system and self, without the distraction of easy wins."If you're catching nothing but green lights, where’s that evolution? Where do we learn? We need our falls and our winters."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Where&#x27;s the ascension? Where&#x27;s that evolution? The winter. You called the experience as an exchange student that you were in in Australia as your a winter for you. Worst winter. And and I&#x27;d love you to just talk to the people who are metaphorically going through their winters now. Look, we all have, you know, winter is just naturally speaking a time when animals hibernate. You go away, you get introspective. You&#x27;re forced indoors into intimacy. You&#x27;re forced to be with yourself more. Uh it&#x27;s why the seasons are lined up. If it was all summertime, it was all barefoot run around summertime. It&#x27;s kind of like that&#x27;s what I call like it&#x27;s all green lights. If you&#x27;re catching nothing but green lights, well, where&#x27;s the ascension? Where&#x27;s that evolution? Where do we learn? You know, so we need our falls and our winters in our seasons of our life and not just on the calendar</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

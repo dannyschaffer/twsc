@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Adaptability Is The Trader's Greatest Edge</p>
-<p>As a trader, you are constantly encountering new market conditions that challenge your established rhythm. When you allow external chaos to dictate your emotional state, you fall into the trap of believing the market should conform to your expectations. True consistency comes not from a perfect setup, but from mastering your own ability to adapt quickly.  - The core conflict is when you try to force your personal <strong>"vibe" or routine</strong> onto an indifferent market.</p>
+                <h3>Why Adaptability Is The Trader's Greatest Edge</h3>
+<p>As a trader, you are constantly encountering new market conditions that challenge your established rhythm. When you allow external chaos to dictate your emotional state, you fall into the trap of believing the market should conform to your expectations. True consistency comes not from a perfect setup, but from mastering your own ability to adapt quickly.  - The core conflict is when you try to force your personal **"vibe" or routine*</p>
 <ul>
-<li><strong>Frustration is a signal</strong> that you are clinging to the expectation that others (or the market) should change, not you.</li>
-<li>Adaptability is the speed at which you can recognize that <strong>you need to adjust your internal energy</strong> to match the current environment.Actionable Takeaway: For the upcoming week, identify one market outcome that causes you frustration and reframe the situation by asking: Where do I need to adapt?Where is it that you think others should really it's you who need to adapt.</li>
+<li>onto an indifferent market.</li>
+<li>**Frustration is a signal*</li>
+<li>that you are clinging to the expectation that others (or the market) should change, not you.</li>
+<li>Adaptability is the speed at which you can recognize that **you need to adjust your internal energy*</li>
+<li>to match the current environment.Actionable Takeaway: For the upcoming week, identify one market outcome that causes you frustration and reframe the situation by asking: Where do I need to adapt?Where is it that you think others should really it's you who need to adapt.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody from Times Square New York City wanna see and there she is just a little patch Times Square I&#x27;m at the bearable Traders conference I&#x27;m about to speak in a couple of hours and last night I had my high school reunion which was such a blast and I&#x27;m so glad that I got to go to it and today&#x27;s EQ prep for the week is about adaptability so I&#x27;ve haven&#x27;t been back to the city for years I think it&#x27;s like six seven eight years and this city is a little different than Hawaii so I&#x27;m talking to you guys about adaptability because as a traitor if there&#x27;s one thing you guys have to be it&#x27;s adaptable and look I live in Hawaii so I am choosing to be in that kind of a lifestyle in an environment ever I had you know a Brooklyn Born girl the city&#x27;s always going to be a part of my life but I have had to adapt a number of times on this trip because the city and the mainland in general requires a different sort of energy so I just want to say that I&#x27;ve had a couple encounters</p>
-<p>with people where they were you know being there fast-paced self and I am not moving at that level in certain ways and at first it got me mad at first it got me frustrated like why can&#x27;t they be nice why can&#x27;t they give me a smile back why can&#x27;t they you know say hello and just be friendly but at some point it&#x27;ll last 24 hours 36 hours of travel I realized that&#x27;s that&#x27;s the way they are when you&#x27;re in New York I mean that&#x27;s the way I used to be when I lived in New York and I realized it&#x27;s not them it&#x27;s me I&#x27;m still in that Hawaii Vibe but I have to adapt because now I&#x27;m in the Big Apple and it&#x27;s the city that never sleeps and everybody moves quick and I just have to adapt so where can you adapt this week that&#x27;s my question to you where are you saying that the market should be a different way or you&#x27;re saying that there&#x27;s certain things that should go a certain way where is it that you think others should really it&#x27;s you who need to adapt that&#x27;s the question I wanted</p>
-<p>to take you and take into your week and uh I still haven&#x27;t gotten a slice of pizza yet but I&#x27;m planning on doing that this afternoon all right guys have a good week I hope you&#x27;re profitable and please stay safe aloha for now</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

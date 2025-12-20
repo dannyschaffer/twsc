@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Is Your "Commitment" Actually Addiction?</p>
-<p>The constant staring at charts might feel like dedication, but when it leaves you drained and overwhelmed without results, it is likely a sign of addiction. This emotional loop sacrifices clarity for chaos, preventing the sustainable profitability you seek.  * Overtrading that results in burnout is a pattern of addiction, not <strong>commitment</strong>.</p>
+                <h3>Is Your "Commitment" Actually Addiction?</h3>
+<p>The constant staring at charts might feel like dedication, but when it leaves you drained and overwhelmed without results, it is likely a sign of addiction. This emotional loop sacrifices clarity for chaos, preventing the sustainable profitability you seek.</p>
 <ul>
-<li>High-performance routines are essential for establishing clarity, including <strong>micro breaks</strong> and <strong>session limits</strong>.</li>
-<li>Strategic routines, such as <strong>office location changes</strong> and <strong>reflection windows</strong>, build psychological resilience.Actionable Takeaway: Implement scheduled micro breaks and strictly defined session limits today to interrupt potential addictive trading patterns.That's the sign of addiction. If you're staring at charts, feeling drained and overwhelmed, and yet you can't stop, that is not commitment.</li>
+<li>Overtrading that results in burnout is a pattern of addiction, not <strong>commitment</strong>.</li>
+<li>High-performance routines are essential for establishing clarity, including **micro breaks*</li>
+<li>and <strong>session limits</strong>.</li>
+<li>Strategic routines, such as **office location changes*</li>
+<li>and <strong>reflection windows</strong>, build psychological resilience.Actionable Takeaway: Implement scheduled micro breaks and strictly defined session limits today to interrupt potential addictive trading patterns.That's the sign of addiction. If you're staring at charts, feeling drained and overwhelmed, and yet you can't stop, that is not commitment.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>That&#x27;s the sign of addiction. If you&#x27;re staring at charts, feeling drained and overwhelmed, and yet you can&#x27;t stop, that is not commitment. That&#x27;s the sign of addiction. I teach high performance routines like micro breaks, session limits, office location changes, and reflection windows. Because great traders come from clarity and not chaos.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

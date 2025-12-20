@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The AI Trap: Why You Still Need Human Judgment to Trade Profitably</p>
-<p>As AI tools become more ubiquitous, many traders are tempted to hand over their decision-making process to algorithms. However, relying solely on AI's ability to aggregate data misses a critical fact: raw information and mechanical calculations often fail when confronted with the nuances of market psychology.  * <strong>AI is a data aggregator, not a decision-maker.</strong> Its strength lies in compiling information, but its weakness is interpretation and executing complex logic.</p>
+                <h3>The AI Trap: Why You Still Need Human Judgment to Trade Profitably</h3>
+<p>As AI tools become more ubiquitous, many traders are tempted to hand over their decision-making process to algorithms. However, relying solely on AI's ability to aggregate data misses a critical fact: raw information and mechanical calculations often fail when confronted with the nuances of market psychology.</p>
 <ul>
+<li>**AI is a data aggregator, not a decision-maker.*</li>
+<li>Its strength lies in compiling information, but its weakness is interpretation and executing complex logic.</li>
 <li>Even sophisticated AI tools can fail at basic calculations, highlighting the fragility of a purely mechanical system.</li>
-<li>Over-reliance on technology can lead to dangerous conclusions if you don't apply your own human skepticism and critical judgment.<strong>Actionable Takeaway:</strong> Use AI solely for information aggregation, but always apply your own rigorous, human-powered analysis to verify the conclusions before making a trading decision.I see AI is wrong a lot. I would be very wary of the conclusions of that information. And I would double check</li>
+<li>Over-reliance on technology can lead to dangerous conclusions if you don't apply your own human skepticism and critical judgment.**Actionable Takeaway:*</li>
+<li>Use AI solely for information aggregation, but always apply your own rigorous, human-powered analysis to verify the conclusions before making a trading decision.I see AI is wrong a lot. I would be very wary of the conclusions of that information. And I would double check</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I see AI is wrong a lot. What are your thoughts on AI and there&#x27;s those who are saying this is going to completely transform trading. What&#x27;s your opinion on that? I see AI is wrong a lot. I actually fed some of one of our interviews to an AI bot said turn this into to text and and Q&amp;A and it did it and then I looked at it and I was like this is just too robotic. AI is very good at gathering information from sources and summarizing it. I think when it comes down to trying to write and making something compelling, it&#x27;s not there yet. We were doing some math in AI the other day and I tried to run a compound annual growth rate and for whatever reason, I can&#x27;t remember which AI it was. I don&#x27;t want to single one out, but it couldn&#x27;t handle raising something to a fractional exponent x^2, right? It would be x to the 1 / 2. It failed at the math and long way of saying my personal take is that AI is good at gathering and aggregating information. I would be very wary of the conclusions of</p>
-<p>that information. And I would double check</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

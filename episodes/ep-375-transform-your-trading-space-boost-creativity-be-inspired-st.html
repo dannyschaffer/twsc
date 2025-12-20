@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Invisible Impact of Your Trading Environment</p>
-<p>You focus relentlessly on market data, yet often ignore the physical workspace that subtly dictates your psychological state. A cluttered or uninspired trading environment creates mental friction that translates directly into poor focus and delayed decision-making. Learn how to transform your workstation into a consistent source of psychological edge.  * <strong>Your Surroundings Matter</strong>: The visual and psychological input from your physical space influences your mental fortitude as much as the technical charts.</p>
+                <h3>The Invisible Impact of Your Trading Environment</h3>
+<p>You focus relentlessly on market data, yet often ignore the physical workspace that subtly dictates your psychological state. A cluttered or uninspired trading environment creates mental friction that translates directly into poor focus and delayed decision-making. Learn how to transform your workstation into a consistent source of psychological edge.</p>
 <ul>
+<li><strong>Your Surroundings Matter</strong>: The visual and psychological input from your physical space influences your mental fortitude as much as the technical charts.</li>
 <li><strong>Declutter for Clarity</strong>: Eliminating physical clutter—from disorganized plugs to messy drawers—is the foundational step toward achieving greater mental clarity in your trading routine.</li>
 <li><strong>Creativity Fuels Performance</strong>: Incorporating elements of creative inspiration, such as art or music, can enhance your emotional resilience and boost overall concentration.Actionable Takeaway:</li>
 </ul>
 <p>This week, audit your trading area: clear out junk drawers, organize cables, and introduce visual elements that inspire calm and creativity.I want you to dedicate your office or your space where you trade to having that creative inspiration because it does go into you and it makes a huge difference</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I want you to take a look at your workstation this week I want you to go through your junk drawer I want you to look at the space that&#x27;s dedicated to your trading your screens your devices your plugs your chargers all of these things the view that you look out with or the posters or the framed pictures that are surrounding you one of my favorite moments in the interview I did with prdy bond is his office background he talked about the creativity that inspires him the colors the artists all of the art and the music that helps him be the best traitor he can be I want you to dedicate your office or your space where you trade to having that creative inspiration because it does go into you and it makes a huge difference</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

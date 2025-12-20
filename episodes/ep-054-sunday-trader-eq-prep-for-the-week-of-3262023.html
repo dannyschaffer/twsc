@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Power of Viewing Trading as Your Hero's Journey</p>
-<p>When you encounter pain or challenge in the market, your natural reaction is often frustration or resistance. However, these moments are not obstacles; they are critical calls for personal and professional expansion. By reframing trading setbacks as necessary steps in your psychological evolution, you can fundamentally shift your relationship with discomfort and risk.  * <strong>Trading as Up Leveling:</strong> Every daily challenge is actually forcing your consciousness and self-awareness to <strong>expand</strong>.</p>
+                <h3>The Hidden Power of Viewing Trading as Your Hero's Journey</h3>
+<p>When you encounter pain or challenge in the market, your natural reaction is often frustration or resistance. However, these moments are not obstacles; they are critical calls for personal and professional expansion. By reframing trading setbacks as necessary steps in your psychological evolution, you can fundamentally shift your relationship with discomfort and risk.</p>
 <ul>
-<li><strong>The Attachment Trap:</strong> Suffering in trading originates from identifying too closely with results and holding onto emotional <strong>attachments</strong>. Challenges force you to be present with where these attachments exist.</li>
-<li><strong>Embracing Discomfort:</strong> The discomfort and pain you experience serve as support for you to become the <strong>best version of yourself</strong>.<strong>Actionable Takeaway:</strong></li>
+<li>**Trading as Up Leveling:*</li>
+<li>Every daily challenge is actually forcing your consciousness and self-awareness to <strong>expand</strong>.</li>
+<li>**The Attachment Trap:*</li>
+<li>Suffering in trading originates from identifying too closely with results and holding onto emotional <strong>attachments</strong>. Challenges force you to be present with where these attachments exist.</li>
+<li>**Embracing Discomfort:*</li>
+<li>The discomfort and pain you experience serve as support for you to become the <strong>best version of yourself</strong>.**Actionable Takeaway:*</li>
+<li>This week, actively identify moments of frustration or challenge, recognizing them as intentional up leveling efforts designed to build your capacity."I want you to think about how everything that causes you discomfort or challenge or pain is actually in support of you becoming the best version of yourself or as Joe Campbell would say the hero of your own adventure"</li>
 </ul>
-<p>This week, actively identify moments of frustration or challenge, recognizing them as intentional up leveling efforts designed to build your capacity."I want you to think about how everything that causes you discomfort or challenge or pain is actually in support of you becoming the best version of yourself or as Joe Campbell would say the hero of your own adventure"</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody I wanted to talk to you today about viewing trading or anything that you choose to put a lot of time and energy into as your hero&#x27;s journey you guys have seen me put the auroboreos out on social a couple of times hinting at something that can support this perspective but I want you to just think right now what if all of the challenges that you face in your trading every single day are actually up leveling you are actually calling your Consciousness to expand your self-awareness to expand it forces you to be with the places you are attached and we all know that if we have too many attachments or any attachments for that matter then we potentially create suffering for ourselves so that is my suggestion for this week of treating I want you to think about how everything that causes you discomfort or challenge or pain is actually in support of you becoming the best version of yourself or as Joe Campbell would say the hero of your own adventure see if that doesn&#x27;t shift the way you experience the discomfort this week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

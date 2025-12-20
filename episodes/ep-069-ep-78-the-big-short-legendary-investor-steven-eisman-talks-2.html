@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Psychological Cost of Missing a Market Paradigm Shift</p>
+                <h3>The Psychological Cost of Missing a Market Paradigm Shift</h3>
 <p>When the market undergoes massive, non-linear changes—like a banking crisis—traders often cling to outdated mental models, leading to emotional stress and deep drawdowns. Legendary investor Steven Eisman (of The Big Short fame) reveals the mindset shifts required to navigate these seismic events and protect your capital from systemic fear.  - <strong>Paradigm Shifts Are Only Clear in Hindsight</strong>: Realizing that new market realities are often unrecognizable until they fully manifest, forcing an emotional reckoning with your strategy.</p>
 <ul>
 <li><strong>The Dangers of Hubris and Overconfidence</strong>: The importance of humility, even after a string of major wins, to avoid becoming the 'Peacock Today, Feather Duster Tomorrow.'</li>
 <li><strong>Investing is Not a Religion</strong>: Understanding that strict adherence to a market ideology will fail when the underlying context fundamentally changes.To increase your psychological agility, routinely stress-test your core market beliefs, identifying which fundamental assumptions would have to fail for your current strategy to break."Peacock Today, Feather Duster Tomorrow."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Transcript not available.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Cost of Extreme Self-Judgment: Why Criticism Kills Self-Awareness</p>
-<p>Extreme self-judgment is the single biggest blocker preventing traders from achieving true self-awareness and consistency. When you constantly punish yourself for mistakes, your inner critic forces you to avoid facing the challenges you repeatedly encounter. This destructive self-talk makes it impossible to learn and evolve.  * <strong>Self-Awareness Requires Neutrality</strong>: You must shift from a judgmental mindset to a <strong>neutral observer</strong> perspective to truly understand your behavior.</p>
+                <h3>The High Cost of Extreme Self-Judgment: Why Criticism Kills Self-Awareness</h3>
+<p>Extreme self-judgment is the single biggest blocker preventing traders from achieving true self-awareness and consistency. When you constantly punish yourself for mistakes, your inner critic forces you to avoid facing the challenges you repeatedly encounter. This destructive self-talk makes it impossible to learn and evolve.</p>
 <ul>
+<li><strong>Self-Awareness Requires Neutrality</strong>: You must shift from a judgmental mindset to a **neutral observer*</li>
+<li>perspective to truly understand your behavior.</li>
 <li><strong>The Judgment Barrier</strong>: Giving yourself a hard time prevents you from honestly examining recurring trading challenges, keeping you stuck in the same emotional loops.</li>
 <li><strong>Mindfulness is the Goal</strong>: Stepping out of judgment is the prerequisite for stepping into genuine self-awareness and mindfulness.Actionable Takeaway: Learn how to be this neutral observer of yourself so that you can turn up the volume on your self-awareness.you are going to have to come out of judgment for you to be able to step into self-awareness and or mindfulness</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the five practices to become a better trator also speaks to the ability to become self-aware here&#x27;s what I find stops a lot of Traders from becoming self-aware is how much of a hard time they give themselves they are so self- judgmental that it prevents them from being able to look some of the challenges they repeatedly face you are going to have to come out of judgment for you to be able to step into self-awareness and or mindfulness so my suggestion in this chapter is learn how to be this neutral Observer of yourself so that you can turn up the volume on your self-awareness all this is in my new ebook sign up now for it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

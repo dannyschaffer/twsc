@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How Self-Forgiveness and Habit Change Drive Trading Evolution</p>
-<p>Trading failure often stems from being stuck in repetitive, negative emotional loops. When your progress feels flat, the real barrier is often an inability to both decisively break bad habits and forgive yourself for past mistakes. True evolution in the market demands that you address this internal tension.  * <strong>The Dual Path to Growth</strong>: Personal evolution is achieved through two simultaneous actions: <strong>radical acceptance</strong> (forgiving past failures) and <strong>radical action</strong> (changing a destructive habit).</p>
+                <h3>How Self-Forgiveness and Habit Change Drive Trading Evolution</h3>
+<p>Trading failure often stems from being stuck in repetitive, negative emotional loops. When your progress feels flat, the real barrier is often an inability to both decisively break bad habits and forgive yourself for past mistakes. True evolution in the market demands that you address this internal tension.</p>
 <ul>
-<li><strong>Escaping the Flatline</strong>: Don't resign yourself to stagnation. Consistent, meaningful improvement—even small steps—creates the psychological momentum necessary for long-term <strong>ascension</strong> in performance.</li>
+<li><strong>The Dual Path to Growth</strong>: Personal evolution is achieved through two simultaneous actions: **radical acceptance*</li>
+<li>(forgiving past failures) and **radical action*</li>
+<li>(changing a destructive habit).</li>
+<li><strong>Escaping the Flatline</strong>: Don't resign yourself to stagnation. Consistent, meaningful improvement—even small steps—creates the psychological momentum necessary for long-term **ascension*</li>
+<li>in performance.</li>
 <li><strong>The 'Enough is Enough' Moment</strong>: Significant change begins with clear, honest recognition and a commitment to stop tolerating behavior that sabotages your trading plan.Actionable Takeaway: Dedicate 5 minutes today to write down a specific trading mistake you need to release, and a new boundary you will enforce to stop a current bad habit.Forgive yourself for some things and say enough's enough with some other things.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>What the hell&#x27;s evolution for? What are we doing? What&#x27;s time for? It&#x27;s between saying, &amp;quot;Hey, I&#x27;ve had enough of this with myself. I&#x27;m changing that habit. Enough&#x27;s enough.&amp;quot; And on the other side, I&#x27;m going to forgive yourself for that, Matthew, or whoever you are. Forgive yourself for some things and say enough&#x27;s enough with some other things. And in there is, I think, one of the secrets of our own personal evolution. And we all want to evolve a little bit, right? I mean, we don&#x27;t want to go through life saying it was just flat. I came into the world this, it never got better. It never got more meaningful. It was all flat. No, I believe we have a real chance for at least a small ascension in our life. Or hell, what the hell&#x27;s evol evolution for? What are we doing? What&#x27;s time for?</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

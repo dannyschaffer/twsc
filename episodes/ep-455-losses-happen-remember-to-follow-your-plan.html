@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Inviolable Edge: Why Sticking to Your Game Plan Always Wins</p>
+                <h3>The Inviolable Edge: Why Sticking to Your Game Plan Always Wins</h3>
 <p>The market constantly tests your commitment to structure, making it easy to abandon your plan the moment adversity hits. Allowing short-term emotional reactions to dictate trade execution is the surest way to sabotage your long-term success. True professional traders prioritize process adherence above all else because it fundamentally changes their risk profile.  - <strong>Maximizing Expectancy</strong>: Consistent application of your strategy, whether the trade wins or loses, ensures you capture the statistical edge your system is built upon.</p>
 <ul>
 <li><strong>Optimized Risk/Reward</strong>: A disciplined approach automatically leads to <strong>smaller losses and larger wins</strong>, providing an objective advantage over traders who rely on impulse.</li>
 <li><strong>Pre-Commitment is Key</strong>: Your process starts before the market opens with the creation of your <strong>watch list and game plan</strong>, minimizing on-the-fly, emotional decision-making.Before entering your next trade, check your entry criteria against your written rules and commit to following the exit criteria precisely, regardless of fear or hope.I'll tell you every single time when I follow my game plan you know win lose draw it it's just always better the wins are bigger the losses are smaller</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>every day you build your watch list you got your game plan and I&#x27;ll tell you every single time when I follow my game plan you know win lose draw it it&#x27;s just always better the wins are bigger the losses are smaller</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

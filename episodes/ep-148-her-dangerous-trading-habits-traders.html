@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Is Your Trading Chasing an Adventure? The Hidden Need That Fuels High Risk</p>
+                <h3>Is Your Trading Chasing an Adventure? The Hidden Need That Fuels High Risk</h3>
 <p>Even seasoned traders can suddenly find themselves taking reckless risk, often outside their established strategy. This phenomenon is often the result of unconscious emotional transference, where you attempt to fulfill deep psychological needs—like the need for adventure or excitement—inside the market. This misalignment transforms discipline into destructive behavior.  - Unconscious Transfer: High-risk recreational activities (like skydiving) and market speculation can both satisfy the need for adventure. When one outlet is blocked, the impulse transfers to the charts.</p>
 <ul>
 <li>Risk Misdiagnosis: The problem isn't a lack of technical knowledge or strategy failure; it's a psychological void you are attempting to fill with P\&L volatility.</li>
 <li>Identifying the Source: Recognizing that your high-risk trades are not about making money but about experiencing a 'hit' is the first step to reclaiming control.Actionable Takeaway: Actively identify and schedule healthy, non-market related activities that satisfy your need for excitement to prevent that impulse from contaminating your trading decisions.</li>
 </ul>
 <p>Quote: She began unknowingly trying to get her need for adventure met in her Trading.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>during the pandemic there was one traitor who called me and she you know had been trading for 10 years she was certainly not a novice and she said I&#x27;m taking unusually high risk in my treating I&#x27;ve never done this before I don&#x27;t know what&#x27;s going on she had been a weekend warrior she was one of those people who loved to go on these very risky hikes she loved to jump out of planes and so what was happening is she was trying to get her need for adventure met unconsciously in her trading because what had happened during the covid shutdowns was all of those activities got stopped and she didn&#x27;t have any way to get her need for adventure met and so she began unknowingly trying to get her need for adventure met in her Trading</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

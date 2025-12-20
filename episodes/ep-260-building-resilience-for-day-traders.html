@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Counterintuitive Way to Build Trading Resilience</p>
-<p>If you are struggling with emotional setbacks in the market, ask yourself if you are truly a resilient person outside of trading. Resilience is not an innate trait; it is a skill developed through deliberate practice. Without this foundational personal grit, consistency in high-pressure market situations will remain elusive.  - Resilience is developed by deliberately taking on <strong>uncomfortable tasks</strong> that you typically avoid.</p>
+                <h3>The Counterintuitive Way to Build Trading Resilience</h3>
+<p>If you are struggling with emotional setbacks in the market, ask yourself if you are truly a resilient person outside of trading. Resilience is not an innate trait; it is a skill developed through deliberate practice. Without this foundational personal grit, consistency in high-pressure market situations will remain elusive.  - Resilience is developed by deliberately taking on **uncomfortable tasks*</p>
 <ul>
-<li>The <strong>transfer effect</strong> ensures that developing grit in areas like physical fitness or meditation inevitably improves your trading performance.</li>
+<li>that you typically avoid.</li>
+<li>The **transfer effect*</li>
+<li>ensures that developing grit in areas like physical fitness or meditation inevitably improves your trading performance.</li>
 <li>Trading failures often stem from a lack of general personal resilience, making this a <strong>foundational psychological fix</strong>.Identify one non-trading activity—such as a cold shower, a challenging physical routine, or quiet meditation—that makes you uncomfortable, and commit to mastering it consistently.You will be amazed at how when you develop resilience and grit in another area of your life you will inevitably see it in your trading.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>would you consider yourself a resilient person if not how in God&#x27;s name are you ever going to be a resilient Trader and this is the trick how do you develop resilience I&#x27;ll tell you how you&#x27;re going to have to take on things that are uncomfortable and that is not something that&#x27;s ever going to be fun but you will be amazed at how when you develop resilience and Grid in another area of your life you will inevitably see it in your trading I watch this again and again with the traders that I coach so find an area that you can develop your resilience in perhaps it&#x27;s physical fitness perhaps it&#x27;s a cold shower for you perhaps it&#x27;s meditation what I want you to do is go someplace uncomfortable and watch your ability to have more grit increase</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

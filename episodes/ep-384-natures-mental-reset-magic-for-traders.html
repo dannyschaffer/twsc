@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>Your Best Trading Day Starts with a Digital Detox</h3>
-<p>The constant pressure of monitoring charts and screens leads to profound mental exhaustion, making clear decision-making feel like an uphill battle. When your energy is depleted, you mistake fatigue for a lack of discipline, costing you consistency and capital. This video reveals how intentionally disconnecting is the most powerful performance hack you have.  * <strong>Intentional Disconnection</strong>: Removing yourself from electronic devices and the 'always-on' trader mindset is a high-impact mental reset.</p>
+                <h3>Your Best Trading Day Starts with a Digital Detox</h3>
+<p>The constant pressure of monitoring charts and screens leads to profound mental exhaustion, making clear decision-making feel like an uphill battle. When your energy is depleted, you mistake fatigue for a lack of discipline, costing you consistency and capital. This video reveals how intentionally disconnecting is the most powerful performance hack you have.</p>
 <ul>
+<li><strong>Intentional Disconnection</strong>: Removing yourself from electronic devices and the 'always-on' trader mindset is a high-impact mental reset.</li>
 <li><strong>The Healing Power of Grounding</strong>: Physically connecting with the earth helps regulate the nervous system and restore mental clarity, often feeling like a <strong>six-hour vacation</strong>.</li>
 <li><strong>Capacity Over Grind</strong>: A deliberate period of rest, detached from market noise, drastically improves your focus and ability to tackle demanding work afterward.Actionable Takeaway: Dedicate at least a few hours this week to leave your phone and screens behind to physically connect with the outdoors.I was like I can do it because I took that six hours.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>but I have friends who had this huge piece of property with like miles of grass unas I went to their house last week I told them I&#x27;m not in a sociable mood can I just come and walk on the property I walked Barefoot on their property left my phone in the car for like six hours and just let my feet touch the earth I can&#x27;t I felt like I took a vacation patient 6 hours later the next day I had a whole bunch of work I had to do on the weekend I was like I can do it because I took that six hours I also swam in their pool that helped too but the Earth touching the ground getting away from electronic devices can have a huge huge impact</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

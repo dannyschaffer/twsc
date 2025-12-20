@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Blaming the Market: Why Radical Responsibility is Your Only Edge</p>
+                <h3>Stop Blaming the Market: Why Radical Responsibility is Your Only Edge</h3>
 <p>The market can often feel like an external force dictating your success or failure, leading to feelings of blame, guilt, or victimization. True psychological mastery begins not with strategy adjustments, but with adopting an empowering context that shifts your internal dialogue. This paradigm is the most game-changing concept for sustainable trading success.  - <strong>Responsibility is Context, Not Evaluation</strong>: The concept of responsibility is separate from traditional ideas of fault, blame, praise, or guilt; it simply accepts <strong>what is</strong>.</p>
 <ul>
 <li><strong>You Are the Generator</strong>: Adopting this mindset means standing firm in the declaration that you are the generator of your results—<strong>what you do, what you have, and what you are</strong>.</li>
 <li><strong>An Empowering Grace</strong>: Responsibility is a grace you give yourself, providing an empowering context that leaves you with <strong>a say in the matter of your life</strong>.Actionable Takeaway:</li>
 </ul>
 <p>For the upcoming trading period, consciously make the declaration that you are the cause in the matter of your trading results to reclaim your internal power.responsibility begins with the willingness to take the stand that one is the cause and the matter of one's life</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Mele Kalikimaka everybody my name is Kim and Curtin with the Wall Street coach and today is my Sunday slash Monday prep for December 26 2022. I want to read a quote to you that changed my life back in 2005 and my suggestion is to listen to it from the standpoint of living this practice for this upcoming year for 2023. this is a quote from Werner Earhart responsibility begins with the willingness to take the stand that one is the cause and the matter of one&#x27;s life it is a declaration not an assertion that is it is a context from which one chooses to live responsibility is not burden fault praise blame credit shame or guilt in responsibility there&#x27;s no evaluation of good or bad right or wrong there is simply what so understand you choose to take on what&#x27;s so being responsible starts with the willingness to deal with the situation from the view of life that you are the generator of what you do what you have and what you are that is not the truth it is a place to stand knowing to make you responsible nor can you impose responsibility on another it</p>
-<p>is a Grace you give yourself an empowering context that leaves you with a say in the matter of your life that quote that concept that paradigm is the most game-changing Paradigm I know of and I really hope that you consider what it would look like for you if you lived it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

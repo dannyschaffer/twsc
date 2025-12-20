@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Navy SEAL Mindset: How to Turn Trading Adversity into Advantage</p>
-<p>When the market moves against you and disappointment sets in, your immediate emotional reaction can amplify the damage. This reflexive negativity often prevents objective analysis and leads to self-recrimination. Discover a powerful psychological reframing tool used by elite performers to neutralize negative emotional responses.  - <strong>Rewiring the Brain:</strong> Adopting the response "Good" in the face of losses immediately disrupts the negative thought spiral that often follows disappointment.</p>
+                <h3>The Navy SEAL Mindset: How to Turn Trading Adversity into Advantage</h3>
+<p>When the market moves against you and disappointment sets in, your immediate emotional reaction can amplify the damage. This reflexive negativity often prevents objective analysis and leads to self-recrimination. Discover a powerful psychological reframing tool used by elite performers to neutralize negative emotional responses.  - **Rewiring the Brain:*</p>
 <ul>
-<li><strong>Respecting Reality:</strong> This practice forces you to acknowledge and <strong>respect what the market is presenting</strong>, rather than being mentally overwhelmed by it.</li>
-<li><strong>Preventing Emotional Paralysis:</strong> By reframing the situation, you maintain presence and capacity, ensuring market events do not dictate your internal state.Actionable Takeaway: Use the word "Good" aloud whenever you face unexpected adversity or disappointment in your trading this week to halt the negative emotional spiral.I want you to respond good because that is a rewiring of your brain to respect what's showing up and to take it and to not be bowled over by it.</li>
+<li>Adopting the response "Good" in the face of losses immediately disrupts the negative thought spiral that often follows disappointment.</li>
+<li>**Respecting Reality:*</li>
+<li>This practice forces you to acknowledge and <strong>respect what the market is presenting</strong>, rather than being mentally overwhelmed by it.</li>
+<li>**Preventing Emotional Paralysis:*</li>
+<li>By reframing the situation, you maintain presence and capacity, ensuring market events do not dictate your internal state.Actionable Takeaway: Use the word "Good" aloud whenever you face unexpected adversity or disappointment in your trading this week to halt the negative emotional spiral.I want you to respond good because that is a rewiring of your brain to respect what's showing up and to take it and to not be bowled over by it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I know a lot of Traders are a huge fan of Joo and Navy SEAL mentality but let me tell you what my favorite Joo quote is and that is his willingness and his other fellow seals to say the word good in spite of adversity so I want you to use that response this week when something goes par shaped and you are incredibly disappointed with yourself with the market with what ever shows up in your life or your trading I want you to respond good because that is a rewiring of your brain to respect what&#x27;s showing up and to take it and to not be bowled over by it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

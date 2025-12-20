@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Use the Hero's Journey to Conquer Trading Setbacks</p>
-<p>Hitting painful, repetitive walls in your trading career can feel like a personal failure, often leading to burnout and quitting. If you view your progress as a linear sprint, every setback feels catastrophic. Shifting your perspective to the <strong>Hero's Journey</strong> model reframes struggle as an essential stage of evolution.  * The <strong>Hero's Journey</strong> framework, inspired by Joseph Campbell, allows you to classify your inevitable struggles not as failure, but as standard stages of growth.</p>
+                <h3>How to Use the Hero's Journey to Conquer Trading Setbacks</h3>
+<p>Hitting painful, repetitive walls in your trading career can feel like a personal failure, often leading to burnout and quitting. If you view your progress as a linear sprint, every setback feels catastrophic. Shifting your perspective to the **Hero's Journey*</p>
 <ul>
-<li>Viewing your trading development through this lens builds the <strong>emotional resilience</strong> required to persist when others give up, fundamentally changing your relationship with loss.Actionable Takeaway: When you face a significant setback, consciously identify which stage of the heroic journey you are currently in to strip the event of its overwhelming emotional power.That’s just part of any hero's journey and that will give you the oomph to get up off the floor and try again.</li>
+<li>model reframes struggle as an essential stage of evolution.</li>
+<li>The **Hero's Journey*</li>
+<li>framework, inspired by Joseph Campbell, allows you to classify your inevitable struggles not as failure, but as standard stages of growth.</li>
+<li>Viewing your trading development through this lens builds the **emotional resilience*</li>
+<li>required to persist when others give up, fundamentally changing your relationship with loss.Actionable Takeaway: When you face a significant setback, consciously identify which stage of the heroic journey you are currently in to strip the event of its overwhelming emotional power.That’s just part of any hero's journey and that will give you the oomph to get up off the floor and try again.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I&#x27;ve said it before and I&#x27;ll say it again you&#x27;re on a hero&#x27;s journey if you begin to look at the journey you&#x27;ve had as a traitor from the perspective of a hero&#x27;s journey you will find yourself hitting into certain walls that no longer stop you because you&#x27;ll realize oh well that&#x27;s just part of any hero&#x27;s journey and that will give you the UMP to get up off the Flor and try again I learned this thanks to Joe Campell and I speak at Great length about a traitor&#x27;s heroic journey I even mapped it out and I will give you that when you sign up for my new trading book ebook called the five practices to become a better Trader</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

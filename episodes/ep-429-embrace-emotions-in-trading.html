@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Halfway: The Critical Link Between Emotional Numbing and Addiction</p>
-<p>When difficult feelings surface during trading—be it fear, anxiety, or frustration—the instinct is often to numb or avoid the pain. This emotional suppression prevents true healing and manifests as costly addictive behaviors, trapping you in repetitive and unproductive cycles. The path to consistency isn't emotional suppression—it's skillful navigation.  - The primary cause of numbing and addictive behavior is the <strong>lack of tools</strong> necessary to navigate difficult feelings.</p>
+                <h3>Stop Trading Halfway: The Critical Link Between Emotional Numbing and Addiction</h3>
+<p>When difficult feelings surface during trading—be it fear, anxiety, or frustration—the instinct is often to numb or avoid the pain. This emotional suppression prevents true healing and manifests as costly addictive behaviors, trapping you in repetitive and unproductive cycles. The path to consistency isn't emotional suppression—it's skillful navigation.  - The primary cause of numbing and addictive behavior is the **lack of tools*</p>
 <ul>
-<li>Hard emotions are not meant to be avoided; they must be <strong>surfed and felt all the way through</strong> to resolve the underlying pain.</li>
-<li>If you only commit to emotional processing halfway, you remain trapped in the cycle, unable to find the <strong>way out of the forest</strong>.<strong>Actionable Takeaway:</strong> When a difficult feeling arises during a trade, commit to fully feeling it without judgment to significantly reduce your impulse to numb the experience with impulsive trading."They have to be surfed and felt so you can get all the way through them."</li>
+<li>necessary to navigate difficult feelings.</li>
+<li>Hard emotions are not meant to be avoided; they must be **surfed and felt all the way through*</li>
+<li>to resolve the underlying pain.</li>
+<li>If you only commit to emotional processing halfway, you remain trapped in the cycle, unable to find the <strong>way out of the forest</strong>.**Actionable Takeaway:*</li>
+<li>When a difficult feeling arises during a trade, commit to fully feeling it without judgment to significantly reduce your impulse to numb the experience with impulsive trading."They have to be surfed and felt so you can get all the way through them."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the reason any of us num also known as addiction it&#x27;s because we haven&#x27;t gotten the tools yet to navigate hard to be with feelings hard to be with feelings aren&#x27;t fun to be with nobody wants to be in the pain but they have to be surfed and felt so you can get all the way through them I love this little story that says how far can a dog walk into the forest and the answer is halfway because at some point halfway into that Forest becomes the way out of the forest so do this with your emotions guys let yourself feel them not halfway but all the way through and when you do that you will be less likely to need to numb them</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

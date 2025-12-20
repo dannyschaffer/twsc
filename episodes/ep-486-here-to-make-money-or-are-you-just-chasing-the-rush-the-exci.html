@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>The Emotional Void: Stop Trading to Feel Something</h3>
-<p>Are you trading for profit, or are you trading to satisfy an emotional need? Many traders unconsciously use the market to fulfill personal voids like excitement, validation, or security. When decisions are driven by these internal needs, they become emotional rather than strategic, leading to costly mistakes.  - \*\*Trading as Fulfillment:\*\* Recognize that you may be using the market to meet non-financial needs such as excitement, self-respect, or a sense of security.</p>
+                <h3>The Emotional Void: Stop Trading to Feel Something</h3>
+<p>Are you trading for profit, or are you trading to satisfy an emotional need? Many traders unconsciously use the market to fulfill personal voids like excitement, validation, or security. When decisions are driven by these internal needs, they become emotional rather than strategic, leading to costly mistakes.  - \*\*Trading as Fulfillment:\*\</p>
 <ul>
-<li>\*\*The Cost of Non-Strategic Trading:\*\* Decisions made from an emotional state, rather than a strategic one, will inevitably lead to big losses.</li>
-<li>\*\*The Clarity Shift:\*\* Achieving clarity on your underlying emotional drivers is the crucial step toward stopping emotional trading and focusing purely on strategy.Actively inventory the non-financial needs you might be seeking in your P&L to differentiate between a strategic impulse and an emotional compulsion.Are you trading for profits or are you trading to feel something</li>
+<li>Recognize that you may be using the market to meet non-financial needs such as excitement, self-respect, or a sense of security.</li>
+<li>\*\*The Cost of Non-Strategic Trading:\*\</li>
+<li>Decisions made from an emotional state, rather than a strategic one, will inevitably lead to big losses.</li>
+<li>\*\*The Clarity Shift:\*\</li>
+<li>Achieving clarity on your underlying emotional drivers is the crucial step toward stopping emotional trading and focusing purely on strategy.Actively inventory the non-financial needs you might be seeking in your P&L to differentiate between a strategic impulse and an emotional compulsion.Are you trading for profits or are you trading to feel something</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>your decisions will cost you big time are you trading to fil void be honest are you trading for profits or are you trading to feel something most Traders don&#x27;t realize that they&#x27;re using the market to meet needs they AR fulfilling in their personal lives maybe it&#x27;s excitement or challenge self-respect or validation or even a sense of security so when you&#x27;re trading to get needs met in instead of trading from a strategic place your decisions will cost you big time if this hits home it&#x27;s time to uncover what you&#x27;re really chasing I put together a Traders needs list to help you figure it out so you can stop trading emotionally and start trading with Clarity drop the work void in the comments and I will send you my list</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

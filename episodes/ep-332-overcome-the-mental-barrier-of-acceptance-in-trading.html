@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Wall That Blocks Traders From Receiving Profit</p>
+                <h3>The Hidden Wall That Blocks Traders From Receiving Profit</h3>
 <p>If you find yourself constantly sabotaging winning streaks, the issue may not be market analysis but a deep-seated mental barrier to acceptance. Many traders unconsciously erect an emotional wall that prevents them from receiving the fruits of their hard work, leading to self-sabotage when success finally arrives and making market gains feel fundamentally uncomfortable.  - <strong>The Energy of Acceptance</strong>: The ability to receive profit from the market operates on the same energetic principle as your capacity to receive positive feedback in your daily life.</p>
 <ul>
 <li><strong>Unconscious Barriers</strong>: Success is often sabotaged when an unconscious psychological wall exists, blocking you from retaining gains because financial acceptance feels fundamentally unsafe or undeserved.</li>
 <li><strong>Mirror Your Mindset</strong>: Your comfort level with receiving non-monetary compliments or recognition mirrors your comfort level with receiving P\&L profits.<strong>Actionable Takeaway</strong>: Start practicing consciously receiving compliments and acknowledging positive outcomes in non-trading life to desensitize your nervous system to acceptance."If you are walking around unconsciously day in and day out not receiving a stranger's compliment on a hat you're wearing how the hell are you gonna get comfortable receiving from all the hard work and effort you are putting into the market"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>let me ask all of you Traders a question how in God&#x27;s name are you guys going to receive from the market from your trades if you already have an unconscious wall up that stops you from receiving do you think it operates any different it doesn&#x27;t energy is energy guys so if you are walking around unconsciously day in and day out not receiving a stranger&#x27;s compliment on a hat you&#x27;re wearing how the hell are you gonna get comfortable receiving from all the hard work and effort you are putting into the market it is going to also be uncomfortable for you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

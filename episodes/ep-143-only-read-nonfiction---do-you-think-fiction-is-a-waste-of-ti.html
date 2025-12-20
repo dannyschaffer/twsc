@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Limiting Yourself to Non-Fiction is Costing You Emotional Edge</p>
-<p>Many high-performing traders limit their education to only non-fiction, viewing emotional growth tools like fiction as unproductive. This narrow focus limits your ability to absorb complex psychological lessons that are critical for long-term consistency in the market.  * <strong>Storytelling is an evolutionary learning tool</strong>: We have evolved over thousands of years through narratives, making fictional accounts highly effective for deep internalization of complex human behavior.</p>
+                <h3>Why Limiting Yourself to Non-Fiction is Costing You Emotional Edge</h3>
+<p>Many high-performing traders limit their education to only non-fiction, viewing emotional growth tools like fiction as unproductive. This narrow focus limits your ability to absorb complex psychological lessons that are critical for long-term consistency in the market.</p>
 <ul>
+<li><strong>Storytelling is an evolutionary learning tool</strong>: We have evolved over thousands of years through narratives, making fictional accounts highly effective for deep internalization of complex human behavior.</li>
 <li><strong>Fiction grants psychological capacity</strong>: Reading character-driven stories allows you to step into the psychological shoes of diverse characters, providing emotional training beyond what purely technical, non-fiction resources can offer.Challenge your bias against fictional literature by dedicating time to a character-driven novel this week.it will never ever be able to replace the lessons I have learned through the stories that fiction gives me.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody I want to talk about the importance of fiction I have a client who inspired me this morning to do this video because I&#x27;ve recently enrolled him in the importance of fiction he is somebody who always thought that fiction was a waste of time and that non-fiction was the only way to go and what I want to suggest is that we have evolved over thousands of years through storytelling that&#x27;s what fiction ultimately is but it allows you to step into the shoes of a cast of characters that you get to learn from there are only so many lessons you can learn from non-fiction I read a lot of non-fiction but it will never ever be able to replace the lessons I have learned through the stories that fiction gives me so if you are of that opinion I ask you to just consider</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

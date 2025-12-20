@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Against Your Hormones: How to Neutralize Biological Bias</p>
-<p>Your trading outcomes aren't just dictated by strategy; they are profoundly influenced by your biological state. Unchecked hormonal spikes, specifically testosterone and cortisol, manifest directly as irrational exuberance or paralyzing pessimism. If you ignore this internal data, you are fighting a battle you cannot win with charts alone.  * <strong>Irrational Exuberance is often Testosterone</strong>: Uncontrolled optimism and over-confidence in trading can be a biological response, not a strategic one.</p>
+                <h3>Stop Trading Against Your Hormones: How to Neutralize Biological Bias</h3>
+<p>Your trading outcomes aren't just dictated by strategy; they are profoundly influenced by your biological state. Unchecked hormonal spikes, specifically testosterone and cortisol, manifest directly as irrational exuberance or paralyzing pessimism. If you ignore this internal data, you are fighting a battle you cannot win with charts alone.</p>
 <ul>
+<li><strong>Irrational Exuberance is often Testosterone</strong>: Uncontrolled optimism and over-confidence in trading can be a biological response, not a strategic one.</li>
 <li><strong>Pessimism is Cortisol</strong>: Market fear and hesitation (irrational pessimism) are often driven by cortisol, the primary stress hormone.</li>
 <li><strong>Cognitive Abilities are Tied to Lab Work</strong>: These hormones have a massive impact on your cognitive abilities and capacity for consistent decision-making.Make it a priority to get blood work done—specifically checking cortisol and testosterone levels—if you haven't done so in the last six to twelve months.When you're going to have irrational exuberance, guess what that is? Testosterone. And when you're going to have irrational pessimism, guess what that is? Cortisol, the stress hormone.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>was the last time you did lab work on your blood when did you last check your cortisol levels your testosterone levels these all have a huge impact on your cognitive abilities so if you haven&#x27;t had that checked any time in the last six months to year then I urge you to consider the package we&#x27;re now offering with the Diagnostic lab for you to be able to check the especially for traitors because when you&#x27;re going to have irrational exuberance guess what that is testosterone and when you&#x27;re going to have irrational pessimism pessimism guess what that is cortisol the stress hormone find out what your levels are so that you start to have a much easier time in your treating</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

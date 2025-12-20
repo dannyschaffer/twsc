@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Ultimate Test of Courage: How to Act When Fear Tells You to Stop</p>
-<p>Fear can feel overwhelming in high-stakes environments like trading, often paralyzing decision-making. This lesson draws on a story of extreme courage to show that the real test is simply choosing to act when your instinct demands retreat.  * <strong>True Courage is Trusting Your Inner Foundation</strong>: Courage is not the absence of fear, but the ability to execute on self-trust when the perceived risk is high.</p>
+                <h3>The Ultimate Test of Courage: How to Act When Fear Tells You to Stop</h3>
+<p>Fear can feel overwhelming in high-stakes environments like trading, often paralyzing decision-making. This lesson draws on a story of extreme courage to show that the real test is simply choosing to act when your instinct demands retreat.</p>
 <ul>
+<li><strong>True Courage is Trusting Your Inner Foundation</strong>: Courage is not the absence of fear, but the ability to execute on self-trust when the perceived risk is high.</li>
 <li><strong>Overriding Fear's Command</strong>: Real courage manifests in those small moments where you deliberately override the fearful impulse that says "don't do something."</li>
 <li><strong>Identify Your Deep Anchor</strong>: Trusting your core identity or beliefs provides an unshakeable foundation when facing market volatility.Commit to performing one low-risk action this week that your fear has previously prevented you from executing."You just need a moment where fear says don't do something and you do it anyway."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>True story. My paddling coach, Manny Vincent, once rode on the back of a shark. And no, it&#x27;s not a metaphor. It&#x27;s real life. Because he wasn&#x27;t afraid. He trusted his ancestors because the shark is his family lineage&#x27;s animal spirit, also known as amakua. Now, that kind of courage is rare, but it&#x27;s not impossible. And you don&#x27;t need a shark to test your courage. You just need a moment where fear says don&#x27;t do something and you do it anyway. Born of two oceans, our new book will remind you who you are underneath the doubt. You can find it on Amazon and Barnes &amp; Noble.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

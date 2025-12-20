@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The One Word Shift That Unlocks Your Trading Breakthrough</p>
-<p>When frustration sets in over repeated negative behavior, your immediate temptation is to ask, "Why did I keep doing this?" This question is a self-critical trap that forces you onto the defensive, shutting down access to the true behavioral cause. Reframe your self-inquiry to cultivate the curiosity necessary for real psychological breakthroughs.  - <strong>Shift from Judgment to Curiosity:</strong> Asking "What" instead of "Why" transforms your mindset from a defensive, self-critical state to an open, curious, and effective observational one.</p>
+                <h3>The One Word Shift That Unlocks Your Trading Breakthrough</h3>
+<p>When frustration sets in over repeated negative behavior, your immediate temptation is to ask, "Why did I keep doing this?" This question is a self-critical trap that forces you onto the defensive, shutting down access to the true behavioral cause. Reframe your self-inquiry to cultivate the curiosity necessary for real psychological breakthroughs.  - **Shift from Judgment to Curiosity:*</p>
 <ul>
-<li><strong>Access the Hidden Cause:</strong> By removing self-judgment, you create the psychological safety required for the real answer—the root of your repeated behavior—to naturally surface.<strong>Actionable Takeaway:</strong> The next time you are frustrated by a trading mistake, immediately change your question from "Why did I..." to "I wonder what is going on here."I wonder what's going on I wonder what this is about it leads you to become less defensive more more Curious and the answer is likely to surface</li>
+<li>Asking "What" instead of "Why" transforms your mindset from a defensive, self-critical state to an open, curious, and effective observational one.</li>
+<li>**Access the Hidden Cause:*</li>
+<li>By removing self-judgment, you create the psychological safety required for the real answer—the root of your repeated behavior—to naturally surface.**Actionable Takeaway:*</li>
+<li>The next time you are frustrated by a trading mistake, immediately change your question from "Why did I..." to "I wonder what is going on here."I wonder what's going on I wonder what this is about it leads you to become less defensive more more Curious and the answer is likely to surface</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>when you&#x27;re frustrated over repeated Behavior you are going to be tempted to say why did I do that why do I keep doing this and I want you to replace the word what instead of why that means you want to say I wonder what&#x27;s going on I wonder what this is about it leads you to become less defensive more more Curious and the answer is likely to surface</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

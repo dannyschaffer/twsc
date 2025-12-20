@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Fighting the Market: The 3 Unavoidable Truths of Trading Psychology</p>
+                <h3>Stop Fighting the Market: The 3 Unavoidable Truths of Trading Psychology</h3>
 <p>Traders often exhaust themselves trying to achieve a stress-free environment where everything is predictable. This resistance to inherent market conditions—like unexpected drawdowns or constant effort—is what truly drains their mental capital. The key to sustainable growth lies in accepting these unavoidable realities.</p>
 <p>Key Insights:  - <strong>The Trio of Acceptance</strong>: The path to trading success requires accepting three constants: pain, uncertainty, and work.</p>
 <ul>
@@ -232,15 +201,6 @@
 <li><strong>Victory Requires the Necessary</strong>: Growth and lasting victory in the markets are achieved not by eliminating these constants, but by embracing them as foundations for resilience.Actionable Takeaway:</li>
 </ul>
 <p>Identify where you are currently resisting pain, uncertainty, or work in your trading routine and consciously shift to a place of acceptance."We have to accept them because ultimately they'll always be present and it's what we are here to overcome and for us to have Victory and growth these are sort of necessary"</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody pisses Kim and curtain with the Wall Street coach this is my January 15 2023 Trader EQ prep uh what I wanted to speak to today was a fantastic documentary that Jonas held uh Jonas Hill did called Stutz and it&#x27;s a documentary about his therapy experience with uh Dr Stutz the gentleman who he&#x27;s worked with for the past three years there&#x27;s so much in that documentary that reminds me of what coaching is like and even steps&#x27;s approach is really unconventional uh in the kind of Halls of the way psychologists and psychiatrists usually work I highly recommend it one of the things that starts Advocates with his clients is that there are three things one needs to accept pain uncertainty and work and I&#x27;ve just never heard it so succinctly put before and what he says about them is that we are we we have to accept them because ultimately they&#x27;ll always be present and it&#x27;s what we are here to overcome and and for us to have Victory and growth these are sort of necessary so I just want to pose to you this week where is it that you perhaps are in resistance</p>
-<p>to pain uncertainty and work and just notice that that resistance is likely uh having to lose some energy what would it be like if you began to sit in a place of acceptance of these three things that&#x27;s my EQ for the week if you like this please sign up for the tradercheckin.com where I give you an assessment for you to take before you trade every day and if you want to just have a quick temperature check before the day begins all right I&#x27;ll see you next Sunday guys stay uh profitable and be safe</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

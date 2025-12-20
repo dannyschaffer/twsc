@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>Stop Indecision: How to Use the "Hero Test" in Your Trading</h3>
-<p>Indecision is a silent killer of trading accounts, causing hesitation on entries and regret on exits. When confronted with a high-pressure choice, the mind often freezes, leading to costly psychological paralysis. To break this loop, you need a powerful, objective frame of reference.  - <strong>Externalizing Judgment</strong> removes emotional attachment and subjective bias from difficult trading decisions.</p>
+                <h3>Stop Indecision: How to Use the "Hero Test" in Your Trading</h3>
+<p>Indecision is a silent killer of trading accounts, causing hesitation on entries and regret on exits. When confronted with a high-pressure choice, the mind often freezes, leading to costly psychological paralysis. To break this loop, you need a powerful, objective frame of reference.  - **Externalizing Judgment*</p>
 <ul>
+<li>removes emotional attachment and subjective bias from difficult trading decisions.</li>
 <li>Using a "hero" perspective forces you to <strong>Act With Clarity</strong>, embodying qualities like decisiveness and courage instead of fear.</li>
-<li>This psychological shift helps maintain <strong>Emotional Consistency</strong> during volatile moments, ensuring you adhere to your predetermined plan.Before making a high-stakes trade this week, define your "Trading Hero" (an archetype of ideal discipline) and mentally channel their decision-making process.I want you to ask yourself what would your superhero do in that situation</li>
+<li>This psychological shift helps maintain **Emotional Consistency*</li>
+<li>during volatile moments, ensuring you adhere to your predetermined plan.Before making a high-stakes trade this week, define your "Trading Hero" (an archetype of ideal discipline) and mentally channel their decision-making process.I want you to ask yourself what would your superhero do in that situation</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so who&#x27;s your hero is there somebody from either a movie or a kids comic book that to this day you kind of still feel like wow if only I could fly like Superman or climb a building like Batman I know growing up for me I was exposed to wonder woman who I was like wow I want that rope that gets the truth out of everybody I want you to think about who your hero is and I want you to put yourself into the perspective of whoever that hero is maybe it&#x27;s Neo maybe it&#x27;s Harry Potter when you stumble into trouble or difficulty with a choice this week I want you to ask yourself what would your superhero do in that situation</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

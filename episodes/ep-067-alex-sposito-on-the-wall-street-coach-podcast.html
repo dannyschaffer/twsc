@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Cost of Beginner's Luck: Why Risk Management Is Your Only Real Edge</p>
+                <h3>The High Cost of Beginner's Luck: Why Risk Management Is Your Only Real Edge</h3>
 <p>The intoxicating rush of a major win can mask fundamental flaws in your process. Many successful early traders confuse luck with skill, leading to a profound emotional crash when a single, aggressive trade wipes out their entire gain. This episode examines the brutal difference between a lucky recovery and the discipline of true risk management.  - <strong>The Luck Trap</strong>: Initial large wins—like turning 25,000 into 250,000—often breed overconfidence, causing traders to disregard the essential role of strict risk limits.</p>
 <ul>
 <li><strong>Risk Management is the Most Important Attribute</strong>: While having an appetite for risk is necessary for trading, the single most crucial attribute for longevity and success is unwavering risk management.</li>
-<li><strong>The Cost of Denial</strong>: The habit of continually adding to a wrong position is not a strategy; it is a form of gambling that relies on chance to prevent a devastating, "monstrous loss."<strong>Actionable Takeaway</strong></li>
+<li><strong>The Cost of Denial</strong>: The habit of continually adding to a wrong position is not a strategy; it is a form of gambling that relies on chance to prevent a devastating, "monstrous loss."**Actionable Takeaway*</li>
+<li>After every profitable trade, review your process to identify any moments where luck, rather than your planned edge, saved the position from turning into a massive loss."I lost it all on one trade... I was like depressed and kind of wondering like what happened like how was I so wrong."</li>
 </ul>
-<p>After every profitable trade, review your process to identify any moments where luck, rather than your planned edge, saved the position from turning into a massive loss."I lost it all on one trade... I was like depressed and kind of wondering like what happened like how was I so wrong."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what do you feel with the strengths or attributes you know to becomers haven&#x27;t been to traitor at first it was definitely a little bit of luck but risk management is definitely the most important tribute I mean having an appetite for risk you know not a lot of people can just be okay with losing money and losing a lot you know a lot a lot of money over the period of time I&#x27;d have to say risk management is probably the best a tribute and I learned the hard way I my first year trading Super Lucky yeah turned 25 000 at 225 you know 250 000 and then I lost it all on one trade shorting a stop so I took like two months off trading after that I was like depressed and kind of wondering like what happened like how was I so wrong and it was actually my dad who told me to kind of get back on the saddle give it another chance and then but that made me kind of reflect on and notice that there are a lot of times where I was wrong on a stock and I&#x27;d keep adding and</p>
-<p>it would turn in my favor and I simply just got lucky that you know 20 30 000 trade would result from that when it really could have been a monstrous loss like the one I experienced on an oil company ran back then</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

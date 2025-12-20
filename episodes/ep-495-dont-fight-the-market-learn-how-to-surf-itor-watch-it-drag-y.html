@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Don’t Fight the Market: How to Trade with Rhythm, Timing, and Flow</p>
-<p>When you approach the market with force, demanding trades conform to your will, trading quickly devolves into an exhausting and costly battle. This constant struggle to overpower the flow leads to frustration and missed opportunities. True success is found not in aggression, but in learning to move *with* the market's current.  - <strong>Rhythm Outranks Power</strong>: Just like an outrigger canoe, trading success depends entirely on synchronization. If you are 'out of sync,' the entire process slows down; when in rhythm, you <strong>Glide Effortlessly</strong>.</p>
+                <h3>Don’t Fight the Market: How to Trade with Rhythm, Timing, and Flow</h3>
+<p>When you approach the market with force, demanding trades conform to your will, trading quickly devolves into an exhausting and costly battle. This constant struggle to overpower the flow leads to frustration and missed opportunities. True success is found not in aggression, but in learning to move *with</p>
 <ul>
+<li>the market's current.  - <strong>Rhythm Outranks Power</strong>: Just like an outrigger canoe, trading success depends entirely on synchronization. If you are 'out of sync,' the entire process slows down; when in rhythm, you <strong>Glide Effortlessly</strong>.</li>
 <li><strong>Patience is Your Paddle</strong>: Forcing a trade or moving against the flow guarantees you won't get anywhere. Success is determined by <strong>timing, patience, and flow</strong>—waiting for the right setup.</li>
 <li><strong>Adjust to the Conditions</strong>: The real edge comes from being able to adjust and synchronize with the market's rhythm, not from rigidly holding onto a strategy that resists the current.Stop trying to hold for power or force trades, and commit to waiting patiently until you can sync up with the market’s underlying rhythm."When it's done right the canoe Glides effortlessly across the ocean when it's forced it feels like a battle trading is the same"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>when I moved to Hawaii 10 years ago I joined an Outrigger Canoe paddling Club I had no experience but almost every morning I was out there on the water learning how to move with that ocean instead of against it and that changed the way I saw everything including treating in a canoe it&#x27;s not just about power it&#x27;s also about Rhythm six paddlers one stroke one person is at a sink the whole canoe slows down when it&#x27;s done right the canoe Glides effortlessly across the ocean when it&#x27;s forced it feels like a battle trading is the same if you try to hold for power The Market Force trades or go against the flow you don&#x27;t get anywhere but when you sink up at the Market&#x27;s Rhythm waiting for the right setup adjusting what needed that is when you can move smoothly through the game success in trading is just like paddling is about timing patience and flow so stop fighting the waves and start working with them I hope you&#x27;ll tag a traitor who needs to hear this message today</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

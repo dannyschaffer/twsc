@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Your Trading Edge Is Olympic-Level Wellness</p>
-<p>Many traders focus solely on charts, forgetting that their mind and body are the ultimate instruments of performance. If you want world-class results, you must adopt the same dedication to <strong>physical and mental wellness</strong> that elite athletes do. Ignoring your fundamental well-being guarantees burnout and emotional volatility in the market.  - <strong>Trading as an Endurance Sport:</strong> Recognize that sustained profitability demands the rigorous, daily commitment to <strong>wellness and recovery</strong>.</p>
+                <h3>Your Trading Edge Is Olympic-Level Wellness</h3>
+<p>Many traders focus solely on charts, forgetting that their mind and body are the ultimate instruments of performance. If you want world-class results, you must adopt the same dedication to **physical and mental wellness*</p>
 <ul>
-<li><strong>Capacity Over Strategy:</strong> Your technical strategy is only as good as your <strong>physical and mental capacity</strong> to execute it consistently under high pressure.</li>
-<li><strong>Prioritize Your Instrument:</strong> True peak performance comes from maintaining the operational health of the trader—the most critical variable in the P\&L equation.Actionable Takeaway: Schedule 15 minutes of non-chart related movement or mindfulness practice into your pre-market routine this week.as a trader you are your own version of an Olympian make sure you are practicing Wellness</li>
+<li>that elite athletes do. Ignoring your fundamental well-being guarantees burnout and emotional volatility in the market.  - **Trading as an Endurance Sport:*</li>
+<li>Recognize that sustained profitability demands the rigorous, daily commitment to <strong>wellness and recovery</strong>.</li>
+<li>**Capacity Over Strategy:*</li>
+<li>Your technical strategy is only as good as your **physical and mental capacity*</li>
+<li>to execute it consistently under high pressure.</li>
+<li>**Prioritize Your Instrument:*</li>
+<li>True peak performance comes from maintaining the operational health of the trader—the most critical variable in the P\&L equation.Actionable Takeaway: Schedule 15 minutes of non-chart related movement or mindfulness practice into your pre-market routine this week.as a trader you are your own version of an Olympian make sure you are practicing Wellness</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you watch the Olympics I bet you can remember some moments where you were like how is it possible they got their bodies to be able to pull that off but I want you to think about the wellness that they dedicate their lives and their bodies too as a traitor you are your own version of an Olympian make sure you are practicing Wellness</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

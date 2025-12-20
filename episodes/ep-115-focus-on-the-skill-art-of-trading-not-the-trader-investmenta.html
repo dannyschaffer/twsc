@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,21 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Chasing Profits: Focus on Skill, Not the Money</p>
-<p>When you approach trading with the desperate mindset of "I have to get this win," you attach your self-worth to the volatile outcome of the market. This intense focus on the result, rather than the execution, prevents you from performing at your best. True success is not found in chasing the P&L, but in dedicating yourself entirely to the quality of your craft.  * <strong>The Audition Mindset:</strong> Success happens when you stop <strong>trying to get the job</strong> (make money) and start focusing on <strong>being the best character</strong> (executing your strategy perfectly).</p>
+                <h3>The Hidden Cost of Chasing Profits: Focus on Skill, Not the Money</h3>
+<p>When you approach trading with the desperate mindset of "I have to get this win," you attach your self-worth to the volatile outcome of the market. This intense focus on the result, rather than the execution, prevents you from performing at your best. True success is not found in chasing the P&L, but in dedicating yourself entirely to the quality of your craft.</p>
 <ul>
-<li><strong>Detaching from the Outcome:</strong> Your performance should be judged solely on whether you fulfilled your <strong>responsibility</strong> to follow your rules, regardless of whether the trade won or lost.</li>
-<li><strong>Skill Creates Success:</strong> When the skill and art of trading become your primary focus, consistent profits become the inevitable <strong>byproduct</strong> of your disciplined process.<strong>Actionable Takeaway:</strong></li>
+<li>**The Audition Mindset:*</li>
+<li>Success happens when you stop **trying to get the job*</li>
+<li>(make money) and start focusing on **being the best character*</li>
+<li>(executing your strategy perfectly).</li>
+<li>**Detaching from the Outcome:*</li>
+<li>Your performance should be judged solely on whether you fulfilled your **responsibility*</li>
+<li>to follow your rules, regardless of whether the trade won or lost.</li>
+<li>**Skill Creates Success:*</li>
+<li>When the skill and art of trading become your primary focus, consistent profits become the inevitable **byproduct*</li>
+<li>of your disciplined process.**Actionable Takeaway:*</li>
+<li>Shift your daily trading goal from "make X dollars" to "execute my plan flawlessly."he said once he stopped trying to get the job and he started to focus on being the best version of that character... he started to get the roles.</li>
 </ul>
-<p>Shift your daily trading goal from "make X dollars" to "execute my plan flawlessly."he said once he stopped trying to get the job and he started to focus on being the best version of that character... he started to get the roles.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>there&#x27;s a great video of the actor Brian Cranston that&#x27;s out there on social media right now where he talks about how early in his career he was struggling to get work and he walked into every audition from the standpoint of I have to get this job but at some point he realized that was the wrong approach instead he shifted into what he knew was his responsibility and that was to be the best character that script was delivered to him that he could be and he said once he stopped trying to get the job and he started to focus on being the best version of that character whose role he was auditioning for he started to get the roles he started to have more work than he knew what to do with how does this apply to you well there&#x27;s a lot of times where Traders are attached to the results they want to make money they want to have the true</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +260,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

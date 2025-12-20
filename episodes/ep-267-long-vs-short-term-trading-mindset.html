@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Critical Balance: Aligning Short-Term Trades with Long-Term Vision</p>
-<p>Traders often fail to integrate their daily actions with their ultimate goals, leading to misaligned efforts and emotional inconsistency. Successfully balancing aggressive short-term execution with a calm, long-term vision requires dedicated time outside of the active trading day to manage your mindset.  - <strong>Define Your Long-Term Plan</strong> first, as this foundation should guide all subsequent short-term decisions.</p>
+                <h3>The Critical Balance: Aligning Short-Term Trades with Long-Term Vision</h3>
+<p>Traders often fail to integrate their daily actions with their ultimate goals, leading to misaligned efforts and emotional inconsistency. Successfully balancing aggressive short-term execution with a calm, long-term vision requires dedicated time outside of the active trading day to manage your mindset.  - **Define Your Long-Term Plan*</p>
 <ul>
-<li>Determine <strong>Short-Term Steps</strong> that are explicitly in service of your overall long-term goals.</li>
-<li>Recognize that <strong>long-term thinking requires different parts of your brain</strong> than short-term execution, necessitating separate, dedicated time for preparation.Actionable Takeaway: Dedicate preparation time before the trading day, week, and quarter to align short-term actions with long-term objectives.The key is for you to get defined about what your long-term plan is and then determine what the short-term steps are that are in service to that long plan.</li>
+<li>first, as this foundation should guide all subsequent short-term decisions.</li>
+<li>Determine **Short-Term Steps*</li>
+<li>that are explicitly in service of your overall long-term goals.</li>
+<li>Recognize that **long-term thinking requires different parts of your brain*</li>
+<li>than short-term execution, necessitating separate, dedicated time for preparation.Actionable Takeaway: Dedicate preparation time before the trading day, week, and quarter to align short-term actions with long-term objectives.The key is for you to get defined about what your long-term plan is and then determine what the short-term steps are that are in service to that long plan.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>there is a time and a please for long-term thinking and shortterm thinking there is a time and a please for both of these the key is for you to get defined about what your longterm plan is and then determine what the shortterm steps are that are in service to that long plan now this cannot be done in the middle of a trading day but it does have to be done in preparation for a trading day a trading week an honestly a trading quarter so find time for both and they&#x27;re going to ask different parts of your brain to weigh in so be sure to give yourself plenty of time to do that</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

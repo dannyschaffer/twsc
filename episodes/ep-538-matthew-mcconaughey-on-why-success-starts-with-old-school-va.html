@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Reclaiming Trust: Why "Old School" Values Are Your True Trading Edge</p>
-<p>When global trust erodes—in leaders, institutions, and community—it inevitably leads to a deep lack of self-trust, the critical factor separating consistent traders from struggling ones. This segment explores how disconnecting from foundational values sabotages your conviction in the market.  * <strong>External Disconnection Leads to Internal Doubt</strong>: The broader lack of trust in external systems creates a cascade effect, culminating in a failure to trust your own judgment and discipline.</p>
+                <h3>Reclaiming Trust: Why "Old School" Values Are Your True Trading Edge</h3>
+<p>When global trust erodes—in leaders, institutions, and community—it inevitably leads to a deep lack of self-trust, the critical factor separating consistent traders from struggling ones. This segment explores how disconnecting from foundational values sabotages your conviction in the market.</p>
 <ul>
-<li><strong>Redefining Core Values</strong>: Trading success requires clarity on fundamental, agreed-upon values. When the world is extreme and polarized, returning to universal principles is essential for mental stability.Start articulating the core values you expect from yourself *before* entering a trade, making sure they are principles of self-governance like <strong>responsibility</strong>, not external metrics.And all of a sudden you end up not trusting yourself.</li>
+<li><strong>External Disconnection Leads to Internal Doubt</strong>: The broader lack of trust in external systems creates a cascade effect, culminating in a failure to trust your own judgment and discipline.</li>
+<li><strong>Redefining Core Values</strong>: Trading success requires clarity on fundamental, agreed-upon values. When the world is extreme and polarized, returning to universal principles is essential for mental stability.Start articulating the core values you expect from yourself *before</li>
+<li>entering a trade, making sure they are principles of self-governance like <strong>responsibility</strong>, not external metrics.And all of a sudden you end up not trusting yourself.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>And all of a sudden you end up not trusting yourself. The values, the shared values tell us everything gets politicized. We have extremes here and extremes here. You&#x27;ve got denominations that you know religion that has been corporatized and you go people don&#x27;t trust in that there. Nobody trusts anymore. They don&#x27;t trust each other. They don&#x27;t trust our leaders. They don&#x27;t trust your government. And all of a sudden you end up not trusting yourself. Well, I&#x27;m trying to say what are the things that we could all agree on? What are the common denominator of values that we can redefine again? That we can put back on the table and go, &amp;quot;Guys, this is stuff our mothers taught us. We forgot them. Let&#x27;s take off our talisman and say why is responsibility</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

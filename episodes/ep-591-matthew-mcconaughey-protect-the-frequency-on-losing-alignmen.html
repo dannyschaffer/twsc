@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Protect Your Trading Frequency (And Stop Believing Alignment is Permanent)</p>
-<p>When you achieve peak performance—feeling fully "on frequency" and aligned—it is easy to fall into the trap of assuming this state is permanent. This false sense of security leads to complacency, and the clear-headedness you worked hard for quickly fades, resulting in trading losses and emotional disruption.  * <strong>The Green Light is Temporary:</strong> Recognize that alignment, clarity, and success in the markets are dynamic states that require continuous effort to maintain, not fixed achievements.</p>
+                <h3>How to Protect Your Trading Frequency (And Stop Believing Alignment is Permanent)</h3>
+<p>When you achieve peak performance—feeling fully "on frequency" and aligned—it is easy to fall into the trap of assuming this state is permanent. This false sense of security leads to complacency, and the clear-headedness you worked hard for quickly fades, resulting in trading losses and emotional disruption.</p>
 <ul>
-<li><strong>Guard Against Complacency:</strong> The belief that you "can't lose it now" is often the first internal factor that causes performance to decline.</li>
-<li><strong>Identify Threat Vectors:</strong> Your current successful frequency can be disrupted by both internal self-sabotage and external shifts in the world or market volatility.<strong>Actionable Takeaway:</strong> Implement daily non-trading routines specifically designed to preserve your mental bandwidth and alignment, rather than only reacting when disruption occurs."Ah, since we found it, I’ll never lose it." No.</li>
+<li>**The Green Light is Temporary:*</li>
+<li>Recognize that alignment, clarity, and success in the markets are dynamic states that require continuous effort to maintain, not fixed achievements.</li>
+<li>**Guard Against Complacency:*</li>
+<li>The belief that you "can't lose it now" is often the first internal factor that causes performance to decline.</li>
+<li>**Identify Threat Vectors:*</li>
+<li>Your current successful frequency can be disrupted by both internal self-sabotage and external shifts in the world or market volatility.**Actionable Takeaway:*</li>
+<li>Implement daily non-trading routines specifically designed to preserve your mental bandwidth and alignment, rather than only reacting when disruption occurs."Ah, since we found it, I’ll never lose it." No.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Ah, since we found it, I&#x27;ll never lose it. When we do find oursel, when we feel like we&#x27;re on frequency, the challenge is that we think, &amp;quot;Ah, since we found it, I&#x27;ll never lose it.&amp;quot; No. So, when we find it and the world&#x27;s so clear and our relationship with the world and ourselves is on, it&#x27;s all a green light. preserve it because it will go away either by our own doing or the world&#x27;s</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

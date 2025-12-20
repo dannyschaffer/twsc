@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,24 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Fighting the Market: How to See It as Your Personal Trading Yoda</p>
+                <h3>Stop Fighting the Market: How to See It as Your Personal Trading Yoda</h3>
 <p>Traders often fall into the trap of viewing the market as an adversarial force—an enemy that "hates" them. This internal resistance creates profound frustration and prevents the deep connection necessary for clear decision-making. When you operate from a place of opposition, you pay a steep emotional cost that directly interferes with your execution and long-term profitability.</p>
 <p>Key Insights:  - The fundamental issue is <strong>resistance to the market</strong>, which manifests as frustration and a belief that the market is deliberately working against you.</p>
 <ul>
-<li>True mastery requires a complete reframing of the relationship, moving away from <strong>seeing the market as an enemy</strong> to embracing it as a rigorous personal teacher.</li>
+<li>True mastery requires a complete reframing of the relationship, moving away from **seeing the market as an enemy*</li>
+<li>to embracing it as a rigorous personal teacher.</li>
 <li>When approached with awareness, market volatility and setbacks are simply mechanisms designed to <strong>up level your consciousness and self-awareness</strong>, sharpening your skills over time.Actionable Takeaway:</li>
 </ul>
 <p>Actively monitor your internal dialogue and replace any thought of the market "hating" you with the phrase: "The market is my personal teacher."Listening is not a reaction; it is a connection.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody today is November 20th and this is my Sunday prep for your emotional intelligence you can find me at the wallstreetcoach.com if you like what I&#x27;m saying today last week I spoke about a couple of things that I&#x27;ve been uh really loving in a book called The Church of the wild and a quote that really struck me that would be valuable for this week&#x27;s trading is this quote from Ursula to Gwen listening is not a reaction it is a connection so unpack that for yourself and your relationship to the market when you truly truly listen you are connecting to the market and one of the things that I see happen with Traders is there is a resistance to the market there is this like frustration like the market hates me the market is mean to me the market doesn&#x27;t care about me and that emphasis of course is to try to let you know that it sort of is outside of what you think it should do but what I want to ask you to consider what it would be like if you began to think of a true connection to the market as</p>
-<p>opposed to seeing it as the enemy what if you begin to see it as your own personal teacher your own personal Yoda we see it in Star Wars that Yoda puts Luke Skywalker through the ringer but it&#x27;s all in service to his Consciousness and being more enlightened and becoming that Jedi Warrior what if the market is your personal Yoda just trying to help you become more conscious more self-aware and a better Trader what if you saw that market was actually on your side to help you up level your trading what if it was there to up level your consciousness let me know what happens if you give this a shot and I&#x27;ll see you next Sunday have a great Thanksgiving and stay safe and please be profitable</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

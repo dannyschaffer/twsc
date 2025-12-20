@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Emotional Strategy for Navigating Catastrophic Market Shifts</p>
-<p>Market chaos, much like global tragedies, forces us to confront the terrifying fragility of life. For the sensitive trader, intense external events can shatter focus and drain the psychological capacity required to execute their strategy. Failing to regulate this emotional exposure is a direct threat to your mental edge and consistent performance.  * <strong>Limit Empathic Exposure</strong>: If you are a sensitive or empathic person, actively limit the amount of external devastation you take in. This is a crucial self-care discipline necessary to maintain the clarity required for disciplined trading.</p>
+                <h3>The Emotional Strategy for Navigating Catastrophic Market Shifts</h3>
+<p>Market chaos, much like global tragedies, forces us to confront the terrifying fragility of life. For the sensitive trader, intense external events can shatter focus and drain the psychological capacity required to execute their strategy. Failing to regulate this emotional exposure is a direct threat to your mental edge and consistent performance.</p>
 <ul>
+<li><strong>Limit Empathic Exposure</strong>: If you are a sensitive or empathic person, actively limit the amount of external devastation you take in. This is a crucial self-care discipline necessary to maintain the clarity required for disciplined trading.</li>
 <li><strong>The Power of Contribution</strong>: Actively make a contribution—financially or otherwise—to shift your internal focus from feeling powerless to being productive. This commitment aids in self-regulation and helps regain a sense of control.</li>
-<li><strong>Practice Presence and Gratitude</strong>: Make the awareness of life's preciousness a daily constant practice. This focus keeps your mindset in a much healthier state and prevents external anxiety from dominating your internal world.<strong>Actionable Takeaway:</strong> Find a way to hold those that are close to you in your life closer and express gratitude daily for the gifts you already possess.Life can change in the blink of an eye.</li>
+<li><strong>Practice Presence and Gratitude</strong>: Make the awareness of life's preciousness a daily constant practice. This focus keeps your mindset in a much healthier state and prevents external anxiety from dominating your internal world.**Actionable Takeaway:*</li>
+<li>Find a way to hold those that are close to you in your life closer and express gratitude daily for the gifts you already possess.Life can change in the blink of an eye.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>although hi everybody thank you so much for reaching out to find out if I&#x27;m safe from my home and safe I am uh my place is on the big island uh and although there&#x27;s fires and have them fires there uh it sounds like they&#x27;re contained I&#x27;m still actually in New York city so I&#x27;ve been hearing just from all my friends uh on the islands to give me the update uh it&#x27;s Maui is apocalyptically devastated I can&#x27;t even comprehend the pictures I&#x27;ve seen and the stories I&#x27;m being told it just is quite horrific if some people have asked me how to support where to support I&#x27;ve sent my donation into the Hawaii Community Foundation they have a section on their website from Howie himself now he&#x27;s strong he&#x27;s not tag if you do want to donate um if there&#x27;s anybody out there who feels they have trauma because of this situation and I can donate my coaching to you please just send me a DM and for those of us who are watching right now at a distance I just suggest that you keep in mind that life can change in the blink of an eye</p>
-<p>and whenever these sort of horrific events happen what I do for myself I&#x27;ve limit my exposure because I&#x27;m very empathic and I can feel things incredibly deeply so I will find a way to limit how much I take in and if that is something that you have to be careful to people who are very sensitive will have to do that additionally I will need to meet a contribution either to friends to people financially or otherwise there&#x27;s lots of ways you can be a contribution and then I step into gratitude and I step into expressing how much I love people that are in my life being grateful for what we do have being grateful and focused on how precious and fragile life is is a daily constant practice that will keep all of us in a much healthier State of Mind life is practical life is short we all know this but in moments like this it becomes even more pronounced just how fragile it is another friend of mine just told me her friends from the main left or over there on their honeymoon can you imagine this happen to you on your honeymoon let&#x27;s</p>
-<p>hope they&#x27;re alive she hasn&#x27;t even heard from them yet and the death count is of course Rising so ultimately for everybody individually there is only going to be your way to navigate this but my recommendation is find a way to hold those that are close to you in your life closer and express the gratitude that the gift of life has even been yours for whatever short period of time it might be and how lucky we are we have so much more than we often even realize all right send you a big hugs and thank you for the love you&#x27;ve given to me you know DMS and messages</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

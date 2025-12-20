@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Your Trading Patterns Are Not Flaws: They're Trainable</p>
-<p>The way you react to market volatility—panicking, freezing, or forcing trades—is the same pattern you exhibit under stress in other areas of life. This isn't a sign of failure, but a deeply ingrained reaction learned by your nervous system. Learn how to retrain your internal reactions to build unshakeable stability.  - Your reactive patterns in trading (panic, freeze, force) are <strong>identical to stress responses</strong> in personal conflicts or crises.</p>
+                <h3>Your Trading Patterns Are Not Flaws: They're Trainable</h3>
+<p>The way you react to market volatility—panicking, freezing, or forcing trades—is the same pattern you exhibit under stress in other areas of life. This isn't a sign of failure, but a deeply ingrained reaction learned by your nervous system. Learn how to retrain your internal reactions to build unshakeable stability.  - Your reactive patterns in trading (panic, freeze, force) are **identical to stress responses*</p>
 <ul>
+<li>in personal conflicts or crises.</li>
 <li>Emotional responses in the market are <strong>learned nervous system patterns</strong>, not fundamental flaws in your character.</li>
-<li>Building <strong>internal stability</strong> is the true path to mastery, allowing you to operate without flinching when market conditions get wild.Actionable Takeaway: Start observing your stress-induced reactions during non-trading moments (e.g., arguments, unexpected delays) to identify the patterns that sabotage your success in the markets.That's not mindset, that's mastery. And yes, it is trainable.</li>
+<li>Building **internal stability*</li>
+<li>is the true path to mastery, allowing you to operate without flinching when market conditions get wild.Actionable Takeaway: Start observing your stress-induced reactions during non-trading moments (e.g., arguments, unexpected delays) to identify the patterns that sabotage your success in the markets.That's not mindset, that's mastery. And yes, it is trainable.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>How you handle the market is how you handle life. Volatility hits your trades, you panic, freeze, force. Cool. Now look at how you handle a fight with your partner or a health scam or a risky business move. It&#x27;s the same pattern. Not a flaw, just train it. Your nervous system learned how to react that way. But you can retrain it and build a kind of internal stability that doesn&#x27;t flinch when things get wild. That&#x27;s not mindset, that&#x27;s mastery. And yes, it is trainable. So, drop the word upgrade in the comments and I&#x27;ll send you a copy of the five practices to become a better trader.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

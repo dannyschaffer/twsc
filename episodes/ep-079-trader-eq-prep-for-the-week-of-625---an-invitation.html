@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Psychological Link Sabotaging Your Trades</p>
+                <h3>The Hidden Psychological Link Sabotaging Your Trades</h3>
 <p>Our deeply ingrained psychological patterns, known as attachment styles, govern all our relationships—including the one with the market. When these unconscious patterns show up in your trading, they can create emotional volatility and inconsistent performance, keeping you stuck in recurring cycles of self-sabotage.  - <strong>The Invisible Driver</strong>: Your psychological attachment style is an invisible force that dictates how you approach risk, volatility, and market uncertainty.</p>
 <ul>
 <li><strong>Relational Impact</strong>: These deep-rooted patterns affect every interaction, meaning your behavior toward the market often mirrors your behavior in personal relationships.</li>
 <li><strong>Emotional Regulation</strong>: Recognizing the specific influence of your attachment style is essential for achieving true emotional control and disciplined execution.<strong>Actionable Takeaway</strong>: Identify your core psychological attachment style to begin understanding the unconscious drivers behind your most challenging trading behaviors."our attachment style impacts not just trading obviously but every relationship interaction we have with the world"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is my trading EQ prep for the week of the 25th double checking my date here I want to tell you about this incredible conversation we had it in my Discord room Trader herojourney.com uh just a few days ago Allison halquist is a colleague of mine a good friend she&#x27;s an expert on attachment Style and what I have noticed over you know years and years of coaching Traders is that our attachment style Traders attachment style can have an impact on your trading how can it not are uh attachment style impacts not just trading obviously but every relationship interaction we have with the world and with those who are uh you know an intimate relationship to the person who&#x27;s annoying us and Starbucks our attachment style informed so much now what&#x27;s special about this event is that even though there are memberships for Trader hero journey.com every month or six or eight weeks I will have a special guest that will be infallible to all members including those who sign up for free and I encourage you to sign up at traderherojourney.com for free because that was a special event that will be available</p>
-<p>to those members that are in there so remember there&#x27;s no fee if you want to come in and you want to listen to We have specific channels that are set up for free members but we will have these special events that happen intermittently for all members of course I&#x27;d love you to be a full member so you could have access to me and my coaching and all the channels where there&#x27;s so many tools for Traders around mindset but even if that&#x27;s not something you feel you can invest in yet at least if you come and as a free member you&#x27;ll have a handful of channels that are very valuable and you&#x27;ll get access to these special events that will happen a few times a year this one is really powerful I really hope you&#x27;ll check it out traderherojourney.com I&#x27;ll see you hopefully on the inside have a great week and I hope you stay safe and be profitable</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

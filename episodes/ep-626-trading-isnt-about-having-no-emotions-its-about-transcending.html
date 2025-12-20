@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Power of Emotional Detachment: Trading on Others' Attachments</p>
+                <h3>The Hidden Power of Emotional Detachment: Trading on Others' Attachments</h3>
 <p>Trading consistency is constantly undermined by emotional interference. This discussion reveals how true mastery isn't about suppressing feelings, but achieving a detached perspective that allows you to capitalize on the emotional behaviors of the market crowd.  - <strong>Transcending Personal Emotion</strong>: The path to consistency is not through controlling emotions, but by rising above your own feelings so they do not dictate your entries or exits.</p>
 <ul>
 <li><strong>Strategic Observation</strong>: A powerful trading edge is gained by detaching yourself and observing the emotional attachments and biases of the wider market population.</li>
 <li><strong>The Market is a Reflection</strong>: The most profitable style is one that operates outside the emotional consensus of the crowd.Actionable Takeaway: Start reviewing your losing trades specifically for the moments where personal emotional attachment caused hesitation or stubbornness, rather than just focusing on technical errors.Well, it's really like living and working from a place of not being attached and profiting over everybody else's attachments.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You have learned how to transcend your emotions. It does work in the markets, which is why I do this. We talked very quickly at the beginning about the managing of emotions and how that really affects consistency, but yet your style seems to have it&#x27;s fascinating to me because in a way you have learned how to transcend your emotions, but it is others emotions that are in a sense informing your trading style to talk about that. Do you see that? That that&#x27;s like that&#x27;s so fascinating to me. It&#x27;s a weird place to live. But fortunately, at least up to this point, it works in the markets. It doesn&#x27;t really work in popularity contests. It doesn&#x27;t really work in being the guy everybody wants to to hang out with at a party. But fortunately, it does work in the markets, which is why I do this. Well, it&#x27;s really like living and working from a place of not being attached and profiting over everybody else&#x27;s attachments. That&#x27;s kind of what it is. Yes. And and let&#x27;s not exaggerate it and say I&#x27;m completely in control of my emotions because I&#x27;ll bring my wife in right now and</p>
-<p>she will tell me, you know, that&#x27;s quickly rapid</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

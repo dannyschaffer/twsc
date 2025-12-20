@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Fastest Way to Cut Years Off Your Trading Learning Curve</p>
+                <h3>The Fastest Way to Cut Years Off Your Trading Learning Curve</h3>
 <p>The initial phase of trading often involves years of scattered effort, bouncing between strategies without finding stability. This exploratory chaos leads to wasted time and emotional frustration. The key to accelerating your success is knowing when to shift from creative searching to disciplined execution.  - The Transition Point: Learning is divided into two phases: the innovative exploratory phase and the regimented execution phase.</p>
 <ul>
 <li>Strategy Alignment: A successful setup must fit your personality profile, risk tolerance, and profit expectations.</li>
 <li>Mimicry as a Shortcut: One of the fastest ways to reduce the learning curve is by copying a successful, proven approach instead of flirting around for years.Once you find a strategy that aligns with your profile, stop innovating and focus intensely on disciplined, regimented execution of that single setup.</li>
 </ul>
 <p>"Just copy a successful approach because then you're going to reduce the time which you spent of 2 three years uh flirting around with all kinds of things"</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>once you find a setup in which you fits your personality profile and your risk tolerance and your like an expectations of profit then the discipline becomes very critical because there is the exploratory phase when you&#x27;re exploring at that time you need to be Innovative creative but once you find something then you need to become more regimented to make sure that what idea you have found or the setup which you decided uh you execute it because one of the ways in which people can reduce this learning cve or this cve is can by mimicking somebody&#x27;s uh successful style right y so that&#x27;s what I tell people can just copy a successful approach because then you&#x27;re going to reduce the time which you spent of 2 three years uh flirting around with all kinds of things</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Chronic Stress, Not Your Strategy, Is Destroying Your P&L</p>
+                <h3>Why Chronic Stress, Not Your Strategy, Is Destroying Your P&L</h3>
 <p>If you experience devastating losing streaks and undisciplined losses, the root cause is not lack of knowledge, but a deep-seated impulse from your evolutionary past. The "fight or flight" response triggered by tracking market data creates internal chaos, raising your blood pressure and damaging your body and P&L. This chronic, hidden stress is the real barrier to consistency.  - <strong>Trading losses are rooted in the physiological fight-or-flight response</strong>, not strategic errors.</p>
 <ul>
 <li><strong>Traditional methods like deep breathing only treat the symptoms</strong>; they do not solve the underlying biological impulse.</li>
-<li><strong>The solution requires biohacking and personalized coaching</strong> to benchmark your stress biomarkers and dial in your mental game.<strong>Actionable Takeaway:</strong> Acknowledge that the emotional havoc caused by trading stress directly impacts your P\&L and seek professional guidance to regulate your nervous system.Most traders don't even realize the havoc that this chronic stress causes to their body, not to mention their P&L.</li>
+<li>**The solution requires biohacking and personalized coaching*</li>
+<li>to benchmark your stress biomarkers and dial in your mental game.**Actionable Takeaway:*</li>
+<li>Acknowledge that the emotional havoc caused by trading stress directly impacts your P\&L and seek professional guidance to regulate your nervous system.Most traders don't even realize the havoc that this chronic stress causes to their body, not to mention their P&L.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you&#x27;ve ever had a sold destroy losing streak or you take big undisciplined losses you might think it&#x27;s lack knowledge or the pattern you trade or even the market but that couldn&#x27;t be further from the truth losses losing streaks they start with a deep seated impulse from our evolutionary past chemical reactions rise to the surface every time you enter a trade as you track level two your pulse is going to Quicken your blood pressure is going to rise and your minds will become hyper Vigilant you go into the experience of fight or flight which is how our ancestors felt when they were staring down at sa to Tiger but you can&#x27;t run cuz you have a tree to manage but that weaks havoc on your body and there is now a better way and I&#x27;m not talking deep breathing or meditation although those help they don&#x27;t solve the problem my new package is called the optimized Trader package and it is going to be a combination of biohacking and personalized coaching in a three-step process step one we&#x27;re going to get your biomarkers benchmarked then you&#x27;re going to review those results with a health coach</p>
-<p>for a personalized plan and then you and I are going to come together and dial in your mental game you might be the rare Trader who has eyes through their veins but in my 18 years of coaching top Traders I have yet to meet one Trader who doesn&#x27;t experience stress most Traders don&#x27;t even realize the Havoc that this chronic stress causes to their body not to mention their p&amp;l so if you&#x27;re ready for a change then I hope you&#x27;ll check out my optimized trading package</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

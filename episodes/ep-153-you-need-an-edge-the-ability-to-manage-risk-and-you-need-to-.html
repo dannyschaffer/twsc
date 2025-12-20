@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Your Attitude Is Your Most Visible Trading Indicator</p>
+                <h3>Your Attitude Is Your Most Visible Trading Indicator</h3>
 <p>Your trading edge depends heavily on your psychology, but few realize how immediately visible their internal state is to the external world. A negative attitude, marked by resentment or anger, can be picked up instantly, signaling a deep psychological misalignment that sabotages your mental clarity. This self-inflicted noise undermines your discipline before you even look at a chart.  - <strong>Attitude is an External Signal</strong>: Even a quick, non-verbal encounter reveals a person's underlying resentment or stress, which directly translates to poor market behavior.</p>
 <ul>
 <li><strong>The Cost of Internal Noise</strong>: When you carry a "chip on your shoulder," you enter the market from a place of emotional deficit, making rational decision-making nearly impossible, especially during volatility.</li>
 <li><strong>Mindfulness Under Pressure</strong>: It is most crucial to monitor your attitude when things are difficult, as this is when psychological leaks are most severe and costly.Before approaching your trading station each day, perform a quick internal check to identify and acknowledge any lingering resentment or anger to ensure you start from a place of emotional neutrality.I picked up in those two seconds of walking past him the chip that he had on his shoulder the anger resentment at life over God knows what but I picked it up in just a second of a quick encounter that is the power of a person's attitude.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>let&#x27;s talk about attitude the other day at dark o00 couldn&#x27;t have been later than 5:30 in the morning I walk past this man on the way to my pool I swim really early at this beautiful pool and this guy who I&#x27;ve never seen before complete stranger I just said good morning now I&#x27;m half asleep he&#x27;s probably half asleep but you know what I picked up in those two seconds of walking past him the chip that he had on his shoulder the anger resentment at life over God knows what but I picked it up in just a second of a quick encounter that is the power of a person&#x27;s attitude so I want you guys to just be really ever mindful especially when you&#x27;re under pressure especially when things are going a Hell in a hand basking for you what is your attitude I walked away from that guy kind of like yuck it&#x27;s not even begun the day</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

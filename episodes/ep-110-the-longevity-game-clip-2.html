@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Survive the Exhausting 'Paddle Out' of Trading</p>
+                <h3>How to Survive the Exhausting 'Paddle Out' of Trading</h3>
 <p>Trading is a long-tail game where success is defined by endurance, not momentary wins. Just like surfing, the most tiring part of the market is not catching the perfect wave, but the repeated, exhausting effort of paddling back out after being knocked down.  - Trading is a longevity game, requiring mental endurance over short-term gratification.</p>
 <ul>
 <li>The real effort in trading is paddling out (handling losses and setbacks), not the actual execution.</li>
 <li>Preserving capital is paramount to survival; avoid ruining your resources during the exhausting periods.Reframe losses and small setbacks as necessary 'paddles out' that build the capacity needed for long-term consistency.</li>
 </ul>
 <p>Most of Surfing isn't surfing it's paddling out it's being knocked over and going back out.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this is a longevity game guys this is a surfing story but when I first was taking my surf lessons most of the exhaustion for me was the paddling out paddling out paddling out it&#x27;s exhausting I was so exhausted that first lesson that I threw up because I was I had nothing left to me I was so exhausted and that&#x27;s what I want you guys to really see here most of Surfing isn&#x27;t surfing it&#x27;s paddling out it&#x27;s being knocked over and going back out and weed him surfing so much like Trea here and if you want to do it and go the distance and get just a couple of perfect waves you&#x27;re only going to be able to do that if you are growing up from exhaustion if you aren&#x27;t ruining your Capital you have to think of this as a longtail game</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

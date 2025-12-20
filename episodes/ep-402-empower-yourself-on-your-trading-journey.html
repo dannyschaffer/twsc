@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading From a Victim Mindset: The Power of Self-Responsibility</p>
+                <h3>Stop Trading From a Victim Mindset: The Power of Self-Responsibility</h3>
 <p>When trades go wrong, the mind is wired to seek blame, often trapping you in a disempowered position. This victim perspective makes it nearly impossible to gain clarity or improve performance. To truly succeed, you must shift your focus from finding fault to building radical self-responsibility.  - The trading journey is not about eliminating mistakes, but about upleveling your capacity for <strong>pattern recognition</strong>.</p>
 <ul>
-<li>Mastering the market requires building the ability to <strong>stay neutral</strong> regardless of current performance or volatility.</li>
-<li>Embracing <strong>ownership and self-responsibility</strong> is the fundamental step toward becoming an empowered trader.The next time a trade fails, immediately pivot from asking "Who is to blame?" to documenting "What did I own in this process?"it becomes very hard for you to become empowered if you view yourself that way</li>
+<li>Mastering the market requires building the ability to **stay neutral*</li>
+<li>regardless of current performance or volatility.</li>
+<li>Embracing **ownership and self-responsibility*</li>
+<li>is the fundamental step toward becoming an empowered trader.The next time a trade fails, immediately pivot from asking "Who is to blame?" to documenting "What did I own in this process?"it becomes very hard for you to become empowered if you view yourself that way</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>we have a tendency to look for somebody to blame it&#x27;s the way our mind is wired but this isn&#x27;t about a journey of blame this is about a journey of upleveling your capacity to have pattern recognition Your Capacity to stay neutral no matter what is happening that takes a huge leap into the landscape of ownership ownership self-responsibility these can be foreign Concepts to anybody who has seen themselves as a victim and it becomes very hard for you to become empowered if you view yourself that way</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

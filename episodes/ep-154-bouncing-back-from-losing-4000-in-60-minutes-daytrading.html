@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Real Recovery: How to Stop a 60-Minute Blowout from Becoming an Account Killer</p>
+                <h3>The Real Recovery: How to Stop a 60-Minute Blowout from Becoming an Account Killer</h3>
 <p>When a single loss triggers immediate revenge trading, the pain of the financial hit—a 10% drawdown in under an hour—is compounded by profound self-doubt. You are no longer trading the market; you are battling the emotional shock. True resilience in these moments demands an immediate shift away from the "punch in the stomach" feeling toward objective self-assessment.  - The most critical mistake after a large loss is <strong>revenge trading</strong>, which instantly turns a controlled risk into an emotional spiral.</p>
 <ul>
-<li>Emotional recovery requires actively engaging your <strong>logical mind</strong> by stepping back to objectively analyze the damage, rather than staying immersed in the feeling.</li>
-<li>Recalibrate your perspective by comparing your current capacity to your past: if a $4,000 loss used to take ten months, losing it in an hour highlights how much your <strong>account capacity has actually grown</strong>.<strong>Actionable Takeaway</strong></li>
+<li>Emotional recovery requires actively engaging your **logical mind*</li>
+<li>by stepping back to objectively analyze the damage, rather than staying immersed in the feeling.</li>
+<li>Recalibrate your perspective by comparing your current capacity to your past: if a $4,000 loss used to take ten months, losing it in an hour highlights how much your <strong>account capacity has actually grown</strong>.**Actionable Takeaway*</li>
+<li>When you experience a significant drawdown, immediately step away from the charts and quantify the loss as a percentage of your total trading capital, comparing it to historical drawdowns to introduce objective context.it's always a reminder for me to to step out of the the pit of you know the depths of your emotions and uh and take a step back reflect and really see where you're at logically</li>
 </ul>
-<p>When you experience a significant drawdown, immediately step away from the charts and quantify the loss as a percentage of your total trading capital, comparing it to historical drawdowns to introduce objective context.it's always a reminder for me to to step out of the the pit of you know the depths of your emotions and uh and take a step back reflect and really see where you're at logically</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>and I took about a 10% loss on that account within the first hour I lost like 3K on one loss and then I immediately started Revenge trading lost another grand so I was down 4K within the first hour on this $40,000 account and I remember just feeling that same like huge punch in the stomach can I still do this this sucks that I&#x27;ve never felt anything like this before and what got me out of that was I reminded myself I get to lose $4,000 I lost $4,000 over 10 months when I first started trading like I took that I took that 6K account and took brought it down to 2K like I lost four grand over the 10mon period and now 2 and a half years later I&#x27;m now being able to lose that in an hour and have it only be 10% of the money I have to trade with right it&#x27;s always a reminder for me to to step out of the the pit of you know the depths of your emotions and uh and take a step back reflect and really see where you&#x27;re at logically um that&#x27;s always gotten me to</p>
-<p>get out of whatever you know you know gut feeling that you&#x27;re in with with all your emotions so yeah</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

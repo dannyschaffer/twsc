@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Looping: Your Trading Mistakes Aren't Broken Logic, They're Unfinished Trauma</p>
-<p>Many traders feel stuck in a pattern of self-sabotage, often attributing losses to a lack of discipline. The real problem isn't a strategy or character flaw, but a survival response running deep within your nervous system. Learn why your body is remembering past experiences and keeping you locked in a losing cycle.  * Trauma is not the event, but an <strong>unfinished response stored in the nervous system</strong>.</p>
+                <h3>Stop Looping: Your Trading Mistakes Aren't Broken Logic, They're Unfinished Trauma</h3>
+<p>Many traders feel stuck in a pattern of self-sabotage, often attributing losses to a lack of discipline. The real problem isn't a strategy or character flaw, but a survival response running deep within your nervous system. Learn why your body is remembering past experiences and keeping you locked in a losing cycle.</p>
 <ul>
-<li>Emotional looping occurs because your body has not been able to achieve <strong>closure</strong> on a past reaction.</li>
+<li>Trauma is not the event, but an <strong>unfinished response stored in the nervous system</strong>.</li>
+<li>Emotional looping occurs because your body has not been able to achieve **closure*</li>
+<li>on a past reaction.</li>
 <li>Your current reactions in the market are run by this <strong>stuck response</strong>, leading directly to panic and self-sabotage.Focus on identifying the physical, non-verbal patterns in your trading reactions to complete the "story" your body is still remembering, rather than focusing solely on mental discipline.Trauma is not the event. It's in the nervous system. It's what your body never got to finish.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You think trauma is what happened to you? It&#x27;s not. Dr. Peter Lavine taught us that trauma is not the event. It&#x27;s in the nervous system. It&#x27;s what your body never got to finish. That unfinished response, it gets stuck and it runs your reactions. You&#x27;re not failing because you&#x27;re broken. You&#x27;re looping because your body did not get closure. Send me a DM with the words, &amp;quot;I&#x27;m unfinished.&amp;quot; And I&#x27;ll show you how to complete the story that your body is still remembering.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

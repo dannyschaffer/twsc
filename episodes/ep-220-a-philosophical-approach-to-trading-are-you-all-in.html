@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Are You "All In"? The Philosophical Commitment That Defines Pro Traders</p>
-<p>Many traders hold back a portion of their commitment, mentally saving energy for the "swim back" when things go wrong. This subtle self-protection limits the necessary discipline and emotional focus. True trading success demands a philosophical mindset where you are fully invested in your strategy and process.  * <strong>Total Emotional Buy-In</strong>: Real commitment in trading means being "all in" emotionally, dedicated to discipline and strategy, not just capital risk.</p>
+                <h3>Are You "All In"? The Philosophical Commitment That Defines Pro Traders</h3>
+<p>Many traders hold back a portion of their commitment, mentally saving energy for the "swim back" when things go wrong. This subtle self-protection limits the necessary discipline and emotional focus. True trading success demands a philosophical mindset where you are fully invested in your strategy and process.</p>
 <ul>
+<li><strong>Total Emotional Buy-In</strong>: Real commitment in trading means being "all in" emotionally, dedicated to discipline and strategy, not just capital risk.</li>
 <li><strong>Commitment Without Recklessness</strong>: Being fully committed involves dedication to process, not jeopardizing yourself or taking unreasonable risk.</li>
 <li><strong>Eliminate the Safety Net</strong>: The internal hesitation of saving energy for a potential failure undermines the focused execution required for peak performance.Actionable Takeaway: Identify one area of your trading strategy where you mentally hold back and commit to 100% adherence today.because I saved nothing for the swim back</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>one of my favorite lines in a movie is from gataka which shows us a scene between two brothers who have a little bit of a rivalry because one of them is genetically superior but there&#x27;s a game of chicken on the ocean that takes place a couple of times between these two brothers and when Vincent the less genetically developed brother wins his brother finally asks him how are you doing this and and Vincent says because I saved nothing for the swim back Traders I want to ask you are you living this philosophical approach to your trading that doesn&#x27;t mean you have to jeopardize yourself or take unreasonable inappropriate risk but it is a mindset that you are all in emotionally and with your willingness to be disciplined and to have a strategy I hope you are all in</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Adapting to the Unexpected: How Technical Glitches Test Your Trading Discipline</p>
+                <h3>Adapting to the Unexpected: How Technical Glitches Test Your Trading Discipline</h3>
 <p>Live coaching sessions, much like the market, rarely go exactly as planned. The stress of unexpected technical issues or platform changes can quickly derail focus, mirroring the emotional cost traders face during sudden market volatility. This discussion highlights the importance of maintaining mental flexibility when technology and logistics fail.  - <strong>Emotional Flexibility</strong>: Minor technical disruptions or platform shifts are inevitable and challenge your ability to adapt without compromising your overall trading plan.</p>
 <ul>
 <li><strong>The Power of Showing Up</strong>: Consistency and showing up for your process, even when imperfect, is more valuable than waiting for an unattainable state of technical perfection.</li>
 <li><strong>Mastering the Logistical Flow</strong>: Practice managing technical transitions smoothly to build resilience that carries over into navigating choppy market conditions.When technical issues or distractions arise during your trading day, pause your analysis for 60 seconds to regulate your breathing before proceeding."I'm still figuring restream out."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>just coming off of a Twitter space with Ricky analog from True Trader we got to do a restream which is part one of my podcast and then we did a uh Twitter space because I wasn&#x27;t because I had set up the Twitter space officially in Twitter I didn&#x27;t want anybody who was only being notified that way uh but I think for now on the Twitter spaces uh are going to be or X spaces pardon me Mr musk for saying wrong I think I&#x27;m going to keep doing it through restream going forward so thanks to all who came uh to restream and then moved over to Twitter space and then here I am ready to do some live coaching but what I just realized is that I didn&#x27;t change uh I didn&#x27;t change the title here so anyway guys you got to be be with me because I&#x27;m still figuring restream out so this says that is this is a Ricky analog at the bottom but uh oh gosh all right let me just quickly end this I see we have two people here give me two seconds guys let me</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

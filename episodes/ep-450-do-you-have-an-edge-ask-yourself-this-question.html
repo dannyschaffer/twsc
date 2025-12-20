@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of Trading Without a Repeatable Edge</p>
+                <h3>The Cost of Trading Without a Repeatable Edge</h3>
 <p>Many traders are flying blind, mistaking luck for skill, which allows the market to erode their capital and confidence. If your strategy cannot be clearly explained and lacks a verifiable track record over hundreds of trades, you are relying on chance rather than repeatable, professional results.  - Your competitive advantage (the <strong>Edge</strong>) is what separates you from those chasing luck.</p>
 <ul>
 <li>True trading success relies on <strong>repeatable results</strong>, not isolated wins.</li>
-<li>An undefined strategy means you are <strong>flying blind</strong> and subjecting yourself to unnecessary market risk.Before risking another dollar, stop trading and take the time to learn, test, and find a strategy you know and trust.A real Trader isn't just looking for wins, they're looking for repeatable results.</li>
+<li>An undefined strategy means you are **flying blind*</li>
+<li>and subjecting yourself to unnecessary market risk.Before risking another dollar, stop trading and take the time to learn, test, and find a strategy you know and trust.A real Trader isn't just looking for wins, they're looking for repeatable results.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>can you explain your strategy to a beginner does it have a track record of success over dozens or even hundreds of Trades if not you are Flying Blind and the market likely is eating you alive a real Trader isn&#x27;t just looking for wins they&#x27;re looking for repeatable results so if you&#x27;re trading without an edge please stop take the time to learn test find your strategy before you risk another dollar your Edge is your competitive Advantage it&#x27;s what separates you from everyone else that&#x27;s chasing luck don&#x27;t trade until you know it and trust it so tell me what is your Edge if you can&#x27;t Define it in one sentence drop a comment below and let&#x27;s figure it out together</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

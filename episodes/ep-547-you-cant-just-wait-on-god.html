@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How Relying on Fate is Sabotaging Your Trading</p>
+                <h3>How Relying on Fate is Sabotaging Your Trading</h3>
 <p>Many traders fall into the trap of outsourcing responsibility, hoping external forces or 'fate' will resolve their market struggles. This reliance prevents real growth by confusing passive waiting with genuine self-trust and intentional action. You must stop waiting for a miracle and embrace self-determination.  - <strong>External Reliance vs. Self-Determination</strong>: Success in the market hinges on personal action and accountability, not passive faith in external outcomes.</p>
 <ul>
 <li><strong>The Identity Trap</strong>: Relying on fate prevents you from developing the professional, action-oriented identity necessary for consistent profitability.</li>
 <li><strong>Action is the Answer</strong>: The market demands your active participation; passive waiting for success is a form of self-sabotage.Identify one area in your trading where you are waiting for things to "just work out" and immediately commit to taking personal responsibility for the next calculated action."Your hands are on the wheel down there. Don't you just be relying on faith? Put your hands on the wheel."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast because we can start to rely on those external things or our identity. Yeah. It&#x27;s a little like a relationship with God. If we&#x27;re relying on fate all the time, I think God starts to go, &amp;quot;Hey, hey, hey, hey, hey. Your hands are on the wheel down there. Don&#x27;t you just be relying on faith?&amp;quot; You know what I mean? Put your hands on the wheel. Self-determination matters. I need you to try. Don&#x27;t be relying on me with straight out inshallah all the time. You know what I mean?</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Ego Trap: Why Great Traders Ask Questions, Not Demand Answers</p>
-<p>Many traders mistakenly believe that knowledge alone will grant mastery. However, if you are struggling to move past plateaus, the real obstacle is often a hidden ego demanding certainty and resisting genuine curiosity. Learn why humility and active inquiry accelerate progress faster than any strategy ever could.  * <strong>Ego must be set aside</strong> to move from being a good trader to a great one.</p>
+                <h3>The Ego Trap: Why Great Traders Ask Questions, Not Demand Answers</h3>
+<p>Many traders mistakenly believe that knowledge alone will grant mastery. However, if you are struggling to move past plateaus, the real obstacle is often a hidden ego demanding certainty and resisting genuine curiosity. Learn why humility and active inquiry accelerate progress faster than any strategy ever could.</p>
 <ul>
-<li>Progress is faster for those who demonstrate <strong>genuine curiosity</strong> by asking great questions and being willing to listen.</li>
+<li>**Ego must be set aside*</li>
+<li>to move from being a good trader to a great one.</li>
+<li>Progress is faster for those who demonstrate **genuine curiosity*</li>
+<li>by asking great questions and being willing to listen.</li>
 <li>Traders who stagnate often use questions simply to validate their existing opinions rather than seeking <strong>real change</strong>.When seeking advice or reviewing a mentor's feedback, actively practice listening and avoid immediately defending your past trade decisions.Great Traders are the ones that are willing to ask questions and set their ego aside.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what do you feel separates good treaters from great traitors I think that great Traders are the ones that are willing to ask questions and set their ego aside I work with a lot of mentees and I find that the ones that Excel the fastest are the ones that ask the great questions and they&#x27;re willing to listen right it&#x27;s not just a question and then they tell you what they think over and over and over again and they don&#x27;t change anything it&#x27;s they ask you a question they&#x27;re actually curious and I&#x27;ve seen them Progress way faster than people that don&#x27;t ask questions and are just looking for you to give them all the answers those that ask questions Excel much faster and become great Traders</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

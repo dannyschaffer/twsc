@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Laziness Trap: Why Your Self-Criticism Is Misdiagnosing Your Motivation Problem</p>
-<p>Traders often tie their self-worth to productivity, leading them to mislabel low motivation as a moral failing like "laziness." This cultural conditioning prevents honest self-assessment, resulting in burnout rather than strategic rest. You must stop believing your lack of motivation is a character flaw.  - <strong>The Myth of Laziness:</strong> Recognize that the idea of laziness as a moral failing is a cultural construct, originally used to conflate productivity with personal worthiness.</p>
+                <h3>The Laziness Trap: Why Your Self-Criticism Is Misdiagnosing Your Motivation Problem</h3>
+<p>Traders often tie their self-worth to productivity, leading them to mislabel low motivation as a moral failing like "laziness." This cultural conditioning prevents honest self-assessment, resulting in burnout rather than strategic rest. You must stop believing your lack of motivation is a character flaw.  - **The Myth of Laziness:*</p>
 <ul>
-<li><strong>Apathy is a Signal:</strong> What feels like laziness is often the emotional state of apathy, which is a signal that your <strong>basic physiological or psychological needs</strong> are currently unmet.</li>
-<li><strong>Stop Confusing Rest with Failure:</strong> Your perceived lack of drive may simply be your system legitimately striving for the rest it requires.Actionable Takeaway:</li>
+<li>Recognize that the idea of laziness as a moral failing is a cultural construct, originally used to conflate productivity with personal worthiness.</li>
+<li>**Apathy is a Signal:*</li>
+<li>What feels like laziness is often the emotional state of apathy, which is a signal that your **basic physiological or psychological needs*</li>
+<li>are currently unmet.</li>
+<li>**Stop Confusing Rest with Failure:*</li>
+<li>Your perceived lack of drive may simply be your system legitimately striving for the rest it requires.Actionable Takeaway:</li>
 </ul>
 <p>When you feel the urge to label yourself as "lazy," conduct an immediate self-inventory to identify which fundamental needs—such as connection, rest, or security—are currently missing in your life."is the laziness you quote unquote self-describe for yourself Act accurate or is it possible that you actually are just striving for rest"</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>laziness does not exist I&#x27;m reading an Incredible Book right now called laziness does not exist it&#x27;s by Devin Price and it talks about how it&#x27;s sort of been a cultural uh creation stemming way back to the days of the Puritans to encourage uh work and get work out of people because those who worked would uh be saved those who were good people were hard workers so you learn about this cultural collapsing of our sense of worthiness with our productivity but it was actually crafted to benefit other people and not ourselves so if it&#x27;s true that laziness does not exist what happens when we feel we&#x27;re experiencing laziness within ourselves and what I want to say is I want you to First consider is the laziness you quote unquote self-describe for yourself Act accurate or is it possible that you actually are just striving for rest secondly I also want to speak to something that is not the same as laziness but can look like feel like sound like laziness and that&#x27;s apathy apathy sometimes is what&#x27;s a foot not laziness so I&#x27;m gonna ask you think about if apathy is a more accurate representation of</p>
-<p>what&#x27;s going on for you and if it is that&#x27;s a feeling and that&#x27;s a feeling that comes when basic needs aren&#x27;t met what do you do well you have to find out what are the basic needs you don&#x27;t have met and if you want to get a copy of that needs list then feel free to sign up on the wall streetcoach.com and we will happily send you that Universal needs list for you to refer to</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

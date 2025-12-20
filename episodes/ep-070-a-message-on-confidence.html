@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,25 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Confidence Illusion: Why You Should Never Trust Authority Over Your Own Conviction</p>
+                <h3>The Confidence Illusion: Why You Should Never Trust Authority Over Your Own Conviction</h3>
 <p>In trading, misinformation often comes wrapped in compelling certainty, leading you to doubt your own accurate instincts. This video shares a personal story about how an authority figure's unwavering confidence led to unnecessary delays and personal frustration. The emotional cost of being swayed is the loss of belief in your own due diligence and superior judgment.</p>
 <p>Key Insights:  - <strong>External confidence does not equate to correctness</strong>. Highly convincing people can still be fundamentally wrong, and yielding to their conviction costs you time and money.</p>
 <ul>
-<li>The strongest psychological damage comes not from the external mistake, but from <strong>self-anger</strong> for losing faith in your own accurate internal knowledge.</li>
-<li>The path to consistency requires consistent <strong>self-reflection</strong> on why you surrender your conviction in crucial decision-making moments.Actionable Takeaway:</li>
+<li>The strongest psychological damage comes not from the external mistake, but from **self-anger*</li>
+<li>for losing faith in your own accurate internal knowledge.</li>
+<li>The path to consistency requires consistent **self-reflection*</li>
+<li>on why you surrender your conviction in crucial decision-making moments.Actionable Takeaway:</li>
 </ul>
 <p>Always perform independent due diligence before making a critical trade decision or changing a position based on external authority, regardless of how confident the source appears.Don't surrender to those in authority that act confident, it doesn't mean they're necessarily correct.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody happy Aloha Friday that&#x27;s what we call Fridays here in Hawaii I wanted to share a little story with you because I think it just points to the importance of confidence holding confidence within yourself you know these key fobs well mine has been for months telling me it had a low battery so I&#x27;m putting it off until I felt like oh I better not put that off anymore I won&#x27;t get into my car and I went to Ace Hardware to inquire about what kind of battery it needs I didn&#x27;t even Google it before I got into the store and this man I have to tell you he was like oh you cannot change that key fob battery yourself you have to take it to your dealer because it won&#x27;t turn on because of the electrical you know cars that we it&#x27;s my car is not electric but he was like you know the electrical dashboard like it&#x27;s all synced and I was like really I thought this did not need to go to the dealer I thought this is a battery I could change myself and he was like oh no absolutely not his</p>
-<p>confidence was so compelling that I didn&#x27;t even check whether he was correct and I put it off for another week or two because the dealer is really far for me to get to but when I finally got around to it and called the dealership they&#x27;re like no that model does not need you to come to the dealer you can do it yourself I was so pissed off I was so pissed off at the man but then in the end of course because I tried to self be self-aware and self-reflect I realized who I was really angry at was myself why because I lost the confidence in what I was accurate about because that man had so much confidence in the way he presented to me so I want to turn this back over to you where do you lose your confidence perhaps it&#x27;s in a position perhaps it&#x27;s in not taking a trade there are so many times we are going to be around really confident incorrect people and I hope that this is a great metaphor little story to remind you check in on yourself sometimes even confident people are incorrect sometimes we are</p>
-<p>incorrect which is what I presumed that day but I wasn&#x27;t so I want you to do the due diligence and don&#x27;t surrender to those in Authority that act confident it doesn&#x27;t mean they&#x27;re necessarily correct have a great weekend</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -294,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Power of a Collective: Why Your Trading Circle is Your Strongest Edge</p>
-<p>Trading can be an isolating and psychologically taxing pursuit, especially during drawdowns and unexpected losses. When relying only on self-discipline, isolation can quickly lead to emotional exits and burnout. The true edge often lies not in solo effort, but in the strength of your peer group.  * A supportive collective provides essential <strong>encouragement</strong> during struggling periods and drawdowns.</p>
+                <h3>The Power of a Collective: Why Your Trading Circle is Your Strongest Edge</h3>
+<p>Trading can be an isolating and psychologically taxing pursuit, especially during drawdowns and unexpected losses. When relying only on self-discipline, isolation can quickly lead to emotional exits and burnout. The true edge often lies not in solo effort, but in the strength of your peer group.</p>
 <ul>
-<li>Peers help <strong>lift up</strong> those who are mentally fatigued, preventing destructive self-sabotage.</li>
+<li>A supportive collective provides essential **encouragement*</li>
+<li>during struggling periods and drawdowns.</li>
+<li>Peers help **lift up*</li>
+<li>those who are mentally fatigued, preventing destructive self-sabotage.</li>
 <li>The knowledge that others have your back helps you <strong>take those lumps and just keep going</strong>, fostering long-term resilience.Actionable Takeaway: Dedicate time this week to connect with a supportive peer and offer genuine encouragement, reinforcing the collective foundation."When you know your people have your back, that's going to help you take those lumps and just keep going."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast. So, both of you, you know, even with the horsing around, what I hear is that you both find your ways to demonstrate that encouragement. You both find your own style of lifting up those who are in the group that might be in a draw down or struggling. It&#x27;s got to be invaluable because those people aren&#x27;t going to go anywhere when you have that kind of support and encouragement. when you know your people have your back, that&#x27;s going to help you take those lumps and just keep going. So, that to me is one of the benefits of having a collective of nine.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

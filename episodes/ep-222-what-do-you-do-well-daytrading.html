@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Light Trap: Why Focusing Only on Your Mistakes Sabotages Your Edge</p>
-<p>Many traders default to obsessively reviewing their mistakes and failures, believing this focus on darkness leads to improvement. However, this self-critical cycle actively drains your confidence and obscures the powerful, profitable skills you already possess. Stop letting a negative bias prevent you from acknowledging your competence.  * The default human mechanism is to focus on <strong>personal failings and mistakes</strong> (the "darkness") rather than celebrating inherent abilities.</p>
+                <h3>The Light Trap: Why Focusing Only on Your Mistakes Sabotages Your Edge</h3>
+<p>Many traders default to obsessively reviewing their mistakes and failures, believing this focus on darkness leads to improvement. However, this self-critical cycle actively drains your confidence and obscures the powerful, profitable skills you already possess. Stop letting a negative bias prevent you from acknowledging your competence.</p>
 <ul>
-<li>Genuine growth comes from identifying where you have already <strong>learned, overcome, and applied</strong> lessons from painful, costly market experiences.</li>
+<li>The default human mechanism is to focus on **personal failings and mistakes*</li>
+<li>(the "darkness") rather than celebrating inherent abilities.</li>
+<li>Genuine growth comes from identifying where you have already **learned, overcome, and applied*</li>
+<li>lessons from painful, costly market experiences.</li>
 <li>Recognizing your success shifts your self-perception from being a flawed trader to a <strong>competent, disciplined professional</strong>.This week, intentionally journal every instance where you successfully followed a rule or avoided a known mistake, actively "catching yourself doing things well.""Who am I to be talented or powerful? The second question is who are you not to be."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>one of my favorite quotes is from Mary Ken Williamson from her book a return to love and it opens with this question who am I to be talented or powerful and the second question is who are you not to be it&#x27;s often our darkness that we focus on our failings our mistakes all of the Shadows that we know we have within ourselves instead of focusing on our light on all that is great about us so I&#x27;m going to ask you this week Traders I want you to start to look for what do you do well how have you succeeded where have you overcome where have you learned painful costly lessons that now you always follow start to find and catch yourself doing things well and not always focus on what you don&#x27;t do well</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

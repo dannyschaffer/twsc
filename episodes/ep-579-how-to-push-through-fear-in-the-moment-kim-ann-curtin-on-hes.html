@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Moment of Hesitation: How to Push Through Fear in a Trade</p>
-<p>Every trader knows the cost of freezing: that moment when doubt creeps in, causing you to hesitate and miss a critical entry or exit. In fast-moving markets, you don't have 30 minutes to reset; you have a very small window to respond before the opportunity or the loss escalates. Learn to condition your immediate response so fear doesn't hijack your execution.  * <strong>The Immediate Action Requirement</strong>: Just like in a high-stakes canoe race, trading demands immediate, decisive action. Hesitation in the middle of a trade is often a critical flaw.</p>
+                <h3>The Moment of Hesitation: How to Push Through Fear in a Trade</h3>
+<p>Every trader knows the cost of freezing: that moment when doubt creeps in, causing you to hesitate and miss a critical entry or exit. In fast-moving markets, you don't have 30 minutes to reset; you have a very small window to respond before the opportunity or the loss escalates. Learn to condition your immediate response so fear doesn't hijack your execution.</p>
 <ul>
-<li><strong>The Coach's Bullhorn</strong>: When doubt sets in, you must override your internal freeze response and <strong>push through now</strong> to stick to your original strategy.</li>
+<li><strong>The Immediate Action Requirement</strong>: Just like in a high-stakes canoe race, trading demands immediate, decisive action. Hesitation in the middle of a trade is often a critical flaw.</li>
+<li><strong>The Coach's Bullhorn</strong>: When doubt sets in, you must override your internal freeze response and **push through now*</li>
+<li>to stick to your original strategy.</li>
 <li><strong>Identity Determines Action</strong>: True discipline means deciding who you are—a plan follower—before the market begins to challenge you.Actionable Takeaway: Before your next trading session, clearly define the exact action you will take if you feel doubt, and commit to executing it instantly."Decide who you are before the voice of fear does it for you."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>That&#x27;s when the doubt gets in. In an outrigger six-man canoe, when you&#x27;re on the ocean, there&#x27;s a moment where you&#x27;ll hesitate. Sometimes you even freeze. That&#x27;s when the doubt kept saying. My paddling coach, Manny, used to yell through that. He&#x27;d see it happening to us and he&#x27;d pull out his bullhorn and tell us to push through now because he knew we didn&#x27;t have 30 minutes to reset. And neither do you traders. When you&#x27;re in the middle of a trade, you have a very small window to respond. Decide who you are before the voice of fear does it for you. And if you&#x27;re tired of breaking your own plan, then let&#x27;s talk. That&#x27;s where me and my coaching comes in.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

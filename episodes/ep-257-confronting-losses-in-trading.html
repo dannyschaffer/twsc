@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Rewiring Your Relationship to Loss: Why Childhood Failure Still Costs You Trades</p>
+                <h3>Rewiring Your Relationship to Loss: Why Childhood Failure Still Costs You Trades</h3>
 <p>Your reaction to a trading loss is rarely about the market; it's often a deep-seated emotional response learned from your very first experiences with failure. When you treat a red P&L like a personal reprimand or source of embarrassment, your decision-making becomes defensive and irrational. Understanding the origin of this fear is the critical first step toward mental fortitude.  - <strong>Deep Roots of Loss Aversion</strong>: Your current trading psychology regarding loss likely mirrors the emotions you felt during initial failures in childhood (e.g., losing a game or failing a test).</p>
 <ul>
 <li><strong>The Punishment Loop</strong>: If early losses led to punishment or shame, your nervous system registers current trading losses as a threat to your identity and safety.</li>
-<li><strong>Conscious Rewiring</strong>: True change requires becoming fully present and conscious of *how* your relationship with failure currently manifests before you can begin the process of rebuilding it.Actionable Takeaway:</li>
+<li><strong>Conscious Rewiring</strong>: True change requires becoming fully present and conscious of *how</li>
+<li>your relationship with failure currently manifests before you can begin the process of rebuilding it.Actionable Takeaway:</li>
 </ul>
 <p>Reflect on the earliest memory you have of experiencing a loss or failure and identify the specific emotion (shame, fear, anger) attached to that event.likely your relationship to loss is still the same and here's the thing we can rewire our relationship to loss but we first have to be really present and conscious to what and how it looks now</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what&#x27;s your relationship to loss look like do you remember the first bike race or card game or board game you ever lost or the first test you ever failed or course I want you to think back to how you were feeling when that happened were you made to feel embarrassed about it did your parents punish you see if you can just go back to that first loss because likely your relationship to loss is still the same and here&#x27;s the thing we can rewire our relationship to loss but we first have to be really present and conscious to what and how it looks now so take a look let me know in the comments if you&#x27;re willing and let&#x27;s start to rewire that relationship</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

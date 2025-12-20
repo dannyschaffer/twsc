@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Self-Abuse Is the Ultimate Limit to Your Trading Success</p>
+                <h3>Why Self-Abuse Is the Ultimate Limit to Your Trading Success</h3>
 <p>Many traders mistakenly believe that relentless self-criticism is the path to discipline, but being incredibly hard on yourself is actually the single biggest quality preventing sustained success. This constant, abusive self-talk drains your mental reserves and keeps you locked in a cycle where forward momentum is sabotaged by psychological burnout. True grit requires pushing yourself, but progress is impossible when you are constantly beating yourself up.  - <strong>Discipline vs. Destruction</strong>: Recognize that while grit and discipline are necessary, being unnecessarily mean to yourself actively prevents the clarity and calm required for successful execution.</p>
 <ul>
 <li><strong>The Cost of Self-Abenss</strong>: Pushing yourself to the point of self-loathing will not lead to improvement and makes long-term consistency unsustainable.</li>
 <li><strong>The Necessity of Lightening Up</strong>: Long-term survival depends on learning how to persevere through challenges without inflicting unnecessary psychological damage on yourself.Take the tactical step of actively researching and implementing strategies focused on self-kindness to improve mental performance, starting with the Dan Harris Ted Talk suggestion."You want to move forward; you are not going to do that by beating the hell out of yourself."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>stop being such a jerk to yourself I have to say of all the qualities that I see among treaters this is at the top of the list you guys are incredibly hard on yourselves I get that you have to push yourself I understand that this takes a tremendous amount of grit and a tremendous amount of discipline but for God&#x27;s sakes lighten up you want to move forward you are not going to do that by beating the hell out of yourself what I would like to suggest is that you go and Google how to to not be a jerk on yourself and watch the excellent talk that Dan Harris put together for a Ted Talk on this very topic yes push yourself yes persevere but being mean and having that selft talk beat the hell out of yourself guys it&#x27;s not going to help you not for the long run</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Needs Sabotaging Your Trading Discipline</p>
-<p>You've absorbed the best lessons from books like Atomic Habits, yet consistent discipline remains elusive. If you feel stuck, it's likely because your intellectual effort is being overridden by <strong>invisible, unmet personal needs</strong> that constantly derail your focus and lead to poor execution.  - Discipline failure stems from a collection of <strong>unmet needs</strong>, not a flaw in your trading strategy or personal effort.</p>
+                <h3>The Hidden Needs Sabotaging Your Trading Discipline</h3>
+<p>You've absorbed the best lessons from books like Atomic Habits, yet consistent discipline remains elusive. If you feel stuck, it's likely because your intellectual effort is being overridden by **invisible, unmet personal needs*</p>
 <ul>
-<li>These driving needs are typically <strong>invisible</strong> and operate beneath conscious awareness, making self-sabotage feel unavoidable.</li>
-<li>Without <strong>clarity about the needs</strong> driving your behavior, even the best external habits will fail to keep you on track.Start mapping the moments when your discipline fails to identify the emotional or psychological need your behavior was attempting to satisfy."Underneath your inability to stay disciplined are a collection of needs that aren't getting met that keep trumping over whatever it is that you want to do."</li>
+<li>that constantly derail your focus and lead to poor execution.  - Discipline failure stems from a collection of <strong>unmet needs</strong>, not a flaw in your trading strategy or personal effort.</li>
+<li>These driving needs are typically **invisible*</li>
+<li>and operate beneath conscious awareness, making self-sabotage feel unavoidable.</li>
+<li>Without **clarity about the needs*</li>
+<li>driving your behavior, even the best external habits will fail to keep you on track.Start mapping the moments when your discipline fails to identify the emotional or psychological need your behavior was attempting to satisfy."Underneath your inability to stay disciplined are a collection of needs that aren't getting met that keep trumping over whatever it is that you want to do."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you struggle with discipline have you read Atomic habits and yet you still can&#x27;t be disciplined have you read Le goin&#x27;s book and you still are unable to be as disciplined as you want well it&#x27;s possible that underneath your inability to stay disciplined are a collection of needs that aren&#x27;t getting met that keep trumping over whatever it is that you want to do stick to that is a big problem that are usually invisible ders that without having clarity about the needs that are driving you can often take you off the track you want to be on so if you want to address that or any topic come to my live coaching on my YouTube channel the Wall Street coach I am hosting it Thursday the 14 at 800 p.m. Eastern I hope you&#x27;ll come</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

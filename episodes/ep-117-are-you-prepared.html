@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Inevitable Traps: How to Pre-Game Your Trading Psychology</p>
+                <h3>The Inevitable Traps: How to Pre-Game Your Trading Psychology</h3>
 <p>Trading success isn't just about strategy; it's about preparation for inevitable psychological crises. As a trader, you will continually encounter challenges like fear of failure, FOMO, and ego issues, which are costly when unprepared. This intensive approach is designed to get you ahead of these mental battles now, so you can execute cleanly when market pressures rise.  - <strong>Confront Your Money Relationship</strong>: Understand and address the deep-seated beliefs about money that drive unconscious trading behavior.</p>
 <ul>
 <li><strong>Master the Confidence Spectrum</strong>: Learn to manage the balance between too little confidence (hesitation) and too much confidence (hubris).</li>
 <li><strong>Tool Up for Inevitable Challenges</strong>: Acquire specific tools to manage persistent emotional pitfalls like greed, fear of failure, and discipline failures.Stop waiting for the next loss to force a change; proactively identify and resource your core psychological triggers before your next trade."I promise you these things keep showing up so get ahead of it now and get the tools."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>be prepared is the Boy and Girl Scouts motto and that motto is really what I&#x27;m asking you are you fully prepared that&#x27;s what this six week course is all about you&#x27;re going to absolutely bump into what your relationship to money is you&#x27;re going to continuously struggle with the fear of failure you&#x27;re going to have fomo at times discipline issues greed your ego you&#x27;re going to need to manage it from too little confidence to Too Much which is also known as hubris that is what the six-week intensive is going to address so that you can be prepared for what is inevitable as a Trader whether you are a beginner or a sophisticate I promise you these things keep showing up so get ahead of it now and get the tools because you want to be prepared when those challenges come I hope to see you on the inside</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

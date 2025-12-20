@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Your Need to Be Right Is Killing Your Trading Account</p>
+                <h3>Why Your Need to Be Right Is Killing Your Trading Account</h3>
 <p>The need for perfect accuracy is one of the most crippling emotional traps for traders. This intense fear of being wrong often dictates entry and exit points, causing unnecessary stress and ultimately preventing consistent profitability.</p>
 <p>Key Insights:  - <strong>Profit is not dependent on perfection</strong>: Successful trading relies on strategy and risk management, not on having a high winning percentage.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Embracing Imperfection</strong>: Getting comfortable with mistakes transforms them from personal failures into necessary, unemotional data points for long-term improvement.Actionable Takeaway:</li>
 </ul>
 <p>Consciously separate your identity and self-worth from the outcome of any individual trade."When you get comfortable being wrong, making a mistake, that is when you make money"</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Jason Shapiro surprised me by coming to my YouTube live on YouTube if you haven&#x27;t listened to that conversation I urge you to do so one of the more powerful things that Jason said while he dropped gold in the entire conversation was this statement be wrong make money and he talks about how many Traders are so afraid to be wrong and he said when you get comfortable being wrong making a mistake that is when you make money</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Transformative Power of Being 'Bored With Yourself'</p>
-<p>Many traders seek external fixes or distractions to avoid confronting their internal landscape, fearing the discomfort that true self-reflection brings. However, avoiding the period where you face shame and guilt is the precise reason you remain trapped in unprofitable trading and emotional loops.  - <strong>Embrace the Discomfort:</strong> If you feel bored or dislike your own company when sitting in stillness, <strong>do not seek outside frequency or entertainment</strong>. This friction is a key indicator that you have reached the point where real change is possible.</p>
+                <h3>The Transformative Power of Being 'Bored With Yourself'</h3>
+<p>Many traders seek external fixes or distractions to avoid confronting their internal landscape, fearing the discomfort that true self-reflection brings. However, avoiding the period where you face shame and guilt is the precise reason you remain trapped in unprofitable trading and emotional loops.  - **Embrace the Discomfort:*</p>
 <ul>
-<li><strong>Identify Repeat Offenses:</strong> True self-inquiry allows you to identify the <strong>specific, repetitive actions</strong> or ways of thinking that consistently bring you hardship and never result in joy or profit.</li>
-<li><strong>Stillness Precedes Forgiveness:</strong> The crucial ability to <strong>forgive yourself</strong> and break free from old habits is only accessible when you stick with the process long enough to move through the shame and embarrassment of past behavior.Actionable Takeaway: Commit to a 10-minute period of stillness today and actively resist the urge to pick up your phone, turn on a chart, or seek distraction when the initial wave of boredom hits.You'll figure out what you want to change and then you will also stick there long enough to find the grace to forgive yourself</li>
+<li>If you feel bored or dislike your own company when sitting in stillness, <strong>do not seek outside frequency or entertainment</strong>. This friction is a key indicator that you have reached the point where real change is possible.</li>
+<li>**Identify Repeat Offenses:*</li>
+<li>True self-inquiry allows you to identify the **specific, repetitive actions*</li>
+<li>or ways of thinking that consistently bring you hardship and never result in joy or profit.</li>
+<li>**Stillness Precedes Forgiveness:*</li>
+<li>The crucial ability to **forgive yourself*</li>
+<li>and break free from old habits is only accessible when you stick with the process long enough to move through the shame and embarrassment of past behavior.Actionable Takeaway: Commit to a 10-minute period of stillness today and actively resist the urge to pick up your phone, turn on a chart, or seek distraction when the initial wave of boredom hits.You'll figure out what you want to change and then you will also stick there long enough to find the grace to forgive yourself</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>a lot of people out there may be listening going yeah I bore myself that&#x27;s okay go be bored with yourself that&#x27;s part of it go get stuck with yourself where you&#x27;re like I&#x27;m gonna write something down I don&#x27;t want to think about who I am I don&#x27;t okay now that&#x27;s a good reason that&#x27;s usually a good tale exactly you&#x27;re right in the right place don&#x27;t leave don&#x27;t pull the parachute don&#x27;t pick up the phone don&#x27;t write somebody don&#x27;t look for that outside frequency to entertain you yeah stick with it and guess what first thing&#x27;s gonna be you&#x27;re gonna be like gonna go from board to probably like well I&#x27;m more than bored now now I don&#x27;t even like hanging with myself good now you&#x27;re really getting there now hang in there stick with yourself definitely don&#x27;t pull the parachute now because now you&#x27;re getting somewhere now you&#x27;re going like I do not like my company there we go there we go hang in there well you&#x27;ll sit there and you&#x27;ll go through do not like my company and you&#x27;ll go through maybe shame guilt embarrassment of who you are in your own private mind where</p>
-<p>the world doesn&#x27;t the stuff we are that no one else in the world even places what we do in the dark well sit in there for a minute take time to figure out all right I&#x27;m changing this because I&#x27;m a repeat offender of this act in my life or this way of thinking that never brings me any Joy I talk about it in the in the book it&#x27;s like that that bar we go to that the next morning we have a worse hangover yeah stick through those those times you&#x27;ll figure out what you want to change and then you will also stick there long enough to find the grace to forgive yourself</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

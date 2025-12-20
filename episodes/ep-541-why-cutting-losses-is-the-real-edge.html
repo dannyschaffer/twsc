@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Courage in Cutting Your Losses</p>
-<p>Every trader faces the daily struggle of deciding when to persevere and when to step away. While market pressure might push you to "keep fighting," sometimes the most strategic and courageous move is admitting defeat and exiting a losing trade. Understanding this emotional tension and having a solid infrastructure are vital for survival.  * <strong>Cutting losses is an act of courage, not weakness</strong>, proving commitment to your long-term trading capital over short-term ego.</p>
+                <h3>The Hidden Courage in Cutting Your Losses</h3>
+<p>Every trader faces the daily struggle of deciding when to persevere and when to step away. While market pressure might push you to "keep fighting," sometimes the most strategic and courageous move is admitting defeat and exiting a losing trade. Understanding this emotional tension and having a solid infrastructure are vital for survival.</p>
 <ul>
-<li>Successful traders acknowledge the frequent desire to quit on losing days, but they use <strong>clear metrics for entry and exit</strong> to avoid being trapped by pure emotion.</li>
-<li>The absence of a <strong>personal backup plan</strong> (skills, savings, alternative income) can create psychological pressure, forcing a trader to stay in the market longer than necessary and break rules.Establish a clear, non-negotiable metric for cutting losses *before* entering any trade to automate the most difficult decision and protect your mental capital."The strongest and the very most courageous thing to do is is to cut your losses and step away."</li>
+<li><strong>Cutting losses is an act of courage, not weakness</strong>, proving commitment to your long-term trading capital over short-term ego.</li>
+<li>Successful traders acknowledge the frequent desire to quit on losing days, but they use **clear metrics for entry and exit*</li>
+<li>to avoid being trapped by pure emotion.</li>
+<li>The absence of a **personal backup plan*</li>
+<li>(skills, savings, alternative income) can create psychological pressure, forcing a trader to stay in the market longer than necessary and break rules.Establish a clear, non-negotiable metric for cutting losses *before</li>
+<li>entering any trade to automate the most difficult decision and protect your mental capital."The strongest and the very most courageous thing to do is is to cut your losses and step away."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast. It&#x27;s not always keep fighting. A lot of times, you know, the strongest and the very most courageous thing to do is is to cut your losses and step away. Let&#x27;s talk about that. What did you use as a metric to measure that for yourself repeatedly? How did you determine if you had to stay and stick it out? Did you ever contemplate quitting? Of course. Of course. you know, every time I have a losing day now, I&#x27;m like, I love just a, you know, max salary job or, you know, I want to do something else. I of course, but yeah, there&#x27;s been many times, you know, and I&#x27;ll be I I&#x27;ll be honest and I&#x27;ve wrote about this a book my, you know, and that&#x27;s a big lesson I want to, you know, teach traders is have the backup plan. Unfortunately, I wanted to get out of trading or had to get out of trading, but I didn&#x27;t, you know, I had no skills. I had no savings. I had no, you know, I had no kind of backup plan.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

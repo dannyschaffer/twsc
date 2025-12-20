@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Certainty: The Hidden Power of Ambiguity in Trading</p>
+                <h3>Stop Chasing Certainty: The Hidden Power of Ambiguity in Trading</h3>
 <p>The need for rigid timelines and guaranteed outcomes is costing you profits. When you're constantly attached to hitting specific targets, comparing yourself to others, or fearing missing out, your mindset becomes limited and restrictive. This emotional rigidity prevents you from operating with the freedom and flexibility necessary for long-term consistency.  - <strong>The Cost of External Metrics</strong>: Attachment to timelines or how much you "should" be making puts you in a scarcity mindset, severely limiting your operating capacity in the market.</p>
 <ul>
 <li><strong>Comparison Is a Limited System</strong>: Trading success is fundamentally an internal game; comparing yourself to others is a form of emotional leakage that pulls you back into a limited way of operating.</li>
 <li><strong>Flexibility as a Strategy</strong>: Ambiguity is not a weakness; it is a profound strength that allows you to adapt instantly to market conditions without emotional bias.When reviewing your next trade, check where your expectations were attached to a specific date or dollar figure, and practice detaching from that outcome."Allow yourself to live in ambiguity; get comfortable with it as a trader it is going to serve you in a plethora of ways."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>allow yourself to live in ambiguity get comfortable with it as a traitor it is going to serve you in a plethora of ways if you are so attached to your timeline to how much you&#x27;re supposed to make to comparing yourself to other traders to feeling like you&#x27;re missing out all of that stuff puts you back into a very limited way of operating</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

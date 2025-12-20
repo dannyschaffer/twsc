@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop The Overwhelm: How to Choose the 3 Non-Negotiable Habits That Actually Matter</p>
-<p>The constant pressure to implement every "best practice" for well-being can leave you feeling drained and paralyzed, sabotaging your ability to maintain consistency. When you attempt to execute an impossible list of daily tasks, you risk ending the day with a demoralizing sense of failure, regardless of how much effort you put in.  * The <strong>"Impossible List"</strong> is a mental trap; attempting to execute every recommended well-being task leads to burnout, not improvement.</p>
+                <h3>Stop The Overwhelm: How to Choose the 3 Non-Negotiable Habits That Actually Matter</h3>
+<p>The constant pressure to implement every "best practice" for well-being can leave you feeling drained and paralyzed, sabotaging your ability to maintain consistency. When you attempt to execute an impossible list of daily tasks, you risk ending the day with a demoralizing sense of failure, regardless of how much effort you put in.</p>
 <ul>
-<li>Your personal response is the ultimate measure: ignore expert dogma and focus on the activities that genuinely <strong>change your internal state</strong> for the better.</li>
-<li>True consistency comes from committing to a <strong>small, manageable number</strong> of high-impact non-negotiable habits.Identify the top three well-being activities that consistently improve your emotional and mental state, and commit to completing only those three every day."I want you to look at yourself and how you respond when you do those three things."</li>
+<li>The **"Impossible List"*</li>
+<li>is a mental trap; attempting to execute every recommended well-being task leads to burnout, not improvement.</li>
+<li>Your personal response is the ultimate measure: ignore expert dogma and focus on the activities that genuinely **change your internal state*</li>
+<li>for the better.</li>
+<li>True consistency comes from committing to a **small, manageable number*</li>
+<li>of high-impact non-negotiable habits.Identify the top three well-being activities that consistently improve your emotional and mental state, and commit to completing only those three every day."I want you to look at yourself and how you respond when you do those three things."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you ever feel like there&#x27;s just too many things to do each day I think especially now because we&#x27;re all so plugged in we know all the things that are best for our well-being but to get them all done every day is almost impossible to accomplish so I want you to pick the top three that really seem to make a difference for you and then commit to those this way at the end of the day you won&#x27;t feel like you got nothing done you will be proud that those three things were accomplished and I want you to not worry about what this expert or that expert says have to be done I want you to look at yourself and how you respond when you do those three things I know for me personally exercises are non-negotiable because I see how I am when I don&#x27;t have it but for me to do that I have a huge amount of time that gets taken so find the three that work for you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

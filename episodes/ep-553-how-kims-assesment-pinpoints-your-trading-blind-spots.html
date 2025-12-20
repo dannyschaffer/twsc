@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Being Your Own Worst Critic: Uncover Your Hidden Trading Hindrances</p>
-<p>As a trader, you are likely already incredibly hard on yourself. This intense self-criticism often prevents you from seeing the deeper patterns causing inconsistencies. Tools like the Trader Positioning Index allow you to objectively look "under the hood" of what is truly holding you back.  * <strong>The Power of Objective Assessment:</strong> An assessment provides an unbiased view of your psychological landscape, going beyond technical performance data.</p>
+                <h3>Stop Being Your Own Worst Critic: Uncover Your Hidden Trading Hindrances</h3>
+<p>As a trader, you are likely already incredibly hard on yourself. This intense self-criticism often prevents you from seeing the deeper patterns causing inconsistencies. Tools like the Trader Positioning Index allow you to objectively look "under the hood" of what is truly holding you back.</p>
 <ul>
-<li><strong>Seeing Under the Hood:</strong> The results validate what you likely already feel—that specific underlying psychological 'hindrances' are operating behind the scenes.</li>
-<li><strong>Identifying Blind Spots:</strong> The key value is not in being shocked by your habits, but in the tool's ability to clearly identify the potential obstacles that need attention.Seek out an objective self-assessment tool to quantify and visualize the psychological patterns that are currently limiting your profit potential.Traders have a tendency to be incredibly hard on themselves.</li>
+<li>**The Power of Objective Assessment:*</li>
+<li>An assessment provides an unbiased view of your psychological landscape, going beyond technical performance data.</li>
+<li>**Seeing Under the Hood:*</li>
+<li>The results validate what you likely already feel—that specific underlying psychological 'hindrances' are operating behind the scenes.</li>
+<li>**Identifying Blind Spots:*</li>
+<li>The key value is not in being shocked by your habits, but in the tool's ability to clearly identify the potential obstacles that need attention.Seek out an objective self-assessment tool to quantify and visualize the psychological patterns that are currently limiting your profit potential.Traders have a tendency to be incredibly hard on themselves.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Traders have a tendency to be incredibly hard on themselves. All I feel this assessment does is allow all of us, me included, to just be able to see under the hood of what might be operating behind the scenes. And in my experience, traders have a tendency to be incredibly hard on themselves and sort of nobody&#x27;s been shocked by the results I&#x27;ve given them with this assessment. I call it the trader positioning index. What what they are shocked about is that it is able to identify what these potential hindrances</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

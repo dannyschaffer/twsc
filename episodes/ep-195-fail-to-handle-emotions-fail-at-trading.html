@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Fighting Your Emotions: The Power of Nonresistance in High-Volatile Trading</p>
+                <h3>Stop Fighting Your Emotions: The Power of Nonresistance in High-Volatile Trading</h3>
 <p>Most traders mistakenly aim to eliminate all emotional responses, believing suppression equals control. However, as a human, you will always experience feelings in the market. The true competitive edge lies not in eliminating emotions, but in developing the capacity to "surf" them without being triggered into costly reactions.  - The failure of most traders is not a lack of strategy, but a lack of practice in developing a <strong>relationship to their emotions</strong>.</p>
 <ul>
-<li><strong>Emotional Nonresistance</strong> is the critical skill required to manage the inevitable volatility of the internal trading experience.</li>
+<li>**Emotional Nonresistance*</li>
+<li>is the critical skill required to manage the inevitable volatility of the internal trading experience.</li>
 <li>The objective is to train your system to quickly achieve <strong>Central Nervous System Neutrality</strong>, allowing you to respond strategically instead of reacting instinctively.Start treating your emotional responses as data points to be observed, not threats to be suppressed, building the muscle of nonresistance daily.The key is how do you get your central nervous system back to neutral even when you do have them, learning how to develop muscles to handle the volatile emotions and not be triggered but are able to respond not react.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>practice three is emotional nonresistance why is this important for Traders it&#x27;s because most Traders before they start their trading have not practiced how to surf emotions how to serve the internal experience that they inevitably will go through I have rarely seen traders in a relationship to their emotions most Traders want to never have emotions but you will always have them because you&#x27;re human the key is how do you get your central nervous system back to neutral even when you do have them that is my practice three learning how to develop muscles to handle the volatile emotions and not be triggered but are able to respond not react</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

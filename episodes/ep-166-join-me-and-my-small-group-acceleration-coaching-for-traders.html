@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Accelerate Your Edge: Breaking Free from the Traps of Ego and Greed</p>
+                <h3>Accelerate Your Edge: Breaking Free from the Traps of Ego and Greed</h3>
 <p>Many traders possess the intellectual strength to succeed, yet remain stuck battling the same emotional challenges: fear, greed, and ego. Just like the figure of Atlas, the burden of managing these internal forces can drain your confidence and prevent sustained profitability. Realizing your full potential requires accelerating your mental mastery beyond technical analysis.</p>
-<p>Key Insights:  - Learn to reframe your core relationship with <strong>money</strong> to ensure clearer execution and balanced risk tolerance.</p>
+<p>Key Insights:  - Learn to reframe your core relationship with **money*</p>
 <ul>
-<li>Systematically dismantle the emotional obstacles like <strong>FOMO and greed</strong> that undermine consistent adherence to your rules.</li>
+<li>to ensure clearer execution and balanced risk tolerance.</li>
+<li>Systematically dismantle the emotional obstacles like **FOMO and greed*</li>
+<li>that undermine consistent adherence to your rules.</li>
 <li>Identify and manage the dual threats of <strong>ego</strong>: crippling underconfidence and destructive overconfidence.Actionable Takeaway:</li>
 </ul>
 <p>Commit to a structured, focused period of psychological acceleration to systematically confront the emotional patterns sabotaging your equity curve.Atlas is all about strength all about might and power and confidence.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>hi guys this is one of my favorite sculptures in New York City at Rock Center it&#x27;s of Atlas one of my favorite books some of you know is Atlas Shrugged and Atlas is all about strength all about might and power and confidence I am inviting you it&#x27;s my last invitation to this small group coaching that starts this Thursday specifically Traders it&#x27;s an acceleration of 6 weeks we start this Thursday at 700 p.m. Eastern this topic is going to be about money this particular Thursday then we have five more weeks where we&#x27;re going to deal with fomo we&#x27;re going to deal with discipline we&#x27;re going to deal with greed we&#x27;re going to deal with your ego and being overconfident or underconfidence it&#x27;s going to be an incredible experience our last one was a huge success I hope you&#x27;ll join me and</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

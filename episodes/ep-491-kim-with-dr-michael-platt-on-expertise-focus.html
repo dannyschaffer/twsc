@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,19 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Real Trading Edge: How Focused Attention Beats Speed</p>
-<p>In high-stakes trading moments, the difference between a successful execution and a costly error is often measured in milliseconds. If you find yourself freezing or panicking when the market demands a quick, accurate decision, the issue isn't speed—it's attention. Dr. Michael Platt explains how you can train yourself to transform these high-pressure moments from chaos into clarity.  * <strong>Expertise is acquired attention.</strong> Your capacity to perform well under pressure is not random talent; it is the result of training your focus to prioritize the most relevant information in real time.</p>
+                <h3>The Real Trading Edge: How Focused Attention Beats Speed</h3>
+<p>In high-stakes trading moments, the difference between a successful execution and a costly error is often measured in milliseconds. If you find yourself freezing or panicking when the market demands a quick, accurate decision, the issue isn't speed—it's attention. Dr. Michael Platt explains how you can train yourself to transform these high-pressure moments from chaos into clarity.</p>
 <ul>
-<li><strong>Speed relies on rapid orientation.</strong> Quick execution stems directly from your ability to orient your attention to the *right* information much faster than others.</li>
-<li><strong>Avoid external distractions.</strong> The complexity of market data and outside noise makes quick, accurate decisions difficult, underscoring the need for ruthless focus.<strong>Actionable Takeaway</strong></li>
+<li>**Expertise is acquired attention.*</li>
+<li>Your capacity to perform well under pressure is not random talent; it is the result of training your focus to prioritize the most relevant information in real time.</li>
+<li>**Speed relies on rapid orientation.*</li>
+<li>Quick execution stems directly from your ability to orient your attention to the *right</li>
+<li>information much faster than others.</li>
+<li>**Avoid external distractions.*</li>
+<li>The complexity of market data and outside noise makes quick, accurate decisions difficult, underscoring the need for ruthless focus.**Actionable Takeaway*</li>
+<li>Audit your trade review process to explicitly identify the three critical data points you should *only</li>
+<li>pay attention to in a high-speed execution scenario, effectively training your focus muscle."Expertise is one way that we are able to do better... you learn what to pay attention to so if you can Orient your attention much more quickly then to the right information... makes it more difficult to make that decision quickly and accurately"</li>
 </ul>
-<p>Audit your trade review process to explicitly identify the three critical data points you should *only* pay attention to in a high-speed execution scenario, effectively training your focus muscle."Expertise is one way that we are able to do better... you learn what to pay attention to so if you can Orient your attention much more quickly then to the right information... makes it more difficult to make that decision quickly and accurately"</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you were in the middle of a trade or decision that had to be quick and yet had to be accurate what would you do to Prime yourself to handle that well that&#x27;s a really good question um like I said expertise is one way that we are able to do better um the way that that expertise is acquired as I as I alluded to is that you you you learn what to pay attention to so if you can Orient your attention much more quickly then um to the to the right information uh then and and and um avoid distractions you know things that that might be kind of like lots of other things going on yeah uh makes it more difficult to make that uh decision quickly uh and accurately</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +258,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

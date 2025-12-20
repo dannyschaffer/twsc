@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The 10-Minute Partner Hack That Instantly Sharpens Your Trading Edge</p>
-<p>Your trading strategy is only as sharp as your self-awareness. When you analyze performance alone, it's easy for ego and emotion to filter the truth, keeping you stuck in recurring loops of failure and frustration. Discover the simple, non-judgmental accountability framework that forces you to hear your own patterns and break free.  * The core benefit of this exercise is the power of being truly <strong>witnessed</strong> in your process, which transforms self-review from internal dialogue into objective truth.</p>
+                <h3>The 10-Minute Partner Hack That Instantly Sharpens Your Trading Edge</h3>
+<p>Your trading strategy is only as sharp as your self-awareness. When you analyze performance alone, it's easy for ego and emotion to filter the truth, keeping you stuck in recurring loops of failure and frustration. Discover the simple, non-judgmental accountability framework that forces you to hear your own patterns and break free.</p>
 <ul>
+<li>The core benefit of this exercise is the power of being truly **witnessed*</li>
+<li>in your process, which transforms self-review from internal dialogue into objective truth.</li>
 <li>The conversation is strictly structured: the first half is dedicated exclusively to reviewing <strong>what you did well</strong>.</li>
 <li>Improvement comes from articulating your intentions for <strong>future behavior</strong>, not dwelling on past mistakes.Actionable Takeaway: Establish a daily, 10-minute call with a trading partner where you spend the first five minutes detailing your wins and the next five minutes discussing areas for improvement, requiring them to listen without offering advice.when you do this with a witness... you hear yourself for the first time</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I want you to promise me that every day you find one trading partner to speak to and I want you to set that call up you both hold space for one another for 10 minutes each that&#x27;s one other person where one person speaks for 10 minutes and the other person speaks for 10 minutes those first five minutes are for you to share with the other person without them giving you input or advice all of the things that you did well in your trading and then the second 5 minutes spent on all of the things that you know you could have improved upon and will improve upon when you do this with a witness with somebody who&#x27;s really listening to you not to give you advice not to correct you not to judge you but to just really hear you you hear yourself for the first time</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Is Your Biology Sabotaging Your Trades? The Unseen Influence of Testosterone</p>
+                <h3>Is Your Biology Sabotaging Your Trades? The Unseen Influence of Testosterone</h3>
 <p>Your emotional state isn't the only internal factor impacting your P&L. Research suggests that a trader’s morning testosterone levels can predict their profitability and risk-taking behavior throughout the day. Ignoring this biological variable means missing a critical element of self-awareness.  - <strong>The Hormonal Edge</strong>: Studies have shown a correlation between morning testosterone levels in male traders and their day's performance, suggesting a physiological bias.</p>
 <ul>
 <li><strong>Gender Differences</strong>: While testosterone is present in both sexes, its influence on decision-making requires separate consideration for male and female traders.</li>
 <li><strong>The Need for Regular Monitoring</strong>: Understanding these hormonal cycles should become a regular component of a trader's self-assessment routine.Implement a daily ritual of self-assessment before trading that acknowledges your current physical and emotional state, moving beyond just chart analysis to identify hormonal volatility.a trader's testosterone levels in the morning could predict his profitability when he traded</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the reason that this conversation even began with us is because of John coat&#x27;s book The Hour between do and wolf and that book just really showed me 12 years ago that a traitor&#x27;s testosterone levels in the morning could predict his profitability when he traded and ever since then I was like my God this should be being done by Traders on a regular basis so let&#x27;s just talk specifically about how testosterone impacts male Traders and of course I&#x27;d like to talk about the difference that happens for women Traders because of course they have testosterone but it&#x27;s different for them</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Overcoming the Inner Critic: The Trading Edge of Kind Self-Talk</p>
-<p>Your greatest opponent isn't the market; it's the relentless inner critic sabotaging your confidence. Constant self-criticism leads to emotional depletion and reactive trading, preventing the clarity required for consistent profit. Stop letting your internal voice cost you money.  - <strong>Self-Talk is Critical:</strong> The quality of your internal dialogue directly impacts your decision-making and mental endurance in volatile markets.</p>
+                <h3>Overcoming the Inner Critic: The Trading Edge of Kind Self-Talk</h3>
+<p>Your greatest opponent isn't the market; it's the relentless inner critic sabotaging your confidence. Constant self-criticism leads to emotional depletion and reactive trading, preventing the clarity required for consistent profit. Stop letting your internal voice cost you money.  - **Self-Talk is Critical:*</p>
 <ul>
-<li><strong>Kindness is Key:</strong> Approach yourself with the same level of compassion and support you would offer a trusted friend or mentor.</li>
-<li><strong>Distinguish Your Voices:</strong> Learn to separate the helpful, objective inner voice from the destructive, unkind inner critic.Actionable Takeaway: When reviewing a loss, consciously reframe your internal monologue from criticism ("You were stupid to take that trade") to an objective, supportive question ("What lesson can be found in this outcome?").I think that self talk is critical and the key is to just make sure that that self talk is coming from a place of kindness like a you would talk to a friend.</li>
+<li>The quality of your internal dialogue directly impacts your decision-making and mental endurance in volatile markets.</li>
+<li>**Kindness is Key:*</li>
+<li>Approach yourself with the same level of compassion and support you would offer a trusted friend or mentor.</li>
+<li>**Distinguish Your Voices:*</li>
+<li>Learn to separate the helpful, objective inner voice from the destructive, unkind inner critic.Actionable Takeaway: When reviewing a loss, consciously reframe your internal monologue from criticism ("You were stupid to take that trade") to an objective, supportive question ("What lesson can be found in this outcome?").I think that self talk is critical and the key is to just make sure that that self talk is coming from a place of kindness like a you would talk to a friend.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I think that selft talk is critical and the key is to just make sure that that self-t talk is coming from a place of kindness like a you would talk to a friend not a voice you know because of most of us also hear an inner critic and that is not speaking to us with kindness and distinguishing between our true inner voice and a inner critic is is also pretty important.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

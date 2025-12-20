@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Drowning in Data: How Cognitive Overload Kills Your Edge</p>
-<p>As a trader, you are constantly exposed to screens, data, and interruptions, putting you at high risk for cognitive overload. This mental fatigue can silently erode your decision-making abilities, causing even the smartest traders to underperform and miss opportunities. Ignoring this risk means operating below your maximum processing capacity.  - <strong>Information Overwhelm:</strong> The modern trading desk environment—with multiple screens, constant data, and phone interruptions—is engineered to induce mental fatigue.</p>
+                <h3>Stop Drowning in Data: How Cognitive Overload Kills Your Edge</h3>
+<p>As a trader, you are constantly exposed to screens, data, and interruptions, putting you at high risk for cognitive overload. This mental fatigue can silently erode your decision-making abilities, causing even the smartest traders to underperform and miss opportunities. Ignoring this risk means operating below your maximum processing capacity.  - **Information Overwhelm:*</p>
 <ul>
-<li><strong>The Stealth Killer:</strong> Cognitive overload is difficult to detect and can cause even highly intelligent individuals to operate far below their best capacity.</li>
-<li><strong>Processing Power:</strong> Optimal decision-making requires processing information in smaller, manageable chunks rather than attempting to absorb everything simultaneously.Audit your workspace and implement systems to intentionally limit information flow and process market data in smaller, defined chunks.Even the most intelligent person is not going to be able to process at their best if they are overloaded.</li>
+<li>The modern trading desk environment—with multiple screens, constant data, and phone interruptions—is engineered to induce mental fatigue.</li>
+<li>**The Stealth Killer:*</li>
+<li>Cognitive overload is difficult to detect and can cause even highly intelligent individuals to operate far below their best capacity.</li>
+<li>**Processing Power:*</li>
+<li>Optimal decision-making requires processing information in smaller, manageable chunks rather than attempting to absorb everything simultaneously.Audit your workspace and implement systems to intentionally limit information flow and process market data in smaller, defined chunks.Even the most intelligent person is not going to be able to process at their best if they are overloaded.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>let&#x27;s talk about the reality of cognitive overload Traders especially are at risk for this because of all the data they are constantly exposing themselves to most Traders desks have a bunch of screens but you&#x27;ve got to realize that between all the information and data that&#x27;s coming across your screens and all the constant interruptions that possibly your phone is causing you it is very easy to slip into cognitive overload and not even know it so I want you to be very careful and mindful of that even the most intelligent person is not going to be able to process at their best if they are overloaded so try to put into place ways for you to process smaller chunks of information</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

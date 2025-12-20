@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading with a Screaming Horn: How Anger Reveals Your Unmet Needs</p>
+                <h3>Stop Trading with a Screaming Horn: How Anger Reveals Your Unmet Needs</h3>
 <p>When market frustration pushes you to the brink, it often feels like an urge to "scream out loud" or lash out—a psychological release that costs you money. This intense anger is not a moral failing; it is a critical signal that your nervous system is flagging a deeper problem. Ignoring this emotional spike means missing the most important data point in your trading performance.  - <strong>Anger is an Indicator, Not a Flaw</strong>: Embrace anger as a necessary sign that basic personal needs are going unmet, rather than viewing it as a sign of weakness or poor discipline.</p>
 <ul>
 <li><strong>Identify the Root Cause</strong>: Emotional spikes often stem from foundational issues—needs like security, respect, or connection—that you might unconsciously try to satisfy through your P\&L.</li>
 <li><strong>Change Your Communication</strong>: Just as loud communication is inappropriate in a quiet town, aggressive emotional reactions sabotage clear trading decisions.Get clarity on your emotional foundation by obtaining and reviewing a universal needs list to better identify what internal voids you are attempting to fill through the market.It's an indicator of flag that you haven't gotten some basic needs met.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody I wanted to just talk to you about anger I live in this very small town now you know most of you know I&#x27;m from New York City we&#x27;re honking of the horn is of communication device it&#x27;s a form of communication in New York New York City anyway uh but in this little country town that I live now it is not advised from Communication in fact I was one of the first things my friends told me when I moved here eight years ago don&#x27;t use the horn Kim and I was like why not apparently trust me so I&#x27;ve been sitting at my office and there&#x27;s a kind of famine uh road in front of me and somebody just held their hand on the horn for I don&#x27;t usually long amount of time for this neighborhood anyway not for New York City that would have been like nothing for your city but for here that was like almost a 60 second hand held on the horn and the reason I just wanted to hop on here and speak to it is when I heard it I started to laugh because just in the last two</p>
-<p>weeks I&#x27;ve had a challenging couple of days and there&#x27;s a part of me that could relate to the desire to just want to honk a horn to just want to kind of it&#x27;s like one version of kind of screaming out loud that you just don&#x27;t want to take it anymore right whatever the it is and I just want to speak to anybody who is experiencing anger right now to just realize that there&#x27;s nothing wrong with you it&#x27;s just part of being human and it&#x27;s an indicator of flag that you haven&#x27;t gotten some basic needs met I want you to understand your needs better so you can do a better job of trying to get them met and if you want to have that Universal needs list that I talk about often just send me a DM and I&#x27;ll make sure to get it over to you or you could go to the wall streetcoach.com and sign up and just put that in your sign up email that you&#x27;re looking for that document</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

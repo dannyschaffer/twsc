@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Foundational Belief: Why Thinking You're 'Enough' Unlocks Discipline</p>
-<p>Many traders chase immediate, unrealistic success because they fundamentally doubt their worthiness to profit consistently. This subconscious lack of self-value forces you to rush, leading to poor discipline and the emotional cost of expecting instant "crazy success." True, lasting proficiency starts with internal alignment, not external outcomes.  * <strong>Self-Worth is Pre-Requisite to Discipline</strong>: Discipline is not just a strategic choice; it flows naturally from a belief in your fundamental value and right to create opportunities for yourself.</p>
+                <h3>The Foundational Belief: Why Thinking You're 'Enough' Unlocks Discipline</h3>
+<p>Many traders chase immediate, unrealistic success because they fundamentally doubt their worthiness to profit consistently. This subconscious lack of self-value forces you to rush, leading to poor discipline and the emotional cost of expecting instant "crazy success." True, lasting proficiency starts with internal alignment, not external outcomes.</p>
 <ul>
+<li><strong>Self-Worth is Pre-Requisite to Discipline</strong>: Discipline is not just a strategic choice; it flows naturally from a belief in your fundamental value and right to create opportunities for yourself.</li>
 <li><strong>The Rush is a Symptom of Doubt</strong>: Chasing instant, unrealistic wins in five minutes is a clear sign that you are operating from a place of scarcity and self-doubt rather than earned confidence.</li>
 <li><strong>Mastery Requires Time</strong>: When your identity is secure, you replace the expectation of immediate returns with the patience required for organic, long-term success.Actionable Takeaway:</li>
 </ul>
 <p>Connect your pursuit of trading opportunities to your fundamental value, ensuring you do not try to rush the process of skill development.When you truly know you're enough, you'll know that things take time to build things up</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>not saying you don&#x27;t have to earn your trading expertise you do and there are going to be times you&#x27;re not ready for certain trades but I&#x27;m talking about your fundamental value your fundamental belief in having a right to create opportunities for yourself that is when you start to really believe you&#x27;re enough you will be able to practice more discipline in your trades you will be able to not expect yourself to come up with you know crazy success in uh five minutes because when you truly know you&#x27;re enough you&#x27;ll know that things take time to build things up</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

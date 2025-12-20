@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Trader's Edge: Why Presence Beats Prediction</p>
-<p>You can miss a perfect setup not because you failed to see it on the chart, but because your mind was not truly present when the opportunity arrived. This psychological gap is costing you money and eroding confidence, as a scattered mind cannot withstand the pressure of market volatility. Achieving mental stillness is not a luxury—it is a performance requirement.  * <strong>Mindfulness is Strategic</strong>: Mental presence is not merely 'fluff'; it is a critical competitive edge that enables accurate reading and execution of your strategy.</p>
+                <h3>The Trader's Edge: Why Presence Beats Prediction</h3>
+<p>You can miss a perfect setup not because you failed to see it on the chart, but because your mind was not truly present when the opportunity arrived. This psychological gap is costing you money and eroding confidence, as a scattered mind cannot withstand the pressure of market volatility. Achieving mental stillness is not a luxury—it is a performance requirement.</p>
 <ul>
+<li><strong>Mindfulness is Strategic</strong>: Mental presence is not merely 'fluff'; it is a critical competitive edge that enables accurate reading and execution of your strategy.</li>
 <li><strong>The Foundation of Focus</strong>: Mental stillness and concentration, often achieved through breathwork, must be established before attempting to analyze market chaos.</li>
 <li><strong>Pre-Market Rituals Matter</strong>: Building specific pre-market habits primes your focus and creates the capacity for the disciplined mental state needed for consistent trading.Implement a daily pre-market breathwork practice to sharpen your focus and ensure you are fully present before placing a single trade."You can't read the market if you're not even present to begin with."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I mean, if you don&#x27;t see it, it&#x27;s hard to see exactly, but I can&#x27;t see it working. You can&#x27;t read the market if you&#x27;re not even present to begin with. You missed a setup, not because you didn&#x27;t see it, but because your mind wasn&#x27;t there. Mindfulness isn&#x27;t fluff. It&#x27;s actually an edge. I help traders build pre-market rituals and breath work practices that can sharpen focus and create mental stillness. You can&#x27;t read the market if you&#x27;re not even present to begin with. If you&#x27;re ready to change this, set up a</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,19 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Real Edge is Outside the Charts: Why Disconnection Fuels Consistency</p>
+                <h3>The Real Edge is Outside the Charts: Why Disconnection Fuels Consistency</h3>
 <p>Trading burnout is a silent killer of equity curves and consistent performance. When you tie your focus solely to the P&L, taking a break can feel like surrender—but staying glued to the screen destroys your objective perspective. True psychological strength is found in your ability to step away and allow your mind to reset and recharge.</p>
-<p><strong>Key Insights:</strong>  * <strong>The Law of Diminishing Returns:</strong> Over-exposure to charts leads directly to mental fatigue, poor decision-making, and impulse trading.</p>
+<p>**Key Insights:*</p>
+<p>•</p>
 <ul>
-<li><strong>Perspective Over Pressure:</strong> Time away allows you to view market action clearly and reset, reducing the emotional charge of being constantly "in the market."</li>
-<li><strong>Mindset Resilience:</strong> Engaging with nature or hobbies recharges your mental capacity, a crucial component for long-term consistency.<strong>Actionable Takeaway:</strong></li>
+<li>**The Law of Diminishing Returns:*</li>
+<li>Over-exposure to charts leads directly to mental fatigue, poor decision-making, and impulse trading.</li>
+<li>**Perspective Over Pressure:*</li>
+<li>Time away allows you to view market action clearly and reset, reducing the emotional charge of being constantly "in the market."</li>
+<li>**Mindset Resilience:*</li>
+<li>Engaging with nature or hobbies recharges your mental capacity, a crucial component for long-term consistency.**Actionable Takeaway:*</li>
+<li>Plan mandatory, scheduled breaks from the market that involve activities completely unrelated to trading, actively seeking out natural environments to restore focus.The market will always be there on Monday; your mental clarity might not be if you don't step away today.</li>
 </ul>
-<p>Plan mandatory, scheduled breaks from the market that involve activities completely unrelated to trading, actively seeking out natural environments to restore focus.The market will always be there on Monday; your mental clarity might not be if you don't step away today.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Transcript not available.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +258,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

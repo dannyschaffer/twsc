@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Fatal Flaw of Trading: Why You Must Stop Grinding Alone</p>
-<p>Many traders cling to the idea of the lone wolf, believing they must "grind it out" by themselves after a significant loss or emotional setback. This self-imposed isolation is counterproductive, draining precious mental resources and prolonging emotional distress. Real, lasting psychological recovery is impossible to achieve in a vacuum.  * <strong>The "Grind It Out" Misconception</strong>: Believing self-punishment and solitary effort are better than seeking external resources is a waste of time and time.</p>
+                <h3>The Fatal Flaw of Trading: Why You Must Stop Grinding Alone</h3>
+<p>Many traders cling to the idea of the lone wolf, believing they must "grind it out" by themselves after a significant loss or emotional setback. This self-imposed isolation is counterproductive, draining precious mental resources and prolonging emotional distress. Real, lasting psychological recovery is impossible to achieve in a vacuum.</p>
 <ul>
+<li><strong>The "Grind It Out" Misconception</strong>: Believing self-punishment and solitary effort are better than seeking external resources is a waste of time and time.</li>
 <li><strong>Healing is Found in Community</strong>: Psychological wounds, often sustained while trading in isolation, require a communal environment to truly repair and integrate.</li>
 <li><strong>Isolation Magnifies Pain</strong>: Being alone with your losses and shame prevents the necessary perspective and accountability required to move forward.Identify one trusted mentor, coach, or peer group this week and schedule an honest, non-judgmental conversation about your current struggles."We don't heal in isolation, we get wounded in community and we heal in community."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>want everybody to get clear that this concept of grind it out it&#x27;s sometimes not fully described properly to just grind it out by yourself when you could ask for help is not a good use of your time guys and it also it just doesn&#x27;t feel as good like we don&#x27;t heal in isolation guys we get wounded in community and we heal in community so if those who are listening are trying to get through stuff by themselves I want to say knock it off</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

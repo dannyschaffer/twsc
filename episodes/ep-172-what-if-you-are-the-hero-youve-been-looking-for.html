@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Looking for a Guru: The Hero is Already You</p>
-<p>Many traders instinctively look outside themselves—for the perfect mentor, guru, or winning system—believing they lack the inherent ability to succeed. This external search is a distraction that fails to honor the immense psychological journey you have already completed. By overlooking your survival and treating yourself as perpetually insufficient, you diminish the value of your own hard-won experience.  * <strong>Your Past is Your Proof:</strong> Stop dismissing your losses and struggles. Every trial and tribulation is the necessary fire that burns away what doesn’t serve you, hardening your core strength.</p>
+                <h3>Stop Looking for a Guru: The Hero is Already You</h3>
+<p>Many traders instinctively look outside themselves—for the perfect mentor, guru, or winning system—believing they lack the inherent ability to succeed. This external search is a distraction that fails to honor the immense psychological journey you have already completed. By overlooking your survival and treating yourself as perpetually insufficient, you diminish the value of your own hard-won experience.</p>
 <ul>
-<li><strong>The Hero Makes Mistakes:</strong> Don’t let mistakes trigger shame. Just as every epic story includes missteps, every successful trader’s journey involves necessary errors for accelerated learning.</li>
-<li><strong>Inner Wisdom is Closer Than You Think:</strong> The self-knowledge, discipline, and emotional capacity you crave are closer now than ever before, forged by the very pain you wish to avoid.Actionable Takeaway: For the next two weeks, commit to seeing yourself as the hero of your own trading story, trusting that you know exactly what you are doing, even when doubt creeps in.What if the diamonds within you are so much closer now because of all the heartbreak you've gone through?</li>
+<li>**Your Past is Your Proof:*</li>
+<li>Stop dismissing your losses and struggles. Every trial and tribulation is the necessary fire that burns away what doesn’t serve you, hardening your core strength.</li>
+<li>**The Hero Makes Mistakes:*</li>
+<li>Don’t let mistakes trigger shame. Just as every epic story includes missteps, every successful trader’s journey involves necessary errors for accelerated learning.</li>
+<li>**Inner Wisdom is Closer Than You Think:*</li>
+<li>The self-knowledge, discipline, and emotional capacity you crave are closer now than ever before, forged by the very pain you wish to avoid.Actionable Takeaway: For the next two weeks, commit to seeing yourself as the hero of your own trading story, trusting that you know exactly what you are doing, even when doubt creeps in.What if the diamonds within you are so much closer now because of all the heartbreak you've gone through?</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what if I were to tell you that you are the hero of your own story so many people have a tendency to look for the hero outside of themselves to look for the mentor the guru the inspiration outside of themselves where they don&#x27;t always pause and stop and consider all the harrowing Journeys they themselves have gone through and survived un saying there haven&#x27;t been mistakes but every hero makes mistakes what if you began to see yourself as the hero of your story what if all the trials and tribulation all the losses all the Heartbreak were all the fire that was burning off that which doesn&#x27;t serve you I remember working with this beautiful spiritual teacher once who was giving me this rock for me to hold and it was this really uh dark black rock but inside were diamonds diamonds that had not been extracted yet and he said to me Kim what do you think it will take to get these diamonds out of there and of course it&#x27;ll take Machinery it&#x27;ll take pain right it would take breaking up that rock to access that diamond within what if the diamonds within you are</p>
-<p>so much closer now because of all the Heartbreak you&#x27;ve gone through all the pain and struggle you&#x27;ve been through I want you to just for a week or two consider what if you are the hero that you&#x27;ve been looking for and that actually you know exactly what you&#x27;re doing even when it feels like you don&#x27;t that&#x27;s my little piece of inspiration for this week that I want you to consider</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

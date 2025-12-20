@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of the "Grind" Mindset in Trading</p>
+                <h3>The Hidden Cost of the "Grind" Mindset in Trading</h3>
 <p>The relentless pursuit of market success often forces traders into a dangerous "tunnel vision," believing that dedication means constant self-sacrifice. This extreme focus, however, eventually leads to physical burnout and emotional unhappiness, sabotaging performance and overall life quality. True longevity demands stepping back and redefining what success means beyond your P\&L.  - Tunnel Vision Sabotages Longevity: Focusing exclusively on trading creates an unsustainable reliance on a single outcome for happiness, leading to sickness and overall distress.</p>
 <ul>
 <li>The Path to Happiness is Multi-Dimensional: A professional trading career requires holistic stability. Opening your vision to balance other areas of life is the key to escaping an unhappy, unfulfilling state.</li>
 <li>Physical Health Reflects Mental State: Listen to the signals your body gives you. Burnout and physical illness are often early warnings that your psychological approach is fundamentally flawed.</li>
 </ul>
-<div class="actionable-takeaway"><strong>Actionable Takeaway:</strong> Start tracking metrics related to your overall well-being (sleep, relationships, exercise) alongside your trading journal to ensure a multi-dimensional foundation for success.to be truly like happy in life you can never rely on one thing ever</div>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I was in this grind type mindset for years 2017 2018 2019 2020 and 2020 and 2021 I really realized like I I have to change because my body was even telling me like hey you&#x27;re getting sick like you&#x27;re working and you&#x27;re driving all the time and I just kind of came to a realization like to be truly like happy in life you can never rely on one thing ever and for me it was it was just kind of tunnel vision like trading only trading whatever and it made me mess up all different areas of my life and I think for me to realize that when I started working with you and I started to kind of come out of this unhappy state that I was in and it was through just simple things and it was just that mindset of like opening up my vision from just trading to all these different areas and it&#x27;s just a lot more happiness for me and I think that in the end if if you keep just trying eating it in just this tunnel vision like it&#x27;s eventually going to end really bad and for me I was</p>
-<p>I was kind of on the verge where I was like I really have to make a change now so I&#x27;m just grateful that we started working together and kind of helping me through it because I don&#x27;t really know where I&#x27;d be at today if I didn&#x27;t make the change and become more multi-dimensional and understand why I feel certain things</p>
-                </div>
+<div class="actionable-takeaway"><strong>Takeaway:</strong><br>Start tracking metrics related to your overall well-being (sleep, relationships, exercise) alongside your trading journal to ensure a multi-dimensional foundation for success.to be truly like happy in life you can never rely on one thing ever</div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

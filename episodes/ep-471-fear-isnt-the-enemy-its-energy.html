@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Turn Trading Fear Into Your Biggest Edge</p>
+                <h3>Turn Trading Fear Into Your Biggest Edge</h3>
 <p>Are your hands shaking right before you execute a trade? This familiar feeling of fear isn't just uncomfortable—it is actively killing your profits by triggering hesitation and paralysis. Learn how to reframe this intense energy and use it as a signal to sharpen your decision-making process.  - <strong>Reframe Fear as Focus</strong>. Instead of freezing when fear hits, use it as an immediate signal to check if your trade setup is perfectly aligned with your established plan.</p>
 <ul>
 <li><strong>Control Risk to Control Emotion</strong>. When intense fear threatens to paralyze you, reduce your position size. A smaller size fundamentally reduces the emotional weight of the trade.</li>
 <li><strong>Detach From the Outcome</strong>. Avoid defining your self-worth by a single trade's result. True consistency comes from focusing exclusively on the quality of your process.Before every single entry, take one deep, regulating breath and verbally state, "I trust my Edge. I take high-quality trades.""Fear's normal but hesitation costs you money."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>are your hands shaking before you hit the trade button fear is killing your profits but here&#x27;s how to flip it into an edge fear equals Focus so instead of freezing use fear as a signal to check your setup is it aligned with your plan if yes take the trade two breathe and execute before entering take one deep breath and say I trust my Edge I take high quality trads three shrink the risk if fears too strong low your position size smaller size equals smaller emotions four to touch from the outcome a single trait doesn&#x27;t Define you focus on the process not the result fear&#x27;s normal but hesitation costs you money drop no fear in the comments and I&#x27;ll send you my best strategies to trade with confidence</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

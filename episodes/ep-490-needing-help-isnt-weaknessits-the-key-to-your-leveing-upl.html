@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Needing Help Isn't Weakness, It's the Key to Your Next Level</p>
+                <h3>Needing Help Isn't Weakness, It's the Key to Your Next Level</h3>
 <p>Does your trading journey feel like a constant drain, leaving you financially and mentally exhausted? The market is designed to test your limits, and believing you must endure this struggle alone is a critical error. The key to leveling up is recognizing that asking for help is an act of strength, not weakness.  - <strong>Trading is a Process, Not a Test of Solitude</strong>: The market is inherently designed to challenge your mental and emotional endurance, and isolation only compounds the stress.</p>
 <ul>
 <li><strong>External Support Drives Longevity</strong>: Staying in the game requires consciously seeking assistance from colleagues or mentors who possess more sophisticated knowledge and experience.</li>
 <li><strong>The Universe Meets You Halfway</strong>: When you vocalize your need for change, you open the door to solutions and resources that were previously unavailable.If you are feeling stressed and overwhelmed by your performance, make the decision to actively seek a mentor or join a peer group now.if you want to stay in the game you're going to have to ask for help at some point</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>ever feel like trading is just taking from you like you give everything and it&#x27;s still not enough I felt the same way about my book I came out 10 years ago this month and at the time it was draining me financially and mentally so I told the Universe I need help if you want me to do this you got to meet me halfway and a few days later I got a call do you want a house sit Kim in Hawaii the universe literally answered so I packed up and moved and wrote the book and I&#x27;m still here so I want you to think about this Traders it&#x27;s a process the Market&#x27;s going to test you but if you want to stay in the game you&#x27;re going to have to ask for help at some point either with other colleagues who are more sophisticated than you or with traders who are mentors I want you to come in halfway if you&#x27;re feeling that stressed now and just know you&#x27;re not alone and don&#x27;t give up</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

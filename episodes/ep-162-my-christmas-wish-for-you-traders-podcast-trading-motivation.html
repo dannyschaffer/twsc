@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Unshakeable Foundation: Why Self-Belief Is Your Biggest P&L Protector</p>
+                <h3>The Unshakeable Foundation: Why Self-Belief Is Your Biggest P&L Protector</h3>
 <p>Trading success demands incredible psychological resilience, and the ultimate test of your endurance isn't market volatility—it's your internal belief system. Without a profound, core belief in your own self-worth, every market setback feels like a catastrophic failure, turning the entire trading journey into an overwhelming emotional struggle.  - <strong>The Foundation of Belief</strong>: The spiritual essence of self-belief—the "Santa Claus" metaphor—is about trusting in an underlying strength that is <strong>much bigger than is apparent to the naked eye</strong>.</p>
 <ul>
-<li><strong>Worthy of Belonging</strong>: Trading challenges often expose deep-rooted feelings; a true belief that you are <strong>worthy of love and belonging</strong> is the essential mental buffer against the intense emotional pressure of losses.</li>
+<li><strong>Worthy of Belonging</strong>: Trading challenges often expose deep-rooted feelings; a true belief that you are **worthy of love and belonging*</li>
+<li>is the essential mental buffer against the intense emotional pressure of losses.</li>
 <li><strong>The Ultimate Resilience</strong>: When you operate from a place of unconditional self-trust, you establish the psychological fortitude necessary to navigate high-stakes environments consistently.Focus on cultivating foundational self-trust, recognizing that this internal belief is the ultimate prerequisite for achieving external consistency and sustainable success.No matter what this life throws our way, if we don't have a true belief in ourselves, it's going to be a hell of a ride.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I&#x27;d bet the farm that I was one of the last kids who believed in Santa Claus when I was in school I held on to The Bitter End and what is Santa Claus anyway Santa Claus I really think is a belief in love and a belief truly in oneself that perhaps one is part of something much bigger than is uh apparent to the naked eye so that&#x27;s what I really wish for for everybody listening to this for Christmas this year I hope that you will have delivered under your tree uh or in your stocking believe in yourself because no matter what this life throws our way if we don&#x27;t have a true belief in ourselves a true belief that we&#x27;re worthy of love and belonging it&#x27;s going to be a hell of a ride and in my experience when you really begin to</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

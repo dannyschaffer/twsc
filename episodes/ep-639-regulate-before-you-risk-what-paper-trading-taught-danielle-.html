@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,24 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why You Need To Regulate Risk Before You Trade Real Money</p>
+                <h3>Why You Need To Regulate Risk Before You Trade Real Money</h3>
 <p>Many new traders rush into the market, often losing vital capital while trying to master complex strategies like options trading. This common mistake prematurely ties financial losses directly to emotional defeat, jeopardizing your longevity in the market. Discover why paper trading, when approached correctly, is a critical psychological and financial tool for survival and success.</p>
-<p>Key Insights:  - <strong>Capital Preservation:</strong> Paper trading acts as a safeguard, protecting your limited capital while you navigate the steep learning curve, especially if you are undercapitalized.</p>
+<p>Key Insights:  - **Capital Preservation:*</p>
 <ul>
-<li><strong>Strategy Mastery First:</strong> For complex instruments like options, you must learn the function of calls, puts, spreads, and expiration series without the pressure of live loss.</li>
-<li><strong>Emotional Involvement is Possible:</strong> Contrary to the belief that paper trading lacks emotion, engaging seriously in the simulation allows you to regulate your mindset for when real money is on the line.Actionable Takeaway:</li>
+<li>Paper trading acts as a safeguard, protecting your limited capital while you navigate the steep learning curve, especially if you are undercapitalized.</li>
+<li>**Strategy Mastery First:*</li>
+<li>For complex instruments like options, you must learn the function of calls, puts, spreads, and expiration series without the pressure of live loss.</li>
+<li>**Emotional Involvement is Possible:*</li>
+<li>Contrary to the belief that paper trading lacks emotion, engaging seriously in the simulation allows you to regulate your mindset for when real money is on the line.Actionable Takeaway:</li>
 </ul>
 <p>Commit to paper trading until you can consistently execute your chosen strategy without mechanical errors, guaranteeing you master the tactics before testing your emotional limits.I personally feel like that was what kept me in the game.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You should never paper trade. There&#x27;s no emotion involved. What is your opinion on paper trading? What do you feel about that in general? A lot of different opinions out there and different circumstances that warrant those opinions. What&#x27;s your take on that? I actually paper traded for 2 years and I feel like that was how I was able to hold on to my money. And people all the time will say, &amp;quot;Oh, you should never paper trade. There&#x27;s no emotion involved.&amp;quot; And well, I can tell you I had emotion involved. I personally feel like that was what kept me in the game because during that time period in the beginning when you are losing money because especially if you&#x27;re options trading, you need to learn the strategies. You need to learn how calls and puts function and how spreads and butterflies function and you don&#x27;t want to be losing your own money while you&#x27;re trying to figure out what expiration series you should use. And for me personally, I found it to be immensely helpful. I always recommend people paper trade in the beginning, especially if you&#x27;re coming into it under capitalized, because there&#x27;s just no reason</p>
-<p>for you to lose the money that you have when you&#x27;re trying to fun.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>The Fulfillment Trap: Why Trading Should Not Be Your Dopamine Source</h3>
+                <h3>The Fulfillment Trap: Why Trading Should Not Be Your Dopamine Source</h3>
 <p>If trading is your single source of dopamine or self-worth, you will inevitably succumb to overtrading and market addiction. This pressure forces you to stare at charts all day, even when no valid setups exist, leading to costly, impulse decisions.  - <strong>The Dopamine Loop</strong>: Relying on P\&L for your emotional fulfillment creates a powerful drive to constantly be in the market, regardless of market conditions.</p>
 <ul>
 <li><strong>The Obligation to Trade</strong>: Without external sources of balance, the lack of market activity feels like a personal failure, compelling you to trade out of boredom or obligation.</li>
 <li><strong>Balance as an Edge</strong>: A fulfilled life outside of trading removes the emotional burden from your screen, allowing you to walk away from poor setups.Actively cultivate one significant hobby or side project that provides genuine fulfillment and requires you to step away from your screens entirely."If you get your fulfillment or your dopamine hits just from Trading, you're just going to trade all day every day."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>and I previously have talked about too like if you get your fulfillment or you know your dopamine hits just from Trading well what&#x27;s going to happen y you&#x27;re just GNA trade all day every day exactly uh versus if you got some balance in Life or you got some good Hobbies or some other good projects or some reasons to get off your screen and like that&#x27;s your you know ideally your main source of fulfillment yeah well then all of a sudden if you look at the market and it&#x27;s not that you don&#x27;t love trading don&#x27;t get me wrong it&#x27;s just you&#x27;re like oh well there&#x27;s nothing to do today or like there&#x27;s no trade setting up well then you don&#x27;t feel obligated to sit there all day stare at your screen you&#x27;re going to go do you know whatever your hobby side hustle Etc is on the side</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

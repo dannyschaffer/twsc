@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Missing Entry: Why Your Trading Journal is Incomplete</p>
-<p>Many traders meticulously track technical data—dates, prices, and tickers—but routinely skip the most critical data point: their emotional state. This oversight prevents deep self-correction, ensuring that the same behavioral loops continue to cost you money. True performance breakthroughs require learning to decode the language of your own psychology.  * <strong>The Emotional Gold Mine</strong>: While charts show *what* happened, documenting your feelings and mental state reveals <strong>why</strong> you acted, identifying the root cause of poor decisions.</p>
+                <h3>The Missing Entry: Why Your Trading Journal is Incomplete</h3>
+<p>Many traders meticulously track technical data—dates, prices, and tickers—but routinely skip the most critical data point: their emotional state. This oversight prevents deep self-correction, ensuring that the same behavioral loops continue to cost you money. True performance breakthroughs require learning to decode the language of your own psychology.</p>
 <ul>
+<li><strong>The Emotional Gold Mine</strong>: While charts show *what</li>
+<li>happened, documenting your feelings and mental state reveals **why*</li>
+<li>you acted, identifying the root cause of poor decisions.</li>
 <li><strong>Charts Will Not Save You</strong>: Focusing purely on market metrics is insufficient; it is your emotional consistency that determines your long-term success, not flawless strategy.</li>
-<li><strong>Reveal Hidden Patterns</strong>: Your emotional reactions reveal systemic, predictable behavioral patterns that remain invisible when only reviewing technical criteria.<strong>Actionable Takeaway:</strong> Starting today, record what you felt—fear, excitement, frustration—immediately before, during, and after every trade entry and exit.Your emotions reveal patterns. Your charts never</li>
+<li><strong>Reveal Hidden Patterns</strong>: Your emotional reactions reveal systemic, predictable behavioral patterns that remain invisible when only reviewing technical criteria.**Actionable Takeaway:*</li>
+<li>Starting today, record what you felt—fear, excitement, frustration—immediately before, during, and after every trade entry and exit.Your emotions reveal patterns. Your charts never</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>But they often skip the most important part. Most traders keep journals full of entries like dates and tickers, but they often skip the most important part. Emotions. Did you write that down first? So, write this down. Write down what you felt before, during, and after treat. That&#x27;s where the gold is. Your emotions reveal patterns. Your charts never</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

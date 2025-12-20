@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Antidote to Negative Bias: How Focusing on Wins Re-Wires Your Trading Brain</p>
+                <h3>The Antidote to Negative Bias: How Focusing on Wins Re-Wires Your Trading Brain</h3>
 <p>The human brain is naturally wired to focus on bad news, which in trading translates to fixating on losses and mistakes. This inherent negative bias can derail your confidence and prevent you from recognizing genuine progress. To break this costly pattern, you must intentionally shift your focus to build a foundation of success.  - <strong>Counter Negative Wiring</strong>: Your mind will gravitate toward flaws; consciously dedicate extra time to notice positive outcomes and progress.</p>
 <ul>
 <li><strong>Track Better Behavior</strong>: Acknowledge the strides you have made and the changes you have implemented in the right direction, regardless of recent P\&L fluctuations.</li>
 <li><strong>Build a Foundation of Future Success</strong>: Being present to what is going well now creates the necessary mental resources and momentum for sustained profitability.Actionable Takeaway: At least once or twice daily, dedicate time to be present to all the positive momentum, progress, and good news in your trading life."I want you to start to focus and build a foundation of what is also going well."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>we all know by now that human brains are sort of built to focus on the bad news it is just how we are wired so I want you to really spend extra time taking some effort at noticing what is going well what is the good news in your life in your trading what are you doing better than you have ever done before where have you already made strides and changes in the right direction every day I want you to at least once if not twice be present to all that is already happening that bods well for your future it&#x27;s going to be really easy to just focus on what&#x27;s going wrong or what you don&#x27;t do yet but I want you to start to focus and build a foundation of what is also going well</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

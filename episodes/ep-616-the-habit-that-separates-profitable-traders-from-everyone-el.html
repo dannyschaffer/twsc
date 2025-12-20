@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The One Habit That Separates Profitable Traders from Fantasy</p>
-<p>Many aspiring traders waste time chasing complex strategies while ignoring the single most effective tool for success. The ego often convinces us we are the rare exception—the "mad market genius"—but this delusion is a direct path to failure and inconsistent profits.  * <strong>The Journaling Standard</strong>: According to our data, 99% of consistently profitable traders actively maintain a journal.</p>
+                <h3>The One Habit That Separates Profitable Traders from Fantasy</h3>
+<p>Many aspiring traders waste time chasing complex strategies while ignoring the single most effective tool for success. The ego often convinces us we are the rare exception—the "mad market genius"—but this delusion is a direct path to failure and inconsistent profits.</p>
 <ul>
+<li><strong>The Journaling Standard</strong>: According to our data, 99% of consistently profitable traders actively maintain a journal.</li>
 <li><strong>The Outlier Trap</strong>: The belief that you can be the "one in 100 outlier" who succeeds without disciplined self-tracking is a costly fantasy.Stop trying to outsmart the market basics; implement a mandatory trading journal today.In 99% of cases, profitable traders do have a journal.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Over the last 10 years, all the traders that we have met, it&#x27;s always quite obvious that the trader is very profitable, very good at what they do. In 99% of cases, they do have a journal. If they don&#x27;t have a journal, they are the one in 100 outlier. Uh like the mad market genius. And of course, everyone thinks, &amp;quot;Oh, I&#x27;m going to be that genius.&amp;quot; But I never was. And I think most people will never</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

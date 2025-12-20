@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Uncomfortable Truth: Reconciling Mortality to Master Your Trading Intent</p>
+                <h3>The Uncomfortable Truth: Reconciling Mortality to Master Your Trading Intent</h3>
 <p>The relentless pursuit of profit often causes traders to lose perspective on their underlying motivations. When faced with high-stress situations or deep losses, this lack of clarity can lead to abandoning your plan entirely. True discipline requires confronting your deepest values and ensuring your time and effort align with your ultimate life purpose.  - <strong>The Psychological Summit</strong>: Extreme risk or failure moments force a critical reckoning with your commitment and purpose.</p>
 <ul>
 <li><strong>Mortal Awareness Drives Decision-Making</strong>: Recognizing that life is finite promotes consciousness over impulse in trading.</li>
 <li><strong>Trading as an Extension of Life</strong>: Your trading activity should be an extension of a life you would be proud of at the end.Evaluate your trading approach this week to confirm it is a conscious choice that aligns with your long-term life values, not just short-term gain.The key here is are we living the life that we truly truly are conscious of choosing and if we're not living a life that at the end of this life we would be happy we lived then it's time to change it up</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is my June 3rd Trader EQ prep for the week had a really great conversation with Andrew because he&#x27;s the founder of purple Traders on my Twitter space Friday about his uh summoning Mount Everest and he talked about a lot of things I really hope you&#x27;ll listen to it it&#x27;s such an inspiring and unusual conversation but one of the things that really stood out to me was how 10 minutes from the summit he almost stopped because he was passing dead bodies and one of those dead bodies was a 19 year old Tiger whose headlamp was still on uh he had obviously died just within a few hours before and she got to that location and he you know obviously was struggling with cold and lack of oxygen but his Sherpa you know encouraged him to keep going because he said you know you&#x27;re too close like they&#x27;re not talking at that level it&#x27;s kind of just all you know communication without words so to speak and he did move forward but he spoke to how he had to reconcile with death in that moment to continue to go forward because he knows that</p>
-<p>could have meant his death he said not just those next 10 minutes but The Descent backed down which is when the exhaustion sometimes hits hikers I think what&#x27;s so profound about that for me anyway is that very rarely will we have such a clear concise reconciliation with the fact that we&#x27;re all gonna die I had it during the missile for false missile alert that came into Hawaii a few years ago I did think it was real I did feel it was going to happen and for the 20 minutes until they told us it was a false alarm I had to reconcile and look death in the eye myself in so many ways I think those kinds of moments are so precious because they allow us Force us to be with how mortal we are have this lifetime is not going to last forever and I feel a lot of hard choices perhaps would be different if we had that hard reconciliation that hard look into death&#x27;s door that it&#x27;s there for all of us it could be a bus that takes us out never mind anything else the key here is are we living the</p>
-<p>life that we truly truly are conscious of choosing and if we&#x27;re not living a life that at the end of this life we would be happy we lived then it&#x27;s time to change it up so I hope you take that into your trading this week anything we do is an extension of our life be sure that what you do do what you spend your time energy and effort is something on the other side of this life that you will be very happy with and proud of yourself for</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Skills Trading Forces You to Master</p>
-<p>It's easy to fixate on the next strategy or indicator you need to learn, creating a persistent feeling of inadequacy. This relentless focus on deficiency prevents you from recognizing the profound mental and emotional skills you have already developed simply by committing to trading.  * <strong>Skill Set Expansion</strong>: Trading demands the development of skills you never knew you possessed, often related to resilience, patience, and risk management.</p>
+                <h3>The Hidden Skills Trading Forces You to Master</h3>
+<p>It's easy to fixate on the next strategy or indicator you need to learn, creating a persistent feeling of inadequacy. This relentless focus on deficiency prevents you from recognizing the profound mental and emotional skills you have already developed simply by committing to trading.</p>
 <ul>
+<li><strong>Skill Set Expansion</strong>: Trading demands the development of skills you never knew you possessed, often related to resilience, patience, and risk management.</li>
 <li><strong>Adaptation and Growth</strong>: The process of adapting to market challenges and setbacks proves you have the capacity for deep personal evolution.</li>
 <li><strong>Positive Reframing</strong>: By consciously shifting your focus from "what I lack" to "<strong>what I have accomplished</strong>," you reinforce your self-trust and confidence.Dedicate specific time this week to documenting three skill sets (emotional or technical) that trading has surprised you with, using concrete examples of when you demonstrated them.I want you to spend some time on looking at all that you have crossed over to in being committed to your treating and that is important for you to notice</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>being a Trader has required you to develop some skill sets that you previously perhaps didn&#x27;t even know you had access to so this week I want you to focus on all these positive aspects what has most surprised you that you have developed for yourself what is the most impressive that makes you stop and think wow I did learn how to do this I have been able to adapt to that I want you to spend some time on looking at all that you have crossed over to in being committed to your treating and that is important for you to notice there&#x27;s plenty of things you know you still perhaps have to develop but take the time to notice what you already have accomplished</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

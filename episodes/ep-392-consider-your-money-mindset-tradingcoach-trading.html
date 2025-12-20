@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Your "Money Mindset" Is Sabotaging Your Winning Streaks</p>
-<p>Have you ever experienced a strong string of wins, only to find yourself immediately giving all the profit back? This unconscious self-sabotage is often caused by an ingrained financial comfort zone—a "money set point"—that you are unwilling to break. Failing to address this deep-seated relationship with wealth is why consistency remains elusive.  - Your financial outcomes are governed by an <strong>unconscious relationship to money</strong> that defines your P\&L "comfort zone."</p>
+                <h3>Why Your "Money Mindset" Is Sabotaging Your Winning Streaks</h3>
+<p>Have you ever experienced a strong string of wins, only to find yourself immediately giving all the profit back? This unconscious self-sabotage is often caused by an ingrained financial comfort zone—a "money set point"—that you are unwilling to break. Failing to address this deep-seated relationship with wealth is why consistency remains elusive.  - Your financial outcomes are governed by an **unconscious relationship to money*</p>
 <ul>
+<li>that defines your P\&L "comfort zone."</li>
 <li>This dynamic acts like a <strong>temperature set point</strong>, automatically triggering self-sabotage when your P\&L deviates too far from your established comfort level.</li>
 <li>This psychological mechanism is a key reason traders land on the losing side immediately <strong>following great successes</strong>.Begin immediate self-reflection and self-inventory work to identify and challenge the underlying beliefs that define your current financial comfort zone.If you haven't done any work around your relationship to money and you want to succeed as a Trader, you better get started.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>we all have a relationship to money whether it&#x27;s conscious or unconscious T har eer likes to refer to this dynamic as a temperature set point in the vehicle the home of ourselves that it will at times kick on heat or kick on the air conditioning if we find ourselves too far away from what our standard comfort zone is I believe this is often why Traders find them elves on the losing side after they&#x27;ve had great successes I think it&#x27;s hormonal but I also feel it&#x27;s about comfort so if you haven&#x27;t done any work around your relationship to money and you want to succeed as a Trader you better get started</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

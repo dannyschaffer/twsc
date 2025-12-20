@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Ultimate Trading Deadline: How to Maximize P&L by Living 'As If'</p>
+                <h3>The Ultimate Trading Deadline: How to Maximize P&L by Living 'As If'</h3>
 <p>If you knew you only had one year left to trade, how would your priorities and execution instantly change? Procrastination and low-stakes misalignment erode consistent profitability over time. This ultimate deadline forces you to eliminate fear, distraction, and self-sabotage immediately.  - <strong>Prioritize Ruthlessly</strong>: The knowledge of a hard deadline forces an immediate reassessment of what is truly important in your strategy and daily process.</p>
 <ul>
 <li><strong>Practice Self-Forgiveness</strong>: Holding onto past mistakes prevents the necessary psychological bandwidth required for optimal performance right now.</li>
 <li><strong>Confront Your Fears</strong>: This mindset shift eliminates the luxury of hesitation and forces you to adopt profound commitment and clarity.<strong>Actionable Takeaway</strong>: Audit your current trading plan and behavior by identifying the self-sabotaging actions you would immediately cease if this were your last trading year.imagine living 2024 as it it was your last year to ever live think about how different things might be</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha happy 2024 everybody what if this was your last year on Earth what if this was it you get this one last year but no more what would you do different who would you forgive would you even forgive yourself that is the challenge I am going to put out for you to pick up or not take on but imagine living 2024 as it it was your last year to ever live think about how different things might be and step into the as if and see what happens I&#x27;m sending you so much love so much peace so much abundance for 2024 from my most beautiful favorite Road in Hawaii Mana Road and I wish you lots of Mana this year</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

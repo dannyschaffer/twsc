@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Trade Like a Champion: Why a Relaxed Mind is Your Ultimate Trading Edge</p>
-<p>Many traders approach the market as a painful, grueling race, enduring immense emotional stress even during profitable periods. This constant internal friction, often overlooked, directly sabotages your long-term consistency and performance. Learn how adopting the mindset of a champion marathoner can transform your trading experience from torture to effortless flow.  * <strong>Performance is Linked to Peace</strong>: High emotional strain is the biggest limiter in endurance-based professions like long-term trading or marathon running. When you treat the market as a physical struggle, you invite burnout.</p>
+                <h3>Trade Like a Champion: Why a Relaxed Mind is Your Ultimate Trading Edge</h3>
+<p>Many traders approach the market as a painful, grueling race, enduring immense emotional stress even during profitable periods. This constant internal friction, often overlooked, directly sabotages your long-term consistency and performance. Learn how adopting the mindset of a champion marathoner can transform your trading experience from torture to effortless flow.</p>
 <ul>
+<li><strong>Performance is Linked to Peace</strong>: High emotional strain is the biggest limiter in endurance-based professions like long-term trading or marathon running. When you treat the market as a physical struggle, you invite burnout.</li>
 <li><strong>The Illusion of Effort</strong>: Mastery is often misread as intense struggle. Just as elite runners maintain a peaceful composure while pushing their limits, true trading skill means maintaining inner calm even under high volatility.Assess your emotional state at your next trading session and actively prioritize internal relaxation over perceived "hustle" to improve decision clarity and longevity.I want to ask you Traders how often are you trading with a relaxed mind</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you know the famous Kenyan marathoner Al chipy he is the runner that looks so happy even at the end of a grueling race he is uh famous for four years ago uh doing the New York City marathon in under two hours and he has this kind of vibe off of him uh even when other Runners you know near him look like they&#x27;re being tortured he has this like peaceful smile on his face and they talk to him about this he interviewers and he says he wants to run with a relaxed mind so I want to ask you Traders how often are you trading with a relaxed mind</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Impulsive Trader: How Unidentified Needs Sabotage Your P&L</p>
-<p>If you consistently find yourself in trades you know are wrong or doubling down impulsively, the failure isn't in your analysis—it's in your motivation. These costly decisions are often driven by an unidentified, deeper personal need you are trying to satisfy in the market.  * <strong>Impulsive Decision-Making</strong> is often rooted in attempts to fulfill a deeper psychological need, not market analysis.</p>
+                <h3>The Impulsive Trader: How Unidentified Needs Sabotage Your P&L</h3>
+<p>If you consistently find yourself in trades you know are wrong or doubling down impulsively, the failure isn't in your analysis—it's in your motivation. These costly decisions are often driven by an unidentified, deeper personal need you are trying to satisfy in the market.</p>
 <ul>
-<li>Understanding the difference between a fundamental <strong>Need</strong> and a passing want is critical for emotional clarity.Actionable Takeaway: Identify the underlying need you are subconsciously trying to meet when you feel the urge to execute an impulsive trade."you have an unidentified need that you are attempting to get met inside of your trading"</li>
+<li>**Impulsive Decision-Making*</li>
+<li>is often rooted in attempts to fulfill a deeper psychological need, not market analysis.</li>
+<li>Understanding the difference between a fundamental **Need*</li>
+<li>and a passing want is critical for emotional clarity.Actionable Takeaway: Identify the underlying need you are subconsciously trying to meet when you feel the urge to execute an impulsive trade."you have an unidentified need that you are attempting to get met inside of your trading"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you&#x27;re a Trader who finds themselves ever in the middle of a trade they know they shouldn&#x27;t be in or you find yourself doubling down on a trade you know you shouldn&#x27;t be in then it&#x27;s possible that you are possessed no I&#x27;m just kidding actually what&#x27;s happening likely is that you have an unidentified need that you are attempting to get met inside of your treating what is an unidentified need well needs are very different than ones and if you sign up with the link I&#x27;ve included in this post you&#x27;ll be able to get a collection of universal needs that will facilitate you being able to identify what might be a foot in those moments when you are doing that this list can open up your eyes in a profound way I hope you&#x27;ll get it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

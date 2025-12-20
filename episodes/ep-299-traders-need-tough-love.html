@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why You Need Tough Love to Break Trading Denial</p>
-<p>The market does not care about your emotions or intentions; confusing kindness with profitable execution is a fast track to failure. When performance stalls, the necessary corrective feedback is often harsh. This video examines why embracing this "tough love" perspective is crucial for shaking off denial and achieving genuine growth.  * <strong>The Market's Brutality is a Teacher</strong>: The market operates without personal malice; it is an indifferent force that demands <strong>thick skin</strong> and emotional resilience.</p>
+                <h3>Why You Need Tough Love to Break Trading Denial</h3>
+<p>The market does not care about your emotions or intentions; confusing kindness with profitable execution is a fast track to failure. When performance stalls, the necessary corrective feedback is often harsh. This video examines why embracing this "tough love" perspective is crucial for shaking off denial and achieving genuine growth.</p>
 <ul>
-<li><strong>Motive is Clarity</strong>: The goal of hard truth isn't to punish, but to <strong>wake the trader</strong> out of a state of denial or stupor about their actual performance.Actionable Takeaway:</li>
+<li><strong>The Market's Brutality is a Teacher</strong>: The market operates without personal malice; it is an indifferent force that demands **thick skin*</li>
+<li>and emotional resilience.</li>
+<li><strong>Motive is Clarity</strong>: The goal of hard truth isn't to punish, but to **wake the trader*</li>
+<li>out of a state of denial or stupor about their actual performance.Actionable Takeaway:</li>
 </ul>
 <p>When you receive uncomfortable feedback about your trading, immediately check your defensive reaction and ask: "Is this truth meant to shake me out of denial?""The market doesn't give a [__] about your feelings, so you can't have thin skin in this game."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I thought it was funny that you were like sugar coating the tough love aspect but like sometimes like the things people need to hear they&#x27;re not going to be well received always so it&#x27;s like yeah that&#x27;s trading and guess what the market doesn&#x27;t give a about your feelings so if nope nope it doesn&#x27;t you can&#x27;t have thin skin in this game no but but whenever you spoke that hard truth to somebody your motive wasn&#x27;t to make them wrong your motive was to kind of wake them up out of the stuper or the sleeping or the denial that they were in so you never were doing it just to do it you doing it because you&#x27;re trying to shake them and say wait a minute are you listening to yourself I would never be a jerk to somebody just to be a jerk</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Belly of the Whale: How to Navigate the Trading Descent</p>
-<p>Every trader hits "Act Two," the crucial phase where strategies feel shaky, exits are sloppy, and discipline collapses. This descent is the psychological breaking point when your ego and FOMO take over, causing most to quit or double down with more pain. This challenging period is not a failure but a critical test designed to expose your deep-seated psychological weaknesses.  - The breakdown is signaled by a <strong>shaky strategy</strong> and <strong>sloppy exits</strong>.</p>
+                <h3>The Belly of the Whale: How to Navigate the Trading Descent</h3>
+<p>Every trader hits "Act Two," the crucial phase where strategies feel shaky, exits are sloppy, and discipline collapses. This descent is the psychological breaking point when your ego and FOMO take over, causing most to quit or double down with more pain. This challenging period is not a failure but a critical test designed to expose your deep-seated psychological weaknesses.  - The breakdown is signaled by a **shaky strategy*</p>
 <ul>
-<li>The emotional collapse is driven by an unchecked <strong>ego and FOMO</strong> being out of control.</li>
+<li>and <strong>sloppy exits</strong>.</li>
+<li>The emotional collapse is driven by an unchecked **ego and FOMO*</li>
+<li>being out of control.</li>
 <li>To advance, you must identify and face your real internal enemies: <strong>doubt, control, and fear</strong>.Actionable Takeaway</li>
 </ul>
 <p>When you enter this phase of doubt, stop trading based on panic and commit to listening to the internal feedback the market is providing.This is the belly of the whale moment.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>So things aren&#x27;t going as planned, huh? Welcome to act two, the descent. Your strategy shaky, exits are sloppy, your ego and FOMO are out of control. This is the belly of the whale moment. And it&#x27;s when most traders quit or double down with more pain. But if you stay, if you listen, you&#x27;ll start to meet your real allies and face your real enemy, doubt, control, and fear. Drop hero in the comments and I&#x27;ll DM you the map that chose you. It&#x27;s actually not the dead end you think it is.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

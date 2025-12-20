@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Conquer the Internal Market: Transforming Fear, Ego, and Money Beliefs</p>
-<p>Your greatest barrier to consistent trading success often lies in unaddressed psychological weaknesses, such as fear of missing out and crippling self-doubt. If you are consistently losing money due to emotional reactions or an unchecked ego, the market will continue to exploit your internal vulnerabilities. It is time to address the root causes of failure rather than just the symptoms.  * Transform your core <strong>relationship to money</strong>, identifying and dissolving limiting financial beliefs that trigger self-sabotage.</p>
+                <h3>Conquer the Internal Market: Transforming Fear, Ego, and Money Beliefs</h3>
+<p>Your greatest barrier to consistent trading success often lies in unaddressed psychological weaknesses, such as fear of missing out and crippling self-doubt. If you are consistently losing money due to emotional reactions or an unchecked ego, the market will continue to exploit your internal vulnerabilities. It is time to address the root causes of failure rather than just the symptoms.</p>
 <ul>
-<li>Systematically confront the emotional traps of <strong>fear of missing out</strong> and <strong>fear of failure</strong> that lead to hesitation and poor execution.</li>
-<li>Build powerful <strong>discipline</strong> by integrating self-awareness and accountability, moving past the destructive influence of an unchecked ego.<strong>Actionable Takeaway:</strong></li>
+<li>Transform your core <strong>relationship to money</strong>, identifying and dissolving limiting financial beliefs that trigger self-sabotage.</li>
+<li>Systematically confront the emotional traps of **fear of missing out*</li>
+<li>and **fear of failure*</li>
+<li>that lead to hesitation and poor execution.</li>
+<li>Build powerful **discipline*</li>
+<li>by integrating self-awareness and accountability, moving past the destructive influence of an unchecked ego.**Actionable Takeaway:*</li>
+<li>Identify the specific emotional trigger (fear, greed, or ego) that sabotaged your last trade, then design a single, specific rule to counter that behavior in your next session.if you are absolutely committed and ready to transform your relationship to money your fear of missing out your fear of failure... never mind your ego then you want to be part of this six week intensive</li>
 </ul>
-<p>Identify the specific emotional trigger (fear, greed, or ego) that sabotaged your last trade, then design a single, specific rule to counter that behavior in your next session.if you are absolutely committed and ready to transform your relationship to money your fear of missing out your fear of failure... never mind your ego then you want to be part of this six week intensive</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>on January 11th my second small group coaching for Traders begins and I really would love to see you there if you are absolutely committed and ready to transform your relationship to money your fear of missing out your fear of failure if you&#x27;re ready to manage your grieve and do a much better job with your discipline never mind your ego then you want to be part of this six week intensive the last cohort was phenomenal and they had breakthroughs left and right I want you to join me on January 11th and for the six weeks following for transformation in your trading and in your life I really hope you&#x27;ll join me</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

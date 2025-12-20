@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why the Athlete's Mindset Guarantees Survival in Early Trading Years</p>
+                <h3>Why the Athlete's Mindset Guarantees Survival in Early Trading Years</h3>
 <p>Many new traders underestimate the psychological resilience required for market survival. Those with a background in competitive sports often possess a hidden edge: the ability to process failure and persevere through sustained setbacks. This discipline is critical for navigating the challenging first few years of a trading career.  - <strong>Feedback Processing</strong>: Success is built on the willingness to receive feedback from losses and continuously look for small improvements.</p>
 <ul>
-<li><strong>Long-Term Survival</strong>: The primary goal in the early stages of both trading and sport is not winning big, but simply <strong>surviving the initial difficult years</strong> while maintaining discipline.</li>
+<li><strong>Long-Term Survival</strong>: The primary goal in the early stages of both trading and sport is not winning big, but simply **surviving the initial difficult years*</li>
+<li>while maintaining discipline.</li>
 <li><strong>Incremental Mastery</strong>: Professional growth is a cumulative process, requiring consistent, small efforts (like practicing golf) to get "that little bit better."</li>
 </ul>
 <p>Adopt the athlete's routine: establish a system for consistent, dedicated practice off the live charts, focusing on iterative improvement rather than quick success.The biggest thing for a lot of Traders is surviving the first few years and it's probably the same with like any sport.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you find that those who become traders who have a sports background have a leg up I wouldn&#x27;t be surprised like probably the people that do well just anyone that she used to feedback failure and just somehow like looking to get better or getting one earlier on someone else even though it&#x27;s not like a trading is the literal wouldn&#x27;t feel like you&#x27;re getting one over on someone else but you can&#x27;t that&#x27;s kind of a nature of it you are in the day taking someone else&#x27;s money so I think anyone that&#x27;s the biggest thing for a lot of Traders is surviving the first few years and it&#x27;s probably the same with like any sport like you&#x27;re not gonna like like I&#x27;ve just taken up Golf and I&#x27;m terrible and I probably won&#x27;t be good for well I may never be good but it just feels like exactly the same each time I go into the range and I hit a few balls and each time I go to of course I just get like I&#x27;m just getting that little bit that little bit better</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

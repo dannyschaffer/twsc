@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Interrupting the Def Fault Setting: Why Self-Awareness is Your Only Defense Against FOMO</p>
-<p>Your discipline doesn't vanish without warning; it is eroded by subtle emotional states like scarcity, fear, or FOMO. Failing to notice these pre-trade triggers makes you vulnerable to impulsive decisions that compromise your P&L. The real edge lies in identifying and interrupting these predictable internal events.  * <strong>Discipline Goes Out the Window</strong> only after a series of pre-existing emotional events have occurred internally, such as feeling unsafe or operating from scarcity.</p>
+                <h3>Interrupting the Def Fault Setting: Why Self-Awareness is Your Only Defense Against FOMO</h3>
+<p>Your discipline doesn't vanish without warning; it is eroded by subtle emotional states like scarcity, fear, or FOMO. Failing to notice these pre-trade triggers makes you vulnerable to impulsive decisions that compromise your P&L. The real edge lies in identifying and interrupting these predictable internal events.</p>
 <ul>
-<li>Emotional states like <strong>scarcity or FOMO</strong> are the "triggers" that cause you to get hooked and abandon your strategy.</li>
-<li><strong>Turning Up the Volume</strong> on your self-awareness allows you to notice these emotional antecedents, giving you the chance to intervene.To break compulsive trading patterns, identify the specific emotional states (scarcity, fear, feeling unsafe) that precede your typical loss of discipline.that self-awareness as you turn up the volume on it begins to have you start to notice what is happening for you so then you have a much better chance at being able to interrupt that def fault setting</li>
+<li>**Discipline Goes Out the Window*</li>
+<li>only after a series of pre-existing emotional events have occurred internally, such as feeling unsafe or operating from scarcity.</li>
+<li>Emotional states like **scarcity or FOMO*</li>
+<li>are the "triggers" that cause you to get hooked and abandon your strategy.</li>
+<li>**Turning Up the Volume*</li>
+<li>on your self-awareness allows you to notice these emotional antecedents, giving you the chance to intervene.To break compulsive trading patterns, identify the specific emotional states (scarcity, fear, feeling unsafe) that precede your typical loss of discipline.that self-awareness as you turn up the volume on it begins to have you start to notice what is happening for you so then you have a much better chance at being able to interrupt that def fault setting</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>when do you not feel safe when are you operating from scarcity when are you operating from fomo when your discipline goes out the window there is a series of events that happen prior to that that self-awareness as you turn up the volume on it begins to have you start to notice what is happening for you so then you have a much better chance at being able to interrupt that def fault setting interrupt that being hooked right because everybody has their triggers</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

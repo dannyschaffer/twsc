@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The 4 Steps to Stop Emotional Disconnection and Start Trading with Clarity</p>
-<p>Many traders feel disconnected from their feelings, often avoiding strong emotions because they lack a framework for handling them constructively. This avoidance prevents you from leveraging critical psychological data. Consistency is found when you adopt a clear, four-step process for processing and releasing emotional energy.  * <strong>Acknowledge Without Judgment</strong>: Accept the emotion immediately as a part of the human experience, halting the urge to repress or label it as "bad."</p>
+                <h3>The 4 Steps to Stop Emotional Disconnection and Start Trading with Clarity</h3>
+<p>Many traders feel disconnected from their feelings, often avoiding strong emotions because they lack a framework for handling them constructively. This avoidance prevents you from leveraging critical psychological data. Consistency is found when you adopt a clear, four-step process for processing and releasing emotional energy.</p>
 <ul>
+<li><strong>Acknowledge Without Judgment</strong>: Accept the emotion immediately as a part of the human experience, halting the urge to repress or label it as "bad."</li>
 <li><strong>Identify the Catalyst</strong>: Look beyond the P\&L and seek the specific event or action that triggered the feeling to gain context.</li>
 <li><strong>The Power of Safe Expression</strong>: Find a secure way to release the emotion, whether through a journal or physical release, ensuring the process does not cause self-injury or harm to others.Actionable Takeaway: When a strong emotion arises during market hours, immediately pause your trading activity and acknowledge the feeling without attempting to judge or fix it.there's nothing right or wrong about it it's part of Being Human.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>hey everybody I want to talk a little bit about what to do when you have emotions not everybody knows what to do with them and that is part of why I find a lot of people are disconnected to their emotions because they don&#x27;t really know what to do when they come up so the first thing I want you to do is to just acknowledge the emotion there&#x27;s nothing right or wrong about it it&#x27;s part of Being Human so do what you need to do in that moment to pause and just acknowledge that you&#x27;re in the midst of having some emotion then I want you to begin to strive to understand it there&#x27;s a catalyst that usually will cause an emotion and I want you to see if you can identify what happened when this happened or that happened that&#x27;s when I started to feel this way that also just helps you have some context then I want you to discover how does it make you feel even good feelings sometimes or Pleasant feelings or easy to be with feelings can trigger some old experiences for us so it&#x27;s okay for you to notice how and</p>
-<p>an emotion makes you feel and I want you to know this it&#x27;s different for everybody for some people some emotions are going to trigger certain feelings and for others totally different ones what matters is what you&#x27;re having for you then I want you to do this last step find a way to express the emotion maybe that&#x27;s with a trusted friend maybe it&#x27;s on my Traer hotline where you can call and clear yourself maybe it&#x27;s in a journal maybe it&#x27;s just out loud under a Subway where you can scream at the top of your lungs finding a way to express the emotion is also important important maybe it&#x27;s just you letting yourself feel it all the way through to the other side there&#x27;s no right or wrong way but even the emotion let&#x27;s say of anger I want you to do whatever you do in a way that doesn&#x27;t injure yourself for anybody else so these are just four steps to take when an emotion comes and you&#x27;re not quite sure what to do with it and if you want me to talk more about this I certainly will</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

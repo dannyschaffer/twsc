@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Letting One Bad Trade Hijack Your Identity</p>
-<p>Volatility in the market is not just a threat to your P&L; it often attempts to hijack your self-perception, transforming temporary losses into permanent feelings of failure. When market chaos causes you to make the loss personal—thinking "I suck" or "I'm not cut out for this"—you are caught in a dangerous identity spiral that threatens your longevity as a trader. You can break this loop and stay in the game by separating the event from your self-worth.  * Recognize that volatility is an attempt to <strong>hijack your identity</strong>, not just your profit.</p>
+                <h3>Stop Letting One Bad Trade Hijack Your Identity</h3>
+<p>Volatility in the market is not just a threat to your P&L; it often attempts to hijack your self-perception, transforming temporary losses into permanent feelings of failure. When market chaos causes you to make the loss personal—thinking "I suck" or "I'm not cut out for this"—you are caught in a dangerous identity spiral that threatens your longevity as a trader. You can break this loop and stay in the game by separating the event from your self-worth.</p>
 <ul>
+<li>Recognize that volatility is an attempt to <strong>hijack your identity</strong>, not just your profit.</li>
 <li>Understand that self-critical thoughts like "I always screw up" are an <strong>identity spiral</strong>, not rational market logic.</li>
-<li>The key to breaking the loop is learning to <strong>feel the emotion without becoming the story</strong> of the loss itself.After a tough trading day, consciously separate the loss event from your core identity and remind yourself that the experience is for learning.You're not the loss, you're the one learning through it.</li>
+<li>The key to breaking the loop is learning to **feel the emotion without becoming the story*</li>
+<li>of the loss itself.After a tough trading day, consciously separate the loss event from your core identity and remind yourself that the experience is for learning.You're not the loss, you're the one learning through it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Volatility doesn&#x27;t just hit your P&amp;L. It tries to hijack your identity. One red day doesn&#x27;t mean you&#x27;re a bad trader. One hard week doesn&#x27;t mean your business is broken. But in chaos, it&#x27;s easy to make it personal. I suck. I always screw up. This just proves I&#x27;m not cut out for this. That is not logic. That&#x27;s an identity spiral. the work, feel the emotion without becoming the story. That&#x27;s how you break the loop. That&#x27;s how you stay in the game. You&#x27;re not the loss, you&#x27;re the one learning through it. Drop hijack in the comments and I&#x27;ll send you my 25page guide to stop this in its tracks.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Trap of Protecting Your Green Day</p>
-<p>When your self-esteem becomes completely tied to whether you finish the day in the green, you introduce a subtle form of self-sabotage. This dependency forces you to prioritize protecting a short-term win over executing high-probability trades. Over time, these missed opportunities incur a greater cost than any single loss.  * <strong>The Psychological Cost of Success</strong>: Fear of reversing a profitable day leads traders to ignore valid setups near the end of their session, sacrificing long-term growth for short-term emotional comfort.</p>
+                <h3>The Hidden Trap of Protecting Your Green Day</h3>
+<p>When your self-esteem becomes completely tied to whether you finish the day in the green, you introduce a subtle form of self-sabotage. This dependency forces you to prioritize protecting a short-term win over executing high-probability trades. Over time, these missed opportunities incur a greater cost than any single loss.</p>
 <ul>
+<li><strong>The Psychological Cost of Success</strong>: Fear of reversing a profitable day leads traders to ignore valid setups near the end of their session, sacrificing long-term growth for short-term emotional comfort.</li>
 <li><strong>Decouple P\&L from Identity</strong>: Your P\&L is feedback, not a measure of your worth. Allowing your mood or ego to dictate trade selection is a direct path to inconsistency.</li>
 <li><strong>Strategy is Non-Negotiable</strong>: A high-edge strategy requires ruthless adherence, regardless of the prior trade's outcome or the current day's balance.Focus exclusively on strategic execution by ensuring every trade decision is based solely on your rules, independent of the session's current financial status.make sure you get yourself unhooked from whether you have a red day or a green day and be sure you're making your choices about trades based on your strategy and not your state of mind</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>here&#x27;s an unexpected way that if you have your self-esteem or your temperment completely informed by whether you have a red or green day it can cost you if let&#x27;s say you&#x27;ve had a green day and you&#x27;re near the end of your trading time you could potentially not take a trade even though it checks a lot of the boxes that usually have you take a trade because you don&#x27;t want to see your green day go by the wayside think about how much that is going to cost you not just that day but over time so make sure you get yourself unhooked from whether you have a red day or a green day and be sure you&#x27;re making your choices about trades based on your strategy and not your state of mind m</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

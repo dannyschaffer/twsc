@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Trading Under Excessive Pressure</p>
-<p>New traders often sabotage themselves in the early years by applying excessive pressure, which leads to mental strain and shallow focus. This self-imposed intensity prevents you from seeing common-sense setups and connecting to the market's bigger picture. When you trade short of mental "oxygen," critical errors become inevitable.  - <strong>Oxygen Deprivation in Trading:</strong> Putting too much pressure on yourself leads to physical and mental strain, resulting in shallow breathing and a lack of clarity that causes you to <strong>miss obvious market signals</strong>.</p>
+                <h3>The Hidden Cost of Trading Under Excessive Pressure</h3>
+<p>New traders often sabotage themselves in the early years by applying excessive pressure, which leads to mental strain and shallow focus. This self-imposed intensity prevents you from seeing common-sense setups and connecting to the market's bigger picture. When you trade short of mental "oxygen," critical errors become inevitable.  - **Oxygen Deprivation in Trading:*</p>
 <ul>
-<li><strong>The Clarity of Simplicity:</strong> When you are overwhelmed by intensity, common sense principles are easily overlooked, even if your strategy is fundamentally sound.</li>
-<li><strong>Mistaking Stress for Dedication:</strong> The belief that every mistake requires a harsh lesson can be counterproductive; sometimes, <strong>the lesson needed is simple relaxation</strong>.When you notice self-imposed pressure building, take a forced five-minute break to practice deep breathing and consciously "chillax" to restore mental bandwidth before reviewing your charts."Sometimes a lesson you guys need to learn is to chillax."</li>
+<li>Putting too much pressure on yourself leads to physical and mental strain, resulting in shallow breathing and a lack of clarity that causes you to <strong>miss obvious market signals</strong>.</li>
+<li>**The Clarity of Simplicity:*</li>
+<li>When you are overwhelmed by intensity, common sense principles are easily overlooked, even if your strategy is fundamentally sound.</li>
+<li>**Mistaking Stress for Dedication:*</li>
+<li>The belief that every mistake requires a harsh lesson can be counterproductive; sometimes, <strong>the lesson needed is simple relaxation</strong>.When you notice self-imposed pressure building, take a forced five-minute break to practice deep breathing and consciously "chillax" to restore mental bandwidth before reviewing your charts."Sometimes a lesson you guys need to learn is to chillax."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>most traitors especially in the first few years are putting so much pressure on themselves that you guys are missing some of the things that are sort of common sense because you are so short of oxygen because you&#x27;re breathing so shallowly and that is keeping you from really connecting to perhaps some of the big picture uh PTO says I read somewhere that this is because we haven&#x27;t learned a lesson we need to learn yes I do think that&#x27;s possible but I do think sometimes a lesson you guys need to learn is to chillax right</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

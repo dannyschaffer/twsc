@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Trading Alone: Why Isolation Burns Time and Capital</p>
-<p>Trading is often portrayed as a solitary endeavor, yet attempting to navigate the psychological market challenges alone is financially and emotionally costly. Without external support, you burn unnecessary time and energy trying to solve problems that a trusted comrade could help clarify.  * <strong>Isolation is expensive</strong>: Trading alone dramatically increases the time and energy required to achieve consistency.</p>
+                <h3>The Hidden Cost of Trading Alone: Why Isolation Burns Time and Capital</h3>
+<p>Trading is often portrayed as a solitary endeavor, yet attempting to navigate the psychological market challenges alone is financially and emotionally costly. Without external support, you burn unnecessary time and energy trying to solve problems that a trusted comrade could help clarify.</p>
 <ul>
+<li><strong>Isolation is expensive</strong>: Trading alone dramatically increases the time and energy required to achieve consistency.</li>
 <li><strong>External alignment accelerates growth</strong>: A trading buddy provides a necessary outside perspective to ensure your actions match your goals.</li>
 <li><strong>Reciprocity fuels success</strong>: Ensure your relationship is mutually beneficial by actively contributing to your buddy's growth, which secures their contribution to yours.Actionable Takeaway: Find one other trader this week—perhaps on a forum or social media—who you believe is in alignment with your trading philosophy.Don't try to go this alone; it's going to cost you so much more time and energy.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>how much support do you have at being a Trader do you have one trading buddy do you have one family member or close comrade who supports what you&#x27;re up to if the answer is no that I&#x27;m going to challenge you this week to find one other Trader maybe it&#x27;s somebody you&#x27;ve been following on X maybe it&#x27;s somebody in a Discord room that you think you must might be in alignment with but don&#x27;t try to go this alone it&#x27;s going to cost you so much more time and energy find a friend find a trading buddy and make sure your contribution to them and I promise you they will be a contribution to you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

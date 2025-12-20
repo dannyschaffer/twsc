@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden 'Why': What Motivates Your Trading Beyond Money</p>
-<p>Focusing solely on monetary goals often leads to burnout and inconsistency. If you don't anchor your trading journey to a deeper, personal purpose, you risk losing motivation when market volatility inevitably hits. True longevity in the markets requires understanding the foundational needs that profit is meant to satisfy.  * The primary motivators beneath the desire for profit are often <strong>Security</strong> or the ability to <strong>Contribute</strong> to loved ones.</p>
+                <h3>The Hidden 'Why': What Motivates Your Trading Beyond Money</h3>
+<p>Focusing solely on monetary goals often leads to burnout and inconsistency. If you don't anchor your trading journey to a deeper, personal purpose, you risk losing motivation when market volatility inevitably hits. True longevity in the markets requires understanding the foundational needs that profit is meant to satisfy.</p>
 <ul>
+<li>The primary motivators beneath the desire for profit are often **Security*</li>
+<li>or the ability to **Contribute*</li>
+<li>to loved ones.</li>
 <li>Identifying your true "why" transforms trading from a frantic pursuit of cash into a <strong>Purpose-Driven Profession</strong>.</li>
 <li>Traders who align their activity with this deeper purpose are the ones who achieve <strong>Long-Term Success</strong>.Take time to define whether your core trading motivation is rooted in achieving personal security or the ability to make a meaningful contribution to your family.we all know the traders that really love to trade are the traders that are going to go the distance</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so what&#x27;s your why for trading I mean I know you want to make some money but I&#x27;m really kind of curious what is the why that sits underneath even that if it&#x27;s money then let&#x27;s nail it down to it&#x27;s because he want security or because you want to be able to be a contribution perhaps to your family or to loved ones I really want you to identify and respond to me if you can what your why for trading is because we all know the traders that really love to trade are the traders that are going to go the distance so what&#x27;s your why let me know</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

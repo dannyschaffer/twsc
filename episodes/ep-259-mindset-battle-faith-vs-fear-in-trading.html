@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Single Choice That Determines Your P&L</p>
+                <h3>The Single Choice That Determines Your P&L</h3>
 <p>Every trade you take is preceded by a core psychological choice: fear or faith. These opposing forces dictate your decision-making under pressure, forcing you to constantly decide whether you will act from scarcity or from confidence.  - <strong>Fear and Faith are Parallel Demands</strong>: Both emotional states require an act of belief in an unseen outcome, meaning both paths are acts of non-physical conviction.</p>
 <ul>
 <li><strong>The Power of Conscious Choice</strong>: Consistent profitability depends on intentionally choosing the mindset that serves your strategy, rather than reacting passively to fear.</li>
 <li><strong>A Daily Commitment</strong>: Your long-term success is built on the decision you make every day to approach the market with resilient expectation (faith) versus defensive paranoia (fear).Before your next session, explicitly name the emotion driving your entry or exit, and commit to acting from a place of defined strategy (faith) rather than impulsive preservation (fear)."Faith and fear both demand that we believe in something we cannot see. You choose."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I saw a great Bob Proctor quote that I want to share with you it says that faith and fear both demand that we believe in something we cannot see you choose a powerful reminder and I hope you think about that as you step through the rest of your work week you choose I choose every day which one will we choose today</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

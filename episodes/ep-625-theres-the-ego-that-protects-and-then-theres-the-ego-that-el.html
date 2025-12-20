@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,24 +193,18 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Mastering Your Inner Voice: The Dual Nature of the Trading Ego</p>
-<p>Every trader battles two inner voices: the petty "lower-case e ego" that breeds shame and the powerful <strong>"Capital E Ego"</strong> that calls forth your true self. Learning to differentiate between these two forces is essential for sustainable growth and peak performance in the markets.</p>
+                <h3>Mastering Your Inner Voice: The Dual Nature of the Trading Ego</h3>
+<p>Every trader battles two inner voices: the petty "lower-case e ego" that breeds shame and the powerful **"Capital E Ego"*</p>
+<ul>
+<li>that calls forth your true self. Learning to differentiate between these two forces is essential for sustainable growth and peak performance in the markets.</li>
+</ul>
 <p>Key Insights:  - <strong>Inner Critic vs. Higher Self</strong>: Recognize the "inner critic" as the voice that makes you feel ashamed and "less than." This is the petty lower-case ego.</p>
 <ul>
 <li><strong>The Capital E Ego is Your Potential</strong>: This higher self challenges you to bring more to the table and demands the best version of yourself.</li>
-<li><strong>Development is Key</strong>: Cultivating this empowering voice is an <strong>art form</strong> that can be developed, especially with the support of colleagues who can see your potential.Actionable Takeaway:</li>
+<li><strong>Development is Key</strong>: Cultivating this empowering voice is an **art form*</li>
+<li>that can be developed, especially with the support of colleagues who can see your potential.Actionable Takeaway:</li>
 </ul>
 <p>Get clear on whether your internal dialogue is an inner critic fostering shame or the Capital E Ego calling you toward constructive challenge.It'll put these challenges in front of us that are calling the best part of ourselves forth.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Yes, there is an inner voice. I will sometimes call that the capital E ego. The Wall Street coach with Edgewalk. So, I would say get clear on are you listening to an inner critic? Are you listening to an inner voice that makes you feel ashamed or less than first? After that, I think then yes, there is an inner voice. I I will sometimes call that the capital E ego, right? Not the lowercase e ego that is just you know kind of petty but the capital E ego if you will is our true self our higher self perhaps our soul self and that is the part of us that can sort of say you know you you have more in the tank today you you got to bring more of it to the table. It&#x27;ll put these challenges in front of us that are calling the best part of ourselves forth. And that is, I do believe, a bit of an art form. But it can be developed. And I think if we&#x27;re fortunate to have colleagues, friends that are able to see that place within us that can teach us how to practice that voice</p>
-<p>within ourselves. Watch the full episode on YouTube. I the Wall Street coach.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +257,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

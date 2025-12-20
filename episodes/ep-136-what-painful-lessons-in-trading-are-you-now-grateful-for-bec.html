@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Power of Your Worst Loss: Why Painful Lessons Are Your Greatest Edge</p>
+                <h3>The Hidden Power of Your Worst Loss: Why Painful Lessons Are Your Greatest Edge</h3>
 <p>Every trader experiences difficult and challenging losses that can feel devastating at the moment. Instead of viewing these moments as pure failure, they are often the exact pressure points needed for genuine growth. This shift in perspective is critical for evolving past common trading limitations.  - Recognizing that the greatest "up-levels" in trading often stem from the most <strong>painful and challenging experiences</strong>.</p>
 <ul>
-<li>Shifting perspective from regretting losses to <strong>finding gratitude for the lessons</strong> they provided.</li>
+<li>Shifting perspective from regretting losses to **finding gratitude for the lessons*</li>
+<li>they provided.</li>
 <li>Using moments of difficulty in your journey to <strong>reassess and refine your approach</strong>.Reflect on your most painful trading experience and identify the concrete, positive change it forced you to make in your process.sometimes the challenging parts of our life and or in your trading is actually what up levels you</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody it is the eve of Thanksgiving and I want to see who would be willing to play along I&#x27;m curious for all the traders that are listening who has a story of a difficult and challenging experience in their treating that to this day they are grateful for having because it made them a better trater I would love to hear what your stories are and on this Eve of Thanksgiving I think it&#x27;s the perfect time to remember that sometimes the challenging parts of our life and or in your trading is actually what up levels you so let me know and I hope you have a great Thanksgiving</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

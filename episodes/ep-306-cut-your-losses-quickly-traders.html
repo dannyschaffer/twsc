@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Emotional Barrier: Why You Can't Cut Your Losses</p>
-<p>If you are struggling with trading consistency, the likely reason is a failure to cut losses quickly enough, which systematically ruins your P&L. This habit stems from a deeper psychological trap: equating a losing trade with a personal deficiency. The resulting shame prevents you from taking necessary, logical action.  - <strong>The Consistency Trap:</strong> Inconsistent trading is often a symptom of this psychological issue, not a flaw in your strategy.</p>
+                <h3>The Emotional Barrier: Why You Can't Cut Your Losses</h3>
+<p>If you are struggling with trading consistency, the likely reason is a failure to cut losses quickly enough, which systematically ruins your P&L. This habit stems from a deeper psychological trap: equating a losing trade with a personal deficiency. The resulting shame prevents you from taking necessary, logical action.  - **The Consistency Trap:*</p>
 <ul>
-<li><strong>Losses and Self-Worth:</strong> The failure to cut losses is rooted in the fear of being "wrong" and the associated feeling of shame tied to <strong>personal value</strong>.</li>
-<li><strong>P\&L Protection:</strong> Refusing to close losing trades is an act of protecting your self-identity as a smart, capable person, rather than <strong>managing capital</strong>.Actionable Takeaway: Consciously separate your personal identity and value from the outcome of any single trade to eliminate the shame associated with being wrong."separate your value from those mistakes watch everything change"</li>
+<li>Inconsistent trading is often a symptom of this psychological issue, not a flaw in your strategy.</li>
+<li>**Losses and Self-Worth:*</li>
+<li>The failure to cut losses is rooted in the fear of being "wrong" and the associated feeling of shame tied to <strong>personal value</strong>.</li>
+<li>**P\&L Protection:*</li>
+<li>Refusing to close losing trades is an act of protecting your self-identity as a smart, capable person, rather than <strong>managing capital</strong>.Actionable Takeaway: Consciously separate your personal identity and value from the outcome of any single trade to eliminate the shame associated with being wrong."separate your value from those mistakes watch everything change"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>are you struggling with consistency in your trading then I believe it&#x27;s likely due to this reason this is one of the biggest challenges Traders have is that they don&#x27;t cut their losses quick enough and it ruins their p&amp;l and the solution is to stop identifying with your losses around your sense of self the key here is you have to stop Fe feeling ashamed of being wrong somewhere you learn that being wrong was really something to do with your sense of value but it has nothing to do with that separate your value from those mistakes watch everything change</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

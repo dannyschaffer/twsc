@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Your Own Stories: The Power of Polarity Review</p>
+                <h3>Stop Trading Your Own Stories: The Power of Polarity Review</h3>
 <p>Every trader carries a set of deeply ingrained beliefs and stories that dictate their market decisions. When you align too rigidly with one polarity—bullish or bearish, aggressive or passive—you forfeit the valuable perspective held by the opposite side. This psychological rigidity creates blind spots that limit your profitability and keep you stuck in repeated patterns.</p>
 <p>Key Insights:  - <strong>Challenge Repetitive Narratives</strong>: Your limiting beliefs often surface as stories you constantly repeat to colleagues or yourself. These stories need regular examination.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Increase Cognitive Flexibility</strong>: True insight comes from the mental dexterity to consider opposing truths simultaneously, not from clinging defensively to a single position.Actionable Takeaway:</li>
 </ul>
 <p>Identify one strongly held trading belief you have and consciously consider the polar opposite viewpoint to see what hidden perspective it offers.it's always good to perhaps step into the polar opposite of a story that we repeat all the time to just see what wisdom might be over there.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what are some of your beliefs what are some of the stories that you always say to colleagues to other traitors perhaps in some Discord rooms perhaps on X I have no doubt that you and I both have a slew of things that we repeat often but how often do you take a look at those stories how often do you actually consider the other side of that story there are so many polarities and often we can align ourselves with one polarity over another but it&#x27;s always good to mix it up it&#x27;s always good to perhaps step into the polar opposite of a story that we repeat all the time to just see what wisdom might be over there what perspective do they have that on your side you&#x27;ve never seen before</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

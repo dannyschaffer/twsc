@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Believing the Hype: How to Find the Genuine Trading Community</p>
-<p>In a space often characterized by skepticism and solo effort, it is easy to focus only on the negative stories of dishonesty. However, many traders overlook the supportive and genuinely generous network that exists, which is critical for psychological growth and accelerating learning.  * <strong>Discriminate Who You Trust</strong>: You must remain cautious ("buy beware") and rigorously vet potential mentors by asking the right questions before placing your trust.</p>
+                <h3>Stop Believing the Hype: How to Find the Genuine Trading Community</h3>
+<p>In a space often characterized by skepticism and solo effort, it is easy to focus only on the negative stories of dishonesty. However, many traders overlook the supportive and genuinely generous network that exists, which is critical for psychological growth and accelerating learning.</p>
 <ul>
+<li><strong>Discriminate Who You Trust</strong>: You must remain cautious ("buy beware") and rigorously vet potential mentors by asking the right questions before placing your trust.</li>
 <li><strong>Generosity is a Mark of Success</strong>: Observation shows that many high-level traders dedicate significant time to helping new traders, proving that authentic mentorship is a strong pillar of the community.</li>
 <li><strong>Contribution Over Consumption</strong>: For genuinely successful traders, the goal often transcends profit, shifting toward sharing knowledge and being a positive influence on the space.Actionable Takeaway: Prioritize the intentional vetting of mentors by observing their actions and generosity, rather than just their P&L, to find authentic guidance."He got started because he had mastered it and he wanted to share it with other Traders and be a contribution."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>there are really good people in the trading space guys you know yes buy beware you have to vet the people you have to ask the right questions you want to be discriminatory in who you put your trust in but I have to tell you guys I&#x27;ve been blown away with especially having gone now to this be my third trades for cause conference how many Traders are authentically genuine and generous to Traders coming up the amount of time that Traders are spending with the new guys it tells you all you need to know look at even that by the podcast I did with prdy Bon he got started because he had mastered it and he wanted to share it with other Traders and be a contribution like I hear that so much more often than I hear about the bad guys</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

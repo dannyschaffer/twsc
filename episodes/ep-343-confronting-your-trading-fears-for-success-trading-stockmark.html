@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Price of Avoidance: Why Trading Forces You to Face Your Hardest Truths</p>
+                <h3>The High Price of Avoidance: Why Trading Forces You to Face Your Hardest Truths</h3>
 <p>Many traders enter the market believing their primary enemy is external volatility. However, the market acts as a ruthless mirror, forcing you to confront hard truths about your discipline, fear, and self-worth. Ignoring these internal gaps will only prolong your struggle, eventually costing you your capital.</p>
 <p>Key Insights:  - <strong>The Market as a Truth Teller</strong>: The pressure of trading exposes psychological weaknesses you may successfully hide in other areas of life.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Mandatory Self-Audit</strong>: Sustained profitability is conditional on addressing deep-seated emotional biases, not just technical strategy.Actionable Takeaway:</li>
 </ul>
 <p>Start identifying the "hard truths" you are actively resisting by reviewing your most recent losses for patterns of denial or fear-based decisions.The markets are going to force you to be with hard truths about yourself... if you do not face the things that you don't want to face, your capital is going to go down the drain.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this is the thing about the markets it is going to force you to be with hard truths about yourself and you can resist as long as your Capital stays in your account but at some point if you do not face the things that you don&#x27;t want to face your capital is going to go down the drain and you&#x27;ve</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

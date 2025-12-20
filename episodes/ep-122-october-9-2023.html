@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Your Emotional Overdrive: What Trading Can Learn from Social Media Triggers</p>
-<p>When core knowledge or identity is challenged, the emotional response can be immediate and severe. This mental reaction is not exclusive to social media; it manifests in trading when market action contradicts a deeply held belief, often leading to destructive overreactions and emotional spirals.  * <strong>Ego Defense Loop</strong>: A slight against perceived knowledge or loyalty triggers an intense, irrational defense mechanism, mirroring how traders react when a strategy tied to their self-worth fails.</p>
+                <h3>Your Emotional Overdrive: What Trading Can Learn from Social Media Triggers</h3>
+<p>When core knowledge or identity is challenged, the emotional response can be immediate and severe. This mental reaction is not exclusive to social media; it manifests in trading when market action contradicts a deeply held belief, often leading to destructive overreactions and emotional spirals.</p>
 <ul>
+<li><strong>Ego Defense Loop</strong>: A slight against perceived knowledge or loyalty triggers an intense, irrational defense mechanism, mirroring how traders react when a strategy tied to their self-worth fails.</li>
 <li><strong>Observe the Trigger</strong>: Developing your Emotional Quotient (<strong>EQ</strong>) requires actively observing how easily emotional "scripts" can be activated by external, often trivial, provocations.</li>
-<li><strong>The Fragility of Certainty</strong>: Intense emotional reactions reveal that conviction is based on <strong>ego and bias</strong> rather than objective market facts.When you feel a strong emotional trigger in the market, immediately halt trading and use the moment to identify the underlying identity or belief that feels threatened.The guys go absolutely mental over the idea of it.</li>
+<li><strong>The Fragility of Certainty</strong>: Intense emotional reactions reveal that conviction is based on **ego and bias*</li>
+<li>rather than objective market facts.When you feel a strong emotional trigger in the market, immediately halt trading and use the moment to identify the underlying identity or belief that feels threatened.The guys go absolutely mental over the idea of it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this is my EQ prep for the week of October 8th there is a trending uh Tick Tock theme meme that&#x27;s out there right now where women are pretending with their boyfriend or husband or partner that Taylor Swift uh put Travis Kelsey on the map and they have this script they basically say to said boyfriend her partner can you believe that nobody knew who he was before Taylor Swift and the guys go absolutely mental over the idea of it now what&#x27;s so fascinating to me is that all of these women are just picky backing on this</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

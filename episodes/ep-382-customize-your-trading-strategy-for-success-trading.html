@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Adopting Guru Strategies That Don't Fit Your Life</p>
+                <h3>Stop Adopting Guru Strategies That Don't Fit Your Life</h3>
 <p>You consume endless market content, desperately trying to implement complex strategies that work for the "gurus." The emotional cost comes when these techniques clash with your real-world schedule and capacity, leading to burnout and inconsistent results. True success demands a personalized approach that respects your current lifestyle and stage of the trading journey.  - <strong>Filter Your Strategy</strong>: Every piece of market advice must be filtered through what you can realistically execute based on your available time, energy, and capacity.</p>
 <ul>
 <li><strong>Lifestyle Audit</strong>: Strategies designed for full-time institutional traders are often inappropriate for part-time schedules, leading to inevitable failure if blindly followed.</li>
 <li><strong>Appropriate Commitment</strong>: Ensure the strategy you adopt is appropriate for where you currently stand in your trading development, rather than chasing something that is too advanced or demanding.Before implementing any new system, conduct a comprehensive lifestyle audit to confirm you have the necessary time, mental capacity, and environmental support to execute it consistently.You have to really pause and ask yourself, wait a minute, is this a good fit for me and my part-time trading or my full-time trading?</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so just keep in mind when you listen to the gurus and you pay attention to all the great uh content that&#x27;s out there CU there&#x27;s a lot of it you have to put it through a filter of what can you do it might be perfect for this guy or that g to do it that way but if you don&#x27;t have a lifestyle that supports all that they&#x27;re advocating you have to really pause and ask yourself wait a minute is this a good fit for me and my part-time trading or my full-time trading is this appropriate for me because of where I am on the trading Journey</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

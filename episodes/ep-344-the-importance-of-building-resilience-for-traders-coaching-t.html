@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Stop Getting Triggered When the Market Goes "Pear-Shaped"</p>
-<p>Trading, much like life, is inherently messy and unpredictable. When unexpected losses or market shifts occur, the resulting frustration often triggers an emotional spiral of anger or panic. This video discusses why building <strong>psychological resilience</strong> is the only way to endure the volatility of the markets without breaking.  - Trading is an enduring process of dealing with <strong>unpredictable</strong> outcomes, making emotional endurance mandatory, not optional.</p>
+                <h3>How to Stop Getting Triggered When the Market Goes "Pear-Shaped"</h3>
+<p>Trading, much like life, is inherently messy and unpredictable. When unexpected losses or market shifts occur, the resulting frustration often triggers an emotional spiral of anger or panic. This video discusses why building **psychological resilience*</p>
 <ul>
-<li>True consistency requires developing the <strong>capacity</strong> to handle events that don't go as planned, rather than trying to perfectly predict them.</li>
-<li>Resilience is not a one-time achievement but a quality that will be required <strong>over and over and over again</strong> throughout your career.When trades go against you, consciously assess your emotional response: Do you get totally triggered, upset, or angry?life is messy it's unpredictable as is trading right</li>
+<li>is the only way to endure the volatility of the markets without breaking.  - Trading is an enduring process of dealing with **unpredictable*</li>
+<li>outcomes, making emotional endurance mandatory, not optional.</li>
+<li>True consistency requires developing the **capacity*</li>
+<li>to handle events that don't go as planned, rather than trying to perfectly predict them.</li>
+<li>Resilience is not a one-time achievement but a quality that will be required **over and over and over again*</li>
+<li>throughout your career.When trades go against you, consciously assess your emotional response: Do you get totally triggered, upset, or angry?life is messy it's unpredictable as is trading right</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>life is messy it&#x27;s unpredictable as is trading right and this is what you guys have to remember at all times this is what we&#x27;re all enduring all the time so hopefully it gives you an opportunity to actually consider how do you handle things like this when they go pair shaped when things don&#x27;t go the way you thought they would how do you handle it what happens to you do you get totally triggered do you get really upset and angry this is part of what&#x27;s so important especially for Traders to start to build up more resilience because that resilience is going to be required of you over and over and over again</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

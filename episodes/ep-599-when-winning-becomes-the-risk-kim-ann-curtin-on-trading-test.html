@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Letting the Winner's High Sabotage Your Account</p>
+                <h3>Stop Letting the Winner's High Sabotage Your Account</h3>
 <p>That rush you feel after a few wins isn't a sign of mastery—it's a physiological trap known as the testosterone level ride. This irrational high convinces you that you can do no wrong, leading directly to overtrading and catastrophic losses. Learn how to identify when hormones are hijacking your process before a winning streak breaks your entire account.  - <strong>The Winner's High is Physiological</strong>: Consecutive wins can elevate testosterone, leading to overconfidence that is physiological, not rational.</p>
 <ul>
 <li><strong>Consistency Over Chasing</strong>: Discipline is built on recognizing when emotional levels have "hijacked the bus" and maintaining your established plan.</li>
 <li><strong>The Power of the Reset Ritual</strong>: Success requires a mandatory reset ritual after both losses and wins to maintain objective composure.Develop a mandatory post-win ritual that forces you to step away from the charts and re-regulate your nervous system before placing another trade.Because success doesn't come from chasing, it comes from consistency.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Ever win a few trades in a row and then lose it all chasing just one more? That&#x27;s not bad luck. That&#x27;s called the testosterone level ride, telling you you can do no wrong. It&#x27;s physiological. It&#x27;s not rational. My work with traders helps them build the discipline and the recognition of when testosterone levels have hijacked the bus. includes a reset ritual after a loss. Because success doesn&#x27;t come from chasing, it comes from consistency. Let&#x27;s help you break the cycle before it breaks</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

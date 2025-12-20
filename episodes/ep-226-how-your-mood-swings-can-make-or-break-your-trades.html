@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Ignoring Your Emotional P&L: Why Mood Tracking Is Essential</p>
+                <h3>Stop Ignoring Your Emotional P&L: Why Mood Tracking Is Essential</h3>
 <p>You meticulously track entry prices and technical indicators, yet you may be missing the most critical variable: your temperament. If you enter a session depressed, frustrated, or apathetic, that emotional state is actively coming with you into your trading, distorting your view of opportunity. Consistently profitable trading requires understanding how these internal energies contribute to your green and red days.  - <strong>Your Emotional State is an Input</strong>: Negative temperaments (depression, apathy, frustration) are brought directly into your decision-making process.</p>
 <ul>
 <li><strong>The Confidence Lens</strong>: Your mood and energy levels significantly impact your confidence and the lens through which you interpret market data.</li>
 <li><strong>Identify Frequency</strong>: The goal is to track which energy states frequently contribute to successful days and which ones signal potential failure.Actionable Takeaway: Start tracking your emotional state (e.g., depressed, hope-filled, frustrated) in your trading journal to see the frequency of patterns that need addressing.it is not these alone of course that are the only factors but they are going to impact the lens in which you look through on the market and in the levels of your confidence</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I hope you keep track of your temperament and mood and energy levels in your trading journal because they do have an impact on you if you&#x27;re depressed frustrated apathetic that is coming with you into your trading if you&#x27;re in gratitude hope filled and feeling really positive that is going with you into your trading you want to take a look at how frequent these energies are contributing to the days that are green and the days that are red it is not these alone of course that are the only factors but they are going to impact the lens in which you look through on the market and in the levels of your confidence so take note of these so you can see the frequency of any patterns that might need to be addressed</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

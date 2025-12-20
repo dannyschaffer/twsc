@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of Rationalization: How Your Inner Critic Traps You in Self-Deception</p>
+                <h3>The Cost of Rationalization: How Your Inner Critic Traps You in Self-Deception</h3>
 <p>You may believe you are operating with objective discipline, but often, the voice of your inner critic turns you into its mouthpiece. This deep-seated pattern of rationalization prevents you from confronting hard truths about your performance. The result is a cycle of self-sabotage where you unknowingly keep yourself trapped and unable to evolve.</p>
-<p>Key Insights:  * <strong>The Mouthpiece Effect</strong>: Listening to the inner critic's excuses for too long makes it incredibly easy to become a direct spokesperson for its rationalizations, stalling genuine accountability.</p>
+<p>Key Insights:</p>
 <ul>
-<li><strong>The Gremlin's Function</strong>: Your internal "Gremlin" works actively to shield you from the <strong>hard truth</strong> about your results, choosing self-deception over discomfort.</li>
+<li><strong>The Mouthpiece Effect</strong>: Listening to the inner critic's excuses for too long makes it incredibly easy to become a direct spokesperson for its rationalizations, stalling genuine accountability.</li>
+<li><strong>The Gremlin's Function</strong>: Your internal "Gremlin" works actively to shield you from the **hard truth*</li>
+<li>about your results, choosing self-deception over discomfort.</li>
 <li><strong>The Trapped State</strong>: When you rationalize how you show up in the market, you are using BS—not honesty—to justify behavior, ensuring you remain caught in the same negative loops.Actionable Takeaway: Start documenting the exact moment you catch yourself rationalizing a poor trade decision to expose the "Gremlin's" excuse-making.when we have been listening to our inner critics excuses for a long time it is very very very easy to become a mouthpiece for them</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>when we have been listening to our inner critics excuses for a long time it is very very very easy to become a mouthpiece for them it is very very very easy to rationalize even to ourselves about how we show up we say one thing and then our Gremlin is like oh I don&#x27;t want to look at that Hard truth so it spouts basically BS through our own mouth and that keeps us trapped</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

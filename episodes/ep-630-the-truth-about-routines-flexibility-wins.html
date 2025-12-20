@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Perfection Trap: Why Rigid Routines Sabotage Consistency</p>
-<p>The quest for the 'perfect' daily trading routine often backfires, leading to unnecessary stress and emotional burnout when life inevitably interrupts your schedule. This insistence on 100% adherence prevents traders from building the real resilience and adaptability needed to navigate chaotic market environments. Learn how to develop a preparation protocol that enriches your mental state without setting you up for inevitable failure.  - <strong>The Myth of Perfection:</strong> Demanding absolute adherence to a strict regimen only creates self-criticism when interruptions—such as sick kids or doctor's appointments—make a perfect day impossible.</p>
+                <h3>The Perfection Trap: Why Rigid Routines Sabotage Consistency</h3>
+<p>The quest for the 'perfect' daily trading routine often backfires, leading to unnecessary stress and emotional burnout when life inevitably interrupts your schedule. This insistence on 100% adherence prevents traders from building the real resilience and adaptability needed to navigate chaotic market environments. Learn how to develop a preparation protocol that enriches your mental state without setting you up for inevitable failure.  - **The Myth of Perfection:*</p>
 <ul>
-<li><strong>Design Your Protocol:</strong> Trading success comes from creating a personalized routine that genuinely enhances your focus and mood, whether that involves quiet meditation, exercise, or uplifting music.</li>
-<li><strong>Adaptability is Key:</strong> Real consistency is measured by how often you achieve your protocol, not by flawless execution. Build a framework flexible enough to absorb real-life disruptions.Shift your focus from measuring rigid adherence to measuring consistency; aim to integrate your enriched protocol into your day most of the time.Don't beat yourself up if you can't stick to it 100%.</li>
+<li>Demanding absolute adherence to a strict regimen only creates self-criticism when interruptions—such as sick kids or doctor's appointments—make a perfect day impossible.</li>
+<li>**Design Your Protocol:*</li>
+<li>Trading success comes from creating a personalized routine that genuinely enhances your focus and mood, whether that involves quiet meditation, exercise, or uplifting music.</li>
+<li>**Adaptability is Key:*</li>
+<li>Real consistency is measured by how often you achieve your protocol, not by flawless execution. Build a framework flexible enough to absorb real-life disruptions.Shift your focus from measuring rigid adherence to measuring consistency; aim to integrate your enriched protocol into your day most of the time.Don't beat yourself up if you can't stick to it 100%.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>for being perfect all the time because it&#x27;s it&#x27;s not possible. Like in the mornings I get I get up, I excited, I get a shower, I turn Jimmy Buffet on for me regimen. Do you do you tell people to look your day needs to say the same every day? Get up, do this, or is there something that gets you pumped up in the morning, some song or what? What&#x27;s how do you do that? Yeah, I think everybody&#x27;s going to be different. I tried to give people a template, but we have to realize that templates sometimes get interrupted by kids being sick, by our elder parents having to get to a doctor&#x27;s appointment to a flat tire. So, yes, come up with a protocol that enriches you. But don&#x27;t beat yourself up if you can&#x27;t stick to it 100%. be better to just have something that you get most of the time than for being perfect all the time because it&#x27;s it&#x27;s not possible. I happen to use music myself, Stephen, except Bill Withers is my favorite in the morning. Lovely day. I love that because it puts me in a good mood while I&#x27;m showering</p>
-<p>and getting ready. Some people like the quiet of the morning. Some people like to exercise in the morning. you. We each have to find what works for</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Barrier: Why You Unconsciously Block Your Trading Success</p>
-<p>If you consistently downplay your wins or struggle to accept compliments, you might be programmed to reject success. This "glass half empty" mindset is more than just humility; it creates an unconscious ceiling that actively keeps you from achieving consistent profitability.  * <strong>The Unconscious Ceiling</strong>: The inability to comfortably acknowledge or "be with" your own success ensures your subconscious mind will work to sabotage future gains.</p>
+                <h3>The Hidden Barrier: Why You Unconsciously Block Your Trading Success</h3>
+<p>If you consistently downplay your wins or struggle to accept compliments, you might be programmed to reject success. This "glass half empty" mindset is more than just humility; it creates an unconscious ceiling that actively keeps you from achieving consistent profitability.</p>
 <ul>
+<li><strong>The Unconscious Ceiling</strong>: The inability to comfortably acknowledge or "be with" your own success ensures your subconscious mind will work to sabotage future gains.</li>
 <li><strong>The Programming of Criticism</strong>: Past environments (like families that focus on the B+ instead of the A) can hardwire your brain to see only deficits, actively limiting your perception of a winning P\&L.</li>
 <li><strong>Success Recognition is Mandatory</strong>: Learning to pause and celebrate wins is a critical practice for reprogramming your brain to sustain high-level performance.Actionable Takeaway</li>
 </ul>
 <p>Mentally revisit one of the largest successes you've ever had in your life and consciously spend five minutes acknowledging and honoring that win without inserting criticism or denial.if you can't be with success especially your own you got to realize that's going to unconsciously keep you from it</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I want you to think back to one of the largest successes you&#x27;ve ever had in your life I want you to think back whenever occurred what you did to honor or celebrate that win if you are somebody who doesn&#x27;t receive compliments uh graciously if you&#x27;re somebody who never stops to pause and congratulate yourself or pat yourself on the back if you&#x27;re someone that comes from a family who looked at your B+ and said why wasn&#x27;t it an a then it&#x27;s possible you might be a glass half empty kind of person and I want you as a Trader to start to learn how to see the glass half full not because you want to deny what needs to change but if you can&#x27;t be with success especially your own you got to realize that&#x27;s going to unconsciously keep you from it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Denial Trap: Why "I'll Make It Back Tomorrow" Destroys Your Trading</p>
-<p>That familiar phrase—"I'll make it back tomorrow"—is a toxic response to a loss, whether small or large. This psychological shortcut is a powerful form of denial that prevents you from confronting the emotional discomfort of your mistake, often leading to an emotional downward spiral.  * <strong>The Avoidance Mechanism</strong>: Saying you will "make it back" is primarily a way to avoid feeling the necessary discomfort associated with a loss.</p>
+                <h3>The Denial Trap: Why "I'll Make It Back Tomorrow" Destroys Your Trading</h3>
+<p>That familiar phrase—"I'll make it back tomorrow"—is a toxic response to a loss, whether small or large. This psychological shortcut is a powerful form of denial that prevents you from confronting the emotional discomfort of your mistake, often leading to an emotional downward spiral.</p>
 <ul>
+<li><strong>The Avoidance Mechanism</strong>: Saying you will "make it back" is primarily a way to avoid feeling the necessary discomfort associated with a loss.</li>
 <li><strong>The Denial Loop</strong>: Refusing to face your mistakes head-on makes genuine change impossible, effectively locking you into a downward spiral.Erase the phrase "I'll make it back" from your vocabulary and commit instead to a non-judgmental, detailed review of what caused the red day.If you don't face to face look at your mistakes you can't change them.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you have this toxic treating response let&#x27;s find out do you have a tendency to say to yourself after a red day well I&#x27;ll make it back tomorrow if you say that to yourself I want you to erase it from your vocabulary here&#x27;s why you never make it back when you say oh well I&#x27;ll make it back another time whether it&#x27;s a big loss or small loss what you&#x27;re doing is you&#x27;re avoiding actually feeling the discomfort that that loss has brought up for you and it also puts you in a place of denial if you don&#x27;t face to face look at your mistakes you can&#x27;t change them so please notice when you say to yourself oh I&#x27;ll make it back because that is going to put you on a downward spiral</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

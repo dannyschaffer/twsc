@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Getting Tangled: Why Mental "Brambles" Compound Your Trading Losses</p>
-<p>Trading mistakes often feel like getting caught in a mental thicket, where resistance and old emotional patterns pull you deeper into trouble. When you fail to see the larger context of your actions, small errors quickly compound into massive, self-inflicted losses. This damaging spiral is driven by unconscious, outdated ways of reacting to market pressure.  * <strong>The Emotional Thicket</strong>: Compounding mistakes are a result of <strong>"old ways of reacting"</strong> taking over, making it impossible to see the big picture when trades go wrong.</p>
+                <h3>Stop Getting Tangled: Why Mental "Brambles" Compound Your Trading Losses</h3>
+<p>Trading mistakes often feel like getting caught in a mental thicket, where resistance and old emotional patterns pull you deeper into trouble. When you fail to see the larger context of your actions, small errors quickly compound into massive, self-inflicted losses. This damaging spiral is driven by unconscious, outdated ways of reacting to market pressure.</p>
 <ul>
-<li><strong>Loss of Perspective</strong>: Without adequate psychological groundwork, traders cannot see the "forest for the trees," leading them to <strong>resist market feedback</strong> rather than accepting it.</li>
-<li><strong>Massive Losses Emerge from Resistance</strong>: The ultimate cost is not the initial mistake, but the <strong>resistance to what's happening</strong> which turns a handful of errors into catastrophic drawdowns.Address your psychological conditioning outside of the charts, focusing on identifying the deeply ingrained reactions that emerge under stress.that is what happens mentally to many Traders they can't see the forest for the trees unless they have done some work on themselves</li>
+<li><strong>The Emotional Thicket</strong>: Compounding mistakes are a result of **"old ways of reacting"*</li>
+<li>taking over, making it impossible to see the big picture when trades go wrong.</li>
+<li><strong>Loss of Perspective</strong>: Without adequate psychological groundwork, traders cannot see the "forest for the trees," leading them to **resist market feedback*</li>
+<li>rather than accepting it.</li>
+<li><strong>Massive Losses Emerge from Resistance</strong>: The ultimate cost is not the initial mistake, but the **resistance to what's happening*</li>
+<li>which turns a handful of errors into catastrophic drawdowns.Address your psychological conditioning outside of the charts, focusing on identifying the deeply ingrained reactions that emerge under stress.that is what happens mentally to many Traders they can't see the forest for the trees unless they have done some work on themselves</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you&#x27;ve ever been in the forest or you&#x27;ve been in the woods and you get caught in a Thicket of uh Bramble or Brier you you have a really hard time getting out because the Thorns will be stuck to your clothes your pants leg you&#x27;ll find it difficult to like get a good step so you can get out of it that is what happens mentally to many Traders they can&#x27;t see the forest for the trees unless they have done some work on themselves have a tendency to get themselves in deeper because their old ways of reacting come to the surface take them over and one mistake a handful of mistakes suddenly become compounded suddenly it&#x27;s massive losses that are happening because the resistance to what&#x27;s happening</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

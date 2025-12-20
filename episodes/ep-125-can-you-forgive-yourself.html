@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Self-Forgiveness is the Single Most Profitable Trade You Can Make</p>
-<p>Trading is a journey where mistakes are inevitable, yet many traders struggle profoundly with self-forgiveness. This psychological burden is more expensive than any single loss because refusing to let go ensures you constantly drag the mistakes of your past into your current decision-making.  * <strong>Self-Forgiveness is a Core Trading Skill</strong>: The ability to forgive yourself after a loss is critical for mental bandwidth and future performance.</p>
+                <h3>Why Self-Forgiveness is the Single Most Profitable Trade You Can Make</h3>
+<p>Trading is a journey where mistakes are inevitable, yet many traders struggle profoundly with self-forgiveness. This psychological burden is more expensive than any single loss because refusing to let go ensures you constantly drag the mistakes of your past into your current decision-making.</p>
 <ul>
+<li><strong>Self-Forgiveness is a Core Trading Skill</strong>: The ability to forgive yourself after a loss is critical for mental bandwidth and future performance.</li>
 <li><strong>The Cost of Non-Forgiveness</strong>: Holding onto past failures prevents you from being fully present in the market, leading to distorted perspective and poor execution.Take time this week to identify one past trading mistake or external event that you have not forgiven yourself for, and consciously commit to releasing the emotional weight.when we don't forgive ourselves we're consistently bringing our past not only into the current moment but into the future</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>this is my EQ prep for the week of the 16th of October you know what something that traitors have a really hard time doing is forgive themselves I think this is something that we all have in common everybody who has the journey called life seems to struggle with self forgiveness and yet when we don&#x27;t forgive ourselves we&#x27;re consistently bring bringing our past not only into the current moment but into the future I&#x27;m reading a great novel right now where one of the main characters is working her way through self forgiveness so that is going to be my homework for the week what would it take for you to forgive yourself maybe it&#x27;s a bad trait that you took maybe it&#x27;s something outside of trading that you still can&#x27;t let go of but I&#x27;m going to ask you to</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

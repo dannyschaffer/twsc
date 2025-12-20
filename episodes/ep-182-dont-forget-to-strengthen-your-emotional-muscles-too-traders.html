@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Trader's Secret: Why You Need to Train Your Emotional Muscle</p>
-<p>Many traders consistently sabotage their strategies through emotional weakness—falling victim to FOMO, chasing losses, or letting their ego demand they be right. These behaviors are not discipline failures, but symptoms of an underdeveloped emotional muscle that lacks the resilience to withstand market pressure. If you are rigorous with physical training, you must apply the same principles to your mental fortitude.  * <strong>Trading Consistency is Resilience</strong>: The biggest obstacle to success is not a flawed strategy, but a nervous system that is not strong enough to resist temptations like FOMO or ego-driven trades.</p>
+                <h3>The Trader's Secret: Why You Need to Train Your Emotional Muscle</h3>
+<p>Many traders consistently sabotage their strategies through emotional weakness—falling victim to FOMO, chasing losses, or letting their ego demand they be right. These behaviors are not discipline failures, but symptoms of an underdeveloped emotional muscle that lacks the resilience to withstand market pressure. If you are rigorous with physical training, you must apply the same principles to your mental fortitude.</p>
 <ul>
+<li><strong>Trading Consistency is Resilience</strong>: The biggest obstacle to success is not a flawed strategy, but a nervous system that is not strong enough to resist temptations like FOMO or ego-driven trades.</li>
 <li><strong>Identify the Point of Fatigue</strong>: Just as you push physical muscles to the point of fatigue for growth, you must understand your emotional limits and intentionally challenge them to build mental capacity.</li>
-<li><strong>Resilience Requires Practice</strong>: The capacity to resist temptation and stay disciplined under stress is an emotional muscle that only strengthens through consistent, deliberate "workouts" off the charts.<strong>Actionable Takeaway:</strong> Design and execute an intentional "emotional workout" regimen focused on nervous system regulation and self-reflection as frequently as you engage in physical exercise.I want you to think about how do you do an emotional workout as often as you do a physical workout and see if you don't see your emotional strength get stronger.</li>
+<li><strong>Resilience Requires Practice</strong>: The capacity to resist temptation and stay disciplined under stress is an emotional muscle that only strengthens through consistent, deliberate "workouts" off the charts.**Actionable Takeaway:*</li>
+<li>Design and execute an intentional "emotional workout" regimen focused on nervous system regulation and self-reflection as frequently as you engage in physical exercise.I want you to think about how do you do an emotional workout as often as you do a physical workout and see if you don't see your emotional strength get stronger.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you&#x27;re a Trader that goes to the gym then I want you to consider this what you do in the gym to strengthen your muscles is the practice you have to also do for your emotional muscle a lot of times the biggest issue a traitor has is they&#x27;re not resilient enough they&#x27;re not able to withstand the temptation to you know go down at uh rabbit holy shouldn&#x27;t be going down the feelings of fomo the feelings of their ego wanting to be right all of that is just an emotional muscle that you just haven&#x27;t worked on yet and yet if you&#x27;re in a gym you know what it&#x27;s like to put your muscles to the point of fatigue so I want you to think about how do you do an emotional workout as often as you do a physical workout and see if you don&#x27;t see your emotional strength get stronger</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Blaming the Market: Why Your Assumptions Are Your Real Enemy</p>
-<p>We often enter the trading week with pre-conceived notions about market behavior or our own performance, creating invisible cognitive biases that hijack our decisions. When these faulty beliefs are challenged by price action, the resulting anger or self-pity is a massive, emotional drag on your P&L.  - <strong>Question Your Narrative:</strong> Emotional interference begins the moment you stop questioning the story you are telling yourself about the market and start treating it as fact.</p>
+                <h3>Stop Blaming the Market: Why Your Assumptions Are Your Real Enemy</h3>
+<p>We often enter the trading week with pre-conceived notions about market behavior or our own performance, creating invisible cognitive biases that hijack our decisions. When these faulty beliefs are challenged by price action, the resulting anger or self-pity is a massive, emotional drag on your P&L.  - **Question Your Narrative:*</p>
 <ul>
-<li><strong>The True Cost of Blame:</strong> When you externalize blame for poor trades, you forfeit the only power you have: the ability to learn and adjust your strategy.</li>
-<li><strong>The Self-Reflection Gap:</strong> True "EQ Prep" is the daily practice of stepping outside your current emotional state to find the simple, overlooked truth of your situation.Before making your next move, identify one core assumption you hold about the current market or your recent trades and deliberately seek evidence that contradicts it."It's to really allow you to step into this concept of how our beliefs sometimes need to be questioned."</li>
+<li>Emotional interference begins the moment you stop questioning the story you are telling yourself about the market and start treating it as fact.</li>
+<li>**The True Cost of Blame:*</li>
+<li>When you externalize blame for poor trades, you forfeit the only power you have: the ability to learn and adjust your strategy.</li>
+<li>**The Self-Reflection Gap:*</li>
+<li>True "EQ Prep" is the daily practice of stepping outside your current emotional state to find the simple, overlooked truth of your situation.Before making your next move, identify one core assumption you hold about the current market or your recent trades and deliberately seek evidence that contradicts it."It's to really allow you to step into this concept of how our beliefs sometimes need to be questioned."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is Kim and Curtin of the Wall Street coach and this is my Sunday February 12th EQ prep for the week I want to read a poem I recently heard uh for the second third time from Wayne Dyer called The Cookie Thief by Valerie Cox it&#x27;s to really allow you to step into this concept of how our beliefs uh sometimes need to be questioned a woman was waiting at an airport one night with several long hours before her flight she hunted for a book in the airport shops bought a bag of cookies and found a place to drop she was engrossed in her book but happened to see the man sitting beside her as bold as could be grabbed a cookie or two from the bag in between which she tried to ignore to avoid a scene so she munched the cookies and watched the clock as the gutsy Cookie Thief diminished her stock she was getting more irritated as the minutes ticked by thinking if I wasn&#x27;t so nice I would blacken his eye with each cookie she took he took one too when only one was left she wondered what he</p>
-<p>would do with a smile on his face and a nervous laugh he took the last cookie and broke it in half he offered her half as he ate the other she snatched it from him and thought Oh Brother this guy has some nerve and he&#x27;s also Rude why he didn&#x27;t even show any gratitude she had never known when she&#x27;d been so called and side with relief when her flight was called she gathered her belongings and headed to the gate refusing to look back at the thieving in crate she boarded the plane and sank in her seat then she brought she sought her book which was almost complete as she reached in her bag she gasped with surprise there was her bag of cookies in front of her eyes if mine are here she moaned in despair the others were his and he tried to share too late to apologize she realized with grief that she was the rude one the increase the thief</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

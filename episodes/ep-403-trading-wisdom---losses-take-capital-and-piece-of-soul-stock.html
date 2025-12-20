@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Double Cost of Trading Losses: Capital and Your Soul</p>
+                <h3>The Double Cost of Trading Losses: Capital and Your Soul</h3>
 <p>A major trading loss costs you more than just money; it extracts a profound psychological toll, often referred to as paying with a piece of your "soul." This emotional payment is the hidden expense of inconsistency, proving that the market demands absolute consciousness and presence. If you are not fully engaged, you will pay the price.</p>
 <p>Key Insights:  - <strong>Trading Demands 100% Presence</strong>: The market is an unforgiving landscape that requires absolute focus and consciousness at the moment of entry.</p>
 <ul>
 <li><strong>The True Price of Loss</strong>: Every significant drawdown results in the loss of both your capital and a small piece of your psychological resilience.</li>
 <li><strong>Maximize the Loss</strong>: Since you have already paid the highest price (capital and soul), you are obligated to extract every possible lesson the experience is trying to teach you.Actionable Takeaway: Identify the emotional attachments or flawed assumptions you bring to the market and commit to leaving them outside your decision-making process."Any Trader here who's had a big loss knows that it didn't just take your money, it took a little small piece of your soul."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what are the attachments I am going to have to leave at the Gate of entry into this landscape it requires you to be 100% conscious and present and if you aren&#x27;t you are going to pay with your capital and you&#x27;re going to pay with your soul you any Trader here who&#x27;s had a big loss knows that it didn&#x27;t just take your money it took a little small piece of your soul and what I&#x27;m saying is learn from it if you paed with your soul and your Capital why would you not want to learn the lesson it&#x27;s trying to teach you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

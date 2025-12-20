@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of Being Right: Why Profit Trumps Prediction</p>
-<p>Are you caught in the mental trap of needing to be "right"? Many skilled traders allow their personal forecasts and opinions to override objective market data, suffering losses as they hold onto trades merely to validate their intelligence. The psychological shift from proving a point to simply accumulating profits is the critical differentiator between success and failure.  * <strong>The Market Doesn't Care</strong>: Trading is not a debate; the market will not validate your personal opinion, even if your macro analysis is sound. Focus exclusively on the trade's P\&L.</p>
+                <h3>The Cost of Being Right: Why Profit Trumps Prediction</h3>
+<p>Are you caught in the mental trap of needing to be "right"? Many skilled traders allow their personal forecasts and opinions to override objective market data, suffering losses as they hold onto trades merely to validate their intelligence. The psychological shift from proving a point to simply accumulating profits is the critical differentiator between success and failure.</p>
 <ul>
+<li><strong>The Market Doesn't Care</strong>: Trading is not a debate; the market will not validate your personal opinion, even if your macro analysis is sound. Focus exclusively on the trade's P\&L.</li>
 <li><strong>Mastering the Shift</strong>: The real transformation happens when you move from trading based on "my thoughts" (e.g., being persistently bearish) to trading based purely on the goal of making money.</li>
-<li><strong>Objective Data is Key</strong>: Keeping honest, detailed records of your P\&L is essential to identifying the emotional bias that costs you money when you hold a losing position out of denial.<strong>Actionable Takeaway</strong></li>
+<li><strong>Objective Data is Key</strong>: Keeping honest, detailed records of your P\&L is essential to identifying the emotional bias that costs you money when you hold a losing position out of denial.**Actionable Takeaway*</li>
+<li>Review your journal records and identify three trades where you refused to exit because you believed your original forecast was "right," then calculate the true cost of that need for validation."I just want to make money. I don't want to do anything but that in trading."</li>
 </ul>
-<p>Review your journal records and identify three trades where you refused to exit because you believed your original forecast was "right," then calculate the true cost of that need for validation."I just want to make money. I don't want to do anything but that in trading."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I just want to make money. Yeah. I mean, it&#x27;s funny cuz that same exact type of thing is going on right now. You know, people are very bearish in the stock market and they keep hearing the Fed guys come out and say these things and like, &amp;quot;Oh, you see, you see this is why you got to be bearish. This is why you got to be bearish. I mean, well, the stock market keeps going up.&amp;quot; I think it just gets to a point where if you&#x27;re honest about your trading and if you really do a good job of look keeping records of your trading and and your P&amp;L and going through it, you have to get to a point where it&#x27;s like, you know what, I just want to make money. I don&#x27;t want to do anything but that in trading. I mean, that&#x27;s the idea of trading, right? There&#x27;s other things to do in life where money is not the important thing, but in trading, that&#x27;s what the game is. Once you can kind of make that jump, I feel like, you know, hey, forget all this, right? Forget me wanting to make trades based</p>
-<p>on my thoughts and just make trades based on I want to make money. Then I think you can really that&#x27;s a big shift and that was a big shift for me. You know, obviously I never went into trading do I want to lose money, right? Just the approach of how to make money over time that that changed.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

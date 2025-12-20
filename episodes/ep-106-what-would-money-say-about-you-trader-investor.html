@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Relationship: What Your Money Reveals About Your Trading Psychology</p>
+                <h3>The Hidden Relationship: What Your Money Reveals About Your Trading Psychology</h3>
 <p>Your P&L isn't just a metric; it's a mirror reflecting your deepest beliefs about money. Many traders are unaware that their financial results are governed by an unconscious, often troubled relationship with wealth. Understanding this dynamic—whether you treat money as a partner or a source of stress—is crucial for building consistency.  - <strong>Money as an Intimate Partner</strong>: Visualize money as a relationship that requires attention, respect, and clear boundaries, rather than just an abstract tool.</p>
 <ul>
 <li><strong>Unconscious Emotional Dynamics</strong>: Trading behavior is often dictated by whether your internal system views money through lenses of control (<strong>cheapness</strong>), reckless disregard (<strong>generosity</strong>), or crippling anxiety (<strong>obsession</strong>).</li>
 <li><strong>The Comparison Trap</strong>: Avoid undermining your own journey by constantly measuring your monetary experience against the success or failure of others.Begin unpacking your relationship by observing how often you compare your financial success to others and write down the feelings that comparison triggers.How would money define your relationship to it: does money feel ignored by you, does money feel you obsess over it, or are you always comparing other people’s experiences with their money to your own?</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I&#x27;m about to sit down with your relationship to money imagine money is your intimate partner imagine money is a friend you live with what what money say to me about your relationship to it would many describe you as being somebody who is very cheap with money to describe you as somebody who&#x27;s very generous how would money Define your relationship to it does money feel ignored by you does money feel you obsess over it does money feel you&#x27;re always comparing other people&#x27;s experiences with their money to your experience with money this is just one way you can start to unpack what your relation</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

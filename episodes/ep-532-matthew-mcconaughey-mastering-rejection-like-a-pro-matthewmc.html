@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>The 50/50 Mindset: How to Master Rejection Without Losing Your Confidence</h3>
+                <h3>The 50/50 Mindset: How to Master Rejection Without Losing Your Confidence</h3>
 <p>When you put yourself out there, whether in life or in the markets, a "no" is inevitable. The emotional cost of internalizing rejection—of making yourself wrong—is what truly hinders your progress. Learn how to mentally recalibrate your expectations so that setbacks fuel your next effort instead of crushing your self-worth.  - <strong>Separate Self from Outcome</strong>: The core of mastering rejection is the refusal to personalize the result. Do not allow a "no" to define your identity or imply a fundamental failing.</p>
 <ul>
 <li><strong>Understand True Probability</strong>: Many approach opportunities assuming a 95% chance of success. Recognize that asking for something not yet offered is inherently a <strong>50/50 proposition</strong>, which removes the sting of surprise when the answer is negative.</li>
 <li><strong>Embrace Rejection as Momentum</strong>: By living with the "no" without self-criticism, you generate the inner drive needed to return at a higher level and ask for something different.Actionable Takeaway:</li>
 </ul>
 <p>When faced with a rejection, immediately check your internal dialogue to ensure you are not assigning blame or shame; instead, pivot that energy toward enhancing your strategy for the next attempt."We forget that it's 50/50 the answer, yes or no."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>We like to hustle in both sense of the word. The Wall Street Coach podcast is that you didn&#x27;t always have yes as the response, but you never took it personally when you got no and you were able to live with the no without making yourself wrong. And that seems to give you the impetus to go back at another higher level and ask for something different all over again. I mean, I come from a family of salesmen and we like to hustle in both sense of the word. You know, one of the things we don&#x27;t realize, and it kind of I think this is part and parcel with the old, hey, life&#x27;s not easy. One of the things we need to let our kids know, it&#x27;s not easy. All right? Is that when you ask something, if you&#x27;re asking a question, we forget that it&#x27;s 5050 the answer, yes or no, we go, we ask something, we go in our mind, we think like it&#x27;s 95 to be yes, and if it&#x27;s 5% no, no, buddy, that math doesn&#x27;t add up. You&#x27;re asking something that has not been offered.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

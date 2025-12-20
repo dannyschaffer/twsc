@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Beating Yourself Up: Why Compassion Is the Ultimate Trading Edge</p>
-<p>Many traders believe relentless self-criticism is the path to discipline, but this behavior often keeps them stuck in emotional loops. Discover why self-compassion and self-love are not "soft" concepts, but rather the powerful psychological tools needed to transcend limiting beliefs and accelerate your growth.  * <strong>Self-Abuse Hinders Progress</strong>: Trying to enforce discipline through self-abuse or mean internal talk only slows down your ability to move past trading obstacles.</p>
+                <h3>Stop Beating Yourself Up: Why Compassion Is the Ultimate Trading Edge</h3>
+<p>Many traders believe relentless self-criticism is the path to discipline, but this behavior often keeps them stuck in emotional loops. Discover why self-compassion and self-love are not "soft" concepts, but rather the powerful psychological tools needed to transcend limiting beliefs and accelerate your growth.</p>
 <ul>
-<li><strong>Compassion Accelerates Movement</strong>: Trading from a foundation of <strong>compassion and self-love</strong> is proven to help you transcend issues and improve quicker.</li>
-<li><strong>It's a Peak Performance Principle</strong>: This concept is fundamental, having been featured in high-level courses like Peak Performance 101.<strong>Actionable Takeaway:</strong> Consciously replace self-judgment and criticism with compassionate self-talk immediately following any setback.your ability to transcend the things that are holding you back, you will move so much quicker than beating herself up</li>
+<li><strong>Self-Abuse Hinders Progress</strong>: Trying to enforce discipline through self-abuse or mean internal talk only slows down your ability to move past trading obstacles.</li>
+<li><strong>Compassion Accelerates Movement</strong>: Trading from a foundation of **compassion and self-love*</li>
+<li>is proven to help you transcend issues and improve quicker.</li>
+<li><strong>It's a Peak Performance Principle</strong>: This concept is fundamental, having been featured in high-level courses like Peak Performance 101.**Actionable Takeaway:*</li>
+<li>Consciously replace self-judgment and criticism with compassionate self-talk immediately following any setback.your ability to transcend the things that are holding you back, you will move so much quicker than beating herself up</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Don&#x27;t just ignore that advice. It&#x27;s really powerful. Edwank with the Wall Street Coach. Because I promise you, if you lay that upon yourself, your ability to transcend the things that are holding you back, you will move so much quicker than beating herself up and you know being mean or abusive to yourself. Actually, we went to a seminar in 2018. In that seminar, peak performance 101. The first time I heard that concept of you need to trade from a place of compassion and self-love and that triggered something in me which was really powerful. For anyone who hears that and is not into spirituality, don&#x27;t just ignore that advice. It&#x27;s really powerful.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

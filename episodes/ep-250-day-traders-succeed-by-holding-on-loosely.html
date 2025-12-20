@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Trading Success Depends on Learning to 'Hold On Loosely'</p>
-<p>When you approach the market with a rigid agenda and a fixed desired outcome, any deviation from that path leads to emotional friction and resistance. This intense attachment prevents you from adapting to real price action, causing costly mistakes as you try to force your expectations onto the market.  * <strong>Attachment is the enemy of adaptation</strong>. If your ego is tied to your trade being "right," you cannot make objective decisions when the market shifts.</p>
+                <h3>Why Trading Success Depends on Learning to 'Hold On Loosely'</h3>
+<p>When you approach the market with a rigid agenda and a fixed desired outcome, any deviation from that path leads to emotional friction and resistance. This intense attachment prevents you from adapting to real price action, causing costly mistakes as you try to force your expectations onto the market.</p>
 <ul>
+<li><strong>Attachment is the enemy of adaptation</strong>. If your ego is tied to your trade being "right," you cannot make objective decisions when the market shifts.</li>
 <li>True trading mastery requires <strong>Spiritual Intelligence (SQ)</strong>, which is the ability to maintain non-attachment to temporary outcomes.</li>
-<li>Successful traders know when to <strong>put their agenda down</strong> when the facts presented by the market change.Actionable Takeaway: At the first sign of friction in a trade, mentally detach from your desired profit target and review the situation based only on your current price action rules.The key here is you've got to practice not being too attached, and that is a sign of spiritual intelligence.</li>
+<li>Successful traders know when to **put their agenda down*</li>
+<li>when the facts presented by the market change.Actionable Takeaway: At the first sign of friction in a trade, mentally detach from your desired profit target and review the situation based only on your current price action rules.The key here is you've got to practice not being too attached, and that is a sign of spiritual intelligence.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>how many Traders are a fan of the band 38th special one of their best songs in my opinion is an oldie but a goodie called Hold On Loosely and that&#x27;s what I want to suggest to you today Traders it&#x27;s okay to have an agenda it&#x27;s okay to even have a desired outcome but I want you to Hold On Loosely I want you to be able to put that agenda down when it does not appear to be going the way you hoped it would the key here is you&#x27;ve got to practice not being too attached and that is a sign of spiritual intelligence and in my experience the traders who have high SQ are the traders that succeed all the time</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

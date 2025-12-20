@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Only Rule That Guarantees Longevity: Why Risk Management is Everything</p>
+                <h3>The Only Rule That Guarantees Longevity: Why Risk Management is Everything</h3>
 <p>The number one reason traders fail is not a flawed strategy, but a failure to manage risk. You could possess the best system in the world, yet without proper risk management, one bad trade can wipe out your entire account. Understanding that protecting your capital is your lifeline is the essential psychological shift needed for consistent success.  - <strong>The 1-2% Rule</strong>: Never risk more than 1 to 2% of your total account on a single trade; this keeps losses small and guarantees you have the capital base required to recover.</p>
 <ul>
 <li><strong>Capital Protection Over Profit Pursuit</strong>: Successful traders focus on how much they are <strong>willing to lose</strong>, shifting their focus from high-risk offense to long-term survival.</li>
 <li><strong>Risk-Based Sizing</strong>: Trades must be sized based on your risk tolerance, not your greed, to ensure emotional decisions do not sabotage your equity curve.Actionable Takeaway: Always use a stop loss and never execute a trade without one."The market is unpredictable but risk management keeps you in the game"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>want to know the number one reason Traders fail they don&#x27;t manage risk here&#x27;s how to make sure you are not one of them risk management isn&#x27;t just important it&#x27;s everything you could have the best strategy in the world but without proper risk management one bad trade could wipe you out here&#x27;s how to do it right never risk more than 1 to 2% of your total account on a single trade this keeps losses small and gives you a chance to recover always use a stop loss don&#x27;t even think about trading with out one size your trades based on risk tolerance and not your greed the market is unpredictable but risk management keeps you in the game it&#x27;s not about how much you make a one trade it&#x27;s about staying in the game long enough to make consistent gains successful Traders don&#x27;t focus on how much they can win they focus on how much they&#x27;re willing to lose protect your Capital it&#x27;s your Lifeline now I&#x27;m curious what&#x27;s your go-to risk management rule shared in the comments and let&#x27;s make sure other Traders are trading smarter not harder</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

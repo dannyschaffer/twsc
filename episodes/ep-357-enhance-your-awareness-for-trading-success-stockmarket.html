@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading on Autopilot: How Unconscious Biases Are Sabotaging Your Daily Trades</p>
-<p>Trading success relies entirely on conscious decision-making, yet most traders operate on autopilot, swayed by invisible emotional or cognitive biases. This lack of presence directly leads to costly mistakes and prevents you from sticking to your plan. Learning to enhance your self-awareness is the essential prerequisite for clarity and consistent profits.  - Awareness is defined as <strong>being present and conscious</strong> to the daily trading decisions you make.</p>
+                <h3>Stop Trading on Autopilot: How Unconscious Biases Are Sabotaging Your Daily Trades</h3>
+<p>Trading success relies entirely on conscious decision-making, yet most traders operate on autopilot, swayed by invisible emotional or cognitive biases. This lack of presence directly leads to costly mistakes and prevents you from sticking to your plan. Learning to enhance your self-awareness is the essential prerequisite for clarity and consistent profits.  - Awareness is defined as **being present and conscious*</p>
 <ul>
-<li>Heightening awareness helps you <strong>spot and neutralize biases</strong> that undermine your focus.</li>
+<li>to the daily trading decisions you make.</li>
+<li>Heightening awareness helps you **spot and neutralize biases*</li>
+<li>that undermine your focus.</li>
 <li>Consistency requires assessing whether you are trading from a place of <strong>clarity or emotional reaction</strong>.Take regular, planned breaks throughout your trading day to reset your mental state and assess your emotional clarity before placing the next trade.you want to take regular breaks to reset and to assess are you in a sense of clarity or are you being swayed by things beyond your control</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>let&#x27;s talk about awareness what is awareness and how can you enhance it well awareness is simply being present and conscious to the trading decisions you make every day you want to help spot the biases you might have and that helps you stay focused you want to practice mindfulness to heighten your awareness and you want to take regular breaks to reset and to assess are you in a sense of clarity or are you being swayed by things beyond your control</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

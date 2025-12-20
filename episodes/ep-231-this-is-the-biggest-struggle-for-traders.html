@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Emotional Barrier: Why Competent Traders Struggle to Pull the Trigger</p>
-<p>Many skilled traders consistently miss critical entries and exits, a failure often mistakenly attributed to strategy flaws or hubris. The real, underlying cost is a lack of emotional confidence—the inability to "pull the trigger" even when you have earned the right to trade successfully. This emotional gap keeps you stuck, preventing your evolution to the next level of consistent profitability.  * The greatest hurdle for many successful traders is not <strong>hubris</strong> but a crippling <strong>lack of confidence</strong> at the moment of execution.</p>
+                <h3>The Emotional Barrier: Why Competent Traders Struggle to Pull the Trigger</h3>
+<p>Many skilled traders consistently miss critical entries and exits, a failure often mistakenly attributed to strategy flaws or hubris. The real, underlying cost is a lack of emotional confidence—the inability to "pull the trigger" even when you have earned the right to trade successfully. This emotional gap keeps you stuck, preventing your evolution to the next level of consistent profitability.</p>
 <ul>
+<li>The greatest hurdle for many successful traders is not **hubris*</li>
+<li>but a crippling **lack of confidence*</li>
+<li>at the moment of execution.</li>
 <li>This hesitation often stems from an emotional feeling of <strong>not having the right to move to the next level</strong>, rather than a lack of technical competency.</li>
-<li>Mastery requires you to separate whether your lack of confidence is informed by a lack of <strong>competency</strong> or simply <strong>emotional resistance</strong>.<strong>Actionable Takeaway:</strong> Logically put your arguments down on paper detailing what is stopping you from executing so you can pull the barriers apart one by one.I have seen again and again traders who have earned the right to be more confident in certain ways struggle with the ability to pull the trigger so to speak.</li>
+<li>Mastery requires you to separate whether your lack of confidence is informed by a lack of **competency*</li>
+<li>or simply <strong>emotional resistance</strong>.**Actionable Takeaway:*</li>
+<li>Logically put your arguments down on paper detailing what is stopping you from executing so you can pull the barriers apart one by one.I have seen again and again traders who have earned the right to be more confident in certain ways struggle with the ability to pull the trigger so to speak.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>so I&#x27;m curious if you are struggling most with hubris or a lack of confidence I&#x27;m going to take a guess that it&#x27;s probably confidence I have seen again and again traders who have earned the right to be more confident in certain ways struggle with the ability to pull the trigger so to speak and the reason that that happens is something want to start to get curious about if you can start to look at what informs that lack of confidence you need to logically sort of put your argument down on paper what&#x27;s stopping you so that you can then pull it apart one by one to see if it&#x27;s informed by a lack of Competency or just a lack of emotionally feeling like you have a right to move to the next level</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

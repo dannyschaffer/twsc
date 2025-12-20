@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>If Your Trading Edge Takes Five Pages to Explain, You Don't Have One</p>
-<p>Many early traders fall into the trap of overcomplicating their strategy, convinced that complex systems equate to a robust market edge. This confusion leads to endless journaling and self-talk without gaining real clarity, costing time and confidence. The real mistake is substituting volume for verifiable precision.  * <strong>Complexity Hides Lack of Clarity:</strong> Early attempts to define an edge often result in lengthy documents that mask the reality: a fundamental misunderstanding of what a true edge is.</p>
+                <h3>If Your Trading Edge Takes Five Pages to Explain, You Don't Have One</h3>
+<p>Many early traders fall into the trap of overcomplicating their strategy, convinced that complex systems equate to a robust market edge. This confusion leads to endless journaling and self-talk without gaining real clarity, costing time and confidence. The real mistake is substituting volume for verifiable precision.</p>
 <ul>
-<li><strong>The Power of External Feedback:</strong> Isolating yourself and relying solely on internal monologue prevents the necessary reality-testing required to refine your strategy.</li>
-<li><strong>Precision is the Proof:</strong> An authentic, powerful trading edge should be so distilled and precise that it can be summarized simply.Actionable Takeaway: Test your current trading strategy by defining its core competitive advantage in a single, unambiguous sentence.If you can't say what your Edge is in one sentence, you have to be really, really precise with what your Edge actually is</li>
+<li>**Complexity Hides Lack of Clarity:*</li>
+<li>Early attempts to define an edge often result in lengthy documents that mask the reality: a fundamental misunderstanding of what a true edge is.</li>
+<li>**The Power of External Feedback:*</li>
+<li>Isolating yourself and relying solely on internal monologue prevents the necessary reality-testing required to refine your strategy.</li>
+<li>**Precision is the Proof:*</li>
+<li>An authentic, powerful trading edge should be so distilled and precise that it can be summarized simply.Actionable Takeaway: Test your current trading strategy by defining its core competitive advantage in a single, unambiguous sentence.If you can't say what your Edge is in one sentence, you have to be really, really precise with what your Edge actually is</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I was thinking I had trades with Edge and I was thinking oh I&#x27;m going to find an edge and I&#x27;ll be perfectly fine and I wasn&#x27;t I was I was talking to myself too much I wasn&#x27;t talking to other Traders I wasn&#x27;t sharing what my Edge was I was you know doing my daily report cards or what I call Da you know what we now call Daily report cards I was doing those every day and I would write things in those that that I was like oh this is Edge and now if I look back at him I&#x27;m like I had no idea what Edge was and it would be this like you know f five page document about what my Edge in the market is and why it exists and like all that stuff and now like my belief is if you can&#x27;t say what your Edge is in one sentence like you have to be really really precise with what your Edge actually is</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Letting Your Environment Sabotage Your Trading Results</p>
-<p>Many traders focus entirely on market analysis while neglecting the most critical factor: their physical and psychological environment. If your workspace is disorganized, full of interruptions, or lacks the necessary separation from home life, you are inherently limiting your performance and inviting inconsistent results. Professional trading demands a professional setting and mindset.  - <strong>Professional Separation</strong>: Establish a distinct boundary between your personal life and your trading <strong>workstation</strong> to promote focus and mental clarity.</p>
+                <h3>Stop Letting Your Environment Sabotage Your Trading Results</h3>
+<p>Many traders focus entirely on market analysis while neglecting the most critical factor: their physical and psychological environment. If your workspace is disorganized, full of interruptions, or lacks the necessary separation from home life, you are inherently limiting your performance and inviting inconsistent results. Professional trading demands a professional setting and mindset.  - <strong>Professional Separation</strong>: Establish a distinct boundary between your personal life and your trading **workstation*</p>
 <ul>
-<li><strong>Clutter Equals Chaos</strong>: Working in a messy or distracting area introduces cognitive clutter that prevents the <strong>clear thinking</strong> required for optimal trade execution.</li>
+<li>to promote focus and mental clarity.</li>
+<li><strong>Clutter Equals Chaos</strong>: Working in a messy or distracting area introduces cognitive clutter that prevents the **clear thinking*</li>
+<li>required for optimal trade execution.</li>
 <li><strong>Commitment Over Convenience</strong>: Your commitment to vital habits, such as post-market <strong>journaling</strong>, must remain non-negotiable, even when you are tired.Actionable Takeaway: Audit your physical trading area today, eliminating all sources of clutter and potential interruptions during market hours.If you don't treat yourself like a professional and operate like one, you can't expect yourself and to have the results.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you can&#x27;t expect yourself and to have the results. Do you work in an office where there&#x27;s clutter? Do you have a differentiation between your home and your uh workstation? Do you get interrupted? Like if you aren&#x27;t taking yourself seriously in your environment in how you are committed to let&#x27;s say journaling after the end of a day even though you&#x27;re tired. You know, if you don&#x27;t treat yourself like a professional and operate like one, you can&#x27;t expect yourself and to have the results.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Trading From Need: Why Filling Emotional Voids Destroys Your P&L</p>
+                <h3>Trading From Need: Why Filling Emotional Voids Destroys Your P&L</h3>
 <p>When you enter a trade, are your decisions driven by a validated strategy or by a deep internal need for validation, security, or belonging? Allowing emotional voids to dictate your market decisions is a common form of self-sabotage that guarantees inconsistency and unexpected losses.  - Identify if you are trading based on a <strong>proven, objective strategy</strong>.</p>
 <ul>
-<li>Recognize that using the market to <strong>get emotional needs met</strong> leads to guaranteed failure.</li>
+<li>Recognize that using the market to **get emotional needs met*</li>
+<li>leads to guaranteed failure.</li>
 <li>Trading from a place of emotional need will <strong>never satisfy the underlying personal void</strong>.Actionable Takeaway: Perform a deep self-inquiry to differentiate trading behavior driven by validated strategy versus trading driven by emotional necessity."If you are trying to get your needs met in the market it's not going and dwell."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>are hidden fears sabotaging your trading how can you find if that is what&#x27;s happening to you well you can take a look at my Trader checkin which is going to be able to ask you some really deep hard questions about whether you are trading based on a proof and strategy or are you trading because you are trying to get a need met if you are trying to get your needs met in the market it&#x27;s not going and dwell so please sign up for my Trader checkin at Trader check.com and find out now</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of Hesitation: How to Identify and Conquer Your Trading "Flinch"</p>
+                <h3>The Cost of Hesitation: How to Identify and Conquer Your Trading "Flinch"</h3>
 <p>Every trader faces a psychological breaking point—that moment of intense resistance or contraction known as "the Flinch." If you do not actively engage with this discomfort, it will perpetually control your decision-making, resulting in costly mistakes and missed opportunities. True trading freedom requires facing this inner limit head-on.  - <strong>The Flinch is Resistance</strong>: This psychological contraction is where your greatest resistance to action lies, and it is the only path toward transcendence.</p>
 <ul>
 <li><strong>Embrace Discomfort</strong>: By refusing to "sit with that Flinch," you remain captive to emotional limitations rather than mastering them.</li>
 <li><strong>Find Your Unique Pattern</strong>: Every trader has a specific Flinch; identifying yours is the first step toward releasing its control over your performance.Pinpoint the specific market situations where you experience the most emotional contraction or resistance, and intentionally log these moments in your journal."If you don't sit with that Flinch, if you don't embrace that discomfort and actually surf it through to the other side, you will forever be controlled by it"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>find the Flinch what does that mean it means find the place where you have the biggest contraction the biggest resistance because underneath that is the chance for you to actually transcend it but if you don&#x27;t sit with that Flinch if you don&#x27;t Embrace that discomfort and actually surf it through to the other side you will forever be controlled by it every traiter has their particular Flinch I want you to find out what yours is so that you are no longer held captive to it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

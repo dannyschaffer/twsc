@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Beating Yourself Up: How Self-Kindness Becomes Your Trading Edge</p>
+                <h3>Stop Beating Yourself Up: How Self-Kindness Becomes Your Trading Edge</h3>
 <p>Traders are notoriously challenging, often pushing themselves beyond their comfort zones. However, this relentless self-criticism is not discipline; it is an emotional drain that costs you consistency and clarity. Discover the profound shift that occurs when you consciously introduce compassion and empathy into your trading mindset.  - <strong>The True Cost of Criticism</strong>: Constant self-judgment drains the mental energy required for sharp, unbiased trade execution.</p>
 <ul>
 <li><strong>The Self-Empathy Experiment</strong>: Introducing kindness and empathy—even temporarily—allows you to observe your trading behavior without shame, fostering genuine learning.</li>
-<li><strong>Sustainable Growth</strong>: Unlike harsh self-talk that leads to burnout, compassionate challenging promotes resilience and a healthier relationship with risk.<strong>Actionable Takeaway:</strong> Commit to practicing self-kindness and compassion this week, observing what changes in your approach when you stop being incredibly hard on yourself.what happens to your trading if you practice kindness to yourself what happens for this week only if you start to practice some compassion some self empathy</li>
+<li><strong>Sustainable Growth</strong>: Unlike harsh self-talk that leads to burnout, compassionate challenging promotes resilience and a healthier relationship with risk.**Actionable Takeaway:*</li>
+<li>Commit to practicing self-kindness and compassion this week, observing what changes in your approach when you stop being incredibly hard on yourself.what happens to your trading if you practice kindness to yourself what happens for this week only if you start to practice some compassion some self empathy</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I know you guys like to be hard on yourselves traitors are notoriously constantly challenging themselves and pushing them beyond their comfort zones but here&#x27;s something I want you to consider even if it&#x27;s just for this week what happens to your treating if you practice kindness to yourself what happens for this week only if you start to practice some compassion some self empathy look you&#x27;ve been giving yourself a hard time likely since you started so let&#x27;s just take a look and see what changes in your treating if you stop being so incredibly hard on yourself</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

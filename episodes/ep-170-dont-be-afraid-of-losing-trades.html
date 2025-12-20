@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Don't Fear Losing Trades—Fear the Bad Ones</p>
-<p>The fear of red numbers often triggers emotional reactions that sabotage your process. Many traders allow the inevitable loss to dictate their self-worth, leading to costly mistakes like revenge trading or failing to follow rules. The key to consistency lies in redefining what truly constitutes failure.  * <strong>Losing trades are mandatory</strong>; they are the fixed cost of playing the probabilities inherent in any good system.</p>
+                <h3>Don't Fear Losing Trades—Fear the Bad Ones</h3>
+<p>The fear of red numbers often triggers emotional reactions that sabotage your process. Many traders allow the inevitable loss to dictate their self-worth, leading to costly mistakes like revenge trading or failing to follow rules. The key to consistency lies in redefining what truly constitutes failure.</p>
 <ul>
-<li><strong>Bad trades are optional</strong> and represent a failure of discipline, not strategy, regardless of the P\&L outcome.</li>
-<li>Focusing on the *quality* of your execution over the *outcome* of the trade is the path to psychological freedom.Immediately review your journal and identify whether your recent losses were due to a losing outcome or a rule violation, and only focus on eliminating the bad trades.don't be afraid of losing trades Traders be afraid of bad trades because a bad trade is a very different thing than a losing trade</li>
+<li><strong>Losing trades are mandatory</strong>; they are the fixed cost of playing the probabilities inherent in any good system.</li>
+<li>**Bad trades are optional*</li>
+<li>and represent a failure of discipline, not strategy, regardless of the P\&L outcome.</li>
+<li>Focusing on the *quality</li>
+<li>of your execution over the *outcome</li>
+<li>of the trade is the path to psychological freedom.Immediately review your journal and identify whether your recent losses were due to a losing outcome or a rule violation, and only focus on eliminating the bad trades.don't be afraid of losing trades Traders be afraid of bad trades because a bad trade is a very different thing than a losing trade</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>we have to remember that in trading there are bad trades and losing trades and any good Trader needs to know the difference so this is your reminder today don&#x27;t be afraid of losing trades Traders be afraid of bad trades because a bad trade is a very different thing than a losing trade I hope you put that up on a post it and Mark it for repeated review no</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

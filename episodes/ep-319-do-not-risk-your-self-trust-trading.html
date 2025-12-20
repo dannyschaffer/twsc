@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Abandoning Your Trading Strategy</p>
-<p>When you trade based on temptation rather than your strategy, you incur more than just a financial loss. Each unplanned entry or exit erodes your self-trust, making it increasingly difficult to rely on your judgment. This cycle of inconsistency undermines the foundational relationship you have with yourself as a professional trader.  * The true cost of an impulsive trade is the simultaneous damage to both your <strong>P\&L and your self-trust</strong>.</p>
+                <h3>The Hidden Cost of Abandoning Your Trading Strategy</h3>
+<p>When you trade based on temptation rather than your strategy, you incur more than just a financial loss. Each unplanned entry or exit erodes your self-trust, making it increasingly difficult to rely on your judgment. This cycle of inconsistency undermines the foundational relationship you have with yourself as a professional trader.</p>
 <ul>
+<li>The true cost of an impulsive trade is the simultaneous damage to both your <strong>P\&L and your self-trust</strong>.</li>
 <li>Inconsistent behavior creates a deep-seated <strong>lack of confidence</strong>, making future execution and clear decision-making much harder.</li>
 <li>Your trading strategy is essentially a commitment to yourself; failure to adhere is a failure to <strong>keep your word</strong>.Treat your written trading plan as an absolute, non-negotiable contract, understanding that deviation is equivalent to breaking a promise to your professional self."Every time you are tempted by something completely out of left field, you not only harm your P&L, but you harm your self-trust."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>every time you have a strategy and you come onto your trading task and are tempted by something that&#x27;s completely out of left field you not only harm your p&amp;l but you know what else you harm your self trust you harm you being able to count on yourself if you don&#x27;t keep your word to at least relationship you have with yourself and you&#x27;re trading it&#x27;s going to be very hard for you guys to have confidence in the future sure</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

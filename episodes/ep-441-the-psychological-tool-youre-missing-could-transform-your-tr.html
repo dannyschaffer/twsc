@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Your Basic Needs are Secretly Driving Your Riskiest Trades</p>
-<p>Your trading behavior is often driven by unconscious attempts to fulfill core personal needs. When critical emotional requirements—like adventure, security, or connection—are unmet in your life, they can seep into your trading decisions, leading to high-risk, self-sabotaging mistakes that hurt your P&L.  * <strong>The Needs Transfer Effect</strong>: Unmet personal needs for emotional states like excitement or security often manifest as unexpected and unreasonable risk in your trading account.</p>
+                <h3>Why Your Basic Needs are Secretly Driving Your Riskiest Trades</h3>
+<p>Your trading behavior is often driven by unconscious attempts to fulfill core personal needs. When critical emotional requirements—like adventure, security, or connection—are unmet in your life, they can seep into your trading decisions, leading to high-risk, self-sabotaging mistakes that hurt your P&L.</p>
 <ul>
+<li><strong>The Needs Transfer Effect</strong>: Unmet personal needs for emotional states like excitement or security often manifest as unexpected and unreasonable risk in your trading account.</li>
 <li><strong>Risk as Emotional Substitute</strong>: Behavior like over-leveraging or chasing volatile setups may not be a strategic failure but an unconscious effort to replace external fulfillment (like adventure) that is currently missing.</li>
 <li><strong>Seasoned Traders are Vulnerable</strong>: Even highly experienced traders can suddenly develop poor risk habits if significant life changes disrupt their external coping mechanisms.Actionable Takeaway: Audit your non-trading life to ensure your core needs for challenge, connection, or safety are being met outside of the market; do not rely on your P&L to provide emotional satisfaction.The key here is are you potentially trying to get a need met through your trading account</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>is it possible that you are looking to get your basic needs met in your trading instead of in other scenarios of your life here&#x27;s an example I coached one Trader in the middle of the pandemic who saw herself taking unusual risk she&#x27;d been a Trader season Trader for 10 years and yet she&#x27;s like I&#x27;m taking all this risk himim how come what we discovered was that she was a weekend warrior and during Co she wasn&#x27;t able to have those Adventures having her need for adventure met began to seep unconsciously into how she traded she was taking unreasonable risk and it was hurting her account so the key here is are you potentially trying to get a need met through your trading account</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

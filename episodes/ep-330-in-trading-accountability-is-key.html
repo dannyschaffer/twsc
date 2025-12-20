@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The True Cost of Blame: Why Accountability is Your Only Edge</p>
-<p>Stop sacrificing your long-term profitability to save face. When you continually blame external factors for poor results, you are trapped in a cycle of stagnation and avoid the emotional clarity of facing personal mistakes. True trading evolution begins when you end the narrative of blame and accept responsibility for your outcomes.  - Accountability is not about self-punishment; it is about taking <strong>ownership of your results</strong> to facilitate genuine growth.</p>
+                <h3>The True Cost of Blame: Why Accountability is Your Only Edge</h3>
+<p>Stop sacrificing your long-term profitability to save face. When you continually blame external factors for poor results, you are trapped in a cycle of stagnation and avoid the emotional clarity of facing personal mistakes. True trading evolution begins when you end the narrative of blame and accept responsibility for your outcomes.  - Accountability is not about self-punishment; it is about taking **ownership of your results*</p>
 <ul>
+<li>to facilitate genuine growth.</li>
 <li>The path to accountability is simply turning up the volume on your <strong>self-awareness</strong>, removing sugarcoating and rationalization from your process.</li>
-<li><strong>Blame is a costly rationalization</strong> that prevents you from learning the genuine lessons hidden within your losses.Actionable Takeaway: For the next week, when reviewing a loss, deliberately skip the question "Why?" and focus only on objectively observing your actions.The only one that needs to take accountability is you and all that means is to turn up the volume on your self-awareness</li>
+<li>**Blame is a costly rationalization*</li>
+<li>that prevents you from learning the genuine lessons hidden within your losses.Actionable Takeaway: For the next week, when reviewing a loss, deliberately skip the question "Why?" and focus only on objectively observing your actions.The only one that needs to take accountability is you and all that means is to turn up the volume on your self-awareness</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you can blame it on this you can blame it on that but the only one that needs to take accountability is you and all that means is to turn up the volume on your self-awareness doesn&#x27;t mean to beat yourself up doesn&#x27;t mean to give yourself a hard time it simply means to start to really take look at yourself without sugarcoating it right without trying to rationalize things away</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

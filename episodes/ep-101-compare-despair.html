@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Comparison Trap: Why Chasing Others' Wins Sabotages Your Trading</p>
-<p>The constant influx of social media "brags" detailing massive, rapid successes—from business triumphs to overnight trading fortunes—is a significant threat to your psychological edge. Allowing yourself to compare your methodical progress to these external, often unrealistic narratives creates an emotional loop that breeds doubt and ultimately leads to despair. This toxic habit diverts mental energy away from the critical work of optimizing your own process.  - The online trading world is filled with <strong>edited and misleading narratives</strong> that conceal the real time and effort required for consistency.</p>
+                <h3>The Comparison Trap: Why Chasing Others' Wins Sabotages Your Trading</h3>
+<p>The constant influx of social media "brags" detailing massive, rapid successes—from business triumphs to overnight trading fortunes—is a significant threat to your psychological edge. Allowing yourself to compare your methodical progress to these external, often unrealistic narratives creates an emotional loop that breeds doubt and ultimately leads to despair. This toxic habit diverts mental energy away from the critical work of optimizing your own process.  - The online trading world is filled with **edited and misleading narratives*</p>
 <ul>
-<li>Fixating on others' gains forces you to chase <strong>arbitrary external targets</strong> instead of focusing on mastering the repeatable rules of your own strategy.</li>
-<li>Measuring your performance against someone else's highlight reel prevents you from recognizing and <strong>honoring your unique path</strong> and necessary learning curve.Actionable Takeaway: Audit the content you consume; actively filter or mute sources that consistently trigger the urge to compare your P&L or progress to others.compare always equals despair</li>
+<li>that conceal the real time and effort required for consistency.</li>
+<li>Fixating on others' gains forces you to chase **arbitrary external targets*</li>
+<li>instead of focusing on mastering the repeatable rules of your own strategy.</li>
+<li>Measuring your performance against someone else's highlight reel prevents you from recognizing and **honoring your unique path*</li>
+<li>and necessary learning curve.Actionable Takeaway: Audit the content you consume; actively filter or mute sources that consistently trigger the urge to compare your P&L or progress to others.compare always equals despair</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>hey guys I&#x27;m curious if you&#x27;ve noticed this on Twitter there&#x27;s a lot of tweets coming forward that are Braggs I love Braggs but these are like you know I lost 30 pounds in a really short amount of time I just started a business only a year ago and now I&#x27;m a multi-villain hair I am a Trader who just started uh maybe uh one year ago and now I&#x27;m making consistent income I&#x27;m just seeing so many of them more than ever before and the reason I want to point them out to you is it&#x27;s so easy to fall in the Trap of compare compare always equals despair don&#x27;t get trapped in that I love brags but if you use those brags that you read to compare yourself to other people</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

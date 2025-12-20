@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The 'Future Self' Technique to Hardwire Trading Success</p>
-<p>Many traders rely on external market results to validate their confidence, leading to emotional volatility and inconsistency. This emotional intelligence prep session offers a powerful technique to rewire your nervous system by viewing your trading future through the lens of success. Learn how to stop chasing external approval and start building <strong>unshakeable internal confidence</strong>.  - The exercise uses the power of gratitude and <strong>future self-reflection</strong> to hardwire success into your hard wiring.</p>
+                <h3>The 'Future Self' Technique to Hardwire Trading Success</h3>
+<p>Many traders rely on external market results to validate their confidence, leading to emotional volatility and inconsistency. This emotional intelligence prep session offers a powerful technique to rewire your nervous system by viewing your trading future through the lens of success. Learn how to stop chasing external approval and start building <strong>unshakeable internal confidence</strong>.  - The exercise uses the power of gratitude and **future self-reflection*</p>
 <ul>
+<li>to hardwire success into your hard wiring.</li>
 <li>True confidence is derived from <strong>internal validation</strong>, shifting focus away from fleeting P\&L metrics.</li>
 <li>Emotional intelligence is demonstrated by staying true to your strategies and accepting unexpected outcomes.Actionable Takeaway: Write a letter to yourself dated 2024, describing how successfully you traded in 2023, emphasizing your emotional intelligence and strategic adherence.We're setting and pre-setting all into your hard wiring the success that you want.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is Kim and Curtin with the Wall Street coach today is December 18 2022 and this is my Sunday Trader prep around emotional intelligence part one was last week I invite you to consider watching that part two is today and what part two&#x27;s homework assignment to you is in preparation for the new year is to write a letter to yourself dating in 2024. that&#x27;s right two years ahead and I want in that letter for you to be writing to yourself about how incredible you traded in 2023 how you stayed true to your strategies or even found new strategies unexpected how much emotional intelligence you showed in 2023 how much you began to really rely upon internal validation for your confidence as opposed to external validation what we&#x27;re doing is we&#x27;re setting and pre-setting all into your hard wiring the success that you want 2023 to be through the process of gratitude and being in your future self looking back on this self that you&#x27;re going to be in 2023 let me know how that practice goes for you if you have any questions of course send an email to Kenneth Wall Street coach</p>
-<p>or send feed Dion on Twitter or Instagram if you want more information like this and you want a really good assessment and a check-in on where you are now please go to tradercheckin.com sign up for my small short assessment that you can do at your trading desk right before you trade every day I hope you have profitability this week I hope you stay safe and I wish you a Mele Kalikimaka</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

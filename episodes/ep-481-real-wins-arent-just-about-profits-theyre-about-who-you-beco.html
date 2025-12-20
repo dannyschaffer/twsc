@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,18 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>THE REAL WIN IS THE TRADER YOU BECOME, NOT THE PROFIT YOU CHASE</p>
-<p>Many traders define success by external markers like a big P&L or achieving a major goal. However, these tangible victories often miss the point. The real, long-lasting edge comes from the internal transformation and capacity built after the initial success is achieved.  * *Real breakthroughs* require you to take risk and trust yourself beyond your current comfort level.</p>
+                <h3>THE REAL WIN IS THE TRADER YOU BECOME, NOT THE PROFIT YOU CHASE</h3>
+<p>Many traders define success by external markers like a big P&L or achieving a major goal. However, these tangible victories often miss the point. The real, long-lasting edge comes from the internal transformation and capacity built after the initial success is achieved.</p>
 <ul>
-<li>External achievements are secondary to the *personal evolution* they force you to undergo.</li>
-<li>Staying open to unexpected growth can lead to a *whole new way to live* and perform at the highest level.Actionable Takeaway: Challenge your current comfort zone by identifying one routine (mental or structural) and intentionally introducing a small, managed risk to foster deeper self-trust.</li>
+<li>*Real breakthroughs</li>
+<li>require you to take risk and trust yourself beyond your current comfort level.</li>
+<li>External achievements are secondary to the *personal evolution</li>
+<li>they force you to undergo.</li>
+<li>Staying open to unexpected growth can lead to a *whole new way to live</li>
+<li>and perform at the highest level.Actionable Takeaway: Challenge your current comfort zone by identifying one routine (mental or structural) and intentionally introducing a small, managed risk to foster deeper self-trust.</li>
 </ul>
 <p>Quote:</p>
 <p>The real win was what happened after... it really changed was me.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>10 years ago I thought my biggest goal was publishing my book transforming Wall Street but when I look back I realized that wasn&#x27;t the real win the real win was what happened after I thought the book would change how people saw capitalism but it really changed was me it pushed me to take risk trust myself and leave behind everything comfortable and familiar and because of that I found something even better a whole new way to live to work and to people at the highest level Traders your next breakthrough won&#x27;t necessarily look how you expect but if you stay open sometimes it&#x27;ll be even bigger than you imagine share with me please in the comments a moment that changed your perspective please comment below</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +257,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

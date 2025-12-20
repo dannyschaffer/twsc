@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Looking for the Next Strategy: The Infinite Profit Potential of Self-Exploration</p>
+                <h3>Stop Looking for the Next Strategy: The Infinite Profit Potential of Self-Exploration</h3>
 <p>Many traders hit a ceiling or find themselves perpetually stuck in a dead end because they are constantly seeking external fixes. The real emotional cost of this stagnation is the belief that the market holds the key to personal fulfillment. The most important subject you can investigate for lasting success is your own internal world.  - <strong>The Paramount Subject</strong>: The investigation and exploration of self is the most paramount subject available, offering far greater returns than any market signal.</p>
 <ul>
 <li><strong>Embrace the Full Adventure</strong>: Getting to know yourself is an "endless adventure," simultaneously fun, entertaining, and at times "horrific"—but always deeply rewarding.</li>
-<li><strong>The True Frontier</strong>: If you feel bored or lost, the new frontier you need to invest your time and energy into is simply looking within.<strong>Actionable Takeaway:</strong> When you feel trading boredom or a sense of professional flatness, immediately redirect that energy into journaling about the specific internal drivers that are making you feel disconnected from your work."I know of no other more paramount subject to investigate. I know of no other subject more important or more fun and entertaining and horrific than to investigate ourselves, to explore ourselves, to get to know ourselves, to get to know what we don't know about ourselves."</li>
+<li><strong>The True Frontier</strong>: If you feel bored or lost, the new frontier you need to invest your time and energy into is simply looking within.**Actionable Takeaway:*</li>
+<li>When you feel trading boredom or a sense of professional flatness, immediately redirect that energy into journaling about the specific internal drivers that are making you feel disconnected from your work."I know of no other more paramount subject to investigate. I know of no other subject more important or more fun and entertaining and horrific than to investigate ourselves, to explore ourselves, to get to know ourselves, to get to know what we don't know about ourselves."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>If we&#x27;re bored in life or at a or or at a dead end, I would say this, I think you get it from the book. I mean, investigation of self, the exploration of self of our own selves. I know of no other more paramount subject to investigate. I know of no other subject more important or more fun and entertaining and horrific than to investigate ourselves, to explore ourselves, to get to know ourselves, to get to know what we don&#x27;t know about ourselves. If we&#x27;re looking for something to do if we&#x27;re bored in life or at a or or at a dead end, I mean, just go look in the mirror and go, &amp;quot;Oo, I got plenty to do.&amp;quot; I mean, it&#x27;s an endless adventure. Yeah. um that maybe I think my book somehow is reminding people, oh yeah, there&#x27;s the new frontier. There&#x27;s a frontier I need to invest more time in. There&#x27;s a frontier that&#x27;s going to be endlessly entertaining. There&#x27;s a frontier that&#x27;s going to be</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

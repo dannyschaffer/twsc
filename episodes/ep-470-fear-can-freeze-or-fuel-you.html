@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How to Achieve "Fearless" Execution by Trusting Your Plan</p>
+                <h3>How to Achieve "Fearless" Execution by Trusting Your Plan</h3>
 <p>Hesitation before taking a trade is a clear sign that fear is interfering with your execution. When you prioritize avoiding loss over following your system, you are trading emotionally, costing you potential profit and damaging your confidence. The path to consistent execution requires shifting your focus from being "right" to managing risk.  - Focus on <strong>managing risk and playing the probabilities</strong>, not on being right.</p>
 <ul>
 <li>True confidence comes from <strong>trusting your process</strong>, which is built through consistent backtesting, visualization, and review.</li>
-<li><strong>Detaching from the outcome</strong> means focusing only on following your plan, not worrying about the P\&L.Reduce your trade size until you can execute your strategy automatically without any hesitation, and then gradually scale up your position.Stop thinking what if I lose; start thinking am I following my plan. That's all that matters.</li>
+<li>**Detaching from the outcome*</li>
+<li>means focusing only on following your plan, not worrying about the P\&L.Reduce your trade size until you can execute your strategy automatically without any hesitation, and then gradually scale up your position.Stop thinking what if I lose; start thinking am I following my plan. That's all that matters.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>trading isn&#x27;t about being right it&#x27;s about managing risk still hesitating before taking trades fear is holding you back but here&#x27;s how to shift into Fearless execution accept risk don&#x27;t avoid trading isn&#x27;t about being right it&#x27;s about managing risk and playing the probabilities detach from the outcome stop thinking what if I lose start thinking am I following my plan that&#x27;s all that matters shrink the fear reduce size until you connect q without as ation then scale up when you&#x27;re ready Fearless Trad is prepare the more you back test visualize review your trades the more automatic confidence becomes freist trading comes from trusting your process drop Fearless in the comments and I&#x27;ve sent you my top hacks for confident execution</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

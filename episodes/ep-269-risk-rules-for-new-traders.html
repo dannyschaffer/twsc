@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Goldilocks Rule: Why Risking 1% is the Safest Path to Compounding Gains</p>
+                <h3>The Goldilocks Rule: Why Risking 1% is the Safest Path to Compounding Gains</h3>
 <p>Many new traders fail to grasp the sensitivity of proper risk management, often perceiving low-risk rules as too slow. This impatience leads them to aggressively increase their risk per trade to 10% or 15%, driven by the misconception that they must maximize the profit from "sure thing" setups. This pursuit of quick wealth dangerously ignores the long-term reality of probability and compound growth.  - <strong>The 1% "Goldilocks" Rule</strong>: Risking just 1% of your account per trade is neither too aggressive nor too defensive, offering a reliable foundation for longevity.</p>
 <ul>
 <li><strong>The Illusion of Quick Wins</strong>: Beginner traders often overlook how gradually compounded gains add up, mistakenly believing they need to risk large amounts (10-15%) to achieve substantial returns.</li>
 <li><strong>Understanding Probabilistic Outcomes</strong>: Even an A+ or S-tier setup carries a significant risk of failure, which must be factored into your risk model.Actionable Takeaway: Commit to a strict 1% risk-per-trade rule, ignoring the emotional urge to increase position size for trades you label as "A+" or "S-tier."it's all probability so even if you have like 75% chance to win right they still at 25% chance you don't</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what a lot of Traders don&#x27;t understand at the beginner level is like how sensitive risk is so say for example like I always try to tell people like 1% of your account is really reliable it&#x27;s almost like the Goldilocks um it&#x27;s never let me down and it&#x27;s neither too aggressive nor too defensive like you&#x27;re kind of just risking enough and what Traders tend to do is they feel it&#x27;s too small and they don&#x27;t understand how gradually compound those gains really adds up and therefore they try to do those things where they go like let&#x27;s risk 10% of my account let&#x27;s risk 15% of my account that&#x27;s trade because it&#x27;s a so-called like s tier or A+ trade or something like this it&#x27;s not like every single trade you take is a winner I mean like at the end of the day it&#x27;s all probability so even if you have like 75% chance to win right they still at 25% chance you don&#x27;t and how do you even quantify those odds anyway</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

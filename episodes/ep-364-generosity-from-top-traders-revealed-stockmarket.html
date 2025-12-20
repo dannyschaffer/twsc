@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>The Unlikely Generosity of Top Traders: How Due Diligence Gets You Answers</h3>
-<p>You may feel blocked from getting guidance from the world's best traders. The truth is, many professionals at the top of the food chain are willing to share their wisdom. However, their generosity is earned, not given; it requires a demonstrated commitment to your own effort and preparation.  * <strong>The Effort Hurdle</strong>: Top traders receive endless inquiries, filtering responses only for those who show genuine commitment and effort.</p>
+                <h3>The Unlikely Generosity of Top Traders: How Due Diligence Gets You Answers</h3>
+<p>You may feel blocked from getting guidance from the world's best traders. The truth is, many professionals at the top of the food chain are willing to share their wisdom. However, their generosity is earned, not given; it requires a demonstrated commitment to your own effort and preparation.</p>
 <ul>
+<li><strong>The Effort Hurdle</strong>: Top traders receive endless inquiries, filtering responses only for those who show genuine commitment and effort.</li>
 <li><strong>Due Diligence is Currency</strong>: Access to guidance is directly proportional to how much work you have already put into finding the answer yourself.</li>
 <li><strong>Reciprocal Respect</strong>: When you respect a professional's time by demonstrating preparation, they are more likely to offer valuable, personalized feedback.Actionable Takeaway: Before sending any communication, ensure you have researched the topic thoroughly and articulated exactly what specific help you need.If they feel that person who is writing them has done their due diligence, really gives a damn, is really trying and shows that effort, they write them back.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>there&#x27;s so much out there guys that you really really have no excuse to and and half the time half the time I have heard this from all of those guys at the top of the food chain they get DMS they get emails all the time and if they feel that person who the traditor who&#x27;s writing them has done their due diligence really gives a damn is really trying and shows that effort they write them back do you know how long that takes I mean it&#x27;s hard enough to just get through your inbox every day but these guys are answering questions from traders that probably they&#x27;ve been asked a thousand times</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

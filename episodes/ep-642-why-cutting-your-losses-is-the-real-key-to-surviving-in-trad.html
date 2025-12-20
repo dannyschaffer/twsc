@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The #1 Principle: Why Survival Beats Offense in Trading</p>
-<p>Many traders enter the market obsessed with high-risk offense, believing that winning big is the only path to success. This aggressive mindset is costly and ultimately unsustainable. The key to lasting profitability lies in adopting a defensive posture focused purely on survival.  * <strong>Prioritize Survival</strong>: Trading longevity is measured by your obsession with defense, not offense—a habit learned from great market masters.</p>
+                <h3>The #1 Principle: Why Survival Beats Offense in Trading</h3>
+<p>Many traders enter the market obsessed with high-risk offense, believing that winning big is the only path to success. This aggressive mindset is costly and ultimately unsustainable. The key to lasting profitability lies in adopting a defensive posture focused purely on survival.</p>
 <ul>
+<li><strong>Prioritize Survival</strong>: Trading longevity is measured by your obsession with defense, not offense—a habit learned from great market masters.</li>
 <li><strong>The Defense-First Mindset</strong>: Long-term winners recognize that protecting capital is vastly more crucial than pursuing aggressive, high-risk gains.</li>
 <li><strong>The Non-Negotiable Rule</strong>: The most essential practice for every trader is the immediate and consistent cutting of losses.Shift your daily focus from "How much can I win?" to "How much can I protect?"I guess if I could give one piece of advice to every trader out there, it would be cut your losses. Survival is the real key.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I guess if I could give one piece of advice to every trader out there, it would be cut your losses. Survival is the real key. I think it was uh the same KB and I can&#x27;t remember which book, but he wrote he had spent time with all these great traders and and he learned that they were all obsessed with survival. And you know, when I started, I was fairly convinced it was all about offense. And what I came to realize is that no, it&#x27;s really more about defense. It&#x27;s about playing defense. and and living to fight another</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

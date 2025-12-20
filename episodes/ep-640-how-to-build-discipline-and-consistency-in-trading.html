@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Strategies: The Real Secret to Consistent Discipline</p>
+                <h3>Stop Chasing Strategies: The Real Secret to Consistent Discipline</h3>
 <p>Many traders believe consistency hinges on finding the perfect market strategy. However, after two decades of coaching, it's clear that a lack of discipline—not flawed charts—is the most common mistake. If you struggle to stick to your rules, your profitability will remain elusive.</p>
 <p>Key Insights:  - The belief that success comes from finding the perfect strategy is a costly distraction.</p>
 <ul>
-<li><strong>Discipline</strong> is the number one core competency required to survive in the markets.</li>
-<li>Without the mental foundation to follow your plan, <strong>no trading system</strong> can save you.Actionable Takeaway: Audit your trading journal entries specifically for instances where you violated your own rules, then build a ritual around respecting those parameters before you analyze another chart.Most traders think the secret is finding the perfect strategy, but the real secret is mastering your mindset.</li>
+<li>**Discipline*</li>
+<li>is the number one core competency required to survive in the markets.</li>
+<li>Without the mental foundation to follow your plan, **no trading system*</li>
+<li>can save you.Actionable Takeaway: Audit your trading journal entries specifically for instances where you violated your own rules, then build a ritual around respecting those parameters before you analyze another chart.Most traders think the secret is finding the perfect strategy, but the real secret is mastering your mindset.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>So, what&#x27;s the secret? What&#x27;s the secret, dude? Most traders think the secret is finding the perfect strategy, but the real secret is mastering your mindset. I coached traders for over two decades. And the number one mistake I see isn&#x27;t about charge, but about discipline. If you can&#x27;t stick to your rules, no system is going to save you. Want to become consistent? Start with your mindset first.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

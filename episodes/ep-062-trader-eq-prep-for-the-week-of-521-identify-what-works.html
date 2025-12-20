@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Failures: The Power of Focusing on What Works in Your Trading</p>
+                <h3>Stop Chasing Failures: The Power of Focusing on What Works in Your Trading</h3>
 <p>It is standard practice to dissect every loss and mistake, but constantly focusing on negative outcomes breeds frustration and self-criticism. This trap blinds you to the successful actions you consistently take, leading to an inaccurate self-assessment and emotional drain.  - Appreciative Inquiry: Adopt a coaching perspective that focuses on noticing what works in your trading, not just what fails.</p>
 <ul>
 <li>Shifting Perspective: When you intentionally highlight correct execution and strategy adherence, the impact of poor performance often diminishes naturally.</li>
 <li>Strategy Adherence: Focus on areas where you are absolutely staying true to your strategy to build confidence and reinforce successful behavior.Actionable Takeaway: For the next week, conduct your trade reviews by focusing solely on identifying the behaviors, setups, and processes that resulted in positive outcomes or successful execution, regardless of the P&L outcome.</li>
 </ul>
 <p>"When you start to look at what works a lot of what doesn't work Falls by the wayside."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>a little hot everybody this is my May 21st traitor EQ prep for this week I want to just tell you about uh particular style of approach that&#x27;s used when going into organizations it&#x27;s a coaching sort of perspective it&#x27;s called appreciative inquiry it used to be called we&#x27;d call it coaches we call it AI but we can&#x27;t anymore but appreciative inquiry takes the approach that you walk into an organization or to an individual and you start to notice what works as opposed to what doesn&#x27;t work it&#x27;s so easy to focus always on what doesn&#x27;t work but I&#x27;ll tell you when you start to look at what works a lot of what doesn&#x27;t work Falls by the wayside I&#x27;m gonna invite you this week what would it be like as you assess the dates events to really highlight what worked I&#x27;m not telling you to ignore who didn&#x27;t but I just would like you just for a week to to test out this Theory if you start to really notice what you do well what you are doing correct where you are absolutely staying true to your strategy I&#x27;m curious what you might discover give it a</p>
-<p>shot let me know if it works and also check out traderpiere of journey.com that is my Discord room specifically to address the emotional side of trading that is what that room is about and I think you might just love it have a great week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

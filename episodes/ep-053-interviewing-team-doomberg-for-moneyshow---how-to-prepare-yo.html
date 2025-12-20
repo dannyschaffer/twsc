@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,24 +193,18 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Classic Mistake Traders Make Modeling Global Inflation</p>
+                <h3>The Classic Mistake Traders Make Modeling Global Inflation</h3>
 <p>When facing high inflation and market uncertainty, traders often confuse government reports (measured inflation) with consumer reality (realized inflation). The failure to accurately model the true global economic "flows" leads to costly blind spots, creating confusion and paralyzing decision-making when the market moves unexpectedly.</p>
-<p>Key Insights:  * <strong>The Inflation Duality</strong>: Successful analysis requires distinguishing between <strong>realized inflation</strong> (consumer behavior) and <strong>measured inflation</strong> (government reports and market response).</p>
+<p>Key Insights:</p>
 <ul>
+<li><strong>The Inflation Duality</strong>: Successful analysis requires distinguishing between **realized inflation*</li>
+<li>(consumer behavior) and **measured inflation*</li>
+<li>(government reports and market response).</li>
 <li><strong>Flows are the Key</strong>: Inflation is driven by the net flow of economic forces; miscalculating or missing one dominant flow (like a major geopolitical policy shift) renders your entire market assessment incorrect.</li>
-<li><strong>Underestimated Drivers</strong>: A primary inflationary flow the market may currently underestimate is the <strong>rapid reopening of China</strong> and its immediate, violent impact on commodity demand, such as oil.Actionable Takeaway:</li>
+<li><strong>Underestimated Drivers</strong>: A primary inflationary flow the market may currently underestimate is the **rapid reopening of China*</li>
+<li>and its immediate, violent impact on commodity demand, such as oil.Actionable Takeaway:</li>
 </ul>
 <p>To improve your macro perspective, consciously track global geopolitical shifts (like China's policy pivots) rather than relying solely on lagging economic indicators.Inflation like any other sort of measurement really comes down to flows.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>tell us your take your team&#x27;s take on inflation what what do you feel is the real story on inflation so there&#x27;s realized inflation that consumers feel and the behaviors that that instigates there&#x27;s measured inflation that governments report and the investor response that those reports initiate and they&#x27;re separate things it&#x27;s it&#x27;s obviously the question of the day it&#x27;s the reason why this entire conference exists there&#x27;s no sort of magic bullet or easy answer inflation like any other sort of measurement really comes down to flows and so there are flows in the economy that are you know stoking inflation and there are flows in the economy that are relieving inflation and then you try to model the the breadth of those Flows In Aggregate and the classic mistake of an analysis you&#x27;re missing one important one or you get an important one wrong and so your the integral of all of your assessments gives you an incorrect answer the most dominant flow in our view that the market may be underestimating and and may be a key reason why Powell remains hawkish based on the data he&#x27;s seeing is the the complete 180 in China and the</p>
-<p>speed with which president XI and the CCP totally abandoned their Dynamic zero covet policy and we&#x27;re not China experts in that I would expect we&#x27;ve said many times any Western analyst who claims to be is you should take a close look at because it&#x27;s an incred it&#x27;s a black box right so the Western analysts China&#x27;s a black box we have some experience in China we have a pretty extensive Rolex of contacts over there but um all of our friends in China said the pivot of the propaganda was unlike anything they&#x27;d ever seen and to us that meant reopening would be violently fast and that they would the CCP became prepared to suffer the medical consequences of what a rapid reopening would entail and they seem to have managed that now whether they&#x27;ve covered it up or whether it&#x27;s way worse in the ground that&#x27;s hard to say but for the investor the most dominant inflationary flow is the speed with which China is reopening and what that means for oil for example and other Commodities and that pulse that we all saw here when we reopened</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -293,13 +257,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

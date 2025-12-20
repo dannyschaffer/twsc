@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Silent Killer: Why Trading Alone Leads to Emotional Collapse</p>
-<p>Trading is often portrayed as a solitary endeavor, yet working in isolation can rapidly deplete your emotional reserves. Many consistent traders struggle with feeling unsupported, leading to demoralization and costly mistakes. Emotional support is a critical, non-negotiable foundation required for sustained success and longevity in the market.  * The <strong>Emotional Cost of Isolation</strong> is far more damaging to your P\&L than simple strategy flaws.</p>
+                <h3>The Silent Killer: Why Trading Alone Leads to Emotional Collapse</h3>
+<p>Trading is often portrayed as a solitary endeavor, yet working in isolation can rapidly deplete your emotional reserves. Many consistent traders struggle with feeling unsupported, leading to demoralization and costly mistakes. Emotional support is a critical, non-negotiable foundation required for sustained success and longevity in the market.</p>
 <ul>
-<li>Emotional support is a <strong>Critical Foundation</strong> for consistency, not a luxury reserved for leisure time.</li>
-<li>Feeling demoralized is often a direct indicator of insufficient <strong>External Support</strong> needed to weather difficult trading environments.Do not wait until you are emotionally overwhelmed; proactively secure a form of trading community support, such as joining a Discord room or membership group, this week.You need to have that support, don't let that wait until you feel like you're at your Breaking Point.</li>
+<li>The **Emotional Cost of Isolation*</li>
+<li>is far more damaging to your P\&L than simple strategy flaws.</li>
+<li>Emotional support is a **Critical Foundation*</li>
+<li>for consistency, not a luxury reserved for leisure time.</li>
+<li>Feeling demoralized is often a direct indicator of insufficient **External Support*</li>
+<li>needed to weather difficult trading environments.Do not wait until you are emotionally overwhelmed; proactively secure a form of trading community support, such as joining a Discord room or membership group, this week.You need to have that support, don't let that wait until you feel like you're at your Breaking Point.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>how comfortable are you working alone if you struggle with feeling super isolated then I really want you as a traitor to take that seriously I can&#x27;t tell you how often I will hear a traitor really feeling demoralized because they don&#x27;t have enough support emotionally and this is a really critical piece and Foundation To Go the Distance so my homework assign to you this week is to find a way to create more support for yourself if that means joining a Discord room if that means joining a particular uh membership group you need to have that support don&#x27;t let that wait until you feel like you&#x27;re at your Breaking Point</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

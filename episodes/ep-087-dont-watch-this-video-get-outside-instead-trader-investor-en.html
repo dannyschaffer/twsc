@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Weekend Capacity Reset: Why Stepping Away is Your Strategic Move</p>
+                <h3>The Weekend Capacity Reset: Why Stepping Away is Your Strategic Move</h3>
 <p>The constant focus on market data, technology, and news throughout the week creates a compounding cognitive load. This fatigue prevents you from showing up as your best self when markets open, ultimately eroding your decision-making edge and P&L. Intentional decompression is not a luxury—it is a critical part of your strategy.  - <strong>Decompression is Necessary</strong>: Actively move away from technology and news to allow your nervous system to reset from the week's stress.</p>
 <ul>
 <li><strong>Cognitive Mixing</strong>: Engaging in creative or varied activities on the weekend is vital for maximizing cognitive performance during the trading week.</li>
 <li><strong>Build Resilience</strong>: Voluntarily pursuing experiences outside your comfort zone (for at least 48 hours) helps stretch your mental capacity and improve adaptability.This weekend, challenge yourself to try one new activity you would normally decline to facilitate genuine mental decompression and stretch your emotional capacity."You want to be as creative on the weekends as you possibly can be for cognitive reasons alone because you need to mix it up for you to really be the best version of you."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you find ways to really enjoy yourself and decompress get yourself away from technology if at all possible get yourself away from the news get yourself away from that which is your day-to-day during the week you want to be as creative on the weekends as you possibly can be for cognitive reasons alone because you need to mix it up for you to really be the best version of you so try to do something out of your comfort zone this weekend try to take on something that you normally would have said no to just so that you have an opportunity to stretch yourself and be out of your comfort zone for at least 48 hours and I wanna direct the report of how it goes all right in Hawaii we always say happy Aloha Friday so that&#x27;s what I wish to you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

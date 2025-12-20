@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Mental Qualities You Must Master Before You Start Trading</p>
+                <h3>The Mental Qualities You Must Master Before You Start Trading</h3>
 <p>Jumping into the market without the necessary psychological foundation is a guaranteed path to frustration and financial pain. Success demands a specific set of internal attributes that most new traders overlook while focusing solely on charts and indicators. Developing these foundational qualities will radically shift your journey from chaos to consistent performance.  - <strong>Mistakes Are Not Personal</strong>: The capacity to be wrong and mistaken without internalizing it as a personal failure is essential for survival.</p>
 <ul>
-<li><strong>Patience and Self-Forgiveness</strong>: Longevity in trading requires immense <strong>patience</strong> and the ability to <strong>forgive oneself</strong> after inevitable setbacks.</li>
+<li><strong>Patience and Self-Forgiveness</strong>: Longevity in trading requires immense **patience*</li>
+<li>and the ability to **forgive oneself*</li>
+<li>after inevitable setbacks.</li>
 <li><strong>Risk within Financial Capacity</strong>: Ensure your trading capital is truly risk capital, preventing a painful financial situation during the long learning curve.Actionable Takeaway: Honestly assess your ability to handle mistakes and pressure, and commit to working on those psychological weak points before you "die Full Throttle" in the market."be honest with yourself ask yourself truly are those things that you struggle with and if you do then please do some work around all of them before you die Full Throttle"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what are the qualities one should have to be a traditor you need to be able to be somebody who is patient you are somebody that needs to be okay with being mistaken and being wrong without taking a personally you need to be somebody who is not financially going to be in a really you know painful situation if you don&#x27;t uh succeed as a traiter immediately because it takes a long time you also need to be somebody who is able to be patient somebody who is able to forgive oneself these are all qualities that are going to make your journey as a Trader radically different so be honest with yourself ask yourself truly are those things that you struggle with and if you do then please do some work around all of them before you die Full Throttle</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

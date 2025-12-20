@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of Self-Abuse: Why Discipline Needs Compassion</p>
-<p>The extreme dedication required in trading often crosses the line into self-abuse, where traders deny their basic physiological needs—such as eating or taking necessary breaks. This false sense of toughness actually undermines peak performance, as your body cannot operate optimally without fundamental care.  - <strong>The Self-Abuse Trap</strong>: Many traders mistakenly believe that intense dedication requires <strong>denying basic needs</strong> (like eating or bathroom breaks), viewing it as discipline rather than self-harm.</p>
+                <h3>The Hidden Cost of Self-Abuse: Why Discipline Needs Compassion</h3>
+<p>The extreme dedication required in trading often crosses the line into self-abuse, where traders deny their basic physiological needs—such as eating or taking necessary breaks. This false sense of toughness actually undermines peak performance, as your body cannot operate optimally without fundamental care.  - <strong>The Self-Abuse Trap</strong>: Many traders mistakenly believe that intense dedication requires **denying basic needs*</p>
 <ul>
+<li>(like eating or bathroom breaks), viewing it as discipline rather than self-harm.</li>
 <li><strong>Physiological Deterioration</strong>: Denying physical needs prevents the body from operating at peak condition, leading directly to <strong>reduced focus and poor trading decisions</strong>.</li>
 <li><strong>Compassion is Peak Performance</strong>: You can pursue ambitious goals and still practice <strong>self-compassion</strong>, recognizing that self-care is a prerequisite for sustained excellence.Actionable Takeaway: Schedule non-negotiable physical breaks (for food, water, and rest) into your day, treating them as necessary operational requirements, not optional luxuries.What's happening in those moments is your body physiologically is not going to operate at Peak condition if you are denying those basic needs that your body has</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>nobody is harder on themselves than Traders I will never deny how much work it takes to be a traitor but when that dedication hard work slips into self abuse you guys have gone too far there is no doubt that you can reach for Bodacious goals and still practice compassion for yourself I can&#x27;t tell you how many traitors I&#x27;ve spoken to over the years who who actually don&#x27;t go to the bathroom for hours when they need to Ive talked to traitors who don&#x27;t eat food for hours even though their stomach is grumbling but what&#x27;s happening in those moments is your body physiologically is not going to operate at Peak condition if you are denying those basic needs that your body has</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

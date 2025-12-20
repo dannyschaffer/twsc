@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Halfway: The Resolution to Live Your Trading Life 'Full Throttle'</p>
+                <h3>Stop Trading Halfway: The Resolution to Live Your Trading Life 'Full Throttle'</h3>
 <p>In the midst of market negativity and fear, traders often resort to excessive caution, leading to a "half-life" approach that prevents true professional fulfillment. This under-commitment, driven by fear, costs you more than just profits; it limits the dedication you can bring to your self-development and your most important relationships. The key to long-term mastery lies in resolving to engage fully with every aspect of your process.  - <strong>Full Commitment is Required</strong>: Living life or trading "halfway" due to fear or external negativity will inevitably limit your performance and prevent you from realizing your full potential.</p>
 <ul>
-<li><strong>The Prudence Trap</strong>: While it is crucial to use wisdom and <strong>prudence</strong> in risk management, being "too careful" becomes a form of self-sabotage that must be overcome.</li>
+<li><strong>The Prudence Trap</strong>: While it is crucial to use wisdom and **prudence*</li>
+<li>in risk management, being "too careful" becomes a form of self-sabotage that must be overcome.</li>
 <li><strong>Increase Your Investment</strong>: To move to the next level, actively examine where you can be giving <strong>more of yourself</strong>—to your trading, your mental state, and your personal development.Identify one area of your life or trading process where you are holding back and commit to taking it "Full Throttle" without reservation.do not live half a life do not die half a death</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is command curtain with the Wall Street coach and this is my 2023 prep for everyone I came across a poem that I&#x27;m going to share with you guys on social media and it&#x27;s a poem by Gabriel and this is how it starts out do not love half lovers do not entertain have friends do not indulge in works of the half town to do not live half a life do not die have a death and that to me is the most inspiring words I could hear right now as I start 2023 and I hope that you too will take what he&#x27;s saying here to heart in the midst of all the negative negativity we&#x27;ve been kind of inundated with for this past year I invite you just like I invite myself to not be bogged down by it it&#x27;s really easy to get Negative it&#x27;s really easy to dance and live and work carefully I&#x27;m not saying tonight use Prudence I&#x27;m not saying that you shouldn&#x27;t use wisdom but please where is it that you could be giving more of yourself to a relationship to your trading to your work to your family</p>
-<p>to the way you live your life to your body to your heart to your mind where are the places you are perhaps being too careful where could you start to not live half a life and actually take it Full Throttle to the next level that&#x27;s what I&#x27;m asking myself as I step into this new year and I invite you to join me to live 2023 all the way through and not halfway Come What May I hope you have a beautiful new year I hope you don&#x27;t live it halfway and I look forward to seeing you in 2023</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

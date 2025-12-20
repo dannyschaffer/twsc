@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Paradigm Shift That Turns Trading Challenges Into Growth</p>
-<p>When setbacks and losses hit your trading account, it is natural to feel targeted and victimized. This perspective locks you into a cycle of self-pity and resistance, preventing necessary evolution. Shifting your view of market challenges from personal attacks to personalized coaching is the key to mastering your psychology and achieving consistent upleveling.  * Trading challenges are not random punishment; they are opportunities designed to <strong>"uplevel you"</strong>.</p>
+                <h3>The Paradigm Shift That Turns Trading Challenges Into Growth</h3>
+<p>When setbacks and losses hit your trading account, it is natural to feel targeted and victimized. This perspective locks you into a cycle of self-pity and resistance, preventing necessary evolution. Shifting your view of market challenges from personal attacks to personalized coaching is the key to mastering your psychology and achieving consistent upleveling.</p>
 <ul>
+<li>Trading challenges are not random punishment; they are opportunities designed to <strong>"uplevel you"</strong>.</li>
 <li>Adversity should be reframed as a challenging coach trying to push you <strong>"beyond your comfort level"</strong>.</li>
-<li>Embracing this shift fundamentally changes your <strong>"whole dynamic"</strong> with the market.Actionable Takeaway: When reviewing your journal, consciously tell yourself, "This is happening for me," instead of, "This is happening to me.""This is happening for me instead of this is happening to me"</li>
+<li>Embracing this shift fundamentally changes your **"whole dynamic"*</li>
+<li>with the market.Actionable Takeaway: When reviewing your journal, consciously tell yourself, "This is happening for me," instead of, "This is happening to me.""This is happening for me instead of this is happening to me"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what if all the challenges that have come your way in your trading account in your life aren&#x27;t happening to you but they&#x27;re happening for you this is an old spiritual statement but it packs a wall up when you start to consider that the universe is actually on your side here to uplevel you it starts to feel a little bit more like a challenging coach that is trying to get you beyond your comfort level when you start to think that it&#x27;s on your side and that it wants the best for you I can tell you the whole dynamic shifts so my homework to you is start to think this is happening for me instead of this is happening to me</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

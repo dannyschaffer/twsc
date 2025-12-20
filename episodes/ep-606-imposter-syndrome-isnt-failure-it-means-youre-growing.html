@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Calling It Failure: Why Imposter Syndrome Means You're Actually Evolving</p>
+                <h3>Stop Calling It Failure: Why Imposter Syndrome Means You're Actually Evolving</h3>
 <p>The feeling of being a fraud, even when you are performing well, is known as imposter syndrome. In trading, this pervasive feeling often prevents you from internalizing your success and embracing your identity as a profitable trader. This video reframes this anxiety not as a flaw, but as a crucial sign that you are actually growing.</p>
-<p>Key Insights:  * Imposter syndrome is a signal of <strong>growth</strong>, not a predictor of failure.</p>
+<p>Key Insights:</p>
 <ul>
-<li>The key to moving past it is implementing <strong>reflection systems</strong> and identity work that helps you internalize your victories, rather than just survive them.</li>
-<li>True progress comes from shifting your self-perception to a belief that you <strong>belong</strong> in the markets.Actionable Takeaway:</li>
+<li>Imposter syndrome is a signal of <strong>growth</strong>, not a predictor of failure.</li>
+<li>The key to moving past it is implementing **reflection systems*</li>
+<li>and identity work that helps you internalize your victories, rather than just survive them.</li>
+<li>True progress comes from shifting your self-perception to a belief that you **belong*</li>
+<li>in the markets.Actionable Takeaway:</li>
 </ul>
 <p>Implement a reflection practice that tracks the emotional state and self-perceptions associated with your winning streaks to normalize and internalize success.You don't just deserve to be here. You belong</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>That, my friend, is called imposttor syndrome. You&#x27;re doing well, but you still feel like a fraud. That, my friend, is called imposttor syndrome. And it doesn&#x27;t mean you&#x27;re failing. It actually means you&#x27;re growing. I teach reflection systems and identity work so traitors can internalize their whims, not just survive them. You don&#x27;t just deserve to be here. You belong</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

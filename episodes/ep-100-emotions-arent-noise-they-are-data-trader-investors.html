@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop the Spiral: Why Your Loss Emotions Are Critical Data</p>
-<p>The pain of a trading loss—the anger, frustration, and sense of broken trust with yourself—often compels you to re-enter the market immediately. This urge to "make up for a loss" is a dangerous psychological trap. Ignoring these powerful emotions prevents you from learning the critical data points they contain, ensuring you repeat the same costly errors.  * <strong>Loss Hurts for a Reason</strong>: The emotions you feel (anger, hurt, frustration) serve as powerful psychological <strong>data points</strong> that reveal where you broke your process.</p>
+                <h3>Stop the Spiral: Why Your Loss Emotions Are Critical Data</h3>
+<p>The pain of a trading loss—the anger, frustration, and sense of broken trust with yourself—often compels you to re-enter the market immediately. This urge to "make up for a loss" is a dangerous psychological trap. Ignoring these powerful emotions prevents you from learning the critical data points they contain, ensuring you repeat the same costly errors.</p>
 <ul>
+<li><strong>Loss Hurts for a Reason</strong>: The emotions you feel (anger, hurt, frustration) serve as powerful psychological **data points*</li>
+<li>that reveal where you broke your process.</li>
 <li><strong>Preventing Future Errors</strong>: Allowing yourself to sit with the difficult feelings is actually the mechanism that prevents you from making the same mistake again.</li>
 <li><strong>The 'Make Up' Illusion</strong>: The internalized concept of needing to "make up for a loss" is an attempt to escape the truth, leading directly to destructive revenge trading.Actionable Takeaway: Eradicate the phrase and concept of "making up for a loss" from your vocabulary and trading process immediately."See if you can find a way as hard as it might be to accept that loss has put a period at the end of that sentence and then go back to your trading fresh with a clean slate."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>because it&#x27;s hard for you to be with the loss it hurts to be with the loss it makes you angry to be with your loss it makes you mad or frustrated that you didn&#x27;t keep your word to yourself but you have to feel those feelings because part of feeling those feelings is actually going to keep you from doing it again so are they hard to be with feelings yes but if you&#x27;re not with the truth that you did X Y or C you&#x27;re more tempted to do it again so my suggestion that is sweet is see if you can eradicate from your internal vocabulary or external vocabulary this concept of making up for a loss see if you can find a way as hard as it might be to accept that law has put a period at the end of that sentence and then go back to your trading fresh with a clean slate let me know how it goes</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

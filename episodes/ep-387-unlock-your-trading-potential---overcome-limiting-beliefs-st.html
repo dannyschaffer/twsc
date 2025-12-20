@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Childhood Beliefs That Are Still Costing You Trades</p>
-<p>Are you constantly hitting a ceiling in your trading performance, even though your strategy is sound? The real barrier to your potential isn't the market; it's the deeply ingrained limiting beliefs carried over from childhood that keep you stuck. These hidden narratives prevent breakthroughs in every area of your life, including your P&L.  - The root of inconsistency often lies in <strong>limiting beliefs</strong> carried over from childhood that keep traders stuck not just financially, but in their career and personal relationships.</p>
+                <h3>The Hidden Childhood Beliefs That Are Still Costing You Trades</h3>
+<p>Are you constantly hitting a ceiling in your trading performance, even though your strategy is sound? The real barrier to your potential isn't the market; it's the deeply ingrained limiting beliefs carried over from childhood that keep you stuck. These hidden narratives prevent breakthroughs in every area of your life, including your P&L.  - The root of inconsistency often lies in **limiting beliefs*</p>
 <ul>
-<li><strong>Self-awareness</strong> must be actively increased and nurtured; it is the essential first step toward dismantling these deep-rooted psychological patterns.</li>
+<li>carried over from childhood that keep traders stuck not just financially, but in their career and personal relationships.</li>
+<li>**Self-awareness*</li>
+<li>must be actively increased and nurtured; it is the essential first step toward dismantling these deep-rooted psychological patterns.</li>
 <li>True liberation comes from committing to <strong>deep personal work</strong>, recognizing that emotional stagnation requires more than just technical fixes.Commit to a consistent daily practice of self-inquiry, documenting the emotional triggers and thoughts that arise during periods of success and failure.I had to work my way through a whole bunch of limiting beliefs a whole bunch of stuff that had been left over from my childhood that was keeping me stuck.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>that&#x27;s why I&#x27;m such an advocate for self-awareness that&#x27;s why I&#x27;m a coach my own self-awareness had to increase 20 years ago when I had to work my way through a whole bunch of limiting beliefs a whole bunch of stuff that had been left over from my childhood that was keeping me stuck it was keeping me stuck in the corporate world it was keeping me stuck in my love life it was keeping me stuck in my personal relationships my relationships to my family I had to do a lot of work and I don&#x27;t know most people they all need to do a lot of work</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

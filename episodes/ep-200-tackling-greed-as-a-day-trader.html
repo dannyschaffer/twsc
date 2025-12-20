@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Scarcity Mindset: How Greed Ruins Trading Accounts</p>
+                <h3>The Scarcity Mindset: How Greed Ruins Trading Accounts</h3>
 <p>When greed surfaces in your trading, it is rarely about the market; it is often a signal of a deeper, unexamined <strong>scarcity mindset</strong>. This underlying psychological structure forces you to chase profits and ignore risk, turning every winning trade into a frantic effort to prove your worth. If you haven't faced your fundamental relationship with money, those hidden beliefs are actively sabotaging your consistency.  - Greed is a direct <strong>indicator of a scarcity mindset</strong>, not just a failure of discipline.</p>
 <ul>
 <li>True trading success is founded upon getting clear on your personal <strong>relationship to money</strong>, abundance, and security.</li>
 <li>Unexamined, deep-rooted stories about wealth and scarcity inevitably <strong>show up in your trading performance</strong>.Dedicate time this week to consciously explore and define your current relationship with money before entering your next trade session.Greed is an indicator that you have a scarcity mindset.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Traders do have some challenge with greed guess what that&#x27;s about often greed is an indicator that you have a scarcity mindset this goes back to one of the most important pieces of being a successful Trader and that is really getting clear on what your relationship to money looks like there are some traders who have never even Tak a look at what their relationship to money is and yet that is such a foundational piece if you have some uh stories in your head about money about abundance about scarcity they are inevitably going to show up in your traing so if you want to address that or anything else you&#x27;re struggling with come to my YouTube channel next Thursday the 14th</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

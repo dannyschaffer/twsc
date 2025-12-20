@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Relying on Luck: The Three Pillars of Expected Value</p>
-<p>If your trading results feel random, you are likely missing the foundational structure that separates pros from amateurs. Chasing short-term wins without understanding the long-term mathematical viability of your system leads to emotional inconsistency and eventual burnout. Mastering the "Trinity of Trading" is the only path to measurable, sustainable success.  * True proficiency rests on the <strong>Trinity of Trading</strong>: Risk, Reward, and Probability.</p>
+                <h3>Stop Relying on Luck: The Three Pillars of Expected Value</h3>
+<p>If your trading results feel random, you are likely missing the foundational structure that separates pros from amateurs. Chasing short-term wins without understanding the long-term mathematical viability of your system leads to emotional inconsistency and eventual burnout. Mastering the "Trinity of Trading" is the only path to measurable, sustainable success.</p>
 <ul>
-<li>This Triad allows you to objectively <strong>frame any trade</strong> regardless of market condition or personal style.</li>
-<li>Expected Value is the non-emotional measure of your strategy, answering whether your activity will be <strong>positive or negative</strong> over repeated application.Use the Risk, Reward, and Probability triad to evaluate every single decision in your trading plan before executing a trade.The essence of Expected Value is this: if you were to do something many, many, many times, what is the net result of that?</li>
+<li>True proficiency rests on the <strong>Trinity of Trading</strong>: Risk, Reward, and Probability.</li>
+<li>This Triad allows you to objectively **frame any trade*</li>
+<li>regardless of market condition or personal style.</li>
+<li>Expected Value is the non-emotional measure of your strategy, answering whether your activity will be **positive or negative*</li>
+<li>over repeated application.Use the Risk, Reward, and Probability triad to evaluate every single decision in your trading plan before executing a trade.The essence of Expected Value is this: if you were to do something many, many, many times, what is the net result of that?</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>risk reward and probability and basically if you have those three things you can frame a trade in any Market in any style any situation can help you adapt and it&#x27;s basically like you know the Trinity of trading so basically just framing anything that you do uh with that you know Triad that can really help to you know make your make sense of your expected value and all that expected value is you know it&#x27;s kind of thrown around but here&#x27;s the essence of it if you were to do something many many many many times what is the net result of that is it you know overall a really positive thing or is it a negative thing or is it a neutral thing and it&#x27;s not really relevant uh and so risk reward and probability in all different types of markets and then that plays into your expected uh value equation so at the end of doing this activity many times is it positive or is it negative</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

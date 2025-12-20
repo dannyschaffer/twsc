@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Draining Your Trading Power: The Cost of Self-Criticism</p>
-<p>Trading through a bad run is emotionally draining, leading to severe self-doubt and self-criticism. This negative inner dialogue acts like a constant power drain, hindering your ability to recover and perform effectively. Learn why being overly critical is costing you capital and confidence in the market.  * <strong>Self-Criticism Drains Mental Capital</strong>: Like a high-performance vehicle with no fuel, your ability to execute is limited if all your energy is expended on excessive self-critique rather than focused work.</p>
+                <h3>Stop Draining Your Trading Power: The Cost of Self-Criticism</h3>
+<p>Trading through a bad run is emotionally draining, leading to severe self-doubt and self-criticism. This negative inner dialogue acts like a constant power drain, hindering your ability to recover and perform effectively. Learn why being overly critical is costing you capital and confidence in the market.</p>
 <ul>
+<li><strong>Self-Criticism Drains Mental Capital</strong>: Like a high-performance vehicle with no fuel, your ability to execute is limited if all your energy is expended on excessive self-critique rather than focused work.</li>
 <li><strong>The Scars of Bad Runs</strong>: The emotional scarring from losing streaks forces traders into cycles of self-doubt, leading to poor decision-making fueled by a fear of repeating past failures.</li>
-<li><strong>Recovery is Key to Transcendence</strong>: When self-criticism takes over, it becomes impossible to transcend current limitations because energy is focused inward on punishment instead of outward on objective improvement.Actionable Takeaway: When reviewing losses, shift your focus from analyzing *who* you are (self-criticism) to analyzing *what* happened (objective review) to conserve vital mental energy."Traders have a tendency to be way overly self-critical. And that, believe it or not, drains them of a lot of their power."</li>
+<li><strong>Recovery is Key to Transcendence</strong>: When self-criticism takes over, it becomes impossible to transcend current limitations because energy is focused inward on punishment instead of outward on objective improvement.Actionable Takeaway: When reviewing losses, shift your focus from analyzing *who</li>
+<li>you are (self-criticism) to analyzing *what</li>
+<li>happened (objective review) to conserve vital mental energy."Traders have a tendency to be way overly self-critical. And that, believe it or not, drains them of a lot of their power."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>And traitors have a tendency to be way overly self-critical. And that, believe it or not, drains them of a lot of their power. And you know, you can have a Porsche, but if you don&#x27;t have gas in the tank, it ain&#x27;t going anywhere. Like, Phil, you got to fill up the tank. And I just see a lot of energy expended on the wrong things. And it just, you know, doesn&#x27;t help them kind of transcend the places that are in their way. Yeah. It&#x27;s such a hard thing because any trader who has been doing this long enough has gone through a bad run and it&#x27;s so emotionally draining and it&#x27;s so emotionally scarring to go through that bad run that it affects you going forward. You know, you don&#x27;t want that to happen again. So, you know, you start to be very self-critical. You start to doubt yourself very much. I go through it all the time. uh 35 years. Okay. The last 25 years and in particularly the last seven or eight years have been very very good to me. But I I still go through it all the time. You talk about being hard</p>
-<p>on yourself and self-doubt and all that.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

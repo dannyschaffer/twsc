@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Unlock Your Response Flexibility: The Hidden Cost of an Unexamined Trading Life</p>
-<p>If you consistently find yourself reacting to the market in ways you regret, you are likely operating on unconscious wiring. An unexamined trading life leaves you subject to these automatic psychological patterns, severely limiting your profit potential and decision-making clarity.  * Without self-examination, your performance remains captive to your unconscious <strong>wiring and emotional triggers</strong>.</p>
+                <h3>Unlock Your Response Flexibility: The Hidden Cost of an Unexamined Trading Life</h3>
+<p>If you consistently find yourself reacting to the market in ways you regret, you are likely operating on unconscious wiring. An unexamined trading life leaves you subject to these automatic psychological patterns, severely limiting your profit potential and decision-making clarity.</p>
 <ul>
+<li>Without self-examination, your performance remains captive to your unconscious <strong>wiring and emotional triggers</strong>.</li>
 <li>The goal is <strong>Response Flexibility</strong>, which is the capacity to question your automatic thoughts and choose a more strategic action.</li>
 <li>The only effective way to conduct continuous self-reflection is to approach your mistakes with <strong>curiosity, not judgment</strong>.This week, identify one instance where you lacked response flexibility and dedicate time to self-reflect on its origins with pure curiosity, avoiding self-judgment.as long as one doesn't examine oneself what is completely subject to whatever one is wired to do but once you become aware you have choices</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody this is Kim and Curtin with the Wall Street coach and this is my Sunday January 29th EQ prep for the week I&#x27;ve under strongly recommend Gabriel Monte&#x27;s book The Myth of normal there&#x27;s a quote from that book that I want to speak to this week he quotes Socrates that says an unexamined life is not worth living and I want to suggest that an unexamined life will actually hinder your trading and your relationships so one of the quotes from this book that speaks volumes is as long as one doesn&#x27;t examine oneself what is completely subject to whatever one is wired to do but once you become aware you have choices you can exercise those choices even modest self-examination is a willingness to question many of the truths we cling to and certain points of views that make them seem real and one of the quotes he talks about in their own kind of Concepts is response flexibility do you have response flexibility I ask you to consider that as you step into this week and notice where you don&#x27;t have response flexibility and begin to self-reflect where does that come from when did that</p>
-<p>begin for me how often does it seem to take hold remember the key to being able to be self-reflective continuously is to do this with no judgment and as much empathy as possible go looking with curiosity not judgment I invite you to let me know in the comments what comes up for you and remember we&#x27;re all moving Desiring for response flexibility all right have a great week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

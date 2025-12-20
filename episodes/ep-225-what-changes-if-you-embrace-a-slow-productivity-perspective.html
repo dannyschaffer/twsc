@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading Like Fast Food: The Power of Slow Productivity</p>
-<p>The constant pressure to perform and achieve instant results often turns trading into a high-stress, high-volume activity. This frenetic pace, viewing the market like a fast-food drive-thru, is a direct path to burnout and emotional mistakes. Discover how adopting the "slow productivity" framework can reduce daily stress and cultivate a patient, profitable approach.  * <strong>Quality Over Quantity</strong>: Embrace the principle of slow productivity by prioritizing <strong>high-quality, deliberate execution</strong> over high-frequency, rushed activity.</p>
+                <h3>Stop Trading Like Fast Food: The Power of Slow Productivity</h3>
+<p>The constant pressure to perform and achieve instant results often turns trading into a high-stress, high-volume activity. This frenetic pace, viewing the market like a fast-food drive-thru, is a direct path to burnout and emotional mistakes. Discover how adopting the "slow productivity" framework can reduce daily stress and cultivate a patient, profitable approach.</p>
 <ul>
+<li><strong>Quality Over Quantity</strong>: Embrace the principle of slow productivity by prioritizing **high-quality, deliberate execution*</li>
+<li>over high-frequency, rushed activity.</li>
 <li><strong>Shifting Market Perception</strong>: The intense pressure you place on yourself every day shifts when you reject the impulse for immediate gratification.Actionable Takeaway: When you approach your desk, actively compare your process to selecting and savoring a fine meal rather than grabbing a quick snack.Instead of thinking of the markets as a fast food place instead think of it as the best restaurant in Italy.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I know you&#x27;ve heard of the slow food movement I don&#x27;t know anybody who is not enjoying the slow food movement everybody likes to have food that&#x27;s been deliciously prepared but one of the things that I have never heard before but I&#x27;m hearing it now thanks to Cal Newport in his amazing book slow productivity he talks about this concept of slow productivity and how do we take the magic of what is that slow food movement into how we work today so Traders if you begin to start to see yourself as a person who Embraces slow productivity perhaps some of this intense pressure you put on yourself every day shifts instead of thinking of the markets as a fast food place instead think of it as the best restaurant in Italy let me know what you think about it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

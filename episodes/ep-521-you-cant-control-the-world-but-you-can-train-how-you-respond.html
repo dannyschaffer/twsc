@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Market Control: Your Nervous System Is the Real Edge</p>
+                <h3>Stop Chasing Market Control: Your Nervous System Is the Real Edge</h3>
 <p>Markets are inherently wild and life is unpredictable, but it is the inner chaos—the self-doubt and fear—that takes traders out. If you feel like you are constantly battling the voice whispering that you are "blowing it," you need to shift your focus inward. This is not about market mastery; it's about self-mastery.  - The real volatility is internal: the self-doubt and fear that sabotage your performance.</p>
 <ul>
 <li>Mastering your internal response is <strong>nervous system work</strong>, not just a surface-level mindset shift.</li>
-<li><strong>Self-leadership</strong> is achieved by developing a controlled internal state, giving you an enduring professional edge.Stop trying to control external market factors and dedicate time to regulating your internal nervous system response.Calm isn't weakness, it's your edge.</li>
+<li>**Self-leadership*</li>
+<li>is achieved by developing a controlled internal state, giving you an enduring professional edge.Stop trying to control external market factors and dedicate time to regulating your internal nervous system response.Calm isn't weakness, it's your edge.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>The real volatility, it&#x27;s not the markets, it&#x27;s you. Markets are wild. Life is unpredictable. But it&#x27;s the inner chaos, the self-doubt, the fear, the voice that whispers you&#x27;re blowing it. That&#x27;s what takes traders out. You can&#x27;t control the market. And you can&#x27;t control the world. But you can master your internal response. And that is not mindset, it&#x27;s nervous system work. That&#x27;s self leadership. Calm isn&#x27;t weakness, it&#x27;s your edge. That&#x27;s how you trade like a pro and live like one, too. If you want to build unshakable inner calm, drop inner edge in the comments and I will send you a free</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

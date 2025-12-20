@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Nervous System Loop Behind Revenge Trading</p>
-<p>You think revenge trading is a failure of discipline, but it is actually your nervous system desperately trying to get the hit back. This loop is not a sign of emotional weakness; it is a predictable pattern. Understanding this distinction is the first step toward breaking the cycle.  * <strong>Revenge trading is a neurological reaction</strong>, not a character flaw.</p>
+                <h3>The Nervous System Loop Behind Revenge Trading</h3>
+<p>You think revenge trading is a failure of discipline, but it is actually your nervous system desperately trying to get the hit back. This loop is not a sign of emotional weakness; it is a predictable pattern. Understanding this distinction is the first step toward breaking the cycle.</p>
 <ul>
-<li>The impulse is driven by the body's need to <strong>"get the hit back"</strong> and restore perceived balance after a loss.</li>
-<li>Seeing this pattern as a <strong>predictable loop</strong> allows for logical intervention.Actionable Takeaway: Instead of fighting the impulse, observe the physical feeling of wanting to "get the hit back" and delay your trade based on this observation.Revenge trades aren't about the market. They're about your nervous system trying to get the hit back.</li>
+<li><strong>Revenge trading is a neurological reaction</strong>, not a character flaw.</li>
+<li>The impulse is driven by the body's need to **"get the hit back"*</li>
+<li>and restore perceived balance after a loss.</li>
+<li>Seeing this pattern as a **predictable loop*</li>
+<li>allows for logical intervention.Actionable Takeaway: Instead of fighting the impulse, observe the physical feeling of wanting to "get the hit back" and delay your trade based on this observation.Revenge trades aren't about the market. They're about your nervous system trying to get the hit back.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Revenge trades aren&#x27;t about the market. They&#x27;re about your nervous system trying to get the hit back. This isn&#x27;t emotional weakness. It&#x27;s a loop. And once you see it, you can actually break it. Send me a DM or put a comment. Revenge. If you keep re-entering that emotion instead of logic and you are ready to</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Beating Yourself Up: How Curiosity Breaks the Cycle of Trading Mistakes</p>
+                <h3>Stop Beating Yourself Up: How Curiosity Breaks the Cycle of Trading Mistakes</h3>
 <p>When a trade goes wrong, your instinct is often to engage in harsh self-criticism. This reaction is counterproductive because it forces your mind into a state of emotional contraction, causing you to defend and justify your actions rather than truly learn from them. This contraction is the barrier preventing you from identifying and escaping the root pattern of your failure.  - Self-criticism immediately triggers a <strong>state of emotional contraction</strong>, leading to defensiveness and justification, which halts all productive learning.</p>
 <ul>
-<li>The path to progress requires shifting into <strong>curiosity and neutrality</strong> the moment mistakes happen.</li>
-<li>This neutral perspective is the only way to <strong>unpack the repeating psychological patterns</strong> that inform your costly trading actions.The moment you recognize a mistake, pause your internal critical voice and deliberately ask yourself, "What specific impulse or belief led to this repeated action?"When you make a mistake and screw up you want to get really curious.</li>
+<li>The path to progress requires shifting into **curiosity and neutrality*</li>
+<li>the moment mistakes happen.</li>
+<li>This neutral perspective is the only way to **unpack the repeating psychological patterns*</li>
+<li>that inform your costly trading actions.The moment you recognize a mistake, pause your internal critical voice and deliberately ask yourself, "What specific impulse or belief led to this repeated action?"When you make a mistake and screw up you want to get really curious.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>when you screw up and you begin to beat yourself up for a mistake that you&#x27;ve made here&#x27;s why you don&#x27;t want to do that because it puts you into a contraction and when we&#x27;re in a contraction we start to defend and we start to justify but when you make a mistake and screw up you want to get really curious you want to get into as much neutrality and curiosity is possible because you want to unpack what informs this particular action that you&#x27;ve taken or this particular action you have repeated again if you stay curious and neutral you have a chance to actually unhook yourself from this pattern but if you put yourself into a state of contraction it will be so much harder</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

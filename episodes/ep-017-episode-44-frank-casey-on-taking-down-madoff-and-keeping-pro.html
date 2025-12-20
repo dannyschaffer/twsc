@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Due Diligence You Must Perform to Protect Your Trading Account</p>
-<p>The world’s largest financial scams thrive on the investor's desire for the "Holy Grail"—consistent profits without volatility. Frank Casey, the man who helped expose Bernie Madoff, reveals how this emotional desire blinds even smart professionals, leading them to ignore massive red flags in their pursuit of easy money. His insights are a critical blueprint for self-protection in your own trading.  - <strong>Beware of Impossible Consistency</strong> The greatest red flag in any system—whether your own or an advisor's—is consistent profitability across all market cycles, which often signals fictional returns.</p>
+                <h3>The Due Diligence You Must Perform to Protect Your Trading Account</h3>
+<p>The world’s largest financial scams thrive on the investor's desire for the "Holy Grail"—consistent profits without volatility. Frank Casey, the man who helped expose Bernie Madoff, reveals how this emotional desire blinds even smart professionals, leading them to ignore massive red flags in their pursuit of easy money. His insights are a critical blueprint for self-protection in your own trading.  - **Beware of Impossible Consistency*</p>
 <ul>
-<li><strong>Apply the T.I.P.S. Check to Your Trading</strong> Successful risk management requires verification protocols, ensuring separation between strategy execution and profit tracking (Internal Controls) to prevent self-deception.</li>
-<li><strong>The Cost of Willful Blindness</strong> Greed and fear of missing out prevent traders from asking the critical questions required to verify authenticity, prioritizing short-term profit over long-term survival.Implement a mandatory third-party verification step—such as having a trusted peer review your monthly performance report—to eliminate self-deception in your P&L tracking.“A lot of people were willfully blind because they were making so much money from this operation of Madoff.”</li>
+<li>The greatest red flag in any system—whether your own or an advisor's—is consistent profitability across all market cycles, which often signals fictional returns.</li>
+<li>**Apply the T.I.P.S. Check to Your Trading*</li>
+<li>Successful risk management requires verification protocols, ensuring separation between strategy execution and profit tracking (Internal Controls) to prevent self-deception.</li>
+<li>**The Cost of Willful Blindness*</li>
+<li>Greed and fear of missing out prevent traders from asking the critical questions required to verify authenticity, prioritizing short-term profit over long-term survival.Implement a mandatory third-party verification step—such as having a trusted peer review your monthly performance report—to eliminate self-deception in your P&L tracking.“A lot of people were willfully blind because they were making so much money from this operation of Madoff.”</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Transcript not available.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

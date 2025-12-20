@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Defeat the Emotional Rollercoaster: Turn Your Mindset into Your Biggest Edge</p>
+                <h3>Defeat the Emotional Rollercoaster: Turn Your Mindset into Your Biggest Edge</h3>
 <p>Most traders find themselves trapped in cycles of revenge trading, fear of missing out (FOMO), or holding losing positions too long, leading to emotional instability and account blow-ups. This consistency challenge is not a strategic flaw; it is a psychological one. Developing the discipline, confidence, and focus needed to execute your plan without self-sabotage is the pathway to sustained results.  - The root cause of inconsistency is the <strong>mindset</strong>, specifically emotional pitfalls like revenge trading and holding losers too long.</p>
 <ul>
-<li>True growth is achieved by focusing on the <strong>discipline and confidence</strong> required to execute your plan, rather than searching for the 'perfect' strategy.</li>
-<li>Your ultimate trading edge is <strong>Self-Mastery</strong>, which leads to clarity and consistent results instead of emotional volatility.Focus today on cultivating the <strong>discipline</strong> to strictly adhere to your predetermined plan for three consecutive trades, regardless of the outcome.The best traders don't just master charts they master themselves.</li>
+<li>True growth is achieved by focusing on the **discipline and confidence*</li>
+<li>required to execute your plan, rather than searching for the 'perfect' strategy.</li>
+<li>Your ultimate trading edge is <strong>Self-Mastery</strong>, which leads to clarity and consistent results instead of emotional volatility.Focus today on cultivating the **discipline*</li>
+<li>to strictly adhere to your predetermined plan for three consecutive trades, regardless of the outcome.The best traders don't just master charts they master themselves.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>most Traders lose not because their strategy is bad but because their mindset is Revenge trades fear of missing out or holding losers way too long does that sound familiar to you that&#x27;s where a performance coach comes in I help Traders develop the discipline the confidence and the focus needed to execute your plan without self sabotage imagine waking up and sticking to your strategy and finally seeing consistent results no more blowing up accounts no more emotional roller coaster just Clarity and growth the best Traders don&#x27;t just Master charts they Master themselves so if you&#x27;re ready to take your trading to the next level let&#x27;s work together comment performance or DM me directly and I&#x27;ll show you how to turn your mindset into your biggest Edge Let&#x27;s make this year your year</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

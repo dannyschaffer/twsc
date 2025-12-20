@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Antidote to Trading Negativity: How Gratitude Shifts Your P&L</p>
-<p>Traders often get stuck in a negative feedback loop, hyper-focusing on losses and mistakes. This perpetual state of 'what's wrong' drains mental energy, preventing the emotional clarity needed for disciplined execution. The surprising antidote isn't more strategy, but a fundamental shift in perspective.  * <strong>The Mind's Default:</strong> Your mind naturally gravitates toward errors, losses, and perceived failures, draining your psychological reserves.</p>
+                <h3>The Antidote to Trading Negativity: How Gratitude Shifts Your P&L</h3>
+<p>Traders often get stuck in a negative feedback loop, hyper-focusing on losses and mistakes. This perpetual state of 'what's wrong' drains mental energy, preventing the emotional clarity needed for disciplined execution. The surprising antidote isn't more strategy, but a fundamental shift in perspective.</p>
 <ul>
-<li><strong>Gratitude as Discipline:</strong> Actively focusing on your successes and what you are grateful for is a disciplined practice that strengthens your emotional capacity.</li>
-<li><strong>Dissipating Negativity:</strong> When you consistently focus on abundance and 'what works,' the 'what isn't' (negativity and problems) dissipates quickly.Challenge yourself to spend serious time every day for the next week counting all your blessings and documenting the things you've done well in your trading.When we focus on what works, when we focus on the abundance that we have, when we focus on what we are grateful for you will be amazed at how what isn't dissipate so quickly.</li>
+<li>**The Mind's Default:*</li>
+<li>Your mind naturally gravitates toward errors, losses, and perceived failures, draining your psychological reserves.</li>
+<li>**Gratitude as Discipline:*</li>
+<li>Actively focusing on your successes and what you are grateful for is a disciplined practice that strengthens your emotional capacity.</li>
+<li>**Dissipating Negativity:*</li>
+<li>When you consistently focus on abundance and 'what works,' the 'what isn't' (negativity and problems) dissipates quickly.Challenge yourself to spend serious time every day for the next week counting all your blessings and documenting the things you've done well in your trading.When we focus on what works, when we focus on the abundance that we have, when we focus on what we are grateful for you will be amazed at how what isn't dissipate so quickly.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>hi everybody this is my Trader EQ for the week of August 14th as some of you know I&#x27;m still in New York City I fly back to Hawaii tomorrow uh this week I want to give you a challenge to focus on all that you are grateful for focus on all the successes you have had I want you to put your discipline into high gear to watch your mind Focus and attempt to go to what&#x27;s wrong instead of what&#x27;s right this horrific uh fire that&#x27;s you know leveled uh behind on Maui is a different Island that I live on but these stories of contribution that every island especially my Island the big island are galvanizing together to be able to help in any manner shape or form that everybody can is so inspiring there&#x27;s a famous quote that uh Mr Roger&#x27;s mother told him when he was watching the horrible things that may happen in the world she told him to look for the helpers when we focus on what works when we focus on the abundance that we have when we focus on what we are grateful for you will be amazed at how what</p>
-<p>isn&#x27;t dissipate so quickly I have received so much of an outpouring of love because most people don&#x27;t understand that Hawaii is an archipelago government there are a few Islands there but that Love Has Lifted Me Up it&#x27;s filled my heart with so much gratitude for how many amazing friends and people and colleagues and clients I&#x27;ve had I had one of my clients we he hasn&#x27;t even worked with me at a year or more and he offered for me to come to his home in San Francisco if I needed a place to stay wow like that&#x27;s what is out there and I am positive that you too have a plethora of beautiful gratitude reasons to be grateful whatever you&#x27;re up to in your trading I want you to spend serious time counting all those blessings you have all the things you&#x27;ve done well just for the next week see if you can do it for seven days in a row and I bet you you will have a shift all right let me know how it goes and I will see you next Sunday</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

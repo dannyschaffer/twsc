@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of Focus: Why Multitasking is Making You Blind to Setups</p>
+                <h3>The Cost of Focus: Why Multitasking is Making You Blind to Setups</h3>
 <p>Your confidence as a trader may lead you to believe you can absorb multiple screens or tasks simultaneously, but your brain is physically incapable of true multitasking. This neurobiological limitation means when your focus is divided, you are psychologically blind to the critical details that prevent costly losses.  - <strong>True Multitasking is a Myth</strong>: Your brain only has one focus of attention; attempting to do multiple things at once guarantees a degradation in your trading performance.</p>
 <ul>
 <li><strong>Visual Blindness During Eye Movement</strong>: Your brain stitches together a continuous picture of the market, but you are actually blind when your eyes are moving to sample the visual world.</li>
 <li><strong>Attention Mutes the Unfocused</strong>: What you choose to look at is "turned up" in the brain, while everything outside that narrow focus—like important market data—is muted or missed entirely.Dedicate your attention to a single screen or chart during your critical trading period to prevent neurobiological blind spots from costing you trades.Actually, you're blind when your eyes are moving.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Actually, you&#x27;re blind when your eyes are moving. The Wall Street Coach podcast. I think people especially is probably traders are probably pretty confident in themselves. They would have to be to be doing that job. But you also can&#x27;t multitask. So, this is another fact about the brain. You cannot do multiple things at one time. You only have one focus of attention. In fact, you only see clearly about the width of your thumb at arms length. And everything else is blurry. And so, you move your eyes around to sample the visual world. Actually, you&#x27;re blind when your eyes are moving. We just our brains stitch that together so that we don&#x27;t we experience a hole and it feels like it&#x27;s all the same, but it&#x27;s not. So, what you&#x27;re looking at is turned up in the brain and what you&#x27;re not looking at is turned down. So, you&#x27;re looking at that screen over there. Everything else is muted. And it&#x27;s not like you can take it all in uh at once.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

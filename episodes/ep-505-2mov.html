@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Guilt Trap: Why Trading When Tired Destroys Your Edge</p>
-<p>Every trader battles the fear of missing out (FOMO) on a profitable day. This fear often merges with a sense of guilt, pressuring you to trade even when you are exhausted or distracted. This mindset ensures you are not fully present for critical decisions, making you significantly vulnerable to costly mistakes.  - The convergence of <strong>FOMO and Guilt</strong> compels traders to engage the market regardless of their readiness, turning a high-stakes profession into a chore.</p>
+                <h3>The Guilt Trap: Why Trading When Tired Destroys Your Edge</h3>
+<p>Every trader battles the fear of missing out (FOMO) on a profitable day. This fear often merges with a sense of guilt, pressuring you to trade even when you are exhausted or distracted. This mindset ensures you are not fully present for critical decisions, making you significantly vulnerable to costly mistakes.  - The convergence of **FOMO and Guilt*</p>
 <ul>
+<li>compels traders to engage the market regardless of their readiness, turning a high-stakes profession into a chore.</li>
 <li>If you are <strong>not fully present</strong>—if you are tired or busy—you lack the clear mental capacity needed to properly analyze setups and execute your strategy.</li>
-<li>When your focus is compromised, the high-quality alternative is not forcing trades but engaging in <strong>productive non-trading activities</strong> to restore capacity.Before entering the market, honestly evaluate your mental and physical state; if you are tired or distracted, commit to spending your time on recovery and personal development instead of forcing trades.And at that point, you're 100% better off spending your time other productive ways and getting back to trading, you know, when when you're ready for it.</li>
+<li>When your focus is compromised, the high-quality alternative is not forcing trades but engaging in **productive non-trading activities*</li>
+<li>to restore capacity.Before entering the market, honestly evaluate your mental and physical state; if you are tired or distracted, commit to spending your time on recovery and personal development instead of forcing trades.And at that point, you're 100% better off spending your time other productive ways and getting back to trading, you know, when when you're ready for it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast. Yeah, maybe a little bit of FOMO about missing out on a a trading day. I mean, you never know when the opportunities are going to come and then maybe just like you feel like you should like, oh, I could trade tired like I&#x27;m fine. There&#x27;s no reason that I&#x27;m not. That has some guilt sometimes. Yeah. It&#x27;s like, h well, I could take the day off and just go sit by the pool or I could trade and there&#x27;s no reason I can&#x27;t trade, but the reason is that, you know, I might, you know, might be tired or I might be busy and you&#x27;re not fully there for that day. And at that point, you&#x27;re 100% better off spending your time other productive ways and getting back to trading, you know, when when you&#x27;re ready for it.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

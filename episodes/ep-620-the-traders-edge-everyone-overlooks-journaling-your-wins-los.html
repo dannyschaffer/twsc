@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Ignoring Your Most Powerful Tool: Why Trading Journaling Is Your Real Edge</p>
-<p>You already know trading is psychological, yet many traders consistently fail to use the most critical tool for self-assessment: a journal. By neglecting this practice, you remain unaware of the emotional and behavioral patterns, sacrificing valuable insights and actionable steps that could lead to consistent profits.  * <strong>The Core Barrier is Awareness:</strong> The failure to prioritize journaling isn't just about laziness; it's often a profound lack of awareness regarding the psychological and strategic benefit it provides.</p>
+                <h3>Stop Ignoring Your Most Powerful Tool: Why Trading Journaling Is Your Real Edge</h3>
+<p>You already know trading is psychological, yet many traders consistently fail to use the most critical tool for self-assessment: a journal. By neglecting this practice, you remain unaware of the emotional and behavioral patterns, sacrificing valuable insights and actionable steps that could lead to consistent profits.</p>
 <ul>
-<li><strong>Value Beyond the P\&L:</strong> Modern trading journals offer actionable steps and structure necessary for deep self-improvement, moving far beyond simply tracking dates and tickers.</li>
-<li><strong>A Shocking Oversight:</strong> Many expert market participants are stunned that motivated traders overlook this fundamental tool for accountability and sustained mastery.Actionable Takeaway:</li>
+<li>**The Core Barrier is Awareness:*</li>
+<li>The failure to prioritize journaling isn't just about laziness; it's often a profound lack of awareness regarding the psychological and strategic benefit it provides.</li>
+<li>**Value Beyond the P\&L:*</li>
+<li>Modern trading journals offer actionable steps and structure necessary for deep self-improvement, moving far beyond simply tracking dates and tickers.</li>
+<li>**A Shocking Oversight:*</li>
+<li>Many expert market participants are stunned that motivated traders overlook this fundamental tool for accountability and sustained mastery.Actionable Takeaway:</li>
 </ul>
 <p>Dedicate five minutes after every trading session to record the emotional state that preceded and followed your entry and exit, turning emotional moves into observable data."I'm not sure if it's laziness, but it's also not the awareness of what the the benefit could be."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I&#x27;m just shocked that I can still hear traders say they don&#x27;t have a trading journal. I almost fall off my chair each time. What is the reason for that, guys? What is the reason that traders don&#x27;t prioritize journaling? I&#x27;m not sure if it&#x27;s laziness, but it&#x27;s also not the awareness of what the the benefit could be. And I think in today&#x27;s world, the journals that you have provide a lot of value and provide a lot of actionable steps. But I don&#x27;t think it has arrived yet in the mind of all traders.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Volatility Doesn't Test You: It Reveals What You Truly Trust</p>
+                <h3>Volatility Doesn't Test You: It Reveals What You Truly Trust</h3>
 <p>When chaos hits the market, most traders either freeze or panic, chasing control instead of executing their plan. This immediate scramble for safety costs you clarity and profitability because you are trying to outrun discomfort rather than confront pressure.</p>
 <p>Key Insights:  - <strong>Volatility is a test of trust</strong>, revealing whether you believe in your system, your edge, or yourself.</p>
 <ul>
 <li><strong>Resilience is passive strength</strong>, achieved by consciously staying present rather than pushing harder when pressure mounts.</li>
-<li><strong>Power returns with presence</strong> when you anchor into your plan instead of grasping for external safety.Actionable Takeaway:</li>
+<li>**Power returns with presence*</li>
+<li>when you anchor into your plan instead of grasping for external safety.Actionable Takeaway:</li>
 </ul>
 <p>When the market shakes, stop attempting to force trades and focus instead on remaining present under pressure to restore clarity.Volatility doesn't test you. It reveals what you actually trust.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Volatility doesn&#x27;t test you. It reveals what you actually trust. Do you trust your system? Do you trust your edge or yourself? Or are you just chasing control just to outrun discomfort? Because when the market shakes or life does, you&#x27;ll either anchor in or grasp for safety. Resilience isn&#x27;t about pushing harder. It&#x27;s about staying present under pressure. That&#x27;s where clarity cuts through. That&#x27;s when your power returns. And the same is true in trading and in life. Same nervous system. Drop resilience in the comments and I&#x27;ll send you my free ebook, The Five Practices to Become a Better Trader.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

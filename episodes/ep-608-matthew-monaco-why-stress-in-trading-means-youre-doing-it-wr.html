@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Zero Stress is the Sign of a Winning Trading System</p>
-<p>Many traders believe high stress is simply an inevitable cost of participating in the markets. But in reality, emotional pressure is a powerful indicator that you have abandoned your tested strategy and strayed from your defined rules. When trading is executed correctly, following the plan precisely, it should feel nonstressful, not chaotic.  * <strong>Nonstressful Execution is Optimal</strong>: The most surprising discovery for many top traders is that peak performance feels easy. When you follow your rules precisely, stress naturally diminishes.</p>
+                <h3>Why Zero Stress is the Sign of a Winning Trading System</h3>
+<p>Many traders believe high stress is simply an inevitable cost of participating in the markets. But in reality, emotional pressure is a powerful indicator that you have abandoned your tested strategy and strayed from your defined rules. When trading is executed correctly, following the plan precisely, it should feel nonstressful, not chaotic.</p>
 <ul>
+<li><strong>Nonstressful Execution is Optimal</strong>: The most surprising discovery for many top traders is that peak performance feels easy. When you follow your rules precisely, stress naturally diminishes.</li>
 <li><strong>Identify the Rule Break</strong>: Intense stress serves as an internal signal that you are violating your trade plan, whether through position sizing, entry criteria, or refusing to cut a loss.</li>
 <li><strong>The Goal is Mechanical Compliance</strong>: Successful trading removes the need for high-stakes emotional judgment, keeping decisions objective and consistent.Actionable Takeaway: When anxiety spikes during market hours, immediately stop trading and use the stress as evidence that you are operating outside of your predefined system.Trading is incredibly nonstressful when you're doing it the right way.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Trading is incredibly nonstressful when you&#x27;re doing it the right way. The Wall Street Coach podcast. What is the most surprising thing that you have learned about trading or about yourself in his trading journey of yours? What was the most unexpected wo? The one that comes to mind right now is when you&#x27;re trading good, you&#x27;re following your rules. Trading is incredibly not stressful when you&#x27;re doing it the right way. I find myself very stressed when I&#x27;m doing everything wrong. So, if all of a sudden it&#x27;s like, you know, noon or 1:00 and, you know, you take your little midday break and I&#x27;m sitting there, I&#x27;m like, &amp;quot;Today was a good day.&amp;quot; You know, it almost feels easy. And that&#x27;s the way that trading should be because that means you&#x27;re following your rules, you&#x27;re doing your strategy, everything was, you know, within the window of what you expected, win or loss. If you find yourself being really stressed, I find that I&#x27;m doing something wrong.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

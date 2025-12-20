@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why You Unconsciously Sabotage Your Trading Wins (The Money Mindset Trap)</p>
-<p>We often assume that achieving massive wealth—like a big trading payday—will solve all problems. However, high-earners, from professional athletes to lottery winners, frequently go bust because they haven't done the critical inner work. If you haven't addressed your core beliefs about money, you will unconsciously guide yourself back to the financial reality you know.  * <strong>The Comfort Zone of Scarcity:</strong> Your unconscious mind will push you back to the financial reality it is familiar with, even if that reality is broke.</p>
+                <h3>Why You Unconsciously Sabotage Your Trading Wins (The Money Mindset Trap)</h3>
+<p>We often assume that achieving massive wealth—like a big trading payday—will solve all problems. However, high-earners, from professional athletes to lottery winners, frequently go bust because they haven't done the critical inner work. If you haven't addressed your core beliefs about money, you will unconsciously guide yourself back to the financial reality you know.</p>
 <ul>
-<li><strong>The Illusion of Money as a Cure:</strong> Believing that money alone fixes all troubles ignores the psychological component of wealth retention.</li>
-<li><strong>Deep Roots of Financial Dynamics:</strong> Your relationship with money is fundamentally shaped by the dynamics you experienced while growing up.Actionable Takeaway: Before seeking massive profits, dedicate time to being forthright about the financial dynamics and beliefs you inherited and currently hold."If you want to know something different, you're going to have to heal whatever that previous relationship to money already is."</li>
+<li>**The Comfort Zone of Scarcity:*</li>
+<li>Your unconscious mind will push you back to the financial reality it is familiar with, even if that reality is broke.</li>
+<li>**The Illusion of Money as a Cure:*</li>
+<li>Believing that money alone fixes all troubles ignores the psychological component of wealth retention.</li>
+<li>**Deep Roots of Financial Dynamics:*</li>
+<li>Your relationship with money is fundamentally shaped by the dynamics you experienced while growing up.Actionable Takeaway: Before seeking massive profits, dedicate time to being forthright about the financial dynamics and beliefs you inherited and currently hold."If you want to know something different, you're going to have to heal whatever that previous relationship to money already is."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>why do professional athletes make all this money and then seemingly in a few years go bust why is it that lottery winners struggle after winning all this money within a handful of years it&#x27;s because they have not done any work around their relationship to money most people think oh if I get money all my troubles will be over this is a cautionary tale is that if you haven&#x27;t been really forthright with what the dynamic of money was when you were growing up or has been up until you get that payday you are going to find yourself unconsciously moving in the direction to get you back to what you know so if you want to know something different you&#x27;re going to have to heal whatever that previous relationship to money already is</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

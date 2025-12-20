@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Financial Sabotage: Why You Believe Profit Equals Guilt</p>
+                <h3>The Financial Sabotage: Why You Believe Profit Equals Guilt</h3>
 <p>The greatest barrier to abundance isn't the market—it's the internal belief that making money is inherently wrong. This subconscious programming can trigger self-sabotage, forcing you into cycles of loss because your system connects wealth with being "selfish" or "evil." Learn to separate organic success from outdated ethical judgments.  - The <strong>Internal Conflict of Abundance</strong>: Many traders are blocked by deep-seated beliefs that achieving financial success is morally negative, leading to unconscious self-punishment.</p>
 <ul>
 <li>The True Definition of Capitalism: Organic, successful business is fundamentally about <strong>meeting customer need</strong>, a concept often corrupted by a short-sighted, sole focus on shareholder returns.</li>
 <li><strong>Honesty in Finance</strong>: We must reject the blanket generalization that finance is inherently dishonest and recognize the integrity of successful entrepreneurs and traders.Examine where your emotional response to making a profit comes from and actively reframe abundance as a positive outcome of serving a need.Capitalism is actually all about meeting customer need.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>And that is when this, you know, began to bubble up inside of me. The concept of what does that mean? That sounds like making money is wrong. That sounds like having abundance is wrong. That sounds like capitalism is bad and evil. All this focus on just shareholder returns is making the entrepreneur businessman who organically knows how to run a business sabotaged by this constant focus on return. Capitalism is actually all about meeting customer need. There are more honest men and women who work in finance than they are dishonest.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

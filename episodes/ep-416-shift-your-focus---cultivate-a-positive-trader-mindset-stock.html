@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Looking for What's Wrong: The Power of Positive Focus in Trading</p>
+                <h3>Stop Looking for What's Wrong: The Power of Positive Focus in Trading</h3>
 <p>Many traders operate in a negative feedback loop, meticulously analyzing every loss and mistake while glossing over their wins. This constant focus on failure creates emotional drag and prevents you from building sustained confidence. Discover how strategically shifting your focus can lead to a more satisfying, easeful, and ultimately, more profitable trading career.</p>
-<p>Key Insights:  - <strong>The Positive Practice Gap:</strong> Most traders allocate significantly more mental energy to identifying errors than to reinforcing the good habits that generate profit.</p>
+<p>Key Insights:  - **The Positive Practice Gap:*</p>
 <ul>
-<li><strong>Beyond the P\&L:</strong> The mental patterns you apply to trading, such as harsh self-criticism or observation, quickly become a foundational part of your everyday life.Actionable Takeaway:</li>
+<li>Most traders allocate significantly more mental energy to identifying errors than to reinforcing the good habits that generate profit.</li>
+<li>**Beyond the P\&L:*</li>
+<li>The mental patterns you apply to trading, such as harsh self-criticism or observation, quickly become a foundational part of your everyday life.Actionable Takeaway:</li>
 </ul>
 <p>Make it a daily practice to review your successful actions and trades first, dedicating more time to studying 'what works' rather than 'what went wrong.'don't look for what's wrong look for what's right look for what works and ask yourself how can you start to practice noticing the things you do well much more often than the things you don't do well and you will find this becomes a way of life not just a way of trading but a way of living</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>don&#x27;t look for what&#x27;s wrong look for what&#x27;s right look for what works and ask yourself how can you start to practice noticing the things you do well much more often than the things you don&#x27;t do well and you will find this becomes a way of life not just a way of trading but a way of living and I promise you that leads to a much more satisfying easeful uh and joyful life to be quite honest</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

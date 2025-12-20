@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The 5 Practices of Mentally Resilient Traders</p>
+                <h3>The 5 Practices of Mentally Resilient Traders</h3>
 <p>Many traders fail to achieve consistent, extraordinary success because they underestimate the psychological barriers to performance. True longevity in the market requires more than technical skill; it demands a practiced, resilient mental approach. Discover the core mental frameworks used by market greats to maintain their edge.  - <strong>Mental Mindset Check-ups</strong>: Top traders continuously assess and refine their internal mental state to prevent psychological damage.</p>
 <ul>
 <li><strong>Learning from Market Greats</strong>: Studying the foundational mental approaches of highly successful traders shortens your learning curve.</li>
 <li><strong>Extraordinary Success</strong>: The path to superior results is directly linked to the mastery of personal psychological barriers.Actionable Takeaway: Access the complimentary resource covering the five key practices to integrate top-trader mental resilience into your daily routine.The mental mindset they constantly step into and check themselves up against is crucial for extraordinary success.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you want to discover the mental resilience that top Traders have well you can learn all about them in my five practices to become a better Trader and in that ebook you&#x27;re going to learn from some of the greats from Brian Lee to Jack Kellog and many others who speak about the mental mindset that they constantly step into and check themselves up against for them to be able to have extraordinary success I really look forward to sharing with you it&#x27;s complimentary and sign up with this link that we put here if you want your own copy</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

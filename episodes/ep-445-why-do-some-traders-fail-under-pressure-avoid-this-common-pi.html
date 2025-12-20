@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The High Expectation Trap: Why Unrealistic Goals Demoralize Your Trading</p>
+                <h3>The High Expectation Trap: Why Unrealistic Goals Demoralize Your Trading</h3>
 <p>Unreasonable self-expectations are the silent killer of consistency under pressure. When you set trading goals that push beyond the realm of possibility, you set yourself up for a cycle of defeat and self-demoralization. This constant feeling of "never measuring up" erodes the very confidence needed to execute sound strategy.  - <strong>Unrealistic Expectations Lead to Demoralization</strong>: Setting goals that exceed what is actually possible will break down your mental fortitude drip by drip, leading to emotional burnout.</p>
 <ul>
 <li><strong>The Pressure Point Is Self-Imposed</strong>: Trading failure under pressure is often less about market volatility and more about the internal need to meet impossibly high standards.</li>
 <li><strong>The Necessity of Objective Assessment</strong>: Psychological assessments can diagnose if your expectations are unreasonably high and acting as a ceiling on your performance.Use an objective assessment tool to audit your internal expectations, ensuring your self-imposed pressure is constructive, not destructive.it's okay to have Boda goals but let's keep them in this galaxy because if you don't you will constantly feel like you're never Measuring Up</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>why does some Traders fail Under Pressure I&#x27;ll tell you why because they go into it having incredibly high expectations of themselves now I am a coach I am all about having podaci goals for yourself but when you set up goals that really set you up to push yourself beond what is actually in the reality of possible you potentially completely demoralize yourself Drip by drip and this is something I am able to show Traders when they do the trader positioning index with me that particular assessment will tell us if your expectations are unreasonably high it&#x27;s okay to have Boda goals but let&#x27;s keep them in this galaxy because if you don&#x27;t you will constantly feel like you&#x27;re never Measuring Up</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

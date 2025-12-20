@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cost of Chasing Recovery: Why You Must Never "Make Up" for a Loss</p>
-<p>When you approach the market with the goal of recovering past losses, you trade with an agenda rather than objectivity. This pressure puts blinders on your perception, causing you to project desires onto the chart and leading to further emotional, costly mistakes. Accepting the finality of a loss is the uncomfortable first step toward regaining rational decision-making.  - <strong>The Agenda Trap:</strong> Trading with the sole intention of recovery prevents you from seeing market reality plainly, as you are focused on a desired financial outcome rather than objective price action.</p>
+                <h3>The Cost of Chasing Recovery: Why You Must Never "Make Up" for a Loss</h3>
+<p>When you approach the market with the goal of recovering past losses, you trade with an agenda rather than objectivity. This pressure puts blinders on your perception, causing you to project desires onto the chart and leading to further emotional, costly mistakes. Accepting the finality of a loss is the uncomfortable first step toward regaining rational decision-making.  - **The Agenda Trap:*</p>
 <ul>
-<li><strong>Loss as a Period, Not a Comma:</strong> To move forward cleanly, you must mentally treat each loss as a final event, putting <strong>a period</strong> at the end of the sentence.</li>
-<li><strong>Embrace the Emotion:</strong> The painful feelings associated with a loss (anger, frustration) are necessary; <strong>feeling those feelings</strong> is what helps prevent you from repeating the behavior.Actionable Takeaway: Eradicate the concept of "making up for a loss" from your internal and external vocabulary to ensure you approach every trade with a fresh, clean slate.I want you to actually think about each loss as a period at the end of it not a comma.</li>
+<li>Trading with the sole intention of recovery prevents you from seeing market reality plainly, as you are focused on a desired financial outcome rather than objective price action.</li>
+<li>**Loss as a Period, Not a Comma:*</li>
+<li>To move forward cleanly, you must mentally treat each loss as a final event, putting **a period*</li>
+<li>at the end of the sentence.</li>
+<li>**Embrace the Emotion:*</li>
+<li>The painful feelings associated with a loss (anger, frustration) are necessary; **feeling those feelings*</li>
+<li>is what helps prevent you from repeating the behavior.Actionable Takeaway: Eradicate the concept of "making up for a loss" from your internal and external vocabulary to ensure you approach every trade with a fresh, clean slate.I want you to actually think about each loss as a period at the end of it not a comma.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Aloha everybody Welcome to My EQ Trader prep for the week of September 17th you may know that I&#x27;ve started to do live coaching on my YouTube channel the Wall Street coach on Wednesdays at 7 pm Eastern I hope you&#x27;ll join us one of the topics that is repeatedly showing up is this concept of making up for a loss or uh trying to have a recovery over a big loss that perhaps took place in the past but I want to say might be a little controversial but you never make up for your losses and I really want you to step into this mindset because if you don&#x27;t what happens is you step into every trading take you have with an agenda to make up for that loss and when you step in with an agenda you&#x27;re not going to be able to see rationally or plainly what the market is doing you will have blinders so to speak on or a projection of what you want the market to do so you can make up your loss and that is never going to serve you I want you to actually think about each loss as a</p>
-<p>period at the end of it not a comma and so part of the reason I think that this temptation sits there is because it&#x27;s hard for you to be with the loss it hurts to be with Colossus it makes you angry to be with your loss it makes you mad or frustrated that you didn&#x27;t keep your word to yourself but you have to feel those feelings because part of feeling those feelings is actually going to keep you from doing it again so are they hard to be with feelings yes but if you&#x27;re not with the truth that you did X Y or C you&#x27;re more tempted to do it again so my suggestion this week is see if you can eradicate from your internal vocabulary or external vocabulary this concept of making up for a loss see if you can find way as hard as it might be to accept that law has put a period at the end of that sentence and then go back to your trading fresh with a clean slate let me know how it goes</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

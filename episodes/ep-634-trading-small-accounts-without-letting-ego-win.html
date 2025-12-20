@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Chasing Giant Trades: How Trading Small Accounts Defeats Ego</p>
+                <h3>Stop Chasing Giant Trades: How Trading Small Accounts Defeats Ego</h3>
 <p>When managing a smaller trading account, the immediate pressure to "get rich quick" often triggers ego-driven mistakes, pushing traders into oversized, reckless positions. This impulse to chase massive, instant returns undermines the necessary consistency required for long-term growth. Learn how consciously managing your ego is the true key to scaling any account size effectively.</p>
 <p>Key Insights:  - <strong>Prioritize Holding Power</strong>: Managing accounts successfully means holding onto your capital for a longer time, establishing preservation over fast, risky wins.</p>
 <ul>
 <li><strong>Identify Ego Triggers</strong>: The feeling that you "need to make these giant trades" is a direct sign that your ego, not your strategy, is attempting to hijack your account management.</li>
 <li><strong>Consistency is Cumulative</strong>: Focusing on continually making sound trades, regardless of size, allows successful actions to add up, proving that a steady process beats reckless gambling.Actionable Takeaway: Become acutely conscious of your ego’s presence and actively counter its influence by adhering to your risk management rules, no matter how small the trade.I don't really let like the ego get to me where it's like, "Oh, I need to make these giant trades."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>you know, you&#x27;re going to hold on to that money fast, you know, for a longer time. I feel like trading small accounts is something that I&#x27;ve always been good at. I don&#x27;t really let like the ego get to me where it&#x27;s like, &amp;quot;Oh, I need to make these giant trades.&amp;quot; Because if you&#x27;re continually making trades and you&#x27;re doing something well, then it adds up. Yeah, for sure. It it sounds like you&#x27;re just very conscious of your ego and not letting that hijack you as you manage your trading account. That&#x27;s the idea. I try very</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

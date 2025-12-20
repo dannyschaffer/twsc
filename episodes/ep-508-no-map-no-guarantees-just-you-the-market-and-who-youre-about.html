@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Navigating Act One: The Excitement and Doubt of Your Trading Journey</p>
+                <h3>Navigating Act One: The Excitement and Doubt of Your Trading Journey</h3>
 <p>Starting your trading journey is often called "the call to adventure." It’s an exhilarating but terrifying phase where you leave the familiar world behind. You must navigate a new world filled with both hope and intense self-doubt as you cross the initial threshold.</p>
-<p>Key Insights:  * <strong>The Call to Adventure</strong> is triggered by committing to a new strategy or placing your first ever trade.</p>
+<p>Key Insights:</p>
 <ul>
+<li>**The Call to Adventure*</li>
+<li>is triggered by committing to a new strategy or placing your first ever trade.</li>
 <li>The initial phase is defined by <strong>intense emotional duality</strong>, where excitement and self-doubt coexist.</li>
 <li>Once you cross the threshold, the real work begins: moving beyond preparation into <strong>psychological execution and resilience</strong>.Actionable Takeaway:</li>
 </ul>
 <p>Acknowledge that initial doubt is part of the growth process, and focus on establishing clear, non-negotiable rules to stay grounded during this volatile phase."Am I really doing this? You'll ask yourself. That is the call to adventure."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Am I really doing this? You&#x27;ll ask yourself. That is the call to adventure. It&#x27;s act one of the hero&#x27;s journey. You leave the ordinary world behind and you step into the new world, the trading world. Maybe it&#x27;s a new strategy. Or maybe it&#x27;s your first trade ever. It&#x27;s exciting. It&#x27;s terrifying. You&#x27;re hopeful and you&#x27;re also doubting yourself. You might meet a mentor or binge trading content. Either way, you&#x27;ve crossed the threshold. Now the real work begins. Drop hero in the comments and I&#x27;ll send you the Trading Heroes journey map to help you stay grounded as you take the next</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

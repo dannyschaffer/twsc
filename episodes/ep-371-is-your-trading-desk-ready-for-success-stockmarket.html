@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Professionalism Gap: Is Your Trading a Business or a Hobby?</p>
-<p>Many traders struggle with consistency because they approach the market like a hobbyist, not a professional. This lack of respect manifests in unproven strategies and a disorganized environment, which ultimately costs you profits. To achieve sustained success, you must adopt the serious commitment of an elite professional.  * <strong>The Professional Mindset</strong>: Treating yourself as a professional athlete or race car driver means adopting discipline and seriousness in your routine and preparation.</p>
+                <h3>The Professionalism Gap: Is Your Trading a Business or a Hobby?</h3>
+<p>Many traders struggle with consistency because they approach the market like a hobbyist, not a professional. This lack of respect manifests in unproven strategies and a disorganized environment, which ultimately costs you profits. To achieve sustained success, you must adopt the serious commitment of an elite professional.</p>
 <ul>
+<li><strong>The Professional Mindset</strong>: Treating yourself as a professional athlete or race car driver means adopting discipline and seriousness in your routine and preparation.</li>
 <li><strong>Strategy Validation</strong>: Professional status requires strategies that are <strong>serious and proven</strong>; relying on unverified tactics indicates a hobbyist mentality.</li>
 <li><strong>Environmental Cues</strong>: Your physical workspace serves as a constant indicator of your commitment level, reflecting whether you respect your endeavor as a high-stakes business.Actionable Takeaway:</li>
 </ul>
 <p>Conduct an audit of your workspace and behaviors this week. Ask yourself: Does this setup and routine demonstrate that I am treating this like a professional business?If you start to see yourself as a professional... you are going to be doing things very different than if you are a hobbyist</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the repeated commentaries said the Traders for cause conference this year was so much advocacy for Traders to see themselves as a professional and the conversation is basically how serious are you taking your trading how serious are your strategies are they proven if you start to see yourself as a professional just like a professional athlete or a professional uh race car driver you are going to be doing things very different than if you are a hobbyist so take a look this week at the different ways you relate to your trading look at your desk if it&#x27;s actually looking like a professional desk look for small things and ask yourself does this have the indicators of me treating my treating like a professional</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

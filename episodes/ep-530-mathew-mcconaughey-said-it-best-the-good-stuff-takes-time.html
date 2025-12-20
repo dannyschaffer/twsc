@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,23 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Trading for the Moment and Start Building Your Future</p>
+                <h3>Stop Trading for the Moment and Start Building Your Future</h3>
 <p>The market constantly tempts you with immediate gratification, leading to choices that often compromise your long-term success. When you tie success to instant results—like the biggest laugh or the most money right now—you sacrifice the disciplined patience required for sustained growth. The real edge comes from treating your daily actions as investments in your long-term identity as a successful trader.</p>
-<p>Key Insights:  * <strong>Prioritize Future Self-Respect</strong>: Choose actions today that your future self will look back on and approve of, even if they are unpopular or lack immediate payoff.</p>
+<p>Key Insights:</p>
 <ul>
+<li><strong>Prioritize Future Self-Respect</strong>: Choose actions today that your future self will look back on and approve of, even if they are unpopular or lack immediate payoff.</li>
 <li><strong>Decisions as Compounding Assets</strong>: Recognize that every single trading decision is a <strong>compounding asset</strong>, building either towards the trader you want to be or tearing it down.</li>
-<li><strong>Define Your Trajectory</strong>: Practice <strong>little objectification</strong> about where you are going and who you want to be, ensuring current choices align with your ultimate professional self.Actionable Takeaway:</li>
+<li><strong>Define Your Trajectory</strong>: Practice **little objectification*</li>
+<li>about where you are going and who you want to be, ensuring current choices align with your ultimate professional self.Actionable Takeaway:</li>
 </ul>
 <p>Before making any decision, ask yourself: Is this choice "being cool" to my future self, or am I prioritizing a fleeting moment?This every decision we make is a compounding asset for our own future.</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Be cool to your future self. I&#x27;m just saying in your choices out there, young men, think about the choices you&#x27;re making now, be cool to your future self. If I do this now, I may not get everything I want in a moment, but I&#x27;m going to get more with what I want for a longer time in my future. I&#x27;ll enjoy looking back on this decision and go, nice. And I may not may not be the popular decision, not be even the one that gives you the most money. It may not be the one that gets the biggest laugh at the moment, but think about just have a little objectification of where you&#x27;re going and who you want to be. And that knowing that this every decision we make is a compounding asset for our own future.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

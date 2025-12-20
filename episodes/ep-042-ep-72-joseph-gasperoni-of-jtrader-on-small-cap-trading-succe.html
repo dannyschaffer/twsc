@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Resilience is the Only Edge That Matters in Small-Cap Trading</p>
+                <h3>Why Resilience is the Only Edge That Matters in Small-Cap Trading</h3>
 <p>Small-cap trading is famously volatile and unforgiving, often leading to frustration and disappointment that can wipe out capital and self-confidence. When facing consistent losses, it is easy to assume your strategy is the problem when the real failure point is psychological capacity. This discussion reveals the two non-negotiable mental traits required to navigate this demanding market segment.  - <strong>Determination is the starting line</strong>: Success begins with setting firm goals and an obsession with learning, recognizing that trading is inherently one of the world's most difficult professions.</p>
 <ul>
 <li><strong>Resilience is built, not found</strong>: Small-cap trading is a different beast; expect losses and blown accounts. True resilience is the daily commitment to wake up and try again, regardless of the previous day’s outcome.</li>
 <li><strong>Master the Feedback Loop</strong>: Success requires continuously reviewing what went wrong and identifying why the strategy failed, allowing you to improve and change your approach from the ground up.After a significant loss, immediately commit to analyzing what you did wrong in your trade journal, focusing on improvement rather than punishment."I only had two things I had conviction determination... so I had to change something and I had to learn everything from the beginning."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what kind of mindset do you really feel is critical for Traders who do want to be successful with small cap trading especially now determination and resilience determination because you have to set your goals and trading is one of the hardest job in the world when I came back in trading around 2017-18 I was lucky but I was also determined lucky because I met one of my now friends good friends smash the bid so he helped me a lot to restart since I paused like for some years and the second thing is resilience because in the beginning I was trying everything and it&#x27;s easily to get frustrated disappointed I blew up a couple of counts and I didn&#x27;t have you know a strategy that I could trade for small caps I couldn&#x27;t even trade Futures that was fine but small cap wasn&#x27;t a total different Beast and I only had two things I had conviction determination I wanted to you know I was obsessed in learning that so I had to change something and I had to learn everything from the beginning so these two things were for me resilience because you know after you have</p>
-<p>losses and losses and losses and you&#x27;re trying to figure out why it doesn&#x27;t work in your strategy I mean you still like need to wake up every single morning and try to do better try to see what you did wrong and why you can change to improve</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

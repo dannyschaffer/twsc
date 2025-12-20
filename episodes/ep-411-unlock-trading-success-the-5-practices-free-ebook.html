@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The 5 Psychological Practices That Unlock Consistent Trading Success</p>
-<p>Many traders struggle to break through plateaus because they lack a systematic, psychological framework for growth. True longevity in the market requires more than charts; it demands an intentional approach to handling pressure and emotional triggers. This video outlines five core practices to transform your inner game.  * <strong>Emotional Non-Resistance</strong>: Cultivate the ability to sit with hard feelings, understanding that mastery is not emotional suppression but the capacity to serve uncomfortable emotional states.</p>
+                <h3>The 5 Psychological Practices That Unlock Consistent Trading Success</h3>
+<p>Many traders struggle to break through plateaus because they lack a systematic, psychological framework for growth. True longevity in the market requires more than charts; it demands an intentional approach to handling pressure and emotional triggers. This video outlines five core practices to transform your inner game.</p>
 <ul>
+<li><strong>Emotional Non-Resistance</strong>: Cultivate the ability to sit with hard feelings, understanding that mastery is not emotional suppression but the capacity to serve uncomfortable emotional states.</li>
 <li><strong>Embrace Your Hero's Journey</strong>: View the challenges you face in trading not as personal failures but as necessary steps in a heroic adventure that leads to internal upleveling.</li>
 <li><strong>Mindfulness Self-Awareness</strong>: Practice the skill of noticing your internal state—identifying what triggers you and what makes you feel safe—to gain clarity on your patterns.Start the practice of self-awareness by simply tracking and labeling your emotional state the moment before and after a trade."Mindfulness self-awareness... is the practice of just simply noticing where you're at what's going on for you what triggers you what makes you feel safe"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the five practices are self-responsibility self and other empathy uh ability emotional not resistance which is which is the ability to serve hard to be with feelings practice four is embracing your hero&#x27;s journey starting to look at what you&#x27;re up against with your treating as a heroic Adventure as an upleveling so to speak and then practice five is mindfulness self-awareness and that is the practice of just simply noticing where you&#x27;re at what&#x27;s going on for you what triggers you what makes you feel safe</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>The Balanced Mindset: Why Extreme Optimism Sabotages Your Risk Management</h3>
+                <h3>The Balanced Mindset: Why Extreme Optimism Sabotages Your Risk Management</h3>
 <p>The natural tendency is to identify as either an optimist or a pessimist, but clinging to one extreme in the market can leave you emotionally exposed. Pure optimism blinds you to risk, while excessive pessimism prevents you from executing winning trades. True trading longevity requires integrating both perspectives.  - <strong>Both mindsets hold value</strong>: The optimistic "glass half full" view provides the confidence needed to enter trades, but the pessimistic "glass half empty" view is essential for robust risk planning.</p>
 <ul>
 <li><strong>The market requires situational perspective</strong>: Success is not about being a fixed personality type but recognizing when to apply each lens strategically.</li>
 <li><strong>Risk management is planning for the negative</strong>: True trading preparation means acknowledging the worst-case scenario, which the optimistic trader often avoids.Actionable Takeaway: Actively incorporate a contingency plan for every trade setup, ensuring your optimistic entry is always balanced by pessimistic exit rules.it's great to be optimistic but you also have to plan for when that hits the fan and that's why it's really important to make sure that you have a balance of both</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>are you a glass half empty or glass half full kind of person this is a really interesting uh dynamic because we can almost always tell that about ourselves or those that we&#x27;re really close to and here&#x27;s the thing they both are of value they both have a different way of a lens looking at the world or looking at the markets so part of what I want to say to you is there&#x27;s a time and a place to be a glass hatful and time in a place to be a glass half empty so I want you to realize that it&#x27;s great to be optimistic but you also have to plan for when that hits the fan and that&#x27;s why it&#x27;s really important to make sure that you have a balance of both</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

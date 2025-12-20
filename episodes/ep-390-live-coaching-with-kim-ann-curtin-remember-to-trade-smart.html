@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Putting the Weight of All Your Losses on One Small Trade</p>
+                <h3>Stop Putting the Weight of All Your Losses on One Small Trade</h3>
 <p>Many traders mistakenly try to force small trades to carry the psychological weight of past losses, expecting minor setups to deliver massive emotional relief or account recovery. This psychological misalignment sets trades up for failure and avoids the critical work of emotional management.</p>
-<p>Key Insights:  - <strong>Trade Intent vs. Emotional Pressure:</strong> Trying to make a small trade fix large deficits is a form of self-sabotage, expecting the trade to do "work that it wasn't intended to do."</p>
+<p>Key Insights:  - **Trade Intent vs. Emotional Pressure:*</p>
 <ul>
-<li><strong>Losses Are Standard Territory:</strong> Consistent profitability requires understanding that losses are inevitable; the edge lies purely in <strong>how you manage them</strong>, not in avoiding them entirely.</li>
-<li><strong>Heal the Trigger:</strong> Current losses often trigger deeper, unhealed emotional responses that must be recognized because they are <strong>still triggering some stuff that has to be healed</strong>.Actionable Takeaway: Recognize when you are trying to make a trade do emotional work, and instead focus on trading smarter by adhering strictly to your strategy's predefined risk/reward profile.The losses come with the territory; it's just about how you manage them.</li>
+<li>Trying to make a small trade fix large deficits is a form of self-sabotage, expecting the trade to do "work that it wasn't intended to do."</li>
+<li>**Losses Are Standard Territory:*</li>
+<li>Consistent profitability requires understanding that losses are inevitable; the edge lies purely in <strong>how you manage them</strong>, not in avoiding them entirely.</li>
+<li>**Heal the Trigger:*</li>
+<li>Current losses often trigger deeper, unhealed emotional responses that must be recognized because they are <strong>still triggering some stuff that has to be healed</strong>.Actionable Takeaway: Recognize when you are trying to make a trade do emotional work, and instead focus on trading smarter by adhering strictly to your strategy's predefined risk/reward profile.The losses come with the territory; it's just about how you manage them.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>been there where I tried to put all the weight of every loss on one trade that was only going to give me a two-point move you know but I put all the weight on that little thing like The Little Engine That Could and I tried to make it do do work that it wasn&#x27;t intended to do and um I like to laugh so it&#x27;s awesome you have such great metors I love it done I&#x27;ve done all all the goofy little things but um I not doing that now so my point is that when I do trade I have to trade smarter and I have to better manage my my losses because the losses come with the territory it&#x27;s just about how you manage them and so you gota you gota recognize though that those losses are currently still triggering some stuff that has to be healed and it&#x27;s okay</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

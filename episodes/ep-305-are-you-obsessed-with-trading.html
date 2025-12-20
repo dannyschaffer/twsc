@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Cognitive Trap: How Trading Obsession Destroys Your Edge</p>
-<p>If your life is entirely consumed by the markets, you are actively sabotaging your ability to succeed. This intensity, often mistaken for dedication, is actually dangerous to your trading performance because it severely limits your brain's capacity to process and recognize complex patterns. Trading obsession is not commitment; it is a critical vulnerability.  * <strong>The Price of Tunnel Vision</strong>: Lacking interests outside the charts actively impairs your ability to recognize critical market patterns and execute trades effectively.</p>
+                <h3>The Cognitive Trap: How Trading Obsession Destroys Your Edge</h3>
+<p>If your life is entirely consumed by the markets, you are actively sabotaging your ability to succeed. This intensity, often mistaken for dedication, is actually dangerous to your trading performance because it severely limits your brain's capacity to process and recognize complex patterns. Trading obsession is not commitment; it is a critical vulnerability.</p>
 <ul>
+<li><strong>The Price of Tunnel Vision</strong>: Lacking interests outside the charts actively impairs your ability to recognize critical market patterns and execute trades effectively.</li>
 <li><strong>Success Requires an External Life</strong>: Your trading edge is maximized only when you maintain a healthy balance in your life, protecting your relationships and physical well-being.</li>
 <li><strong>The Necessity of Non-Screen Time</strong>: The solution for burnout and decreased cognitive performance is finding activities that are completely divorced from your trading screen.Actionable Takeaway: Commit to incorporating non-screen time activities immediately; start with a goal to walk 3,000 steps a day.If you don't have a light beyond your trading you are actually going to cognitively decrease your ability to recognize patterns.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>do you sometimes get worried that maybe your trading is taking over your entire life well it could be and that is a very dangerous thing you know what it&#x27;s the most dangerous for your trading because if you don&#x27;t have a light beyond your trading you are actually going to cognitively decrease your ability to recognize patterns so this can become a huge CA not just to your life and to your body and to your relationships but also to your treating and the solution is simply finding a way to incorporate things outside treating that have nothing to do with screen time namely I&#x27;d say walk if you could walk 3,000 steps a day to start that is the beginning</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

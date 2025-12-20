@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Fighting the Market and Focus on Your Real Goal</p>
-<p>Many traders become entirely focused on the external battle: fighting the market, battling their own internal emotional resistance, or confronting naysayers. This fixation on what you are struggling against drains your energy and blurs the vision of the consistent, desired outcome you are truly seeking.  * The <strong>"Fighting Against" Trap</strong> is a common psychological loop that frames trading as a battle of attrition, often leading to emotional exhaustion and burnout.</p>
+                <h3>Stop Fighting the Market and Focus on Your Real Goal</h3>
+<p>Many traders become entirely focused on the external battle: fighting the market, battling their own internal emotional resistance, or confronting naysayers. This fixation on what you are struggling against drains your energy and blurs the vision of the consistent, desired outcome you are truly seeking.</p>
 <ul>
-<li>Clarity on your <strong>Ultimate "Fighting For" Goal</strong> (such as financial freedom or personal autonomy) provides sustainable motivation and resilience during drawdowns.</li>
+<li>The **"Fighting Against" Trap*</li>
+<li>is a common psychological loop that frames trading as a battle of attrition, often leading to emotional exhaustion and burnout.</li>
+<li>Clarity on your **Ultimate "Fighting For" Goal*</li>
+<li>(such as financial freedom or personal autonomy) provides sustainable motivation and resilience during drawdowns.</li>
 <li>Consistency is achieved when you align your daily trading actions with your deep, core intention, moving past short-term defensive reactions.Dedicate time this week to articulate precisely what success in trading will give you—the specific freedom or quality of life you are fighting for—and let that intention guide your pre-market routine.Focus this week not on what you're fighting against but what you are fighting for</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>I think it&#x27;s really easy to focus often on what you&#x27;re fighting against you&#x27;re fighting against the market fighting against perhaps the emotions that you have yet to develop Mastery over you&#x27;re fighting against those naysayers who don&#x27;t encourage you or believe in what you&#x27;re up to but don&#x27;t forget to focus on what you&#x27;re fighting for put your emphasis this week on what your f fighting for you&#x27;re likely fighting for Financial Freedom you&#x27;re likely fighting for freedom in of itself where you don&#x27;t have to report to the man Focus this week not on what you&#x27;re fighting against but what you are fighting for</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

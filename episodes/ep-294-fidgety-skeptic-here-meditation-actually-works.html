@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Adding Suffering to Your Losses: The Power of Mental Management</p>
-<p>As a trader, you constantly face unwanted outcomes—drawdowns, missed entries, and unexpected volatility. The true emotional and financial cost, however, is not the trade itself, but the <strong>emotional suffering</strong> you layer on top of the event. Learning to separate the market event from your internal reaction is the ultimate tool for sustained consistency.  - <strong>Suffering is a Choice</strong>: Market losses and volatile events are inevitable, but the internal mindset that turns these moments into deep personal suffering is a learned mental habit that can be consciously changed.</p>
+                <h3>Stop Adding Suffering to Your Losses: The Power of Mental Management</h3>
+<p>As a trader, you constantly face unwanted outcomes—drawdowns, missed entries, and unexpected volatility. The true emotional and financial cost, however, is not the trade itself, but the **emotional suffering*</p>
 <ul>
+<li>you layer on top of the event. Learning to separate the market event from your internal reaction is the ultimate tool for sustained consistency.  - <strong>Suffering is a Choice</strong>: Market losses and volatile events are inevitable, but the internal mindset that turns these moments into deep personal suffering is a learned mental habit that can be consciously changed.</li>
 <li><strong>The Mind is the Creator</strong>: Your internal narrative, not the external price action, is the primary source of paralyzing fear, regret, and revenge trading impulses.</li>
 <li><strong>Power Through Management</strong>: The capacity to manage your automatic thoughts is the single most powerful edge a trader possesses because it is ultimately in your control.Dedicate 10 minutes a day to a mental practice to build the capacity to observe, rather than react to, unwanted market movements.Do we want to suffer and if we don't want to suffer then we can change our mind it's our mind that creates that suffering.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Dan Harris created the app 10% happier which is named after his book which is about meditation for FY Skeptics which I definitely am or at least was and I want to to speak to a powerful conversation he just had with Joseph Goldstein who said of course all of us are going to experience unwanted experiences but do we want to suffer and if we don&#x27;t want to suffer then we can change our mind it&#x27;s our mind that creates that suffering and most of us haven&#x27;t been taught yet how to manage those thoughts and that is what is ultimately in our power so sign up for 10% happier if you don&#x27;t already have it</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

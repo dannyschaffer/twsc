@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Fighting Your Reactions: Why Self-Compassion Unlocks Change</p>
+                <h3>Stop Fighting Your Reactions: Why Self-Compassion Unlocks Change</h3>
 <p>Your emotional reactions during a trade can feel like the enemy, leading to costly mistakes in the market and in your life. Yet, seeing these reactions as flaws or beating yourself up only leads to psychological contraction, making lasting change impossible. This video reveals how re-framing your emotional 'triggers' can unlock genuine behavioral evolution.  - <strong>Your Reaction is a Protective Mechanism</strong>: Stop labeling your emotional responses as inherently bad; view them as an attempt by your system to keep you safe.</p>
 <ul>
 <li><strong>The Cost of Self-Criticism</strong>: Beating yourself up or feeling wrong about a poor reaction leads to further contraction, setting you up to repeat the costly pattern.</li>
 <li><strong>Future Outcomes Depend on Present Awareness</strong>: How you acknowledge your reaction right now, without judgment, is the essential first step toward better future trades.When a reaction triggers costly behavior, pause immediately and simply notice that it "just took me over" without assigning moral judgment or fault."The key is to begin to see the way you react not as the enemy but as a protective mechanism."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>live coaching with other Wall Street coach. And the key is to begin to see the way you react not as the enemy but as a protective mechanism. I understand that sometimes the way you react is costly. But in the face of that reaction, you have got to begin to notice. Oh god, that just took me over. That just sideswiped me. That just made me get triggered in such a way that I did something that&#x27;s either costly to my treating or costly in relationship or to myself in my life. When you start to see that as opposed to making yourself feel bad about it or beating yourself up or making yourself like wrong, all of that, doing that puts you into a further contraction and puts you sets you up further away from being able to change Sh.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

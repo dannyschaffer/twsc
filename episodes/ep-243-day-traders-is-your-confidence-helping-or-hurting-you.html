@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Confidence Pendulum: Finding the Balance Between Hubris and Doubt</p>
-<p>Your performance is directly tied to the internal state of your confidence. Being overly cocky (hubris) leads to reckless over-risking, while excessive doubt causes hesitation and missed opportunities. True consistency requires calibrating this inner "confidence pendulum" to a place of sustainable harmony.  * Trading confidence exists on a continuum, and being too far on either end—<strong>hubris or paralyzing doubt</strong>—will disrupt your market equilibrium.</p>
+                <h3>The Confidence Pendulum: Finding the Balance Between Hubris and Doubt</h3>
+<p>Your performance is directly tied to the internal state of your confidence. Being overly cocky (hubris) leads to reckless over-risking, while excessive doubt causes hesitation and missed opportunities. True consistency requires calibrating this inner "confidence pendulum" to a place of sustainable harmony.</p>
 <ul>
+<li>Trading confidence exists on a continuum, and being too far on either end—<strong>hubris or paralyzing doubt</strong>—will disrupt your market equilibrium.</li>
 <li>The state of your confidence dictates whether you are in <strong>balance and harmony</strong>, which is essential for consistent, effective decision-making.</li>
-<li>Your trading struggles are often a clear sign that you are leaning into one extreme: <strong>reckless arrogance</strong> (being too cocky) or <strong>crippling uncertainty</strong> (being too unsure).Honestly assess which extreme challenges you most, and seek out one specific action this week that moves you closer to the healthy, balanced center."Don't want to be too cocky and you don't want to be too kind of unsure of yourself. You want to find a healthy balance."</li>
+<li>Your trading struggles are often a clear sign that you are leaning into one extreme: **reckless arrogance*</li>
+<li>(being too cocky) or **crippling uncertainty*</li>
+<li>(being too unsure).Honestly assess which extreme challenges you most, and seek out one specific action this week that moves you closer to the healthy, balanced center."Don't want to be too cocky and you don't want to be too kind of unsure of yourself. You want to find a healthy balance."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>what do you struggle with hubris or not enough confidence everybody&#x27;s different but I want you to be honest with yourself this week what is the one that&#x27;s challenging you the most and then I want you to think of yourself like a pendulum if you&#x27;re too far to either side you&#x27;re not going to sort of be in balance in harmony so what is it that you could do this week that moves you a little bit more into the middle of the dial don&#x27;t want to be too cocky and you don&#x27;t want to be too kind of unsure of yourself you want to find a healthy balance and I&#x27;m going to ask you to seek it this week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

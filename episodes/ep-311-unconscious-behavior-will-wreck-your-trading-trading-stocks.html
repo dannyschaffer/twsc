@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Believing You’re in Control: How Unconscious Behavior Wrecks Your Trading</p>
-<p>You believe every trade decision is conscious and rational, yet you keep repeating the same costly mistakes. The truth is, the majority of your trading behavior is governed by your <strong>unconscious mind</strong>. This lack of awareness creates destructive, repetitive cycles that consistently undermine your strategy and P\&L.  * <strong>The Unconscious Driver</strong>: Recognize that most of your day-to-day trading actions are not deliberate choices but reactions programmed by your subconscious.</p>
+                <h3>Stop Believing You’re in Control: How Unconscious Behavior Wrecks Your Trading</h3>
+<p>You believe every trade decision is conscious and rational, yet you keep repeating the same costly mistakes. The truth is, the majority of your trading behavior is governed by your <strong>unconscious mind</strong>. This lack of awareness creates destructive, repetitive cycles that consistently undermine your strategy and P\&L.</p>
 <ul>
+<li><strong>The Unconscious Driver</strong>: Recognize that most of your day-to-day trading actions are not deliberate choices but reactions programmed by your subconscious.</li>
 <li><strong>The Repetition Trap</strong>: True self-awareness comes from noticing patterns—the habits and repeated negative situations you find yourself in on the chart.</li>
-<li><strong>Consciousness as the Edge</strong>: Becoming conscious of these loops is the essential first step; no technical strategy can fix behavior you cannot see.<strong>Actionable Takeaway</strong></li>
+<li><strong>Consciousness as the Edge</strong>: Becoming conscious of these loops is the essential first step; no technical strategy can fix behavior you cannot see.**Actionable Takeaway*</li>
+<li>Actively start tracking the repetition of situations you find yourself in, focusing on what happens immediately before an impulsive behavior, not just the outcome."We think we're the driver of this vehicle, but we're kidding ourselves; it is mostly driven by our unconscious."</li>
 </ul>
-<p>Actively start tracking the repetition of situations you find yourself in, focusing on what happens immediately before an impulsive behavior, not just the outcome."We think we're the driver of this vehicle, but we're kidding ourselves; it is mostly driven by our unconscious."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the majority of our behavior is being driven unconsciously we think we&#x27;re the driver of this vehicle but we&#x27;re kidding ourselves it is mostly driven by our unconscious and this is a big reason why I&#x27;m such an advocate yes I&#x27;m an advocate for coaching but really guys what am I always advocating besides the concept of coaching I&#x27;m always advocating selfawareness I&#x27;m always advocating being conscious noticing the habits Andor the behaviors or the repetition of situations you find yourself in</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

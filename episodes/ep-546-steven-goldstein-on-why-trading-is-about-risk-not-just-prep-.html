@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Real Job of a Trader: Why Risk is Performance</p>
-<p>Many traders treat the markets like a puzzle, believing their job is merely to find the perfect value or setup. This intense focus on preparation overlooks the critical moment: execution and managing the inherent risk. Until you embrace risk as the core function of trading, your overall performance will remain inconsistent.  - The <strong>True Job of Trading</strong> is the "risk bit" and the "performance bit," not analysis or finding market value.</p>
+                <h3>The Real Job of a Trader: Why Risk is Performance</h3>
+<p>Many traders treat the markets like a puzzle, believing their job is merely to find the perfect value or setup. This intense focus on preparation overlooks the critical moment: execution and managing the inherent risk. Until you embrace risk as the core function of trading, your overall performance will remain inconsistent.  - The **True Job of Trading*</p>
 <ul>
+<li>is the "risk bit" and the "performance bit," not analysis or finding market value.</li>
 <li>Preparation (analysis, planning) is only one side of the process cycle; the essential skill is actively <strong>taking and managing risk</strong>.</li>
-<li>Mastering performance requires establishing a psychological contract to become a <strong>better risk taker</strong> and implementing a clear process for handling that risk.Actionable Takeaway: Reframe your trading routine to define and practice your process for taking risk, recognizing it as the central function of your job.The job is risk. The job is not finding value in the market.</li>
+<li>Mastering performance requires establishing a psychological contract to become a **better risk taker*</li>
+<li>and implementing a clear process for handling that risk.Actionable Takeaway: Reframe your trading routine to define and practice your process for taking risk, recognizing it as the central function of your job.The job is risk. The job is not finding value in the market.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>the Wall Street Coach podcast. But then it&#x27;s the risk bit. It&#x27;s the performance bit. That&#x27;s what the job is. There&#x27;s a light bulb moment. The job is risk. The job is not finding value in the market. You find value in the market to get you into positions, but it&#x27;s you who has to then take them. If you look at that process cycle in the book, you know, the left hand side of it is all about preparation for the trade, okay, for positioning. You haven&#x27;t got anything on yet. getting yourself in the right state, doing the right things, you know, planning the trade, etc., coming up with the ideas, but then it&#x27;s the risk bit, it&#x27;s the performance bit. That&#x27;s what the job is. And we don&#x27;t think about it like that. I taught myself, and this is probably a bit of a psychological contract, I&#x27;ve got to become a better risk taker. I&#x27;ve got to find a process for taking risk. Okay, that&#x27;s what I need to do.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

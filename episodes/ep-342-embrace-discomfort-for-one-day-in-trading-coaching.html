@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,8 +193,7 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>The One-Day Challenge: How to Conquer the Discomfort of Trading Loss</h3>
+                <h3>The One-Day Challenge: How to Conquer the Discomfort of Trading Loss</h3>
 <p>The fear of emotional pain often causes worse financial results, leading to avoidance or impulsive trading when loss inevitably occurs. Learning to process the discomfort of a losing trade is a critical skill for long-term consistency. This approach advocates for a temporary, low-stakes experiment in emotional acceptance.</p>
 <p>Key Insights:  - <strong>The Power of Temporary Acceptance</strong>: Commit to confronting the discomfort for just one day, removing the pressure of needing permanent emotional mastery.</p>
 <ul>
@@ -232,14 +201,6 @@
 <li><strong>Activate the Observer Mindset</strong>: Practice watching the emotional reaction (being triggered) without immediately acting on the impulse to "fix" the trade.Actionable Takeaway: For your next trade, commit for one day only to "dance with the discomfort of loss" and rigorously journal the emotional triggers without judgment.</li>
 </ul>
 <p>Quote:I'm going to get triggered, but I'm going to also observe myself being triggered</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>just for the day not forever but one day just see today&#x27;s the day where I&#x27;m going to dance with discomfort of loss dance with the discomfort of losing money just my interpretation of reading this trade just for today I&#x27;m going to be willing to be with that discomfort and watch myself get triggered I&#x27;m going to get triggered but I&#x27;m going to also observe myself being triggered</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -292,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

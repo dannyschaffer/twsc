@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Cost of External Stress on Your Trading P&L</p>
+                <h3>The Hidden Cost of External Stress on Your Trading P&L</h3>
 <p>As a trader, you are physiologically, emotionally, and biologically impacted by too much stress. If you feel overwhelmed, it may not just be the charts causing pressure, but unmanaged burdens from outside the market. Unrecognized stress drains your capacity to execute your strategy clearly and consistently.  - <strong>Physiological Impact</strong>: Excessive stress, regardless of the source, compromises your ability to think clearly under pressure.</p>
 <ul>
 <li><strong>Dual Sources of Stress</strong>: While market stress is partially managed through boundaries and rules, external life stress must also be proactively addressed to stabilize your mental edge.</li>
-<li><strong>The Mitigation Mandate</strong>: Since all stress is interconnected, you must actively seek to mitigate external pressures to create the necessary capacity for handling market volatility.<strong>Actionable Takeaway:</strong> Review areas outside your trading desk—such as your environment, relationships, or health habits—to identify and reduce sources of chronic, non-market stress."you are physiologically and emotionally and biologically going to be impacted by too much stress"</li>
+<li><strong>The Mitigation Mandate</strong>: Since all stress is interconnected, you must actively seek to mitigate external pressures to create the necessary capacity for handling market volatility.**Actionable Takeaway:*</li>
+<li>Review areas outside your trading desk—such as your environment, relationships, or health habits—to identify and reduce sources of chronic, non-market stress."you are physiologically and emotionally and biologically going to be impacted by too much stress"</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>when was the last time you took a really hard look at how much stress you&#x27;re under stress is going to come in a lot of different forms it&#x27;s going to come in the form of trading but sometimes it&#x27;s going to come in a lot of other formats and I want you to realize that as a traitor you are physiologically and emotionally and biologically going to be impacted by too much stress so you got to mitigate it where you can you don&#x27;t really have as much control over the stress that shows up in your treating although you do if you pay attention closely to some particular boundaries and rules but you certainly can take a look externally to things outside of your trading and find a way to mitigate the stress wherever it is externally to you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,16 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Survival Bias: Why Your Negative Thoughts Block Profit</p>
-<p>Your brain is hardwired to focus on the negative—a crucial survival trait that paradoxically becomes a huge liability in trading. This chronic self-criticism and habit of spotting flaws prevents you from allowing profitable trades to run, leading to significant emotional and financial loss. It is time to recognize this ancient wiring and actively work to override it.  * The brain's natural bias toward negativity is a survival mechanism, but it <strong>sabotages your ability to hold winning trades</strong>.</p>
+                <h3>The Survival Bias: Why Your Negative Thoughts Block Profit</h3>
+<p>Your brain is hardwired to focus on the negative—a crucial survival trait that paradoxically becomes a huge liability in trading. This chronic self-criticism and habit of spotting flaws prevents you from allowing profitable trades to run, leading to significant emotional and financial loss. It is time to recognize this ancient wiring and actively work to override it.</p>
 <ul>
-<li>Continually noticing what you <strong>don't do well</strong> establishes a feedback loop that keeps you emotionally and strategically stuck.</li>
-<li>Getting unstuck requires a conscious, consistent shift toward noticing <strong>what has gone right</strong> in your life and trading process.Actionable Takeaway:</li>
+<li>The brain's natural bias toward negativity is a survival mechanism, but it <strong>sabotages your ability to hold winning trades</strong>.</li>
+<li>Continually noticing what you **don't do well*</li>
+<li>establishes a feedback loop that keeps you emotionally and strategically stuck.</li>
+<li>Getting unstuck requires a conscious, consistent shift toward noticing **what has gone right*</li>
+<li>in your life and trading process.Actionable Takeaway:</li>
 </ul>
 <p>For one full week, dedicate attention outside of trading hours to consciously notice and acknowledge what has gone right, rather than defaulting to critique."We are built our brain to look for the negative, and that's an excellent trait except when it sabotages you from letting a good trade run."</p>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>is negative thinking sabotaging your trading you want to take a hard look if it is the case we are built our brain to look for the negative it is how we&#x27;ve survived all these years and that&#x27;s an excellent trait except when it sabotages you from letting a good trade run there&#x27;s a lot of times where the negative thinking finding what is going wrong even noticing what you don&#x27;t do well becomes such a day-to-day habit that it&#x27;s hard for you to get yourself unstuck so I want you for one week outside of you&#x27;re trading to be very close attention are you operating from a place of noticing what&#x27;s gone wrong or are you able to start to notice what has gone right</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +255,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

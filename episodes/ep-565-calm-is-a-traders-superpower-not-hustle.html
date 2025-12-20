@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<h3>Stop Hustling: Why Calm Is Your Only Real Trading Edge</h3>
-<p>The common advice is to hustle harder, but perpetual overdrive leads directly to burnout and poor decisions. If you are constantly swinging between panic and excessive risk-taking, you are draining your capacity and sabotaging long-term profitability.  * The true path to long-term success isn't aggressive action but <strong>emotional resilience</strong> under market pressure.</p>
+                <h3>Stop Hustling: Why Calm Is Your Only Real Trading Edge</h3>
+<p>The common advice is to hustle harder, but perpetual overdrive leads directly to burnout and poor decisions. If you are constantly swinging between panic and excessive risk-taking, you are draining your capacity and sabotaging long-term profitability.</p>
 <ul>
+<li>The true path to long-term success isn't aggressive action but **emotional resilience*</li>
+<li>under market pressure.</li>
 <li>Calmness acts as <strong>psychological leverage</strong>, allowing you to execute your strategy without the interference of fear or greed.</li>
 <li>The ability to remain composed when others are panicking is the defining factor that separates consistent winners from short-term fliers.Actionable Takeaway: Focus on regulating your nervous system before entering the market; your state determines your outcome more than your analysis.Calm isn't weakness, it's leverage.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>You don&#x27;t need more hustle. You need calm that can hold under pressure. The trader who stays calm when others panic, that&#x27;s the one that wins long term. Calm isn&#x27;t weakness, it&#x27;s leverage. Put the word calm in the comments if you&#x27;re done swinging between overdrive and shutdown.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

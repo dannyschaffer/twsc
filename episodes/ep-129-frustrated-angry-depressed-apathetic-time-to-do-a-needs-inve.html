@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>How Unmet Needs Sabotage Your Trading Psychology</p>
-<p>Frustration, anxiety, and apathy are not random trading flaws; they are critical warning signs. These intense emotional states signal that fundamental human needs—which dictate your clarity and discipline—are being ignored off-chart. Learn how to perform a "Needs Inventory" to diagnose the root cause of your psychological trading errors.  - Emotional signals like grief or depression function as a <strong>dashboard warning light</strong> for deeper psychological deficits.</p>
+                <h3>How Unmet Needs Sabotage Your Trading Psychology</h3>
+<p>Frustration, anxiety, and apathy are not random trading flaws; they are critical warning signs. These intense emotional states signal that fundamental human needs—which dictate your clarity and discipline—are being ignored off-chart. Learn how to perform a "Needs Inventory" to diagnose the root cause of your psychological trading errors.  - Emotional signals like grief or depression function as a **dashboard warning light*</p>
 <ul>
+<li>for deeper psychological deficits.</li>
 <li>Trading consistency relies on satisfying universal human needs (such as <strong>Choice, Freedom, and Connection</strong>), not just technical strategy.</li>
-<li>When core needs are unmet, the mind will unconsciously seek to fill that void through high-risk, compulsive trading behavior.<strong>Actionable Takeaway:</strong> Perform a systematic needs inventory to identify which foundational human needs are currently unmet in your life and create a plan to satisfy them outside of trading."If you have feelings of frustration anxiety grief depression apathy any of these or all of these then it is a warning light on the dashboard of you that you are not getting some of your basic needs met."</li>
+<li>When core needs are unmet, the mind will unconsciously seek to fill that void through high-risk, compulsive trading behavior.**Actionable Takeaway:*</li>
+<li>Perform a systematic needs inventory to identify which foundational human needs are currently unmet in your life and create a plan to satisfy them outside of trading."If you have feelings of frustration anxiety grief depression apathy any of these or all of these then it is a warning light on the dashboard of you that you are not getting some of your basic needs met."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>if you have feelings of frustration anxiety grief depression apathy any of these or all of these then it is a warning light on the dashboard of you that you are not getting some of your basic needs met I&#x27;d love for you to do a needs inventory with me right now I&#x27;m going to speak to some Universal human needs and I want you to write down the ones that you are not getting met or not getting met enough of here we go Choice Freedom spontaneity perhaps its connection which would include cooperation Community a companionship empathy inclusion mutuality perhaps it&#x27;s honor</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

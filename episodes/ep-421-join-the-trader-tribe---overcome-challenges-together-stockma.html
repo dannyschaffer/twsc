@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,20 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Trap of Isolation: Why Your Trading Challenges Are Not Unique</p>
-<p>The solo nature of trading often leads to the debilitating belief that your psychological struggles are unique failures, fostering isolation and shame. This self-inflicted separation prevents necessary healing and growth. Joining a supportive community immediately reframes internal struggles as common challenges, not personal defects.  - <strong>The Power of Shared Struggle:</strong> Your biggest psychological breakthroughs occur when you realize your "unique" problems are shared by most high-performing traders.</p>
+                <h3>The Hidden Trap of Isolation: Why Your Trading Challenges Are Not Unique</h3>
+<p>The solo nature of trading often leads to the debilitating belief that your psychological struggles are unique failures, fostering isolation and shame. This self-inflicted separation prevents necessary healing and growth. Joining a supportive community immediately reframes internal struggles as common challenges, not personal defects.  - **The Power of Shared Struggle:*</p>
 <ul>
-<li><strong>Immediate Validation:</strong> Openly discussing difficult experiences shifts the focus from personal defect to a universal learning experience, accelerating emotional recovery and progress.Actionable Takeaway: Seek out and actively participate in a professional trading community to normalize your psychological challenges and access collective wisdom.that person suddenly realizes wait a minute it isn't just me</li>
+<li>Your biggest psychological breakthroughs occur when you realize your "unique" problems are shared by most high-performing traders.</li>
+<li>**Immediate Validation:*</li>
+<li>Openly discussing difficult experiences shifts the focus from personal defect to a universal learning experience, accelerating emotional recovery and progress.Actionable Takeaway: Seek out and actively participate in a professional trading community to normalize your psychological challenges and access collective wisdom.that person suddenly realizes wait a minute it isn't just me</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>nine times out of 10 what happens for the traders who come into this room they create a posy for themselves they create a tribe because every other traitor who is in this space listening to the traiter who&#x27;s got the guts enough to come into this room all of the traitors start saying to that person oh my God me too oh my God thank you so much for coming into that room because I struggle with that very same challenge as well and that person suddenly realizes wait a minute it isn&#x27;t just me</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -289,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

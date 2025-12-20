@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,18 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Stop Losing to FOMO: The Profitable Edge of the Joy of Missing Out (JOMO)</p>
-<p>In a social media saturated world, the Fear of Missing Out (FOMO) is constantly amplified, pushing traders into impulsive, costly decisions. This emotional trap causes you to focus negatively on perceived missed opportunities. Shifting your focus to JOMO—the Joy of Missing Out—is a powerful strategy that reframes these moments into profitable benefits.  * <strong>Reframing Missed Opportunity:</strong> What feels like a negative, missed trade often reveals a deeper benefit gained by avoiding unnecessary risk and sticking to your defined system.</p>
+                <h3>Stop Losing to FOMO: The Profitable Edge of the Joy of Missing Out (JOMO)</h3>
+<p>In a social media saturated world, the Fear of Missing Out (FOMO) is constantly amplified, pushing traders into impulsive, costly decisions. This emotional trap causes you to focus negatively on perceived missed opportunities. Shifting your focus to JOMO—the Joy of Missing Out—is a powerful strategy that reframes these moments into profitable benefits.</p>
 <ul>
-<li><strong>The Social Media Amplification:</strong> Recognize that the feeling of FOMO is easily triggered by the external noise of the market and the filtered "wins" shared on social media platforms.</li>
-<li><strong>Unlocking Perspective:</strong> By shifting your viewpoint, you realize the <strong>incredible benefit</strong> that comes from maintaining clarity and discipline when others are being driven by emotion.Actionable Takeaway: When you feel the intense anxiety of FOMO, immediately stop and identify one specific, negative situation you avoided by *not* taking the impulsive trade.I really want you to focus on Joo and Joo can be absolutely lifechanging.</li>
+<li>**Reframing Missed Opportunity:*</li>
+<li>What feels like a negative, missed trade often reveals a deeper benefit gained by avoiding unnecessary risk and sticking to your defined system.</li>
+<li>**The Social Media Amplification:*</li>
+<li>Recognize that the feeling of FOMO is easily triggered by the external noise of the market and the filtered "wins" shared on social media platforms.</li>
+<li>**Unlocking Perspective:*</li>
+<li>By shifting your viewpoint, you realize the **incredible benefit*</li>
+<li>that comes from maintaining clarity and discipline when others are being driven by emotion.Actionable Takeaway: When you feel the intense anxiety of FOMO, immediately stop and identify one specific, negative situation you avoided by *not</li>
+<li>taking the impulsive trade.I really want you to focus on Joo and Joo can be absolutely lifechanging.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>how are you guys so easy to get slipped into fomo fear of missing out I think it&#x27;s so easy in this social media drenched world we all live in but I really want you to focus on Joo and Joo can be absolutely lifechanging actually I have a small group uh coaching group and today a couple of things that this client spoke to was absolutely riveting in reference to situations that occurred for him that he had looked upon negatively but when he shifted his perspective to the joy of missing out which is what Sho represents he realized all of the incredible benefit</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +257,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

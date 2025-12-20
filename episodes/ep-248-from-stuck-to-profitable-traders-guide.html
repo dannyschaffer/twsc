@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Trader's Limbo: How to Navigate the Stuck Feeling of Growth</p>
+                <h3>The Trader's Limbo: How to Navigate the Stuck Feeling of Growth</h3>
 <p>The feeling of being "stuck in a hallway" can feel like limbo, causing traders to doubt their strategies and progress. This emotional stagnation is frustrating, but recognizing this state as a natural transition point is essential for sustainable advancement. This period is critical for cementing your psychological foundations.  - The feeling of being stuck is confirmation that you are in a <strong>period of transition</strong>, not failure.</p>
 <ul>
 <li>Avoid the temptation to rush through this phase, as moving too quickly prevents necessary <strong>digestion of learned material</strong>.</li>
-<li>Embracing this slowing down is key to ensuring your growth is <strong>deeply rooted</strong> and lasting.Actionable Takeaway: Consciously view any feeling of being "in limbo" as a vital part of your process and dedicate time to self-reflection instead of chasing immediate, rapid trades.all who linger are not lost</li>
+<li>Embracing this slowing down is key to ensuring your growth is **deeply rooted*</li>
+<li>and lasting.Actionable Takeaway: Consciously view any feeling of being "in limbo" as a vital part of your process and dedicate time to self-reflection instead of chasing immediate, rapid trades.all who linger are not lost</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>does it ever feel like you&#x27;re stuck in a hallway a passageway that feels a little bit like limbo I just want to remind you that that is part of growth sometimes it just lasts longer than we would like it to but that doesn&#x27;t mean you&#x27;re going to stay there forever but you do need to realize that all who Li her are not lost that&#x27;s a fabulous quote from sum mon kid because I want you to realize that being in that hallway is a transition point and don&#x27;t rush it because you don&#x27;t want to move too quickly from one room to another part of that hallway is your digesting all that you have learned so don&#x27;t be so worried if you find yourself in that hallway</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

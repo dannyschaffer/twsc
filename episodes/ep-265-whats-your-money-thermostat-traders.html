@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,15 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Hidden Money Thermostat That Controls Your Trading Profits</p>
-<p>Are you consistently hitting a certain profit level only to watch your account retreat? This pattern is often due to your <strong>money thermostat</strong>, a financial comfort zone unconsciously programmed during childhood. Until you consciously challenge this preset, you will sabotage yourself to stay within familiar financial limits.  - Your money thermostat is established in childhood, influenced by the <strong>financial environment</strong> of your family and caretakers.</p>
+                <h3>The Hidden Money Thermostat That Controls Your Trading Profits</h3>
+<p>Are you consistently hitting a certain profit level only to watch your account retreat? This pattern is often due to your <strong>money thermostat</strong>, a financial comfort zone unconsciously programmed during childhood. Until you consciously challenge this preset, you will sabotage yourself to stay within familiar financial limits.  - Your money thermostat is established in childhood, influenced by the **financial environment*</p>
 <ul>
-<li>This creates an invisible <strong>window of comfort or familiarity</strong> for your P\&L, regardless of whether that comfort zone is high or low wealth.</li>
-<li>You will unconsciously <strong>take yourself back</strong> to this preset comfort level, making sustained growth impossible until the underlying beliefs are addressed.Start the necessary psychological work now to identify and reprogram the limiting financial beliefs that dictate your comfort level in the market.There is this kind of window of comfort or familiarity that each of us have until we do some work around it.</li>
+<li>of your family and caretakers.</li>
+<li>This creates an invisible **window of comfort or familiarity*</li>
+<li>for your P\&L, regardless of whether that comfort zone is high or low wealth.</li>
+<li>You will unconsciously **take yourself back*</li>
+<li>to this preset comfort level, making sustained growth impossible until the underlying beliefs are addressed.Start the necessary psychological work now to identify and reprogram the limiting financial beliefs that dictate your comfort level in the market.There is this kind of window of comfort or familiarity that each of us have until we do some work around it.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>did you know that we each have a money thermostat that&#x27;s right this usually gets designed by childhood whatever is happening financially for our family of Forin our parents or caretakers or the kids we hang out with most of the time are M thermostat gets set by those variables I learned that technique and term from tar eer in his amazing book called The Secrets of the Millionaire Mind and it talks at length how each of us have this kind of preset and we will consistently take ourselves back to that comfort zone that we know if there&#x27;s a lot of money or if there isn&#x27;t enough there is this kind of window of comfort or familiarity that each of us have until we do some work around it so if you&#x27;re a Trader and you have not done some work around your relationship to money it&#x27;s not too late to start now</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +254,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

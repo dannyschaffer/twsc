@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Fear of Success: Why Traders Sabotage When Things Get Real</p>
-<p>Many traders with proven strategies and adequate capital often struggle with the psychological resistance of increasing their position size. This inability to uplevel isn't a strategy flaw; it is a profound, unconscious fear of success and the uncomfortable "realness" that comes with higher stakes.  * <strong>The Psychological Ceiling</strong>: Performance ceilings are often self-imposed, driven by a reluctance to embrace the *change* that financial success demands, rather than a lack of market skill.</p>
+                <h3>The Fear of Success: Why Traders Sabotage When Things Get Real</h3>
+<p>Many traders with proven strategies and adequate capital often struggle with the psychological resistance of increasing their position size. This inability to uplevel isn't a strategy flaw; it is a profound, unconscious fear of success and the uncomfortable "realness" that comes with higher stakes.</p>
 <ul>
-<li><strong>The Real Cost of Upleveling</strong>: When the P\&L numbers grow, the stakes feel exponentially higher, triggering the nervous system to protect itself from the increased pressure and responsibility of <strong>"things getting real."</strong></li>
+<li><strong>The Psychological Ceiling</strong>: Performance ceilings are often self-imposed, driven by a reluctance to embrace the *change</li>
+<li>that financial success demands, rather than a lack of market skill.</li>
+<li><strong>The Real Cost of Upleveling</strong>: When the P\&L numbers grow, the stakes feel exponentially higher, triggering the nervous system to protect itself from the increased pressure and responsibility of **"things getting real."*</li>
+</ul>
+<p>•</p>
+<ul>
 <li><strong>Success Triggers Hesitation</strong>: If success feels overwhelming or unsafe, the trader's inner dialogue will create hesitation, leading to self-sabotage that prevents them from stepping into their full capacity.Ask yourself: Where will it get real, and what specifically about that "realness" makes you hesitant to take the next step this week?sometimes it's that things are going to get real that can scare Traders away from them upleveling</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>last week I was doing some group coaching and one of the issues a Trader was struggling was in sizing up even though they have a proven strategy even though they are well capitalized to size up and what I asked them was what is the worst case scenario what could be the worst case that happens if they size up and succeed and their answer will because shit&#x27;s going to get real so Bingo sometimes it&#x27;s that things are going to get real that can scare Traders away from them upleveling and I want to pose that question back to you where is it going to get real what is scary about it getting real what could make you become hesitant to step into that realness ask yourself that this week</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

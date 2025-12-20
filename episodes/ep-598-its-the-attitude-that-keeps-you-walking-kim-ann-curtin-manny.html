@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The One Mental Edge That Outlasts Age and Market Crises</p>
+                <h3>The One Mental Edge That Outlasts Age and Market Crises</h3>
 <p>In trading and in life, setbacks are inevitable—whether it’s a painful drawdown or feeling mentally worn down. We often fixate on mitigating the external damage, but the true key to longevity and consistent performance is cultivating internal resilience. Learn how an unshakable attitude is the non-negotiable factor for surviving market turbulence and finishing strong.  - <strong>Attitude is the Master Mechanic</strong>: Just as good doctors and mechanics fix an old car, your mental state is the primary factor determining survival and success, even when your strategy or emotional systems temporarily fail.</p>
 <ul>
 <li><strong>Focus on the Walk, Not the Wreck</strong>: Endurance in the market comes from maintaining consistent forward movement and effort, refusing to let past losses or current limitations define your future actions.</li>
 <li><strong>Inner Peace is the Finish Line</strong>: The biggest threat to your success is often giving up mentally. If you can maintain clarity of thought and a good attitude, you can transcend temporary physical or financial setbacks.Consciously monitor your self-talk, treating your mind like the most valuable asset you have, and relentlessly choose the attitude that allows you to keep going.Well, you got a damn good attitude. This is the key.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>The scariest part is losing a part of your ship. 93 years that helped you stay inspired on hard dates. Well, you got a damn good attitude. This is the key. I&#x27;m not a wreck, but banged up here and there. Got good doctors put me together. You get old parts fall apart. It&#x27;s like an old car. You look like a car. Same thing. But you get mechanics, you get good doctors. I still walk. Maybe not as well as before, but I still walk. The thing is can think you got a problem up here. You finish. That&#x27;s how I know because I can tell myself all the time. The scariest part is losing a part of this year. Attitude. Good attitude. Think good people. a lot of good people. You&#x27;re surrounded by good people. You&#x27;re on a run. You&#x27;re home free. I never I don&#x27;t think I saw too many people that I couldn&#x27;t agree with. A lot of good people.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

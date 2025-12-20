@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,12 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Critical Difference Between Pride and Hubris in Trading</p>
+                <h3>The Critical Difference Between Pride and Hubris in Trading</h3>
 <p>The well-known phrase warns us about pride, but the real danger to your P\&L is <strong>hubris</strong>. Healthy pride celebrates growth and necessary success, while hubris involves dangerous grandiosity that blinds you to risk. Understanding this distinction is essential for long-term survival.  - <strong>Hubris, not Pride, precedes the fall</strong>: True pride is a healthy celebration of growth and success; hubris is an inflated ego that creates blind spots.</p>
 <ul>
 <li><strong>"Master of the Universe" mentality is a threat</strong>: Slipping into grandiosity makes you vulnerable to large, careless losses.</li>
 <li><strong>Celebrate wins safely</strong>: Taking time to acknowledge success is vital for psychological growth and motivation, as long as it does not lead to overconfidence.Audit your self-talk after a string of successful trades to ensure you are celebrating growth rather than adopting an invincible, hubristic identity.I really wish instead the phrase was known as hubris goes before the fall.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>Pride goeth before the fall I&#x27;m sure you&#x27;ve heard this phrase but I really wish instead the phrase was known as hubris goes before the fall it&#x27;s not really true Pride that screws us up it&#x27;s when it slips into huus I think it&#x27;s actually healthy for you to be proud of yourself when you do something different than before and are growing and need to take the time to look look at the successes that you&#x27;ve had to understand them and to Pat yourself on the back for the growth you&#x27;ve had what you want to look at is if it&#x27;s slipping into I am a master of the universe if it&#x27;s slipping into Grand doity that&#x27;s when you are potentially in Danger let&#x27;s instead change this phrase to hubris goes before the fall and find a way to celebrate your wins because that is going to serve you</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +251,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

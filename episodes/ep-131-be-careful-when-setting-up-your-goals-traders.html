@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,14 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Invisible Way Your Trading Goals Are Sabotaging Your Success</p>
+                <h3>The Invisible Way Your Trading Goals Are Sabotaging Your Success</h3>
 <p>Many traders set aggressive profit targets motivated by external pressure rather than healthy internal motives. If your goals are completely inappropriate for your experience level, they are an automatic blueprint for self-sabotage. This misalignment creates unnecessary stress and guarantees failure.</p>
 <p>Key Insights:  - <strong>Inappropriate Goals Lead to Self-Sabotage</strong>: If goals are not set from a courageous and healthy motive, they often backfire and undermine your performance.</p>
 <ul>
 <li><strong>The Experience Gap</strong>: Inexperienced traders (under 5 years) frequently set targets that veteran traders never achieved in their early careers.</li>
-<li><strong>Need for Expert Validation</strong>: It is crucial to have someone with at least <strong>10 years of trading experience</strong> weigh in on and validate your goals.Actionable Takeaway: Schedule a review of your current trading goals with a mentor who has been profitable for a decade or more to ensure they are realistic and constructively motivated."Here's the thing about goals: if they aren't actually put in place from a really healthy but courageous motive, they can actually self-sabotage you."</li>
+<li><strong>Need for Expert Validation</strong>: It is crucial to have someone with at least **10 years of trading experience*</li>
+<li>weigh in on and validate your goals.Actionable Takeaway: Schedule a review of your current trading goals with a mentor who has been profitable for a decade or more to ensure they are realistic and constructively motivated."Here's the thing about goals: if they aren't actually put in place from a really healthy but courageous motive, they can actually self-sabotage you."</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>let&#x27;s talk about goals here&#x27;s the thing about goals if they aren actually put in place from a really healthy but courageous uh motive they can actually self-sabotage you what do I mean by that I can&#x27;t tell you how many traders who are under five years like a year 2 years 6 months who tell me that they have goals that are completely inappropriate to what any of the best Traders out there were able to secure so what I want you to do is have Bodacious goals but I want you to have somebody who is experienced at least 10 years in to weigh in on your goals because if you have</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +253,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

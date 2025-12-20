@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,21 +193,13 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>The Emotional Trap of the 'Finish Line': Why Your Trading Journey Never Ends</p>
-<p>Many traders mistakenly treat trading mastery as a final destination, leading to panic and discouragement when new strategies or market conditions feel like starting over. Understanding that the market operates in continuous cycles shifts your perspective from seeking an endpoint to developing continuous resilience.  * <strong>Trading is a cycle</strong>; every new market condition will pull you back to what feels like the beginning.</p>
+                <h3>The Emotional Trap of the 'Finish Line': Why Your Trading Journey Never Ends</h3>
+<p>Many traders mistakenly treat trading mastery as a final destination, leading to panic and discouragement when new strategies or market conditions feel like starting over. Understanding that the market operates in continuous cycles shifts your perspective from seeking an endpoint to developing continuous resilience.</p>
 <ul>
+<li><strong>Trading is a cycle</strong>; every new market condition will pull you back to what feels like the beginning.</li>
 <li>The purpose of repetition is not failure, but to make you <strong>stronger, wiser, and more grounded</strong>.</li>
 <li>Mastery is recognizing that you have navigated similar challenges before and are now equipped to handle them without panic.Reframing market volatility not as a failure but as a predictable part of the continuous cycle demands a more grounded response.You remember you've been here before, and now you know the way out.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>think this journey ends? Not even close. The hero&#x27;s journey is a cycle. Every new strategy, every new market condition pulls you back to the beginning. But this time, you&#x27;re different, stronger, wiser, more grounded. Now you don&#x27;t panic in the dark. You remember you&#x27;ve been here before, and now you know the way out. Drop hero in the comments and I&#x27;ll send you the map that shows the full journey from start to</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -290,13 +252,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>

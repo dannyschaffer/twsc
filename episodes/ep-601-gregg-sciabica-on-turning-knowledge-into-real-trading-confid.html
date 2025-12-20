@@ -104,36 +104,6 @@
             border-radius: 8px;
             margin-top: 2rem;
         }
-        .transcript-toggle {
-            background: var(--gold);
-            color: var(--navy);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            transition: all 0.3s;
-        }
-        .transcript-toggle:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
-        }
-        .transcript {
-            display: none;
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: var(--text-secondary);
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .transcript.show {
-            display: block;
-        }
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -223,22 +193,17 @@
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Key Takeaways</h2>
-<p>Why Knowledge Alone Won't Deliver Trading Confidence</p>
-<p>Many traders believe that success comes from simply reading and absorbing more strategies, creating a knowledge trap where they mistake understanding for mastery. This reliance on theory often leads to deep frustration when conceptual brilliance fails to translate into real-world, executable profits.  * <strong>Knowledge is a shortcut, not the ultimate solution.</strong> Reading books and gaining concepts can accelerate your learning process, but it alone will not guarantee you are a successful trader.</p>
+                <h3>Why Knowledge Alone Won't Deliver Trading Confidence</h3>
+<p>Many traders believe that success comes from simply reading and absorbing more strategies, creating a knowledge trap where they mistake understanding for mastery. This reliance on theory often leads to deep frustration when conceptual brilliance fails to translate into real-world, executable profits.</p>
 <ul>
-<li><strong>Avoid unrealistic systems.</strong> Be skeptical of methods that promise massive, instant returns with minimal effort; these are often time-wasters that distract you from real progress.</li>
-<li><strong>Understand validation bias.</strong> When reviewing charts from the past, be careful that you are not subconsciously favoring data that confirms a strategy you already want to believe will work.<strong>Actionable Takeaway:</strong> When encountering a new strategy, use historical charts to quickly test the idea and discard any that prove unworkable, rather than waiting for live-market failure.You should read and learn because it can help shortcut to getting better, but it's not going to get you over the hump.</li>
+<li>**Knowledge is a shortcut, not the ultimate solution.*</li>
+<li>Reading books and gaining concepts can accelerate your learning process, but it alone will not guarantee you are a successful trader.</li>
+<li>**Avoid unrealistic systems.*</li>
+<li>Be skeptical of methods that promise massive, instant returns with minimal effort; these are often time-wasters that distract you from real progress.</li>
+<li>**Understand validation bias.*</li>
+<li>When reviewing charts from the past, be careful that you are not subconsciously favoring data that confirms a strategy you already want to believe will work.**Actionable Takeaway:*</li>
+<li>When encountering a new strategy, use historical charts to quickly test the idea and discard any that prove unworkable, rather than waiting for live-market failure.You should read and learn because it can help shortcut to getting better, but it's not going to get you over the hump.</li>
 </ul>
-                
-                <button class="transcript-toggle" onclick="toggleTranscript()">
-                    📝 Show Transcript
-                </button>
-                
-                <div class="transcript" id="transcript">
-                    <p>but it&#x27;s not going to get you over the hump. You should read some books. You should read and learn because it can help shortcut to getting better, but it&#x27;s not going to get you over the hump. You know, you&#x27;re that&#x27;s not going to make you successful, but at least speed up your process cuz you know, it helps to know concepts and helps see what other people say works and doesn&#x27;t work rather than always right. But it also gives you some ideas when someone says, you know, this is the great amazing setup everyone. You know, this is easy. is is what you should do. If if someone is out there teaching this amazing new, you know, their their amazing method, they&#x27;re set up that, you know, uh wake up, put up your computer, place your trade at the open, 10 minutes later you make a,000 bucks, and then you go to the beach for the rest of the day and play golf. You know, okay, you know, most likely there&#x27;s some BS there, but you can still take an idea like that and rather than waiting 100 days to find out like that was a waste</p>
-<p>of time, well, you can you can go pull up charts from the past. Now, granted, you have to be careful. There&#x27;s going to be some bias there. It&#x27;s very easy when you think you have something that&#x27;s going to be profitable, assuming you buy stocks long.</p>
-                </div>
             </div>
 
             <!-- CTA -->
@@ -291,13 +256,5 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script>
-        function toggleTranscript() {
-            const transcript = document.getElementById('transcript');
-            const btn = document.querySelector('.transcript-toggle');
-            transcript.classList.toggle('show');
-            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
-        }
-    </script>
 </body>
 </html>
