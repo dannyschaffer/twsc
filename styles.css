@@ -391,14 +391,24 @@ ol {
     object-fit: cover;
 }
 
+/* Logos Block Container */
+.logos-block {
+    margin: 3rem 0;
+    padding: 1rem 0;
+}
+
 .hero-logos {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem 2.5rem;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-logos-bottom {
+    gap: 1.5rem 3.25rem;
+    margin-bottom: 0;
 }
 
 .hero-logos img {
