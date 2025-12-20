@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Back from Trading Losses: Lessons from Matt &#x27;PAX&#x27; Kenah - The Wall Street Coach Podcast</title>
+    <meta name="description" content="The Trader&#x27;s Greatest Asset: Separating Confidence from Ego After a Loss  Every trader faces devastating losses, but confusing self-confidence with ego can">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #F9F9F7;
+            color: var(--navy);
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--navy);
+        }
+        .video-section {
+            background-color: #08333A;
+            padding: 4rem 0;
+        }
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .episode-body h2, .episode-body h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .episode-body h2:first-child, .episode-body h3:first-child {
+            margin-top: 0;
+        }
+        .episode-body p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .episode-body ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        .episode-body li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        .episode-body strong {
+            color: var(--navy);
+        }
+        .actionable-takeaway {
+            background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .actionable-takeaway strong {
+            color: var(--navy);
+        }
+        .closing-quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--navy);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero - Light Background -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>Bouncing Back from Trading Losses: Lessons from Matt &#x27;PAX&#x27; Kenah</h1>
+        </div>
+    </section>
+
+    <!-- Video Section - Dark Background -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/YrGnmaI9_60" 
+                    title="Bouncing Back from Trading Losses: Lessons from Matt &#x27;PAX&#x27; Kenah"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content - Light Background -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <div class="episode-body">
+                <h2>Key Takeaways</h2>
+<p>The Trader's Greatest Asset: Separating Confidence from Ego After a Loss</p>
+<p>Every trader faces devastating losses, but confusing self-confidence with ego can lead to a spiral of destructive revenge trading. In this conversation, legendary floor trader Matt "PAX" Kenah shares the painful lessons from losing millions, revealing how that experience forced him to rebuild his trading—and his life—on a foundation of humility, consistent process, and true character.  * <strong>Confidence vs. Hubris</strong>: While confidence is essential for a trader, unchecked self-confidence can quickly metastasize into hubris, destroying risk management and leading to devastating financial blow-ups.</p>
+<ul>
+<li><strong>Process Over P\&L</strong>: Rebuilding after financial failure requires shifting focus from chasing lost money back to the sole goal of developing a \*\*consistent, repeatable, and scalable trading process\*\*.</li>
+<li><strong>Behavioral Audit</strong>: Your health, relationships, and daily discipline are inextricably linked to your trading success; poor habits in life will inevitably be reflected in poor performance in the market.<strong>Actionable Takeaway</strong>: If you are struggling with emotional trading, immediately implement a daily routine focused on physical and mental health to cultivate the character and grounding needed for market resilience."Do a job, do your job, you know accomplish it every day."</li>
+</ul>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>Aloha everybody and welcome back to the Wall Street coach podcast I&#x27;m very excited today to have really a legend uh here uh everybody here knows him by packs but his formal name is Matt Kina and I would just like to welcome you and thank you Matt for being here uh in the first place so thank you for coming thank you for having me Kim I you know really was impressed with just watching so much of the material and content you put out there uh we were just talking a few minutes ago about how much negativity is out there part of what I see often in your tweets and you know just how you talk in other interviews you are somebody who seems to be approaching trading and just living from a glass half filled standpoint what informs that where does that come from uh I you know I don&#x27;t know I think I&#x27;ve always been that way um I&#x27;ve always been that way I I&#x27;ve always uh I&#x27;ve I think my certainly my faith you know my faith in God and and my belief and my faith in myself too um has my my I&#x27;ve</p>
+<p>always been a confident person um uh you know even if my self steam was fluttering for some reason I&#x27;ve always you know like through my my I was married for six years and in in the the Heyday of my my floor career um you know and when that marriage fell apart and different things that had happened on the floor you know when my when my self-confidence not self-confidence but my self-esteem my sense of self-worth was waning um I was still confident in my abilities ultimately confident what I could do you know and so that always carried me through and I think that goes all the way back to to childhood you know I was I was always a confident kid sensitive always very sensitive and emotive and you know I can feel um you know everybody&#x27;s energy and and that that&#x27;s always made me kind of an effective person with other people you know and it also has made it&#x27;s also helped me a great deal as a Trader you know that I can I can sense things I can the markets are moving living breathing animals you know and and and um and I</p>
+<p>can sense when they&#x27;re moving I&#x27;ve got a a framework that I put around the market you know my the process that I&#x27;ve developed um that helps me see the market movement and it helps me control my my risk and and and helps me determine where to take profit and things but you know none of that&#x27;s going to work if it&#x27;s just all binary toing none of it&#x27;s going to mean anything if it&#x27;s just all about numbers I need to be able to feel it sense it know it and then I have to trust myself that I&#x27;ll be okay I&#x27;m you know that that I&#x27;ll stay grounded and that that&#x27;s been the hard part for me you know the hard part for me has been to to stay grounded and centered in in what I&#x27;m doing what&#x27;s in front of me you know and I I I I post a lot about that on X you know don&#x27;t worry about like the the last couple days I&#x27;ve been talking about the last few trades yesterday was uh a really good trading day and I I missed it I didn&#x27;t take one trade today was a great</p>
+<p>trading day on the upside back down and again I missed it um I don&#x27;t need to C I&#x27;m also at the point of my career where I don&#x27;t need to to be very aggressive and I don&#x27;t need to catch every move so I mean that&#x27;s part of it two three years probably but anyway you know I&#x27;ve always been confident and I think that helps um me see past whatever mishas is you know in front of us I can see past whatever the mess is and I can always see what&#x27;s what what is best in a situation and that helps you know CL out the trade and you know that trade is over or missed the trade I missed it I L the fight another day always something to take that&#x27;s positive out of it and that helps me stay focused on what I need to to stay focused on so I can continue to proceed I want to thank our sponsor centero for sponsoring the Wall Street coach podcast and if you&#x27;re ready to experience 60 days commission free and their exceptional customer service then please use our link to check them out now back</p>
+<p>to our podcast yeah I think it&#x27;s a a fascinating distinction that you&#x27;re speaking to to of you know this concept of being able to have confidence in yourself even if one is feeling like their self-esteem is kind of beat up it&#x27;s a really great uh specificity because I think that is something Traders struggle with how do they stay in a place of confidence but also not have it slip into huis so how do you keep uh an eye on yourself do you have kind of like a check system for within yourself around watching that you have that confidence because God knows a traiter needs that but but how do you yourself keep keep that kind of in your Consciousness awareness in my in in my life or in my trading do you mean you know how do I how do I keep from moving into hubis in my trading or in the way that I live let&#x27;s let&#x27;s talk how you live first but then in you&#x27;re treating because sometimes I feel how we do one thing is How We Do Everything well I you know a a major uh component of all this I</p>
+<p>think for me is is my experience in in in in Blowing myself up after MF Global failed in October of 2011 and and I had lost a seven figures in it this is after a major bunch of setbacks from 08 and 09 uh my mom died in 08 my sister also in 08 and within six months of each other my mother-in-law in March of 09 uh my son who&#x27;s now 18 was four at the time and he was in the hospital for month the a with an immune deficiency and my appendix burst all in between that my my prop group that I owned failed all all within the same like year so uh I was we were still okay you know I mean um financially and we were my wife and I were fine and my ex-wife and my two older kids everybody was great we&#x27;re one big happy uh yet dysfunctional family I suppose and then MF Global was like the straw that kind of broke the back you know I I went back into the Hogs I went and traded the Hogs after after all of that after 0809 and kind of found</p>
+<p>my footing again and then MF Global happen and you know I I just started to chase you know everything self-confidence we were talking about self-confidence um being very self-confident can also move into huus so now I I&#x27;ll get that money back you know 2 million you know I&#x27;ll make that back so 20,000 50,000 100,000 200,000 you know down the drain down the drain chasing chasing chasing chasing no process no methodology it was just trading big size flipping in and out you know no risk management and certainly no chance of making money um and and so you know that sort of ego and that sort of huis or that over self-confident you know confidence just destroyed me you know I I hadn&#x27;t dealt with really I hadn&#x27;t mourned you know my my mom or Elizabeth&#x27;s death um I hadn&#x27;t dealt with a lot of that I had to and and at that point now you know um that experience informs the next 10 years I started trading again in 2013 one Lots two well late 2012 going to 13 one lots and two lots and by that time I had nothing left except for getting some</p>
+<p>money back from MF global which enabled me to restart you know and my wife and I took a step back my wife was a clerk on the in at Chicago Merk exchange for 18 years so she knew the business very well so we we rented a house in kisc Florida for the winter and um you know just kind of regrouped now what do we do you know do I take the money I go to law school uh become an attorney at 44 years old you know starting over but you know I&#x27;m smart I can do it do I become a therapist I thought about doing that um I didn&#x27;t want to trade but my wife my wife uh reminded me that uh that that you know her words and you know I I I certainly wouldn&#x27;t agree with her but her words were I was King of the NASDAQ when when I met her you know so go figure it when she met me you know I was the king of the Nas I wasn&#x27;t but in her mind I was which you know so go figure it out she trusted me you know and</p>
+<p>beautiful and I felt like I can do anything at that point you know so it was just one lots and two lots and trading very small and you you know trying to trying to put together my my I had two goals at the time was to to to be positive at the at the end of the day 50 bucks or $100 $200 it didn&#x27;t matter that2 200 $100 would be a th000 2,000 as long as I achieve my second goal which was developing a process you know that that that I can put around the market that&#x27;s repeatable scalable consistent repeatable and scalable that fulfilled those three things so that was you know shifting my focus away from from my ego or my cars my stuff you know what we had what we didn&#x27;t have you know um any of that stuff to hey let&#x27;s just you know let&#x27;s let&#x27;s do a job here here&#x27;s my job that I need to accomplish every day just do a job you know yeah yeah and and and and that that became a month became six months became a year and I started to trade bigger and make a</p>
+<p>little bit more money then the volatility picked up and around 15 16 it was you know and and I just stayed focused on doing my job yeah did and I still did you find do you do you feel that what happened in 2011 ultimately facilitated you being where you are now in the in the way you trade in how you trade in the success you have now certainly absolutely so I mean I had I had more money you know I mean we&#x27;re we&#x27;re we&#x27;re I&#x27;m very successful and very you know satisfied with where we are but um uh prior to&#x27; 08 we you know I made a lot of money in the NASDAQ pit it was great um but I&#x27;ve never been wealthier you know I if I didn&#x27;t have that experience of 20112 you know MF Global in 11 and then blowing up in 12 if I didn&#x27;t have that experience I don&#x27;t know if I&#x27;d be as healthy as I am um I don&#x27;t know if uh you know I&#x27;m in I&#x27;m in good sh I&#x27;m in very good shape I run I lift weights every day uh I am um I&#x27;m my</p>
+<p>wife and I couldn&#x27;t be more in love yeah we have five beautiful two I have two kids for my first marriage and Jen and I have three so we have and we&#x27;re a blended family our kids you know we&#x27;re all one big family so I&#x27;ve got five beautiful kids that are all smart and moral people you know more importantly they&#x27;re moral people and I don&#x27;t worry about them I worry about their safety and but I don&#x27;t worry about what they&#x27;re going to be in their life yeah that well that wealth is so beautiful so talk about what real wealth is gez I I I um for you I you know I have a God I I have to make getting emotional my eyes weld up I have a guy that loves me and that I strive to love every day I have five I have a beautiful wife that you know I don&#x27;t know that loves me and I love her you know it&#x27;s it&#x27;s amazing you know life it just marriage only gets better at least it has in my my experience um we stuck with one another she stood she stood with me</p>
+<p>when many other women probably would have ran um you know and had every reason to yeah but that stick tutiven you know had uh you know where I couldn&#x27;t I just couldn&#x27;t imagine you know uh couldn&#x27;t imagine my life being any different and I think that&#x27;s the real wealth we have we you know we don&#x27;t live in a in in a we we live you know we live understated I we drive nice cars um you know we we&#x27;ve got a nice home I can afford bigger and better but you know we&#x27;re we&#x27;re we&#x27;re more focused on on other things than that yeah and and um you know the fact that my kids are you know that I can say with Pride that my kids are good moral people you know they&#x27;re good-looking of course they&#x27;re smart of course but they&#x27;re good moral people and that that makes me feel wealthy I have um a thriving business every every single day I have the ability to um I have the the the ability that comes naturally to me to continue to do better and be better and I&#x27;m challenged every day to overcome my weaknesses and</p>
+<p>to maximize my strengths in my trading and in working with other Traders and you know just everything that I do just makes me better and and and and you know I don&#x27;t know that I I I don&#x27;t know that there&#x27;s anything that could make me wealthier than that I have people that love me and I am loved pretty pretty much as good as it gets and you&#x27;re making a difference uh certainly with your pillars club which I just want to speak to because it&#x27;s just such an incredible organization it is a mentoring group for grade school aged boys uh to really reach out to Chicago&#x27;s youth before any of the gangs get a hold of them what was it that inspired you to start the pillars Club there was um uh when we had we sold our house in Lake Forest Illinois which is a really beautiful expensive suburb and we moved back to the south side of Chicago and the neighborhood I was I grew up in and um our kids were we took our kids out of private you know school and had to put them into public school for for for uh</p>
+<p>less than a year before I was able we you know we were able to change that and it was a title one school so there were uh uh it was also good experience because they had come from these are my younger kids my older kids ended up staying up North but um you know they they they had experien uh something that that otherwise they wouldn&#x27;t have you know and got to meet people of different walks of life so I coached Little League I coached these kids in Little League I coached these kids in in uh in football and then I uh you know uh me and one of the other baseball coaches jincy Harton who&#x27;s a a pastor out here uh in a in a in a church he and I um were just kind of talking about you know these kids uh white kids and black kids and Hispanic kids that are all kind of thrown together and you know let&#x27;s let&#x27;s try to do something you know let&#x27;s let&#x27;s let&#x27;s try to do something Beyond it so we sat down and drink some coffee one morning and just kind of decided you know</p>
+<p>what what what sounded good What could do we want to reach these kids before they wind up going in high school and joining gang gangs so we decided to start with fourth grade boys and and all the way up through middle school and we went to the principals and we started working in in um in a school that he that his kids went to and then we branched off into to to different schools around the south side of Chicago and then we ended up starting a group based out of the 18th Ward on the South Side uh with the help of the alderman that that went into uh all of the schools on the Southside and it was it it was a uh it was a great experience getting that up off the ground and it&#x27;s been you know now I&#x27;m seeing the the the first kids that we had mentored are are in college now you know and and I&#x27;ve um I provided financial assistance for a lot of those kids that that otherwise might not have been able to get through some Catholic High School uh you know um private high school Catholic</p>
+<p>High School you know and on inwards into college you know through a little bit of a scholarship fund that we had started my family and I endowed so that has uh that has created a great deal to my wealth too and and is is um you really did your homework because I don&#x27;t always talk about that and I should probably talk about that more on Twitter but we had uh we had the ability to be able to see these kids grow you know broken most of the kids came from broken homes or no dad at all you know and and and we were there to let them know that there&#x27;s a right and the wrong way of looking at things and doing things we even I could talk about the Sowers we ended up in eth for the eighth grade boys we would take them out downtown to dinner uh to Gibson&#x27;s Steakhouse in the city and and and they would help after a while and they knew what we were doing they would make a big deal out of it you know they put us in a private room and we&#x27;d get the boys</p>
+<p>ties shirts and ties and you know we&#x27;d practice at school we&#x27;d practice um eating ordering off a menu a lot of these kids have never seen a menu Al what Forks do we use and how do we work in you know inside out and all of that other stuff how do we order how do we live how do we act you know those sorts of things were were were some of the highlights of the some of the highlights of the stuff that I&#x27;ve been able to do to to to continue to love and to be loved you know yeah but I I just see the corelation of you being you know someone who is mentoring in multiple areas of your life so you&#x27;re not just mentoring the pillars club and those young men but you&#x27;re also mentoring with the PA group and one of the you know phrases and hashtags that the Pax group you said lives by is nobody fights alone and that too feels like another extension of you wanting to be this contribution and to take all the hard earned wisdom you&#x27;ve received and Acquired and Pur isted in to make sure</p>
+<p>it gets passed down so what inspired you to even create you know you could have just kept trading by yourself but you wanted to do this for other Traders what what informed that that that all happened by accident and that&#x27;s not something I don&#x27;t think anybody&#x27;s ever asked me that so I had uh my 17-year-old a junior in high school was an Irish dancer and um and you know the parents Irish and my son plays college baseball he was in travel then so I became I&#x27;ve always uh talk I always talk about trading you know I always talk about the markets I always share my experience so Gabriel&#x27;s pitching coach uh guy named Chris tierne he played uh Major League not major league professional baseball in the minor leagues um he was interested in learning how to trade so come on over you know he comes over to my house and he he he&#x27;s in uh uh he&#x27;s hiking the mountains in you know Nepal now he&#x27;s he&#x27;s like a he texts me from the Str places so he&#x27;s become a pretty good Trader and then uh an Irish dance dad who I became very</p>
+<p>good friends with he started he&#x27;s a carpenter and he was he he didn&#x27;t have anything to do so he&#x27;s coming over in the mornings and so these two guys are coming over Tierney and CERN and and we&#x27;re all trading together triar guys are sitting around trading together Kevin is from Northern Ireland so he takes his family to to Northern Ireland home for three weeks in the summertime of 2018 to I think it it was I just joined Twitter for my son&#x27;s baseball Okay so he asked me can you uh started the group and so it was the summer of it was the summer of 18 or the fall of 18 that he went to Ireland and he asked me if I would tweet my trades so that you know he could save the money on his on his uh you know um data on his phone I think he still had to paper data then so yeah Okay Kevin I you know I had no idea how to do any of that so I did and you know within a few months I kept doing it too because people started to ask questions and um</p>
+<p>and I learned the hashtag I would do you know _ a for Nasdaq what I was trading or crude um and then eventually we went to to to mass I had you know I don&#x27;t know 40 or 50 followers you know on on maybe 60 followers on Twitter we come out of mass and my daughter somehow looked at my my Twitter page and said dad you&#x27;re blown up you got a 100 200 300 followers somebody had retweeted me and and and then I ended up like uh around five or six 600 followers Anthony uh Celli or Jimmy Jude at that point two guys that I&#x27;ve known for a long time had awesome yeah he&#x27;s he is he and I very close he tweeted he I think I think it was Anthony that said are you packs from the NASDAQ I said I am and then that you know then me and Jimmy and Anthony on a Saturday night ended up having you know like a twit storm you know of stories and that&#x27;s when you know my Twitter really took off and people were were you know again asking questions and Anthony had me on</p>
+<p>his podcast and you know and then I&#x27;m a thousand 2,000 followers and and people started to ask me to do a slack room or Discord or things like and I never heard of any of that so one of the things that I do at the end of the day is I lay down on a couch over here in my office and and I just I kind of meditate sort of get my if it&#x27;s a busy day I don&#x27;t do it every day but yeah you know it was a day where I traded I lay down and I kind of get in that Twilight State just you know unwind that you know attention or whatever from the day and it was just you know get up and do a slack room so I got up and I tried to put together I couldn&#x27;t figure out slack so then I did uh well I&#x27;ll try Discord so I Googled Discord you know 53 years old or 52 years old at the time I have no idea how to work any of this so I was able to figure out how to put together something and I and</p>
+<p>I tweeted the the the Discord link so then there were you know I I said hey I&#x27;ll be in there at 5:00 central time anybody want to come in there were a few hundred people in there and it was fun um so everyone&#x27;s asking me to you know we do it again we trade there we continue to trade there so I or we trade there so I did I don&#x27;t remember how I did that so but and and this English guy came over and said listen if you Mentor me if you teach me how to trade your process I&#x27;ll put the Discord room together you know and I&#x27;ll organize it for you I said okay cool you know you do that and and so I did I taught him how to trade and then um you know I always said that if I if it interferes with what I&#x27;m doing you know if it interferes with my trading I&#x27;m going to shut it down and it did it started people you know people were trolling me and and charts and not paying attention to to the my trading process and what I&#x27;m trying to teach</p>
+<p>them and you know fading markets and doing all kinds of that I knew was going to blow them up and it was stressing me out and you know remember earlier I said I I I can feel everybody&#x27;s energy and I do I feel it in the Discord too so um shut it down and then I I talked to Jack and and one of my mentors Jud hbur and they said well why don&#x27;t you charge for it and then you&#x27;ll get only serious traders in there so I thought okay you know that&#x27;s not a bad idea start I&#x27;m I&#x27;m I&#x27;m I&#x27;m a capitalist I&#x27;m not a communist or a socialist yeah let&#x27;s see I put this trading methodology together I&#x27;ll teach other people how to do it so I did I&#x27;ve gotten you know I&#x27;ve gotten some for doing that you know um uh but from who from who okay nameless people on Twitter you know we but please ultimately it matters very little to me because the people in my group have um and I don&#x27;t ever Market it I don&#x27;t sell it I don&#x27;t want I don&#x27;t want a huge Discord we&#x27;ve got there&#x27;s</p>
+<p>you know a small number of traders in there and and they&#x27;re we&#x27;re all trading the same method in the same process yeah and um I get the most beautiful messages from people you know uh uh um and and I get to know them and they get to know me and I&#x27;m very honest that about things going on in my life you know I I expect if they&#x27;re going to be honest with me that I&#x27;ve got to be honest with them um and I am yeah so the what what what what motivates me to continue to go and and and and to work with everybody is is the fact that people are are are um I&#x27;m not changing anybody&#x27;s life people are changing their lives because they&#x27;re they&#x27;re they&#x27;re finding a process to live their lives by and they&#x27;re finding a process to trade by and and none of those are perfect there&#x27;s probably better processes to live life by than the one I do maybe not but there&#x27;s there&#x27;s I&#x27;m sure better processes than the ones that I come up with in trading maybe I don&#x27;t know but the fact that people are becoming better</p>
+<p>people you know and uh you know that that motivates me you know the the group you you know how they say in like 12 step groups you know if you don&#x27;t if you don&#x27;t have faith in God then believe in the power of the group if you can&#x27;t believe in something greater than yourself then believe that the group is greater and that&#x27;s something that I talk a lot about you know if if because I talk about my faith constantly you know if you don&#x27;t believe in God you know and you don&#x27;t believe God loves you then at least believe that this group is better than you we all need to believe in something greater than us and that keeps us grounded and keeps you huous and ego away you know I think anyway at least it does for me and it seems to for the for the brothers sisters in my group and every day too every day Kim at the end of every day when I sign off and I close the group down I always say that you know um I always say the same things uh uh sleep with the angels and</p>
+<p>the Saints and nobody fights alone I say that every day and I I couldn&#x27;t be more grateful for that yeah and I&#x27;m sure they are grateful for it too and to you I believe that in this journey whether people are trading or whe they&#x27;re living uh when you know you&#x27;re not alone uh your ability to endure uh is incredibly strong key word endure trading is not a team sport I I I mean I can&#x27;t click the mouse for him I can&#x27;t I I I can&#x27;t not click the mouse form you know uh um but but together we can endure we can endure the hardships that we will all face as as Traders as people you know we will all get sick we will all get old and we will all die you know and and and when I die I&#x27;m not going to take any my BMW is not coming with me my wife Range Rover is not going with her the love that we have and the love that we gave is what we are going to be surrounded by and that&#x27;s that is what we all need to stay focused on so that</p>
+<p>we can endure the ups and downs that this Market brings us or this job as a Trader brings us or you know the the the the crazy stuff that we are seeing in life you know the the crazy stuff that goes on in the city that I love in Chicago the crazy stuff that was going on in New York in other City I love you know the crazy that we&#x27;re seeing that happen there are good as you pointed out earlier in the earlier conversation before we started recording and and and and you wrote your book about there are good people there are really good people out there just constantly trying to do the right thing and helping other people see what that right thing may be that&#x27;s right that&#x27;s right but if we don&#x27;t focus on them if we don&#x27;t look for them it&#x27;s very easy to just notice all the bad guys or the horrors of this world but I really believe that the love that is being practiced you know that you know it&#x27;s funny because one of the women I interviewed in my book I just have to say this because this</p>
+<p>is you she said that she she speaks to a story of her own journey and she calls herself a trojan horse of love she works in finance but that is you you Matt our troan horse of love it&#x27;s a pretty beautiful thing to be so thank you for doing that and for all the impact that you&#x27;re having on so many lives and to have a handle on a platform that we both know has a tendency to not focus on the positive it&#x27;s making a huge impact you know huge impact I don&#x27;t know if you know power versus Force by Hawkins but he talks about how one person&#x27;s energy he measures kind of you know lots of different energies and he said that love vibrates at a 600 and that one person who&#x27;s vibrating at that level in their life and how they interact with people can make up for hundreds of thousands of those who aren&#x27;t that&#x27;s beautiful didn&#x27;t know that that&#x27;s that&#x27;s that is beautiful it&#x27;s a it&#x27;s a gorgeous uh you know I think it matters to know that this impact that one is seeking to have is happening and I hope nothing</p>
+<p>else you know that about yourself because all of the lives you&#x27;re touching all of those people who hear you five deeds week at the end of the trading here&#x27;s nobody fights alone those people are walking out into God knows what their lives look like and they&#x27;re able to hold space Maybe for somebody else who feels alone that&#x27;s the ripple effect yes that and that that that that&#x27;s truly beautiful yes and I&#x27;m mindful of that I&#x27;m very very mindful of that yeah I have temper you know I get aggravated with my trading and and I I&#x27;ll get aggravated with other people you know and and and and you know I&#x27;ll um I usually I but you know I use those moments you know when I get pissed off and I I might you know be unfair to somebody I use those moments as as not just you know I I use those moments to as kind of te I I I don&#x27;t like saying teaching you know I I like to think of myself as a leader you know um but you know I use those as teaching moments because I I want everyone to know</p>
+<p>or I&#x27;ll talk about an argument that my wife and I get into and because usually even if I&#x27;m wrong I I mean even if even if I&#x27;m right or I think I&#x27;m right I&#x27;m wrong you know because because if the way that I reacted to something is is what is under my control so if I&#x27;ve got a problem with her or you or them or whatever then then I I have to turn inward and I have to take a look at what what my reaction to it was so in in the room I&#x27;ll immediately you know correct it say I&#x27;m sorry I shouldn&#x27;t have said that I shouldn&#x27;t have acted that way and I&#x27;m not going to say but you should have you know I don&#x27;t do that because if I buy if today if I buy 511s and they go 98 offer am I going to blame the market and scream at the market or am I going to say you know what I shouldn&#x27;t have done that I got to get out I got to correct it and I need to take another look at my behavior not what the market the market</p>
+<p>is doing whatever the hell the market is going to do so I need to I need to be able to take a look at my behavior and what I just did that that that is either propelling me forward or holding me back you know I wanted to make a point before I forget it in my Twitter bio yeah I I have my trading badge was pxs and I chose it because it means peace in Latin so I I I chose it 1997 uh I had started to be a Catholic priest I left the I started on the floor in 1989 no I didn&#x27;t yeah 89 88 and then uh became a clerk in &#x27; 89 and um I left in 93 right when I was getting my seat to to my membership to be a broker and uh I started to be a priest for three and a half years so when I came out I got married very quickly and had a baby within a year got my seat and made my first million within a year of That So within two years my life completely pivoted and changed so when I got my</p>
+<p>seat I I wanted my membership to to kind of rep because everybody would call me that you know I wanted I wanted my my membership to represent who I was and I wanted to stand for something so I chose PA and in my my my uh Twitter bio it says Pax kitas um you know which simply put is is peace and love it means peace and love in Latin and those are the first two first three words pxs at car toas that people see if they click on my bio you know and and and and and that to me sums up the whole thing here right I you know I can I can sit and I can I can look at what&#x27;s going on in college campuses and I can point the finger I can look at what&#x27;s going on politically in different places of the world and I can point the figure and I do I&#x27;ve got my opinions but I don&#x27;t share them on Twitter it&#x27;s not my point it&#x27;s not what I&#x27;m here to do um I don&#x27;t think it&#x27;s very difficult for people to figure out where I stand on things</p>
+<p>I&#x27;m a m white man I mean it&#x27;s pretty stereotypical but I try to I try to listen to other perspectives yeah um I don&#x27;t know this is where you wanted to go but this is something that jumped into my mind too yeah I talked about this with my son last night there was a shooting uh a Chicago police shooting my brother my brother Pat is a sergeant the Chicago Police he he&#x27;s evidence technician so he&#x27;s got nothing to do with any of this anymore he was on the street for 20 years now but wow so there was a shooting and made national news you know um so I had I I was reading uh uh comments on on X and and you know if if there&#x27;s somebody says something that I think is thoughtful even if I completely agree with them or disagree with them yeah or have a completely different perspective I I&#x27;ll click on their bio and see what they&#x27;re about and I did that with this young woman and she she was on a spaces so I jumped out of spaces with and the only uh the only white face in the</p>
+<p>space you know and they saw me in there you know was like 12 14 people by the end of it there were over 80 and they had a very different perspective than mine very now very different experience than mine but I sat and I listened to their experience and I got a different perspective on on what my thought process was around not the shooting of this kid you know the kid the Poli first but uh the context for the stop you know just all of it gave me a different perspective and i&#x27; I&#x27;ve always been open-minded about those sorts of things so that that I can I can I can pivot when I need to Pivot or I can grow when I need to grow or I can see things from a different light in in and maybe you know in a way that might be surprising to people so you know that helps me in my trading I&#x27;m I live my life the same way that I trade I trade the same way I live and I think we all do you know if I&#x27;m if I&#x27;m if I&#x27;m drinking and I&#x27;m living my</p>
+<p>life uh you know uh um compartmentalized I have no joy in my life I&#x27;m not taking care of myself I don&#x27;t feel healthy I don&#x27;t feel strong that is going to reflect in my trading you know it it is absolutely going to reflect in my trading if if I don&#x27;t feel loved which I I have had extended periods in my life where I did not feel loved in my first marriage you know and uh you know I I you know just all of that was a difficult time but I can you know I knew that I&#x27;d be okay I didn&#x27;t know how I didn&#x27;t know why I didn&#x27;t know when I didn&#x27;t know where but I knew I&#x27;d be okay and I was you know same thing when I went broke you know I when I went broke I drank too much I was still smoking uh I was 30 40 pounds heavier and I couldn&#x27;t run around the block I couldn&#x27;t do push-ups you know I am uh I stopped smoking I put I bought a pair of running shoes and I started to walk around the block and then I started to run</p>
+<p>around the block and then I started to run a mile and two miles and three miles and and then I got back and I joined you know I can&#x27;t afford a gym Planet Fitness is a saw Buck is $10 a month exactly exactly exactly anybody any of us can afford that you know when when $100 would have helped you know change my life at that point I was going to Planet Fitness every morning at 4 uh and and you know even that I was getting up to oh I&#x27;m getting too far off Bas and Kim I can you know I can do that so let just make this point and I I&#x27;ll get back to your direction but you know I I I&#x27;m not a naturally disciplined person left to my own devices I&#x27;d be laying on the couch you know chilling out maybe reading a book but um I got up to you know when when we were broke I needed to figure out what worked so I you know do I trade the US Open do I trade Europe open Asian open you know so I was I was staying up to trade</p>
+<p>all those opens and napping in between it um and then I realized that I was making more money trading the US Open but I&#x27;m waking up at 3: in the morning you know and my body was used to waking up at 3 in the morning so I&#x27;d go work out at 4: you know and then I come back and I was refreshed and ready and energized and then I would trade the open you know and and take a nap during the day and come back and trade the close and I started the Whittle that into like a morning routine you know a morning routine that helps me determine my level of being you know what I call ccff confident Carefree fearless and focused which is my first step in sizing up so you know I wake up every morning at 4 45 I sleep you know a little bit later and you I I I pray I meditate and but you found what works for you and that is so important and we are supposed to go over to X to do a conversation there but to just close this particular recording up what would</p>
+<p>you say are the most important questions treaters who have been at this for a while maybe they&#x27;re not a DEC in but they&#x27;re you know 3 to five years in what are the most important questions they need to ask themselves if they really are interested in leveling up that&#x27;s a great question um do do do do you believe in yourself I mean you know do you believe that that that no matter what kind of life is going to throw at you or or no matter what kind of you&#x27;re going to create for yourself do you believe in yourself that you&#x27;ll be okay you know that you&#x27;ll make it through it that you you&#x27;ll figure it out and that you&#x27;ll find something that works and stick to it if you do then then then then you might be part of the 3% of traders that actually make money long term if you don&#x27;t believe that and you and and and you don&#x27;t care about finding a process that&#x27;s consistent repeatable and scalable and you are not going to you&#x27;re you&#x27;re not going to do a job you know you&#x27;re not going to stick to it you&#x27;re</p>
+<p>that&#x27;s your job do a job do your job you know accomplish it every day if you&#x27;re not going to be able to stick to it and you don&#x27;t have that fortitude or you don&#x27;t have the the the the the character to help you do that at the time but you believe in yourself then do what I did and develop the character get up early go work out move your body eat hell Healy whole healthy foods you know and and and take care of the people that you love and and then you will become that person beautiful beautiful stick to it so good to have you here there probably is going to have to be a part two because I have a lot more questions for you but we&#x27;ll take some of come over to X now thank you for being on my podcast and I&#x27;ll see everybody on the next episode of The Wall Street coach</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <p>Kim Ann Curtin, Founder of The Wall Street Coach, helps Traders, Executives & their teams end the cycle of self-sabotage.</p>
+                    <div class="footer-brand">
+                        <span class="footer-logo">The Wall Street Coach</span>
+                        <p class="footer-copyright">&copy; The Wall Street Coach TM. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-legal">
+                        <a href="mailto:hello@thewallstreetcoach.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                    <div class="footer-social">
+                        <span class="footer-social-label">Ways To Follow Us</span>
+                        <a href="https://twitter.com/twscoach" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kimanncurtin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/thewallstreetcoach/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCuApZQaw2UATpJums6cw3HA" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@thewallstreetcoach" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>

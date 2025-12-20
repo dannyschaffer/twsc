@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall Street Coach X SPACE - Coaching Session #1 - The Wall Street Coach Podcast</title>
+    <meta name="description" content="The Perfectionism Trap: Stop Letting Mistakes Destroy Your Edge  Many traders, especially those who strive for perfection, find themselves losing control i">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #F9F9F7;
+            color: var(--navy);
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--navy);
+        }
+        .video-section {
+            background-color: #08333A;
+            padding: 4rem 0;
+        }
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .episode-body h2, .episode-body h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .episode-body h2:first-child, .episode-body h3:first-child {
+            margin-top: 0;
+        }
+        .episode-body p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .episode-body ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        .episode-body li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        .episode-body strong {
+            color: var(--navy);
+        }
+        .actionable-takeaway {
+            background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .actionable-takeaway strong {
+            color: var(--navy);
+        }
+        .closing-quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--navy);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero - Light Background -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>The Wall Street Coach X SPACE - Coaching Session #1</h1>
+        </div>
+    </section>
+
+    <!-- Video Section - Dark Background -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/if2i1s9nui4" 
+                    title="The Wall Street Coach X SPACE - Coaching Session #1"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content - Light Background -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <div class="episode-body">
+                <h2>Key Takeaways</h2>
+<p>The Perfectionism Trap: Stop Letting Mistakes Destroy Your Edge</p>
+<p>Many traders, especially those who strive for perfection, find themselves losing control immediately after a loss, leading to destructive "fix-it" trades. This compulsion to instantly correct a mistake is rooted in deep-seated childhood survival mechanisms. In the high-stakes environment of the market, this pattern quickly erodes capital and sabotages performance, leaving the trader feeling helpless and on tilt.  * <strong>Identify the Root Cause:</strong> Perfectionism, often wired in childhood, creates an emotional trigger where mistakes are equated with a lack of safety or worth, driving the compulsive need to regain a green P\&L.</p>
+<ul>
+<li><strong>The Cost of "Fixing":</strong> Attempting to correct a loss immediately only guarantees emotional hijacking and leads to digging deeper financial holes, destroying your edge.</li>
+<li><strong>Rewire Your Nervous System:</strong> Mastery requires learning to separate your self-worth from market outcomes and slowly conditioning your nervous system to tolerate the inevitable discomfort of imperfection.Actionable Takeaway:</li>
+</ul>
+<p>Start outside of trading: engage in low-stakes, playful mistakes in your daily life and practice simply noticing the triggered feeling of perfectionism without self-shame or judgment.The very thing we're free to feel is the key to us being set free from it.</p>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>is uh I haven&#x27;t done an xace in a while but I&#x27;m excited to do one today uh of course my name is Kim an curtain the Wall Street coach I am going to start to do these every Friday probably probably at Market close uh so this can really just offer some tools to all the traders who are you know coming to the end of their week realizing that perhaps their emotional in intelligent wasn&#x27;t as strong as it could be and hopefully give you some tools to increase your emotional intelligence I haven&#x27;t uh used the camera for a while on X so it looks like I have a Double Image here which I can&#x27;t quite figure out how to get rid of but uh perhaps someone when they uh come into the room can tell me but perhaps it also has changed now where that is for a guest who comes in I sure as heck hope so uh so also I&#x27;d like to just open with thanking our sponsor Centerpoint uh I&#x27;m going to put uh attach a special link for uh those who want to check out uh center point because they have given</p>
+<p>me and my listeners a special link that will give you uh basically a great deal for good solid two months and I really hope hope that you&#x27;ll uh you know check that link out and if it looks like it&#x27;s a match for you to take it on and uh see what they&#x27;re all about I&#x27;ve told you guys over and over again how incredible uh they are and there&#x27;s only one way to find out and that is for you to work with them so I hope this link encourages you to do just that so I&#x27;m just putting up that link now on X thank you to our sponsor and uh please just know uh with you&#x27;re listening to this you know uh as a recording later that this is ultimately in service to you this is in service to your treating this is in service to your emotional intelligence uh I want this to be a safe place where Traders come to basically get the opportunity to just discharge at their struggle that week at the different challenges they found themselves up against uh one of the things that I think is really hard about trading</p>
+<p>is how lonely it can be how isolating it can be so my hope is to create this opportunity where Traders get to hear other Traders with the struggles that they have with the challenges that they have because when you have the experience that you are not the only one who&#x27;s going through a challenge when you have the experience that you actually have a bunch of company who struggle Along by your side I think it makes a huge difference I think it helps uh traders to start to realize that the things that they are being stopped by are actually things that are quite uh common so I I&#x27;m glad you&#x27;re here looks like it&#x27;s just you and me I&#x27;m waxing on anyway because I&#x27;m gonna use this recording hopefully uh to share to other Traders but uh feel free if you want to uh ask a question or if you want some uh one-on-one coaching to just uh unmute your mic I&#x27;ll invite you to speak but you don&#x27;t have to if you don&#x27;t want to you might have just been coming in to listen uh but I did send an invitation in case you do</p>
+<p>want to come in and uh if you do then you can come in and ask any question have around the emotional intelligence side of trading uh that is what I&#x27;m putting these forward for so yeah you&#x27;re like oh I&#x27;m the only one what the heck but sometime I think I probably should have done this about a half hour earlier I think it&#x27;s probably better when people are closing up the day but this was the earliest I could come on today so I&#x27;m going to try to do this every Friday uh hopefully a little bit earlier so at Market close Traders can come over here and get some support uh so so what I was just saying was that my hope is that this gives traitors an opportunity to hear other traitors with the challenges they face number one to not feel so isolated to not feel so alone but also number two to perhaps get some tools around how to increase your emotional intelligence and how to address the places where you feel stuck so e it&#x27;s up to you but um if you do want to come in um you just you know come</p>
+<p>on I sent an invitation to speak and uh send it again in case that didn&#x27;t go through but again you don&#x27;t have to you don&#x27;t have to speak if you don&#x27;t want to but if you do want to ask me a trading uh related question then feel free you can also put it in my DM I have my laptop open as well to look at the DMS uh so you can ask it you know privately which you know right now you&#x27;re the only one so it wouldn&#x27;t be that private uh or you could ask in a x format as well you can just respond to the space and I&#x27;ll see your question there too so yeah let me know if there&#x27;s anything special e you want me to talk about but if not I will just wax on uh with a couple of things that I felt uh you know I come to these conversations always for people to ask questions their coaching questions or to have oneon-one experience with me but if nobody does ask you know we had a 100 people in my YouTube live uh the other day and nobody really was</p>
+<p>asking questions so I do come prepared with topics but as I want to remember remind everybody you also can prior to these conversations um be able to call in a voicemail and leave your question there for some people who prefer anonymity that might be an option as well so let me just put on this recording now that you guys can call uh this phone number and I&#x27;m gonna give it to you right now 646 82877 36 that is the treater voicemail that I&#x27;ve set up uh that will allow you to text or to leave voicemail of your trading Challenge and that will be sent to me and then prior to my two I do two YouTube lives Tuesday Thursday almost Tuesday every Thursday almost every Tuesday and Thursday and then almost every Friday I&#x27;ll be doing these X baces so what what is that in service to it&#x27;s in service to you guys calling this phone number so that you can leave your challenge if you rather have privacy if you don&#x27;t want to be on camera or you don&#x27;t uh want to you know have to ask in person so here&#x27;s the trader voicemail</p>
+<p>for your issue I&#x27;m going to put that up now for your tra trading uh EQ issue trading uh EQ issue that I&#x27;ll answer let&#x27;s see here answer every time I do the live coaching all right so here&#x27;s the topic I&#x27;m going to speak about today because I I don&#x27;t see that you&#x27;re gonna uh be giving me a question or coming into the conversation but if at any point you change your mind e just uh just raise your hand and let me know that you want to come into the conversation um one of the people that I follow uh is a gentleman that I want to speak to he posted something the other day uh that was really powerful and I&#x27;m going to get that up here let&#x27;s see how I can find that fast uh so he posted this yesterday and I really thought wow this is the heart of what I think a lot of Traders uh struggle with and this felt like this was such a great topic even though it&#x27;s not traiter specific I I kind of feel it is Trader specific because of having coach Traders for so long the same</p>
+<p>questions obviously come up and up and up again so here we go I wanna I want to read from his post he he quoted somebody in his post but it is so appli able for this level of confidence that I think a lot of Traders struggle with and a sense of like when is it appropriate for me to trust myself so to speak so he Jim Osan isy shout out to Jim I&#x27;m going to uh put this uh picture uh up on uh my ex uh feed so you guys can go read the original Pro post uh Axel it&#x27;s good to have you here if you wanted coach just raise your hands and I can put you on speaker um so anybody here remember this is completely in service to you Traders you guys can either call that phone number and leave your trading EQ challenge there you can come on to X and DM me or put it in a post or you can raise your hands guys and I&#x27;ll put the microphone on for you and I&#x27;ll be coaching right here live uh I&#x27;m only able to do this for a little bit</p>
+<p>today so if you do want some coaching don&#x27;t hesitate to let me know that so we can get you right on the microphone my name is Kim curtain I&#x27;m an executive coach and trading coach uh I&#x27;ve been Oh e it looks like your speaker&#x27;s on are you here yeah hi uh sorry I had some uh some connection issues when you were talking to me a little bit ago and I was trying to figure out no problem that&#x27;s just glad you&#x27;re here so do you want some coaching today I mean yeah um great absolutely but E I just want to always ask you give me permission to coach you is that right and obviously you know you&#x27;re on a live Twitter feed so just making sure you&#x27;re clear of all that oh yeah absolutely absolutely yeah um you know because I I I I you know I I originally found you through um I believe his name is Brian Lee yeah Brian Lee good friend uh yeah he&#x27;s been a client of mine as well wonderful wonderful traitor yeah and I think I saw one of you guys&#x27;s um interviews and and so I saw the</p>
+<p>kind of the the the name of the Twitter thing and you know about self- sabotaging and um I&#x27;m a I&#x27;m a Futures Trader um okay and so I specifically trade indices pretty much you know es NQ um and sometimes like you know oil and you know different kind of Energy Futures stuff like that mostly indices and um I think for me you know I think the biggest thing that I get hung up on is um resetting after kind of like a loss when I kind of um you know in and getting myself out of going on tilt pretty much right and I think that like there&#x27;s a lot of things that that are kind of um you know kind of generic that people tell you to do but I still think that&#x27;s one things that I kind of struggle with and then I&#x27;ll I&#x27;ll kind of um you know make a couple mistakes then I&#x27;ll go back and be like I I felt like you know I had no control over myself or something for fix to fix the mistakes yeah for for like a period of time and then and then I dig myself</p>
+<p>into uh you know like a a p&amp;l hole or something and then I&#x27;ll have to spend the next couple days kind of getting myself out of it and um so I think that that&#x27;s you know I don&#x27;t know if you have kind of yeah so let me ask you a couple of questions so am I hearing you correctly that what&#x27;s happening is you&#x27;ll have this compulsion to fix your trading mistakes like I shouldn&#x27;t have done that you see it and then you try to fix it and it&#x27;s not fixing that you find yourself losing more Capital yeah so yeah I immediately try to fix the problem when I probably shouldn&#x27;t be immediately trying to do it um perfect perfect so let&#x27;s let&#x27;s just take that so I&#x27;m gonna ask you some questions that seemingly have nothing to do with trading okay so stay with me so let me just ask you how are you in general in life with making mistakes um I would say in general um I would say that I&#x27;m I&#x27;m usually decently good at it I would say I&#x27;m more of kind of on the per not I don&#x27;t want to</p>
+<p>saying uh like I&#x27;m a perfectionist but maybe more on that side of of things yeah totally so let&#x27;s stay there just for a minute so what I&#x27;m hearing is you know even if you wouldn&#x27;t made to use the full label of perfectionist you you air towards perfectionism yes I want to yeah do well present well and get things done and that&#x27;s important to me yeah yes understood and and it&#x27;s a respectable Admiral quality and it can also sometimes be invisibly operating because on because of the belief systems that we possibly we each have about what our value is inherently if we aren&#x27;t perfect H right so if our when we&#x27;re kids we all grow up in a certain kind of environment and our God bless our parents whether they did well at it or not they did the best they could with what they had right but we can often find our our El getting into these experiences as kids where we get the message whether it&#x27;s intentional or not that the more perfect we are their acceptance and let&#x27;s just call it what it is love is going to be much more robust than</p>
+<p>it would be if we&#x27;re causing you know trouble every five minutes right yeah so that is pre then baked into each of us to you know we&#x27;re just so freaking crafty kids we figure out fast what do we got to do in that envirment to do okay have to survive we can&#x27;t survive on our own outside of that household we can&#x27;t vend for ourselves get food have shelter so kids are built organically with their DNA okay I gotta navigate This Crew so I&#x27;m going to put myself into whatever pretzel I have to and maybe sculpt off piece a couple of pieces of my authenticity uh in service to just getting that love so I can stay here and get through the next 18 years but what winds up happening is that what we had to do then to survive and thank God we did it and thank God you did it and I did it but now you&#x27;re treading and your trading is actually requiring you to not be anything like that and it&#x27;s like a bit excuse my French I do curse a little bit a little bit of a mind right oh yeah</p>
+<p>because you&#x27;re like wait a minute wait a minute this saved my ass for so long and now it&#x27;s me up what the hell yeah but it&#x27;s because you&#x27;re kind of hardwired at this point you&#x27;re not hardwired luckily you&#x27;re softwired you can rewire yourself but it&#x27;s going to take a minute and I would highly recommend you try this rewiring not in your trading first I want you to take on this very bizarre homework assignment if you&#x27;re willing to and go make a bunch of mistakes that are low stakes in small places everywhere but you&#x27;re trating here&#x27;s what&#x27;s likely going to happen e you&#x27;re going to be triggered you&#x27;re going to be like this is so uncomfortable because your whole nervous system is tied to Perfection feel safe with perfection so first we have to get you to this point where your inter internal body and mind and nervous systems discovers a new story that huh I made a mistake but I&#x27;m still here I&#x27;m okay I didn&#x27;t die nothing hit the wall right again low stakes but outside of traing do it there because the stakes are lower do it there because it&#x27;s not going to</p>
+<p>cause an impact on your capital or your p&amp;l so I&#x27;m gonna pause and see how is this land thing for you yeah uh that was very insightful thank you so much um I definitely will I&#x27;ll definitely definitely do that because um you know like I that is really yeah that that makes perfect sense you know especially when you like you know describe like my nervous system is definitely wired that way and uh and and and that&#x27;s definitely probably the biggest kind of hurdle because it it it that is the thing that just destroys when it happens it just destroys my Edge as a Trader absolutely right I can tell you this is destroying so many Traders Edge and I&#x27;m not just talking traders who are kind of like a few years in this is still impacting Traders at the top of their game who are making so much money but they&#x27;re still leaving so much behind because that perfectionism from our childhood is still in the background in the unconscious secretly hijacking that yeah that makes sense no I&#x27;m I&#x27;m I&#x27;m definitely gonna do that um and you know to kind of tie it together</p>
+<p>like do you think that there&#x27;s um like a certain because you know in in trading right they they talk about like Journal a lot different things like that would you say that there&#x27;s maybe um you know after I you know go and do you know do the homework assignment do stuff like that um you think there&#x27;s like a way that I should be I guess a writing my thoughts out throughout the day B kind of maybe doing it at the end of the day but like is there a certain way I should be doing it or and then how do I what do I do with that information essentially yep totally we you want to start to notice so I&#x27;m I&#x27;m going to speak to a couple of books here you don&#x27;t have to read them all but these are the books that I&#x27;ve learned this stuff from for my own Journey for my own self so I&#x27;m going to say the books and then here&#x27;s my recommendation you look at the books and then you pick the one that feels like this is the one I&#x27;m supposed to read now and you could read</p>
+<p>the other book another time this book is called uh taming your inner grin by Rick Carson that book speaks to this inner critic inner sabator in a gremlin if you will and Rick&#x27;s best advice throughout that book is this is the the key to dismantling this kind of hijacking simply notice right because you&#x27;re going to still be trading even though I&#x27;m suggesting you do this homework assignment outside of trading while you&#x27;re trading now that you have this awareness just notice that&#x27;s me and my perfectionism operating again isn&#x27;t that fascinating and then right down it happens at 1:00 this afternoon it happens at 8 you know uh 55 you know like just catch and write down how often don&#x27;t make a big deal about it and here&#x27;s a really really important part don&#x27;t make yourself wrong don&#x27;t shame yourself don&#x27;t be like what a I am don&#x27;t say that stuff because that is gonna keep you from noticing it if you make yourself if your Gremlin makes you feel like garbage for doing that you&#x27;re going to not want to see how often you do it so the key is neutrality and a sense of empathy</p>
+<p>for the fact that this is a compulsion right now for you but if you think back to you at six or seven years old that kid was just doing the best he could with what he had available to him and smart you that you figured out oh if I start to act really perfect that actually might make my life a little easier yeah you&#x27;re gonna blame that young version of you for being so creative no right yeah so whatever you&#x27;re doing now is because that version of you from back then is still trying to keep safe yeah okay okay all right so aware okay and and so it was called taming your inner Gremlin correct yep okay yep by Rick Carson and I strongly recommend you go to my YouTube page and watch my interview with Rick because I do an interview with him it&#x27;s it&#x27;s just you know Rick C the Wall Street coach is my podcast look up you know Wall Street coach plus Rick cson I can&#x27;t remember what the number episode it was and watched before you read the book because it&#x27;s going to give you this kind of big picture</p>
+<p>Vibe of what it is your this and also here&#x27;s another piece of advice this is not a book you plow through okay this is a book that&#x27;s like rich chocolate you&#x27;re going to take small bites and then you&#x27;re G to put it down and you&#x27;re going to digest it and you&#x27;re not going to skip the homework at the end of each chapter nobody does the homework cuz it&#x27;s pain in the neck nobody likes the homework because the homework is forcing you to be with all this stuff inside and everybody&#x27;s like a I&#x27;ll do that later let me just finish the book no you have to do the homework as you go yeah yeah I&#x27;ll say this I&#x27;m uh I&#x27;ll say that I am uh uh desperate enough to get this out of my trading that I&#x27;m I&#x27;m willing to do the homework here is this is the key to why this is why Traders keep doing the same thing over and over again because this work that we&#x27;re talking about here is uncomfortable like being with that trigger inside of you is facing a dragon of Swords right yeah and who the hell in the</p>
+<p>right mind wants to face a dragon that is a scary scary place to be but let me tell you what is scare here losing all the capital you will continue to lose for years to come if you don&#x27;t face that drag yeah and that&#x27;s that is the and and that&#x27;s my my biggest fear too right is just continuing to because it&#x27;s it&#x27;s like I go through phases of where I do well right and then again you know I get myself into these p&amp;l holes where I&#x27;m you know the compulsion and stuff like that and it&#x27;s just yeah it&#x27;s a night so it&#x27;s shortterm discomfort for long-term Comfort that&#x27;s what ultimately coaching is that&#x27;s ultimately what uh doing work on your self-awareness is short-term discomfort at the end of the day what does somebody want to do kick back have a beer watch a football game but doing this work instead is going to be initially like the discomfort when you first go to the gym you have to build up your muscles of Tolerance and what&#x27;s so amazing is you will find as you begin start this journey towards being with your here&#x27;s the thing</p>
+<p>here&#x27;s a secret you&#x27;re always going to make mistakes because if you&#x27;re not from another planet e you are human and humans are fallible yeah so yeah yeah you might as well get used to it yeah that&#x27;s that&#x27;s yeah that&#x27;s that&#x27;s true for sure yeah good job good job man lot I Le on you in a very short amount of time please stay in touch and I&#x27;ll be doing these hopefully almost every Friday and then I also do YouTube lives on Tuesday and Thursday so you can always come into those two if uh you want to give me an update let to know how it goes but again Take It Outside your trading for now inside your trading simply notice when perfectionism is a is a foot there&#x27;s other steps you have to do as well obviously you know I&#x27;m trying to just give you one thing at a time um but you know if you ever of course want to talk about coaching reach out to me I&#x27;m going to start a small group coaching un limited to 10 Traders uh usually I do oneone but I&#x27;m going to start a small group uh probably</p>
+<p>mid October so if you want to be part of that you can also just let yeah I&#x27;m definitely interested I I&#x27;ll reach out to you about it um and and just just to real quick I would say that let&#x27;s say that I&#x27;m I do like uh you know let&#x27;s say that I take a trade and it&#x27;s 10:30 in the morning and I write down you know I&#x27;m feeling perfectionism right now would you say that as soon as I feel that like go and take a a walk around the block or go in like you know or should I just kind of should I stop trading even if it hasn&#x27;t affected me yet or what do you kind of I hell if if you&#x27;re able to not allow that perfectionism to hijack you absolutely do whatever you need to do that doesn&#x27;t leave your account in Jeopardy um I would I would 100% say yes pause so that you can uh be with it but and and again the timing of when you are going to be with it you&#x27;re going to have to judge based on how that trading day is going and what you&#x27;ve</p>
+<p>done with your account but I would recommend as long as your trading account is safe for you to do this put yourself into a position emotionally physically away from your desk like get up from your desk go into another room in your house you can walk if you&#x27;re able to but I would much rather see you be able to now and this would be part two of what I would recommend to you but let&#x27;s get one thing done at a time is I will ultimately be advocating that you going to take sort of this metaphoric elevator down from your head into your body part of what this uh is about is you are going to have to learn how to emotionally surf the discomfort that your imperfection ISM your human uh being infallibility is triggering and that is something that we have to do slowly because we don&#x27;t want our central nervous system to be going on tilt so you the the two questions that I was uh will Advocate to you that are uh to that I learned from rapel Kushner is what&#x27;s happening now can I be with it and sometimes the answer</p>
+<p>to can I be with it is no freaking way because it&#x27;s triggering me my heart rate&#x27;s racing my eyes are dilating I&#x27;m sweating okay so you stay in it as long as you can and then you pull out this is not for an hour this is like two minutes a 30 second uh a five minutes this is learning how to slowly it&#x27;s like exposure therapy Imagining the worst case scenario like take this perfectionism like there is a worst case scenario of you feeling built be a cost to you if you aren&#x27;t perfect what is it what&#x27;s the worst thing that could happen to you what&#x27;s the worst thing that could happen if you make a mistake that is the question you want to ask yourself you want to take it in your imagination to the extreme and then watch your body light up like a pinball machine and surf it the Temptation in that experience and I&#x27;ll do it with you outside of this forum if we ever come together is it&#x27;s really easy to go into your mind our mind is the place we sort of go to escape feeling we most of us</p>
+<p>especially those who perhaps are a little bit on the intellectual side or smart side have a tendency you know what I can think my way out of this feeling no you can&#x27;t nobody can think their way out of a feeling you can only feel your way out of a feeling but guess what feeling is uncomfortable feeling is uh going to set off a chain reaction of physiological uh things happening to you and it feels uncomfortable and you me everybody will be like I don&#x27;t want to feel this this is get me out of here so we go to our ahead and we start to think about it and uh strategize about it but that doesn&#x27;t get us away from what triggered us we have to go back into the feeling and it usually shows up in our body in a particular Place lower back pain stomach issues tense jaw shoulders like some place the body has the experience and all it&#x27;s asking for is us to give it some time to discharge and this okay this I learned from Peter LaVine who wrote waking the tiger he speaks to the fact that the animal kingdom</p>
+<p>finds themselves in life and death situations all the time time and they don&#x27;t carry trauma human beings because animals will go and Tremor and tremble and shake off and discharge you know if a gazelle gets away from a lion it won&#x27;t go back to the herd it will sit behind a bush for hours if necessary to Tremor and tremble out that reace of near death and when it finishes it&#x27;s done it has no PTSD because it&#x27;s processed it humans don&#x27;t process so most of us are walking around with a whole bunch of stuck uh Tremors and trembles so to speak that we&#x27;ve not discharged and also not healed so when anything shows up that looks like feels like smells like senses seems like we go back to a very old experience and find ourselves hijacked by that old I don&#x27;t want to feel that feeling but the thing is the very thing we&#x27;re free to feel is the key to us being set free from it yeah yeah thank you that was yes that&#x27;s interesting it&#x27;s fascinating um yeah all right um I&#x27;ll definitely yeah I&#x27;ll definitely do that homework and and stuff like that</p>
+<p>that you told me about and I&#x27;ll definitely I&#x27;ll keep in touch with you and let you know please let me know goes but one step at a time just start with simply noticing just noticing might be enough right now for right now right you can simply but try to find twet be playful about it don&#x27;t take it too seriously try to be playful like go lose a game of poker to a buddy who you always beat his pants H like go lose to him and make a bet on Olympic sport before it&#x27;s over with somebody and you know purposely lose why because I want you to just see wow look at how triggered I get when I do lose when I make a mistake when I forget the milk at the grocery store look at how I talk talk to myself about it that&#x27;s what you&#x27;re getting kind of investigating right now okay okay good to talk to thanks for coming into the room yeah I&#x27;ll keep it I&#x27;ll definitely keep in touch thank you for talking to me appreciate welcome all right be well hello you too all right I have ju let me</p>
+<p>just look at the time guys because that that one&#x27;s a little longer than I expected so I just want to make sure I can stay on this call I think I got like five more minutes so if anybody else wants some uh speak coaching and I mean speed because I know like five minutes then please raise your hand uh and thank you all for coming today uh I&#x27;m so glad that we had a handful of people uh join me but I want to just really uh acknowledge e and I would like everybody in the room if you guys are willing to I&#x27;d love you all shoot him a DM if his DMS are open or give him a shout out on if that was helpful for you because it takes guts to raise your hands come into an open form like this and speak about a challenge that you&#x27;re having so please show your support to him because I can&#x27;t imagine everybody in this room right now doesn&#x27;t struggle with the same damn thing so the different degrees everybody&#x27;s got there a particular padillo or you know kind of uh Achilles heel but let&#x27;s just</p>
+<p>show lots of support to e because that is what this SP is going to be so I&#x27;m setting the tone now guys this is going to be a safe place for Traders to come to share their vulnerabilities and to actually share their wins because ultimately this is an isolating lonely business all of you guys need a place to come real and I want everybody to support and encourage you pe encourage each other encourage your brothers and sisters in this space so that they don&#x27;t feel so alone and so that you know you have a place to come and not be alone anymore but I also want this to be a place where we can celebrate each other&#x27;s successes you know I understand there&#x27;s a lot of bragging on Twitter um but at the end of the day I I know that that upsets a lot of uh Traders because they feel like oh sure you just show us the successes you don&#x27;t show us the downside and one of the things Brian actually pointed out in an excellent xas that I did with him if they you haven&#x27;t listen to you should listen to it</p>
+<p>I think it&#x27;s a month ago he was on my podcast but we also did an xas Brian Lee is always talking about the importance of managing your risk and one of the things he always points out is that often a Trader will show us you know oh look at how great they did but they don&#x27;t will they won&#x27;t speak to the risk uh profile that they that they are using and that also can sometimes you know sort of make a Trader be ambiguous and understanding well how much risk was at stake here in the first place and I feel that&#x27;s uh unfortunate because you do all need to know how much risk certain Traders take for the certain successes they have that you may or may not be up to that your account may not be ready to withstand so it&#x27;s you know it&#x27;s it&#x27;s easy to you know somebody sells a company for $22 million um and I&#x27;m somebody who looks at that and says oh well I can&#x27;t sell my company that much well also I&#x27;m not probably spending her you know the team what that company is so just remember that too</p>
+<p>guys that&#x27;s a great uh catchphrase rafhael Kushner taught me one of my teachers uh he said compare equals Despair and it always does when we compare ourselves to somebody else rarely rarely are we comparing ourselves to the exact equal uh we&#x27;re not seeing the whole picture on the surface especially on media on the surface it looks like oh somebody&#x27;s doing so well but you don&#x27;t know what the behind the scenes are none of us ever do so just remember that it could look like you&#x27;re comparing yourself equally but almost never are you actually comparing yourself equally there&#x27;s a whole bunch of things that people will allow us to see in public that they won&#x27;t necessarily show us uh unless we&#x27;re hopefully in a supportive environment which is what I hope this to be and to become all right so had a lot to say today apparently didn&#x27;t I okay so thank you then Eve for being so vulnerable coming into this room and uh being honest and authentic about your struggles and uh I hope you guys will come back I&#x27;m looking at let me just take a peek at next week because I um</p>
+<p>I just started this this week because I had a cancellation so this window opened so I was able to do this and next week at 10:30 so right now I think I have it like 10:15 1112 1 234 I&#x27;m in Hawaii so I&#x27;m six hours behind you guys so I&#x27;m going to try to do this next week at about 4:15 instead uh so we can do it closer to the end of business day in New York uh Eastern Time okay so please keep an eye on uh the lives if you guys want to come into those Tuesdays Thursdays I do them at different times each week but somewhere a little bit later uh I think Tuesdays are around 4:30 Eastern and Thursdays I think are closer to uh usually around two for five six seven8 o&#x27;clock 8 o&#x27;clock I do this a little later on Thursday because my mornings are filled with clients okay that&#x27;s it thank you so much for being here uh almost every Friday I&#x27;ll be doing this at about the same time so remember please come into these conversations with your questions raise your hand come in for some coaching or</p>
+<p>at a minimum call the phone number that I put out that is specific to trading issues this is uh let&#x27;s see here oh somebody just asked what the titles were okay I&#x27;ll put all the titles that I spoke to um in the slack sorry in the ex uh comments so you guys can see I I mentioned a few books and other book E I didn&#x27;t mention to you that I was about to when I said there were two books I was going to mention to you is the the book that I was referencing about how we adapt in our childhood to our you know family of origin is the drama of the gifted child and that is by Alice Miller and that book just helps us all have a little more empathy for the environment that we grew up in and how we had to kind of you know sculpt ourselves to show up perhaps different than our authentic self to meet the needs that are caretakers had uh and weren&#x27;t in a position to kind of give us the attention maybe or love we needed uh so we adapted ourselves so the drama the</p>
+<p>gifted child is one of those books that helps us understand that it&#x27;s also a short book it&#x27;s not very uh big or dense um Rick Carson&#x27;s taming your Gremlin uh and watch the Rick Carson interview I did with him on the Wall Street coach podcast because it&#x27;s going to help you really understand what that book represents and what was the other book that and I talked about Peter LaVine he&#x27;s the guy who wrote waking the tiger which talks about the way animals process trauma and how humans haven&#x27;t been taught or encouraged to do this um and then who else I of course mentioned rapel Kushner and RF Kushner has a bunch of books but I would start with one of his books called the one thing holding new back all right guys hopefully that was valuable for you all today uh please follow me if you&#x27;re not following me already but you probably wouldn&#x27;t have seem as if you w following me please spread the word please tell your fellow traitors that this is happening on Friday so we get more people here uh to get the tools hopefully that&#x27;ll help you all you guys</p>
+<p>are awesome I&#x27;m so inspired by you I don&#x27;t know how you do what you do I run a small business and that is freaking hard so no thank you that&#x27;s why I give these to Traders because I&#x27;m so impressed that you all are willing to take that on every day it&#x27;s the most competitive game in the world with the smartest men and women in the world so you guys clearly like to take on Bodacious goals so look in the mirror at some point today and just tell yourself what a badass you are because you all are win or lose Green Day or red day guys you are here you&#x27;re still standing after Monday that alone to make you stop and pat yourself on the back so good job and take care of each other out there and I&#x27;ll see you guys next Friday uh Hy ho</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <p>Kim Ann Curtin, Founder of The Wall Street Coach, helps Traders, Executives & their teams end the cycle of self-sabotage.</p>
+                    <div class="footer-brand">
+                        <span class="footer-logo">The Wall Street Coach</span>
+                        <p class="footer-copyright">&copy; The Wall Street Coach TM. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-legal">
+                        <a href="mailto:hello@thewallstreetcoach.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                    <div class="footer-social">
+                        <span class="footer-social-label">Ways To Follow Us</span>
+                        <a href="https://twitter.com/twscoach" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kimanncurtin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/thewallstreetcoach/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCuApZQaw2UATpJums6cw3HA" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@thewallstreetcoach" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>

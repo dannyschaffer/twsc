@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Space with Shay Huang (Humbled Trader) - The Wall Street Coach Podcast - Episode #69 - The Wall Street Coach Podcast</title>
+    <meta name="description" content="Stop Trading Angry: Shay Huang (Humbled Trader) on Emotional Resilience  Even successful traders struggle with deep emotional volatility that costs money a">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #F9F9F7;
+            color: var(--navy);
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--navy);
+        }
+        .video-section {
+            background-color: #08333A;
+            padding: 4rem 0;
+        }
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .episode-body h2, .episode-body h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .episode-body h2:first-child, .episode-body h3:first-child {
+            margin-top: 0;
+        }
+        .episode-body p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .episode-body ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        .episode-body li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        .episode-body strong {
+            color: var(--navy);
+        }
+        .actionable-takeaway {
+            background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .actionable-takeaway strong {
+            color: var(--navy);
+        }
+        .closing-quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--navy);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero - Light Background -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>X Space with Shay Huang (Humbled Trader) - The Wall Street Coach Podcast - Episode #69</h1>
+        </div>
+    </section>
+
+    <!-- Video Section - Dark Background -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/KR3A5JjS3nk" 
+                    title="X Space with Shay Huang (Humbled Trader) - The Wall Street Coach Podcast - Episode #69"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content - Light Background -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <div class="episode-body">
+                <h2>Key Takeaways</h2>
+<p>Stop Trading Angry: Shay Huang (Humbled Trader) on Emotional Resilience</p>
+<p>Even successful traders struggle with deep emotional volatility that costs money and sanity. Shay Huang (Humbled Trader) shares her personal journey from smashing keyboards due to uncontrolled anger and revenge trading to achieving genuine self-awareness. Discover why mastering your inner emotional landscape is the only path to long-term survival and consistency.  * <strong>Emotional Volatility Magnified</strong>: The market is designed to test you, and it will magnify any internal struggles or anger issues you are currently facing.</p>
+<ul>
+<li><strong>The Antidote to Revenge Trading</strong>: Through rigorous journaling, Shay realized most of her mistakes and major losses stemmed from the emotional trap of <strong>revenge trading</strong>.</li>
+<li><strong>The Value of Community</strong>: Trading is inherently isolating. Being part of a supportive, like-minded community is crucial for mental health and sharing struggles without <strong>judgment</strong>.Actionable Takeaway: When facing a challenging or low-volume market environment, immediately <strong>size down</strong> your positions to maintain psychological composure and survive for the next day.The stock market and trading in general really magnifies any struggle or any issues you have inside.</li>
+</ul>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>welcome everybody to the Wall Street coach I&#x27;m Kim an curtain&#x27;s uh Twitter space I&#x27;m so lucky today to have Shay uh playing here also known as humble trador and we&#x27;re gonna have some uh questions from all of you for Shay I was very fortunate uh to meet Shay at the Traders for cause conference and we just were I was blown away as were all the audience remers when Shay gave her talk at Traders for cause it was a heartfelt honest uh kind of story about her journey as a Trader and her journey just as a woman navigating all the volatile emotions that trading can absolutely kick up for any traitor and I hope that we get to talk a little bit about that today um also I just want to speak to Shay&#x27;s amazing ability to take I think really complex Concepts and not use jargon she speaks straight from the hip and she just has so many followers especially if you haven&#x27;t watched her YouTube Channel please go there she&#x27;s over a million followers there million subscribers uh she has her own trading Community uh she&#x27;s just very involved in the trading world and</p>
+<p>just really cares so genuinely about her the people that she encourages she&#x27;s so encouraging and I I really can&#x27;t wait for her to share so much for her wisdom here today so please get think start thinking about your questions this is a two-part episode with Jay we just came off of a zoom video uh conversation and we&#x27;ll release this in a couple of weeks uh all edited together so we did 30 minutes by zoom we&#x27;re going to do about 30 minutes today and I really hope you guys have questions I see some friendly faces in the room already uh Shay welcome to my Twitter space hi hi Kim hi hello everyone this is cool this is my first ever Twitter space that&#x27;s cool things oh it&#x27;s so nice to have you I&#x27;m so glad you greet to come here uh as I said before you know I was telling everybody in the room just that we&#x27;ve got to meet a Trader for a cause uh we were what were we were we the two women who spoke I don&#x27;t know was there another woman who spoke maybe one more right it was all men speaking</p>
+<p>but us yeah yeah on Saturday it was just you and I but on uh on Sunday uh on Sunday I think there were two other women Traders were there oh good okay I must stop talk that&#x27;s good but I&#x27;m so excited to just for once have a sister up on the stage with me that felt really good and your talk was just I I&#x27;ve said it before and I know that the trait is For A Cause talk is probably going to be behind the pay wall but honestly if you listen to no other talk but shees uh it&#x27;s worth the price of admission her talk has to be listened to by any serious traiter because of her authenticity and the journey she&#x27;s navigated um I am a trading coach so of course I&#x27;m a huge advocate of emotional intelligence and part of what so spoke to me in Shay&#x27;s talk is her own development around emotional intelligence Shay are you willing to just share with this group just a little bit about how your own Journey of that self-awareness we&#x27;ve talked about how that you know seeking out more emotional intelligence has impacted you personally</p>
+<p>but also as a Trader yeah um I think um as a when first started trading I was extremely emotional and I&#x27;m just overall really angry um so there were times where during my first year of trading I like smash keyboards computers um and I&#x27;ll even take out um my anger after losing the day on other people in real life around me um I feel sorry for my siblings and uh my friends and my parents at the time um so it it wasn&#x27;t it obviously was really toxic and I think you know at the end I&#x27;m just ended up punishing myself even more when Revenge trading and uh trying to make back the losses so I think that was really the the main reason um and I had no one to blame but myself really for my first year of really really struggling with trading losing a lot of money every day um and and I think a big part of where I finally woke up from from all that anger is really recognize that I need to seek seek some help help in terms of U my anger issues so that&#x27;s where I really talk</p>
+<p>to other people I talk to talk to um counselors about my anger problems talk to my family members and discussed um with them in calm manner um it took a while like it didn&#x27;t it wasn&#x27;t like an overnight change but after recognizing that about my anger and starting to look at my trading that&#x27;s when I finally put in some steps in place to to recognize my emotions and to have proper steps um to kind of to know how to react and how to compose myself when trading and when things are tough not to get too overly emotional and knowing when to walk away I think that was a a key concept um and that&#x27;s when I really started putting in some discipline and risk management but at first I had to really work on my own emotions and my own uh anger issues you know I I mean look we we both know that this is for anyone who&#x27;s doing anything that&#x27;s follow so never mind trading and yet not just new Traders but even seasoned sophisticated Traders have a tendency I have heard on occasion to kind of poo poo the emotional side well</p>
+<p>I&#x27;m just not GNA be emotional as if they had a choice what do you think was your ability to face that that was a stumbling block for you what you were still a fairly new Trader and yet that to me is a sign of emotional intelligence to even notice oh this anger is costing me what how do you think it was that you were able to recognize it and get that help it&#x27;s really amazing that you saw it so soon yeah um I think it&#x27;s when I started journaling every day and journaling my losses that&#x27;s when I realized most of my mistakes and most of my losses were from uh me being Revenge trading so that was the biggest cause um and of of that Revenge tra tring losing initially and trying to make it back um it&#x27;s when I started realized hey that&#x27;s if I if I stop doing that if I just recognize that I should stop trading or just stop out according to my pre-planned Risk Management areas then I wouldn&#x27;t have lost that much money I would be a break even um during my first year so I think tracking that</p>
+<p>journaling really helps um and also of course like even though uh at the time I was training part-time so I had a full-time job I have my income so that&#x27;s what allowed me to kind of keep on refunding my account after blowing up but still you know it&#x27;s it&#x27;s money that I worked really hard for during my full-time job 9 to7 so it&#x27;s it&#x27;s precious so after losing how much after seeing how much I&#x27;ve lost I realized hey I need to kind of kind of be a little bit smarter about how I size and how I risk my hard-earned Capital um because it&#x27;s not like I can just keep on refunding and not refunding my account and not feel the pressure and not feel the loss um so that&#x27;s that&#x27;s a couple of things that really help me realize I need to change some things oh it&#x27;s so much to talk about this is Shay hang with humble traitor if you&#x27;re not following Shay on YouTube Instagram or Twitter I encourage you do she gives such she has such a great sense of humor I know she has a secret fantasy she might be on</p>
+<p>satday Night Live one day and I will definitely vote that you do go onside that live FTE she has a great sense of humor lots of lots of important information done in a very uh unjar and fil way like you speak straight from the hip in so many ways Shay and I think that&#x27;s really encouraging not just to new Traders but to sophisticated Traders too you keep it real all the time and I I wish all people kept it real so thank you for doing that if you guys are enjoying this conversation please please us do a Twitter or retweet that this space is happening so we can get more creers in the room uh learning from her and this Twitter space and podcast will release in a couple of weeks on the Wall Street coach podcast which is my YouTube channel uh and we&#x27;ll have this conversation plus the 30 minutes Shane I got to to right before it curious if anybody has any questions if you do please raise your hands and I&#x27;ll give you permission to speak and ask uh sh your questions directly one question I&#x27;m going to ask you to</p>
+<p>here is we were talking a little bit about the challenging Market that&#x27;s there right now uh you did speak a little bit about you know your advice to season Traders but I think it&#x27;s worth repeating here with this group what is that first piece of advice that you really feel all Traders knew and sophisticated need to keep in mind during this environment yeah I think this year is is is definitely tougher volume is lower what see less gappers and when they Gap up they don&#x27;t really sustain the overnight move um so I think this year the biggest thing that helped me stay alive and still be able to survive this kind of Market is uh sizing down um a lot of Traders are used to using certain position sizes from um 2020 and 21 and this year I re I find myself having to size down a lot more both from the perspective of um I don&#x27;t want to risk as much um you know I might be able to risk a certain number last year but this year I&#x27;m just not comfortable with it um and at the same time that also means this</p>
+<p>year there&#x27;s just less opportunities overall last year there will be multiple stocks running um and every other day you&#x27;ll have new new stocks to trade of old price old various prices from two digits single digits to three digits this year I think it&#x27;s a usually each day there&#x27;s only one or two at least for my trading style that trades for my own trading style there&#x27;s usually only one or two stocks that I can focus on and uh when I trade them I tend to downsize a lot more um and I I I usually stay this way until um the only month that I recall this year where I really size back up was in August um right now it&#x27;s December so that was four months ago where we had a lot of stocks rebounding um we had a lot of um kind of mean stocks bouncing and that was great um that was the only month where I recall going back to my regular size and the rest of the time I think just downsize and and be happy with you know making less but it&#x27;s still like it&#x27;s still profits profits at the end</p>
+<p>of the day so I think that&#x27;s what really helped me this year you know I&#x27;m just kind of curious about your it&#x27;s it&#x27;s eight years you&#x27;ve been a Trader what has what has surprised you just around your own Journey being in the game that long eight years is a long time I know some people uh say oh it&#x27;s it&#x27;s not that long but I think to survive never mind to be profitable and look let&#x27;s be honest a online managing a YouTube channel for a million people I mean that&#x27;s a full-time job how you balance all of these really big kind of responsibilities that you carry I think if anything um having a YouTube channel that&#x27;s that&#x27;s basically a business on the site really helps a lot um because what I used to do before I started YouTube is I&#x27;ll stick around the entire day to trade um and and it&#x27;s it&#x27;s great when there&#x27;s actual opportunities but most times I realized from just observing my journal is that most times after a certain time I just end up losing money and giving back profits from the morning so if anything YouTube is a healthy distraction</p>
+<p>and allows me to be more disciplined and walk away and have something else to work on and if you think about it if I have to kind if I preach about risk management in front of you know almost a million people on YouTube then then I when I&#x27;m trading myself I&#x27;m gonna be very very disciplined because how can I preach you stop out uh or like you respect your risk respect your discipline if I don&#x27;t if I don&#x27;t practice that myself so it really helped me a lot actually and and if anything it motivates me um to to keep going to trade better um um and to show up for my followers yeah it&#x27;s it&#x27;s almost like your followers are your accountability coach they&#x27;re holding they&#x27;re holding you accountable to your own wisdom and uh you know really hard earned wisdom and that&#x27;s you know we talked a little bit about that there was that period of time where you had a massive loss and you I just any kind of loss is hard but the big losses are even harder what do you lean into when loss occurs not just in your trading but</p>
+<p>just loss in general um I usually nowadays I I would take a break um so depending on the size of the loss I&#x27;ll take the rest of the day off or the next day off um and if it&#x27;s really bad a whole week off I think that&#x27;s uh I need that time to kind of reflect and really really recompose myself um because what I used to do when I was newer is that I will go back to trading the next hour or the next day and try to make uh everything back and that usually turns out worse so nowadays I&#x27;m a lot more composed you know I don&#x27;t I don&#x27;t get that Angry Anymore I get I still feel some sort of emotions of course but I don&#x27;t I don&#x27;t I don&#x27;t I haven&#x27;t smashed a mouse and smash your computer in many many years I just say that fastic that&#x27;s fantastic that&#x27;s Fant fantastic I&#x27;m I&#x27;m sure your credit cards are happy for that because we W know those mouses and those keyboards have got more more expensive yeah I know you know because of the size of your trading community and the amount</p>
+<p>of people that are so impacted by you that sense of community I know it&#x27;s really important to you just talk about what community means to you and also what you feel it means to Traders the importance of it yeah I think the there are so many so many beneficial things about being part of community and just having um a like-minded group of people who understand you first of all I think uh trading this this job this career this business is really misunderstood um any normal people like my my family still thinks I&#x27;m gambling right so so there&#x27;s a lot of stigma and you can&#x27;t at least for me with non-traders and with people who don&#x27;t follow the market it&#x27;s hard for me to kind of communicate with them uh what I do dayto day and they always think I&#x27;m just gambling um so I think you you want to be talking about your struggles and share your wins with people who understand how hard you worked and how how hard your day-to-day life is um so that&#x27;s that&#x27;s the biggest thing about um having a community is to be able to share your struggles and</p>
+<p>understand that the other person&#x27;s not going to judge you they understand your your wins are because you worked hard for it and at the same time they understand your losses because they&#x27;ve gone through the same and there&#x27;s going to be no judgment it&#x27;s everyone most of the time everyone&#x27;s really understanding and they&#x27;re just happy to to listen to your story and and share their story at the same time so I think if anything it&#x27;s really good for Traders mental health um to have someone to talk to who understand and they&#x27;re going through the exact same thing as you are I think it can be so isolated trading and it can you can get kind of stuck in this place of where you feel like it&#x27;s just you yeah and that&#x27;s that&#x27;s part that&#x27;s part of all of the theme of your all of your messaging on YouTube is really to try to encourage people to know that they&#x27;re not alone and that they this is there is an experience as a Trader that&#x27;s across the board even if people don&#x27;t talk about it and that&#x27;s why I love your talk and Traders for cause because</p>
+<p>you know you&#x27;re sharing one of those honest places of like wow anger really could sometimes get a hold of me and my trading and I know that that&#x27;s the case as a coach because I listen to what people struggle with but you just don&#x27;t hear people talk about it you don&#x27;t hear PE you they just show you all the good that happens and not the difficulty what do you think gave you the courage to even give that talk a treasure for cause never mind just share it as you do on your YouTube channel yeah um so so that&#x27;s Traders for talk um uh Speech I&#x27;m not gonna lie it took me like two months to write because I just kept on throwing it out I was afraid of sharing too much and and also at the same time I don&#x27;t want to share too little because then it&#x27;s not doing doing like my past uh justice kind of so it it took a while for me to really push do and decide okay I want to share this much um and I&#x27;m not sure a lot of stuff I it&#x27;s something I never talked to</p>
+<p>anyone else about I think even my my mom after she heard my talk she didn&#x27;t she was like oh you didn&#x27;t tell me about this you didn&#x27;t tell me you lost $20,000 so that was the first time my mom heard about that loss um so it was interesting um what was what was that like so bad I mean it&#x27;s okay now she knows this many many years ago but uh she was not happy even though I&#x27;m a grown woman now she&#x27;s just like how can you how can you lose that much money you&#x27;re not tell me it&#x27;s my own money mom like I yeah I made it back so it&#x27;s okay we&#x27;re we&#x27;re always talk about there&#x27;s little girl or little boy so they just yeah yeah so but uh to be honest I&#x27;m glad I did it shared a story but it wasn&#x27;t easy it&#x27;s all I can say you know I I I had Charles Harris on here a long time ago and he had a talk that was on YouTube it&#x27;s called the trading uh the hero I think it&#x27;s called the Traders Heroes Journey or Traders Journey Traders journey and okay</p>
+<p>he also Shay was just incredibly vulnerable in sharing the challenges the losses he had and those I I mean I I was like so moved by his talk and and I had not heard to talk like that since since his that yours was at TR for cause and I just feel like God if your talk and Charles&#x27;s Journey like there&#x27;s everybody has those stories but everybody isn&#x27;t sharing them so just thank you for your courage I I I can imagine it took courage to share it but it it in a way I kind of think it&#x27;s crazy that it&#x27;s asks courage because everybody&#x27;s going through it everybody knows is happening but we just don&#x27;t talk about enough and I&#x27;m just curious too when you&#x27;re trading community and those subscribers that interact with you because you have I&#x27;m I&#x27;m jealous I&#x27;m jealous of the interaction you get on your YouTube channel I&#x27;m like I get people to write one comment you get like conversations YouTube comments it&#x27;s so so active and robust what do you see among all of those members and subscribers that they themselves perhaps you wish you could if you could wait for</p>
+<p>mat Juan to help them see right at the you know get-go what what would you want them to really understand and see I think I think the the first thing is kind of similar what you said like they need to understand that everyone goes through the same struggles you cannot become a profitable Trader without losing money first um I think that&#x27;s a first thing every Trader needs to understand and I I think you know from watching the videos on my channel most people understand that because that&#x27;s kind of the fundamental thing I I say is that you should expect to lose money when you first started trading and and but you can decide how much so that&#x27;s kind of a fundamental idea and I think a lot of people receive that quite well um especially after watching my all the videos on my channel um but I think people just really want like my videos because they want to they they relate to it um because they they they they they like the fact that I don&#x27;t just talk about the good I also talk about the bad uh and all the emotional struggles as</p>
+<p>well so that&#x27;s that&#x27;s that&#x27;s what I usually see in the comment section is people appreciating that I talk about it and they themselves after seeing I shared in the videos they&#x27;ll share about their stories and oh you just got muted I think we can&#x27;t we can&#x27;t I can&#x27;t hear you can can you guys hear Shay can you guys hear oh you cut you got cut off there Shay at least for me I don&#x27;t know yeah I think you so so I&#x27;m so sorry to make you repeat that but that that little chunk just somehow is muted so um just just repeat you were saying about the comments in the sections and that they&#x27;re always happy to see that they&#x27;re not alone and then a lot of the rest got cut off so would you please repeat that yeah yeah so in the comment section usually what I&#x27;ll read is that people appreciate I&#x27;m sharing the stories and they they they themselves will in terms share the struggles and a lot of times that&#x27;s where they ask for my opinions and I&#x27;m almost like a therapist sometimes on the in my YouTube comment section just telling</p>
+<p>people hey it&#x27;s okay size down like I think I tell them what they already know but they don&#x27;t a lot of times it&#x27;s hard to execute on on certain discipline practices right so I tell them what they and they should Implement yeah but sometimes like you know it but you know there&#x27;s still that uncertainty and part of what I think too that&#x27;s so powerful is that sorry I think I got caught off a little bit I think I missed your question okay oh I just was commenting that I I was agreeing with you that sometimes people do know what&#x27;s best for them but it&#x27;s still hard to implement it it&#x27;s still hard to practice it but I think part of what&#x27;s so remarkable about you is that you you really Express empathy and understanding and I don&#x27;t I I feel like you are you&#x27;re tough you&#x27;re tough about like there are kind of There are rules and there are high kind of Demands that are going to be placed on you you&#x27;re very honest about that but you also sort of teach people like and this is going to be hard and you&#x27;re gonna have</p>
+<p>to learn how to be empathetic or compassionate to yourself and I I love that you you kind of give the tough talk but you also say like and don&#x27;t be too hard on yourself you just you balance that really nicely Jay yeah I think there&#x27;s a you know everyone you know struggles right in trading like even even this year is a struggle for many Traders I I found myself struggling as well you gotta give yourself a a you know a pat on the back sometimes just to relax and say it&#x27;s okay this year is tough um the market just stay alive for for uh for the next day almost like you need that and you need a community to to to understand and appreciate what you&#x27;re going through as well yeah yeah uh what do you I&#x27;m curious if we have any questions I I keep asking to shake questions and and I want to turn it over really to everybody here in our room uh if anybody has a question please please raise uh your hand and let me know so I can let you go directly here to Shay to ask these questions</p>
+<p>uh if you guys like this conversation please retweet that we&#x27;re having it here this two-part episode with Shay will release in a couple of weeks my uh editor a little behind we did we got a a lot of uh podcasts in a row so this will probably be out in about two weeks uh I had a great you know celebration of time few minutes ago with Shay we did a zoom conversation for about 30 minutes and that plus this Twitter space will be released on a full podcast on the Wall Street coach podcast which is my YouTube channel uh one of the things I just want to Advocate is Shay&#x27;s YouTube channel just over a million subscribers incredibly diverse topics uh she&#x27;s funny she&#x27;s entertaining her editing skills is you know above everybody else on YouTube and that has no doubt ties back to her days in the VFX industry uh I&#x27;m just kind of curious that experience because it&#x27;s so labor intensive in vs do you feel that that prepared you for the hard work the trading asked of you yes absolutely I think um I I look back in my VFX in film</p>
+<p>industry uh a couple years with f memories now because I think it really prepared me for all the extra hours I had to do all the blood tears and sweat I had to kind of kind of get used to in terms of trading so I I think um I think I think you know if if my job at the time my former career was cozy and you know I got paid a lot thing I there&#x27;s no way I would have wanted to day trade like I might as well just stay in my at my job so so I think I appreciate the the hardship I learn learned early on I think that it&#x27;s life right I think trading it&#x27;s a trial by fire and unless you&#x27;ve done something you know unless you you kind of struggled and overcome that you then you won&#x27;t have the experience of of you know trying to make something so difficult with such a low probability of success rate work you kind of have to be almost be a little bit crazy to want to stick around and in this business to keep on trying to make it work but</p>
+<p>but then you also know that um if you can make it work you can come come to the other Ides really much worth it and we&#x27;re talking to Shay hang also known as humble trator I&#x27;m Kim curton the Wall Street coach of my firm and I do coaching for Traders and investors and Executives we&#x27;re in a conversation about a lot of things but especially emotional intelligence Shay is a huge advocate of the importance of emotional intelligence in fact you&#x27;ll see even in her bio that she really uh really understood at a at I think an early stage you know she says no is about a year and a half in which I think is very early where she got that psychology uh was so important and she did her own work on herself to make sure that was as aligned and whole as possible I&#x27;m just curious like what those who think oh no I don&#x27;t have to deal with the emotional intelligence I don&#x27;t have to deal with perhaps some of my own anger issues or my own pain when I have lost what what would you what would you say to them to</p>
+<p>potentially en enroll them in the importance of it I think the stock market and trading in general really magnifies any struggle or any issues you have inside so I think it&#x27;s it&#x27;s almost impossible to like if you are struggling with something difficult in your life or anger issues like I was when I first started trading and a lot of resentment I think it&#x27;s going to come out in some way or the other just because the market the the market is not designed for you to make money it&#x27;s designed to test you and to designed to really challenge um your discipline so in a way the it&#x27;s good and bad because you know it&#x27;s the market is not like a 9 to7 job where you go to work you make money and you&#x27;re done for the day the market is where you can go to work for four hours seven hours of a day and still lose money so um so I think you know to really survive long term I&#x27;m not I&#x27;m not talking about just 2020 and 2021 I think you really need to be in tuned with your emotions um to to stay</p>
+<p>alive in this game I think the only people who can truly trade and survive without you know having to worry about their emotional intelligence are probably you know if you do ELO trading or if you write a lot of code for that but even that then you have to adapt quite um frequently as well but that&#x27;s that&#x27;s just another topic for another day but if for day trading and the active momentum style of trading that that I do and a lot of Traders do especially the ones who attend Traders for cost I think everyone all the profitable Traders have experienced some sort of loss everyone has but it&#x27;s about having that emotional intelligence to come back and not make the same um mistakes uh again yep yep Mak so so much sense all right guys we&#x27;ll probably bring this to a close she&#x27;s given me a lot of time already unless there&#x27;s anybody in this lovely Twitter space who wants to ask Shay a question raise your hand now or forever hold your peace as they say um and I I can&#x27;t wait to share this whole conversation with Jay with all of you thank</p>
+<p>you so much for coming to this Twitter space Shay thank you for giving us so much time uh thank you for all that you do for the trading Community you&#x27;re so generous and heartfelt and and you are hilarious I I hope that Satur Night Live waks up and Lauren Michaels realizes wow I this woman is not only a successful Trader and Community organizer but she&#x27;s also very witty so my hope is that you do get our dreams come true oh thank you and thank you for inviting me on this podcast thank you everyone for tuning in this is my first ever Twitter space experience so good to have you here all right we do have a question from Max so max I&#x27;m giving you permission now be sure to unmute your microphone and uh let us know what your question for Shay is just unmute that mic at the bottom left of your phone MAX the mic is yours it could be that you accidentally put in the request but let&#x27;s double check okay Max I think perhaps that was a mistake I&#x27;m gonna remove you from the speakers does anybody else have any question</p>
+<p>or max if you just had a glitch and you wanted to ask okay Max is gone so anybody else have a question before we say uh Aloha to Shay all right I think we&#x27;ll close it there Shay thank you so much I am just so happy to have met you in person at the conference but even more excited to get to have you here and share so much your wisdom with these traders who are working really hard and uh wanting to do their best so it&#x27;s uh it&#x27;s you&#x27;re really being such a contribution to so many so thank you for that thank you everyone thanks for listening and thank you Kim so welcome hello have for now</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <p>Kim Ann Curtin, Founder of The Wall Street Coach, helps Traders, Executives & their teams end the cycle of self-sabotage.</p>
+                    <div class="footer-brand">
+                        <span class="footer-logo">The Wall Street Coach</span>
+                        <p class="footer-copyright">&copy; The Wall Street Coach TM. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-legal">
+                        <a href="mailto:hello@thewallstreetcoach.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                    <div class="footer-social">
+                        <span class="footer-social-label">Ways To Follow Us</span>
+                        <a href="https://twitter.com/twscoach" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kimanncurtin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/thewallstreetcoach/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCuApZQaw2UATpJums6cw3HA" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@thewallstreetcoach" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>

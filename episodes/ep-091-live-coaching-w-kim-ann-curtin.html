@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Coaching w/ Kim Ann Curtin - The Wall Street Coach Podcast</title>
+    <meta name="description" content="The Gremlin That Kills Your Trades: Overcoming FOMO, Anxiety, and Boredom  Traders constantly battle internal pressures like FOMO, anxiety about holding wi">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #F9F9F7;
+            color: var(--navy);
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--navy);
+        }
+        .video-section {
+            background-color: #08333A;
+            padding: 4rem 0;
+        }
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .episode-body h2, .episode-body h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .episode-body h2:first-child, .episode-body h3:first-child {
+            margin-top: 0;
+        }
+        .episode-body p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .episode-body ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        .episode-body li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        .episode-body strong {
+            color: var(--navy);
+        }
+        .actionable-takeaway {
+            background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .actionable-takeaway strong {
+            color: var(--navy);
+        }
+        .closing-quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--navy);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero - Light Background -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>Live Coaching w/ Kim Ann Curtin</h1>
+        </div>
+    </section>
+
+    <!-- Video Section - Dark Background -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/-kc-FT0Rmsk" 
+                    title="Live Coaching w/ Kim Ann Curtin"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content - Light Background -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <div class="episode-body">
+                <h2>Key Takeaways</h2>
+<p>The Gremlin That Kills Your Trades: Overcoming FOMO, Anxiety, and Boredom</p>
+<p>Traders constantly battle internal pressures like FOMO, anxiety about holding wins, and the urge to tinker with profitable systems out of boredom. These emotional traps are driven by an internalized "Gremlin" voice that pushes unrealistic expectations and compares your journey to skewed online narratives. Failing to address these underlying psychological forces sabotages consistency and turns trading into an uphill emotional struggle.</p>
+<p>Key Insights:  - <strong>Unrealistic Goals Fuel FOMO</strong>: Fear of Missing Out often stems from setting impossible self-imposed deadlines for success, causing you to constantly pressure yourself to chase setups that don't meet your process criteria.</p>
+<ul>
+<li><strong>Boredom is a Capital Threat</strong>: When the market is slow or your successful process feels monotonous, you must create non-trading interests and hobbies to occupy your mind, preventing you from using capital to eliminate psychological boredom.</li>
+<li><strong>The Fear of Success vs. Loss</strong>: Anxiety while holding a green trade often masks a deeper fear of success—the discomfort that comes from achieving greater self-worth or potentially losing your "tribe."Actionable Takeaway:</li>
+</ul>
+<p>Identify your specific "Gremlin" stories (e.g., "I must deliver," "I should be trading," "I'm falling behind") and write them down when you are calm, then objectively examine if they are based on truth or fabricated anxieties.I'm telling you guys if you don't know yourself the market is going to force you to learn who you are.</p>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>Aloha everybody I have been wanting to try a live Q2 for a long time I would love to see who comes and to offer some free coaching uh to trade hers and investors who want to have some support I have a Discord room where I do uh have a membership for some coaching but because this is in the public forum I thought I would offer this to on occasion I&#x27;ve had a handful of Traders ask for it and I&#x27;m happy to be here so I never used this before and I&#x27;m kind of curious if anybody&#x27;s here so if you I see looks like I have at least one person uh please say something uh in the chat box I hope that I can see you but what I&#x27;m going to trying to figure out is how I can get you if you want coaching or someone else wants coaching into the room live so it&#x27;s going to be a little bit of a uh you know dry run today and then hopefully I&#x27;ll get better at this as I go but ultimately I just want to be a contribution to you guys and uh all</p>
+<p>right so Tom thank you so much I&#x27;m so glad you said you give here weave and Tom am I correct that you gave me some nice comments on the my investing Club video interview that I did with Alex and comforting about three weeks ago I think I remember your image there having said some nice things or maybe some nice things on my podcast channel so I&#x27;m glad you&#x27;re here and you know Thomas if you can figure out how to come in if you do want some free coaching please just uh you know get yourself on here I don&#x27;t know if I have to approve you but um but anyway yes I follow your pod well thank you for following my podcast Thomas you know I&#x27;ve been wanting to do these live YouTubes for a while and um you know I finally just press the button leave no I didn&#x27;t know what I was doing and hopefully it works so Thomas is there a topic that you want me to talk about if there&#x27;s something that you&#x27;re struggling with uh in your trading you&#x27;re investing or just you know in life in general uh feel free</p>
+<p>to you know at least put what you would like me to address and I&#x27;m happy to speak directly to you if that would be of service to you obviously I know this is a live Forum so you know some people might be hesitant to speak to some of the challenges they&#x27;re having in this kind of a public forum but if and only if you&#x27;re comfortable doing so please feel free I&#x27;ll just stay for a few minutes but I wanted to see if I could pull this off and so far so good and I&#x27;m glad I&#x27;m not here by myself Tom so it&#x27;s Thomas thank you for joining me um you know at the end of the day um a lot of the work that I do is to provide tools right tools for treaters and investors and you know just individuals to have I&#x27;ve done a lot of work on myself and gathered a lot of tools along the way and I just feel like well what&#x27;s the point of having all these tools if I don&#x27;t share them it&#x27;s like having a Sears Master crafts set of tools and it&#x27;s just sitting in my</p>
+<p>garage like I might as well bring those tools out uh to people so that everybody can use them too um as most of you that maybe have watched some of my podcasts know uh oh good Thomas has a question okay so our key in eliminating fomo and the Noise Okay so I&#x27;m gonna break that up into two separate parts thank you for that question so okay okay good we have Andres is here too uh is that is that you Andre I&#x27;m so glad you&#x27;re here I miss you Andre um all right so Thomas let me answer your question first so a key at eliminating fomo is what I&#x27;m going to address first so what&#x27;s what&#x27;s up with the phone home it always comes down to usually our coming from a place of scarcity our coming from a place of fear right that&#x27;s the first initial in fomo&#x27;s fear fear of missing out but what I&#x27;ve seen over the years of coaching Traders especially is that usually the fear is bigger than just the missing out it kind of stems from something behind behind that fear of missing out and what I will ask you if</p>
+<p>you&#x27;re open to you know sharing more here Tom it&#x27;s like what what is that uh pressure you probably have pressure or a time line upon yourself that possibly is in realistic or pragmatic so what happens is that pain starts to feel like if I if I don&#x27;t take this and this doesn&#x27;t work for me then I am going to be further away from the deadline I have set for myself and so that&#x27;s my question to you do you feel that your date of expectation on yourself and I&#x27;m curious if you&#x27;ll answer me in the moment but how long have you been training sometimes Traders come into this look understandably unhoe desires of an outcome desirous of getting to a Finish Line but that isn&#x27;t always realistic one of the key assessments I have which I I love it so much because it helps us measure how appropriate uh that self kind of uh motivation is so for example it&#x27;s you know today&#x27;s what Wednesday if you came to me Thomas and said uh Kim I&#x27;m gonna run in an Iron Man this Saturday I&#x27;d be like really that gives you uh about 48 hours maybe</p>
+<p>72 hours to compete in an Iron Man have you been training have you been you know watching your nutrition have you prepared Your Body Mind and Spirit for this race and you&#x27;d be like no no that&#x27;s okay I&#x27;m gonna do it anyway now that is uh a next level of ambition and there&#x27;s nothing wrong with having ambition and there&#x27;s nothing wrong with having big Bodacious plans but you want to be sure that it&#x27;s in proportion to what you can actually expect of your self-bodied mind and spirit so that&#x27;s what I want to leave with you Thomas is just think about is the fear of missing out informed possibly by an unrealistic goal that you have upon yourself and if that&#x27;s the case then you&#x27;re going to constantly set yourself up for fomo because you have this metaphoric unto your head so hopefully that helps let me get to the second so the noise that&#x27;s such a great question how do you eliminate the noise here&#x27;s the thing about the noise we expose ourselves to The Noise by constantly paying attention to what&#x27;s happening online it&#x27;s part of our culture now we can&#x27;t kind of avoid</p>
+<p>it but we can limit it so I would say be very discriminatory in who you listen to you don&#x27;t want to be listening to the people who are all talk and no action you know a lot of the different Twitter feeds that I watch you can tell within relatively short amount of time what their motivation is are they doing it to just kind of get an ego boost are they trying to do it to make themselves look good or to get followers or to look like you know they got it going on you can tell that honestly within a couple of like days of following anybody are they coming from a place of really wanting to be a contribution to you if that isn&#x27;t the case this sounds radical but I would say unfollow them the less uh competition for your attention the better let the people you follow and that you pay any attention to if they are not nourishing you if they are not constantly kind of uh making you feel emboldened or healthier as a Trader and it&#x27;s just like you know the lambo flash just unfollow them you don&#x27;t need that</p>
+<p>that is noise but that&#x27;s noise that can really cause you uh just from your your focus and your attention to detail like we if you watch my podcast with Celeste Headley the podcast was called up her book&#x27;s called dude nothing I don&#x27;t remember what I titled that podcast but she talks about us having four hours of cognitive focus a day be very discriminatory in where that four hours goes all right so you said I&#x27;m older now yes elimination has become a theme in all aspects of my life good perfect Andres I&#x27;m gonna get to your question um so Tom the movie that I want to suggest to you is not a movie about trading but it&#x27;s somebody used to do that maybe I should do that one day because there&#x27;s really no movies or documentaries about like the full uh like Journey as a Trader that that would be kind of good somebody will hear this and go make one um but here&#x27;s the thing uh this movie I think it&#x27;s called straight up minimalism but what was so powerful about that movie that is a documentary about these two brothers I think her two</p>
+<p>friends who start to like really Embrace minimalism but you you come away from that movie although they did it for their lifestyle and for what they owned I think what they owned was like you know five articles and that&#x27;s it but the point is that movie has you walk away so starting to think about all areas of your life how can you strip things away how can you bring things down to minimalistic for your thought process Tim Ferriss just did a killer interview with Rich Roll and he talks to at length about how he is stripping his life uh from all to Superfluous stuff that doesn&#x27;t serve him all right let me get the entrance here I&#x27;m so glad you&#x27;re here audience all right so I sometimes struggle when the market is slow like now at the summer yep and I&#x27;d like to know how to approach it better so great question I think this is a a problem that happens not just in the summer but for Traders at any point when this is going on when there isn&#x27;t action so to speak here&#x27;s the hard truth you want create other important valuable interesting</p>
+<p>juicy things for you to plug yourself into so I&#x27;m going to take advantage of me knowing you a little bit on Tris and I&#x27;m gonna say those are the days you should be going surfing or you should be getting a skateboard and getting your inner core stronger you have to have other interests Beyond trading every Trader does because there are gonna be times when it&#x27;s going to cost you and your Capital to be obviously trading when you shouldn&#x27;t so it&#x27;s tempting but if you have other things that really turn you on that Fascinate You that facilitate your interests of any sort it gives you an easier ability to kind up and out and say to yourself today it&#x27;s not the day to trade it sucks it&#x27;s frustrating but it&#x27;s not the day to trade that&#x27;s being disciplined that&#x27;s being willing to get out of the bed in the morning on the days when you&#x27;re exhausted and you know you need to exercise part of what being a Trader is is being a man or woman of your work so you have to come up with ways to commit to being a man a woman of</p>
+<p>your word to yourself or to that person who can be your accountability partner it&#x27;s so critical because these this is the Temptation right and I I&#x27;ve used this metaphor before in a lot of different conversations I&#x27;ve had because you know most traders of guys you know let&#x27;s just say for now I have just at least you two guys maybe a woman&#x27;s listening you can identify if you want but here&#x27;s the thing if you are in a commit relationship with somebody I ask all the time who is your your who is your dream girl like the movie star that you just like absolutely adore and fantasize about like who is that dream girl like let&#x27;s just say it&#x27;s uh I don&#x27;t know trying to think of it is a high pronounce her name she&#x27;s so beautiful so let&#x27;s say it&#x27;s Zendaya right listen the question I asked guys is like Okay so let&#x27;s say it&#x27;s in hey does that mean your girlfriend or wife or partner gives you a free pass if she shows up and most of them like uh no and I was like oh you read There is it an exception for Zendaya</p>
+<p>uh no Kim there&#x27;s no exception huh so so they would be upset if you like you know had an affair with her and you&#x27;ve got that opportunity and they feel like yeah she&#x27;d be upset because the commitment to that person isn&#x27;t with an asterisk that says except for Zendaya the same is true for you guys if you guys are true to your word you know you should not be treating the days you don&#x27;t see your setups even if that takes weeks even if that takes months it isn&#x27;t like there&#x27;s an asterisk except the day that I&#x27;m bored except for the date that I&#x27;m just you know a little bit uh annoyed because I&#x27;m not at the number I accept for myself this month too freaking bad if you are committed to being a steward of your Capital that you don&#x27;t get to trade even when you&#x27;re bored that is the kind of discipline you want to strive towards you don&#x27;t want to make yourself wrong if you&#x27;re not practicing it but you sure as hell want to know that it&#x27;s huh isn&#x27;t that fascinating when I get bored I get tempted and when I&#x27;m tempted</p>
+<p>I cave well you can&#x27;t be a man or woman of your word you&#x27;re not keeping a word to yourself to hell with anybody else are you keeping it to yourself or a pause there hopefully you&#x27;re answering your question uh this was a little bit of a rant but what can I tell you all right I don&#x27;t have any other questions here but I&#x27;ve got three whole people so this was awesome okay yes I think that&#x27;s the best but as I just entered to returning for I feel more pressure when I&#x27;m not treating okay I&#x27;m not what what do you mean what do you mean yes I think that&#x27;s that&#x27;s but as I just entered to a trading floor are you you trade in for a firm is that is that what you&#x27;re saying I think that might be um yeah and that pressure let&#x27;s say that&#x27;s the case or whatever is the case under this I&#x27;m not sure what that means but the key is that pressure likely I am sure even if you&#x27;re with a prop trading firm they don&#x27;t want you to trade your account or their money even if there isn&#x27;t an</p>
+<p>opportunity so the key is what is going on with that internal pressure is afoot right that pressure is inside you that is an internalized voice let&#x27;s take one guess whose voice that is I&#x27;m actually going to ask you what I&#x27;m trying to type in whose voice that is that puts that pressure on you it&#x27;s what word it starts with a g it&#x27;s the gremlin that is the gremlin because the gremlin is likely saying to you you should be trading should what or could remember are the key phrases of when the gremlin is talking yeah it it&#x27;s York Gremlin York Gremlin is saying you have to deliver you have to produce because of this new environment you&#x27;re in or this new circumstance or this you know new expectation you have for yourself but you cannot you have this is why it&#x27;s so important to get so clear on what those Gremlins are for each Trader individually because those Gremlins have a story I have to take this water and if you are not clear on the stories that that Gremlin has you are constantly going to be potentially Hoodwinked by that story I just came back</p>
+<p>from New York City and uh one of the things that I saw which I hadn&#x27;t seen in 20 years was the Shell Games you guys know the shell game it&#x27;s a famous game on the streets of New York you&#x27;ve got three shells where you&#x27;ve got this you know huckster who&#x27;s trying to get the people on the street to bet on oh I can find that I can find that thing under the shell but what they have is a plant in the audience they have another guy who&#x27;s part of the racket who wins the money to make everybody think oh this is easy I can do it but it&#x27;s it&#x27;s it&#x27;s a it&#x27;s all fake it&#x27;s uh what do you call that a young a person who&#x27;s a professional scam artist right it&#x27;s like a stunt that they do but that is the gremlin the gremlin does the same thing Gremlin tells you a story to trap you that&#x27;s why you have to get clear on what those stories are so perhaps now Andres you have a new story perhaps now that Gremlin is starting to weave a different tale that there&#x27;s this time limit on</p>
+<p>you that you have to prove yourself that you have to show like oh this perhaps if you&#x27;re at this firm that they made a good decision right you want to put all of these potential stories that you&#x27;re listening to that Kremlin is kind of whispering in your ear down on a piece of paper and start to get really clear not in the moment when you&#x27;re all triggered but when you have some quiet and some time to sit and consider are these stories actually true are these stories actually real are these just made up stories from past experiences and are you is this Gremlin projecting on to the different participants that are around you you applying certain qualities to them I&#x27;m going to speak to an example actually this morning uh I was swimming I swim uh three days a week and I was you know away for a while so I was hungry I got down there really early to get my lane and one of the lane we usually have to share our swim Lane and this gal that I have not really talked to before I have perceived her all the time as</p>
+<p>not friendly that was my Kremlin story and this was because a couple times I guess I said hello she&#x27;d say hello back maybe she didn&#x27;t even hear me but here&#x27;s what happened this morning the guy next to me had forgotten to get the you know work out from our coach so she saw this he was you know yelling across the pool hey guys what&#x27;s that workout next stop and she out she was leaving the pool she went and got the uh swim directions like you know the workout and she put it in his Lane he didn&#x27;t even know it because he was in the middle of labs but I watched her do that it was incredibly thoughtful incredibly sensitive incredibly like decent of a move and I looked at her and I was like I can&#x27;t believe you just did that she&#x27;s like oh he seems like he&#x27;s struggling I was like yeah he is like that was so nice like I was still in the pool she was like walking out and I thought geez Louise I have a whole story about that girl that she&#x27;s not friendly but obviously what she just did</p>
+<p>is about as friendly as anything could be so that forced me to take a look at this story I wrote or my grandma wrote about her and I want to say you guys do the same especially you Andres because that story that you have about you know feeling the pressure that is not you that is definitely not you it is definitely a problem all right so Jazz has a question what advice would you give to get over the anxiety of staying in a green trade just that&#x27;s a really great question I&#x27;m so glad you brought that up um look there&#x27;s a reason that you&#x27;re afraid so the question is are and and you can answer right here in the comments if you want is it possible that the amount of capital you&#x27;re risking is more than you&#x27;re comfortable with part of that anxiety I&#x27;m presuming is because if it is green at any moment it could turn against you so it&#x27;s possible that the capital you have at stake if it does turn against you is more than is appropriate now let me just caveat that that would only be the case if you are</p>
+<p>starting to raise how much you uh trade so if it isn&#x27;t that you can tell me now just if you want then you have to say to yourself huh is there possibly some kind of fear that I have about success that may seem like a stretch but I feel like that possibly if it&#x27;s an appropriate amount that you feel comfortable losing uh let&#x27;s let&#x27;s just have you answer me because I before I go down the rabbit hole I just want to check in to just see is the amount of capital that could be suddenly gone is it possible that that is okay yes only about 40-ish okay you just don&#x27;t want to go right okay good that&#x27;s helpful so four forty dollars yeah okay good just you know you&#x27;re afraid of success that that&#x27;s half the battle man that&#x27;s half the battle it&#x27;s funny because uh there was a quote that I saw uh in the city on a coffee sign that uh said it was it was so powerful it just said it&#x27;s okay to be happy that&#x27;s all the sign said and I was like whoo like a knife through it yes like</p>
+<p>fell yeah it is okay to be happy there&#x27;s sometimes like this Collective angst that we feel like guilty if we&#x27;re happy or like we&#x27;re not looking over our shoulders Renee Brown talks about Joy sometimes is the hardest emotion for any of us to feel because it feels like we&#x27;re not being hyper Vigilant okay good so you&#x27;re say yes you got that so so here&#x27;s the thing just I would start to get very curious about what is scary about success for you losing 40 dollars isn&#x27;t obviously the issue if that is what I&#x27;m reading correctly forty dollars but I just don&#x27;t want to go red so like two sides of the coin are fear of loss our fear of failure is usually the other side is sometimes a fear of success because again we have these stories connected to what loss means and to a story written about what success means so I would get very curious about what success means to you sometimes for some people especially Traders because oftentimes most Traders are not coming from a very wealthy background or a very like you know family of arts and I was like independently wealthy</p>
+<p>I find that sometimes success can be a little intimidating to trade hurts part of that is because you will lose you know your people so to speak your tribe you know there&#x27;s a catchphrase culturally uh called tall poppy syndrome in Australia which is if you get a little too big for your britches in Australia they&#x27;re going to cut you down don&#x27;t stand out don&#x27;t stand up and get counted even in Hawaii there&#x27;s a hat here that I strongly dislike that says stay humble and pray and not stay humble look I&#x27;m not an advocate for hubris but there&#x27;s like this implied issue again of this Collective like don&#x27;t get a little too successful above your people now that goes back to the days of us you know being on the Serengeti we were tribal people we were not going to live if we were on our own so that&#x27;s kind of baked into us that we have to to be safe we have to be with a tribe but when it gets dangerous and it can sabotage is when you start to have success when you start to do better than your original tribe and often</p>
+<p>what comes with that is that you know response sometimes from tribes that or people or family or friends that are not that conscious they will start to judge us and be like oh do you think you&#x27;re better than us so you think you&#x27;re you&#x27;re all that and chips and you&#x27;re like no I&#x27;m just trying to improve my my lifestyle but there are times when that tribe can be threatened by your success and that&#x27;s an understandable thing to be afraid of however you&#x27;re gonna have to face that Dragon at some point I would say sooner rather than later because right now it&#x27;s only four dollars what if it&#x27;s forty thousand what if it&#x27;s 400 000 you&#x27;re gonna need to get comfortable with loss and you&#x27;re gonna need to get comfortable with success and so you know what I say before overcome is no surprise to any of you you should do some coaching with me or the coaches on my team because those are absolutely going to drive your bus this is part of the key of trading guys reading is these ultimate schools of Enlightenment anything that you have not internally reconciled with is going</p>
+<p>to show up eventually the key is does it cost you more or Cost You Less if you do something about this now it&#x27;s gonna Cost You Less like coaching is not cheap it&#x27;s a big investment but if you think about how much money it saves over the Long Haul I should triple my prices because I&#x27;m telling you guys if you don&#x27;t know yourself the market is going to force you to learn who you are it&#x27;s a mirror a reflection up against all the fears you have all the things all the dragons you have yet to look at all the invisible beliefs that are driving you and look you guys are so courageous to take on the most competitive game in the world I am so inspired that you guys are all willing to do this it&#x27;s hard however you have to be very very clear at who and what you are what these drives are for you for you to be able to go the distance and to stay alive in this game there is nothing wrong with having this ambition to do that hardest you know play the hardest game in the world but</p>
+<p>you got to be self-aware as possible and look for whatever reason if if coaching isn&#x27;t something you want to investigate then start to read the books that really start to have you self-reflect here are some titles I would definitely look at a new Earth by Eckhart Tolle which talks about like how we can sometimes be attached to a pain body which can keep us sometimes from success and can make us overly afraid of loss or overly afraid of you know not moving fast enough um I think right now there is a bit of a toxic belief of you know we&#x27;re never enough there&#x27;s more we have to do to develop ourselves I&#x27;m not an advocate of that belief system I&#x27;m simply saying being self-aware is different than the sense of not being enough I think everybody&#x27;s enough I think all of us are perfect and we have some costly behaviors that is it and those cause mostly behaviors let me say this they all served our ass at some point in our lifetime those costly behaviors now that we really wish we didn&#x27;t have I promise you they saved you when you were a little</p>
+<p>kid in a different environment everybody was in you learned how to adapt to that environment and that got you here but what it got you here isn&#x27;t going to get you to the next level and that&#x27;s why you want to become really clear and self-aware so that those behaviors that once really did serve you now not so much you can break free of because why not I mean it it takes some work I&#x27;m not going to say it doesn&#x27;t but like why would you want to carry a ball and chain with you from the past when you have uh if you take the effort and the tools that I try to you know give to you guys to cut those extra weeds off like why I have extra weight on you it&#x27;s hard enough this whole long day all right I&#x27;ve been going for 30 minutes uh not sure who&#x27;s still here looks like we got six people so are there any other questions uh or comments or input that you guys want uh all right ozer has a question I tend to emulate other successful Traders and end up deviating from my process because</p>
+<p>I always feel like my process can be better how can I tame this urge constantly tinker and deviate that is such a great question too oh Sarah I think on one hand I want to say I love that you&#x27;re wanting to sculpt your style and that you&#x27;re striving to make it better and I really hear there&#x27;s a cost you&#x27;re paying because you are deviating from your process I can&#x27;t help but Wonder is it possible that your process you are still not feeling a hundred percent confident in I suspect that there&#x27;s some doubt that your process is foolproof or you wouldn&#x27;t be looking elsewhere now I&#x27;m going to use that metaphor I used before about the guy with the girl right like if you&#x27;re I I think this is like a tricky point because there are plenty of guys who are happily in relationship and that doesn&#x27;t mean they don&#x27;t look at other women when they pass them but the taking it to the next level talking to the woman getting her number like I don&#x27;t think you&#x27;re doing that if you&#x27;re getting the needs met in your relationship right so possibly your process isn&#x27;t fully</p>
+<p>meeting your needs I don&#x27;t know what those needs might be but you know if you don&#x27;t uh you know and this I should do a shout out now please go to my website and sign up for Curtain Call that&#x27;s a play on my last name but I have a newsletter and in that but and also Jose you can ask us for uh the trader needs list I I&#x27;m happy to email that to you if you if you go to the website and sign up and just ask for it say you know I I don&#x27;t have the hand to lock the top of my head where you can go to go get the trader uh needs list but that&#x27;s what I&#x27;ve been saying get the needs list from me and then look at your process and ask yourself are are you getting all your needs met from that process if you&#x27;re not that&#x27;s probably why you&#x27;re looking elsewhere okay that&#x27;s one potential scenario here&#x27;s the other potential scenario good uh couldn&#x27;t what&#x27;s the what&#x27;s the famous phrase uh great is the enemy of good enough that is a phrase that I love so is it possible</p>
+<p>that your process is very good but it&#x27;s not great and right now it could be that you and and listen to what I&#x27;m saying here what I&#x27;m saying is that great sometimes isn&#x27;t ideal it can be the enemy of good enough if your process is making money maybe you should just let it be and make you money and maybe that means you would be a little bored well okay let that theorem run and then go create another process for yourself that maybe is informed by some of these other successful Traders you can come up with a whole nother process if you want but possibly leave that particular process good enough strategy that makes you money and you want to come up with something else it could be that you&#x27;re bored with it could be that you feel like you&#x27;re ready to get something that&#x27;s more complex that&#x27;s okay but don&#x27;t necessarily Tinker with what works good enough those are the two uh perspectives I have on that feel free to say something if you want me to give you more specific feedback I&#x27;m curious how both of those perspectives uh land for you I&#x27;m going</p>
+<p>to take a sip of water all right do we have any other questions I&#x27;m probably gonna have to bring this uh to close soon but what I&#x27;m excited about is that there were people here trainers here okay I love that greatest right I feel like I&#x27;m just getting bored good that&#x27;s awesome I&#x27;m so glad it was that here&#x27;s the thing boredom is a real thing and I think for Traders it&#x27;s a place that can feel uncomfortable especially if you&#x27;ve worked really really hard um you&#x27;ve worked really really hard and now at certain points in your you know Journey you don&#x27;t have to work as hard and that can feel sort of like uh something&#x27;s wrong like I I have worked so hard for so many days and years that now I don&#x27;t have to work hard anymore what the hell it just like feels incongruent after so much hard effort so that&#x27;s why you have to be like really kind of calculated and oh I&#x27;m just bored isn&#x27;t that fascinating how do we make sure that that boredom doesn&#x27;t bite at your ankles and have you screw something up that&#x27;s working well that&#x27;s the key</p>
+<p>and again not unlike part of what I was saying to entrance early I don&#x27;t know if you were Heroes here but I it was there but part of what Andre was saying about you know just getting impatient sometimes on the market is not that active um you have to create other things in your life besides trading for you to Pivot to uh like Hobbies like uh you know interest like other skill sets like learn chess if you don&#x27;t know chess or work or play chess game online can somebody better than you like there&#x27;s so many ways to up level your competency and your skill set and to not be bored that you don&#x27;t want your Capital to be what you use to get rid of the boredom all right you can always talk about fomo well just I mean look at the end of the day that concept of fomo you want to always look under the hood of it because what that story is is that somehow you are missing out and that is usually it&#x27;s the voice of the gremlin the voice of the gremlin is telling you that you have missed something</p>
+<p>that everybody else potentially has that that&#x27;s why I love this other phrase that I got from one of my spiritual teachers compare equals despair so that&#x27;s the other thing about fomo I would ask yourself ask everybody should ask themselves is the fomo driven because of you and or your Gremlin having unrealistic expectations or is the fomo actually because you&#x27;re comparing yourself to the make believe you know uh things you&#x27;re seeing online and you think everybody else is up here and you&#x27;re only here you know remember that part of the challenge with social media is that people are only going to show you kind of what they&#x27;re proud of like nobody puts a picture of Fab crying on their bathroom floor like you know they put the picture of everything shiny and perfect in that bathroom not like having a breakdown out and you kind of remember that when you compare yourself up against like I don&#x27;t know if you see this now but I&#x27;ve just seen recently Twitter keeps having people put up stories that are like I made a million dollars they&#x27;re not even Traders like entrepreneurs by the time I was 29 years</p>
+<p>old 10 years this is 17 steps that I did to make it if all of those people and I&#x27;ve seen do this are freaking millionaires I&#x27;m telling you that would not be spending all the time posting these posts on Twitter so trust me there&#x27;s a lot of fomo that&#x27;s informed based on you comparing yourself up against people who may or may not be telling you what is accurately going on for them and to compare yourself to people that aren&#x27;t actually living this thing you think you should be living that&#x27;s a terrible thing that that&#x27;s just like you know a cruel thing to do to yourself all right hopefully that speaks a little bit to fomo um yeah so if you guys like what I&#x27;m talking about here I would love for you to go to the wall streetcoach.com and sign up for Curtain Call we have one going out this Friday where I&#x27;m going to talk about something called emotional uh non-resistance that I&#x27;m doing my five practices right now five weeks in a row this week is practice number three Anja says thank you so much for your work Kim you&#x27;ve helped me a</p>
+<p>lot I&#x27;m a big fan of your podcast thank you Andres I&#x27;m so glad you&#x27;re here and I&#x27;m so glad all of you guys are here today and if you want if you guys want me to do this again I will do it again I I want to be a contribution to you guys and uh of course the Wall Street coach here we&#x27;re always looking for new clients don&#x27;t forget to we have Discord room that is called traderherojourney.com you should go check that out I know it&#x27;s a membership involved in that but it&#x27;s a hell of a lot less expensive then the coaching with me one-on-one but I think you guys are awesome I&#x27;m so proud of you and I believe in you and I want you to keep doing the work on yourself because that will make all the difference in your trading account you guys asked fantastic questions today I&#x27;m so impressed at the level of depth these questions were so good job I&#x27;ll see you guys soon and Aloha for now</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <p>Kim Ann Curtin, Founder of The Wall Street Coach, helps Traders, Executives & their teams end the cycle of self-sabotage.</p>
+                    <div class="footer-brand">
+                        <span class="footer-logo">The Wall Street Coach</span>
+                        <p class="footer-copyright">&copy; The Wall Street Coach TM. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-legal">
+                        <a href="mailto:hello@thewallstreetcoach.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                    <div class="footer-social">
+                        <span class="footer-social-label">Ways To Follow Us</span>
+                        <a href="https://twitter.com/twscoach" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kimanncurtin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/thewallstreetcoach/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCuApZQaw2UATpJums6cw3HA" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@thewallstreetcoach" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>

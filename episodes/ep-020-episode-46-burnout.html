@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episode 46: Burnout - The Wall Street Coach Podcast</title>
+    <meta name="description" content="The Five Stages of Burnout That Are Secretly Ruining Your Trading Career  Many high-performing traders dismiss the signs of psychological exhaustion, often">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #F9F9F7;
+            color: var(--navy);
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--navy);
+        }
+        .video-section {
+            background-color: #08333A;
+            padding: 4rem 0;
+        }
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .episode-body h2, .episode-body h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .episode-body h2:first-child, .episode-body h3:first-child {
+            margin-top: 0;
+        }
+        .episode-body p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .episode-body ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        .episode-body li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        .episode-body strong {
+            color: var(--navy);
+        }
+        .actionable-takeaway {
+            background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .actionable-takeaway strong {
+            color: var(--navy);
+        }
+        .closing-quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--navy);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero - Light Background -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>Episode 46: Burnout</h1>
+        </div>
+    </section>
+
+    <!-- Video Section - Dark Background -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/_YRQ57pyjEM" 
+                    title="Episode 46: Burnout"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content - Light Background -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <div class="episode-body">
+                <h2>Key Takeaways</h2>
+<p>The Five Stages of Burnout That Are Secretly Ruining Your Trading Career</p>
+<p>Many high-performing traders dismiss the signs of psychological exhaustion, often mistaking it for just "a tough week." This denial is costly, as unaddressed burnout progresses through clear, predictable stages, leading to severe physical and emotional trauma that forces you to shut down. Learn how to recognize the early red flags before they lead to irreversible mistakes in the market.</p>
+<p>Key Insights:  * <strong>Burnout is a Process, Not an Event</strong>: It begins subtly with dissatisfaction and subconscious disregard for self-care, advancing through conscious numbing and anxious exhaustion.</p>
+<ul>
+<li><strong>The Self-Side is the Foundation</strong>: Just like a stable wedding cake requires a big base, a strong psychological foundation (self-care) is necessary to support the relentless pressure of the work side.</li>
+<li><strong>Acknowledge Global Taxation</strong>: The cumulative stress of constant global change and access to traumatic news (compassion fatigue) is taxing everyone's mental capacity, contributing directly to cynicism and emotional exhaustion.Actionable Takeaway:</li>
+</ul>
+<p>Start implementing small, consistent acts of self-care daily, recognizing that these positive efforts compound and provide control over mounting stress.I just think everybody has to be a little bit kinder to themselves to realize this has been a hell of a ride whether you work with a lot of people or a small group of people or you work for yourself.</p>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>this is really about being free to create what you want your life to look like we each are our own hero and how do we take the challenges that come our way and see those as the birth process of us becoming heroic can you meet that judgment that ultimately will serve us with neutrality this is the wall street coach podcast with kim anne curtin welcome back to the wall street coach podcast it&#x27;s been a while since lucas peterson and i came together sam&#x27;s a guest so i&#x27;m excited to be here lucas today uh how are you doing i&#x27;m doing well how are you kim i&#x27;m doing good uh we&#x27;re going to talk about burnout today uh i&#x27;ve definitely bumped into this a number of times in my career but i did bump into this uh about a month or two ago and we&#x27;ve also just been i&#x27;ve been hearing at least through friends and colleagues uh that there is more of an experience a burnout people aren&#x27;t really calling a burnout at least to me lucas like nobody&#x27;s saying hey i feel burnt out but when they start to describe what they&#x27;re feeling i am</p>
+<p>like that is that&#x27;s the hint shadow beginning of burnout how about you yeah i&#x27;ve i&#x27;ve seen a similar thing i think you know we were working with an organization uh like six or eight months ago and they were worried about burnout and then uh i&#x27;ve worked with a couple people within that organization and it&#x27;s they were describing things that did sound like burnout but but weren&#x27;t identifying it as that i think it&#x27;s part of you know it could be a part of a culture like maybe just that their work but also i think more of a western culture too and especially american like to push through when maybe we need to step back so i think so i think it&#x27;s so fascinating that everybody is describing the science of burnout without identifying it that way and even for myself i know a couple of months ago uh i at first there&#x27;s a couple things we&#x27;re going to talk about today and when i first got exposed to these descriptions i was like oh my god that&#x27;s that&#x27;s what i was in the experience of but i was noticing experience i wasn&#x27;t realizing that something was</p>
+<p>causing that experience and that&#x27;s you know why we&#x27;re talking about this today we&#x27;re talking about this because i think for traders especially there&#x27;s so much pressure internally and externally because of social media because of twitter because of you know you you have to be sort of around the community of traders for you to succeed as a trader at least in the beginning i think and so that external pressure can sometimes exasperate your own internal expectations so for anybody who is perhaps open to considering this could be me we&#x27;re going to give you some input today around how to recognize it some of the signs and what to do about it so yeah let&#x27;s uh let&#x27;s just jump right in um we&#x27;ve got some some pretty good resources for this um that we found it&#x27;s just just a couple we&#x27;ll include in the liner notes but yeah if you want to talk about the um you know like maybe the five stages of burnout and go through there you got it so subtle dissatisfaction is number one and that one i think is just such a great one because it can sound a little bit like</p>
+<p>uh a negative knowledge so to speak where you&#x27;re just finding wrong everywhere and it and it&#x27;s and and maybe it&#x27;s more subtle than that in the beginning but there is this sense of nothing is satisfying you even the things that used to satisfy you now it&#x27;s like a map you&#x27;re like yeah it&#x27;s okay but you&#x27;re kind of distracted by how it&#x27;s still not as good as it could be so subtle dissatisfaction is the first one subconscious disregard now what does that mean they&#x27;re sort of the same but subtle is again it&#x27;s subconscious it&#x27;s underneath unconscious but there&#x27;s this sense of disregard perhaps for your own self-care or perhaps your sensitivity to others and their needs and what they&#x27;re requesting of you or demanding of you yeah i think that&#x27;s that&#x27;s the one uh i feel like this is where like the the slippery slope begins right um and it&#x27;s something that uh with with our tool that we use the executive positioning index and the trader positioning index like it&#x27;s something that i&#x27;ve been able to identify and people that are like moving into burnout uh before things get too serious because it kind of</p>
+<p>picks up on that number let&#x27;s write the attention column yeah and that and that&#x27;s what&#x27;s so awesome about the success man why lucas and i like it so much is it gives us an indicator when it&#x27;s starting to be so inhibited that it&#x27;s putting you in the danger zone and that you know when you see that about yourself then you have a better chance of course correcting uh before it becomes even more costly conscious numbing is number three these are the five stages of burnout uh and we stumbled into them in one of the articles and we&#x27;re gonna post that article in the line of notes so conscious numbing is you are having an extra glass of wine at the end of the day you are having another piece of cake instead of one being enough uh you are aware that you&#x27;re doing the things to not have to feel the hard to be with feelings and everybody has their own kind of numbing and you know i&#x27;m speaking to my conscious numbing right i&#x27;ll have an extra glass of wine or up or i&#x27;ll have wine at all and try to actually not drink</p>
+<p>during the week and just you know do the the drinking on the weekend or at a friend&#x27;s special occasion but i was like oh i&#x27;ll have a glass of wine tonight because i&#x27;m so tired i&#x27;m so tense and uh you know before i knew it i was i would have gone so i never died in those couple of weeks because i was so frustrated um and overwhelmed uh and burning out probably um so conscious numbing though i do want to speak about this conscious numbing can also be uh over working out like really anything we do can be taken to a place of not trading if you&#x27;re trading and you&#x27;re sitting at your desk and you&#x27;re saying to yourself i shouldn&#x27;t be at this desk right now you probably are numbing numbing something that&#x27;s hard to be with so anytime you notice yourself you know numbing uh do you want to say anything about that i think i was gonna yeah i was gonna say the same thing you just said was you know one of the ways that i&#x27;ve i&#x27;ve recognized numbing in my my own life is like working out and going for</p>
+<p>like uh i normally work out in the morning and then and then by like you know four o&#x27;clock i&#x27;m basically done and then sometimes what i&#x27;ve recognized is when i&#x27;m trying to numb i&#x27;ll be like well i&#x27;ll just go for like an evening run or something like that it&#x27;s like what why why don&#x27;t i just want to like be still and so yeah and and look there&#x27;s gonna be days when you or somebody else it&#x27;s okay to have an evening runs it&#x27;s we&#x27;re not making anything wrong but what we&#x27;re trying to do is just notice is are you aware that you&#x27;re trying to take that edge off and if you are you want to just get curious about what is the edge what what&#x27;s here what&#x27;s here that&#x27;s pushing you to an edge that perhaps you haven&#x27;t fully reconciled with um all right the other one stage four is anxious exhaustion which i really uh also was experiencing this not that long ago this means that even when you&#x27;re exhausted when you&#x27;re laying in bed you&#x27;re trying to go to sleep or you&#x27;re trying to rest you can&#x27;t you&#x27;re in anxiety because you&#x27;ve been in</p>
+<p>anxiety for so long that your nervous system doesn&#x27;t matter hiccup out of it it&#x27;s just kind of like a you know i&#x27;m talking to a very young audience here but in my day when i was a little girl we had records and a record would skip and and it would continuously keep skipping until you either pressed harder on the needle because the grooves had gotten a scratch in it and so i think for people who experience anxious exhaustion you can just tell if you find it really hard to calm down uh and chill basically it&#x27;s erasing it late at night in your bed when you can&#x27;t go to sleep yeah yeah this is uh yeah and this is like when it&#x27;s starting to become like you can i feel like this is when people like right start to recognize on i feel like i&#x27;m burning out and then yes yeah and and maybe they&#x27;re not even calling that maybe they&#x27;re saying oh i i i just think a lot of people have a tendency to dismiss or diminish these stages when they show them and uh they probably have self-talk that&#x27;s not very encouraging so</p>
+<p>even harder to potentially you know dig yourself up and out of the hole you&#x27;re in uh and then stage five is full blown trauma and that is when you know basically you&#x27;re i&#x27;ve seen a lot of times to people the physical uh illnesses will start to show up you&#x27;re more susceptible to different sorts of aches and pains in the middle of mine i my back went out which has never happened to me in my entire life but it went out on me in that time period and uh you know i i&#x27;m very uh spiritual as i&#x27;ve talked about before here and i certainly respect certain aspects of western medicine but i definitely am somebody who respects other uh applications and perspectives and uh i have uh louise hayes book which is sort of a dictionary of all different physical ailments and what could be not what is oh it could be the emotional or spiritual um challenge that is setting it off and so lower back what i was experiencing at the time uh was not feeling support not feeling enough support or feeling uh overburdened or overwhelmed and for me when that happened with</p>
+<p>my back it it made me realize and i was forced i couldn&#x27;t move i couldn&#x27;t walk i couldn&#x27;t i could only sit in this one chair that i had with the heating bed on i had to get muscle relaxants which you know i&#x27;ve never even taken in my life but i had to because the pain was so bad and so that was full-blown trauma that was sort of a slap across the face from the universe like hi you&#x27;re gonna listen to us now we need to shut you down sister yeah yeah i think it and that&#x27;s i mean that&#x27;s the unfortunate part but i feel like that&#x27;s usually where people start to recognize like something&#x27;s wrong right it&#x27;s like like besides there were signs of lack of light yeah yeah a little dissatisfaction subconscious disregard conscious numbing i anxiously lost it i had all of them but until but i didn&#x27;t do anything about it i mean let me let me back up a little it&#x27;s not that i didn&#x27;t do anything about it because i did i noticed it i was no i&#x27;m very i am very self-aware so i was noticing it but</p>
+<p>i didn&#x27;t feel i could afford to do anything about it i didn&#x27;t feel i had time to do anything i thought uh okay this is too much i&#x27;m overwhelmed but i have to get through this i have to suck it up and i&#x27;ll deal with this in another couple of weeks and you know do xyz for myself yeah but i did cut there so what are ways that people can you know um deal with burnout along the way uh whatever and what&#x27;s maybe maybe some uh some some notes you&#x27;ve taken from from this for yourself exactly well you know i i wanted this one of the things this article spoke about is that a big part of how one of the root problems of burnout is that your work is not in alignment with your soul that is one of the things they speak to which i also think is really important especially for for traders and anybody who feels uh that they&#x27;re doing what they love you know i i am doing what i love as a coach and running an organization a company uh there are so many pieces to that that are</p>
+<p>not you know making my soul sing you know there&#x27;s paperwork and uh you know just just countless collection of things that i have to do every day that is not the the part that&#x27;s my most fun like doing these conversations is fun for me having sessions with clients uh working with you guys my team that&#x27;s all fun but the minutia underneath and so traders that are listening to me might be like well tim i am meant to be a traitor this is what my soul is meant to do but even in the midst of that there will be possibly times that there are things you have to do perhaps it&#x27;s another job that you have to have perhaps it&#x27;s uh responsibilities to your own finances that you have to focus on that perhaps don&#x27;t thrill you as much as the trading itself so it&#x27;s i i love that they spoke about this because for some people there is going to be a misalignment between what they are doing for a living and uh their souls asking to be more satisfied but there are going to be times where you still have to do the the</p>
+<p>work that isn&#x27;t fun that isn&#x27;t sexy and you need to find a way to do that and honor the rest remember we had celeste hedley here and you know she talked about her book was called do nothing which you know i remember being horrified when i first saw that title i was like what but she talked about how we don&#x27;t really realize how we are so focused on productivity that we&#x27;re disconnected from what our needs for rest are so yeah i feel like that&#x27;s the first piece it&#x27;s like okay are you in alignment with your work that&#x27;s speaking to your soul feeding your soul and if the answer is yes good for you you&#x27;re among a very rare few um and then even in the midst of that how can you be sure that you are getting the rest you need uh and some downtime yeah i think that&#x27;s a good point i think there&#x27;s a a lot in there as well that you know um a lot of the successful traders we&#x27;ve worked with you know uh and who truly are like in the top one percent of trading uh and it very much</p>
+<p>is their calling i would and i believe that they agree with that um but it&#x27;s funny when when i at least my clients that i&#x27;ve talked to you know it&#x27;s not why they got into trading it wasn&#x27;t because they felt it was their calling it was because it would provide them freedom it would provide them more time um and i think it&#x27;s important to always check in with that along the way right it&#x27;s like because that&#x27;s the reason you go into something is probably because you&#x27;re like your soul is calling for that uh and that&#x27;s calling for the reasons around that and it&#x27;s like absolutely true absolutely true and i and i think also i want to say this because not everybody is going to be able there there could be traitors out there uh that are listening to this who perhaps are saying to themselves i&#x27;m not really sure it&#x27;s my calling but i know how to do it and i can do it and i can make a living at it but you know a singing opera is my calling or painting is my calling or race car driving is my calling we</p>
+<p>don&#x27;t always get to make a living from our calling and it&#x27;s okay there&#x27;s nothing wrong with that but if you are in trading to just make a living or to have your freedom uh then consider how do you create time for yourself where your soul can get its needs met maybe you have to be sure that you take that extra time on the weekends to put something into what you love maybe it&#x27;s photography whatever it is that really does nourish you and look especially to beginner traders it&#x27;s going to be really hard for you to find any extra time because on the weekends a lot of new traders are reviewing i mean even sophisticated traders they spend the weekend reviewing their trades from the whole week and making sure they&#x27;re congruent and making double sure that if they&#x27;re changing their plan they have a track record like i get that that takes time but you do need to be nourished you do need to pause uh even in the midst of that extra work as you start out to have some opportunity to just have joy to just have peace to just have rest and</p>
+<p>uh and that you know if i circle back to what happened to me when i had that happen with my back i also probably wasn&#x27;t getting enough sleep because i was paddling at 4 45 a.m so i was going to bed uh struggling to go to sleep quick enough to get up at you know 3 30 in the morning and that was that was problematic and and so so there were it was a kaleidoscope of happenings that&#x27;s what i want every listener to think about it&#x27;s not just one thing it&#x27;s not because you&#x27;re trading too much it&#x27;s probably not enough rest also this crazy pandemic you you&#x27;re all of us are under a lot more pressure than we&#x27;ve ever been under yeah yeah yeah i mean we&#x27;ve it&#x27;s come to an end what three different times now and then started again that&#x27;s really easy to handle like talk about like the like a mass trauma for the entire world at least we&#x27;ve all gone through it together but you know and and keep in mind if you also have a relationship maybe you live with somebody else maybe you live with a bunch of somebody</p>
+<p>else&#x27;s if you have kids or a partner or a in-law or what have you you also are in the middle of experiencing their experience you know you might be mr cool and everything is fine for you but if you&#x27;re surrounded by people who are having things up and down in and out upset kids at home having to learn on you know a device when they never had to learn that way before uh all of that is impacting your soda so-called peace of mind and it and it&#x27;s costing you so i i just think it&#x27;s important now for people to realize you know this concept of burnout it sort of has a bad taste it leaves a bad taste in your mouth because i think it sounds like you&#x27;re a wimp or something and and i guess i just want to say you&#x27;re not a whip you&#x27;re just human who&#x27;s being overwhelmed yeah yeah that goes back to i think uh the idea of the it built into our culture right like a we the burnout it&#x27;s almost like i don&#x27;t i don&#x27;t want to call it a burnout culture but um i think part of</p>
+<p>the american dream is that like rugged individualism and like working you know harder than your work ethic yeah exactly and but what happens is like i mean we just truly cannot do that right like you we can definitely push beyond like there&#x27;s this is all what it&#x27;s all about it&#x27;s all about balance right and it&#x27;s like figuring out if you&#x27;re not pushing hard enough or if you&#x27;re pushing way too hard um and recognizing where that&#x27;s right where you need to be and you know i&#x27;m not i&#x27;m not ever going to dispatch david dawkins i think he&#x27;s the most extraordinary human being for his fortitude to have survived his childhood and to have you know found a way out of uh the dilemma he found himself in when he decides to you know go full throttle and i also feel that that intensity around just go after it what is what is his phrase he has a catchphrase that he uses all the time i&#x27;m forgetting it right now but you guys just wanted like comments so everyone else is listening knowing exactly what it is right now it&#x27;s like like suck it up you know</p>
+<p>that happy birthday message he gave joe broken where he&#x27;s like come on you get up yelling at him this is your birthday but don&#x27;t take the day off blah blah blah on one hand i think it&#x27;s it&#x27;s inspiring but there are people out there i will say me who if it doesn&#x27;t it&#x27;s not going to work for me because i do already play really hard and work really hard and so that so just just be cautious to not fall into the trap of this you know look we can name a bunch of people like jacob wilson david gog it&#x27;s like these are all amazing men who have created this incredible inspiration for themselves and for people around them but ultimately you have to find what works for you yeah and i don&#x27;t want anybody just listening to those you know the way it works for those guys and then compare yourself and say look at me i i am not you know as effort filled as they are and then feel bad about yourself because we just don&#x27;t know we just don&#x27;t know what uh somebody else&#x27;s journey is about or what&#x27;s gonna you know</p>
+<p>unfold for them all we know is what&#x27;s unfolding for us and that&#x27;s where we have to put our eyes so kind of come back to center because because we wanted to talk about the stages of burn up then we also wanted to talk about what these stages look like too so this symptoms that could be showing up is this emotional exhaustion so that means you&#x27;re going to be feeling tired even when you&#x27;re not doing that much and i was definitely experiencing that for myself i would do very little there would be days when i felt like i couldn&#x27;t do anything because i was so tired but it wasn&#x27;t like a normal kind of tired it was a weird wonky kind of tired it would be like bursts of energy late at night and mornings i couldn&#x27;t get out of bed kind of feeling yeah it&#x27;s interesting um i wonder you know sometimes i feel like people feel like they&#x27;re going through bouts of depression or anxiety um and i wonder sometimes if if it&#x27;s you know stages of burnout that are being misconstrued with that obviously like there&#x27;s people clinic clinically you know diagnosed where</p>
+<p>that&#x27;s probably not the case but yeah but but it could be i mean i do i do think it&#x27;s a little bit of back and forth i think sometimes if we&#x27;re overwhelmed and we haven&#x27;t paused enough and we haven&#x27;t perhaps really listened to our soul or honored the taxation that we&#x27;re all been going through for these past two years i think that easily can slip into depression um and i think depression itself is in you know there&#x27;s so many different reasons for depression but sometimes depression is kind of all weaved into trying to do more than the body-mind and spirit is capable of doing so yeah and definitely having trouble sleeping at night can be an indicator that you are in the neighborhood burned out um and also the struggle of concentrating or focusing on a specific task um too is kind of a red flag okay and then let&#x27;s talk about the other red flags which is cynicism um and depersonalization where you basically again will be looking and seeing kind of the class is half empty the whole time um you might be blaming people politicians the market for your pain and troubles</p>
+<p>um and one of the phrases that&#x27;s used that i really liked in this article was compassion fatigue and compassion fatigue means you&#x27;re just not able to emotionally be available for others and that&#x27;s one in particular that is the most concerning uh i think for everybody because that tells me that a person doesn&#x27;t hasn&#x27;t experienced their own compassion for themselves you can&#x27;t really have compassion for somebody else or empathy for somebody else if you don&#x27;t have it for yourself and but compassion fatigue right now more than ever i think could be happening for a lot of people regardless of whether you&#x27;re in the stages of feeling burnt out because we have so much exposure to the plights of others never mind the numbers of coconut victims but you know the tongue and uh underwater volcano the things that happen that are not good in the world are put in front of us at least on twitter if not the news i don&#x27;t watch television i don&#x27;t have a television but i don&#x27;t need a television to have that exposure it comes to social media and we&#x27;re just not equipped or built to have that much compassion</p>
+<p>for people thousands of times a day which is basically what we&#x27;re being asked to do every time our bodies see that or i see that and after that all day then we go to our wife girlfriend husband boyfriend whatever or mother sister friend and they want to share something and we&#x27;re just like i&#x27;m full up yeah i can&#x27;t yeah i can&#x27;t handle it i got nothing i feel like we could do we could probably do a whole episode of that series on compassion fatigue across uh the the world and uh especially like the american culture um i think we&#x27;re just inundated by like you said like uh traumatic events over and over throughout the day um you know that&#x27;s what is ever on the news right and so and i think we just get become numb to that and that i feel like that&#x27;s a problem definitely definitely and especially because people going through trauma especially a large amount of people we can&#x27;t really connect to that and we and because and this and this is part of why you know any sort of race-baiting or xenophobia happens it&#x27;s so easy to set other otherwise</p>
+<p>people when they&#x27;re at a distance yeah so when people are on the other side of the world and they don&#x27;t look like you and they don&#x27;t sound like you and they and they perhaps um have a different like home or lifestyle that puts us even further away from having compassion for them we think oh it&#x27;s happening to those people and then we probably collapse because they don&#x27;t look like us sound like us practice the faith i do uh talk like i do believe the same political party i do blah blah blah and actually adam smith talks about this in his book the theory of moral sentiments and he says there there are cons it&#x27;s almost like our ability to empathize is for perhaps ourselves and the immediate family or friends around us and as those concentric circles grow out from us the further they get the less compassion we will have for other people yeah however we are being exposed in such a great number of ways through social media that i think on one hand it makes the world those concentric circles closer but our uh sense of what&#x27;s the word impotency that we</p>
+<p>can&#x27;t really do anything about it also triggers stuff t the compassion fatigue what can i do how do i help the people in tonka you know okay i can make a donation but then what then i&#x27;m not able to do anything else right yeah and then like you said i i think it becomes really evident that you&#x27;re experiencing compassion fatigue when you know your family or a close friend you know tells you they&#x27;re going through something or uh you can see they&#x27;re going through something you&#x27;re just like that&#x27;s a bummer you know it&#x27;s supposed to haven&#x27;t solved it and and this is definitely you know we&#x27;re we&#x27;re very excited to look inside we&#x27;re going to get to have john gray who&#x27;s uh you know he wrote the book men of mars women are from venus if you don&#x27;t know that book has a new version of it uh it&#x27;s an updated version of that book but he talks at length about how men uh definitely are you know won&#x27;t feel sort of comfortable in their own skin if they aren&#x27;t solving a problem so you know i know we have women listeners but i do</p>
+<p>think most of our audiences men that is really important to hear guys because if you are biologically wired to feel your ability to solve a challenge that&#x27;s in front of you uh is part of being a man part of the hardwiring well then keep conscious of how many times a day you are exposed to something you can&#x27;t solve because if you can&#x27;t solve it you are going to feel a drop in your testosterone and an increase in your estrogen and that is not it&#x27;s not it&#x27;s not a good place to be when they&#x27;re out of balance again so you gotta you&#x27;ve got you and this is why it&#x27;s important i think to not have a television and not to watch the views um and then do what you can you know one of my friends this morning just told me he took himself off all social media i was like wow you&#x27;re so smart to do that i&#x27;m so jealous so think about it yeah all right uh feeling isolated also can be a warning sign uh and feeling isolated can occur even in families uh even in a relationship you can still feel isolated</p>
+<p>but if you don&#x27;t and you are you know still experiencing some of this crazy pandemic in your neighborhood where you can&#x27;t get to see people even more uh indication that you know probably you&#x27;re in a neighborhood of being overwhelmed yeah i think it&#x27;s also important to remember that it&#x27;s the idea of feeling isolated right not being isolated like you can be among friends you can be among co-workers and and maybe even if you explain this to other people they would be like how i don&#x27;t understand you&#x27;re with where you&#x27;re right people all the time and it&#x27;s right there&#x27;s a distinct difference there too that is for sure of just you know the because because relationships take effort and work even virtually or by phone um you you may not have that extra energy to return the friend&#x27;s call maybe you put it on for the weekend because you&#x27;re like i just don&#x27;t have uh what it takes to talk to them um and look i&#x27;m i&#x27;m definitely an advocate for being picky about your friends you know there are friends that are exhausting there are friends that are what they call you know vampires you</p>
+<p>know energy vampires so i&#x27;m not telling you that this is an advocacy of you just being with anybody that&#x27;s in your circle uh i&#x27;m i&#x27;ve been very careful about my circles uh early on i think because i saw the impact that i had and because of my temperament you know in one of the spiritual uh teachers that i&#x27;ve had in my life told me that i&#x27;m like a human tuning fork i&#x27;m a content adjuster and as an adjuster we basically start to just adjust to the energy of the person we&#x27;re talking to so that once i understood that about myself it made me be even more uh discriminatory in the the people that i have around me uh and friends and you know people that i give my time to um because that is what i tend to do and there are people who are empathic uh which is similar to being an adjuster it&#x27;s a little different but empaths are also going to be people who really feel deeply somebody else&#x27;s experience and uh and and that would be different like they they would be and i am empathic that that&#x27;s part of why</p>
+<p>i have to be really careful with looking at the tragedies that happen globally because i will become sort of crippled by that and and physically feel pain like when somebody has a book drop on their foot i feel in my own foot the pain of that book like it will trigger a being response so all of this to say like everybody is unique not everybody&#x27;s built like me i get that but you&#x27;re gonna have your own version of this so you want to be in tune to that and manage it manage that energy and these red flags were talking about if you at least notice them then you can potentially course correct it&#x27;s all about the balance and the course correct all right and then the last warning sign is a reduced sense of accomplishment personal accomplishment personal efficacy um and that can show up at even losing enjoyment over those parts of work that you normally did enjoy before or the sense of either your work being meaningless or your efforts being meaningless um and feeling that like anxiety or being down in the dumps is lasting a really long time yeah yeah and</p>
+<p>to go back um to to the assessment we do um you know this picks up i i would say uh a lot when when this is when people are approaching or in burnout um and what i also always see is it correlating with that self-care right and so um when i see people have a reduced sense of like are not taking care of themselves basically everything else is starting to drop too like their meaningfulness of work um their self-confidence self-esteem uh it&#x27;s it they&#x27;re just red flags that are you probably are noticing but aren&#x27;t totally aware how bad they&#x27;ve become yep for sure for sure and the other thing that&#x27;s so fascinating about that assessment is that the work side sits on that south side yeah on self side uh you know the description is what kind of a wedding cake is more stable a wedding cake that has a very small base with a very big uh you know second tier or is the wedding cake uh gonna be more stable if you have a really big base with a smaller and of course that uh self side is that really important big base</p>
+<p>but across the board it is very infrequent that lucas or i ever see someone with a stronger south side than their work side and again because of this culture we have with this emphasis always on work work work so this is you know we&#x27;re seeing it across the board with the companies that we do this with and we just want we want to speak to it because it was something i experienced you know and look i&#x27;m doing this work right i&#x27;m surrounded by the concept of self-development and noticing and trying to be conscious but it&#x27;s a slippery slope it&#x27;s so easy to fall into it and and for those who are not paying attention it&#x27;s going to be even easier so you know i would say once look i was noticing it as it was going but until the back situation happened i was like it was like a slap across the face hello we&#x27;re trying to get your attention now you are going to be forced to address us that&#x27;s what it felt like and i was like oh i just ignored all the signs for a week and i just don&#x27;t want to</p>
+<p>see anybody else go through that yeah and i think it&#x27;s um you know the sooner you can recognize these things the the more control you have over it of lessening the effects um just like anything else right um i&#x27;m thinking about uh the book the compound effect you know um i think brian lee brought it up when he was on our uh show and it&#x27;s the same idea like if you&#x27;re dealing with this one little thing every single day it&#x27;s multiplying every single day and so then eventually it becomes a weight that you can&#x27;t carry um but the inverse of that is true as well like if you&#x27;re able to do something little tiny great thing for yourself every single day it will carry you so it&#x27;s it&#x27;s you know that just i started uh you know i paddle and i love paddling but there was a little bit of a hiatus uh on the paddling and i want i knew paddling was gonna start up four days a week so i didn&#x27;t want to have my back have an issue so i started swimming and i started swimming probably now three weeks ago and</p>
+<p>this morning uh when i swam i was able to do such a longer stretch than in three weeks like it just all of a sudden showed up it wasn&#x27;t there the other day when i went but this morning i was like holy mackerel i&#x27;ve only come maybe six seven times and like my eighth visit bam there&#x27;s a new level and that&#x27;s like 45 minutes to an hour three times a week like i was shocked this morning i was like i can&#x27;t believe it was like everything just stayed like this and then it was like bam next slide so that little bit really does make a difference it does compound for sure yeah so make sure it&#x27;s a self-care and not self-destruction that&#x27;s it that&#x27;s it for sure and you know the other thing too that i just wanted to speak to is there&#x27;s a part of me that feels like if you aren&#x27;t feeling burnt out it&#x27;s possible you&#x27;re very disconnected to what&#x27;s happening for you because i really don&#x27;t know that anybody in this globe right now going to this pandemic isn&#x27;t somewhere in the neighborhood of burnout so even if that&#x27;s a word</p>
+<p>that offends you then come up with a new one but i just feel we&#x27;ve all been through profound change in two years that keeps changing we get our hopes up we think we&#x27;re going to finally be able to get rid of the stupid masks and be able to not have to worry about seeing grandma or you know a couple of some number of weeks ago i wanted to go someplace and i was like oh do i have a cold i might have a cold do i have covered i wonder where i could get a test and of course i couldn&#x27;t get a test anywhere and then i was like do i now go do i go like all of that like this stuff is exhausting to everybody so keep that in mind people have had financial up people there&#x27;s been so much happening on the global level they&#x27;re all watching and experiencing every day there&#x27;s loss of life we&#x27;re getting the numbers of millions of people again hard to personalize when it&#x27;s in the millions um there&#x27;s just a lot of change on small scale and large scale and i just think everybody has to</p>
+<p>be a little bit kinder to themselves to realize this has been a hell of a ride whether you work with a lot of people or a small group of people or you work for yourself uh everybody&#x27;s gonna have journeyed through it differently uh and you want to have as much empathy first for yourself as possible so that you can afford to even have empathy for anybody else yeah well but all right should we stop there yeah i think we&#x27;ve covered a lot there so hopefully people like it if you guys have questions you like this topic you want to see other topics similar to this uh please let us know lucas and i read the you know comments on youtube when they&#x27;re there they&#x27;re not always there so please people give us some comments um we&#x27;ve gotten some really nice reviews on itunes uh those make us feel really happy and like we&#x27;re meeting your needs uh but you tell us what your needs are we can do a better job of meeting them uh so let us know and hopefully you&#x27;ll subscribe to the channel we have some really amazing guests in store in</p>
+<p>the next couple of months so uh excited to share them with you so thank you for watching wall street coach and we&#x27;ll see you on the next episode aloha this has been the wall street coach podcast with cayman curtin you can find out more about her and her team online at thewallstreetcoach.com if you&#x27;ve enjoyed this podcast please consider leaving a 5 star review on itunes thank you for listening</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <p>Kim Ann Curtin, Founder of The Wall Street Coach, helps Traders, Executives & their teams end the cycle of self-sabotage.</p>
+                    <div class="footer-brand">
+                        <span class="footer-logo">The Wall Street Coach</span>
+                        <p class="footer-copyright">&copy; The Wall Street Coach TM. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-legal">
+                        <a href="mailto:hello@thewallstreetcoach.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                    <div class="footer-social">
+                        <span class="footer-social-label">Ways To Follow Us</span>
+                        <a href="https://twitter.com/twscoach" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kimanncurtin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/thewallstreetcoach/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCuApZQaw2UATpJums6cw3HA" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@thewallstreetcoach" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>

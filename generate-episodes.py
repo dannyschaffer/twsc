@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 """
-Generate podcast episode pages from YouTube data
+Generate podcast episode pages from YouTube data with Takeaways
 Creates individual HTML pages and updates podcast-data.js
 """
 
+import csv
 import json
 import os
 import re
 from html import escape
 
 # Configuration
-YOUTUBE_DATA_FILE = "dataset_youtube-full-channel-transcripts-extractor_2025-11-22_08-07-57-187 (1).json"
+TAKEAWAYS_CSV = "Youtube Trascripts - NoDAsh.csv"
 OUTPUT_DIR = "episodes"
 DATA_FILE = "podcast-data.js"
-MIN_WORDS = 1500  # Minimum word count for a full episode
+MIN_WORDS = 500  # Reduced to include more episodes
 
-# Episode page template
+# Episode page template with takeaways
 EPISODE_TEMPLATE = '''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,9 +79,49 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }}
-        .episode-body h2 {{
+        .episode-body h2, .episode-body h3 {{
             color: var(--navy);
             margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }}
+        .episode-body h2:first-child, .episode-body h3:first-child {{
+            margin-top: 0;
+        }}
+        .episode-body p {{
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }}
+        .episode-body ul {{
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }}
+        .episode-body li {{
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }}
+        .episode-body strong {{
+            color: var(--navy);
+        }}
+        .actionable-takeaway {{
+            background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }}
+        .actionable-takeaway strong {{
+            color: var(--navy);
+        }}
+        .closing-quote {{
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 2rem;
         }}
         .transcript-toggle {{
             background: var(--gold);
@@ -201,8 +242,7 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
     <section class="episode-content">
         <div class="episode-container">
             <div class="episode-body">
-                <h2>Episode Overview</h2>
-                <p>{description}</p>
+                {takeaways_section}
                 
                 <button class="transcript-toggle" onclick="toggleTranscript()">
                     📝 Show Transcript
@@ -226,24 +266,38 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>The Wall Street Coach</h3>
-                    <p>Transforming Wall Street from the inside out.</p>
+                <div class="footer-about">
+                    <p>Kim Ann Curtin, Founder of The Wall Street Coach, helps Traders, Executives & their teams end the cycle of self-sabotage.</p>
+                    <div class="footer-brand">
+                        <span class="footer-logo">The Wall Street Coach</span>
+                        <p class="footer-copyright">&copy; The Wall Street Coach TM. All rights reserved.</p>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="../tpi.html">TPI Assessment</a>
-                    <a href="../coaching.html">Coaching</a>
-                    <a href="../about.html">About Kim</a>
-                    <a href="../podcast.html">Podcast</a>
+                <div class="footer-right">
+                    <div class="footer-legal">
+                        <a href="mailto:hello@thewallstreetcoach.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                    <div class="footer-social">
+                        <span class="footer-social-label">Ways To Follow Us</span>
+                        <a href="https://twitter.com/twscoach" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kimanncurtin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/thewallstreetcoach/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCuApZQaw2UATpJums6cw3HA" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@thewallstreetcoach" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <h4>Connect</h4>
-                    <p>Email: hello@thewallstreetcoach.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 The Wall Street Coach. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -263,43 +317,87 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
 
 def clean_title(title):
     """Clean title for use in filenames"""
-    # Remove special chars but keep spaces, then convert to kebab case
     clean = re.sub(r'[^\w\s-]', '', title)
     clean = re.sub(r'\s+', '-', clean.strip())
-    clean = clean.lower()[:60]  # Limit length
+    clean = clean.lower()[:60]
     return clean
 
-def extract_description(captions, max_chars=300):
-    """Extract a clean description from captions"""
-    if not captions:
-        return "Join Kim Ann Curtin for another exploration into trading psychology and performance."
+def format_takeaways(takeaways_text):
+    """Convert takeaways text to HTML with proper formatting"""
+    if not takeaways_text or not takeaways_text.strip():
+        return ""
     
-    # Clean up the captions
-    text = captions.replace('&gt;', '').replace('&lt;', '').replace('&amp;', '&')
-    text = re.sub(r'\[.*?\]', '', text)  # Remove [music], [laughter], etc.
-    text = re.sub(r'&#\d+;', '', text)  # Remove HTML entities
-    text = re.sub(r'\s+', ' ', text).strip()
+    # Clean up the text
+    text = takeaways_text.strip()
     
-    # Get first few sentences
-    sentences = text.split('.')[:3]
-    description = '. '.join(sentences).strip()
+    # Convert markdown-style formatting to HTML
+    # Bold: **text** or __text__
+    text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
+    text = re.sub(r'__(.+?)__', r'<strong>\1</strong>', text)
     
-    if len(description) > max_chars:
-        description = description[:max_chars].rsplit(' ', 1)[0] + '...'
+    # Handle bullet points - convert * or - at start of line to <li>
+    lines = text.split('\n')
+    html_lines = []
+    in_list = False
     
-    return description if description else "Join Kim Ann Curtin for another exploration into trading psychology and performance."
+    for line in lines:
+        line = line.strip()
+        if not line:
+            if in_list:
+                html_lines.append('</ul>')
+                in_list = False
+            continue
+        
+        # Check if it's a bullet point
+        if line.startswith('* ') or line.startswith('- ') or line.startswith('• '):
+            if not in_list:
+                html_lines.append('<ul>')
+                in_list = True
+            # Remove the bullet marker
+            content = line[2:].strip()
+            html_lines.append(f'<li>{content}</li>')
+        # Check if it's a heading (starts with #)
+        elif line.startswith('### '):
+            if in_list:
+                html_lines.append('</ul>')
+                in_list = False
+            heading = line[4:].strip()
+            html_lines.append(f'<h3>{heading}</h3>')
+        elif line.startswith('## '):
+            if in_list:
+                html_lines.append('</ul>')
+                in_list = False
+            heading = line[3:].strip()
+            html_lines.append(f'<h2>{heading}</h2>')
+        # Check for Actionable Takeaway
+        elif line.lower().startswith('actionable takeaway:'):
+            if in_list:
+                html_lines.append('</ul>')
+                in_list = False
+            content = line[len('actionable takeaway:'):].strip()
+            html_lines.append(f'<div class="actionable-takeaway"><strong>Actionable Takeaway:</strong> {content}</div>')
+        else:
+            if in_list:
+                html_lines.append('</ul>')
+                in_list = False
+            # Regular paragraph
+            html_lines.append(f'<p>{line}</p>')
+    
+    if in_list:
+        html_lines.append('</ul>')
+    
+    return '\n'.join(html_lines)
 
 def format_transcript(captions):
     """Format captions as readable transcript"""
     if not captions:
         return "<p>Transcript not available.</p>"
     
-    # Clean up the captions
     text = captions.replace('&gt;', '').replace('&lt;', '').replace('&amp;', '&')
-    text = re.sub(r'&#\d+;', '', text)
+    text = re.sub(r'&#\d+;', "'", text)
+    text = re.sub(r'\[.*?\]', '', text)
     text = re.sub(r'\s+', ' ', text).strip()
     
-    # Split into paragraphs (roughly every 200 words)
     words = text.split()
     paragraphs = []
     current = []
@@ -318,7 +416,7 @@ def format_transcript(captions):
 def categorize_episode(title, captions):
     """Assign category based on content"""
     title_lower = title.lower()
-    captions_lower = (captions or '').lower()
+    captions_lower = (captions or '').lower()[:1000]
     
     keywords = {
         'wizards': ['wizard', 'market wizard', 'legend'],
@@ -329,62 +427,93 @@ def categorize_episode(title, captions):
     
     for category, words in keywords.items():
         for word in words:
-            if word in title_lower or word in captions_lower[:500]:
+            if word in title_lower or word in captions_lower:
                 return category
     
-    return 'psychology'  # Default category
+    return 'psychology'
 
 def main():
-    print("Loading YouTube data...")
-    with open(YOUTUBE_DATA_FILE, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    print("Loading takeaways from CSV...")
     
-    print(f"Total videos found: {len(data)}")
+    # Load takeaways from CSV
+    takeaways_map = {}
+    with open(TAKEAWAYS_CSV, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            video_id = row.get('videoId', '').strip()
+            takeaways = row.get('Takeaways', '').strip()
+            captions = row.get('captions', '').strip()
+            title = row.get('title', '').strip()
+            if video_id:
+                takeaways_map[video_id] = {
+                    'title': title,
+                    'takeaways': takeaways,
+                    'captions': captions
+                }
     
-    # Filter for full episodes (based on transcript length)
+    print(f"Loaded {len(takeaways_map)} episodes from CSV")
+    
+    # Filter for episodes with takeaways (include all with takeaways)
     episodes = []
-    for item in data:
-        captions = item.get('captions', '') or ''
-        word_count = len(captions.split())
+    for video_id, data in takeaways_map.items():
+        takeaways = data.get('takeaways', '') or ''
         
-        if word_count >= MIN_WORDS:
+        # Include if has takeaways OR has enough words
+        if takeaways.strip():
             episodes.append({
-                'title': item.get('title', 'Untitled Episode'),
-                'videoId': item.get('videoId', ''),
-                'captions': captions,
-                'words': word_count
+                'title': data['title'],
+                'videoId': video_id,
+                'captions': data.get('captions', ''),
+                'takeaways': takeaways,
+                'words': len((data.get('captions', '') or '').split())
             })
     
-    print(f"Full episodes (>={MIN_WORDS} words): {len(episodes)}")
+    print(f"Episodes with takeaways: {len(episodes)}")
     
     # Create output directory
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
-    # Generate episode pages and collect data for podcast-data.js
+    # Generate episode pages
     podcast_data = []
-    episode_num = len(episodes)  # Start from highest and count down
+    episode_num = len(episodes)
+    
+    with_takeaways = 0
+    without_takeaways = 0
     
     for i, ep in enumerate(episodes):
         title = ep['title']
         video_id = ep['videoId']
         captions = ep['captions']
+        takeaways = ep['takeaways']
         
         # Generate filename
         filename = f"ep-{episode_num:03d}-{clean_title(title)}.html"
         filepath = os.path.join(OUTPUT_DIR, filename)
         
-        # Extract description and format transcript
-        description = extract_description(captions)
-        meta_description = description[:155] if len(description) > 155 else description
+        # Format takeaways or leave empty
+        if takeaways and takeaways.strip():
+            takeaways_html = f'<h2>Key Takeaways</h2>\n{format_takeaways(takeaways)}'
+            with_takeaways += 1
+        else:
+            takeaways_html = ''
+            without_takeaways += 1
+        
+        # Format transcript
         transcript = format_transcript(captions)
         category = categorize_episode(title, captions)
+        
+        # Meta description from takeaways or captions
+        if takeaways:
+            meta_desc = takeaways[:155].replace('"', "'").replace('\n', ' ')
+        else:
+            meta_desc = "Watch this episode of The Wall Street Coach Podcast with Kim Ann Curtin."
         
         # Generate HTML
         html = EPISODE_TEMPLATE.format(
             title=escape(title),
-            meta_description=escape(meta_description),
+            meta_description=escape(meta_desc),
             video_id=video_id,
-            description=escape(description),
+            takeaways_section=takeaways_html,
             transcript=transcript
         )
         
@@ -393,10 +522,11 @@ def main():
             f.write(html)
         
         # Add to podcast data
+        desc = takeaways[:200] if takeaways else f"Watch {title} on The Wall Street Coach Podcast"
         podcast_data.append({
             'ep': episode_num,
             'title': title,
-            'description': description,
+            'description': desc.replace('"', "'").replace('\n', ' '),
             'category': category,
             'image': f"https://img.youtube.com/vi/{video_id}/maxresdefault.jpg",
             'link': f"episodes/{filename}"
@@ -404,14 +534,14 @@ def main():
         
         episode_num -= 1
         
-        if (i + 1) % 20 == 0:
+        if (i + 1) % 50 == 0:
             print(f"  Generated {i + 1}/{len(episodes)} episodes...")
     
     # Sort by episode number (descending)
     podcast_data.sort(key=lambda x: x['ep'], reverse=True)
     
     # Generate podcast-data.js
-    js_content = "// Podcast Episodes Data - Auto-generated\n"
+    js_content = "// Podcast Episodes Data - Auto-generated with Takeaways\n"
     js_content += f"// Total Episodes: {len(podcast_data)}\n\n"
     js_content += "const podcastEpisodes = [\n"
     
@@ -433,16 +563,9 @@ def main():
         f.write(js_content)
     
     print(f"\n✅ Generated {len(episodes)} episode pages in '{OUTPUT_DIR}/'")
+    print(f"   - With takeaways: {with_takeaways}")
+    print(f"   - Without takeaways: {without_takeaways}")
     print(f"✅ Updated '{DATA_FILE}' with all episode data")
-    print(f"\nCategories breakdown:")
-    
-    categories = {}
-    for ep in podcast_data:
-        cat = ep['category']
-        categories[cat] = categories.get(cat, 0) + 1
-    
-    for cat, count in sorted(categories.items(), key=lambda x: -x[1]):
-        print(f"  - {cat}: {count} episodes")
 
 if __name__ == "__main__":
     main()

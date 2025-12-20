@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From IT Professional to Successful Trader - The Wall Street Coach Podcast</title>
+    <meta name="description" content="Why &#x27;What I Feel&#x27; is More Important Than &#x27;What I Think&#x27; in Execution  Many traders struggle because their disciplined personal ethics conflict with their m">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #F9F9F7;
+            color: var(--navy);
+            padding: 6rem 0 3rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--navy);
+        }
+        .video-section {
+            background-color: #08333A;
+            padding: 4rem 0;
+        }
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .episode-body h2, .episode-body h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .episode-body h2:first-child, .episode-body h3:first-child {
+            margin-top: 0;
+        }
+        .episode-body p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .episode-body ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+        }
+        .episode-body li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        .episode-body strong {
+            color: var(--navy);
+        }
+        .actionable-takeaway {
+            background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e9 100%);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .actionable-takeaway strong {
+            color: var(--navy);
+        }
+        .closing-quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--navy);
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--navy);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero - Light Background -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>From IT Professional to Successful Trader</h1>
+        </div>
+    </section>
+
+    <!-- Video Section - Dark Background -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/GhwPCPKe10U" 
+                    title="From IT Professional to Successful Trader"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content - Light Background -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <div class="episode-body">
+                <h2>Key Takeaways</h2>
+<p>Why "What I Feel" is More Important Than "What I Think" in Execution</p>
+<p>Many traders struggle because their disciplined personal ethics conflict with their market behavior, leading to a constant internal battle. Full-time professional Stan Ivanov shares how his methodical journey from an IT background required merging his core self—built on work ethic and accountability—with his trading strategy. This conversation explores the profound importance of self-alignment and decisive action in the moment.</p>
+<p>Key Insights:  * <strong>The Aligned Trader</strong>: Achieving consistency requires aligning your personal identity (Person A) with your trading identity (Trader B); battling yourself leads to chronic emotional drain and inconsistency.</p>
+<ul>
+<li><strong>Action Over Analysis</strong>: In the high-stakes moment of execution, thinking creates hesitation and missed opportunities. Success hinges on immediate action driven by awareness, not prolonged internal processing.</li>
+<li><strong>Trading as a Vehicle</strong>: View trading as a means to achieve your "why" (time, freedom, impact), not as the ultimate purpose itself. This separation allows you to step away and maintain the necessary mental clarity and perspective.Actionable Takeaway:</li>
+</ul>
+<p>If you notice a breakdown of discipline, consistency, or integrity in other areas of your life (family, friends, commitments), use it as a checklist to know when you need to step away from the screens and regain perspective.</p>
+<p>Quote:I am aware that emotions are part of me part of who I am I'm a human being at the end of the day and sometimes emotions are are have good intentions but but poor outcome.</p>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>welcome back everybody to the Wall Street coach podcast today I am so happy to have Stan Ivanov on my podcast we uh got to meet over is it a year ago in person I mean we got introduced almost a year and a half two years ago but we got to meet uh in person finally but we really ponded over DMS didn&#x27;t we in my Discord room right yeah absolutely it&#x27;s so good to have you here you are just an incredible human being never mind an incredible traditor I&#x27;m so glad you&#x27;re here today thank you for coming thank you Kim yes uh it was great great to meet you over the last uh Traders for cost event and um it&#x27;s a pleasure pleasure being on the podcast we uh I just you know kind of interrupted our little pre uh conversation because I really would love to have you share with those who are listening uh just a little bit about your personal Journey before we have you start to talk about your journey as a Trader um Stan has an incredible uh you know resume which I&#x27;ll get into but I thought let&#x27;s start with</p>
+<p>just uh how you find you found yourself in Las veg Vegas in the first place and your journey leaving Bulgaria would you be willing to speak to that yeah absolutely of course um so I didn&#x27;t you know wind up in Vegas because I love gambling actually so we&#x27;ll just get that one out of the way um well as as you mentioned I was uh born and raised in in Bulgaria in uh Eastern Eastern Europe and um you know growing up it was shortly uh shortly after the wall fell and and um growing up you know we we had a lot of political changes a lot of environmental changes um who&#x27;s coming into power and whatnot so I think that you know really uh instill this this methodical way of of Performing whatever it is that that I&#x27;m doing whether it&#x27;s in school or whether it&#x27;s if I&#x27;m interested in learning about something and I think as a kid I&#x27;ve always been uh Curious into how how things work uh like to T things you know take things apart bring them back in whatever um so in in about you know late late 90s early 2000s</p>
+<p>um I we moved with my family we moved to uh Buffalo New York um and we were there for a couple of years for uh I believe you know known reasons it&#x27;s just the snow was overwhelming uh I mean I&#x27;m a cold type of person I love the snow um but I also love the option to escape it no escaping in Buffalo no there&#x27;s no escaping in there yeah uh I mean it&#x27;s great for you know upper body strength because you you&#x27;ve shoveling uh eight months out of the year but uh it just wasn&#x27;t it so um from there uh you know it was actually my my mom that actually took the leap and just decided to find the new place something warmer um and I had already started my school year so I stayed in in Buffalo for another six months with with my dad before we ended up moving to Vegas in 2002 um and have been here ever since uh you know since 2002 a little bit over 20 22 years or so you know we were talking about sort of the qualities that make a person and I&#x27;m just curious is</p>
+<p>how you see that Journey coming from another country uh to the United States what do you think that did for you that you see now uh that how it serves you as a traitor um I mean I think that that is is essentially part of uh who I am as as a person first who I am as a as an individual all of my life experiences all of my uh Life Choices decisions and that shapes up who I am as as a Trader um it there has to come a a point where those two are aligned you it&#x27;s going to be a very difficult and a constant battle if you&#x27;re person a but Trader B um so I you know I think growing up and and moving from a you know different country and and coming here it&#x27;s it&#x27;s retaining that uh work attitude that work ethic that I&#x27;ve built over the years and the need for survival the need for um you know to to be better and and constantly learn that has translated into trading as well and has has shaped the core Foundation uh of of who I am as a as</p>
+<p>a Trader yeah uh which is you know closely aligned to who I am as a person yeah uh let&#x27;s talk about your first initial you know entry to becoming a Trader it started as far back based on uh your bio in 2018 during that uh the banking crisis talk a little bit about how it kind of let your appetite to begin with so uh I mean it&#x27;s a it&#x27;s a quick funny story you know um back then I I was in my IT background working and uh we&#x27;re in the back of the shop and my friend comes in and he&#x27;s like hey look at this you know you can buy two shares at at at you know or you can buy 100 shares at five bucks and then sell them a week later at six bucks and and you&#x27;ve made a 100 bucks I&#x27;m like okay what&#x27;s the catch you what what else he&#x27;s like nothing that&#x27;s it you you just buy low and sell high and I&#x27;m like well great I mean how how hard can this possibly be you know let&#x27;s let&#x27;s get into it um but that was the very beginning right</p>
+<p>that was the very beginning into into my uh trading world at that time I didn&#x27;t even know what a share was I didn&#x27;t know that&#x27;s what companies did Etc um so it was um you know from there I just started doing what I always did even way back when as a kid right taking something apart seeing what does what what&#x27;s important right is this is this spring in this car really important or is it a nice to have t thing and um yeah then from there just started slowly learning about what moves the market what&#x27;s Market What&#x27;s um what are some of the core components and then at the end of every single uh at the end of every single alley that I went down Kim what I found out is that at the end of it sit emotions in some aspect at the end of it whether it&#x27;s your decision- making whether it&#x27;s your uh execution whatever problem you may have or whatever is making you successful it has to do with your way of being it has to do with um your integrity it has to do with your accountability and and you</p>
+<p>know really owning owning the the outcome you can&#x27;t control it but you can own it and that allows you to change it your bio is just so uh incredibly worded so I&#x27;m going to read it now where you said here that uh self-awareness accountability Integrity allowing myself to be wrong without making myself wrong are all aspects I use as pillars in decision making and trade management how I feel is more important to me than what I think wow tell me tell us all more about that because it packs a wups down um yeah I mean so I guess we&#x27;ll start with the last part of uh how I feel is more important to me than than what I think and that stems from the fact that when when it&#x27;s time to actually execute there&#x27;s only time for one thing you either take action or you think you can&#x27;t do both um some of my best trades have come from a point where I wasn&#x27;t thinking I saw it and and innately I reacted to it there was no time to process what should I do now how much size should I get in what you</p>
+<p>know should I buy or sell here whatever the case may be um so that&#x27;s where the what I&#x27;m feeling is more important to me than than what I think uh because I am aware that emotions are part of me part of who I am I&#x27;m a human being at the end of the day um and sometimes emotions are are have good intentions but but poor outcome uh they&#x27;re designed to protect me in some way and I don&#x27;t need protection right now I need action I need to execute a the straight I don&#x27;t need to be protected so I don&#x27;t need to think about it I either do or I don&#x27;t um so that&#x27;s where the you know that that comes from and and i&#x27; and I&#x27;ve learned that through trial and error I&#x27;ve learned that through so many mistakes um and then that&#x27;s where you know I feed off on the other aspect of okay well I just I just keep going you know here&#x27;s one way not to do it great let me add that to my list um that&#x27;s it talk a little bit about the kind trade Rec you are and I</p>
+<p>understand you&#x27;ve been trading full-time for five plus years talk a little bit about the kind of Trad or just so they have context instead of me reading it I&#x27;d rather you just speak to it yeah sure um so I trade um primarily I lean on the short side of uh of of trading um I don&#x27;t U I don&#x27;t really have any any sort of hard guidelines or rules or you know I don&#x27;t trade sub a certain market cap or a certain float um that I leave to the decision making at the time because you know some opportunities obviously will carry more risk and it doesn&#x27;t mean that you can&#x27;t trade them but you need to be aware and and truly acknowledge the risk that you&#x27;re taking um so that you know that also drives some of my my trading decisions um but overall you know I I trade Gap up parabolics I trade uh intraday clear outs I trade uh theme sector moves uh momentum trading a lot there&#x27;s a lot of that I I do swing Trad sometimes but not not consistently or or often um I like being part of the part of</p>
+<p>the uh trenches part of the action it&#x27;s it it&#x27;s it&#x27;s what gives me um uh you know satisfaction at the end of the day is is devising a plan and and seeing it work or seeing me do the right thing at the right time uh without feeling guilty afterwards regardless of was it the right choice or not I didn&#x27;t know at the time right do you find because of you have such an impressive uh background in it and that the Str why don&#x27;t you just describe you know how you have uh the what the title was but I&#x27;m curious that feel your technology background feels like such a strategic mindset that I can&#x27;t help but think that has served you as a Trader would you just speak a little bit about that yeah absolutely um so I spent uh I spent a little bit over a decade uh close to half a decade um fulltime into uh it um I did it work uh for for you know a lot of the casinos here on on the Las Vegas trip um and then also uh some educational companies and and uh um other other excuse</p>
+<p>me other ones here and there uh but essentially I started in the IT world as a computer engineer as you know sort of fixing problems um because that&#x27;s what I knew again growing up that&#x27;s that&#x27;s that&#x27;s what I do um and then moved into more so of the management and um the business side of it towards the uh latter part of my career and having that corporate exposure having that structure having that um you know goals projects going through seeing how something doesn&#x27;t work okay now we got to go back and and review and see what we need to change then continue forward I mean all of that translates into trading that&#x27;s that&#x27;s what it is right that&#x27;s where I feed off with a lot of my discipline that&#x27;s where I feed off with um my accountability my Integrity um it&#x27;s it&#x27;s truly something that I was able to take from my previous experience and then say how can I apply it and Propel me into what I&#x27;m truly trying to do and want to do um because early on even though I I started trading in you know 2008 2009 it wasn&#x27;t until 2014</p>
+<p>that I that I realized okay this is truly what what I want to do uh because this is what will allow me to get to a point of of you know what&#x27;s my what&#x27;s my why why why am I doing all this anyway to begin with Y um what what is your Wise Dan uh my why Kim is um I want to be in a position where I&#x27;m able to give back and make a make a significant change uh moving forward into whatever field uh that that needs that needs that change uh I I know it&#x27;s it&#x27;s very broad um but in a way I to put myself in a position where I don&#x27;t have to worry about um what you know what&#x27;s what&#x27;s coming next week or financially what&#x27;s what&#x27;s happening next month um I want to be able to experience different cultures and and travel and then make a meaningful impact throughout throughout that uh Journey um and all of that needs is time right time is the ultimate currency um it&#x27;s what everyone has of the same regardless of your status and in any other aspects or category so um trading is</p>
+<p>that type of vehicle that allows me to adjust my time adjust my schedule uh and then focus on on other things uh Consulting I still consult with with it I just as you know trading is a very lonely business uh especially for retail Traders and uh I love the human interaction I love the different type of projects because they take my mind away from from Trading and and it&#x27;s important it&#x27;s uh you know G gives you go ahead sorry yeah no it just gives you a fresh fresh pair of eyes sometimes too otherwise see the same problem differently speak a little bit about that being so important for Traders because that&#x27;s part of why you&#x27;re here Stan because I have repeatedly seen and heard about your philosophical approach and support of other traitors and encouragement and stoicism I I could see it with you in just our messaging back and forth uh you&#x27;re an old soul how is it that that for somebody who&#x27;s still rather young uh where does all that come from and how come it&#x27;s important for a Trader to step outside of trading for their for their trading why is that</p>
+<p>so important for a Trader&#x27;s trading to sometimes be away from that yeah um I mean that that goes back to um so for me for me at least um knowing who I am and how I operate if I am constantly in front of the same problem I will lose myself in there in some fashion it&#x27;s going to start rearranging priorities I I have set in other areas of my life such as my relationships with you know my family my wife my my friends Etc um so the moment that starts happening that becomes an issue and if I don&#x27;t address it then it&#x27;s going to have consequences um and and so that&#x27;s what stepping away from Trading helps me do it helps me remove myself from this narrowness and um um you know constant need to figure something out and and it gives me a fresh pair of eyes uh when I come back to it because it it allows me to put what I have what I need what I want into various perspectives as if I trade constantly through constantly in the trading screens um it&#x27;s all numbers it it it&#x27;s very easy to</p>
+<p>to get lost at times um and you know for me that&#x27;s that&#x27;s just the vehicle it&#x27;s what I&#x27;m using to get me from point A to point B it&#x27;s not my uh ultimate holy gr you know here it is love of my life type of thing right it&#x27;s my vehicle yeah for sure it&#x27;s beautiful it&#x27;s a vehicle I love that so because we have to go to an xace in four minutes what I&#x27;m gonna ask is that you allow me to have another uh part two with you uh of course we know that your handle and your name in the IU room is Godfather so as you wisely said the godfather has three parts so you&#x27;re gonna St have probably three parts um but what would be your advice to traders who heard you speak to what you just said and think well gosh how do I even know when that point comes what would be your guidance or your you know kind of like checklist for them to do that themselves to know when they have to step away what would look for I mean for me it it&#x27;s it&#x27;s generally um when I</p>
+<p>when I start noticing other areas of my life lacking um when I you know if I&#x27;m breaking my word with something if I&#x27;m inconsistent with with with something it&#x27;s just it&#x27;s an easy way for me to be to say hey this is out of normal behavior for me um I need to I need to go and find it and and I know that may not be as clear for you know the audience or or you know if if if you&#x27;re just there saying well well I don&#x27;t it&#x27;s just me how do I how do I know now yeah um then then it&#x27;s it&#x27;s just the very simple rule that I&#x27;ve always used as well is is is the time I&#x27;m spending today giving me the value to move the needle um and you could be spending $100 a week studying something in trading but if you&#x27;re not studying the right thing you just wasted $100 you didn&#x27;t you didn&#x27;t learn any anything of value right so for sure so powerful uh so many other topics I want to speak to you about so I will ask you to please come back absolutely yeah part two</p>
+<p>my first part two my first two-part of podcast D It&#x27;s Gonna Be You right all right thank you so much everybody for watching Wall Street coach podcast</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <p>Kim Ann Curtin, Founder of The Wall Street Coach, helps Traders, Executives & their teams end the cycle of self-sabotage.</p>
+                    <div class="footer-brand">
+                        <span class="footer-logo">The Wall Street Coach</span>
+                        <p class="footer-copyright">&copy; The Wall Street Coach TM. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-legal">
+                        <a href="mailto:hello@thewallstreetcoach.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                    </div>
+                    <div class="footer-social">
+                        <span class="footer-social-label">Ways To Follow Us</span>
+                        <a href="https://twitter.com/twscoach" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kimanncurtin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/thewallstreetcoach/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCuApZQaw2UATpJums6cw3HA" target="_blank" rel="noopener" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@thewallstreetcoach" target="_blank" rel="noopener" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>
