@@ -28,21 +28,22 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .episode-hero {{
-            background-color: #08333A;
-            color: #fff;
-            padding: 6rem 0 4rem;
+            background-color: #F9F9F7;
+            color: var(--navy);
+            padding: 6rem 0 3rem;
             text-align: center;
         }}
         .episode-hero h1 {{
             font-size: 2.5rem;
             max-width: 900px;
-            margin: 0 auto 1.5rem;
+            margin: 0 auto;
+            color: var(--navy);
         }}
-        .episode-content {{
-            background-color: #F9F9F7;
+        .video-section {{
+            background-color: #08333A;
             padding: 4rem 0;
         }}
-        .episode-container {{
+        .video-container {{
             max-width: 900px;
             margin: 0 auto;
             padding: 0 2rem;
@@ -53,8 +54,7 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
             height: 0;
             overflow: hidden;
             border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }}
         .video-wrapper iframe {{
             position: absolute;
@@ -63,11 +63,24 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
             width: 100%;
             height: 100%;
         }}
+        .episode-content {{
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }}
+        .episode-container {{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }}
         .episode-body {{
             background: #fff;
             padding: 3rem;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }}
+        .episode-body h2 {{
+            color: var(--navy);
+            margin-bottom: 1rem;
         }}
         .transcript-toggle {{
             background: var(--gold);
@@ -78,6 +91,7 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
             cursor: pointer;
             font-weight: 600;
             margin-bottom: 2rem;
+            margin-top: 2rem;
             transition: all 0.3s;
         }}
         .transcript-toggle:hover {{
@@ -102,13 +116,13 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: rgba(255,255,255,0.7);
+            color: var(--text-secondary);
             text-decoration: none;
             margin-bottom: 2rem;
             transition: color 0.3s;
         }}
         .back-link:hover {{
-            color: var(--gold);
+            color: var(--navy);
         }}
         .episode-cta {{
             background: var(--navy);
@@ -155,7 +169,7 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
         </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero - Light Background -->
     <section class="episode-hero">
         <div class="container">
             <a href="../podcast.html" class="back-link">
@@ -168,10 +182,9 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="episode-content">
-        <div class="episode-container">
-            <!-- Video Embed -->
+    <!-- Video Section - Dark Background -->
+    <section class="video-section">
+        <div class="video-container">
             <div class="video-wrapper">
                 <iframe 
                     src="https://www.youtube.com/embed/{video_id}" 
@@ -181,7 +194,12 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
                     allowfullscreen>
                 </iframe>
             </div>
+        </div>
+    </section>
 
+    <!-- Content - Light Background -->
+    <section class="episode-content">
+        <div class="episode-container">
             <div class="episode-body">
                 <h2>Episode Overview</h2>
                 <p>{description}</p>
