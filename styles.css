@@ -395,13 +395,10 @@ ol {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem 2.5rem;
-    /* Reduced gap */
-    /* Increased gap */
     align-items: center;
     justify-content: center;
-    /* Center logos */
-    margin-top: 2rem;
-    /* Reduced from 3rem */
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .hero-logos img {
