@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Coaching w/ The Wall Street Coach (April 16th @ 7:00 PM ET) - The Wall Street Coach Podcast</title>
+    <meta name="description" content="I just realized my mic was muted.  So, welcome to todays live coaching.  Its April 16, 2025, and Im really glad to have you guys">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #08333A;
+            color: #fff;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            margin-bottom: 3rem;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--gold);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>Live Coaching w/ The Wall Street Coach (April 16th @ 7:00 PM ET)</h1>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <!-- Video Embed -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/qnrzAeOFiwM" 
+                    title="Live Coaching w/ The Wall Street Coach (April 16th @ 7:00 PM ET)"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="episode-body">
+                <h2>Episode Overview</h2>
+                <p>I just realized my mic was muted.  So, welcome to todays live coaching.  Its April 16, 2025, and Im really glad to have you guys</p>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>I just realized my mic was muted. So, welcome to todays live coaching. Its April 16, 2025, and Im really glad to have you guys. Moving over to the better microphone. Uh, good to have you here, Katie. Im glad youre here. Im going to pull you into the room any minute. Let me get that link for you so you can go in there. Yeah, the sound wasnt on, Katie, because my microphone wasnt on. So, that was my fault. So, there is a link Katie for you to come in. So, uh just a heads up, hi Tina. Good to have you here. My name is Kim Curtain the Wall Street Coach. I do these almost every Wednesday and this is in service to the trading community. Uh but anybody who wants to come in for coaching can uh this is my way of giving back. Uh I if youre interested in my coaching and you want to have a conversation about that, please feel free to send me a DM and we can set up a call to see if what I have to offer could you on the journey. Uh, Ill let you in the room</p>
+<p>in just one second, Katie. So, I just wanted to put forward that one of the things that I really want to encourage everybody to do is to volunteer at some point to come in and do some live coaching here. Uh, Katie is volunteered for today and I want everybody to feel comfortable to come in and do that. There are a couple other people this week on X that I suggest they come in to join. If you guys are here, uh, please let me know and then I can get that link, uh, over to you as well. So, Im just opening up X. Sometimes I get DMs or questions inside of X while Im doing this, so Im just double checking theres none there. All right, Katie, let me get over there and bring you into this room. All righty. There you are. How are you doing? Hi. Good. How are you? Im doing great. Doing great. So, hows your week gone since the last session? Um, well, there wasnt a huge amount of emotions that came up right away. Um, I tried to stay conscious of that part of me that we were in touch</p>
+<p>with. um the little word for if I feel like uh shes needing help. I guess when Im feeling distressed or Yeah. disregulated, they say nowadays. Y um that could be a sign that shes asking for help, would you say? I would definitely say thats true. Yeah, absolutely. because if any of us get triggered uh all the ages weve ever been are going to be triggered within us. So yes, I think thats a great indicator because too we want to remember that the younger versions of ourselves um they were so accustomed to in a sense disregulation that they may not even realize that its not uh the ideal state, right? because it became such a way of life that they didnt even know that was uh maybe not what they had to live in for the rest of their life. Yeah. Yeah. Like one of the things I think I commented on your YouTube this week was when I have time for myself where Im not, you know, downtime on the weekends. A lot of times it happens Sundays. It used to be a thing about having anxiety about Monday, but its also just space and</p>
+<p>I get anxiety and depression and start freaking out. Yeah. Because I dont I get overwhelmed by all the choices and not really knowing how to tune into my own impulses or inspiration. So, thats what Im kind of working on next, I think. So I if its okay with you Im going to just make a suggestion around how to look at this uh from a different perspective. Is it possible that whats really happening is if there is an activity that could potentially feel uh unsafe. Um like an activity thats like um no activity. Oh emptiness. Just a day with no plan. Being still, not having 10 things to do. Is it possible that the stillness itself is what is triggering? Yeah, I think so. Yeah. And so if you had to cope with a lot of stimulation when you were a kid and constantly had to find a way to navigate that, not having it feels potentially unfamiliar. Yeah, my household may not have had enough of that comfortable space. Comfortable um correct. So to have stillness, you know, one of the things that anybody whos gone through a challenging childhood uh is usually very very</p>
+<p>good at is vigilance. Vigilance. Vigilance is a state of sort of ready for anything because if you had a volatile childhood, anything could happen at any time. Yeah, Ive actually bragged about my ability to handle like emergency situations because some reason Im able to handle them with more calm and not for some reason, Katie. Because when you were a kid, you either figured that out quick or you were screwed. Yeah. You paid a price. [Music] So, what an incredible skill set you have acquired whether you wanted it or not. And when one has that incredible capacity for eyes in the back of their head, right, whats the other catchphrase? Thats a great one is always looking over your shoulder shoulder for the other shoe thats going to drop. Yeah. Yeah. Because if you experience volatility and chophood, you know, another shoe is eventually going to drop. Right. So, you might as well get ready for it. Yeah. Yeah. But the challenge that comes, one of many challenges that comes from a volatile childhood is discomfort with no need for vigilance. Yeah. because vigilance is how we stayed alive or kept safe. And so its sort</p>
+<p>of our security blanket. So if a kid has a security blanket, what happens when that security blankets taken away? Were like naked. Wheres my comfort? Yeah. Wheres the feeling of I know what to do with vigilance, but I dont know what to do without it. So, we have to begin to practice micro experiences of nonvigilance. And we have to do it with baby steps, with compassion. with understanding that this is going to be triggering in a sense for for us and for our nervous system, right? Like I I do have a meditation practice which is helpful. I really enjoy that. And um and my counseling today, I have two more counseling sessions. Good. And uh when I mentioned this to her, she said, &amp;quot;How about a menu?&amp;quot; And I thought that was a fun idea when you have space like theres something your brain can look at and say, &amp;quot;Oh, I could do this or this or this or this.&amp;quot; Great. Its a great idea. Its a great idea. Something but like fun stuff, you know, like totally fun stuff. Self-care or creativity. Absolutely. Creating that menu first of all allows you to self-reflect on</p>
+<p>what you need. self-reflect on uh putting some time and energy around all the choices that may not be available to you in the throws of that anxiousness. And if you feel in, you know, that you want to take this on, I would say find ways to give yourself some exposure to stillness in small doses. And the two questions I learned from Raphael Kushner that really still to this day help me are whats happening now and can I be with it? And so if you are checking on how whether or not you can be with it, then at some point youll notice I dont want to be with this anymore. Its it doesnt feel like I can take this more than Ive already taken it. And at that point you can put it down and back out and come back and go back to the menu or go back even to the meditation. And this is this is interesting too that meditation is a great practice and it can also sometimes be a an activity. And again, the the inquiry is, huh, what would it be like for me to not be always plugged into activities?</p>
+<p>And we want to meet that part of ourselves with as much compassion and patience as possible. Okay? like a tilt like a pin pole machine. We dont want to tilt our operating system. What were we gonna say? I was just gonna add its a little sidebar, but maybe its related like y I started using brackets in my trading because I was having such a hard time stopping out. Its a total psychological block. And the the brackets are so helpful. So good. Its funny, its so simple, but even though they stop me out where Im supposed to stop out, I still like get in this really nasty mood because when when it doesnt go my way, like, and Im its hard for me not to just like um be happy that I didnt lose a bunch of money, you know? Well, Im I think whats being triggered and you tell me if this is correct is the anger over it not over you not being right over not going the way you wanted it to. Yeah. Yeah. And that is, you know, its understandable for all humans to be disappointed, frustrated, angry when things dont go</p>
+<p>the way we want. Mhm. And it is interesting especially for traders if one finds oneself in a game or an a journey as a trader where all the best of the best say that you can lose up to 60% of the time and still be profitable. So if that is the kind of game youre playing, then I would say start to get curious about what is that anger coming from. Because if you have signed up to be in this game, that means you have to sign up to the way it unfolds. And the way it unfolds is that you will likely be wrong a lot of the time. And if that is still triggering to you, it isnt the game youre playing thats the issue. Its your relationship to being wrong. And I think that is a very powerful inquiry, but its likely for you and for many other traders, being wrong possibly triggers a fundamental sense of your sense of value. Mhm. If if we think our value is tied up to being right, if our acceptance as a child or our love as a child was completely conditional, then the anger one has</p>
+<p>when one is wrong is going to seemingly be very big, very triggering. Because we all know as human beings if we are not in the tribe were dead. Right. Yeah. I remember seeing one of your interviews that they talked about the neurology behind that. Correct. Um and its possible when youre wrong in a trade and this would go for a lot of traders. could be that that anger is if its potentially like, wow, this Im doing this all the time and I still get just as charged up by it. That is an indication that there might be some collapsing of your self-worth to being right and that would be worth exploring. Yeah. Yeah. But with a lot of compassion. With a lot of compassion. I know. I got to figure out a way to practice acceptance of myself in situations where maybe I was wrong or you know. Yep. But but I think being able to do that it has to start with coming to terms with what the current beliefs are. And that would be probably a good exercise for you. Allow yourself maybe some space to journal out all the beliefs that you</p>
+<p>have about yourself. Dont hold back. Just let them all pour out on the paper. And then afterwards, you can take a look and see, huh, are those beliefs really my beliefs or are they some of the things I was told as a kid? Because maybe uh the caretakers I had had uh short patience or frustration that had really nothing to do with me. Yeah, I could I could try and do that. That would be great. And the other thing too when you finish that list is look at that list also from the standpoint of is a belief about yourself possibly informed by a inner critic or an inner judge which it could be related to what you were saying before too. Exactly. Because the inner critic will always tell us our value is determined by what we earn, not who we are fundamentally, right? Did you ever see the guy Schlommo? Schlommo? I dont know. He is this very cool man that used to be I think he was a brain surgeon. And if you just Google Schlommo, it should come up. Um, its like a 15inute short that I think was on 60 Minutes</p>
+<p>a long time ago, but Im pretty sure he just popped right up. Its not a lot of guys named Schlommo. So, he was a brain surgeon and at some point he just was like, I, you know, he had the fancy car, he had the fancy house. I think he even had a fancy wife, you know, and it just one day hes like, I just Im not happy. And so he started to rollerblade on Santa Monica Boulevard beach. I guess theres this longass beach that goes in California. He just started rollerblading it every day. Every day. Every day. And he talks about how hes so happy now doing really nothing, right? Yeah. And he created his life to be a life where like he has a studio apartment. He eats very simple, very inexpensively, but like hes so at peace right now. Not everybodys going to want to live like Schlommo, and Im not saying everybody should. Yeah, but he could see at that time when he left being a doctor that he was being all the things he was told he should be he should be married. He should he should be a doctor. He</p>
+<p>should have a car and a good beautiful, you know, fancy house. And at some point he was like, &amp;quot;But I I dont even want these things. like why did I just get them? So I think a lot of people in life Katie sometimes just are doing things because thats what the culture has told us is expected of us. Yeah. Without really inquiring if what we want is what we want. Yeah. There might be some of that hiding in my psyche. Yeah. like most of us with good reason, right? With good reason. Because to let that flag fly in your youth probably was not have been a good idea to let to just to let your authentic self show. Right. Right. Right. Right. Yeah. Yeah. And if you were if you were smart enough to realize, oh, I better keep that authentic self of mine hidden, that helped you navigate it. So, well done. You did. But youre not in it anymore. You are safe now to let that flag fly. You are safe to be your authentic self. Im trying to find the courage and the and find myself and the courage to Yep. Yep.</p>
+<p>And it takes a minute, especially if youve got decades of experience hiding yourself. Yeah. Even from you. And its interesting this morning I was talking about this with a client. Did you ever see uh the runway bride I who was in it? I forget. Julie Cooper Roberts and Richard Gear. I dont think I dont know if I ever saw it. So, its a good move to watch. Theres Shes She keeps getting to the altar with a fiance and then she runs right before the right before the marriage vows. And Richard Gear is a reporter whos kind of curious like what is going on? This woman keeps meeting these guys and keeps running right before and you know of course its a Hollywood story. But whats fascinating is at some point as he meets all her rejected fiances, he asks the guys what her favorite how did she take her eggs? And every man who each had a different egg order tells him, &amp;quot;Oh, she liked them just like me.&amp;quot; Poached. And then he talks to fiance number two. &amp;quot;Oh, she took them just like me over easy.&amp;quot; Huh? And then he talks to the third</p>
+<p>guy. Oh, she took it just like me. Scrambled. And the fourth guy, I dont know what way that was, he is like she took her eggs all these different ways. Mhm. And so at some point, you know, as their relationship develops, he says to her, &amp;quot;You dont even know how you like your eggs.&amp;quot; I can see where youre going with this. She hadnt found herself. Correct. So, it was But she had the smarts to run because Yes. 100%. Thats a good thing at least. 100%. 100%. Yeah. So, theres this scene at the end of the movie where she makes all the different ways you can make eggs. She makes the poach. She makes the over easy. She makes the scrambled. And do you know what she does? She takes a fork and she just sits by herself in the kitchen and tastes each one to figure out which one she likes. Thats cool. I love it. So, I think Katie, you have a lot of egg dishes to prepare. I think I like poached. Excellent. There are a few things that I could explore. really help I I sometimes need poached is what you like</p>
+<p>in your eggs, but use that same metaphor in all of the journey, including possibly your trading. Yeah. Are there strategies? Are there styles of trading that perhaps will be more suited to you? If being wrong is very triggering for you and you are going to work on that, are there ways to trade that wont be as triggering? Like why fight city hall? Yeah, I think that I need to be pickier about I dont think its the strategy. I think Im tending to overtrade and Im tending to stray from the strategy. Make it a little Im being too loose with it. Mhm. And um then I get mad at myself for not being more patient and and selective. Yep. So that would be then looking at what is informing that behavior. And again, if you can try to be an observer of yourself without judging yourself, youll have a better chance of discovery. Mhm. But if youre mad at yourself, youre going to be going into a contraction. Yeah. If you can observe yourself like a detective would, h how fascinating. You have a better chance at understanding how you operate. That is what every trader</p>
+<p>wants to seek. How do I operate in this environment? Yeah. Not whats wrong with me, but oh, that seems to be how I operate. I wonder where that comes from. I wonder how I might be able to heal that reaction. Yeah. it almost Im Im trying to build more detachment um from the process so that I and more selective and disciplined. So part of that is notice when youre not disciplined, what are the variables? Whats involved? Whats at stake? What are your needs? Do you do you check that needs list before you trade each day that I hand out? I havent been checking the needs list each day. I would check at that because first I would check in before your trading day begins on what do you feel? If youre consciously going into the market feeling angry, depressed, apathetic, frustrated, you want to know that. Yeah. that is like, &amp;quot;Oo, am I even in a headsp space to trade today?&amp;quot; Yeah, I didnt sleep last night. Im annoyed about so and so. This pissed me off this morning. And I feel like Ive been waiting for the doctors office to call for four weeks,</p>
+<p>and they havent. Im feeling very impatient, very triggered, and pissed off. And the day hasnt even begun. Yeah. We dont want to trade when we feel like that. Probably not. Probably not. Yeah. So that checking in before the trading begins is a good thing for sure. I try to do somewhat of a routine. But thats great. Thats great. And and then if you are feeling that way, I would also further ask yourself, what needs did I not get met that caused these unpleasant feelings? Okay. Well, I didnt feel heard or I had a hard time with so and so and they made me feel, you know, not uh disrespected because if thats a foot that will also influence a trader to take trades hoping to get the need met through the market. Yeah. Yeah. And somehow it seems like all of this is connected. You know, its we are very adept at trying to get our needs met even to the point of us being completely unconscious to that being whats driving us. Its like survival. Yeah, its quite a journey to it is uncover what our needs are and how to meet them and</p>
+<p>and then and keep your boundaries with my trading. Its its also you know something for those who didnt get to grow up in an environment where their needs were uh a priority. Its harder for those of us who didnt grow up with that. because were not used to getting to have our needs matter. So, we have that extra weight, the heavier lift because it doesnt come to us naturally. Yeah, theres definitely always some need it seems that is missing from our family of origin. Usually a lot. Usually a lot. And the reason that is the case is because most of our parents, they didnt get their needs met by their parents. Yeah. And go back go back go back all the generations. Yeah. So were the product of multi-generations not realizing they had needs that they had a right to those needs and that the feelings that come up when needs are not met are just human. Yeah. Yeah. The feelings that we all have that theyre normal. I mean, five of the so-called seven deadly sins, five of them are just feelings. Weve been made to feel ashamed for being human. Thats interesting. I</p>
+<p>had never thought of that. The seven deadly sins. Greed. Whats the other ones? Lust. Lust. Well, everybodys Were Yeah, were doomed. Well, were not doomed. I mean, were fall into that. Yeah. Pride is just a feeling. Greed just a feeling. Lust, envy, gluttony, wrath, and sloth. Huh. Wow. I guess those are all pretty much things that humans love to do and or just naturally have. If you look underneath each of them like pride, what is pride? Its the need for respect, selfrespect, right? Whats greed? Whats underneath greed? Security. Feeling like you have enough. Lust is just sexual expression, right? Envy is that feeling of looking at somebody else, but thats probably informed by you feeling like youre not enough or you dont have enough. Gluttony is to take too much, but that too would be informed by somebody not feeling secure. Wrath is just anger. Its just a feeling. And we have anger when our needs arent met. And we have a lot of anger if we never get our needs met. And sloth is an experience of apathy. Or it could just be relaxing. It could be, but most inner gremlins will tell us</p>
+<p>its sloth. Yeah. Yeah. Thats so ingrained in our collective consciousness. 100%. Especially from certain religious, I guess, backgrounds. For sure. But even those that arent religious, we all know what the seven deadly sins are for the most part. I mean, we had to look them up, but we we we know it when we feel it. We feel guilty. We feel bad. We feel ashamed. Reinterpret that. I would agree. I would agree. And thats part of why, you know, I tried to get this tool that Mr. Marshall Rosenberg created. His his work was life-changing. Still is life-changing for me. Its a its a gamecher to begin to understand what your needs are. And its a game changer to even begin to understand feelings. And having grow grew up myself in a house where that was not encouraged, it took a minute for me to learn this for myself. And I saw how much it changed my life. And I see how much he changes my clients life. Yeah. Yeah. I Ive noticed that my my husband doesnt even seem to know when hes angry. And its really blat thats such a blatant expression of emotion. I</p>
+<p>I definitely know when Im angry, but then I started to realize, well, Im theres some things that Im not noticing here, too. I Im still trying to figure out how to pay, you know, finding my needs and or my desires or my paying attention to um I dont know just where the feelings come from. I I feel like Im able to identify my feelings, but I dont always know how to handle them. I guess I get that. I think thats normal. Really understandable if were just not used to having a safe space for all the feelings to be uh welcome. Yeah. And I think giving myself that safe safe space is what Im kind of learning. Yep. Like, okay, Im going to get curious. Im feeling this right now or you know envy or or feeling left out or I have that a lot. Thats why I would say keep that list handy because those feelings you want to even having language and those and that feelings list isnt even uh complete. Theres theres theres a a wheel I dont have it in my office. I have it in my house. But there is a</p>
+<p>wheel of feelings with just countless words that are filled with nuance. Having the fluency of feelings is really important. And Im Ive been surprised over how few of us have the fluency of how and what we feel. So, I would say keep that list on you and see if you can start to name how you feel. Even if you dont know how to be with it, at least name it. That begins to get you connected to those feelings in a new sort of way. Okay. So, notice the feeling. I I always suggest to clients spot check once or twice a day. How do I feel? I feel numb. That counts. I feel frustrated. I feel joyful. Notice what the feeling is. And then if its pleasant, track it back to what need of mine got met. Oh, I had a great conversation with a friend. my need for being heard was met. If you check in and the feeling you have is unpleasant, look at the needs list and ask yourself, what need did not get met? and at least identifying the need that didnt get met and giving yourself empathy for that not getting</p>
+<p>met will take a bit of the edge off. Yeah. So, hows that for homework assignment? Its good. Good. Its a a practice that can be done all day long. It can be, but dont do too much. Just once or twice a day. Yeah, once or twice a day. Thats it. Keep it simple. Okay. Okay. Its good to see you, Katie. Good to see you. Thank you. All right, sweetheart. Well see you next time. All right. Let know. Okay. Aloha for now. Bye, honey. Bye. Bye. All right, guys. Let me know if anybody else wants to come in for some speed coaching. Ive got roughly 20 minutes left and then Im got to go. So todays conversation I think is so applicable for so many traders because often traders are in the throws of feelings that they arent really clear on and therefore those needs that were perhaps not met prior to the days trading are invisibly hijacking them and causing them to trade, overtrade, trade outside of your strategy, not stay disciplined, feeling afraid. All matters of frustration that you experience often are being caused by basic needs not being met. And heres the thing,</p>
+<p>guys. Even if those feelings are in place while youre trading, you knowing this is the case is going to make a difference because youre going to be clear. Oh, you know whats driving me right now? Its that frustration. Its that anger. Its that insecurity. Oh, Katie, youre so welcome. Im so glad you were here today. Thank you for coming into the room and please everybody whos here please uh give Katie some support and encouragement because it takes a lot of guts to come into this room in front of all these people and have this conversation. So please show support to Katie and encouragement because shes speak every trader that comes in here guys they are speaking what you guys are going through too. She she certainly isnt the only one. no traitor is ever going through what theyre going through as the only one. And thats something I think that can easily be uh believed when youre in a lot of isolation. And thats why its really important for I hope at least this weekly conversation to sink in to you guys that you are not the only one that you are not as oh</p>
+<p>Im the only one whos doing this this or this. Youre not youre not everybody has a struggle. The key is to come to terms with what the struggle is without making yourself wrong, without beating yourself up, without, you know, saying what an idiot I am. None of that is going to help you ultimately shift up and out of whatever the limiting behavior is. And that is what you want to do. You want to uplevel yourself. you want to transcend the places youre held back, right? So, if you want to do that, then beating yourself up isnt how that happens. People have a tendency to take discipline and make that be like a way to beat the hell out of themselves. That is not how it works. The key is to get yourself out of a contraction. But if you feel shame every time you make a mistake and then you layer that shame on with guilt and feeling lousy about yourself, youre just keeping yourself further and further away from the change you want to create. If youre constantly having your inner critic say to you things like you should, you would should, would, or</p>
+<p>could, those are signs that the inner critic, your inner gremlin is is hijacked you. And change is possible. But it has to be able to be done. When you force it, when youre coming from a place of Im just going to force myself to go to the gym. Youre go that just doesnt work for the long term. It has to become a way that you see yourself. And thats what this email this week is going to be about. Uh my email, and if you guys arent signed up for curtain call, please do sign up for curtain call. Uh thats my weekly email. And whats the heart of that? The heart of that is a conversation each week that our issues as a trader struggle with. And that is a big one is when you are constantly pushing yourself, forcing yourself, if you will, you arent coming from a place of a flow state. And so that often has a lot to do with how you view yourself. You the things you say about yourself. And that was one of the exercises I gave Katie today was for her to spend time listing all the things</p>
+<p>about herself that she believes herself to be. And the reason I would recommend that to anybody is youre going to find yourself saying statements like this. Uh you know, Ive always been an impatient person or uh I always speed I drive really fast all the time or I dont cook. Right? We have all of these kinds of phrases inside of us. And the reason this exercise is so good is because it helps us see how limited our own perception is of ourselves. And that cant change until you identify. If you believe youre lazy, if you believe youre undisiplined, if you believe you dont cook, then you will keep staying true to those beliefs. So the key here is guys, you want to really start to investigate what are your beliefs because those beliefs are what are crafting the life that you live and those beliefs are potentially limiting you. Now, there are good beliefs. Uh, I used to have a belief back in New York City that I always got a bus or a cab or a limo back in the day before we had Uber. You know, there were a lot of limos around</p>
+<p>New York City. I had a belief that at any time I needed a car or a ride, so to speak, I would get one. Now, that was a belief. And let me tell you guys, I would just have to go to the street and put my arm up and within minutes I would get a car. And I had friends who all lived in the city that were always getting cabs too, car services. And every time these friends would be with me, theyd be like, &amp;quot;I have never seen anybody get a car so quick, Kim, like you do.&amp;quot; But it was because I believed I was excellent at that little job. And damn it, I always got one. And Im going to tell you guys two stories that I would not believe if I were you, but they are the truth. Theyre so outlandish that I still not believe they happened. But I had not one but two New York City buses stop for me. One of them was off duty. It was on the upper the upper uh was the east side east side of Manhatt like the east village. I was on 14th Street.</p>
+<p>I lived on 14th Street and Aver and I was way downtown kind of like probably near first or second. So, it was like 14 blocks. It was snowy. It was cold. And I was at a bus stop, but at some point I was like, &amp;quot;This bus is not coming. Sometimes buses didnt come.&amp;quot; So, I went out of the bus stop towards the street and I thought, Im just going to have to get a cab home because, you know, youre always trying to save money in New York. Use your you have a metro card for the buses or the subways, but there was no subway that was going to do me good. So, I was waiting for the bus and then at some point I was like, &amp;quot;Okay, this guys not probably coming, so Im just going to go out and get a cab.&amp;quot; Well, Im out in the outside of the bus stop and I see an out of service bus. His lights are off inside this bus. He stopped. It was It was late at night, so theres really no cars on the road. He stopped and Im looking at him like, &amp;quot;What are</p>
+<p>you doing?&amp;quot; And he opens the door. Hes like, &amp;quot;Where you going?&amp;quot; Im like, &amp;quot;14th Street.&amp;quot; Hes like, &amp;quot;Get on.&amp;quot; Im like, &amp;quot;Youre off duty.&amp;quot; Hes like, &amp;quot;Its okay.&amp;quot; So, that is just such a simple silly example of how you will live the beliefs you have about yourself, right? That was a positive belief, right? I always can get a car. I always can get a ride. I can always get a ride quickly. But I want you guys to think about how it also comes true when you have limiting beliefs. I uh always lose. I always get frustrated when I lose. Uh I always get angry. All of these things about yourself. I dont cook. I am always uh the winner at the lottery or whatever. All of these beliefs, guys, we live into. So thats my homework to everybody and to you too, Katie. Write down all the beliefs you have about yourself then and write pages and pages. You should have at least at least a hundred things that you believe about yourself. I think you could have 500 things, but lets just start with a hundred. Then I want you to very carefully go</p>
+<p>back after you put this list down for a little bit of time and ask yourself, what beliefs here are limiting? What beliefs are coming from my inner critic or inner gremlin? What beliefs are beliefs that I actually was told about myself as a little kid? If a kid falls off their bike a couple times when theyre learning how to ride, their parent might say, &amp;quot;Youre so clumsy.&amp;quot; Or, &amp;quot;Youre so uh uncoordinated.&amp;quot; Or some kid at school said that to you. Is that something you believed and you still say about yourself? Or, &amp;quot;Im always overweight.&amp;quot; Or, &amp;quot;Im always underweight.&amp;quot; Or, &amp;quot;I dont go to the gym. Im not a gym type person.&amp;quot; all or I am a gym type person. Whatever these beliefs are, guys, I want you to write them all down. And then I want you to look at that list from the standpoint of what ones are holding you back. What ones are potentially costing you in ways that youve never really paid attention to. All right, thats your homework. Whos taking that homework on? Let me let me hear how many people are taking that homework on. I would like to know</p>
+<p>besides Katie who already agreed. Anybody here? 124 people. Come on. Somebody must be taking it on. All right. Nobodys communicative today. We have quiet people. But Nicole is here. Thanks, Nicole, for shouting out Katie. That was very nice of you, too. And Tina, thank you too for doing that, Katie. All right, guys. I hope youll take that homework on. In coaching, one of the things uh that I say all the time to clients is that they can do one of three things with their homework. They can agree. Good job, Nicole. Im excited. Youre going to take it on. Uh you can agree to your homework, you can disagree, or you counter offer. So thats your you you can agree to this homework, guys. You can disagree with the homework or you can counter offer, but it sounds like Nicole and Tina has have taken it on and of course Katie and I hope the rest of you take it on too. But I think its a really good exercise to look under the hood of all the beliefs you have about yourself. Tina said, &amp;quot;Kim, there is like a 30 second delay on YouTube.&amp;quot; That</p>
+<p>is helpful to know, Tina. Thank you. Tina is my uh unpaid uh assistant in all of these lives. We got we got to get you a salary one day Tina for taking such good care of me here. I didnt know there was a delay. I wonder why theres a delay. Is that because I had curse like a seller? Im just kidding. Im probably That is so funny. So Tinas like, &amp;quot;If you dont see our answers straight away, Kim, you know why now?&amp;quot; So thank you for telling me that. Thats very helpful. All right. So that is the homework. The homework, guys, is simply to have you start to be present all the beliefs you have about yourself and to look at them from a distance. Like I said before, with the example of me always catching a car service like one, two, three in New York or cab way before there was Uber. That is a belief that I had that served me. It didnt limit me. In fact, it opened me up to all of possibility. Everyone, thats true, Tina. Its everyone. Okay, thats good. No, maybe its me because I curse a lot.</p>
+<p>Maybe YouTube has like put an X like, &amp;quot;Oh, that girl, were gonna have to give her a 30 second delay.&amp;quot; Just like national television, right? They have what they have on was like an 18 second delay for live TV. I dont remember what it was, but back in the day when people used to watch TV, ABC, CBS, NBC. All right, guys. So, that is your homework. Youre going to write down at least a hundred beliefs about yourself. After you do that, I want you to then revisit the list. Im shy. Im an extra. I uh I like the uh mats. Right. All of these are beliefs that you possibly have never questioned. And this exercise is about you just coming to terms with all the beliefs you have about yourself and identifying are there any there are holding you back are limiting you. That is the key because ultimately what we want to do is get rid of any dead weight, anything thats holding you back. And the only way we can ever do that for any of us on the journey of wanting to become better versions of ourselves is if we can neutrally</p>
+<p>observe ourselves. In my experience, I seem to see most people dont have the ability to observe themselves without judgment. In my experience, most of the people that I meet, and not just as a coach, but just humans, most are very hard on themselves, very judgmental of themselves, very critical of themselves, very ashamed of themselves, and feel broken as if somethings wrong with them instead of just realizing thats part of the human condition of feeling like youre not enough as is. And that sometimes is harder and stronger in other people. Usually those with really difficult childhoods have it stronger. And so this exercise is about you beginning to become this neutral observer of yourself so that you can start to see, oh, maybe some of these beliefs arent actually mine, but I just adopted them because they were said so frequently to me that I didnt even question whether they were accurate. All right. So, I will be back here next week. Same bat time, same bat station. And I am very curious if we can have a couple of volunteers to come into the conversation to share what you guys discover uh on this homework</p>
+<p>and see what changes in your trading because of the knowledge. All right, Im sending you guys a lot of aloha. Thank you, Katie, for coming into the room today. And thank you everybody uh for participating. And Im gonna say ho for now. Be good to yourselves out there everybody. And Ill see you next Wednesday at I think the same time, 700 p.m. Eastern. All right. low.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The Wall Street Coach</h3>
+                    <p>Transforming Wall Street from the inside out.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../tpi.html">TPI Assessment</a>
+                    <a href="../coaching.html">Coaching</a>
+                    <a href="../about.html">About Kim</a>
+                    <a href="../podcast.html">Podcast</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Connect</h4>
+                    <p>Email: hello@thewallstreetcoach.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Wall Street Coach. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>

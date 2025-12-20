@@ -1,0 +1,513 @@
+# THE WALL STREET COACH - WEBSITE COPY REVIEW
+*For Kim Ann Curtin's Review & Editing*
+*Generated: December 19, 2024*
+
+---
+
+## TABLE OF CONTENTS
+1. [Home Page](#home-page)
+2. [TPI Assessment Page](#tpi-assessment-page)
+3. [Coaching & Consulting Page](#coaching--consulting-page)
+4. [About Kim Page](#about-kim-page)
+5. [Podcast Page](#podcast-page)
+6. [Resources Page](#resources-page)
+7. [Ebook Popup Banner](#ebook-popup-banner)
+
+---
+
+# HOME PAGE
+
+## Hero Section
+
+**Headline:**
+Your strategy's solid.
+Your P&L isn't.
+What if the fix took minutes, not years?
+
+**Subheadline:**
+Join the top 1% of traders using the Trader Positioning Index™ (TPI) to identify the exact psychological blind spots sabotaging your P&L.
+
+**CTA Button:** Find My Blind Spots
+
+**Stats Bar:**
+- 18+ Years Coaching Wall St.
+- 50+ Legends Deconstructed
+- 110+ Podcast Episodes
+
+---
+
+## The Edge Section
+
+**Headline:** The Edge That Separates Pros from Retail
+
+**Body Copy:**
+In my years coaching top hedge fund managers and prop traders, I found one consistent truth: Amateurs obsess over the charts. Professionals obsess over their choices.
+
+You can't control the market. You can only control your judgment. I use the Trader Positioning Index™ (TPI)—the same tool used by elite Wall Street firms—to quantify your decision-making patterns. We don't just "talk about feelings." We measure your capacity to execute under pressure.
+
+**Testimonials:**
+1. "I pretty much figured I knew everything... I wasn't prepared for the results of the TPI. It gave me real clarity on my biggest hang-ups."
+   — Barry Randall, CEO, LSC Investment Group
+
+2. "It felt as if Kim lived inside my head... My jaw almost hit the table."
+   — Thuan Q. Pham, Former CTO of Uber
+
+3. "My win rate improved from 40% to 60% as I began to trade less and make more... The TPI showed me exactly where my issues were stemming from."
+   — Andres A., Independent Trader
+
+4. "In just 6 months, I grew my account by over 135%... Far exceeding my prior losses and expectations."
+   — Tom Burnett, Trader
+
+5. "If you are trading as a professional, it is a MUST do. I cannot thank Kim enough."
+   — Carson Klahm, Trader
+
+---
+
+## Solution Section
+
+**Headline:** Stop Guessing. Start Engineering Your Mindset.
+
+**Intro Copy:**
+**The "X-Ray" for Your Trading Mind.** The TPI is not a personality test. It is a **clinical-grade judgment assessment** nominated for a Nobel Prize. While other tools tell you *what* kind of trader you are, the TPI reveals *why* you make the decisions you make.
+
+**Feature Cards:**
+
+**The Assessment**
+- Label: 15 Minutes Online
+- Copy: It's fast, but it goes deeper than any psychological evaluation you've ever taken.
+
+**The Data**
+- Label: 70+ Indicators
+- Copy: A visual map of your judgment capacity. See exactly where your "Self-Regard," "Process Ability," and "Strategic Thinking" rank against top performers.
+
+**The Reveal**
+- Label: The "Why"
+- Copy: Pinpoint the specific cognitive biases causing you to exit winners too early or hold losers too long.
+
+**CTA Button:** Get Your TPI Profile
+
+---
+
+## Coaching Upsell Section
+
+**Card Title:** Elite Performance Coaching
+**Subtitle:** Neuroscience-Backed, Actionable Coaching
+
+**Body Copy:**
+For traders ready to completely overhaul their performance. We use the data from your TPI to build a custom mental framework that withstands market volatility.
+
+**Bullet Points:**
+- Eliminate the "Inner Critic" that hesitates on entry.
+- Install protocols to prevent emotional drawdowns.
+- Align your trading with your nervous system.
+
+**CTA Button:** Inquire About Coaching Packages
+
+---
+
+## FAQ Section
+
+**Q: "I've read 'Trading in the Zone.' Do I need this?"**
+A: Books give you concepts. The TPI gives you *data*. You can read about swimming, but it won't stop you from drowning. The TPI shows you exactly *why* you are drowning so we can pull you out.
+
+**Q: "Is this just for losing traders?"**
+A: No. We work with 7-figure traders who are profitable but miserable, burned out, or stuck at a plateau. The TPI helps you scale your P&L without scaling your stress.
+
+**Q: "Can't I just meditate?"**
+A: Meditation quiets the noise. TPI identifies the *source* of the noise. You need both.
+
+**Q: How fast will I see results?**
+A: The TPI gives you immediate clarity on your risk profile. Coaching clients typically see performance stabilization within 30-90 days of biological optimization.
+
+---
+
+## Footer CTA Section
+
+**Headline:** The Market is a Mirror. What is it Showing You?
+
+**Body Copy:**
+If you keep seeing the same losses, the same mistakes, and the same frustration, it's time to change the input.
+**Master your judgment. Master your life.**
+
+**CTA Button:** Get The Trader Positioning Index - $1,295
+*(Includes Assessment + Full Report + 90-Minute Private Debrief)*
+
+---
+
+# TPI ASSESSMENT PAGE
+
+## Hero Section
+
+**Headline:** Are You Ready to Trade Without Fear?
+
+**Subheadline:** Answer 15 questions to find out why you're hesitating and exactly what to do about it.
+
+**CTA Button:** Start the Quiz (3 Minutes)
+
+---
+
+## Who Is This For Section
+
+**Headline:** Who Is The TPI For?
+
+**Intro:** Designed for serious market participants who know that "90% of trading is mental."
+
+**Card 1: Independent Retail Traders**
+You have the strategy, but you're stuck in a "boom and bust" cycle. You battle FOMO, revenge trading, and hesitation. **Goal:** Consistent profitability and emotional stability.
+
+**Card 2: Prop & Hedge Fund Traders**
+You operate in high-stakes environments. You need to protect your longevity and execute without hesitation. **Goal:** Peak performance, higher Sharpe ratio, and avoiding burnout.
+
+**Card 3: High-Performing Executives**
+You're a success in business, but the market humbles you. Your usual "force of will" doesn't work here. **Goal:** Align your high-performance identity with market realities.
+
+---
+
+## 3 Key Areas Section
+
+**Headline:** We Measure & Improve 3 Key Areas
+
+**Intro:** Stop guessing why you're losing. We use clinical data to optimize your:
+
+**1. Risk Tolerance**
+Are you biologically wired to freeze or fight? We measure your cortisol response to volatility.
+
+**2. Emotional Regulation**
+How quickly do you recover from a loss? We quantify your "Tilt Threshold" and recovery speed.
+
+**3. Cognitive Flexibility**
+Can you flip your bias when the market changes? We test your neuroplasticity under pressure.
+
+---
+
+## Credibility Section
+
+**Headline:** Backed by 15 Years of Wall Street Data
+
+**Intro:** This isn't a personality quiz. It's a psychometric instrument nominated for a **Nobel Prize**, built on the profiles of elite fund managers.
+
+**The "Blue Diamond" Diagnostic**
+Your TPI report visualizes your judgment in a coherent shape. A balanced, expanded diamond represents a mind optimized for probability. A collapsed or skewed diamond reveals exactly where your judgment is breaking down under stress.
+
+**Dimensions Measured:**
+- Risk Tolerance
+- Emotional Regulation
+- Decision Speed
+- Loss Recovery
+- Cognitive Flexibility
+- Process Adherence
+
+---
+
+## How It Works Section
+
+**Headline:** How It Works
+**Intro:** From Diagnosis to Edge in 3 Simple Steps.
+
+**Step 1: The Assessment**
+**15 Minutes Online.** Unlike personality tests that ask generic questions, this measures how you prioritize values. It bypasses conscious bias to reveal your true decision-making framework.
+
+**Step 2: The Analysis**
+**The "Blue Diamond" Report.** You receive a 35+ page personalized narrative. It includes the "Diamond Index" visualization—an X-ray of your judgment across 70+ indicators, not just a text summary.
+
+**Step 3: The Debrief**
+**The Breakthrough.** A 60-minute strategy session to turn insight into action. We don't just diagnose; we prescribe. You'll leave with a plan to "trade around" your blind spots.
+
+---
+
+## ROI Section
+
+**Headline:** The ROI of Self-Mastery
+
+**The Cost of Blind Spots:**
+- ✕ Inconsistent P&L curves
+- ✕ Emotional exhaustion after trading
+- ✕ Chronic self-doubt
+
+**The Value of Clarity:**
+- ✓ Predictable, rules-based execution
+- ✓ Mental calm during volatility
+- ✓ Confidence backed by data
+
+---
+
+# COACHING & CONSULTING PAGE
+
+## Split Hero Section
+
+### FOR INDIVIDUALS
+
+**Label:** For Individuals
+**Headline:** The Optimized Trader Protocol
+
+**Body:** You don't need another strategy. You need a new nervous system. We combine **neuroscience, biohacking, and elite performance psychology** to break your biological glass ceiling.
+
+**Ideal For:**
+- Independent Pro Retail Traders
+- Prop Firm Traders hitting a plateau
+- High-Performing Executives turning to markets
+
+**CTA:** Explore The Protocol
+
+---
+
+### FOR INSTITUTIONS
+
+**Label:** For Institutions
+**Headline:** Corporate & Fund Consulting
+
+**Body:** Culture is the ultimate alpha. We help Hedge Funds and Asset Managers build **Anti-Fragile teams** that execute flawlessly under pressure.
+
+**Ideal For:**
+- Hedge Fund Founders & PMs
+- Trading Desk Heads
+- C-Suite Financial Leaders
+
+**CTA:** Explore Consulting
+
+---
+
+## Individual Track Section
+
+**Label:** 01. The Individual Track
+**Headline:** Stop Fighting Your Biology
+
+**Intro:** Most traders try to fix "mindset" problems with more discipline. But if your cortisol is spiked and your neurotransmitters are depleted, discipline is chemically impossible.
+
+**Step 01: The Biological Audit**
+We start where others stop: your body. Using an 84-point lab panel, we analyze your hormonal baseline. Are you trading with the testosterone of a predator or the cortisol of prey? We optimize your sleep, recovery, and neurochemistry first.
+
+**Step 02: The TPI "Blue Diamond" Analysis**
+We use the Trader Positioning Index to map your judgment. This isn't a personality test; it's a risk-management diagnostic. We identify exactly where you are leaking alpha—whether it's hesitation (Self-Regard) or impulsivity (Process Adherence).
+
+**Step 03: Neural Reprogramming**
+Once the hardware (body) is optimized, we upgrade the software (mind). Weekly 1:1 strategy sessions focused on "Live Fire" scenarios. We rewrite the subconscious scripts that cause self-sabotage, installing a new operating system for risk.
+
+**Protocol Specifications:**
+- Duration: 12 Weeks (Intensive)
+- Access: Weekly 60-min Zoom Strategy Sessions + Direct Text/Voice Access
+- Diagnostics: Full TPI Profile + Biological Lab Panel Analysis
+- Outcome: A bespoke "Performance Architecture" document you keep for life.
+
+**CTA:** Apply for The Protocol
+*Currently Waitlisted. Applications reviewed weekly.*
+
+---
+
+## Corporate Track Section
+
+**Label:** 02. The Institutional Track
+**Headline:** For Funds That Want to Last
+
+**Intro:** Your team's P&L is capped by their psychological capacity. We raise that ceiling.
+
+**Card 1: The "Anti-Fragile" Desk**
+Most teams crumble under volatility. We build teams that get stronger from it. By aligning the "Collective Judgment" of your desk, we eliminate toxic competition and foster high-performance collaboration.
+
+**Card 2: Founder & PM Alignment**
+When leadership is out of sync, the fund bleeds. We facilitate high-stakes alignment sessions for Partners and PMs to ensure vision, values, and execution are lock-step.
+
+**Card 3: Talent Retention & Sourcing**
+Use the TPI to screen potential hires before they touch your capital. Identify "hidden gem" analysts who have the psychological makeup of top risk-takers.
+
+**CTA:** Request a Corporate Capability Deck
+
+---
+
+## Contact Section
+
+**Headline:** Start the Conversation
+
+**Intro:** Whether you are an individual reaching for new highs or a fund manager building a legacy, it starts here.
+
+**Form Fields:**
+- Name
+- Email
+- I am interested in... (dropdown)
+  - Individual "Optimized Trader" Protocol
+  - Corporate / Fund Consulting
+  - Keynote Speaking
+- Briefly describe your current challenge
+
+**CTA:** Submit Inquiry
+
+---
+
+# ABOUT KIM PAGE
+
+## Hero Section
+
+**Headline:** I Watched Brilliance Burn Out.
+And Decided to Fix It.
+
+**Subheadline:** My journey from the trading floor to the intersection of neuroscience and elite performance.
+
+---
+
+## Bio Section
+
+**Paragraph 1:**
+I spent over a decade in the trenches of finance. I saw the smartest men and women in the room—people with Ivy League degrees and billion-dollar P&Ls—crumble under the weight of their own psychology.
+
+**Paragraph 2:**
+They were financially rich, but internally bankrupt. They were winning the trade, but losing the war.
+
+**Paragraph 3:**
+**In 2008, the facade cracked.** The financial crisis didn't just break banks; it broke people. I realized that the industry didn't need better algorithms. It needed a new operating system for the human mind.
+
+**Paragraph 4:**
+I left the floor to study the science of sustainable peak performance. I dove into neuroscience, behavioral finance, and emotional intelligence. I didn't want to just "coach" traders; I wanted to *bulletproof* them.
+
+---
+
+## Philosophy Section
+
+**Label:** The Philosophy
+
+**Quote:** "You already know how to read a chart. I teach you how to read yourself."
+
+**Body:** I don't teach technical analysis. My work is for the trader who is tired of self-sabotage. It's for the executive who wants to build a legacy, not just a bank account. It's for the few who are ready to do the hard, internal work required to become legendary.
+
+---
+
+## Credentials Section
+
+**Headline:** Authority Built on Results
+
+**The Blueprint**
+Author of *Transforming Wall Street*, the industry-standard text on conscious trading performance and sustainable success.
+
+**The Wall Street 50**
+Voted one of the top 50 change-makers transforming the financial industry, alongside industry titans.
+
+**Battle Tested**
+18+ years coaching inside the world's top hedge funds and banks. This isn't theory; it's field experience.
+
+**The Network**
+Host of *The Wall Street Coach Podcast*, featuring in-depth deconstructions of the world's top traders.
+
+---
+
+## CTA Section
+
+**Headline:** Ready to Optimize Your Performance?
+
+**Body:** Your strategy is fine. Your psychology is the bottleneck. Let's fix it.
+
+**CTAs:**
+- Take the TPI Assessment
+- Work With Kim
+
+---
+
+# PODCAST PAGE
+
+## Hero Section
+
+**Headline:** The Wall Street Coach Podcast
+**Subheadline:** Hosted by Kim Ann Curtin
+
+**Description:** Deep-dive conversations with the top traders, investors, and thought leaders on what it really takes to master the markets—and yourself.
+
+**Subscription Platforms:**
+- Apple Podcasts
+- Spotify
+- YouTube
+
+---
+
+## Featured Legends Section
+
+**Card 1: Matthew McConaughey**
+Greenlights, Resilience, and "Relative Truth"
+
+**Card 2: Mike Bellafiore**
+Co-Founder of SMB Capital on "One Good Trade"
+
+**Card 3: Jason Shapiro**
+Market Wizard on Contrarian Trading
+
+---
+
+## All Episodes Section
+
+**Headline:** All Episodes
+**Subheadline:** Browse our complete library of 110+ episodes
+
+**Filter Categories:**
+- All Episodes
+- Mindset & Psychology
+- Success Stories
+- Strategy & Tools
+- Neuroscience
+
+---
+
+# RESOURCES PAGE
+
+## Hero Section
+
+**Headline:** Free Resources
+**Subheadline:** Tools and guides to accelerate your trading psychology transformation.
+
+---
+
+## E-Book Series Section
+
+**1. Trader Discipline: The 5 Practices**
+The foundational framework for building unshakeable trading discipline.
+
+**2. Understanding Greed & Fear**
+Master the two emotions that control 90% of trading decisions.
+
+**3. Conquering FOMO & Loss Aversion**
+Break free from the psychological traps that destroy P&L.
+
+**4. The Discipline Edge**
+Advanced strategies for maintaining discipline under pressure.
+
+---
+
+## Free Tools Section
+
+**1. The 3-Minute Trader Check-In**
+A quick daily diagnostic to assess your mental state before trading.
+
+**2. Pre-Market Mental Checklist**
+Prepare your mind for optimal execution before the bell.
+
+**3. Ego Gremlins Quiz**
+Identify the subconscious patterns sabotaging your trades.
+
+---
+
+# EBOOK POPUP BANNER
+
+**Badge:** FREE RESOURCES
+
+**Headline:** Unlock Your Trading Psychology E-Book Bundle
+
+**Subheadline:** 4 essential guides to master discipline, overcome fear & find your edge.
+
+**CTA Button:** Claim Free Bundle
+
+---
+
+# FOOTER (Site-Wide)
+
+**Brand Tagline:** Transforming Wall Street from the inside out.
+
+**Quick Links:**
+- TPI Assessment
+- Coaching
+- About Kim
+- Podcast
+- Resources
+
+**Contact:** hello@thewallstreetcoach.com
+
+**Copyright:** © 2025 The Wall Street Coach. All rights reserved.
+
+---
+
+*End of Copy Document*

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Good Trade with Mike Bellafiore - The Wall Street Coach Podcast</title>
+    <meta name="description" content="welcome back everybody to uh the Wall Street coach podcast my name is Kim an curtain and today Im very fortunate to have Mike bellori here with me today ho">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #08333A;
+            color: #fff;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            margin-bottom: 3rem;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--gold);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>One Good Trade with Mike Bellafiore</h1>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <!-- Video Embed -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/m3Cn6ULW_mU" 
+                    title="One Good Trade with Mike Bellafiore"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="episode-body">
+                <h2>Episode Overview</h2>
+                <p>welcome back everybody to uh the Wall Street coach podcast my name is Kim an curtain and today Im very fortunate to have Mike bellori here with me today how are you Mike good how are you Im doing great Im doing great uh thank you for coming on this podcast Ive wanted to have you on probably since I...</p>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>[Music] welcome back everybody to uh the Wall Street coach podcast my name is Kim an curtain and today Im very fortunate to have Mike bellori here with me today how are you Mike good how are you Im doing great Im doing great uh thank you for coming on this podcast Ive wanted to have you on probably since I started my podcast four or five years ago so you made my day when you agreed to come on so thank you well well see how this goes because there there is a hurricane that is coming through Im in Miami right now at our new office and uh as as luck would have it there is a hurricane imminently ready to hit oh my God I I think its I think its gonna miss us but you know you you know how those things go so if this goes down in the middle of the interview it its not me its the hurricane has come early and change direction okay its not because she didnt like my question although if you ask a question that I that I dont like maybe Ill use that as an excuse cut</p>
+<p>the camera I good to talk to you so you know part of how this got started was besides my continuous hope to have you in the podcast you put up a Tweet back in July and you were speaking about how every Trader even successful Traders have their own Kryptonite and that ultimately led me back to a blog post where you were talking about that I think its such a powerful blog post and topic if youre comfortable lets start there Id love to just have you talk a little bit about how every Trader does have to look for look out for their own version of cryp tonight yeah well thanks for reading that post and thank you for reaching out and seeking to talk more about it its an important topic yeah there are were fortunate to work with many Elite Traders here at S&amp;B Capital we are fortunate to have developed many Elite Traders here at SMB capital and the reality is in observing them and working with them that their path to success is not smooth yeah they and and these are the people Im talking about these are brilliant tier one Hall of</p>
+<p>Fame extraordinary Traders and none of their paths have been smooth and none of their existing trading goes perfectly and one of the things that we do at our firm is we have a monthly review with all of our Traders those monthly reviews are led by team leaders those team leaders happen to mostly be those star Traders those super successful Traders and they talk about how theyre doing they talk about their prior month they talk about their goals going forward they talk about their wins and their losses and their stumbles and their success and those Traders even even the good Traders get themselves in trouble at particular times so Im thinking of one Trader who I would just call a Hall of Fame Trader in our space yeah who for whatever reason gets himself in trouble by shorting stocks on the way up putting on too much risk with stocks on the way up before theyve shown weakness before the price action has confirmed that their thesis that hey the stock is overbought and should go down actually shows that its going to do that and they we we call it getting on the front side</p>
+<p>not to be too technical but getting on the front side of a trade meaning shorting it before its actually started to go down and you know that that parts thats not terrible theres lots of different ways to tr trade its not ideal to short on the front side but there are many successful traders who do that and do that well but putting on too much risk can be problematic and then observing that you get yourself in trouble by putting on too much risk on the front side and when you measure results that is your Kryptonite and uh doing that again that that becomes a problem and so you know this one particular Trader in this particular instance identifies his Kryptonite he identifies to the people on his team Junior Traders yeah other Traders this is where I get in trouble this Elite Hall of Fame Trader identifies to his risk manager this is where I get in trouble the risk manager is gonna remind him if he sees if the rest manager sees that this Hall of Fame Trader is putting too much risk on the front side hey remember yeah this is your Kryptonite</p>
+<p>this is where you get in trouble lets lets lets pull this back here maybe lets cut this position or lets at least limit our risk and so you know there there is this and this is a Hall of Fame Trader this is a Trader that needs reminding from a risk manager this is a Hall of Fame Trader who also needs some poking from Junior Traders on this team who will hold him accountable to hey let dont get yourself in trouble yeah and and that happens and Im thinking of another Trader who is a huge success success story at our firm he is somebody who is probably one of the most systematic Traders at our firm theres lots of different ways to trade as I said some people like to use more discretion some people are really systematic I started more as a field Trader more of a discretionary Trader this particular Trader super systematic with this trading and even this Trader gets himself and hes a mid seven figure a year Trader pretty pretty good Trader yeah this Trader continually gets himself in trouble when he buys stocks that are going down that had been</p>
+<p>strong before these stocks have actually shown that theyre going to turn and go back up and he will be way too optimistic that these stocks that had been strong will go back up and he is way too optimistic that past price will dictate future price and as we all know there are different Market regimes Market regimes change and when you shift Market regimes its not always the case that the strongest stock will turn around and in fact when Market regimes change you know particularly when the FED started increasing rates uh after covid and when they started to Signal they were going to do more of that those stocks that have been super strong when they pulled in and had for two years gone straight back up stopped doing that and they pulled in they Consolidated and they went down further and so one you know one of our mid seven figure a year Traders will draw down too much well be too optimistic that things are going to turn around and its fine to lose a little bit of money its not fine to lose too much its not fine when you recognize this is</p>
+<p>your cryptonite not to have Solutions in place and so this Trader will go out and and seek solutions for this particular Trader it will be how much hes willing to lose on a particular trade so this trade hell be clear with his risk manager and his teammates and the people he shares a joint account with how much theyre going to lose yeah taking a half step back we do a lot of what we call join account trading and so Traders at our firm youll love this I think we this is something that we do uniquely in the prop trading space at least certainly this is done in the hedge fund trading space but in the prop trading space this is a lot of what we do is Traders will trade their own account theyll have their own book theyll be responsible for their own p&amp;l and then they will also simultaneously trade a joint account with other Traders where maybe one or two Traders are are in this account maybe two or three maybe three or four Traders are are trading their their a book together theyre theyre teaming together wow to put their strengths</p>
+<p>together uh to do better and so um yeah I mean these are these are real things that that happen to the Traders we we have seen lots of Traders go from zero to seven figure year Traders weve seen eight figure a year Traders born at our firm and uh there all of them at some point and I say this because I hope it provides some Solace to independent and Retail traders who sit there and say why is this not so easy exactly its not easy not so easy yeah and even the really great Traders its not easy for them yeah the path wasnt smooth it doesnt continue to be smooth and so if its hard for them and they have to put Solutions in place they have to find Solutions and then execute on those solutions that you do too I want to thank our sponsor Centerpoint for sponsoring the Wall Street coach podcast and if youre ready to experience 60 days commission free and their exceptional customer service then please use our link to check them out now back to our podcast it feels like such a huge uh assistance at them identifying these</p>
+<p>challenges in Kryptonite is that collaborative uh accountability that sense of having a risk manager and even uh their colleagues you know peers witnessing pushing back poking as you said uh I think that too in you know a single day trader doesnt get to have they dont get to have any collaborative experience except maybe what they speak to in a Discord room how important is that trbe whether you know obviously in person is the best but what do you see even with that joint account do you see a difference and how they trade a joint account versus their own account oh absolutely so Im in Miami right now as I mentioned we have a new office here but Im also in Miami because were celebrating the success of two of our traders who have hit milestones in their p&amp;l that they set for themselves a while ago and we said to them hey if you hit these Milestones were going to come down and have a big party and so we came down and we had a big party so we had a great dinner last night had an amazing sushi place oh so good we</p>
+<p>ordered the food didnt stop coming I think H so the food kept coming for an extra hour and a half after we were all full oh my God and the drinks Camp kept coming two hours before we all had had plenty that so great it was a great time and we actually also had the opportunity to talk about why two of these Traders had been successful yeah and to explain this yeah and to to supplement your point two of these Traders also trade with another Trader in New York city so and this this New York City Trader was down celebrating with us as well it was fun to have him there too and so these three Traders all are on what we call a team they all trade together they trade a separate book but they also trade a joint account together theyve all agreed that certain trades they will put on they will put on risk together and listening to the three of these Traders talk about their success the one of them said it really well which is each of them brings different strengths to their team so one Trader whos a mid</p>
+<p>seven figure a year Trader and is in his 20s and its probably gonna go on undoubtedly hes going to go on to become an eight figure year Trader yeah this Trader May may become in time he may even be go on to become the best Trader at the firm we well see super talented Trader loves trading just a a super talented person and and you know probably somebody that if he wasnt at SMB he wasnt ATB Capital would be at home being trading as an independent Trader and nobody would ever think that this person needed to do anything more than he was doing yeah um but this person whos at our firm recognizes that theres so much more to do and theres so much more money to be to be made and hes the person whos a great momentum Trader when stocks get out of their range hes a massively talented has tremendous EV on on momentum trades and thats thats what thats what thats what his biggest skill is yeah on the team also is the idea guy the guy who is always shouting out we should be in this hes the guy whos</p>
+<p>always finding the next trade hes the guy with the most enthusiasm and the most energy out of anyone but that guy needs to be tempered a little bit right because all of his ideas are not good yeah and all of his energy misdirected will certainly just kill your business totally you got you gotta make sure youre selective with the trading um but the but the momentum Superstar is getting more IDE for him to play offense on from the the idea guy and then theres another Trader on their team whos just Allstar at being structured hes the structure guy hes the guy who brings it all together its not gonna be the best idea guy is not going to be the the best momentum guy but he provides structure for everybody else and the three of them together are able to do so much more than each of them individually yeah for sure and and thats super fun and and the other thing that just brought a huge smile to my face is that this one particular trading was leading the conversation talked about how much fun it was to do this together with his other</p>
+<p>really good friends how much fun this was to spend the day watching screens watching data flow by with his two other friends and how much fun it is for all of them to be thinking about being an eight figureure a year Trader being number one at the firm in time being the best team at the firm in time doing it together they were not alone this was not a silo this was three guys who love trading who do well individually who were doing even better together yeah yeah I cant help but think of the observer effect you know just that that OBS when were being observed we sometimes just have more uh desire to give it our best because we realize others I I believe were social animals and we know others are depending on us and watching us and uh it just sounds like theyre like this perfect three-legged stool very balanced with each having their own strength did did they have this self-awareness when they started did that self-awareness develop over time how do you what do you do with regards to encouraging them to know Im the idea guy Im the structure</p>
+<p>guy does that just reveal itself I think one of the jobs of the firm is to match people up and say hey I think you guys would work together I think one of the ideas of managers is to help people understand that each of you has different talents and a business your best business would entail these characteristics and then and then kind of push them a little bit and then let them run with it I think thats I think thats the job of a firm uh to be able to do that a little bit yeah but you know the these are guys who Ill just share with you yeah something that its not going to get out of my head for the next three months and we were talking about what makes a successful Trader our head of Trader development was there my two other partners from New York were there were always trying to study success what makes these guys different than other people like why are they making more why are they why are they succeeding when that other smart person we brought into the firm is is not doing as well our</p>
+<p>job is to help and give people the best opportunity to succeed you know our job is to make sure everybody has a has a chance like whats different about these guys yeah and what really stood out and Ill just share what their opinion was their opinion was in ter in terms of self-awareness is that they saw their hunger they saw their intensity they saw they saw their competitiveness as different than other people in our space and perhaps other people at the firm who are not doing as well and they were just going back and forth about the fact that its not about Talent wow its about grit and its about grinding it out and its about getting the work done and its about wanting to be the best and its about never letting up until you are and its about pushing risk really hard because you want to be number one yeah its about I made $5,000 in a trade the next time Ive got to make 15,000 and its not good enough if I dont yeah and its about if I make a mistake Im not leaving the desk until I figure out a</p>
+<p>solution so I never do that again yeah and for those guys it was and you can see it yeah when theyre talking you can you can feel the intensity and the energy uh just just being at the table with them the these guys are getting after it I want to thank our sponsors Centerpoint its the treating platform where active Traders Thrive and receive exceptional customer service if youre ready to experience 6y dates no commissions sign up using our link now back to our podcast to hear all of those disciplines being practiced and wrapped up in what you said a few minutes ago about how much fun it is for them so lets talk a little bit about that because we know that I mean lets hope everybody listening knows its hard work but Im curious especially because you talk about that in this amazing book which I didnt realize you were so funny to be quite Frank you have an excellent sense of humor Mike you made me laugh out loud a couple of times so how important is that quality the ability to have a sense of humor the ability to have fun to</p>
+<p>work really hard but also you talk they have you have to love it so those are qualities we dont hear often but Id love to just understand your take on the loving it on your own sense of humor I I presume that has served you so and these gentlemen having all that g res hard work but also theyre enjoying themselves so when our head of Trader development Jeff Holden and I talk about how to teach there are principles that we want to make sure are adhere to for every single one of our meetings and I have to tell you that one of those principles is its its not enough to just give people a lot of information its also got to be fun we also have to make sure that every meeting we have is competitive that all of the people in that room no matter what the meeting is about if were having a morning meeting where interns are sharing their best idea for that individual morning session theres a competition who came up with the best idea yeah but were also making sure its fun and one of the things its fun is</p>
+<p>you actually get a an award if you do come up with the best idea yeah and we have all these different meetings throughout the day for for our intern so we have a morning meeting we have a trade and development meeting at 11 oclock where we go over the best ideas from the open we have a reading the tape meeting to improve our skills with that we have an easy money trades review we have I do a Playbook trade we just did one today this is a good example so we have a Playbook that was my second book by the way we have a Playbook exercise thank you we have a Playbook exercise that we do that helps people to organize and build their trading business yeah and we we go over very specific best opportunities in a template form which I lay out in the Playbook and this enables people to Archive catalog build a trading business which they then just run in real time and so so during our Playbook meeting today here in Miami we brought our newest Traders our developing Traders you know guys who just started just started trading into</p>
+<p>our conference room here in Miami and I said instead of me actually doing this meeting lets have Azie get up and pretend to be me and for him to give the feedback to the person who and it its its you know its its its funner its a little bit funner to hear intake from a newer Trader closer to the person who is presenting than you know me the the veteran guy who maybe not at at the same point as you and so thats important I mean look we sit in front of screens for a long period of time yeah and theres a lot of data theres a lot of pressure theres a lot of stress we all we all want to compete having people to uh yuck it up with banter back and forth with that team that I previously mentioned yeah Ill walk by in New York Ill walk by the trading station of one of these Traders and Ill hear him just like cracking up for like two minutes and I walk by Im like what what the heck are they talking about so funny but theyre having fun and I think thats</p>
+<p>important its awesome its awesome uh I have about five pages of questions but we probably have about 126 people who are going to be in the xpace in about two minutes so Ill close this down maybe Ill get to have you back on another time to ask all of my questions but were g to take it over to the xpace now and I just thank you so much for coming on this podcast so all right well see you there or well hear you there great exactly I hope you have subscribed to the Wall Street coach podcast and if you havent its time to do so see you on the next podcast</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The Wall Street Coach</h3>
+                    <p>Transforming Wall Street from the inside out.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../tpi.html">TPI Assessment</a>
+                    <a href="../coaching.html">Coaching</a>
+                    <a href="../about.html">About Kim</a>
+                    <a href="../podcast.html">Podcast</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Connect</h4>
+                    <p>Email: hello@thewallstreetcoach.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Wall Street Coach. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>

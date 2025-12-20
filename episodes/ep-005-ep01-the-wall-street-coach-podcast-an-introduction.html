@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP01: The Wall Street Coach Podcast: An Introduction - The Wall Street Coach Podcast</title>
+    <meta name="description" content="today on The Wall Street coach podcast with Kim and Curtin I am Kim at Curtin were all overwhelmed I am an executive coach and were all struggling with the">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #08333A;
+            color: #fff;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            margin-bottom: 3rem;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--gold);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>EP01: The Wall Street Coach Podcast: An Introduction</h1>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <!-- Video Embed -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/xE3QX5ojc-Q" 
+                    title="EP01: The Wall Street Coach Podcast: An Introduction"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="episode-body">
+                <h2>Episode Overview</h2>
+                <p>today on The Wall Street coach podcast with Kim and Curtin I am Kim at Curtin were all overwhelmed I am an executive coach and were all struggling with the demands of this time the reporters were covering the collapse of Wall Street called me The Wall Street coach people were fired in the spot this...</p>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>today on The Wall Street coach podcast with Kim and Curtin I am Kim at Curtin were all overwhelmed I am an executive coach and were all struggling with the demands of this time the reporters were covering the collapse of Wall Street called me The Wall Street coach people were fired in the spot this podcast will give you tools to cope one man had been fired weeks earlier and kept going to work because he couldnt bear to tell his family and tools that help you find more peace of mind so the plied practices self responsibility self and other empathy people are not really good at giving yourselves empathy emotional connection learning how to be with whats hard to be with embracing your inner hero from each on a heros journey and mindfulness learning how to be and not do what I hope this podcast does is facilitate people being more gentle with themselves the point is ladies and gentlemen is good dont confuse greed with desire you dont have to exploit other people to get what you want having desire money has become this powerful symbol for wealth but you can have all the money in</p>
+<p>the world and if you dont have peace of mind youre not gonna be a happy camper myself I dont hold on to a loser the moment it doesnt feel right I let it go get away from it oh its so easy to lie to ourselves whether its holding on to a losing position in a tree or in our life dark ego does not like to be wrong but that lie will cost us each and every time The Wall Street coach podcast with Kim and Curtin I love how everyone I have wanted to do a podcast for probably nine years so Im very excited to be here today with my partner in crime Glen Aslam he enrolled me in getting this done and his technical and IT skills and wisdom are the only reason I can pull this off so Im very grateful to you Glen thanks I think really what I hope this podcast does is it facilitates people being more gentle with themselves I think for the most part what I see in common with all the clients Ive ever worked with and just friends and colleagues in general is that were all kind</p>
+<p>of overwhelmed and were all struggling with how to cope with the demands of this time in our lives and theres a lot of information coming at us theres a lot of noise out there some of the noise is valuable some of it isnt but I really hope that what this podcast will do is give you tools to cope and tools that help you find more peace of mind and find yourself more awake and more conscious because I think the more conscious and awake we become theres less drag like a swimmer in pool so hopefully thats what these will do for you Ill talk a little bit about myself and who I am and what my background is for those that dont know who I am but before I do that Glen Im gonna ask you to just speak to a couple of the unusual journeys youve had so people know who you are and especially your folklore background because of my love of mythology and I think thats so valuable so please tell us a little bit who you are and what youve been up to with your podcast so my unusual experiences is what</p>
+<p>youre interested in yeah so my background as you mentioned with with folklore I have a masters degree and I went through a ph.d program almost almost got the PhD I started writing my dissertation and then I jumped into the business world worked for a medical device company for thirteen years instead of finishing the the dissertation of finishing the PhD but you know so people when they hear folklore they think that its about telling stories or like urban legends or they think that Im a storyteller and thats about performance and performing folklore or a lot of times people will will bring a story to me and theyll say hey Ive heard this is that true its awesome but its also annoying because the its its not it doesnt matter if its true or not what matters is the value that people give it and the meaning that it provides in peoples lives because that meaning in that value is real thats true whether the story that brings that meaning and value is true or not then a couple of years ago I started podcasting for a living and thats what I do now I produce podcasts</p>
+<p>and then met you a couple months ago you did some things for another podcast that I work on and thought you know Kim you should have your own podcast youve got a lot to say and a lot to offer to people so thats what were doing thats were doing its awesome I I Im not sure I have this quote right but Joseph Campbell I think said something about you know whether it happens or not does it mean it cant be true and you think theres some really valuable truth to that and I think its a little hard to wrap your head around that concept initially when you start to maybe dive into the mythology or to folklore but ultimately I think you begin to see that and and that I think takes a little bit of courage to stand in a place of its not defines its not as dogmatic if you will and I think you know we we are built to like dogma were built to like certainty we like black and we like white you know Im not Grinch and shades of grey and I think the shades of grey is where</p>
+<p>you know maybe we need to get more comfortable and living there and thats writing folklore and mythology can do for us for sure and spirituality for that member so yeah so okay so so thank you for telling us who you are a little bit of for you youre certainly not all of who you are I am Kim and Kourtney I am an executive coach I started coaching almost 13 years ago maybe a little over 13 years ago I worked in finance for almost ten years prior to starting a company called The Wall Street coach I will hired an executive coach early in 2000 I think it was and it was transformative and after experiencing the executive coaching I felt really called to become an executive coach and Messala how long did you do that Kim how long were you being coached I think well gosh I mean then probably lasted about a year but Ive been systematically coach thank them non-stop you know maybe I take off a couple of months here and there but I have faced this and we had either a coach or a spiritual teacher constantly working at developing myself if</p>
+<p>theres one thing I felt that was in my clients best interest I saw that the more that I was with things that held me back the more effective I was as a coach yes you know my accountant almost every year says I have never seen anybody who spends more money Im then you can Im like I got a lot I asked for therapists when I was 10 years old actually because I need to get me some tools early for the household I was in so you know Im committed to self-development and Im one of those people who would rather be in truth than in comfort which you know is not everybodys choice but thats the choice that I have so but the you know if we go back to Joseph Campbell and the impact he had on me I saw him in power of myth with bill moyers probably I think what was 1986 when that was airing on PBS its one of the most part PBS series of all time and actually in it he talks about finding your bliss now you know Im 21 years old 20 and my sister and I loved</p>
+<p>it so much we got the cassette tapes and we used to listen a camel its six hours long we still listen to him in our bedroom like going to sleep at night all the story hes one of the best storytellers Ive ever heard and he talked about finding your bliss and even though I loved what I did in finance even though I loved the strategy the level of perfectionism super intelligent people it was like every day was a chessboard in front of you or five chest being in front of you if I knew that that bliss that it wasnt my place like I knew I was good at it I was well compensated very generously compensated but there was part of me that knew it wasnt my bliss but I couldnt find it so I was looking all the time for it and then Id literally was in the Dean &amp; Deluca coffee shop in Borders Books Music in a Time Warner Center and I was talking to the coach that I was thinking about hiring Kate Brodsky and where was this this was lets see 13 years ago 14 years ago so yeah 14</p>
+<p>years ago and she she started to describe CGI to coaches training institute was her curriculum how she had been trained and as I heard her describe what happened in coaching and the style of which this function would happen for me I can only say that it felt like the heavens opened and the angels saying it was just like this bolt of lightning went right through me and I was like oh my god this is it this is the Bliss it was just instant knowing now 14 years ago and I have not once no matter how hard if its being an entrepreneur I have never once doubted that that is what I was going to do Wow what did she tell you what did she say about coaching that turns you on so much you know I dont even know if I can remember or articulate what the words were it was something to the effect though of how coaching will do naturally creative resourceful and whole and therapy which I had had often held you as though you needed to be fixed and it was the context of finding out that everything we do is</p>
+<p>in service to patterns we learned in our you know childhood or our lives and so that these are all coping mechanisms that may not serve you now but that doesnt mean that they didnt serve you then and it was just a radically different way of holding somebody and seeing them be able to its almost there theres a quote that talks about you know you you dont treat people as they are you treat them as you see them becoming and thats the essence of that I think I picked up in that initial conversation that she was going to be able to see me not as I was in this moment but what was what I was capable of the possibility of me if I got rid of what was dragging me down and I met her and initially at a high ropes course I havent bit a fear of heights I mean lets just say I have a fear of heights of standing on a rope high up in the forest like that is not my cup of tea but I did it because I could see I had a lot of resistance and it was</p>
+<p>during that high ropes course I met her and thats when the conversation began so all from that high ropes course and the way that she helped me and another coach that was on site that day they were simultaneously pushing me way beyond my comfort zone while also meeting me with empathy but if I needed to stop and it was too much for myself I could so it was the most amazing way to be held of like somebody saying you can do this and yet also understanding that you may have hit your wall so there was room for me to go left or right it was ultimately my choice and because of the way they helped me you know emotionally or you know kind of spiritually if you will I did it because I knew I wasnt going to be ashamed if I couldnt do it but I also saw they were like you got this and then I was able to see that I did have it and Im say lets go forward so it was I think all of that together you said something when you were comparing it to therapy that kind of</p>
+<p>kind of hit me that you you and so I want to see if I got this thats right you said that therapy took the approach is that youre somehow broken and that you need to be fixed whereas it sounds like what youre saying about coaching is that every experience youve ever had has brought you to the point where you are right now and and and look at this trajectory look at this path look where it could lead you yes and so dont feel shame that youre not there right now it doesnt mean that youre broken yeah look what you look what youve experienced look what youve accomplished look what you could do if you really focus and put your mind to it and that thats kind of the difference totally and if youre anything cool think about how you respond to things lets say you react to things right and thats not how you want to be well before you can change it you first have to acknowledge that that actually once served you that kept you safe at one point knowing how to do that or you know kind of reconfigure yourself to handle</p>
+<p>somebody challenging in your childhood that saved your past in a way and now it potentially cost you because the environments not the same but people arent the same but that takes some getting used to so first you have to FM to people yourself and say wow that really served me then now not so much and then you can you know firsthand under P for the fact that that is there that kind of reaction is there and then by accepting it noticing it observing it you can onions in the direction of transcending transcendence for sure nice yeah so so its been an interesting journey and I am still coaching people now and I have a team of coaches and Im very fortunate to have some amazing coaches on my team that you know have also been coaches for a long time and I live in Hawaii now so that was like you know a major kind of life change that also I didnt really see coming but I lived in New York City you know before I moved here and yeah why did they call you the wall street coach whered that name come from they</p>
+<p>may call me the wall street coach because I sat outside the stock exchange on October 7th 2008 which happened to be the date the market drops about 500 points which is is I found that to be a really interesting Im doing this today even market drops yesterday even more than that I think was 767 or something like that so I had struggle it started the business a year and a half prior I didnt have a focus on finance you know professionals I really was just focused on coaching anybody I thought I didnt have to niche you know everybody said you have to Mitch and I thought oh Ill be one hes different I dont have to but you Sony didnt sow naivete and and basically business was slow I had done initially okay that first year but the summer of the week things were not going so well I was very nervous financially because I walked away from you know a great salary and I could see that people were cutting I was already seen a crisis of OE happening in the air it was already showing up in people not doing any kind of</p>
+<p>superfluous income I think coaching isnt it is a necessity but I think some people see it as a luxury and at the time undoubtedly that was what was going on so the decision came from a car ride back from Jones Beach with a girlfriend of mine who heard me loaning about business and she said you know I had done this Free Hugs movement this guy one man had started a couple of years back so I did a Free Hugs experience in New York every year the Sunday after Thanksgiving with a group of people and my girlfriend said you know that Free Hugs movement what if he did free coaching and I was like that sounds crazy and I was like but I am desperate like I need to do something and and I just thought where would I bring the free coaching I did that and the first place came to me was the stock exchange like where is there you know the heart epicenter of Finance and I thought well I certainly know those people and how tense it is on a good day they must not be you know thrilled right now because</p>
+<p>things are not going so well but of course we knew that that was the day the market would so significantly so I went there not on that day prefer pretty much every week thereafter for about a year but within a couple weeks of course that first day even the reporters were covering the you know the collapse of Wall Street and the reporter reporters that kept coming up to me one of them interviewed me as I was coaching people there on benched doing 20-minute sessions and he called me the Wall Street coach picturing Lucy from Charlie Brown with the little sign and the lemonade stand is that what you had with the coaches in the coaches and and I looked a lot like Lucy sign I even put the square box over the end its like her you know her little stands for advice and you dont pull the football away when people try to kick it do you like set him up for failure and then just break out really you dont do that so it was just one of those things where honestly if it was the if the chaos down there and and</p>
+<p>you know the crisis that hit that didnt take place I I dont you know I were really nice Kashmir cold child for peds like I looked as dressed up as I could possibly look because I thought they got crazy yeah I mean Im kind of crazy but theyre gonna think Im a lunatic and that day though honestly and theyre after that whole time people I dont think in their normal right mind would have approached me they did because they were desperate to talk to somebody and you know sue people were fired on the spot one man had been fired weeks earlier and kept going to work as though he still had the job because he couldnt bear to tell his family there was just a lot of tears and frustration and spear that was down there so it was it was meant to be and then you know after that article came about I remember checking you know going to go daddy.com it was like The Wall Street Coach is that can i buy that dont there was eight dollars and fifty cents and I was like wow but you know now I havent trade</p>
+<p>but so yeah so its not like kismat like that was what I was that was the direction I was meant to go I just didnt see him for myself I dont think I would have had the MA see to call myself the Wall Street coach so obviously the universe kind of stepped in and pointed me in the right direction which done many times when Im you know over here and I need to be over here so yeah so what do you feel like your impact as a coach has been like for those people on that day when you were doing it for free and then for clients that youve had since then in what ways do you help them I think give people just a little bit of spaciousness you know I think if anything I teach them how to get their oxygen that they cant maybe find the mask in the middle of the crisis I think whenever theres turmoil or chaos which often is what pushes somebody towards coaching and when I think back to the people that day who are in the crisis people are you know youre not breathe literally not</p>
+<p>breathing and emotionally youre not getting any of your needs met so first its about empathy learning how to give yourself some empathy learning how to give yourself some space to feel the feelings youre having panic fear anger all of those things kind of need to be felt but we need to I think weve been taught that those hard to be with feelings are not acceptable in our culture in our society so I think what I give people do most of all is I give them permission to be a feeler of their feelings and when youre a feeler of your feelings even though that could be very hard it is its its like the pots of the way that comes out if you stop the feelings if you push the feelings down or numb the feelings out then youre not going to be able to discharge the very infection that needs to be discharged so if thats anything I hope that I am constantly giving to people its just a little breathing room a little empathy and the room and space to just feel her feelings without feeling like they need to get over it really</p>
+<p>quick so you said you said earlier that you think everybody should use a coach that the coaching should be a necessity and not a luxury what is it that you are able to do to help people feel their feelings that people arent able to do on their own and why isnt this something that somebody could just look in a mirror and do the Stuart Smalley because Im good enough Im smart enough and doggone it people like me so I make Saturday Night Live references every once in a while Im good enough Im smart enough and doggone it people like me I like what is it that that the coaching does that people cant do on their own mm-hmm its a great question I dont I think we are built to be in community I dont think we can do this simply on our own we are built for connection with another human being and I think we have another human being see us and acknowledge us theres a beautiful quote from Martin Buber who is a Jewish theologian who says the greatest gift you can give to another human being is your presence thats it</p>
+<p>so that cant be we cant give ourselves our own presence perhaps in meditation we can perhaps if were in a place of that you know connecting to the divine maybe that is when we can be present to our own presence but I think in the day to day living and experiencing of things we need to have connection with another human being if by seeing them we see ourselves and not kind of back and forth is part of what I think happens in coaching or in any kind of conversation you know even empathy right having somebody empathize with us changes our experience we dont feel as alone or isolated you know what is it no man is an island right were not islands we need to be in connection and thats part of why I think theres so much pain right now culturally because of social media and connection with the phones the iPhones and you know so on and so forth were very infrequently looking at what another you know they even talk about babies when theyre you know with innocence if they dont consistently have eye contact with their mother or with the caretakers</p>
+<p>theyre not going to thrive as as others would we that doesnt go away when we grow up we still need that my connection but its easy you know at least in big cities now this is part of why I live here in Hawaii in big cities you can walk down the street you can walk through your whole office you can walk to a restaurant and not have anybody look you in the eye an apple should trademark that the eye connection app but where you just like you just like stare at somebodys eyes and that is that thats kind of its not to work because its not a machine I mean it covered better than nothing which is what we have now but honestly put down the phone you know thats what we need to do and and not just for our own sake but for the sake of everyone around us we need to look at the person in front of us and acknowledge them and see them and it doesnt even have a smile even maybe it does but it means we have to be like I seen you and then they see us</p>
+<p>in return and it has if if you if you find yourself you know even just doing that you know and people you know I used to live in New York City in the subway you know in the mornings at rush hour trimmed up against people and theres you know that sense of trying to not invade peoples personal space because youre all in each others space but you know maybe its not the guy right here whos in front of you but maybe its the woman over there whos you know a couple of feet away you know you can just give her a smile because youre all standing cramped in there waiting for your stuff you know theres a small ways that you can do that that wont feel compromising but it can make it can make your day it really can just a nice smile from a stranger or connection some sort were certainly not getting done enough there Im a big fan of Esther as their Carol shes a relationship expert brilliant brilliant woman cant say enough good things about her and she is said she asked this question in the talk I watch the</p>
+<p>other day and she said how many people sleep with their phones next to their bed and how many people stroke their phone when they wake up in the morning and then she took it further and she said how many people stroke the phone first but if they end you have somebody laying next to you in your bed and then she was like thats up if youre stroking your phone in your bed with somebody sitting next to you before you stroke that means being or connected Im human being and I thought wow that just it just says it all you know so its it takes practice right this is were all addicted now whether we like it or not to the phones but I would say that connection is is key to why you may be not feeling your best so how do you how do you create that connection when you work with clients through the internet because I know you do things through zoom or Skype yeah and its not always the the person-to-person connection that youre able to create I mean even this podcast you know youre creating something thats going directly into</p>
+<p>peoples heads through their ear holes yeah and and in my experience theres there is a sense of community that can develop a sense of connection that can develop in the sense its still connection right so Im ideally saying we all need human connection of looking one another in the eyes however that isnt always possible and you can have a conversation with somebody there are actually some clients who prefer to do their coaching without the video because they may get deeper because theres nobody looking at them or theyre able to just speak more freely if you will I like in it you know I think back to I was raised you know in my early childhood Roman Catholic and I remember the confessional box you know the professional box would initially build because people didnt want to have to look in the eye right they were he was poor the priest was supposedly representing God and it was this concept of like being able to confess it without having to look at somebody right and just not be ashamed and I think sometimes the same is true when you coach with somebody just by phone there</p>
+<p>there theres no distraction of the visual but connect presence continues so its its not about whether or not that client can see me but even if theyre on just audio or theyre you know were just on the phone together they can feel my presence Im not multitasking which pretty much everybody is doing when you talk to them these days so and I and I request the claim to not multitask either so that they can be present to the connection that were creating together were creating that connection Kim what do you hope that listeners are going to get out of this podcast and what it is that you have to share with them my hope is that the people who listen to this podcast will find a community of like-minded thoughts that they wont feel as isolated in their quest for meaning even though they may have a lot of the trappings of success they are still looking for meaning and theyre still looking for deeper conversations maybe some philosophical conversations while still having practical tips and tricks to navigate what life throws us you know what Eddie what do you mean by trappings of success</p>
+<p>whatever what are those you know that theres a lot of people who Ive worked with who have you know the car theyve always dreamed of or the penthouse or you know the lifestyle they they get to go on holidays they got to do things that maybe in their childhood or in their younger years they never could have imagined and yet theres still the sense of peace of mind eludes them and I understand that because having your wanting that and not having your need not are two different things you know Ive had people say to me you know that they got a very expensive sailboat for example and that sailboat didnt give to them the level of satisfaction they expected it to and what I asked this was a person who had recently retired I asked him if he got his need for respect meant when he got that sailboat and he sort of gasped and he said its not why I got the sailboat guys possibly were gonna look into that a little bit and he paused and he thought of and he was like no I didnt get my need for respect mat now</p>
+<p>this is a person who would run a company he had had respect every day and now hes been retired so he wasnt experiencing what is a universal need to just experience respect and he thought maybe having that vote and the guys you know that come out of the club that all only votes and hed start to get that respect again now this was not conscious it was unconscious but he was sitting here now with a boat that he really didnt give a damn about and he couldnt understand why well it was because he he wanted the boat thinking it would meet his need first fact and once he understood what need was really driving him his ability now to get that need for respect met was way more possible as opposed to thinking you know you just build that whole what I liken this to getting our wants meant and not our needs met is trying to take out in New York City whenever he got trying to take out it was so good in the moment but you were hungry an hour later and thats what I say about your wants you can get</p>
+<p>that want that you really really are saying its so important to you but as soon as you do if it isnt really gonna meet the need that you have it youre gonna be hungry an hour later no matter how much youve done you said two words that Id like to hear you talk a little bit more about I want one of them the trappings of success why do you use that word trappings and then the other thing you talked about was was getting peace of mind and what what is what is peace of mind how do you know when you have it and like yeah what is that all about well Ill say what you do know is when you dont have it yeah mine you dont have it looks like sleepless nights looks like not being able to fall asleep looks like over indulging in things that you know are probably not good for you they are you know youll youll engage more in the things that numb us you know and numbing is not always alcohol or drugs numbing sometimes is exercise numbing can be work numbing can be shopping numbing can be</p>
+<p>you know constantly moving and not being able to stay still numbing comes in lots of forms but it youre consistently numbing or doing something it takes you out of the discomfort of the moment then undoubtably you dont have as much peace of mind its possible but that you know its hard to its hard to navigate because people are searching for that peace of mind and you get it when you numb so that initial first dream or that initial you know credit card purchased on Amazon or that initial you know project that you bury yourself in will numb and give you a little bit of immediate kind of jolt some peace of mind but it just doesnt ever seem to be a blast or it never seems to be enough and then the trappings you know I think I use that word and its importance probably by the golden handcuffs syndrome golden handcuffs are when you know youve youve experienced that when I left a hedge fund golden handcuffs are you know youre able I was able to go out to dinner four or five nights a week in Manhattan and go to the most incredible</p>
+<p>restaurants and have the most unique kind of cocktails and wear beautiful clothing and its lovely its really fun to be able to buy a beautiful pocket book I talk about some I you know kind of Achilles heel Im just a sucker for a new purse and you know these are the golden trappings you know and and what happens Im fortunate you know I didnt when I made the decision to become an entrepreneur I didnt have a family depending on me it was you know me myself and I but the people who are used to these high salaries for them to walk away you know theyre not gonna be able to afford private schools for the kid anymore their wife probably likes being able to go to that you know the the salon of the spa or the husband is used to you know taking lots of courses if the wife is supporting the family you know theres theres a lifestyle kind of level of what you are used to but they are handcuffs because youre like well then we have to stop going to you know the vineyard or the Hamptons I mean in the</p>
+<p>summers because we cant afford it if we if we let go of this salary if you will so the handcuffs the golden handcuffs are the trappings are part of why we stay there you know it was it was hard for me to and I and I had a moment after I became an entrepreneur where I got a call it was probably three months in from a headhunter because I had worked it probably one of the largest hedge funds in the world and you know I was in a very unique role and it was I was I was in a position where I could have really gone anywhere and this headhunter you know she quote-unquote was a friend but in that moment I was like she does like a commission which would have been nice and juicy if she placed me in this position but it was it was the mother lode it was you know chief of staff for a man who had a global company I would have been at the table any important meetings as a strategist with him I would have been flying on his private jet I would have been managing</p>
+<p>the private art collection I mean kill me now these are all the things that I like totally wouldnt have been so exciting and it was you know the most incredible salary and I remember having that moment like should I take this should I go this route as I was just starting my entrepreneurship because I thought god Im not gonna make that kind of salary its an entrepreneur not in the first year anyway and it was that temptation of the golden handcuffs you know that means I get to still live this lifestyle and if I become an entrepreneur you know Im gonna learn how to have to cook which I really dont like I didnt eat cooking and I was like this moment of like this is a lifestyle Im saying goodbye to if I go forward with entrepreneurship so thats golden handcuffs and trappings that is brave that is brave or crazy or both I dont know Im called slotted Tom hes the man I dedicate the book to he was a Catholic priest that really became you know a father figure to me and I was just devastated I wont even say the headhunters</p>
+<p>name I almost said her name but she was just like it was like you know putting filet mignon and fun in front of like you know a rabid dog and she was like I cant believe Ive just thought of my business how could you do this to me her names Heidi Im gonna just say her name get back at her little I like Heidi like what are you doing to me I just started shes like I know but its the most amazing offer and I was like that would offer for me you just want your commission on it because I knew I was gonna be a big Commission and just no no I just how could I not call you with this opportunity Jim and I hits it like oh my god just devastated so Im 24 hours Im like go to the pros and the cons the pros in the con and I called father Tom and I was just like hysterical I was crying cuz I thought I might be irresponsible to walk away from this unbelievable salary it was like you know more than a double what I was already making when</p>
+<p>I walked away from my hedge fund so I was thinking what am i doing am I out of my mind and I just poured my heart out to father Tom and I was like what do i do what do I do I think he was just pause you know he had these big pods and he just was like I think you have to follow your heart if your heart since youre born to be a coach you got to do that and I just burst into tears and I was like but I just think of myself that permission and thank God for him so yeah that was that moment that was one of those pivotal Forks in a road where I went the road less traveled so Kim what can the listeners expect to hear youre gonna youre gonna do six episodes at first what are these episodes gonna be about theyre gonna be about my five practices that are discussed in the book that I wrote called transforming Wall Street a conscious path for a new future this book features 50 men and women who succeeded in the finance industry who I felt had expressed</p>
+<p>and displayed integrity and a sense of consciousness about how they work how they live so the five practices were gonna kind of dive deeper into what each one of them means how I saw these fifty living it and these are the five that inevitably show up in my coaching with anybody that I work with and they inevitably are part of my life they are the five practices I strive to practice and no matter who I coach inevitably what shows up can be addressed by one of these five so I feel that these pipe are kind of a keys to the kingdom if you are able to understand these five and practice these five I feel they have the solution youre looking for one or more of them have the solution pretty much everybody is looking for I think they also be called sort of secret wisdom practices they might be called something different in the sacred wisdom of you know all the different kind of worlds religions or spiritual practices but Ill speak to them now and then everybody can kind of you know interpret them their own way the first practice is self responsibility</p>
+<p>and I learned about self responsibility thanks to Werner Erhard and his course Landmark Landmark Forum Landmark Education I did landmark about a year before I hired a coach and undoubtably landmark was a big part of why I hired a coach I went into landmark somewhat resistant I had two good friends who enrolled me in doing it it was a three-day intensive maybe its $600 its the most bang for your buck youre ever gonna get so if you want to till the soil on yourself and your journey and you want to have something thats going to kind of heat you up I would highly recommend Lambeth do I agree a hundred percent with everything they do no but theres so much value there in such a short amount of time for people it chills the soil it just really will kind of pull everything up self responsibility is what I learned in that course and what that means is that you take a hundred percent responsibility for how you live your life and and what does that mean I can say its the antithesis of being or feeling like a victim its realizing that actually you</p>
+<p>can live in possibility as opposed to living in a place of what what happened to you it was radical for me at the time I did not I can remember the it was like three three nights in or two nights in I had my friends show up who were there to encourage me they took I was so unhappy I was this close to leaving I was pissed it just like really was pushing my ego to the edge and I was angry and they walked in and my girl Elizabeth she had a rose and and my friend Todd and they both took one look at my face and she put the rose behind her back because she would like oh and I just looked the both of them and I was like I had Todd had asked me to make him a promise before the chorus he was very wise hes like no matter what happens Kym just promise me youll stay on the ride to the end he knew I was a woman it was my word I valued you know giving my word so he was like if you just promise no matter what</p>
+<p>and I was like Todd I can handle it hes like promise say it out loud I put alright I probably owe if they on the right pill yeah well if I had not made that promise I would not stayed I would that close to leaving because I was so triggered by it and anyway I stayed and my whole life changed because of that course and that was what pushed me in the direction of becoming a coach so self responsibility is its a its initially a jagged pill to swallow because it feels like youre because your head thinks it means accepting blame until you step into the the paradox of taking responsibility its actually the antithesis of taking blame but that is practice one and I do speak about that at length and well get deeper into that when we record that practice to is self and other empathy and the teacher that I had for that is a man named Marshall Rosenberg he passed away a couple years ago he created something called nonviolent communication he speaks to universal needs but he talked about how incredibly important empathy is and before were really in a</p>
+<p>position to give empathy to somebody else we need to give it to ourselves and I find that is something no matter what culture you come back you come from no matter what religious upbringing youve ever had people are not really good at giving themselves empathy practice three is something called emotional connection right learning how to be with whats hard to be with learning how to surf if you will hard to be with feelings sometimes even good feelings are intimidating for people love is a good feeling and can be very frightening to some people because it might be unfamiliar so learning how to be with that and I learned this had two teachers Raphael Kushner his work is actually called emotional connection in my book I misspoke it I call it actually emotional non-resistance learning how to be with emotions and also a man named dr. Peter Levine who talks about how feelings live in the body and until we feel them they just kind of are laying in wait hoping one day that maybe well give them space to discharge practice for is embracing your inner hero which is informed by Joseph Campbells work and</p>
+<p>his belief that each of us are here to be our own heroes and were all each on a hero of journey and practice five is mindfulness stillness learning how to be and not do which is something that I still strive every day to do because Im definitely a doer and being can sometimes may be uncomfortable so Im very excited about this podcast Im very excited to hear what the listening audience wants to hear me talk about I would love to have you either in the comments section or email me directly Kim at the Wall Street Coach calm topics that youd like me to address or challenges that you want me to kind of take on I am really excited to just give tools so if youre finding yourself in a challenge personally or professionally how about it share it with me obviously Ill keep your confidentiality happy to give you you know any kind of advice that I can directly through this podcast if thats what the audience seems to want so if thats what you need and you need some advice or some input or some coaching around a topic late on me if</p>
+<p>theres anybody who is interested in learning more about anybody thats in my book I interviewed over 75 people let me know and Ill see if I can get them on the podcast they have really fascinating stories so Im a big fan quotes and sort of a collector of quotes and I stumbled upon this one the other day from Geneva rock that I am absolutely so excited about I just can see it so many places in my life and the quote is rebellion is the other side of compliance but it is not freedom so a Hui ho as we say in Hawaii which means until we meet again and Im really grateful that you took your precious time which it is very precious today and spent it with me and with Glenn so thank you for joining us this has been the wall street coach podcast with Kim and Curtin find her on the web at the wall street coach comm and sign up for her newsletter get a copy of her book or schedule a time to chat with Kim yourself and if you like this podcast please give it a five star rating and</p>
+<p>write a short review on iTunes thank you for listening this podcast has been produced by ear candy productions</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The Wall Street Coach</h3>
+                    <p>Transforming Wall Street from the inside out.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../tpi.html">TPI Assessment</a>
+                    <a href="../coaching.html">Coaching</a>
+                    <a href="../about.html">About Kim</a>
+                    <a href="../podcast.html">Podcast</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Connect</h4>
+                    <p>Email: hello@thewallstreetcoach.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Wall Street Coach. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>

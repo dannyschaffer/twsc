@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episode 22: Holding Space for Yourself - The Wall Street Coach Podcast</title>
+    <meta name="description" content="this is really about being free to create what you want your life to look like we each are our own hero and how do we take the challenges that come our way">
+    <link rel="stylesheet" href="../styles.css?v=2">
+    <link rel="stylesheet" href="../styles-enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .episode-hero {
+            background-color: #08333A;
+            color: #fff;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        .episode-hero h1 {
+            font-size: 2.5rem;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+        }
+        .episode-content {
+            background-color: #F9F9F7;
+            padding: 4rem 0;
+        }
+        .episode-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            margin-bottom: 3rem;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .episode-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .transcript-toggle {
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+        .transcript-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+        .transcript {
+            display: none;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .transcript.show {
+            display: block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--gold);
+        }
+        .episode-cta {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .episode-cta h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .episode-cta p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .episode-hero h1 {
+                font-size: 1.8rem;
+            }
+            .episode-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../TWSCsite/Images/The-Wall-Street-Coach-Logo-Transparent@white.png" alt="The Wall Street Coach" class="logo-img"></a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
+                <a href="../about.html" class="nav-link">About Kim</a>
+                <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
+                <a href="../resources.html" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="episode-hero">
+        <div class="container">
+            <a href="../podcast.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to All Episodes
+            </a>
+            <h1>Episode 22: Holding Space for Yourself</h1>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="episode-content">
+        <div class="episode-container">
+            <!-- Video Embed -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/2juYExxl2Nw" 
+                    title="Episode 22: Holding Space for Yourself"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="episode-body">
+                <h2>Episode Overview</h2>
+                <p>this is really about being free to create what you want your life to look like we each are our own hero and how do we take the challenges that come our way and see those as the birth process of us becoming heroic can you meet that judgment that ultimately will serve us with neutrality this is the...</p>
+                
+                <button class="transcript-toggle" onclick="toggleTranscript()">
+                    📝 Show Transcript
+                </button>
+                
+                <div class="transcript" id="transcript">
+                    <p>this is really about being free to create what you want your life to look like we each are our own hero and how do we take the challenges that come our way and see those as the birth process of us becoming heroic can you meet that judgment that ultimately will serve us with neutrality this is the wall street coach podcast with kim ann curtin aloha everybody and welcome back to the wall street coach podcast im your host cayman curtin and my co-host is lucas peterson how you doing today lucas i am doing just fine how are you kim doing all right thats so great but a okay week thats a wild week we got a lot going on um and then i bumped into something which we just talked about making this kind of somewhat of the topic on this short podcast that were gonna do today um you know i was sharing with you right before this recording that something happened for me uh you know probably lets say sunday uh through yesterday that definitely triggered some ptsd in me over uh you know as a business matter and there were variables inside of</p>
+<p>it that probably sounded like smells like reminded me of something from way back probably you know lets see 30 years ago 35 years ago but i was on i didnt know that i just i just found myself until late last night unable to get unstuck so i thought it would be a good idea to share what happened with the audience because the listeners need to know like this happens even to somebody like me who does so much work on myself and how i even was oblivious to the triggering that it happened for me until i once but it took me more hours than i wish it did yeah and it undoubtedly happens to everyone it seems so i think so you know and look even the fact that i noticed it or had that aha last night doesnt even mean im over the ptsd doesnt even mean im not still kind of fragile if you will or like somewhat uh whats the word like uh still feeling a little bit off my game because just because i got what was going on for me last night doesnt mean its necessarily over like it could take</p>
+<p>it could take as long as its going to take and this is also part of what i want to share you know with the listeners is just that it you cant flip a switch and make it go away you know you gotta and ill share what i do and what i am doing to navigate it but uh yeah so i thought that would be a good topic yeah jump into it lets lets hear about it all right so i think there were just certain things there was some really i had very challenging you know experience in my early 20s due to a whole bunch of factors that to be honest im not even going to get into because it is its not really relevant to those who are listening but suffice it to say that it was one of the most probably trying times of my life and it lasted for a good eight to ten years and uh it was just incredibly incredibly stressful and uh frightening and you know confusing and so i think what happened for me you know from sunday till last night when i realized it is i found myself</p>
+<p>uh like on the verge of tears i found myself uh kind of shaking like like a like low-grade nervousness i found myself being in what i described thanks to the work of peter levine whos also been a great healer for me uh hyper vigilance i was i was in a state of hyper vigilance since sunday and today were recording on wednesday so this means every single thing that is happening in front of me from driving my car to being in the post office uh or on the road somebody cutting me off like my sensitivity is like completely raw and um so what happened last night is i just because it hadnt gone away and i found myself feeling even still emotional last night even though i had talked to a couple of friends and you know talked it out again just as though hey this is what happened but still last night i was sitting quietly by myself and i was just doing an inquiry with it myself like what has me so triggered because especially this is the other thing it all got resolved uh yeah yesterday morning exactly as i had hoped it</p>
+<p>would exactly as i had wanted it and yet i still was in the throes of this hyper vigilance so that was like the first indicator or flag that something was submits something was off so last nights what is like again i always recommend you use the word what is going on instead of why is this happening because you go why unless its defending and justifying so i was asking myself whats going on for me what has been triggered what is you know not at the same time i give it you got to give your body and your soul like a minutes answer right theres theres a minute or two to answer um so uh i wound up realizing that what i was feeling was fear like fear of uh an unknown and i was like what was the worst case scenario that could have happened if that didnt go the way i had hoped it would go and thats when i got oh my gosh this is something that in certain ways is similar to something that happens to me 20 years ago and although the variables are different it still feels could feel like</p>
+<p>seem like sense like the same thing and so then at that point i i must say there was a slight decrease in the hyper vigilance there was a slight decrease in me coming to this place of like oh that is what is getting uh triggered but that is not this right so one of the things i actually am an advocate of that i take personally uh are bach flower essence remedies if you guys have i dont know if you guys have ever heard of rescue remedy have you ever seen rescue remedy its like its in whole foods you can re bak flour assistance is a course that i took with joseph uh theyre energy medicine but rescue remedy is one that a lot of people are familiar with um which is you know its basically the essence of flowers put in a remedy for you to take uh for any kind of like emotional stress and so because of my knowledge about flower essences i took some fluorescences uh specifically rescue remedy which allows you when youre in the middle of shock or kind of trauma to have everything start to settle down um the</p>
+<p>other thing that i did is there is a technique uh that ive learned through mark wallmans work hes the author of book called it didnt start with you which talks about generational trauma and how even sometimes our own trauma isnt even wholly our own but can be ancestral it can be passed down through the generations so one of the techniques he teaches is to actually put your hand on your chest right in the middle and to press hard um and to just say to yourself quietly uh ive got you youre okay youre speaking in the third person is that the third person right youre speaking to yourself but youre speaking to yourself as if youre talking to somebody else right because you need to almost hear those words you are okay ive got you but just the practice of putting your hand on your chest what i can only report is my own experience and those who ive taught it to there is an incredible decompression that starts to happen because you feel as though youre being comforted and you feel as though youre being held and you are holding yourself you are holding the</p>
+<p>discomfort the fear the hyper vigilance in a way that is gentle and comforting and uh the piece of that that i just want to speak to theres a blanket right now actually on instagram that is very heavy the weighted blanket and that also too can be i dont have one but that can also be one way to support yourself and to um you know again find a way to just get some oxygen in the middle of the trauma the other thing i want to say about this too that i learned years ago there is an incredible incredible woman uh whose name just flew out of my head itll come to me in a second she actually uh suffered suffered you know struggled with autism um and she actually revolutionized uh the animal uh the what do you call that when animals are killed when when cows are killed and chickens they they uh were going through these processes prior to the them being you know slain for food uh purposes that would make them super nervous super hyper vigilant and what she noticed was that there are some devices she herself because of her own</p>
+<p>autism uh stood in one of these devices that kind of gave her pressure and even though it was for uh cattle she noticed her own sense of hypervigilance calming down um now autism is obviously different than uh or being on the spectrum is different than trauma and ptsd but there are similarities in the experience right so what she discovered was that if these cattle had this kind of slow great pressure as that experience unfolded uh their tension their fear levels would decrease and at least you know obviously i dont is she a vegetarian im not sure she might be actually even a vegetarian but she was so concerned at least about even those last few minutes of the animals having a different you know way out uh that she kind of revolutionized what i believe all the chicken assembly lines of purdue actually are so you know a complicated issue no doubt but just an incredible story i cant believe im forgetting her name i know it so well i know her so well ive read so much about her um so long story short what im trying to get to is that this is</p>
+<p>gonna happen sometimes for anybody because you can have ptsd yeah not everybodys gonna have had a volatile experience you know perhaps in their family of origin or in their childhood but if you had a bad experience with the dentist if you had a car accident if you uh found yourself lost from your parents once in a big mall or something like these these can all be triggering events later and the key is being able to trust that there that if youre being you know kind of having experience that feels overwhelming its possible you have some ptsd to not make it wrong to find a way to give yourself that comfort mark woman taught me that technique its a technique i still use i also use raphael kushners technique which is like whats happening now can i be with it and so after i like so here i am somebody pretty self-aware here i am last night and it took it took me probably 48 hours right 36 more than that almost 72 hours to even realize im in a ptsd im having some ptsd for myself and so i just want to say to everybody</p>
+<p>like at least i figured it out and today since last night like i have to say im calmer but im not completely over it so im gonna do what i need to do to caretake for myself today you know find ways to be gentler with myself find ways to have mercy maybe have a couple of extra conversations with like my friends or my sister to just feel supported to just feel loved to just feel like everything is okay right so ill pause there i had a lot to say um man theres so much to that but i think i think the biggest thing is is you know like you were mentioning the 72 hours or however long its taken but imagine if you just completely ignored it or tried to compartmentalize it over and over again like then youre never dealing with it then youre never acknowledging what it is and i think thats when thats when we start holding things like we youve had that newsletter a while back like that it was the body holds what the mind hides and its and that is like our emotions are these traumas that we have</p>
+<p>and you can like you said a trauma can be like getting lost in the grocery store like when youre five years old and then that might be triggered when youre 45 years old for some other reason that doesnt even make sense you know to yourself somebodys late somebodys late picking you up you could you could be starting to feel alone again and youre like im a grown-up why would i care well its because when you were little you had a really big risk if you were not with your parents yeah so but if you dont know that we also numb thats the other thing like it not just pushing it down but we i could have like you know just been drinking or eating ben and jerrys ice cream is you know my thing is ben and jerrys right looking at instagram like like theres definitely ways we all none that are different yeah so i think that the big work is is acknowledging it and i think thats and then even more so than that sharing it with with others like right now that youre doing thats uh yeah i think thats thats like</p>
+<p>real brave work and hopefully it allows other people to like reflect in moments where something similar might have happened to them so yeah and when i think back to bernie brown and the success of her first ted talk which i think is one of the most watched ted talks of all time i think it might be the most watched the most watched right which is the power of vulnerability she herself is very vulnerable in that conversation and i think too this is the other thing i want to just tie into this you know when i was thinking today about what we were going to talk about i was im in the throes of this so i was like huh do i want to talk about this im still in the throes of it i feel a little vulnerable i feel a little bit naked like for myself never mind somebody else and i had to make that judgment as well like it could have been that i felt no i wasnt ready to talk about this out loud with everybody and as you know im not going into all the details partly because i just</p>
+<p>dont want to get re-stimulated and re-traumatized by being with all of that hard to be with feelings again in the middle of a podcast as i have my whole day ahead of me oh my god yeah were just getting started todays just getting started so im like yeah no and and like i the advocacy that i have of raphael kushners work is you know he suggests you ask yourself the questions can i be with it and sometimes the answer is no i cant be with it i have a day of work ahead of me so im going to take this i was with it last night it was with it this morning now im going to put it on the shelf and im going gonna go through my day and maybe not as intensely as normal because i feel like okay im not a hundred percent today but then im gonna have to go back to it tonight at the end of the day or when i have privacy who the hell wants to do that like nobody including me but thats how im gonna find my way on the other side this yeah so</p>
+<p>anyway i know we have uh other conversations around this but well probably just close it there that sounds great sweet short with yourself yeah okay good all right so please visit our uh podcast on itunes we have it on youtube if you want to hear more conversations like this please let us know in the comments uh my understanding is those algorithms like comments so please talk to us in our comments well talk back yeah we will talk back we always read the comments uh we have some people who always give us comments like right and we love you brian were always commenting um and you know just let us know what you think about this topic if you want to hear more about it i would love i i will absolutely have rafael kushner on one day uh i would also love to have mark waldman on we should probably have him on his guest i have been trying to get peter levine on his guest um but he is super busy uh these are all the men you know i mean its funny i have noticed that i have a lot of men teachers</p>
+<p>ive always liked but its funny that i mean not that i havent had women teachers but i definitely had more men teachers um and i think thats fascinating i i dont id have to look explore that more what that is well figure that out another time another time all right guys so have a great day thanks for watching us uh and until we see you again ill say ahuiko this has been the wall street coach podcast with cayman kirkman you can find out more about her and her team online at thewallstreetcoach.com if youve enjoyed this podcast please consider leaving a 5 star review on itunes thank you for listening</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="episode-cta">
+                <h3>Ready to Transform Your Trading Psychology?</h3>
+                <p>Take the Trader Positioning Index assessment to uncover your blind spots.</p>
+                <a href="../tpi.html" class="btn-primary" style="background: var(--gold); color: var(--navy);">Get Your TPI Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The Wall Street Coach</h3>
+                    <p>Transforming Wall Street from the inside out.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../tpi.html">TPI Assessment</a>
+                    <a href="../coaching.html">Coaching</a>
+                    <a href="../about.html">About Kim</a>
+                    <a href="../podcast.html">Podcast</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Connect</h4>
+                    <p>Email: hello@thewallstreetcoach.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Wall Street Coach. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function toggleTranscript() {
+            const transcript = document.getElementById('transcript');
+            const btn = document.querySelector('.transcript-toggle');
+            transcript.classList.toggle('show');
+            btn.textContent = transcript.classList.contains('show') ? '📝 Hide Transcript' : '📝 Show Transcript';
+        }
+    </script>
+</body>
+</html>
