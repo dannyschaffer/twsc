@@ -289,16 +289,30 @@ def format_takeaways(takeaways_text):
     text = text.replace('–', ' - ')  # en dash
     text = text.replace('−', '-')    # minus sign
     
-    # Fix stray asterisks that appear inline (not as bullet points)
-    # Replace " * " with " • " to handle inline bullets, then we'll process them
-    text = re.sub(r'(?<!\n)\s*\*\s+', '\n• ', text)
+    # First, handle "Actionable Takeaway:" - add newline before it and format it
+    # This handles cases like "...past behavior.Actionable Takeaway: ..."
+    text = re.sub(r'\.?\s*Actionable Takeaway:\s*', '\n\n**Actionable Takeaway:** ', text, flags=re.IGNORECASE)
     
-    # Convert markdown-style formatting to HTML
-    # Bold: **text** or __text__
-    text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
-    text = re.sub(r'__(.+?)__', r'<strong>\1</strong>', text)
+    # Convert markdown bold **text** to HTML <strong>
+    # Handle properly paired asterisks first
+    text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
     
-    # Handle bullet points - convert * or - or • at start of line to <li>
+    # Handle malformed bold like **text* or *text** (single asterisk on one side)
+    text = re.sub(r'\*\*([^*]+)\*(?!\*)', r'<strong>\1</strong>', text)
+    text = re.sub(r'(?<!\*)\*([^*]+)\*\*', r'<strong>\1</strong>', text)
+    
+    # Clean up any remaining stray asterisks that aren't bullet points
+    # Remove asterisks that are at the end of text (like "Discomfort:*")
+    text = re.sub(r':\*(?=\s|$)', ':', text)
+    # Remove standalone asterisks with spaces around them
+    text = re.sub(r'\s\*\s', ' ', text)
+    # Remove asterisks at start of words (not bullet points)
+    text = re.sub(r'(?<=\s)\*\*(?=\w)', '', text)
+    text = re.sub(r'(?<=\s)\*(?=\w)', '', text)
+    # Remove asterisks at end of words
+    text = re.sub(r'(?<=\w)\*(?=\s|$|\.)', '', text)
+    
+    # Handle bullet points - convert * or - or • at start of line to list items
     lines = text.split('\n')
     html_lines = []
     in_list = False
@@ -316,6 +330,8 @@ def format_takeaways(takeaways_text):
         if first_line:
             # Remove any # prefix if present
             heading = re.sub(r'^#+\s*', '', line)
+            # Clean any remaining asterisks from heading
+            heading = heading.replace('*', '')
             html_lines.append(f'<h3>{heading}</h3>')
             first_line = False
             continue
@@ -333,24 +349,26 @@ def format_takeaways(takeaways_text):
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
-            heading = line[4:].strip()
+            heading = line[4:].strip().replace('*', '')
             html_lines.append(f'<h3>{heading}</h3>')
         elif line.startswith('## '):
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
-            heading = line[3:].strip()
+            heading = line[3:].strip().replace('*', '')
             html_lines.append(f'<h3>{heading}</h3>')
-        # Check for Actionable Takeaway (multiple formats)
-        elif 'actionable takeaway:' in line.lower():
+        # Check for Actionable Takeaway
+        elif '<strong>Actionable Takeaway:</strong>' in line or 'actionable takeaway:' in line.lower():
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
-            # Extract just the content after "Actionable Takeaway:"
-            match = re.search(r'actionable takeaway:\s*(.*)', line, re.IGNORECASE)
-            if match:
-                content = match.group(1).strip()
-                html_lines.append(f'<div class="actionable-takeaway"><strong>Takeaway:</strong><br>{content}</div>')
+            # Extract content after the label
+            if '<strong>Actionable Takeaway:</strong>' in line:
+                content = line.replace('<strong>Actionable Takeaway:</strong>', '').strip()
+            else:
+                match = re.search(r'actionable takeaway:\s*(.*)', line, re.IGNORECASE)
+                content = match.group(1).strip() if match else line
+            html_lines.append(f'<div class="actionable-takeaway"><strong>Actionable Takeaway:</strong><br>{content}</div>')
         else:
             if in_list:
                 html_lines.append('</ul>')
