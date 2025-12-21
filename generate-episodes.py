@@ -389,10 +389,9 @@ def categorize_episode(title, captions):
     captions_lower = (captions or '').lower()[:1000]
     
     keywords = {
-        'wizards': ['wizard', 'market wizard', 'legend'],
-        'psychology': ['psychology', 'mindset', 'emotional', 'fear', 'greed', 'discipline', 'meditation', 'breath'],
-        'success': ['million', 'success', 'journey', 'profitable', 'turned'],
-        'tools': ['journal', 'strategy', 'technical', 'tool', 'system', 'indicator']
+        'wizards': ['wizard', 'market wizard', 'legend', 'jack schwager', 'jason shapiro', 'market wizards'],
+        'tools': ['journal', 'strategy', 'technical', 'tool', 'system', 'indicator', 'biohack', 'routine', 'checklist', 'ai ', 'edgewonk'],
+        'psychology': ['psychology', 'mindset', 'emotional', 'fear', 'greed', 'discipline', 'meditation', 'breath', 'ego', 'fomo', 'loss', 'stress', 'anxiety', 'confidence', 'belief', 'self-sabotage', 'coaching']
     }
     
     for category, words in keywords.items():
