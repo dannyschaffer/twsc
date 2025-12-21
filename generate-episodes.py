@@ -409,7 +409,15 @@ def format_transcript(captions):
 def categorize_episode(title, captions):
     """Assign category based on content"""
     title_lower = title.lower()
-    captions_lower = (captions or '').lower()[:1000]
+    captions_text = captions or ''
+    captions_lower = captions_text.lower()[:1000]
+    caption_length = len(captions_text)
+    
+    # Short videos (under ~2 minutes) based on caption length
+    # Roughly 150 words per minute spoken, ~6 chars per word = ~1800 chars per minute
+    # So under 2 minutes would be roughly under 3600 chars
+    if caption_length > 0 and caption_length < 3500:
+        return 'clips'
     
     # Known guest names for interview detection
     guest_names = [
@@ -440,7 +448,7 @@ def categorize_episode(title, captions):
     if 'x space' in title_lower or 'x-space' in title_lower:
         return 'interviews'
     
-    # Check for short-form content (clips, quotes, quick insights)
+    # Check for short-form content indicators in title (backup for missing captions)
     short_form_indicators = [
         'said it best', 'on why', 'on how', 'protect the frequency',
         'mastering rejection', 'bouncing back', 'why you need',
