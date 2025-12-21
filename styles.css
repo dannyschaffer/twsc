@@ -8,6 +8,17 @@
     box-sizing: border-box;
 }
 
+/* Remove focus outline on click (but keep for keyboard navigation) */
+*:focus {
+    outline: none;
+}
+
+a:focus,
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 :root {
     --navy: #0F172A;
     /* Slate 900 - Text/Headings */
@@ -200,10 +211,16 @@ ol {
     font-weight: 500;
     transition: color 0.3s ease;
     font-size: 0.95rem;
+    outline: none;
 }
 
 .nav-link:hover {
     color: var(--gold);
+}
+
+.nav-link:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .nav-link-featured {
