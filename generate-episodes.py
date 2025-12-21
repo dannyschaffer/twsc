@@ -411,17 +411,29 @@ def categorize_episode(title, captions):
     title_lower = title.lower()
     captions_lower = (captions or '').lower()[:1000]
     
-    keywords = {
-        'wizards': ['wizard', 'market wizard', 'legend', 'jack schwager', 'jason shapiro', 'market wizards'],
-        'tools': ['journal', 'strategy', 'technical', 'tool', 'system', 'indicator', 'biohack', 'routine', 'checklist', 'ai ', 'edgewonk'],
-        'psychology': ['psychology', 'mindset', 'emotional', 'fear', 'greed', 'discipline', 'meditation', 'breath', 'ego', 'fomo', 'loss', 'stress', 'anxiety', 'confidence', 'belief', 'self-sabotage', 'coaching']
-    }
+    # Check for interviews first - episodes with guest names or interview patterns
+    interview_indicators = [
+        ' with ', ' w/ ', 'interview', 'episode with', 'x space', 'x-space',
+        'guest', 'conversation with', 'talks with', 'speaks with',
+        # Common guest patterns in titles
+        'matthew mcconaughey', 'mike bellafiore', 'jason shapiro', 'jack kellogg',
+        'jack schwager', 'market wizard', 'pradeep bonde', 'lance breitstein',
+        'thomas vozzo', 'peter atwater', 'joe fahmy', 'anand sanghvi', 'sang lucci',
+        'humbled trader', 'megan marlow', 'eduardo briceño', 'bryce tuohey',
+        'jeff holden', 'george coyle', 'gregg sciabica', 'doomberg'
+    ]
+    for indicator in interview_indicators:
+        if indicator in title_lower:
+            return 'interviews'
     
-    for category, words in keywords.items():
-        for word in words:
-            if word in title_lower or word in captions_lower:
-                return category
+    # Check for tools category
+    tools_keywords = ['journal', 'strategy', 'technical', 'tool', 'system', 'indicator', 
+                      'biohack', 'routine', 'checklist', 'ai ', 'edgewonk', 'risk management']
+    for word in tools_keywords:
+        if word in title_lower or word in captions_lower:
+            return 'tools'
     
+    # Default to psychology (mindset content)
     return 'psychology'
 
 def main():
