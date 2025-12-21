@@ -284,6 +284,11 @@ def format_takeaways(takeaways_text):
     # Clean up the text
     text = takeaways_text.strip()
     
+    # Remove em dashes and en dashes, replace with regular dashes or remove
+    text = text.replace('—', ' - ')  # em dash
+    text = text.replace('–', ' - ')  # en dash
+    text = text.replace('−', '-')    # minus sign
+    
     # Fix stray asterisks that appear inline (not as bullet points)
     # Replace " * " with " • " to handle inline bullets, then we'll process them
     text = re.sub(r'(?<!\n)\s*\*\s+', '\n• ', text)
