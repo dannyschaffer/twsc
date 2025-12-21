@@ -411,24 +411,51 @@ def categorize_episode(title, captions):
     title_lower = title.lower()
     captions_lower = (captions or '').lower()[:1000]
     
-    # Check for interviews first - episodes with guest names or interview patterns
-    interview_indicators = [
-        ' with ', ' w/ ', 'interview', 'episode with', 'x space', 'x-space',
-        'guest', 'conversation with', 'talks with', 'speaks with',
-        # Common guest patterns in titles
-        'matthew mcconaughey', 'mike bellafiore', 'jason shapiro', 'jack kellogg',
-        'jack schwager', 'market wizard', 'pradeep bonde', 'lance breitstein',
-        'thomas vozzo', 'peter atwater', 'joe fahmy', 'anand sanghvi', 'sang lucci',
-        'humbled trader', 'megan marlow', 'eduardo briceño', 'bryce tuohey',
-        'jeff holden', 'george coyle', 'gregg sciabica', 'doomberg'
+    # Known guest names for interview detection
+    guest_names = [
+        'matthew mcconaughey', 'mcconaughey', 'mike bellafiore', 'bellafiore', 
+        'jason shapiro', 'jack kellogg', 'jack schwager', 'pradeep bonde', 
+        'lance breitstein', 'thomas vozzo', 'peter atwater', 'joe fahmy', 
+        'anand sanghvi', 'sang lucci', 'humbled trader', 'shay huang',
+        'megan marlow', 'eduardo briceño', 'bryce tuohey', 'jeff holden',
+        'george coyle', 'gregg sciabica', 'doomberg', 'celeste headlee',
+        'brian lee', 'jane gallina', 'zach schellhaas', 'jason caldwell',
+        'brice foose', 'tom canfield', 'alex sposito', 'william beebe',
+        'andres armienta', 'matthew monaco', 'ian ostrosky', 'jeremy aguiar',
+        'chris langan', 'danielle shay', 'joseph gasperoni', 'jtrader',
+        'vwaptrader1', 'jj of confessions', 'charles harris', 'jason apollo voss'
     ]
-    for indicator in interview_indicators:
-        if indicator in title_lower:
+    
+    # Check for "EP XX:" or "Episode XX" pattern (formal interviews)
+    ep_pattern = re.search(r'\bep\.?\s*\d+[:\s]|\bepisode\s+\d+[:\s]', title_lower)
+    if ep_pattern:
+        return 'interviews'
+    
+    # Check for guest names in title
+    for guest in guest_names:
+        if guest in title_lower:
             return 'interviews'
+    
+    # Check for X Space (Twitter/X live sessions - these are interviews)
+    if 'x space' in title_lower or 'x-space' in title_lower:
+        return 'interviews'
+    
+    # Check for short-form content (clips, quotes, quick insights)
+    short_form_indicators = [
+        'said it best', 'on why', 'on how', 'protect the frequency',
+        'mastering rejection', 'bouncing back', 'why you need',
+        'the story', 'never forgot', 'the mom who', 'why stress',
+        'what evolution', 'old school', 'journaling saved',
+        'stillness leads', 'hard seasons', 'losing alignment'
+    ]
+    for indicator in short_form_indicators:
+        if indicator in title_lower:
+            return 'clips'
     
     # Check for tools category
     tools_keywords = ['journal', 'strategy', 'technical', 'tool', 'system', 'indicator', 
-                      'biohack', 'routine', 'checklist', 'ai ', 'edgewonk', 'risk management']
+                      'biohack', 'routine', 'checklist', 'edgewonk', 'risk management',
+                      'pre-market', 'premarket']
     for word in tools_keywords:
         if word in title_lower or word in captions_lower:
             return 'tools'

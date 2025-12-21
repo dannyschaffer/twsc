@@ -22,7 +22,7 @@ const podcastEpisodes = [
         ep: 652,
         title: "AI vs Human Judgment in Trading",
         description: "The AI Trap: Why You Still Need Human Judgment to Trade Profitably  As AI tools become more ubiquitous, many traders are tempted to hand over their decision-making process to algorithms. However, rely",
-        category: "tools",
+        category: "psychology",
         image: "https://img.youtube.com/vi/Z3HsEFoe1pg/maxresdefault.jpg",
         link: "episodes/ep-652-ai-vs-human-judgment-in-trading.html"
     },
@@ -86,7 +86,7 @@ const podcastEpisodes = [
         ep: 644,
         title: "Unshakable Faith - Lessons from a Market Wizard",
         description: "The Unshakable Faith Required to Become a Market Wizard  Legendary traders possess a trait far more valuable than any system: an unshakable faith in their ability to perform, no matter the market cond",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/461dwfoZv9Q/maxresdefault.jpg",
         link: "episodes/ep-644-unshakable-faith---lessons-from-a-market-wizard.html"
     },
@@ -126,7 +126,7 @@ const podcastEpisodes = [
         ep: 639,
         title: "Regulate Before You Risk: What Paper Trading Taught Danielle Shay",
         description: "Why You Need To Regulate Risk Before You Trade Real Money  Many new traders rush into the market, often losing vital capital while trying to master complex strategies like options trading. This common",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/LfXJz-qe0_I/maxresdefault.jpg",
         link: "episodes/ep-639-regulate-before-you-risk-what-paper-trading-taught-danielle-.html"
     },
@@ -222,7 +222,7 @@ const podcastEpisodes = [
         ep: 627,
         title: "How Breathwork Builds Focus and Flow for Traders",
         description: "The Trader's Edge: Why Presence Beats Prediction  You can miss a perfect setup not because you failed to see it on the chart, but because your mind was not truly present when the opportunity arrived. ",
-        category: "psychology",
+        category: "tools",
         image: "https://img.youtube.com/vi/Yp4aCr-jiNo/maxresdefault.jpg",
         link: "episodes/ep-627-how-breathwork-builds-focus-and-flow-for-traders.html"
     },
@@ -286,7 +286,7 @@ const podcastEpisodes = [
         ep: 619,
         title: "Show Up with Self-Respect in Trading and Leadership",
         description: "The Trader's Professionalism Gap: How Self-Respect Drives Profits  Too many traders approach the market as a casual hobby rather than a high-stakes business. This lack of self-respect often translates",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/YsnzaNJL-OI/maxresdefault.jpg",
         link: "episodes/ep-619-show-up-with-self-respect-in-trading-and-leadership.html"
     },
@@ -358,7 +358,7 @@ const podcastEpisodes = [
         ep: 610,
         title: "Bouncing Back After Your Worst Trade - Matthew Monaco on The Wall Street Coach Podcast",
         description: "The One Mistake That Wiped Out a Year's Profit  Every trader faces that devastating loss that wipes out months of hard work. Matthew Monaco recounts the moment he learned the high cost of emotional tr",
-        category: "tools",
+        category: "interviews",
         image: "https://img.youtube.com/vi/CX2tbkf_cwg/maxresdefault.jpg",
         link: "episodes/ep-610-bouncing-back-after-your-worst-trade---matthew-monaco-on-the.html"
     },
@@ -374,7 +374,7 @@ const podcastEpisodes = [
         ep: 608,
         title: "Matthew Monaco: Why Stress in Trading Means You’re Doing It Wrong - Wall Street Coach Podcast",
         description: "Why Zero Stress is the Sign of a Winning Trading System  Many traders believe high stress is simply an inevitable cost of participating in the markets. But in reality, emotional pressure is a powerful",
-        category: "tools",
+        category: "interviews",
         image: "https://img.youtube.com/vi/oel_ZL8Xi3s/maxresdefault.jpg",
         link: "episodes/ep-608-matthew-monaco-why-stress-in-trading-means-youre-doing-it-wr.html"
     },
@@ -598,7 +598,7 @@ const podcastEpisodes = [
         ep: 580,
         title: "\" Why Mathew McConaughey Says Stillness Leads to Real Change\"",
         description: "### The Uncomfortable Truth: Why Stillness Leads to Real Trading Change  Traders often seek external entertainment or distraction to avoid self-reflection, especially when facing setbacks. This avoida",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/OKJvV9x0O4s/maxresdefault.jpg",
         link: "episodes/ep-580-why-mathew-mcconaughey-says-stillness-leads-to-real-change.html"
     },
@@ -822,7 +822,7 @@ const podcastEpisodes = [
         ep: 552,
         title: "Ryan Miller & Shane Dorian on Why the Right Circle Makes You Stronger — Not Softer",
         description: "The Power of a Collective: Why Your Trading Circle is Your Strongest Edge  Trading can be an isolating and psychologically taxing pursuit, especially during drawdowns and unexpected losses. When relyi",
-        category: "psychology",
+        category: "clips",
         image: "https://img.youtube.com/vi/W2rehlerLSE/maxresdefault.jpg",
         link: "episodes/ep-552-ryan-miller-shane-dorian-on-why-the-right-circle-makes-you-s.html"
     },
@@ -870,7 +870,7 @@ const podcastEpisodes = [
         ep: 546,
         title: "Steven Goldstein on Why Trading Is About Risk — Not Just Prep — and How to Become a Better Risk",
         description: "The Real Job of a Trader: Why Risk is Performance  Many traders treat the markets like a puzzle, believing their job is merely to find the perfect value or setup. This intense focus on preparation ove",
-        category: "psychology",
+        category: "clips",
         image: "https://img.youtube.com/vi/AcblfgCaat8/maxresdefault.jpg",
         link: "episodes/ep-546-steven-goldstein-on-why-trading-is-about-risk-not-just-prep-.html"
     },
@@ -894,7 +894,7 @@ const podcastEpisodes = [
         ep: 543,
         title: "Chef-Turned-Trader @megan.marlow on Why the Best Traders Ask Better Questions",
         description: "The Unseen Edge: How Great Traders Use Questions to Cut Their Learning Curve  Many traders stall their growth by letting their ego dictate their learning, pretending they already have all the answers.",
-        category: "psychology",
+        category: "clips",
         image: "https://img.youtube.com/vi/M6TLUAwDxlE/maxresdefault.jpg",
         link: "episodes/ep-543-chef-turned-trader-meganmarlow-on-why-the-best-traders-ask-b.html"
     },
@@ -998,7 +998,7 @@ const podcastEpisodes = [
         ep: 530,
         title: "Mathew McConaughey said it best: The good stuff takes time",
         description: "Stop Trading for the Moment and Start Building Your Future  The market constantly tempts you with immediate gratification, leading to choices that often compromise your long-term success. When you tie",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/Lm9ZvtCK2xs/maxresdefault.jpg",
         link: "episodes/ep-530-mathew-mcconaughey-said-it-best-the-good-stuff-takes-time.html"
     },
@@ -1054,7 +1054,7 @@ const podcastEpisodes = [
         ep: 523,
         title: "You don’t fix what you can’t see. Success starts with observation",
         description: "Why Observation is the Real Shortcut to Trading Success  The greatest barrier to consistent profitability isn't the market; it's the self-sabotaging pattern you fail to recognize within yourself. Apat",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/8QNM5FZPjpQ/maxresdefault.jpg",
         link: "episodes/ep-523-you-dont-fix-what-you-cant-see-success-starts-with-observati.html"
     },
@@ -1094,7 +1094,7 @@ const podcastEpisodes = [
         ep: 518,
         title: "Live Coaching w/ The Wall Street Coach (April 23rd @ 7:00 PM ET)",
         description: "Why Trading Losses Trigger Past Trauma (And How to End the Apathy Cycle)  When a significant loss occurs, your reaction might be rooted not in market dynamics, but in deeply embedded trauma. This disc",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/QOdwWXFYy2s/maxresdefault.jpg",
         link: "episodes/ep-518-live-coaching-w-the-wall-street-coach-april-23rd-700-pm-et.html"
     },
@@ -1158,7 +1158,7 @@ const podcastEpisodes = [
         ep: 510,
         title: "Live Coaching w/ The Wall Street Coach (April 16th @ 7:00 PM ET)",
         description: "The Hidden Cost of Stillness: How Limiting Beliefs Hijack Your Trading  Many traders struggle not with charts, but with managing internal discomfort and emotional contraction. If a volatile past taugh",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/qnrzAeOFiwM/maxresdefault.jpg",
         link: "episodes/ep-510-live-coaching-w-the-wall-street-coach-april-16th-700-pm-et.html"
     },
@@ -1238,7 +1238,7 @@ const podcastEpisodes = [
         ep: 500,
         title: "Episode 107: Unshakeable: How Jeremy Aguiar Plays the Long Game in Day Trading",
         description: "Unshakeable: The Mindset That Sustains Trading for 17 Years  Professional trading careers are often derailed by the 'all-or-nothing' mentality, where the pressure to hit massive home runs leads to rec",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/KCX7unr5C5M/maxresdefault.jpg",
         link: "episodes/ep-500-episode-107-unshakeable-how-jeremy-aguiar-plays-the-long-gam.html"
     },
@@ -1310,7 +1310,7 @@ const podcastEpisodes = [
         ep: 491,
         title: "Kim with Dr. Michael Platt on Expertise & Focus",
         description: "The Real Trading Edge: How Focused Attention Beats Speed  In high-stakes trading moments, the difference between a successful execution and a costly error is often measured in milliseconds. If you fin",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/_b1RR25-5zU/maxresdefault.jpg",
         link: "episodes/ep-491-kim-with-dr-michael-platt-on-expertise-focus.html"
     },
@@ -1374,7 +1374,7 @@ const podcastEpisodes = [
         ep: 483,
         title: "EP 106: Mastering Risk w Neuroscience w Dr. Michael Platt",
         description: "Stop Trading on Instinct: How Neuroscience Masters the Speed-Accuracy Trade-Off  Trading success is often derailed by the hidden rules of your own brain, from the immediate pressure to execute quickly",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/PLZVCtq3ZSk/maxresdefault.jpg",
         link: "episodes/ep-483-ep-106-mastering-risk-w-neuroscience-w-dr-michael-platt.html"
     },
@@ -1486,7 +1486,7 @@ const podcastEpisodes = [
         ep: 469,
         title: "Enjoy my hanai niece’s Halau performance today! So beautiful  🌺",
         description: "The video summary cannot be generated because the source captions for this entry are empty.",
-        category: "tools",
+        category: "psychology",
         image: "https://img.youtube.com/vi/PwhFn62MA2E/maxresdefault.jpg",
         link: "episodes/ep-469-enjoy-my-hanai-nieces-halau-performance-today-so-beautiful.html"
     },
@@ -1534,7 +1534,7 @@ const podcastEpisodes = [
         ep: 463,
         title: "Live Coaching w/ The Wall Street Coach (February 18th @ 5:15 PM ET)",
         description: "### Stop Doubting Your Strategy: Unlocking the Answers Within  When persistent trading issues like FOMO or fear of risk haunt your decision-making, it often stems from internal psychological blocks, n",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/NgFU5fHoaXc/maxresdefault.jpg",
         link: "episodes/ep-463-live-coaching-w-the-wall-street-coach-february-18th-515-pm-e.html"
     },
@@ -1646,7 +1646,7 @@ const podcastEpisodes = [
         ep: 449,
         title: "EP 104: From $2,000 to $1 Million: Matthew Monaco’s Road to Trading Success",
         description: "From $2K to $1 Million: The Non-Competitive Mindset That Fuels Growth  Matthew Monaco famously turned a small trading account into millions, but that journey was paved with hard lessons—starting with ",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/OPso7IGu2Yw/maxresdefault.jpg",
         link: "episodes/ep-449-ep-104-from-2000-to-1-million-matthew-monacos-road-to-tradin.html"
     },
@@ -1670,7 +1670,7 @@ const podcastEpisodes = [
         ep: 446,
         title: "Live Coaching w/ The Wall Street Coach (January 29th @ 8:00 PM ET)",
         description: "Stop Beating Yourself Up: Why Shame Is Sabotaging Your Trading Success  The intense self-criticism most traders use to motivate themselves is actually creating a self-sabotaging loop. Trying to fix yo",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/cFXacRq7f9A/maxresdefault.jpg",
         link: "episodes/ep-446-live-coaching-w-the-wall-street-coach-january-29th-800-pm-et.html"
     },
@@ -1686,7 +1686,7 @@ const podcastEpisodes = [
         ep: 444,
         title: "Live Coaching w/ The Wall Street Coach January 22 2024",
         description: "Escape the Trap of Trading from Force  Many traders mistake effort and aggression for effectiveness, operating under the self-sabotaging energy of 'Force.' This mindset, often rooted in shame and the ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/jmwgdicnm30/maxresdefault.jpg",
         link: "episodes/ep-444-live-coaching-w-the-wall-street-coach-january-22-2024.html"
     },
@@ -1742,7 +1742,7 @@ const podcastEpisodes = [
         ep: 437,
         title: "Struggling with trading decisions? It might be your mindset!",
         description: "Stop Trading at a Level Above Your Actual Expertise  The most common barrier to consistent profit isn't a bad market; it's a fundamental mismatch between a trader's goals and their actual level of exp",
-        category: "interviews",
+        category: "tools",
         image: "https://img.youtube.com/vi/N9vh3MWa1B8/maxresdefault.jpg",
         link: "episodes/ep-437-struggling-with-trading-decisions-it-might-be-your-mindset.html"
     },
@@ -1750,7 +1750,7 @@ const podcastEpisodes = [
         ep: 436,
         title: "Is your brain trained for trading success? Find ou with this tip!",
         description: "The Hidden Barrier: Why You Unconsciously Block Your Trading Success  If you consistently downplay your wins or struggle to accept compliments, you might be programmed to reject success. This 'glass h",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/hlh7ySa4RZo/maxresdefault.jpg",
         link: "episodes/ep-436-is-your-brain-trained-for-trading-success-find-ou-with-this-.html"
     },
@@ -1774,7 +1774,7 @@ const podcastEpisodes = [
         ep: 433,
         title: "Burnout from trading? Refresh your mind with these expert tips!",
         description: "The High Cost of Denial: Why Trading Burnout Destroys Your P&L and Confidence  The emotional cost of trading burnout often manifests as denial, leading to costly mistakes in the market. When you aren'",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/GSBZ4BiazjI/maxresdefault.jpg",
         link: "episodes/ep-433-burnout-from-trading-refresh-your-mind-with-these-expert-tip.html"
     },
@@ -1782,7 +1782,7 @@ const podcastEpisodes = [
         ep: 432,
         title: "Harness the power of your trading mind with this simple technique!",
         description: "The 30-Second Reset: How to Neutralize External Chaos Before Trading  Your performance at the desk is often hijacked by unresolved emotional residue—a poor night's sleep, an argument, or general life ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/sbFU6e7fqn4/maxresdefault.jpg",
         link: "episodes/ep-432-harness-the-power-of-your-trading-mind-with-this-simple-tech.html"
     },
@@ -1798,7 +1798,7 @@ const podcastEpisodes = [
         ep: 430,
         title: "Boost your trading game with this one mental shift!",
         description: "The Single-Word Mental Shift That Ends Trading Panic  When the market moves unexpectedly against your position, your immediate emotional response determines whether you recover or compound your loss. ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/m60-vIwxc4k/maxresdefault.jpg",
         link: "episodes/ep-430-boost-your-trading-game-with-this-one-mental-shift.html"
     },
@@ -1974,7 +1974,7 @@ const podcastEpisodes = [
         ep: 408,
         title: "Transform Your Perspective with The Art of Possibility #tradingcoach #stockmarket",
         description: "How to Escape the Self-Imposed Limits Costing Your P&L  Your internal voice is often your harshest judge, creating self-doubt and projecting limitations onto the market and others. This cycle of harsh",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/neEzy1U4CcI/maxresdefault.jpg",
         link: "episodes/ep-408-transform-your-perspective-with-the-art-of-possibility-tradi.html"
     },
@@ -2118,7 +2118,7 @@ const podcastEpisodes = [
         ep: 390,
         title: "LIVE Coaching with Kim Ann Curtin   Remember to Trade Smart",
         description: "Stop Putting the Weight of All Your Losses on One Small Trade  Many traders mistakenly try to force small trades to carry the psychological weight of past losses, expecting minor setups to deliver mas",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/41O2J__401A/maxresdefault.jpg",
         link: "episodes/ep-390-live-coaching-with-kim-ann-curtin-remember-to-trade-smart.html"
     },
@@ -2158,7 +2158,7 @@ const podcastEpisodes = [
         ep: 385,
         title: "Live Coaching w/ The Wall Street Coach (November 20th 5 PM ET)",
         description: "Stop Blaming the Market: How to Take 100% Self-Responsibility for Your Trading  Many traders subconsciously operate from a **victim mentality**, believing their failures are caused by market condition",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/2ImPN7Pnpi4/maxresdefault.jpg",
         link: "episodes/ep-385-live-coaching-w-the-wall-street-coach-november-20th-5-pm-et.html"
     },
@@ -2198,7 +2198,7 @@ const podcastEpisodes = [
         ep: 380,
         title: "Balance Trading with Passion to Boost Creativity! #trading #stockmarket",
         description: "The Unexpected Edge: Why Creative Balance Boosts Your Trading P&L  When you dedicate all your mental energy to the charts, you risk intellectual and emotional stagnation, leading to repetitive mistake",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/spdS4gguRNM/maxresdefault.jpg",
         link: "episodes/ep-380-balance-trading-with-passion-to-boost-creativity-trading-sto.html"
     },
@@ -2470,7 +2470,7 @@ const podcastEpisodes = [
         ep: 346,
         title: "Live Coaching w/ The Wall Street Coach (September 24th 530 PM ET)",
         description: "How Undefined Risk Management Kills Your Trading Consistency  Letting losses accumulate without real-time awareness is a major trap, even for disciplined traders. When your financial decisions are mad",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/S2omq2NGKv4/maxresdefault.jpg",
         link: "episodes/ep-346-live-coaching-w-the-wall-street-coach-september-24th-530-pm-.html"
     },
@@ -2478,7 +2478,7 @@ const podcastEpisodes = [
         ep: 345,
         title: "Traders Can Recover With Help from Others #trading #stockmarket",
         description: "The Fatal Flaw of Trading: Why You Must Stop Grinding Alone  Many traders cling to the idea of the lone wolf, believing they must 'grind it out' by themselves after a significant loss or emotional set",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/0XRxOKOFsmQ/maxresdefault.jpg",
         link: "episodes/ep-345-traders-can-recover-with-help-from-others-trading-stockmarke.html"
     },
@@ -2566,7 +2566,7 @@ const podcastEpisodes = [
         ep: 334,
         title: "Live Coaching w/ The Wall Street Coach (September 17th 1 PM ET)",
         description: "Stop Resisting Reality: The Power of Observance Without Preference  When the market doesn't conform to your expectations, your automatic reaction is often resistance and judgment. This 'preference' fo",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/VSDUoiwcGhI/maxresdefault.jpg",
         link: "episodes/ep-334-live-coaching-w-the-wall-street-coach-september-17th-1-pm-et.html"
     },
@@ -2590,7 +2590,7 @@ const podcastEpisodes = [
         ep: 331,
         title: "Defeat Your Inner Critic with Self Awareness #trading #coaching",
         description: "The Cost of Rationalization: How Your Inner Critic Traps You in Self-Deception  You may believe you are operating with objective discipline, but often, the voice of your inner critic turns you into it",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/rqx-kBvGWdc/maxresdefault.jpg",
         link: "episodes/ep-331-defeat-your-inner-critic-with-self-awareness-trading-coachin.html"
     },
@@ -2606,7 +2606,7 @@ const podcastEpisodes = [
         ep: 329,
         title: "Transform Your Trading with Self Kindness #trading #coaching",
         description: "Stop Beating Yourself Up: How Self-Kindness Becomes Your Trading Edge  Traders are notoriously challenging, often pushing themselves beyond their comfort zones. However, this relentless self-criticism",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/BGi5Kbxuegs/maxresdefault.jpg",
         link: "episodes/ep-329-transform-your-trading-with-self-kindness-trading-coaching.html"
     },
@@ -2678,7 +2678,7 @@ const podcastEpisodes = [
         ep: 320,
         title: "Unlock Your Inner Olympian with Nutrition and Sleep",
         description: "The Hidden Performance Edge: Why You Must Treat Trading Like the Olympics  Do you approach your trading day with the same preparation as a world-class athlete? Many skilled traders severely undermine ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/CyG_O5uzolA/maxresdefault.jpg",
         link: "episodes/ep-320-unlock-your-inner-olympian-with-nutrition-and-sleep.html"
     },
@@ -2734,7 +2734,7 @@ const podcastEpisodes = [
         ep: 313,
         title: "Live Coaching w/ The Wall Street Coach (August 20th 5 PM ET)",
         description: "The Subtlety of Self-Sabotage: Why Trying Too Hard Kills Your Edge  The push for perfection often results in a self-inflicted contraction that sabotages your performance. When you operate from the str",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/oIpAWyYfCzc/maxresdefault.jpg",
         link: "episodes/ep-313-live-coaching-w-the-wall-street-coach-august-20th-5-pm-et.html"
     },
@@ -2774,7 +2774,7 @@ const podcastEpisodes = [
         ep: 308,
         title: "Live Coaching w/ The Wall Street Coach (August 8th 8:30 PM ET)",
         description: "The Unconscious Money Trap: Why You Keep Giving Back Your Trading Profits  The cycle of making profits only to give them back—the 'Groundhog Day' of trading—is a profound struggle rooted in psychology",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/5xfRduicYjE/maxresdefault.jpg",
         link: "episodes/ep-308-live-coaching-w-the-wall-street-coach-august-8th-830-pm-et.html"
     },
@@ -2798,7 +2798,7 @@ const podcastEpisodes = [
         ep: 305,
         title: "Are You Obsessed with Trading?",
         description: "The Cognitive Trap: How Trading Obsession Destroys Your Edge  If your life is entirely consumed by the markets, you are actively sabotaging your ability to succeed. This intensity, often mistaken for ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/WgdGVhkIlyE/maxresdefault.jpg",
         link: "episodes/ep-305-are-you-obsessed-with-trading.html"
     },
@@ -2814,7 +2814,7 @@ const podcastEpisodes = [
         ep: 303,
         title: "Live Coaching w/ The Wall Street Coach (August 1st 6:30PM ET)",
         description: "WHY TRADING WITH SELF-RESPECT GUARANTEES PROFITABILITY  Many traders sacrifice their self-respect by chasing wins or comparing themselves to others' inflated social media results. This obsession with ",
-        category: "interviews",
+        category: "tools",
         image: "https://img.youtube.com/vi/OUxZyGqQ10c/maxresdefault.jpg",
         link: "episodes/ep-303-live-coaching-w-the-wall-street-coach-august-1st-630pm-et.html"
     },
@@ -2862,7 +2862,7 @@ const podcastEpisodes = [
         ep: 297,
         title: "Live Coaching w/ The Wall Street Coach (July 18th 8:15PM ET)",
         description: "The Freedom of the Pivot: When Trading Easy Beats Trading Hard  Many traders fall into the trap of believing success must be painful, chasing high-volatility markets like small-caps even when it leads",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/9zaS0NOuHBE/maxresdefault.jpg",
         link: "episodes/ep-297-live-coaching-w-the-wall-street-coach-july-18th-815pm-et.html"
     },
@@ -2958,7 +2958,7 @@ const podcastEpisodes = [
         ep: 285,
         title: "The Gratitude Hack: Boost Your Mood with Thank You Notes",
         description: "The Instant Mood Shift: Using Gratitude to Stabilize Your Trading Mindset  A negative emotional state can instantly derail your focus and lead to costly decisions at the screen. When you feel stuck in",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/gWFrUtTYSN8/maxresdefault.jpg",
         link: "episodes/ep-285-the-gratitude-hack-boost-your-mood-with-thank-you-notes.html"
     },
@@ -3126,7 +3126,7 @@ const podcastEpisodes = [
         ep: 264,
         title: "Struggling with Over-Trading?",
         description: "Stop Overtrading: The Hidden Need to Prove Your Worthiness  If you struggle with overtrading, the root cause might not be technical—it could be psychological. Many traders unconsciously chase wins in ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/YX3r-7E_T14/maxresdefault.jpg",
         link: "episodes/ep-264-struggling-with-over-trading.html"
     },
@@ -3198,7 +3198,7 @@ const podcastEpisodes = [
         ep: 255,
         title: "Empower Your Trading with 'Even If' #traders",
         description: "Stop the 'What If' Trading Anxiety: Shift to an Empowered 'Even If' Mindset  The perpetual cycle of asking 'What if this happens?' or 'What if that happens?' keeps traders in a state of anticipatory f",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/r6LSbpjNBZE/maxresdefault.jpg",
         link: "episodes/ep-255-empower-your-trading-with-even-if-traders.html"
     },
@@ -3246,7 +3246,7 @@ const podcastEpisodes = [
         ep: 249,
         title: "Trading Made Simple: Cutting Through the Noise with Chris Lanzilotti",
         description: "The Trinity of Trading: How Risk, Reward, and Probability Simplify Every Strategy  When facing the legitimate complexities of the market, many traders get bogged down in technical noise and fail to pr",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/ybTBNB1dsYw/maxresdefault.jpg",
         link: "episodes/ep-249-trading-made-simple-cutting-through-the-noise-with-chris-lan.html"
     },
@@ -3286,7 +3286,7 @@ const podcastEpisodes = [
         ep: 244,
         title: "Trading in Isolation? Proceed with Caution...",
         description: "The Silent Killer: Why Trading Alone Leads to Emotional Collapse  Trading is often portrayed as a solitary endeavor, yet working in isolation can rapidly deplete your emotional reserves. Many consiste",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/J4imO8uVmHI/maxresdefault.jpg",
         link: "episodes/ep-244-trading-in-isolation-proceed-with-caution.html"
     },
@@ -3310,7 +3310,7 @@ const podcastEpisodes = [
         ep: 241,
         title: "Bouncing Back from Trading Losses: Lessons from Matt 'PAX' Kenah",
         description: "The Trader's Greatest Asset: Separating Confidence from Ego After a Loss  Every trader faces devastating losses, but confusing self-confidence with ego can lead to a spiral of destructive revenge trad",
-        category: "psychology",
+        category: "clips",
         image: "https://img.youtube.com/vi/YrGnmaI9_60/maxresdefault.jpg",
         link: "episodes/ep-241-bouncing-back-from-trading-losses-lessons-from-matt-pax-kena.html"
     },
@@ -3334,7 +3334,7 @@ const podcastEpisodes = [
         ep: 238,
         title: "How to Deal with Envy #traders",
         description: "The Hidden Root of Trading Envy: Why It's Always About Your Self-Worth  When you compare your P&L to others, envy can quickly sabotage your focus and process. This compulsive desire for what others ha",
-        category: "interviews",
+        category: "tools",
         image: "https://img.youtube.com/vi/EXNLch6FLHM/maxresdefault.jpg",
         link: "episodes/ep-238-how-to-deal-with-envy-traders.html"
     },
@@ -3694,7 +3694,7 @@ const podcastEpisodes = [
         ep: 193,
         title: "Trade Smarter With Self-Empathy",
         description: "Stop the Vicious Cycle: The Trading Power of Self-Empathy  Trading is inherently volatile, yet many traders respond to mistakes with a damaging cycle of self-criticism. This failure to practice self-e",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/eCKZiQQAh94/maxresdefault.jpg",
         link: "episodes/ep-193-trade-smarter-with-self-empathy.html"
     },
@@ -3918,7 +3918,7 @@ const podcastEpisodes = [
         ep: 165,
         title: "How I Dodged an Encounter with Jeffrey Epstein",
         description: "The Role of Grace and Luck: Why Uncontrollable Variables Determine Your Trading Destiny  This powerful personal account illustrates a fundamental market truth: your success is constantly exposed to va",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/IfwQuCumHB8/maxresdefault.jpg",
         link: "episodes/ep-165-how-i-dodged-an-encounter-with-jeffrey-epstein.html"
     },
@@ -3966,7 +3966,7 @@ const podcastEpisodes = [
         ep: 159,
         title: "Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "Stop Making Resolutions: Conduct a Needs Inventory to Fix Your Trading  New Year's resolutions rarely stick and often leave traders feeling like failures, compounding emotional damage and self-judgmen",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/8qWKhQlGGEk/maxresdefault.jpg",
         link: "episodes/ep-159-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -3982,7 +3982,7 @@ const podcastEpisodes = [
         ep: 157,
         title: "Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "The Middle Way: Stop Letting Financial Extremes Control Your Trading  Your relationship with money is subconsciously driving your results in the market. Many traders unconsciously operate from one of ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/9kFmpGoBPB8/maxresdefault.jpg",
         link: "episodes/ep-157-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -3998,7 +3998,7 @@ const podcastEpisodes = [
         ep: 155,
         title: "Live Coaching w/ Kim Ann Curtin 12 13 23",
         description: "Stop Sabotaging Your Edge: Overcoming Self-Doubt and Impatience  When doubts and impatience creep in, even the best trading systems fail. This coaching session tackles the hidden emotional traps that ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/qBbN-ifAK2Y/maxresdefault.jpg",
         link: "episodes/ep-155-live-coaching-w-kim-ann-curtin-12-13-23.html"
     },
@@ -4006,7 +4006,7 @@ const podcastEpisodes = [
         ep: 154,
         title: "Bouncing back from losing $4,000 in 60 Minutes #daytrading",
         description: "The Real Recovery: How to Stop a 60-Minute Blowout from Becoming an Account Killer  When a single loss triggers immediate revenge trading, the pain of the financial hit—a 10% drawdown in under an hour",
-        category: "psychology",
+        category: "clips",
         image: "https://img.youtube.com/vi/COYhviGCMmA/maxresdefault.jpg",
         link: "episodes/ep-154-bouncing-back-from-losing-4000-in-60-minutes-daytrading.html"
     },
@@ -4038,7 +4038,7 @@ const podcastEpisodes = [
         ep: 150,
         title: "Boost Your Trading Game with Present Moment Awareness #daytrading",
         description: "The Everest Lesson: Why Present Awareness is Your Only Safety Net  When market volatility hits, it is easy to get pulled into past losses or future fears, which severely degrades your decision-making ",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/mpnya2rA2Jo/maxresdefault.jpg",
         link: "episodes/ep-150-boost-your-trading-game-with-present-moment-awareness-daytra.html"
     },
@@ -4070,7 +4070,7 @@ const podcastEpisodes = [
         ep: 146,
         title: "Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "Stop Being a Fidgety Skeptic: Using Stillness to Control Impulse Trading  Intellectual traders often struggle to translate strategy into disciplined action, frequently getting stuck in their heads. Th",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/AZ3xXLCof2I/maxresdefault.jpg",
         link: "episodes/ep-146-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -4102,7 +4102,7 @@ const podcastEpisodes = [
         ep: 142,
         title: "The Wall Street Coach with Kim Ann Curtin is live!",
         description: "The Universal Power Outage: Dealing with Unexpected Chaos  Even the most dedicated professionals face moments of absolute, unexpected breakdown. This live session was cut short instantly due to a town",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/psLHMMt7Lrc/maxresdefault.jpg",
         link: "episodes/ep-142-the-wall-street-coach-with-kim-ann-curtin-is-live.html"
     },
@@ -4142,7 +4142,7 @@ const podcastEpisodes = [
         ep: 137,
         title: "Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "How Gratitude Becomes Your Most Profitable Trading Tool  Trading naturally encourages a focus on mistakes and deficits, leading to a perpetual state of negativity and limiting your perception of marke",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/qg5DLcvMpRI/maxresdefault.jpg",
         link: "episodes/ep-137-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -4166,7 +4166,7 @@ const podcastEpisodes = [
         ep: 134,
         title: "Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "### The Confidence Map: How Certainty and Control Drive Every Trading Mistake  Traders operate on a constant spectrum between feeling invincible and being completely defeated. This emotional swing, go",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/i8HqF1CbLis/maxresdefault.jpg",
         link: "episodes/ep-134-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -4182,7 +4182,7 @@ const podcastEpisodes = [
         ep: 132,
         title: "Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "Escaping Isolation: The Power of Community, Mentorship, and the 'Yes And' Mindset  Trading is inherently an isolating career, often leaving traders feeling alone with their challenges and struggles. T",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/4-_hO-QTls0/maxresdefault.jpg",
         link: "episodes/ep-132-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -4214,7 +4214,7 @@ const podcastEpisodes = [
         ep: 128,
         title: "Replace “why” with the word “what” in a self inquiry + watch insight increase. #traders #investors",
         description: "Stop Asking 'Why': How Replacing One Word Unlocks Deeper Trading Insight  When a trade goes wrong, the instinct is to ask 'Why did I do that?', which often leads to a defensive or self-critical spiral",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/0sRwvb2xnqk/maxresdefault.jpg",
         link: "episodes/ep-128-replace-why-with-the-word-what-in-a-self-inquiry-watch-insig.html"
     },
@@ -4246,7 +4246,7 @@ const podcastEpisodes = [
         ep: 124,
         title: "10/18/23 Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "Stop Projecting: How to Practice Observation Without Preference in Trading  Your ability to see the market clearly is often compromised by deeply held personal preferences and projections. When trades",
-        category: "interviews",
+        category: "tools",
         image: "https://img.youtube.com/vi/eHjeKEybPA0/maxresdefault.jpg",
         link: "episodes/ep-124-101823-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -4254,7 +4254,7 @@ const podcastEpisodes = [
         ep: 123,
         title: "10/11/23 Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "### Stop Trading on Fumes: Protecting Your Mental Capital During Chaos  Global crises and personal stress deeply impact cognitive ability and emotional resilience, making consistent trading nearly imp",
-        category: "interviews",
+        category: "tools",
         image: "https://img.youtube.com/vi/DwS44EXMWAU/maxresdefault.jpg",
         link: "episodes/ep-123-101123-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -4278,7 +4278,7 @@ const podcastEpisodes = [
         ep: 120,
         title: "Live Coaching with Kim Ann Curtin 10/10/23 Part I",
         description: "Adapting to the Unexpected: How Technical Glitches Test Your Trading Discipline  Live coaching sessions, much like the market, rarely go exactly as planned. The stress of unexpected technical issues o",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/ToQXH2nOyV4/maxresdefault.jpg",
         link: "episodes/ep-120-live-coaching-with-kim-ann-curtin-101023-part-i.html"
     },
@@ -4286,7 +4286,7 @@ const podcastEpisodes = [
         ep: 119,
         title: "Live Coaching with Kim Ann Curtin 10 6 2023",
         description: "Stop the Self-Sabotage: Why You Must Embrace the 'Hard to Be With'  Many traders struggle with consistent self-sabotage not because of market flaws, but because they are trapped by limiting beliefs an",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/y7qxcThDoHE/maxresdefault.jpg",
         link: "episodes/ep-119-live-coaching-with-kim-ann-curtin-10-6-2023.html"
     },
@@ -4294,7 +4294,7 @@ const podcastEpisodes = [
         ep: 118,
         title: "10/12/23 Live Coaching w/ Kim Ann Curtin, The Wall Street Coach",
         description: "The Inner Critic Trap: Why You Must Start Celebrating Small Wins  Many high-achieving traders are locked in a vicious cycle of self-criticism, believing that stopping to acknowledge success is a sign ",
-        category: "interviews",
+        category: "tools",
         image: "https://img.youtube.com/vi/aVJZQhROwCc/maxresdefault.jpg",
         link: "episodes/ep-118-101223-live-coaching-w-kim-ann-curtin-the-wall-street-coach.html"
     },
@@ -4326,7 +4326,7 @@ const podcastEpisodes = [
         ep: 114,
         title: "Podcast Clip - Ep 84 Sam Prior talks Trading, Sports & Mindset",
         description: "Why the Athlete's Mindset Guarantees Survival in Early Trading Years  Many new traders underestimate the psychological resilience required for market survival. Those with a background in competitive s",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/m75KWKjGb60/maxresdefault.jpg",
         link: "episodes/ep-114-podcast-clip---ep-84-sam-prior-talks-trading-sports-mindset.html"
     },
@@ -4342,7 +4342,7 @@ const podcastEpisodes = [
         ep: 112,
         title: "Ep 84: Sam Prior on Trading, Sports & Mindset",
         description: "The Sports Mindset: Why Adversity and Relentless Feedback Are Your Trading Edge  Many traders wait for market turmoil or a major loss to finally take their trading psychology seriously. Semi-pro rugby",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/rGsNCSCaEWQ/maxresdefault.jpg",
         link: "episodes/ep-112-ep-84-sam-prior-on-trading-sports-mindset.html"
     },
@@ -4454,7 +4454,7 @@ const podcastEpisodes = [
         ep: 98,
         title: "Stop 🛑 Trading with an Agenda",
         description: "The Cost of Chasing Recovery: Why You Must Never 'Make Up' for a Loss  When you approach the market with the goal of recovering past losses, you trade with an agenda rather than objectivity. This pres",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/ZsmNwk38gR8/maxresdefault.jpg",
         link: "episodes/ep-098-stop-trading-with-an-agenda.html"
     },
@@ -4470,7 +4470,7 @@ const podcastEpisodes = [
         ep: 96,
         title: "The Wall Street Coach with Kim Ann Curtin is going live!",
         description: "The Silent Ego Trap: Trading to Be In the Market vs. Trading to Make Money  Many traders struggle less with overconfidence (hubris) and more with the quiet pressure of needing to feel active. This hid",
-        category: "interviews",
+        category: "tools",
         image: "https://img.youtube.com/vi/dF5rZowU3tM/maxresdefault.jpg",
         link: "episodes/ep-096-the-wall-street-coach-with-kim-ann-curtin-is-going-live.html"
     },
@@ -4486,7 +4486,7 @@ const podcastEpisodes = [
         ep: 94,
         title: "Keeping Your Ego in Check AMA in Live Coaching w/ Kim Ann Curtin 8 23 2022",
         description: "The Two Sides of Ego: Why Confidence and Self-Doubt Both Sabotage Your Trading  Ego in trading is often viewed as simple overconfidence, but it is actually a two-sided psychological trap. Your ego can",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/D235stvkEEY/maxresdefault.jpg",
         link: "episodes/ep-094-keeping-your-ego-in-check-ama-in-live-coaching-w-kim-ann-cur.html"
     },
@@ -4510,7 +4510,7 @@ const podcastEpisodes = [
         ep: 91,
         title: "Live Coaching w/ Kim Ann Curtin",
         description: "The Gremlin That Kills Your Trades: Overcoming FOMO, Anxiety, and Boredom  Traders constantly battle internal pressures like FOMO, anxiety about holding wins, and the urge to tinker with profitable sy",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/-kc-FT0Rmsk/maxresdefault.jpg",
         link: "episodes/ep-091-live-coaching-w-kim-ann-curtin.html"
     },
@@ -4622,7 +4622,7 @@ const podcastEpisodes = [
         ep: 77,
         title: "Ep 79: Mari Hincapie - On a Mission to Inspire Female Traders",
         description: "How To Detach From Losses and Trade Like a Millionaire  Big losses can feel heartbreaking, often leading to deep frustration and the urge to sabotage future performance through emotional trading. Seve",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/ySHGB4gRAPg/maxresdefault.jpg",
         link: "episodes/ep-077-ep-79-mari-hincapie---on-a-mission-to-inspire-female-traders.html"
     },
@@ -4686,7 +4686,7 @@ const podcastEpisodes = [
         ep: 69,
         title: "Ep 78: “The Big Short” Legendary Investor Steven Eisman Talks 2023 Investing",
         description: "The Psychological Cost of Missing a Market Paradigm Shift  When the market undergoes massive, non-linear changes—like a banking crisis—traders often cling to outdated mental models, leading to emotion",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/-PnBvVAhZmU/maxresdefault.jpg",
         link: "episodes/ep-069-ep-78-the-big-short-legendary-investor-steven-eisman-talks-2.html"
     },
@@ -4694,7 +4694,7 @@ const podcastEpisodes = [
         ep: 68,
         title: "Trader  EQ Prep for the week of 5/14 - Taking a look at your relationship with loss.",
         description: "### How the Shame of Loss Destroys Your Trading Confidence  For many traders, loss triggers not just a financial hit but a deep sense of personal shame, often stemming from early life experiences of b",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/lfz2_M2T0Tk/maxresdefault.jpg",
         link: "episodes/ep-068-trader-eq-prep-for-the-week-of-514---taking-a-look-at-your-r.html"
     },
@@ -4702,7 +4702,7 @@ const podcastEpisodes = [
         ep: 67,
         title: "Alex Sposito on The Wall Street Coach Podcast",
         description: "The High Cost of Beginner's Luck: Why Risk Management Is Your Only Real Edge  The intoxicating rush of a major win can mask fundamental flaws in your process. Many successful early traders confuse luc",
-        category: "tools",
+        category: "interviews",
         image: "https://img.youtube.com/vi/MlQw0OwHUtM/maxresdefault.jpg",
         link: "episodes/ep-067-alex-sposito-on-the-wall-street-coach-podcast.html"
     },
@@ -4734,7 +4734,7 @@ const podcastEpisodes = [
         ep: 63,
         title: "An interview w/ Grant Williams for the Money Show",
         description: "The Investor's Mindset: Humility and Caution in a Shifting Market  The pursuit of quick wins and fantasy valuations during the era of free money led many investors to abandon essential caution, result",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/Ci92gYuBX9g/maxresdefault.jpg",
         link: "episodes/ep-063-an-interview-w-grant-williams-for-the-money-show.html"
     },
@@ -4742,7 +4742,7 @@ const podcastEpisodes = [
         ep: 62,
         title: "Trader EQ Prep for the week of 5/21: Identify what works!",
         description: "Stop Chasing Failures: The Power of Focusing on What Works in Your Trading  It is standard practice to dissect every loss and mistake, but constantly focusing on negative outcomes breeds frustration a",
-        category: "tools",
+        category: "psychology",
         image: "https://img.youtube.com/vi/LwihYkQqSTs/maxresdefault.jpg",
         link: "episodes/ep-062-trader-eq-prep-for-the-week-of-521-identify-what-works.html"
     },
@@ -4870,7 +4870,7 @@ const podcastEpisodes = [
         ep: 46,
         title: "The Wall Street Coach Podcast Episode 74 - Rick Carson",
         description: "How to Stop the 'Gremlin' from Sabotaging Your Full Trading Potential  Every trader experiences a powerful internal conflict between their innate potential and their limiting self-talk. This inner str",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/DsJS22NoFxs/maxresdefault.jpg",
         link: "episodes/ep-046-the-wall-street-coach-podcast-episode-74---rick-carson.html"
     },
@@ -4902,7 +4902,7 @@ const podcastEpisodes = [
         ep: 42,
         title: "Ep 72: Joseph Gasperoni of JTrader on Small Cap Trading Success",
         description: "Why Resilience is the Only Edge That Matters in Small-Cap Trading  Small-cap trading is famously volatile and unforgiving, often leading to frustration and disappointment that can wipe out capital and",
-        category: "tools",
+        category: "interviews",
         image: "https://img.youtube.com/vi/cX8gOZ5cbnQ/maxresdefault.jpg",
         link: "episodes/ep-042-ep-72-joseph-gasperoni-of-jtrader-on-small-cap-trading-succe.html"
     },
@@ -4974,7 +4974,7 @@ const podcastEpisodes = [
         ep: 33,
         title: "The Wall Street Coach Podcast - interview with Jim Rogers",
         description: "Why Hot Tips and Excitement Will Send You Straight to the Poor House  Are you constantly jumping from strategy to strategy, chasing the next 'hot tip' to get rich quickly? This perpetual search for ma",
-        category: "interviews",
+        category: "psychology",
         image: "https://img.youtube.com/vi/ptR3r4Oghp0/maxresdefault.jpg",
         link: "episodes/ep-033-the-wall-street-coach-podcast---interview-with-jim-rogers.html"
     },
@@ -5014,7 +5014,7 @@ const podcastEpisodes = [
         ep: 28,
         title: "Ep 70: Victoria Loorz on Connection, Healing, & Nature For Traders",
         description: "The Hidden Cost of Screen Time: Reconnecting to the Wild for Trading Clarity  The intense screen time required for trading often leads to profound spiritual disconnection and psychological imbalance. ",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/M3VIR0e0Y4c/maxresdefault.jpg",
         link: "episodes/ep-028-ep-70-victoria-loorz-on-connection-healing-nature-for-trader.html"
     },
@@ -5030,7 +5030,7 @@ const podcastEpisodes = [
         ep: 26,
         title: "Episode 57: Andres Armienta’s Journey From Pre-Med to Pro Trader",
         description: "The Power of Discomfort: How a Pre-Med Student Built a Profitable Trading Career  Many traders fail to persevere because they tie their self-worth to short-term results, leading to painful ego damage ",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/sYm8ly-HnkE/maxresdefault.jpg",
         link: "episodes/ep-026-episode-57-andres-armientas-journey-from-pre-med-to-pro-trad.html"
     },
@@ -5038,7 +5038,7 @@ const podcastEpisodes = [
         ep: 25,
         title: "Ep 60: Nathan Michaud's Day Trading Mindset and Community",
         description: "How to Stop Overtrading and Scale Your Account Like a Professional  Many traders confuse constant activity with commitment, leading to burnout and poor risk management. This perpetual hustle—often dri",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/YMVaUDr5eq8/maxresdefault.jpg",
         link: "episodes/ep-025-ep-60-nathan-michauds-day-trading-mindset-and-community.html"
     },
@@ -5046,7 +5046,7 @@ const podcastEpisodes = [
         ep: 24,
         title: "Episode 55: Brice Foose on Part-Time Work and Full Time Profits",
         description: "### How a Part-Time Career Creates Full-Time Trading Stability  Rushing to full-time trading often ties your emotional state to your P&L, making drawdowns feel catastrophic. Brice Foose, a seasoned sm",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/sboQFRZtWaE/maxresdefault.jpg",
         link: "episodes/ep-024-episode-55-brice-foose-on-part-time-work-and-full-time-profi.html"
     },
@@ -5070,7 +5070,7 @@ const podcastEpisodes = [
         ep: 21,
         title: "Episode 51: Tom Sosnoff on Trading and Entrepreneurship",
         description: "I do not have enough information to generate the summary because the captions/transcript for this video is empty.",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/0L2_ZJvFA-0/maxresdefault.jpg",
         link: "episodes/ep-021-episode-51-tom-sosnoff-on-trading-and-entrepreneurship.html"
     },
@@ -5078,7 +5078,7 @@ const podcastEpisodes = [
         ep: 20,
         title: "Episode 46: Burnout",
         description: "The Five Stages of Burnout That Are Secretly Ruining Your Trading Career  Many high-performing traders dismiss the signs of psychological exhaustion, often mistaking it for just 'a tough week.' This d",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/_YRQ57pyjEM/maxresdefault.jpg",
         link: "episodes/ep-020-episode-46-burnout.html"
     },
@@ -5086,7 +5086,7 @@ const podcastEpisodes = [
         ep: 19,
         title: "Episode 40: Time to Play Full Out and Level Up",
         description: "Time to Play Full Out and Level Up  When you attempt to grow your account from five to six figures, you often hit an invisible ceiling fueled by deep internal resistance and insecurity. This psycholog",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/7zfyAMA0Bn0/maxresdefault.jpg",
         link: "episodes/ep-019-episode-40-time-to-play-full-out-and-level-up.html"
     },
@@ -5094,7 +5094,7 @@ const podcastEpisodes = [
         ep: 18,
         title: "Episode 49: John Gray, PhD. on Harnessing the Power of Your Testosterone",
         description: "Stop Letting Stress Hormones Sabotage Your Trading Decisions  Trading performance is often seen as a function of strategy, but deep biological stress—particularly hormonal imbalance—can quietly sabota",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/0isiFCVZESo/maxresdefault.jpg",
         link: "episodes/ep-018-episode-49-john-gray-phd-on-harnessing-the-power-of-your-tes.html"
     },
@@ -5102,7 +5102,7 @@ const podcastEpisodes = [
         ep: 17,
         title: "Episode 44: Frank Casey on Taking Down Madoff and Keeping Profits Up",
         description: "The Due Diligence You Must Perform to Protect Your Trading Account  The world’s largest financial scams thrive on the investor's desire for the 'Holy Grail'—consistent profits without volatility. Fran",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/QOuKcVGlCds/maxresdefault.jpg",
         link: "episodes/ep-017-episode-44-frank-casey-on-taking-down-madoff-and-keeping-pro.html"
     },
@@ -5110,7 +5110,7 @@ const podcastEpisodes = [
         ep: 16,
         title: "Episode 39: Coaching Can Be Your Fight Club",
         description: "The Inner Saboteur: Why Coaching is Your Fight Club Initiation  Most traders operate under the influence of an 'inner gremlin,' allowing self-sabotage to undermine performance and destroy accounts. Th",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/QweYqn6Beuo/maxresdefault.jpg",
         link: "episodes/ep-016-episode-39-coaching-can-be-your-fight-club.html"
     },
@@ -5142,7 +5142,7 @@ const podcastEpisodes = [
         ep: 12,
         title: "Episode 33: Are You Open to Receive from the Market?",
         description: "### Why Traders Struggle to Receive (And How It Costs Them Money)  Many traders unconsciously limit their success because they have a difficult relationship with receiving, whether it's a compliment o",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/8P87LRK9iO8/maxresdefault.jpg",
         link: "episodes/ep-012-episode-33-are-you-open-to-receive-from-the-market.html"
     },
@@ -5158,7 +5158,7 @@ const podcastEpisodes = [
         ep: 10,
         title: "Episode 24: Common Issues for Traders",
         description: "The Six Psychological Traps That Hold Traders Back  While technical analysis is critical, the path to consistent profitability is often blocked by deeply ingrained psychological issues like fear, scar",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/r30ZfrxokkA/maxresdefault.jpg",
         link: "episodes/ep-010-episode-24-common-issues-for-traders.html"
     },
@@ -5166,7 +5166,7 @@ const podcastEpisodes = [
         ep: 9,
         title: "Episode 22: Holding Space for Yourself",
         description: "### How to Hold Space for Yourself When Past Trauma Hijacks Your Mindset  The market is not the only source of volatility. Sometimes, a high-stakes moment triggers old, unresolved trauma, leaving you ",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/2juYExxl2Nw/maxresdefault.jpg",
         link: "episodes/ep-009-episode-22-holding-space-for-yourself.html"
     },
@@ -5174,7 +5174,7 @@ const podcastEpisodes = [
         ep: 8,
         title: "Episode 15: Kim's First Trade - $MARA",
         description: "### The Psychological Gauntlet of Your First Trade: How to Master Greed and Risk  Your first live trade is less about the ticker and more about confronting your psychological biases head-on. Even a su",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/nFNBi9Rjk6A/maxresdefault.jpg",
         link: "episodes/ep-008-episode-15-kims-first-trade---mara.html"
     },
@@ -5182,7 +5182,7 @@ const podcastEpisodes = [
         ep: 7,
         title: "Episode 11: Achieve More By Doing Less",
         description: "The Hidden Power of Doing Less: Achieving More Consistency in Your Trading  The constant urge to overtrade often masks a deeper emotional deficit, leading to inconsistent results and unnecessary stres",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/ECbc6uYfjBQ/maxresdefault.jpg",
         link: "episodes/ep-007-episode-11-achieve-more-by-doing-less.html"
     },
@@ -5190,7 +5190,7 @@ const podcastEpisodes = [
         ep: 6,
         title: "EP06:  Practice 5 -  Mindfulness",
         description: "### The Mindful Trader: How Self-Awareness Becomes Your Anchor in Chaos  True consistency in trading relies on your ability to remain grounded, regardless of market volatility. Without deep self-aware",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/FAsL17IR2vg/maxresdefault.jpg",
         link: "episodes/ep-006-ep06-practice-5---mindfulness.html"
     },
@@ -5198,7 +5198,7 @@ const podcastEpisodes = [
         ep: 5,
         title: "Episode 07: A Mélange of What's to Come",
         description: "The Hidden Cost of Your Relationship with Money and Emotional Baggage  Your struggles in trading often originate far beyond the charts—they stem from your deep-seated relationship with money and emoti",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/DPYuKMomkfU/maxresdefault.jpg",
         link: "episodes/ep-005-episode-07-a-mélange-of-whats-to-come.html"
     },
@@ -5206,7 +5206,7 @@ const podcastEpisodes = [
         ep: 4,
         title: "EP03:  Practice 2 - Empathy for Self and Others",
         description: "The Hidden Barrier to Self-Correction and Why You Must Embrace Pain  Most people default to sympathy—a costly error that attempts to fix or silver-line emotional pain, ultimately driving disconnection",
-        category: "tools",
+        category: "interviews",
         image: "https://img.youtube.com/vi/dlitn7damxA/maxresdefault.jpg",
         link: "episodes/ep-004-ep03-practice-2---empathy-for-self-and-others.html"
     },
@@ -5214,7 +5214,7 @@ const podcastEpisodes = [
         ep: 3,
         title: "EP04:  Practice 3 - Emotional Nonresistance",
         description: "Stop Fighting Your Feelings: The Practice of Emotional Nonresistance  When uncomfortable feelings arise—especially after losses—most traders immediately resist or suppress them, creating a cycle of ps",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/wdhBjXyeXVI/maxresdefault.jpg",
         link: "episodes/ep-003-ep04-practice-3---emotional-nonresistance.html"
     },
@@ -5222,7 +5222,7 @@ const podcastEpisodes = [
         ep: 2,
         title: "EP01: The Wall Street Coach Podcast: An Introduction",
         description: "### The Golden Handcuffs: Why Financial Success Doesn't Guarantee Peace of Mind  Many high-performing individuals, especially in finance, find themselves overwhelmed, struggling with anxiety and a pro",
-        category: "tools",
+        category: "interviews",
         image: "https://img.youtube.com/vi/xE3QX5ojc-Q/maxresdefault.jpg",
         link: "episodes/ep-002-ep01-the-wall-street-coach-podcast-an-introduction.html"
     },
@@ -5230,7 +5230,7 @@ const podcastEpisodes = [
         ep: 1,
         title: "EP02: Practice 1: Self Responsibility",
         description: "### The Grace of Ownership: Why Self-Responsibility is the Antidote to Trading Victimhood  In trading and in life, the ego despises being wrong, leading you to hold onto losing positions and create na",
-        category: "psychology",
+        category: "interviews",
         image: "https://img.youtube.com/vi/aMXVzbWcOZk/maxresdefault.jpg",
         link: "episodes/ep-001-ep02-practice-1-self-responsibility.html"
     },
