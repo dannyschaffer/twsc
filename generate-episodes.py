@@ -171,7 +171,7 @@ EPISODE_TEMPLATE = '''<!DOCTYPE html>
                 <span></span><span></span><span></span>
             </button>
             <div class="nav-links" id="navLinks">
-                <a href="../tpi.html" class="nav-link">The TPI Assessment</a>
+                <a href="../tpi.html" class="nav-link">Trader Positioning Index</a>
                 <a href="../coaching.html" class="nav-link">Coaching & Consulting</a>
                 <a href="../about.html" class="nav-link">About Kim</a>
                 <a href="../podcast.html" class="nav-link nav-link-featured">Podcast</a>
