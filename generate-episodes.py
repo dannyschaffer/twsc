@@ -295,7 +295,7 @@ def format_takeaways(takeaways_text):
     text = takeaways_text.strip()
     
     # Remove em dashes and en dashes, replace with regular dashes or remove
-    text = text.replace('—', ' - ')  # em dash
+    text = text.replace(' - ', ' - ')  # em dash
     text = text.replace('–', ' - ')  # en dash
     text = text.replace('−', '-')    # minus sign
     
