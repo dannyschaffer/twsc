@@ -367,16 +367,29 @@
         </div>
     </section>
 
-    <!-- Podcast Data -->
-    <script src="podcast-data.js"></script>
 
     <script>
         let currentFilter = 'all';
         let displayedCount = 12;
         const INCREMENT = 12;
+        let podcastEpisodes = [];
+
+        async function loadEpisodesData() {
+            try {
+                const response = await fetch('podcast-episodes-full.json');
+                if (!response.ok) throw new Error('Failed to load episodes');
+                podcastEpisodes = await response.json();
+                renderEpisodes();
+            } catch (error) {
+                console.error('Error loading podcast episodes:', error);
+                document.getElementById('episodesGrid').innerHTML = '<p style="grid-column: 1/-1; text-align: center;">Unable to load episodes. Please try again later.</p>';
+            }
+        }
 
         function renderEpisodes() {
             const grid = document.getElementById('episodesGrid');
+            if (!podcastEpisodes.length) return;
+
             const filtered = currentFilter === 'all'
                 ? podcastEpisodes
                 : podcastEpisodes.filter(ep => ep.category === currentFilter);
@@ -390,7 +403,7 @@
                         <div class="episode-number">Episode ${ep.ep}</div>
                         <h3 class="episode-title">${ep.title}</h3>
                         <p class="episode-description">${ep.description}</p>
-                        <a href="${ep.link}" class="episode-link">Listen Episode →</a>
+                        <a href="${ep.link}" class="episode-link" target="_blank">Listen Episode →</a>
                     </div>
                 </div>
             `).join('');
@@ -429,7 +442,7 @@
         }
 
         // Initial render
-        renderEpisodes();
+        loadEpisodesData();
     </script>
 
     <!-- Footer -->
@@ -437,7 +450,7 @@
         <div class="container">
             <div class="footer-content">
                 <!-- Left Column - About -->
-                                <div class="footer-about">
+                <div class="footer-about">
                     <p>Transforming Wall Street from the inside out.</p>
                     <div class="footer-brand">
                         <span class="footer-logo">The Wall Street Coach</span>
