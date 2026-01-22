@@ -42,7 +42,7 @@ get_header();
                     <div>
                         <div style="background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05);">
                             <h3 style="text-align: center; color: var(--navy); margin-bottom: 1.5rem;">Download Your Free Copy</h3>
-                            <div style="width: 100%; min-height: 550px;">
+                            <div style="width: 100%; min-height: 900px;">
                                 <iframe
                                     src="https://link.fgfunnels.com/widget/form/P4QzMatpx421RnihwZsq"
                                     style="width:100%;height:100%;border:none;border-radius:4px"
@@ -55,7 +55,7 @@ get_header();
                                     data-deactivation-type="neverDeactivate"
                                     data-deactivation-value=""
                                     data-form-name="5 Practices - Sign Up (2026)"
-                                    data-height="400"
+                                    data-height="800"
                                     data-layout-iframe-id="inline-P4QzMatpx421RnihwZsq"
                                     data-form-id="P4QzMatpx421RnihwZsq"
                                     title="5 Practices - Sign Up (2026)"
