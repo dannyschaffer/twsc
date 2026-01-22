@@ -40,6 +40,7 @@
             letter-spacing: 1px !important;
             margin-top: 4px !important;
             line-height: 1.2 !important;
+            margin-left: 4px !important; /* Optical alignment adjustment */
         }
     </style>
 </head>
