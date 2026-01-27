@@ -35,24 +35,29 @@ function twsc_scripts() {
     wp_enqueue_style( 'twsc-style-enhanced', get_template_directory_uri() . '/assets/css/styles-enhanced.css', array('twsc-style'), '1.0' );
 
     // Enqueue Scripts
-    wp_enqueue_script( 'twsc-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.8', true );
+    // Use time() for version to force cache clearing during debug
+    wp_enqueue_script( 'twsc-script', get_template_directory_uri() . '/assets/js/script.js', array(), time(), true );
 }
 add_action( 'wp_enqueue_scripts', 'twsc_scripts' );
 
 /**
  * GLOBAL FIX: Force "Resources" menu item to "Tools"
- * ensuring consistency even if page template isn't updated manualy
+ * AGGRESSIVE MODE: Runs on all menus, no location check
  */
 function twsc_force_tools_menu_item( $items, $args ) {
-    if ( isset($args->theme_location) && $args->theme_location == 'primary' ) {
-        foreach ( $items as $item ) {
-            // Check for "Resources" in title or URL
-            if ( stripos( $item->title, 'Resources' ) !== false || stripos( $item->url, 'page-resources' ) !== false || stripos( $item->url, '/resources' ) !== false ) {
-                $item->title = 'Tools';
-                $item->url = site_url('/tools');
-            }
+    // Run on ALL menus to be safe
+    foreach ( $items as $item ) {
+        // Check for "Resources" in title (case insensitive)
+        if ( stripos( $item->title, 'Resources' ) !== false ) {
+            $item->title = 'Tools';
+            $item->url = site_url('/tools');
+        }
+        // Check for "resources" in URL
+        elseif ( stripos( $item->url, 'page-resources' ) !== false || stripos( $item->url, '/resources' ) !== false ) {
+            $item->title = 'Tools';
+            $item->url = site_url('/tools');
         }
     }
     return $items;
 }
-add_filter( 'wp_nav_menu_objects', 'twsc_force_tools_menu_item', 1000, 2 );
+add_filter( 'wp_nav_menu_objects', 'twsc_force_tools_menu_item', PHP_INT_MAX, 2 );

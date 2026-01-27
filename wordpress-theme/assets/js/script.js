@@ -278,11 +278,12 @@ if (counterElements.length) {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('The Wall Street Coach website initialized');
 
-    // FIX: Podcast Page Navigation Menu Regression (Fallback)
+    // FIX: Podcast Page Navigation Menu Regression (Fallback - Aggressive)
     if (window.location.href.includes('/episodes/') || document.body.classList.contains('single-podcast')) {
         const navLinks = document.querySelectorAll('.nav-link, .menu-item a');
         navLinks.forEach(link => {
-            if (link.textContent.trim() === 'Resources') {
+            const text = link.textContent.trim().toLowerCase();
+            if (text.includes('resource')) {
                 console.log('Applying Nav Fix: Resources -> Tools');
                 link.textContent = 'Tools';
                 link.href = '/tools';
