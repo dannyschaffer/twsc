@@ -1,0 +1,18 @@
+
+*** URGENT FIX FOR RESOURCES PAGE ***
+
+The URL `/resources` seems to be permanently corrupted by an old redirect or plugin setting.
+We are bypassing it.
+
+1. UPLOAD THE LATEST THEME ZIP
+   - This version points the footer link to `/trading-resources` (a clean, new URL).
+
+2. RENAME YOUR PAGE
+   - Go to WordPress Admin -> Pages.
+   - Find your "Resources" page.
+   - Click "Quick Edit".
+   - Change the SLUG from `resources` to `trading-resources`.
+   - Click Update.
+
+3. RESULT
+   - The link will now work instantly because `/trading-resources` has no history of broken redirects.

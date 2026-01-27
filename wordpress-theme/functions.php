@@ -35,7 +35,26 @@ function twsc_scripts() {
     wp_enqueue_style( 'twsc-style-enhanced', get_template_directory_uri() . '/assets/css/styles-enhanced.css', array('twsc-style'), '1.0' );
 
     // Enqueue Scripts
-    wp_enqueue_script( 'twsc-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.3', true );
+    wp_enqueue_script( 'twsc-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.7', true );
 }
 add_action( 'wp_enqueue_scripts', 'twsc_scripts' );
 ?>
+
+/**
+ * GLOBAL FIX: Force "Resources" menu item to "Tools"
+ * ensuring consistency even if page template isn't updated manualy
+ */
+function twsc_force_tools_menu_item( $items, $args ) {
+    if ( isset($args->theme_location) && $args->theme_location == 'primary' ) {
+        foreach ( $items as $item ) {
+            // Check for "Resources" in title or URL
+            if ( stripos( $item->title, 'Resources' ) !== false || stripos( $item->url, 'page-resources' ) !== false || stripos( $item->url, '/resources' ) !== false ) {
+                $item->title = 'Tools';
+                $item->url = site_url('/tools');
+            }
+        }
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_objects', 'twsc_force_tools_menu_item', 1000, 2 );
+

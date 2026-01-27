@@ -1,0 +1,24 @@
+
+TROUBLESHOOTING: "Dead Page" or "Redirect" Issues
+
+1. THE "RESOURCES/TARGET" URL ISSUE
+   - This URL (`.../resources/target`) does not exist in the theme code.
+   - It is almost certainly a Custom Menu Link error.
+   - Go to Appearance -> Menus.
+   - Check the URL of the "Resources" link.
+   - Ensure it is just `/resources` or the full URL. Remove any "target=" text from the URL field itself.
+
+2. "/RESOURCES" GOING TO 404
+   - Go to Settings -> Permalinks.
+   - Click "Save Changes" (even if you changed nothing). This resets the URL routing.
+   - Go to Pages -> Resources.
+   - Ensure the slug (Permlink) is exactly `resources`.
+   - Ensure the Page Template is "Resources Page".
+
+3. HARDCODED FOOTER FIX
+   - I have updated the theme to HARDCODE the footer links.
+   - This means the footer will always point to `/resources` correctly, regardless of your WordPress Menu settings.
+   - UPLOAD `twsc-theme.zip` (latest version) to see this fix.
+
+4. POPUPS
+   - If you see unwanted popups, check for "Hustle", "OptinMonster", or "Elementor Pro" plugins and deactivate them.

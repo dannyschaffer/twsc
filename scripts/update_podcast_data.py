@@ -26,7 +26,14 @@ def parse_rss_feed(xml_content):
     episodes = []
     try:
         root = ET.fromstring(xml_content)
+        print(f"Root tag: {root.tag}")
         channel = root.find("channel")
+        if channel is None:
+            print("Channel element not found!")
+            # Try with namespace if needed (unlikely for RSS)
+            return []
+        
+        print("Channel found.")
         
         # Namespaces often used in podcast feeds
         namespaces = {
@@ -34,7 +41,18 @@ def parse_rss_feed(xml_content):
             'content': 'http://purl.org/rss/1.0/modules/content/'
         }
         
-        items = channel.findall("item")
+        print(f"Content length: {len(xml_content)}")
+        # print(f"First 500 chars: {xml_content[:500]}")
+
+        items = []
+        child_count = 0
+        for child in channel:
+             child_count += 1
+             # print(f"Scanning child {child_count}: {child.tag}")
+             if child.tag.endswith('item'):
+                 items.append(child)
+        
+        print(f"Scanned {child_count} children. Found {len(items)} items.")
         
         for item in items:
             title = item.find("title").text if item.find("title") is not None else "No Title"

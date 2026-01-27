@@ -396,17 +396,30 @@
 
             const toShow = filtered.slice(0, displayedCount);
 
-            grid.innerHTML = toShow.map(ep => `
+            grid.innerHTML = toShow.map(ep => {
+                let dateStr = "";
+                if (ep.pubDate) {
+                    try {
+                        const d = new Date(ep.pubDate);
+                        dateStr = d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+                    } catch (e) { }
+                }
+
+                return `
                 <div class="episode-card" data-category="${ep.category}">
                     <img src="${ep.image}" alt="${ep.title}" onerror="this.src='TWSCsite/Images/Podcast-Lives.jpeg'">
                     <div class="episode-card-content">
-                        <div class="episode-number">Episode ${ep.ep}</div>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.5rem;">
+                            <div class="episode-number">Episode ${ep.ep}</div>
+                            <div style="color: var(--text-secondary); font-size: 0.8rem;">${dateStr}</div>
+                        </div>
                         <h3 class="episode-title">${ep.title}</h3>
                         <p class="episode-description">${ep.description}</p>
                         <a href="${ep.link}" class="episode-link" target="_blank">Listen Episode →</a>
                     </div>
                 </div>
-            `).join('');
+                `;
+            }).join('');
 
             // Update count
             document.getElementById('episodeCount').textContent =

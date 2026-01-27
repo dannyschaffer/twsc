@@ -1,0 +1,31 @@
+
+*** MASTER DEPLOYMENT INSTRUCTIONS (v24) ***
+
+1. UPLOAD THEME
+   - Upload `twsc-theme.zip` (Version 24) to WordPress -> Appearance -> Themes -> Add New -> Upload.
+   - Activate the theme.
+
+2. RENAME PAGES (CRITICAL!)
+   Go to WordPress Admin -> Pages -> Quick Edit:
+   - "Podcast" page -> Change Slug to: `podcasts` (plural)
+   - "Resources" page -> Change Slug to: `tools` (to fix the broken link)
+   - "About" page -> Ensure Slug is: `about`
+   - "Books" page -> Ensure Slug is: `books`
+
+3. ASSIGN TEMPLATES
+   Go to Pages -> Edit each page -> Page Attributes -> Template:
+   - Homepage -> "Custom Home Page"
+   - Resources/Tools -> "Resources Page"
+   - Library -> "Library Page"
+   - Book -> "Book Consultation Page"
+   - Coaching -> "Coaching Page"
+
+4. CLEAR CACHE
+   - Clear any caching plugins (WP Rocket, SG Optimizer).
+   - Clear your Browser Cache or use Incognito Mode to see changes.
+
+5. VERIFY POPUP
+   - The bottom popup is built into the theme.
+   - It will appear after 5 seconds.
+   - It now links correctly to `/tools`.
+   - If you close it, it stays closed (clear cache to see it again).
