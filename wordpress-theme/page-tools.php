@@ -234,12 +234,7 @@ get_header();
                     </div>
                     
                     <!-- Universal Needs Matrix -->
-                    <div class="free-tool-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cover-universal-needs.png" alt="Matrix">
-                        <h3 style="color: var(--navy);">Universal Needs Matrix</h3>
-                        <p style="font-size: 0.9rem; color: var(--text-secondary);">Align goals with needs.</p>
-                        <a href="https://coachingproducts.s3.us-east-2.amazonaws.com/Universal-Needs.pdf" target="_blank" style="color: var(--gold); font-weight: 700;">Download PDF →</a>
-                    </div>
+
 
                     <!-- Trader Hero's Journey -->
                      <div class="free-tool-card">
