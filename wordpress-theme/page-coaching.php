@@ -51,41 +51,56 @@ get_header();
         </div>
     </section>
 
-    <!-- Social Proof Banner -->
-    <div class="client-logos-strip">
-        <div class="container" style="text-align: center;">
-            <p
-                style="color: var(--navy); opacity: 0.6; font-family: 'Space Mono', monospace; font-size: 0.8rem; margin-bottom: 1.5rem; text-transform: uppercase;">
-                Trusted By Professionals At</p>
-            <div class="logos-block" style="margin: 0;">
-                <div class="hero-logos">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-BlackstoneBW@2x-q633cw8dnd19ck6bb8zwsxltaptwvq6fp2dokvysmc.png"
-                        alt="Blackstone">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-BankofAmericaBW@2x-q631b12yl1x2zpgvmtkcd2msrnwizzxsjgt1x3hjla.png"
-                        alt="Bank of America">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-CreditSuisseBW@2x-q631coasjm65b52v115u85ou6xsngxgvrlwn5j1qpa.png"
-                        alt="Credit Suisse">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-MorganStanleyBW@2x-q630qmz0bg054937pi8prpvstqev0dzfejau3zq0ku.png"
-                        alt="Morgan Stanley">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-NBCBW@2x-q631c2oi6fcjw3y9j9tf4t58j2r7jw320mwh45xsoe.png" alt="NBC">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-KingStreetBW@2x-q633tlt35bwrqzwhqh154psthbgtq0inbrwfpz6u0e.png"
-                        alt="King Street">
-                </div>
-                <div class="hero-logos hero-logos-bottom">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-AnchorageBW@2x-q633czzqep6en00upamf2wnno9bdqild1kzmhzt7xg.png"
-                        alt="Anchorage">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-FortressBW2@2x-q631g4dhlqvzvo2mwisldadolst3oz5g8o0qi1xrvy.png"
-                        alt="Fortress">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-GICBW@2x-q630mp1dngluf4tdqaw1t7p74jufq3byj0sin7kgo4.png" alt="GIC">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-GenentechBW@2x-q633e0nft8kl7sjlr8gva5emuaap2pmw6mfk7sav6s.png"
-                        alt="Genentech">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-MerckBW@2x-q633r0r2cqddtlnntut2rva6o67hjz97yzbd7l0t4e.png"
-                        alt="Merck">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-PGBW@2x-q6325e99ddhk27czbg3gewrvms8enzhmdrir1wgokk.png" alt="P&G">
+    <!-- Testimonials Section -->
+    <section class="section section-dark" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--navy);">What Traders Are Saying</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div class="testimonial-carousel">
+                    <div class="testimonial-slide active">
+                        <blockquote style="font-style: italic; font-size: 1.25rem;">
+                            "I pretty much figured I knew everything... I wasn't prepared for the results of the TPI. It
+                            gave me real clarity on my biggest hang-ups."
+                        </blockquote>
+                        <cite><br>Barry Randall, CEO, LSC Investment Group</cite>
+                    </div>
+                    <div class="testimonial-slide">
+                        <blockquote style="font-style: italic; font-size: 1.25rem;">
+                            "It felt as if Kim lived inside my head... My jaw almost hit the table."
+                        </blockquote>
+                        <cite><br><strong>Thuan Q. Pham</strong>, Former CTO of Uber</cite>
+                    </div>
+                    <div class="testimonial-slide">
+                        <blockquote style="font-style: italic; font-size: 1.25rem;">
+                            "My win rate improved from 40% to 60% as I began to trade less and make more... The TPI
+                            showed me exactly where my issues were stemming from."
+                        </blockquote>
+                        <cite><br>Andres A., Independent Trader</cite>
+                    </div>
+                    <div class="testimonial-slide">
+                        <blockquote style="font-style: italic; font-size: 1.25rem;">
+                            "In just 6 months, I grew my account by over 135%... Far exceeding my prior losses and
+                            expectations."
+                        </blockquote>
+                        <cite><br>Tom Burnett, Trader</cite>
+                    </div>
+                    <div class="testimonial-slide">
+                        <blockquote style="font-style: italic; font-size: 1.25rem;">
+                            "If you are trading as a professional, it is a MUST do. I cannot thank Kim enough."
+                        </blockquote>
+                        <cite><br>Carson Klahm, Trader</cite>
+                    </div>
+                    <div class="testimonial-slide">
+                        <blockquote style="font-style: italic; font-size: 1.25rem;">
+                            "I have been working with Kim for over a year. And I just had my best January since I began trading 5 years ago. This has nothing to do with the PnL or win/loss rate or some other metric. And has everything to do with trading in peace…trading with neutrality and unattached to the outcome. Kim helped me find this inner peace. Thank you Kim!"
+                        </blockquote>
+                        <cite><br>Karim Abdelkader (full time trader)</cite>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- INDIVIDUAL TRACK -->
     <section id="individual" class="section" style="padding-top: 2rem; border-top: none;">
