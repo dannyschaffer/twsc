@@ -120,6 +120,12 @@
                         </blockquote>
                         <cite><br>Carson Klahm, Trader</cite>
                     </div>
+                    <div class="testimonial-slide">
+                        <blockquote style="font-style: italic; font-size: 1.25rem;">
+                            "I have been working with Kim for over a year. And I just had my best January since I began trading 5 years ago. This has nothing to do with the PnL or win/loss rate or some other metric. And has everything to do with trading in peace…trading with neutrality and unattached to the outcome. Kim helped me find this inner peace. Thank you Kim!"
+                        </blockquote>
+                        <cite><br>Karim Abdelkader (full time trader)</cite>
+                    </div>
                 </div>
             </div>
         </div>
