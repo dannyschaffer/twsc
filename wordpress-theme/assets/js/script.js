@@ -599,10 +599,10 @@ const createEbookPopup = () => {
         }
     });
 
-    // Exit Intent Trigger
+    // Exit Intent Trigger (Full Screen Popup)
     document.addEventListener('mouseleave', (e) => {
         if (e.clientY < 50) {
-            showPopup();
+            createExitPopup();
         }
     });
 
@@ -614,8 +614,194 @@ const createEbookPopup = () => {
 
     // Also close when clicking the CTA (they're going to resources)
     const ctaBtn = popup.querySelector('.ebook-popup-btn');
-    ctaBtn.addEventListener('click', () => {
-        localStorage.setItem('ebookPopupDismissed_v2', 'true');
+    if (ctaBtn) {
+        ctaBtn.addEventListener('click', () => {
+            localStorage.setItem('ebookPopupDismissed_v2', 'true');
+        });
+    }
+};
+
+// ================================================
+// Full Screen Exit Intent Popup (The 5 Practices)
+// ================================================
+
+const createExitPopup = () => {
+    // Check if user already dismissed
+    if (localStorage.getItem('exitIntentDismissed')) {
+        return;
+    }
+
+    // Create the popup HTML
+    const popupHTML = `
+        <div id="exitIntentPopup" class="exit-popup-overlay">
+            <div class="exit-popup-container">
+                <button class="exit-popup-close" aria-label="Close popup">&times;</button>
+                <div class="exit-popup-grid">
+                    <!-- Left Column: Copy & Book -->
+                    <div class="exit-popup-content">
+                        <h2 style="color: var(--navy); margin-bottom: 1rem; font-size: 2rem; line-height: 1.2;">Stop Sabotaging Your Trades. Start Mastering Your Mind.</h2>
+                        <p style="color: var(--gold); font-family: 'Space Mono', monospace; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 1.5rem;">
+                            The 5 Proven Practices Used by Top 1% Traders
+                        </p>
+                        
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem;">
+                            <img src="/wp-content/themes/twsc-theme/assets/images/5-practices-cover.jpg" alt="The 5 Practices" style="width: 120px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border-radius: 4px; flex-shrink: 0;">
+                            <div style="font-size: 0.95rem; line-height: 1.5; color: var(--text-primary);">
+                                <p style="margin-bottom: 0.5rem;">The missing link isn't another indicator—it's your internal operating system.</p>
+                                <p style="margin-bottom: 0;">In this exclusive guide, Kim Ann Curtin reveals the <strong>5 Transformational Practices</strong> that separate elite performers from the rest.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <div class="exit-popup-form">
+                        <div style="width:100%; height:100%; min-height: 500px;">
+                            <iframe
+                                src="https://link.fgfunnels.com/widget/form/P4QzMatpx421RnihwZsq"
+                                style="width:100%;height:100%;border:none;border-radius:4px"
+                                id="popup-inline-P4QzMatpx421RnihwZsq" 
+                                data-layout="{'id':'INLINE'}"
+                                data-trigger-type="alwaysShow"
+                                data-trigger-value=""
+                                data-activation-type="alwaysActivated"
+                                data-activation-value=""
+                                data-deactivation-type="neverDeactivate"
+                                data-deactivation-value=""
+                                data-form-name="5 Practices - Sign Up (2026)"
+                                data-height="550"
+                                data-layout-iframe-id="popup-inline-P4QzMatpx421RnihwZsq"
+                                data-form-id="P4QzMatpx421RnihwZsq"
+                                title="5 Practices - Sign Up (2026)"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Add CSS styles
+    const popupStyles = `
+        <style>
+            .exit-popup-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(8, 51, 58, 0.85);
+                backdrop-filter: blur(5px);
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                padding: 1rem;
+            }
+            .exit-popup-overlay.show {
+                opacity: 1;
+                visibility: visible;
+            }
+            .exit-popup-container {
+                background: #fff;
+                width: 100%;
+                max-width: 900px;
+                border-radius: 12px;
+                position: relative;
+                transform: scale(0.95);
+                transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+                overflow: hidden;
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+            .exit-popup-overlay.show .exit-popup-container {
+                transform: scale(1);
+            }
+            .exit-popup-close {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                background: transparent;
+                border: none;
+                font-size: 2rem;
+                line-height: 1;
+                color: var(--navy);
+                cursor: pointer;
+                z-index: 10;
+                padding: 0.5rem;
+                transition: color 0.2s;
+            }
+            .exit-popup-close:hover {
+                color: var(--gold);
+            }
+            .exit-popup-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .exit-popup-content {
+                padding: 3rem;
+                background: #F9F9F7;
+                border-right: 1px solid rgba(0,0,0,0.05);
+            }
+            .exit-popup-form {
+                padding: 2rem;
+                background: #fff;
+            }
+            
+            @media (max-width: 768px) {
+                .exit-popup-grid {
+                    grid-template-columns: 1fr;
+                }
+                .exit-popup-content {
+                    padding: 2rem;
+                    text-align: center;
+                }
+                .exit-popup-content img {
+                    display: none; /* Hide image on mobile to save space */
+                }
+                .exit-popup-form {
+                    padding: 1rem;
+                }
+            }
+        </style>
+    `;
+
+    // Insert styles and popup
+    if (!document.getElementById('exitIntentPopupStyles')) {
+        document.head.insertAdjacentHTML('beforeend', `<div id="exitIntentPopupStyles">${popupStyles}</div>`);
+    }
+    if (!document.getElementById('exitIntentPopup')) {
+        document.body.insertAdjacentHTML('beforeend', popupHTML);
+    }
+
+    const popup = document.getElementById('exitIntentPopup');
+    const closeBtn = popup.querySelector('.exit-popup-close');
+
+    // Show popup
+    // Small timeout to allow DOM insertion
+    setTimeout(() => {
+        popup.classList.add('show');
+    }, 10);
+
+    // Close logic
+    const closePopup = () => {
+        popup.classList.remove('show');
+        setTimeout(() => {
+            popup.remove(); // Remove from DOM to keep clean
+        }, 300);
+        localStorage.setItem('exitIntentDismissed', 'true');
+    };
+
+    closeBtn.addEventListener('click', closePopup);
+
+    // Close on click outside
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            closePopup();
+        }
     });
 };
 
