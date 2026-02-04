@@ -275,7 +275,7 @@ get_header();
         
         <div style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
             <p style="font-size: 0.9rem; opacity: 0.7;">Ready to improve your score?</p>
-            <a href="<?php echo site_url('/contact'); ?>" class="btn-primary" style="background: var(--gold); color: var(--navy); border: none;">Book a Consultation</a>
+            <a href="<?php echo site_url('/book'); ?>" class="btn-primary" style="background: var(--gold); color: var(--navy); border: none;">Book a Consultation</a>
         </div>
     </div>
 </div>

@@ -24,7 +24,7 @@
 
                 <div class="footer-right">
                     <div class="footer-legal">
-                        <a href="mailto:info@thewallstreetcoach.com">Contact</a>
+                        <a href="<?php echo site_url('/book'); ?>">Contact</a>
                         <a href="<?php echo site_url('/privacy-policy'); ?>">Privacy Policy</a>
                         <a href="<?php echo site_url('/terms'); ?>">Terms Of Use</a>
                     </div>
