@@ -599,6 +599,13 @@ const createEbookPopup = () => {
         }
     });
 
+    // Exit Intent Trigger
+    document.addEventListener('mouseleave', (e) => {
+        if (e.clientY < 50) {
+            showPopup();
+        }
+    });
+
     // Close button
     closeBtn.addEventListener('click', () => {
         popup.classList.remove('show');
