@@ -644,12 +644,8 @@ const createExitPopup = () => {
                             The 5 Proven Practices Used by Top 1% Traders
                         </p>
                         
-                        <div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 1.5rem;">
-                            <img src="/wp-content/themes/twsc-theme/assets/images/5-practices-cover.jpg" alt="The 5 Practices" style="width: 120px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border-radius: 4px; flex-shrink: 0;">
-                            <div style="font-size: 0.95rem; line-height: 1.5; color: var(--text-primary);">
-                                <p style="margin-bottom: 0.5rem;">The missing link isn't another indicator—it's your internal operating system.</p>
-                                <p style="margin-bottom: 0;">In this exclusive guide, Kim Ann Curtin reveals the <strong>5 Transformational Practices</strong> that separate elite performers from the rest.</p>
-                            </div>
+                        <div style="margin-bottom: 1.5rem; text-align: center;">
+                            <img src="/wp-content/themes/twsc-theme/assets/images/5-practices-tools.jpg" alt="The 5 Practices" style="width: 100%; height: auto; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border-radius: 4px;">
                         </div>
                     </div>
 
