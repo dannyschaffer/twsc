@@ -293,8 +293,8 @@ ol {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 4.5rem;
-    /* Increased gap */
+    gap: 2.5rem;
+    /* Reduced gap to fit Results link */
     list-style: none;
     margin: 0;
     padding: 0;
