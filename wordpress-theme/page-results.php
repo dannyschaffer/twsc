@@ -92,11 +92,10 @@ $testimonials = [
 <!-- Hero Section -->
 <section class="section section-dark" style="padding-top: 6rem; padding-bottom: 4rem;">
     <div class="container" style="text-align: center;">
-        <h1 class="hero-headline" style="font-size: 3.5rem; margin-bottom: 1.5rem;">Real Results.<br>Unfakeable Metrics.
-        </h1>
+        <h1 class="hero-headline" style="font-size: 3.5rem; margin-bottom: 1.5rem;">See What Happens When Traders Get
+            Serious About Mindset.</h1>
         <p class="section-intro" style="max-width: 700px; margin: 0 auto;">
-            We don't trade in "feelings." We trade in P&L, Sharpe Ratios, and Drawdown reduction.
-            See what happens when you engineer the psychology of a top performer.
+            Real stories of the inner work that creates measurable results.
         </p>
     </div>
 </section>
@@ -108,7 +107,7 @@ $testimonials = [
             style="background: var(--white); border-radius: 12px; border: 1px solid var(--light-gray); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
 
             <!-- Centered Label -->
-            <div style="text-align: center; padding: 2rem 1rem 1rem 1rem;">
+            <div style="text-align: center; padding: 2rem 1rem 2rem 1rem;">
                 <span class="segment-label"
                     style="margin-bottom: 0; color: var(--gold); border-color: var(--gold); display: inline-block; border-bottom: 2px solid; padding-bottom: 2px;">Featured
                     Case Study</span>
