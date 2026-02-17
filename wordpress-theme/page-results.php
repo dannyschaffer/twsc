@@ -4,6 +4,89 @@
  */
 
 get_header();
+
+// Testimonial Data Array
+$testimonials = [
+    [
+        'name' => 'Thuan Pham',
+        'role' => 'Former CTO of Uber',
+        'image' => 'thuan-pham.png',
+        'quote' => 'Kim dug deep and delivered her hour-long assessment, my jaw almost hit the table because it felt as if Kim had lived inside my head and fully understood my value system, thought process, and behavioral tendencies. And with that, Kim offered great and pragmatic insights into how I can do even better.'
+    ],
+    [
+        'name' => 'Brian Shannon',
+        'role' => 'CMT, Author of Technical Analysis Using Multiple Timeframes',
+        'image' => 'brian-shannon.png',
+        'quote' => 'Most people will tell you that 90%+ of trading success is mental... Kim helps me explore areas I need to work on and provides actionable insights. If you are committed to success, take the steps to increase your odds, hire Kim!'
+    ],
+    [
+        'name' => 'Howard Lindzon',
+        'role' => 'Co-Founder, StockTwits',
+        'image' => 'howard-lindzon.jpg',
+        'quote' => 'Kim is an excellent executive coach. Her perspective, input and insight over the last few months have helped me hone my brand and focus and plans. Her strategic vision and big picture thinking are second to none.'
+    ],
+    [
+        'name' => 'Tom Burnett',
+        'role' => 'Trader',
+        'image' => 'tom-burnett.png',
+        'quote' => 'In just 6 months of this year, I have been able to grow my account by over 135%. Far exceeding my prior losses, gains, and expectations. Kim and her team are true professionals and the benefits that come from working with them go far beyond earnings and careers.'
+    ],
+    [
+        'name' => 'Andres Armienta',
+        'role' => 'Independent Trader',
+        'image' => 'andres-armienta.png',
+        'quote' => 'My win rate improved from 40% to 60% as I began to trade less and make more... All of the trading work and personal work are very intertwined, and my personal life also got better as I was more observant of how I was interpreting/responding to situations.'
+    ],
+    [
+        'name' => 'Gregg Sciabica',
+        'role' => 'Trader',
+        'image' => 'gregg-sciabica.png',
+        'quote' => 'When one of my traders went into a long drawn out slump I reached out to Kim for help... In just a few weeks she managed to help him get back to consistent profitability. Over the next few months of coaching he transformed into a new person.'
+    ],
+    [
+        'name' => 'Tim Bohen',
+        'role' => 'Trader',
+        'image' => 'tim-bohen.png',
+        'quote' => 'Kim was able to put words to a lot of the common frustrations, issues, and emotions that traders deal with … my colleague and I had some mind-blowing sessions with Kim as well as some major breakthroughs.'
+    ],
+    [
+        'name' => 'Matthew Monaco',
+        'role' => 'Trader',
+        'image' => 'matthew-monaco.jpg',
+        'quote' => 'Working with Kim led to my highest profit month ever, doubling previous records. She\'s helped me improve team processes and uncover hidden obstacles in my mindset. From boosting my confidence to acing job interviews, Kim\'s coaching has been transformative.'
+    ],
+    [
+        'name' => 'Benito Segovia',
+        'role' => 'Trader',
+        'image' => 'benito-segovia.jpg',
+        'quote' => 'Kim is an exceptional coach who has helped numerous TrueTrader members navigate the mental challenges of trading. Her wisdom empowers traders to gain confidence and overcome mental obstacles.'
+    ],
+    [
+        'name' => 'Brian Lee',
+        'role' => 'Trader',
+        'image' => 'brian-lee.jpg',
+        'quote' => 'For me, the work has to do with reconciling my feelings about success, feelings about myself and living my best life while I’m ahead and sustaining it.'
+    ],
+    [
+        'name' => 'Barry Randall',
+        'role' => 'CEO, LSC Investment Group',
+        'image' => '', // No image
+        'quote' => 'I pretty much figured I knew everything... I wasn\'t prepared for the results of the TPI. It gave me real clarity on my biggest hang-ups.'
+    ],
+    [
+        'name' => 'Karim Abdelkader',
+        'role' => 'Full Time Trader',
+        'image' => '', // No image
+        'quote' => 'I have been working with Kim for over a year. And I just had my best January since I began trading 5 years ago... This has everything to do with trading in peace…'
+    ],
+    [
+        'name' => 'Carson Klahm',
+        'role' => 'Trader',
+        'image' => '', // No image
+        'quote' => 'If you are trading as a professional, it is a MUST do. I cannot thank Kim enough.'
+    ]
+];
+
 ?>
 
 <!-- Hero Section -->
@@ -28,7 +111,6 @@ get_header();
                 <!-- Image Side -->
                 <div class="results-image"
                     style="background: #f1f5f9; position: relative; min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                    <!-- Using the new image provided by the user -->
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial 2 2026.png"
                         alt="Significant Trading Performance Metrics"
                         style="width: 100%; height: auto; object-fit: contain; max-height: 500px;">
@@ -115,151 +197,44 @@ get_header();
         <div class="testimonials-grid-layout"
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
 
-            <!-- Testimonial 1 -->
+            <?php foreach ($testimonials as $t): ?>
             <div class="testimonial-card-grid"
                 style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
                 <div class="quote-icon"
                     style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
                     "</div>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    I pretty much figured I knew everything... I wasn't prepared for the results of the TPI. It gave me
-                    real clarity on my biggest hang-ups.
+                <p
+                    style="font-size: 1.05rem; line-height: 1.6; color: var(--navy); flex-grow: 1; margin-bottom: 1.5rem;">
+                    <?php echo $t['quote']; ?>
                 </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Barry Randall</strong>
-                    <span style="font-size: 0.9rem; color: var(--text-secondary);">CEO, LSC Investment Group</span>
-                </div>
-            </div>
 
-            <!-- Testimonial 2 -->
-            <div class="testimonial-card-grid"
-                style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
-                <div class="quote-icon"
-                    style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
-                    "</div>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    It felt as if Kim lived inside my head... My jaw almost hit the table.
-                </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Thuan Q. Pham</strong>
-                    <span style="font-size: 0.9rem; color: var(--text-secondary);">Former CTO of Uber</span>
-                </div>
-            </div>
+                <div class="author-block"
+                    style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 1rem;">
+                    <?php if (!empty($t['image'])): ?>
+                    <div class="testimonial-headshot" style="flex-shrink: 0;">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/<?php echo $t['image']; ?>"
+                            alt="<?php echo $t['name']; ?>"
+                            style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold);">
+                    </div>
+                    <?php
+    endif; ?>
 
-            <!-- Testimonial 3 -->
-            <div class="testimonial-card-grid"
-                style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
-                <div class="quote-icon"
-                    style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
-                    "</div>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    My win rate improved from 40% to 60% as I began to trade less and make more... The TPI showed me
-                    exactly where my issues were stemming from.
-                </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Andres A.</strong>
-                    <span style="font-size: 0.9rem; color: var(--text-secondary);">Independent Trader</span>
+                    <div class="author-info">
+                        <strong style="display: block; color: var(--navy); font-size: 1.1rem;">
+                            <?php echo $t['name']; ?>
+                        </strong>
+                        <?php if (!empty($t['role'])): ?>
+                        <span
+                            style="font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">
+                            <?php echo $t['role']; ?>
+                        </span>
+                        <?php
+    endif; ?>
+                    </div>
                 </div>
             </div>
-
-            <!-- Testimonial 4 -->
-            <div class="testimonial-card-grid"
-                style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
-                <div class="quote-icon"
-                    style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
-                    "</div>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    In just 6 months, I grew my account by over 135%... Far exceeding my prior losses and expectations.
-                </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Tom Burnett</strong>
-                    <span style="font-size: 0.9rem; color: var(--text-secondary);">Trader</span>
-                </div>
-            </div>
-
-            <!-- Testimonial 5 -->
-            <div class="testimonial-card-grid"
-                style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
-                <div class="quote-icon"
-                    style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
-                    "</div>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    If you are trading as a professional, it is a MUST do. I cannot thank Kim enough.
-                </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Carson Klahm</strong>
-                    <span style="font-size: 0.9rem; color: var(--text-secondary);">Trader</span>
-                </div>
-            </div>
-
-            <!-- Testimonial 6 (Longer one) -->
-            <div class="testimonial-card-grid"
-                style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
-                <div class="quote-icon"
-                    style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
-                    "</div>
-                <p style="font-size: 1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    I have been working with Kim for over a year. And I just had my best January since I began trading 5
-                    years ago... This has everything to do with trading in peace…trading with neutrality and unattached
-                    to the outcome. Kim helped me find this inner peace. Thank you Kim!
-                </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Karim Abdelkader</strong>
-                    <span style="font-size: 0.9rem; color: var(--text-secondary);">Full Time Trader</span>
-                </div>
-            </div>
-
-            <!-- Testimonial 7 (From TPI Page) -->
-            <div class="testimonial-card-grid"
-                style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
-                <div class="quote-icon"
-                    style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
-                    "</div>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    The TPI revealed blind spots I didn't even know I had. My win rate increased 23% in the first month.
-                </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Portfolio Manager</strong>
-                    <span style="font-size: 0.9rem; color: var(--text-secondary);">Hedge Fund</span>
-                </div>
-            </div>
-
-            <!-- Testimonial 8 (From TPI Page) -->
-            <div class="testimonial-card-grid"
-                style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
-                <div class="quote-icon"
-                    style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
-                    "</div>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    Finally, a data-driven approach to trading psychology. This isn't fluff - it's actionable science.
-                </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Independent Trader</strong>
-                </div>
-            </div>
-
-            <!-- Testimonial 9 (From TPI Page) -->
-            <div class="testimonial-card-grid"
-                style="background: var(--white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--light-gray); box-shadow: 0 4px 10px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
-                <div class="quote-icon"
-                    style="color: var(--gold); font-size: 2rem; line-height: 1; margin-bottom: 1rem; font-family: serif;">
-                    "</div>
-                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--navy); flex-grow: 1;">
-                    The assessment pinpointed exactly why I was giving back profits. Game-changing.
-                </p>
-                <div class="author"
-                    style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
-                    <strong style="display: block; color: var(--navy);">Prop Trader</strong>
-                </div>
-            </div>
+            <?php
+endforeach; ?>
 
         </div>
     </div>
