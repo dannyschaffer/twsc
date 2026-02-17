@@ -106,65 +106,20 @@ $testimonials = [
     <div class="container">
         <div class="results-showcase"
             style="background: var(--white); border-radius: 12px; border: 1px solid var(--light-gray); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-            <div class="results-grid-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
 
-                <!-- Image Side -->
-                <div class="results-image"
-                    style="background: #f1f5f9; position: relative; min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial 2 2026.png"
-                        alt="Significant Trading Performance Metrics"
-                        style="width: 100%; height: auto; object-fit: contain; max-height: 500px;">
-                </div>
-
-                <!-- Content Side -->
-                <div class="results-content"
-                    style="padding: 3rem; display: flex; flex-direction: column; justify-content: center;">
-                    <span class="segment-label"
-                        style="margin-bottom: 1rem; color: var(--gold); border-color: var(--gold); display: inline-block; border-bottom: 2px solid; padding-bottom: 2px;">Featured
-                        Case Study</span>
-                    <h2 style="color: var(--navy); margin-bottom: 1rem;">The "Perfect" Month</h2>
-                    <h3
-                        style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 2rem; font-family: var(--font-mono);">
-                        2026 Performance Metrics</h3>
-
-                    <div class="metrics-grid"
-                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
-                        <div class="metric-item">
-                            <span
-                                style="display: block; font-size: 2rem; font-weight: 700; color: var(--teal);">95%</span>
-                            <span
-                                style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary);">Green
-                                Days</span>
-                        </div>
-                        <div class="metric-item">
-                            <span
-                                style="display: block; font-size: 2rem; font-weight: 700; color: var(--gold);">+14%</span>
-                            <span
-                                style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary);">Acct
-                                Growth YTD</span>
-                        </div>
-                        <div class="metric-item">
-                            <span
-                                style="display: block; font-size: 2rem; font-weight: 700; color: var(--navy);">152</span>
-                            <span
-                                style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary);">Total
-                                Trades</span>
-                        </div>
-                        <div class="metric-item">
-                            <span
-                                style="display: block; font-size: 2rem; font-weight: 700; color: var(--teal);">67%</span>
-                            <span
-                                style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary);">Win
-                                Rate</span>
-                        </div>
-                    </div>
-
-                    <p
-                        style="font-style: italic; color: var(--text-secondary); border-left: 3px solid var(--gold); padding-left: 1rem;">
-                        "Best performance in terms of consistency and calmness."
-                    </p>
-                </div>
+            <!-- Centered Label -->
+            <div style="text-align: center; padding: 2rem 1rem 1rem 1rem;">
+                <span class="segment-label"
+                    style="margin-bottom: 0; color: var(--gold); border-color: var(--gold); display: inline-block; border-bottom: 2px solid; padding-bottom: 2px;">Featured
+                    Case Study</span>
             </div>
+
+            <!-- Full Width Image -->
+            <div class="results-image-full" style="width: 100%; line-height: 0;">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial 2 2026.png"
+                    alt="Significant Trading Performance Metrics" style="width: 100%; height: auto; display: block;">
+            </div>
+
         </div>
     </div>
 </section>
