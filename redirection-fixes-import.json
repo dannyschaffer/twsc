@@ -1,0 +1,306 @@
+{
+    "plugin": {
+        "version": "5.5.0",
+        "date": "2026-02-18 10:00:00"
+    },
+    "groups": [
+        {
+            "id": 1,
+            "name": "Redirections",
+            "redirects": 12,
+            "module_id": 1,
+            "moduleName": "WordPress",
+            "enabled": true
+        }
+    ],
+    "redirects": [
+        {
+            "url": "/twsc-podcast/",
+            "match_url": "/twsc-podcast/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/podcasts"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/coaching-for-everyone/contact-coaching-for-everyone/",
+            "match_url": "/coaching-for-everyone/contact-coaching-for-everyone/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/coaching.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/coaching-for-everyone/",
+            "match_url": "/coaching-for-everyone/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/coaching.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/blog/2022/11/jack-kellogg/",
+            "match_url": "/blog/2022/11/jack-kellogg/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/episodes/ep-039-the-wall-street-coach-podcast-interview-with-jack-kellogg.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/coaching-for-executives/",
+            "match_url": "/coaching-for-executives/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/coaching.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/executive-coaching/",
+            "match_url": "/executive-coaching/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/coaching.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/testimonies/",
+            "match_url": "/testimonies/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/results"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/about-kim-ann-curtin/",
+            "match_url": "/about-kim-ann-curtin/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/about.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/privacy-policy/",
+            "match_url": "/privacy-policy/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/privacy-policy.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/contact-form/",
+            "match_url": "/contact-form/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/index.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/terms-and-conditions/",
+            "match_url": "/terms-and-conditions/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/privacy-policy.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        },
+        {
+            "url": "/trader-coaching/",
+            "match_url": "/trader-coaching/",
+            "match_data": {
+                "source": {
+                    "flag_query": "pass",
+                    "flag_case": true,
+                    "flag_trailing": true,
+                    "flag_regex": false
+                }
+            },
+            "action_code": 301,
+            "action_type": "url",
+            "action_data": {
+                "url": "/coaching.html"
+            },
+            "match_type": "url",
+            "title": "Manual Fix - Feb 18",
+            "hits": 0,
+            "regex": false,
+            "group_id": 1,
+            "position": 0,
+            "enabled": true
+        }
+    ]
+}

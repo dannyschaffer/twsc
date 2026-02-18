@@ -75,7 +75,8 @@ for old in candidates:
         target = f"/episodes/{match}"
         redirects.add((source, target))
 
-    redirects.add(("/twsc-podcast/", "/podcast.html"))
+    redirects.add(("/twsc-podcast/", "/podcasts"))
+
     redirects.add(("/testimonies/", "/results"))
     redirects.add(("/blog/2022/11/jack-kellogg/", "/episodes/ep-039-the-wall-street-coach-podcast-interview-with-jack-kellogg.html"))
     redirects.add(("/coaching-for-everyone/contact-coaching-for-everyone/", "/coaching.html"))
