@@ -75,6 +75,19 @@ for old in candidates:
         target = f"/episodes/{match}"
         redirects.add((source, target))
 
+    redirects.add(("/twsc-podcast/", "/podcast.html"))
+    redirects.add(("/testimonies/", "/results"))
+    redirects.add(("/blog/2022/11/jack-kellogg/", "/episodes/ep-039-the-wall-street-coach-podcast-interview-with-jack-kellogg.html"))
+    redirects.add(("/coaching-for-everyone/contact-coaching-for-everyone/", "/coaching.html"))
+    redirects.add(("/contact-form/", "/index.html"))
+    redirects.add(("/trader-coaching/", "/coaching.html"))
+    redirects.add(("/executive-coaching/", "/coaching.html"))
+    redirects.add(("/coaching-for-executives/", "/coaching.html"))
+    redirects.add(("/coaching-for-everyone/", "/coaching.html"))
+    redirects.add(("/about-kim-ann-curtin/", "/about.html"))
+    redirects.add(("/privacy-policy/", "/privacy-policy.html"))
+    redirects.add(("/terms-and-conditions/", "/privacy-policy.html"))
+
 # Write CSV
 with open('redirects.csv', 'w') as f:
     f.write("source,target\n")
@@ -83,24 +96,8 @@ with open('redirects.csv', 'w') as f:
 
 # Write _redirects (Netlify/Generic)
 with open('_redirects', 'w') as f:
-    # Essential Redirects
-    f.write("/trader-coaching/ /coaching.html 301\n")
-    f.write("/executive-coaching/ /coaching.html 301\n")
-    f.write("/coaching-for-executives/ /coaching.html 301\n")
-    f.write("/coaching-for-everyone/ /coaching.html 301\n")
-    f.write("/about-kim-ann-curtin/ /about.html 301\n")
-    f.write("/privacy-policy/ /privacy-policy.html 301\n")
-    f.write("/terms-and-conditions/ /privacy-policy.html 301\n") 
-    f.write("/contact-form/ /index.html 301\n")
-    f.write("/twsc-podcast/ /podcast.html 301\n")
-    f.write("/testimonies/ /results.html 301\n")
-    f.write("/blog/2022/11/jack-kellogg/ /episodes/ep-039-the-wall-street-coach-podcast-interview-with-jack-kellogg.html 301\n")
-    f.write("/coaching-for-everyone/contact-coaching-for-everyone/ /coaching.html 301\n")
-
-    
     for s, t in list(redirects):
         f.write(f"{s} {t} 301\n")
-        # Ensure trailing slash version too
         if not s.endswith('/'):
             f.write(f"{s}/ {t} 301\n")
 
