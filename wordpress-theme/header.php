@@ -7,17 +7,21 @@
     <meta name="description"
         content="The Wall Street Coach provides neuro-biological performance coaching for professional traders and financial executives. Optimize your psychology and increase your alpha.">
     <meta name="theme-color" content="#1A2A3A">
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ84F8PKQ6"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-VQ84F8PKQ6');
+        gtag('config', 'G-VQ84F8PKQ6');
     </script>
-    
+
+    <!-- FG Funnels Tracking -->
+    <script src="https://link.fgfunnels.com/js/external-tracking.js"
+        data-tracking-id="tk_9a5af49d48914cadbd326dc070b23e25"></script>
+
     <?php wp_head(); ?>
     <style>
         @media (max-width: 768px) {
