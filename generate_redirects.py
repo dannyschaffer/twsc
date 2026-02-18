@@ -92,6 +92,11 @@ with open('_redirects', 'w') as f:
     f.write("/privacy-policy/ /privacy-policy.html 301\n")
     f.write("/terms-and-conditions/ /privacy-policy.html 301\n") 
     f.write("/contact-form/ /index.html 301\n")
+    f.write("/twsc-podcast/ /podcast.html 301\n")
+    f.write("/testimonies/ /results.html 301\n")
+    f.write("/blog/2022/11/jack-kellogg/ /episodes/ep-039-the-wall-street-coach-podcast-interview-with-jack-kellogg.html 301\n")
+    f.write("/coaching-for-everyone/contact-coaching-for-everyone/ /coaching.html 301\n")
+
     
     for s, t in list(redirects):
         f.write(f"{s} {t} 301\n")
