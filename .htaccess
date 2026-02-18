@@ -14,6 +14,11 @@ Redirect 301 /about-kim-ann-curtin/ /about.html
 Redirect 301 /privacy-policy/ /privacy-policy.html
 Redirect 301 /terms-and-conditions/ /privacy-policy.html
 Redirect 301 /contact-form/ /index.html
+# New Redirects
+Redirect 301 /twsc-podcast/ /podcast.html
+Redirect 301 /testimonies/ /results/
+Redirect 301 /blog/2022/11/jack-kellogg/ /episodes/ep-039-the-wall-street-coach-podcast-interview-with-jack-kellogg.html
+Redirect 301 /coaching-for-everyone/contact-coaching-for-everyone/ /coaching.html
 
 # Blog/Episode Redirects
 Redirect 301 /blog/2022/03/episode-51-tom-sosnoff-on-trading-and-entrepreneurship/episode-51-tom-sosnoff-on-trading-and-entrepreneurship /episodes/ep-021-episode-51-tom-sosnoff-on-trading-and-entrepreneurship.html
