@@ -7,12 +7,10 @@
         <div class="hero-content">
             <div class="hero-grid">
                 <div class="hero-copy" style="text-align: center;">
-                    <h1 class="hero-headline"><span
-                            style="display:block; font-size: 0.6em; text-transform: uppercase; letter-spacing: 2px;">Trading
-                            Psychology Coaching</span> Your strategy's solid.<br>Your P&L isn't.<br>What if the fix took
+                    <h1 class="hero-headline">Your strategy's solid.<br>Your P&L isn't.<br>What if the fix took
                         minutes, not years?</h1>
-                    <p class="hero-subheadline">Join the top 1% of traders using the Trader Positioning Index™ (TPI)
-                        to identify the exact psychological blind spots sabotaging your P&L.</p>
+                    <p class="hero-subheadline">Join the top 1% of traders who use <strong>trading psychology
+                            coaching</strong> to identify the blind spots sabotaging their P&L.</p>
                     <div style="text-align: center; margin-top: 1.5rem;">
                         <a href="<?php echo site_url('/assessment'); ?>" class="btn-cta">Find My Blind Spots</a>
                     </div>
@@ -249,26 +247,12 @@
 </section>
 
 <script type="applicat{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Kim Ann Curtin",
-  "url": "https://thewallstreetcoach.com/about",
-  "image": "https://thewallstreetcoach.com/wp-content/themes/twsc-theme/assets/images/Kim-Ann-Curtin-Hero-Crop.jpg",
-  "jobTitle": "Performance Coach",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "The Wall Street Coach"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/in/kimanncurtin/",
-    "https://twitter.com/kimanncurtin",
-    "https://www.instagram.com/kimanncurtin/"
-  ],
-  "author": {
-    "@type": "Book",
-    "name": "Transforming Wall Street"
-  }
-}
-</script>
+  " @context": "https://schema.org" , "@type" : "Person" , "name" : "Kim Ann Curtin" , "url"
+    : "https://thewallstreetcoach.com/about" , "image"
+    : "https://thewallstreetcoach.com/wp-content/themes/twsc-theme/assets/images/Kim-Ann-Curtin-Hero-Crop.jpg"
+    , "jobTitle" : "Performance Coach" , "worksFor" : { "@type" : "Organization" , "name" : "The Wall Street Coach"
+    }, "sameAs" : [ "https://www.linkedin.com/in/kimanncurtin/" , "https://twitter.com/kimanncurtin"
+    , "https://www.instagram.com/kimanncurtin/" ], "author" : { "@type" : "Book" , "name" : "Transforming Wall Street" }
+    } </script>
 
 <?php get_footer(); ?>
