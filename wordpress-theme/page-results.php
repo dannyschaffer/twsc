@@ -109,8 +109,8 @@ $testimonials = [
             <!-- Centered Label -->
             <div style="text-align: center; padding: 2rem 1rem 2rem 1rem;">
                 <span class="segment-label"
-                    style="margin-bottom: 0; color: var(--gold); border-color: var(--gold); display: inline-block; border-bottom: 2px solid; padding-bottom: 2px;">Featured
-                    Case Study</span>
+                    style="margin-bottom: 0; color: var(--gold); border-color: var(--gold); display: inline-block; border-bottom: 2px solid; padding-bottom: 2px;">Case
+                    Study #1: Performance Metrics</span>
             </div>
 
             <!-- Full Width Image -->
@@ -127,6 +127,9 @@ $testimonials = [
 <section class="section" style="background: #08333A; color: white;">
     <div class="container">
         <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <span class="segment-label"
+                style="color: var(--gold); border-color: var(--gold); display: inline-block; border-bottom: 2px solid; padding-bottom: 2px; margin-bottom: 1.5rem; letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem; font-weight: 600;">Case
+                Study #2: The Journey</span>
             <h2 style="color: white; margin-bottom: 2rem;">Inside the Transformation</h2>
             <div style="padding:56.25% 0 0 0;position:relative;">
                 <iframe
@@ -137,7 +140,7 @@ $testimonials = [
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
             <p style="margin-top: 2rem; font-size: 1.1rem; opacity: 0.9;">
-                Watch how top traders are rewriting their psychological playbook to achieve sustainable success.
+                Watch how this trader rewrote his psychological playbook to achieve sustainable success.
             </p>
         </div>
     </div>
